@@ -17,8 +17,16 @@
 
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css">
-    <title>Silitronics</title>
+    <title>Fabrication</title>
     <style>
+        .sndcontsec {
+            width: 100%;
+            overflow: hidden;
+            background: url(../images/sndcontsecbg.png) no-repeat center center;
+            background-size: cover;
+            padding: 15rem 0;
+        }
+
         /* Banner height adjustments for different screen sizes */
         @media screen and (min-width: 1920px) {
             .bannersec {
@@ -694,7 +702,7 @@
         }
 
         .service-section-spectrum-section .sectrum-container {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             display: grid;
             gap: 24px;
             justify-items: center;
@@ -720,7 +728,7 @@
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            max-width: 500px !important;
+            max-width: 564px !important;
         }
 
         .service-section-spectrum-section .card .card-img-head {
@@ -757,6 +765,16 @@
 
         .service-section-spectrum-section .arrow {
             display: none;
+        }
+
+        @media (max-width: 1366px) {
+            .sndcontsec {
+                width: 100%;
+                overflow: hidden;
+                background: url(../images/sndcontsecbg.png) no-repeat center center;
+                background-size: cover;
+                padding: 10rem 0 !important;
+            }
         }
 
         @media (max-width: 1023px) {
@@ -966,7 +984,7 @@
             }
 
             .section-spectrum-mobile-view .slide {
-                height: 525px;
+                height: 364px;
             }
         }
 
@@ -1035,7 +1053,7 @@
         }
 
         .box1align h2 {
-            height: 2rem;
+            /* height: 2rem; */
         }
 
         .tab button {
@@ -1046,12 +1064,12 @@
 
         .sndcontsec-mobile {
             /* background-color: red; */
-            padding: 3rem;
+            padding: 1rem;
         }
 
         .sndcontsec-mobile h2 {
             font-size: 2rem;
-            line-height: 85px;
+            line-height: 36px;
             font-family: 'Titillium Web';
             font-weight: bold;
             text-align: center;
@@ -1060,6 +1078,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            margin-bottom: 2rem;
         }
 
         .sipmaincont {
@@ -1073,7 +1092,7 @@
         }
 
         .divnumimg {
-            width: 75px !important;
+            width: 75rem !important;
         }
 
         .divtextcont-items li {
@@ -1083,7 +1102,7 @@
         .divtextcont {
             border-top: 5px solid black;
             padding-top: 2rem;
-            padding-right: 2rem;
+            padding-right: 1rem;
             padding-bottom: 15rem;
         }
 
@@ -1092,7 +1111,7 @@
         }
 
         .sndcontsec-mobile-slider {
-            height: 450px;
+            height: 48rem;
         }
 
         .servicestabcontent-containers img {
@@ -1103,92 +1122,98 @@
             max-width: none;
             margin: 0 auto;
         }
+
         @media screen and (max-width: 1366px) {
-    #silitronics-extensive-design h2 {
-    color: #fff;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 400;
-    padding: 0 18rem;
-}
+            #silitronics-extensive-design h2 {
+                color: #fff;
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 400;
+                padding: 0 18rem;
+            }
         }
+
         @media screen and (max-width: 1024px) {
-    #silitronics-extensive-design h2 {
-            color: #fff;
-            text-align: center;
-            font-size: 1.5rem;
-            font-weight: 400;
-            padding: 0 12rem;
+            #silitronics-extensive-design h2 {
+                color: #fff;
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 400;
+                padding: 0 12rem;
+            }
         }
-}
+
         @media screen and (max-width: 768px) {
-       #silitronics-extensive-design h2 {
-        color: #fff;
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: 400;
-        padding: 0 0;
-    }
-}
-    @media screen and (max-width: 480px) {
-       .servicestabcontent-containers {
-    overflow: visible;
-}
-}
+            #silitronics-extensive-design h2 {
+                color: #fff;
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 400;
+                padding: 0 0;
+            }
+        }
+
         @media screen and (max-width: 480px) {
-       .servicestabcontent-containers {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: space-between;
-    /* overflow-x: hidden; */
-    margin-top: 30px;
-    flex-wrap: wrap;
-    margin-bottom: 42px;
-    overflow: visible;
-}
-}
-#design-rule-section .container {
-  display: flex !important;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
+            .servicestabcontent-containers {
+                overflow: visible;
+            }
+        }
 
-#design-rule-section  .card {
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  max-width: 248px;
-  text-align: center;
-  flex: 1 1 200px;
-}
+        @media screen and (max-width: 480px) {
+            .servicestabcontent-containers {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                justify-content: space-between;
+                /* overflow-x: hidden; */
+                margin-top: 30px;
+                flex-wrap: wrap;
+                margin-bottom: 42px;
+                overflow: visible;
+            }
+        }
 
-#design-rule-section  .card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+        #design-rule-section .container {
+            display: flex !important;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
 
-#design-rule-section  .caption {
-  padding: 10px;
-  font-weight: bold;
-  background-color: white;
-}    
-#design-rule-section h2
- {
-    font-size: 70px;
-    line-height: 85px;
-    font-family: 'Titillium Web';
-    font-weight: bold;
-    text-align: center;
-    padding: 0 0 40px 0;
-    background: linear-gradient(90deg, #050EF1, #FD0200);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
+        #design-rule-section .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 248px;
+            text-align: center;
+            flex: 1 1 200px;
+        }
+
+        #design-rule-section .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        #design-rule-section .caption {
+            padding: 10px;
+            font-weight: bold;
+            background-color: white;
+        }
+
+        #design-rule-section h2 {
+            font-size: 70px;
+            line-height: 85px;
+            font-family: 'Titillium Web';
+            font-weight: bold;
+            text-align: center;
+            padding: 0 0 40px 0;
+            background: linear-gradient(90deg, #050EF1, #FD0200);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
     </style>
 </head>
 
@@ -1258,16 +1283,16 @@
                 <div class="item">
                     <div class="slidecontpart">
                         <div class="container">
-                            <h1>Precision Package <br> Design for Tomorrow's Technology</h1>
+                            <h1>Unrivaled Substrate <br> Fabrication for <br> High-Performance Packaging</h1>
                             <!-- <h1>Photonics (PIC) <br> Packaging Solutions</h1> -->
                             <div class="sbbox">
-                                <p class="sbannertext">Engineering custom, high-performance semiconductor and photonics
-                                    packages—delivered “First Time Right” from prototype to full-scale production.</p>
+                                <p class="sbannertext">Delivering precision, scalability, and reliability for every
+                                    advanced package.</p>
                             </div>
                             <a href="#contactsec" class="getintouchbut">Get in touch</a>
                         </div>
                     </div>
-                    <img src="./images/servicesdetails-fl/services-details-bg.png">
+                    <img src="./images/fabrication-design/desktop-design.jpg">
                 </div>
             </div>
 
@@ -1278,16 +1303,16 @@
                 <div class="item">
                     <div class="slidecontpart">
                         <div class="container">
-                            <h1>Precision Package Design for Tomorrow's Technology</h1>
+                            <h1>Unrivaled Substrate Fabrication for High-Performance Packaging </h1>
                             <!-- <h1>Photonics (PIC) <br> Packaging Solutions</h1> -->
                             <div class="sbbox">
-                                <p class="sbannertext">Engineering custom, high-performance semiconductor and photonics
-                                    packages—delivered “First Time Right” from prototype to full-scale production.</p>
+                                <p class="sbannertext">Delivering precision, scalability, and reliability for every
+                                    advanced package.</p>
                             </div>
                             <a href="#contactsec" class="getintouchbut">Get in touch</a>
                         </div>
                     </div>
-                    <img src="./images/servicesdetails-fl/services-details-mb-bg.png">
+                    <img src="./images/fabrication-design/mobile-bg.png">
                 </div>
 
             </div>
@@ -1319,84 +1344,50 @@
         <!-- spectrum section desktop and tablet screen view -->
         <section class="service-section-spectrum-section">
             <div class="container">
-                <h4>Engineered Excellence in
-                    Semiconductor & Photonics Package Design</h4>
+                <h4>Fabrication services overview</h4>
                 <button class="arrow left-arrow">&#10094;</button>
                 <div class="sectrum-container">
                     <div class="card">
                         <div class="card-img-head">
-                            <img src="./images/servicesdetails-fl/Engineering-Excellence-icon/schematic-and-layout.png"
-                                alt="">
-                            <h3>Schematic and Layout</h3>
+                            <img src="./images/fabrication-design/fab-icon-one.png" alt="">
+                            <h3>Organic Build-Up Substrates</h3>
                         </div>
-                        <ul>
-                            <li>Schematics from datasheets or custom drawings, using industry-standard tools.</li>
-                            <li>Substrate selection: build-up vs. HDI via feasibility studies.</li>
-                            <li>Design and layout checked for rules and manufacturability before fab.</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <div class="card-img-head">
-                            <img src="./images/servicesdetails-fl/Engineering-Excellence-icon/signal-integrity.png"
-                                alt="">
-                            <h3>Signal Integrity</h3>
-                        </div>
-                        <ul>
-                            <li>SI/PI analysis with 2.5D/3D solvers and SPICE modeling.</li>
-                            <li>Time/frequency studies for crosstalk, impedance, and eye diagrams.</li>
-                            <li>Meets JEDEC signal integrity standards.</li>
-                        </ul>
+                        <p>
+                            High-speed multilayer build-up with fine line/space, thin core, and embedded passives for
+                            custom applications.
+                        </p>
                     </div>
 
                     <div class="card">
                         <div class="card-img-head">
-                            <img src="./images/servicesdetails-fl/Engineering-Excellence-icon/power-integrity.png"
-                                alt="">
-                            <h3>Power Integrity</h3>
+                            <img src="./images/fabrication-design/fab-icon-two.png" alt="">
+                            <h3>HDI & Fine-Pitch Substrate Design</h3>
                         </div>
-                        <ul>
-                            <li>PDN checked for IR drop, AC impedance, and noise.</li>
-                            <li>Simulates die, package, and PCB power impacts.</li>
-                            <li>Design rules ensure reliable boards and substrates.</li>
-                        </ul>
+                        <p>
+                            State-of-the-art microvia and blind/buried via processing for next-gen integration, SiP, and
+                            photonics modules.
+                        </p>
                     </div>
 
                     <div class="card">
                         <div class="card-img-head">
-                            <img src="./images/servicesdetails-fl/Engineering-Excellence-icon/build-up-boards.png"
-                                alt="">
-                            <h3>Build Up Boards</h3>
+                            <img src="./images/fabrication-design/fab-icon-three.png" alt="">
+                            <h3>Ceramic Substrates (HTCC/LTCC)</h3>
                         </div>
-                        <ul>
-                            <li>Supports fine line/space, laser vias, blind/buried vias.</li>
-                            <li>Multiple finishes: ENIG, ENEPIG; all lead-free options.</li>
-                            <li>Designed for high reliability in flip chip/wire bond BGA.</li>
-                        </ul>
+                        <p>
+                            Precision ceramics with thick film metallization and advanced tape lamination for wireless,
+                            RF, and harsh environments.
+                        </p>
                     </div>
 
                     <div class="card">
                         <div class="card-img-head">
-                            <img src="./images/servicesdetails-fl/Engineering-Excellence-icon/cermanic-substrate.png"
-                                alt="">
-                            <h3>Ceramic Substrate</h3>
+                            <img src="./images/fabrication-design/fab-icon-four.png" alt="">
+                            <h3>Rapid Prototyping & Volume Manufacturing</h3>
                         </div>
-                        <ul>
-                            <li>Custom designs for electrical and mechanical requirements.</li>
-                            <li>Handles complex routing, thermal and placement constraints.</li>
-                            <li>High-reliability for photonics, LiDAR, aerospace, and medical.</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <div class="card-img-head">
-                            <img src="./images/servicesdetails-fl/Engineering-Excellence-icon/advance-assembly.png"
-                                alt="">
-                            <h3>Advanced Assembly</h3>
-                        </div>
-                        <ul>
-                            <li>100+ years' process expertise.</li>
-                            <li>In-house tooling and automation for fast turnaround.</li>
-                            <li>“Made in USA” for speed and IP protection.</li>
-                        </ul>
+                        <p>
+                            Agile sampling and scalable production—high yield from first prototype to full deployment.
+                        </p>
                     </div>
                 </div>
                 <button class="arrow right-arrow">&#10095;</button>
@@ -1408,84 +1399,52 @@
         <!-- spectrum section mobile only screen view -->
         <div class="section-spectrum-mobile-view">
             <div class="slider-container">
-                <h4>Advanced Semiconductor and Photonics
-                    Packaging Expertise—All in One Place</h4>
+                <h4>Fabrication services overview</h4>
                 <button class="arrow arrow-left">&#10094;</button>
                 <div class="slider-wrapper">
                     <div class="slider" id="slider">
                         <!-- 6 Slides -->
                         <div class="slide">
                             <div class="slide-icon">
-                                <img src="./images/servicesdetails-fl/Engineering-Excellence-icon/schematic-and-layout.png"
-                                    alt="icon" />
-                                <h3>Schematic and Layout</h3>
+                                <img src="./images/fabrication-design/fab-icon-one.png" alt="icon" />
+                                <h3>Organic Build-Up Substrates</h3>
                             </div>
-                            <ul>
-                                <li>Schematics from datasheets or custom drawings, using industry-standard tools.</li>
-                                <li>Substrate selection: build-up vs. HDI via feasibility studies.</li>
-                                <li>Design and layout checked for rules and manufacturability before fab.</li>
-                            </ul>
+                            <p>
+                                High-speed multilayer build-up with fine line/space, thin core, and embedded passives
+                                for custom applications.
+                            </p>
                         </div>
                         <!-- Duplicate 5 more slides for demo -->
                         <div class="slide">
                             <div class="slide-icon">
-                                <img src="./images/servicesdetails-fl/Engineering-Excellence-icon/signal-integrity.png"
-                                    alt="icon" />
-                                <h3>Signal Integrity</h3>
+                                <img src="./images/fabrication-design/fab-icon-two.png" alt="icon" />
+                                <h3>HDI & Fine-Pitch Substrate Design</h3>
                             </div>
-                            <ul>
-                                <li>SI/PI analysis with 2.5D/3D solvers and SPICE modeling.</li>
-                                <li>Time/frequency studies for crosstalk, impedance, and eye diagrams.</li>
-                                <li>Meets JEDEC signal integrity standards.</li>
-                            </ul>
+                            <p>
+                                State-of-the-art microvia and blind/buried via processing for next-gen integration, SiP,
+                                and photonics modules.
+                            </p>
                         </div>
                         <div class="slide">
                             <div class="slide-icon">
-                                <img src="./images/servicesdetails-fl/Engineering-Excellence-icon/power-integrity.png"
-                                    alt="icon" />
-                                <h3>Power Integrity</h3>
+                                <img src="./images/fabrication-design/fab-icon-two.png" alt="icon" />
+                                <h3>Ceramic Substrates (HTCC/LTCC)</h3>
                             </div>
-                            <ul>
-                                <li>PDN checked for IR drop, AC impedance, and noise.</li>
-                                <li>Simulates die, package, and PCB power impacts.</li>
-                                <li>Design rules ensure reliable boards and substrates.</li>
-                            </ul>
+                            <p>
+                                Precision ceramics with thick film metallization and advanced tape lamination for
+                                wireless, RF, and harsh environments.
+                            </p>
                         </div>
                         <div class="slide">
                             <div class="slide-icon">
                                 <img src="./images/servicesdetails-fl/Engineering-Excellence-icon/build-up-boards.png"
                                     alt="icon" />
-                                <h3>Build Up Boards</h3>
+                                <h3>Rapid Prototyping & Volume Manufacturing</h3>
                             </div>
-                            <ul>
-                                <li>Supports fine line/space, laser vias, blind/buried vias.</li>
-                                <li>Multiple finishes: ENIG, ENEPIG; all lead-free options.</li>
-                                <li>Designed for high reliability in flip chip/wire bond BGA.</li>
-                            </ul>
-                        </div>
-                        <div class="slide">
-                            <div class="slide-icon">
-                                <img src="./images/servicesdetails-fl/Engineering-Excellence-icon/cermanic-substrate.png"
-                                    alt="icon" />
-                                <h3>Ceramic Substrate</h3>
-                            </div>
-                            <ul>
-                                <li>Custom designs for electrical and mechanical requirements.</li>
-                                <li>Handles complex routing, thermal and placement constraints.</li>
-                                <li>High-reliability for photonics, LiDAR, aerospace, and medical.</li>
-                            </ul>
-                        </div>
-                        <div class="slide">
-                            <div class="slide-icon">
-                                <img src="./images/servicesdetails-fl/Engineering-Excellence-icon/advance-assembly.png"
-                                    alt="icon" />
-                                <h3>Advanced Assembly</h3>
-                            </div>
-                            <ul>
-                                <li>100+ years' process expertise.</li>
-                                <li>In-house tooling and automation for fast turnaround.</li>
-                                <li>“Made in USA” for speed and IP protection.</li>
-                            </ul>
+                            <p>
+                                Agile sampling and scalable production—high yield from first prototype to full
+                                deployment.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -1501,15 +1460,13 @@
         <section class="sndcontsec">
             <div class="container">
                 <div class="lftrytlinepart">
-                    <h2>Innovative Package Design, Engineered for Excellence</h2>
-                    <p class="slide2text">At Silitronics, we push the boundaries of package design to empower the next
-                        generation of semiconductor and photonic systems. Leveraging decades of expertise, advanced
-                        automation, and a rigorous “First Time Right” methodology, our team partners with you from
-                        concept through volume manufacturing. Whether you require cutting-edge silicon photonics,
-                        multi-chiplet integration, or custom substrates, our solutions are tailored for performance,
-                        quality, and speed. Every package is meticulously designed and optimized to accelerate your
-                        roadmap—while our commitment to reliability ensures your products meet the highest standards
-                        across data center, AI/ML, LiDAR, IoT, medical, and defense applications.</p>
+                    <h2>Pioneering the Future of Advanced Substrate Manufacturing</h2>
+                    <p class="slide2text">Silitronics leads the substrate fabrication sector by combining advanced
+                        materials engineering, process automation, and expert craftsmanship. With decades of experience
+                        and Silicon Valley roots, our process is built to exceed industry standards for accuracy,
+                        reliability, and innovation. Clients rely on us for everything from prototyping to mass
+                        production. Our team's deep knowledge ensures “First Time Right” performance, robust electrical
+                        and thermal characteristics, and unmatched support throughout the product lifecycle.</p>
         </section>
 
         <!-- **************************************** -->
@@ -1524,11 +1481,12 @@
                 <span class="custom-dot" data-slide="2"></span>
                 <span class="custom-dot" data-slide="3"></span>
                 <span class="custom-dot" data-slide="4"></span>
+                <span class="custom-dot" data-slide="5"></span>
             </div>
 
             <div class="bottomarrow"> <img src="images/btmarw.png"> </div>
             <div class="container">
-                <h2>SiP Design Process & Capabilities</h2>
+                <h2>Fabrication Process Overview</h2>
                 <div class="swiper tabslidersec ">
                     <div class="swiper-wrapper">
                         <!-- slide 1 -->
@@ -1537,15 +1495,15 @@
                                 <div class="serviceimgsec"><img
                                         src="./images/servicesdetails-fl/sip-process-design/01.png" alt="" /></div>
                                 <div class="servicwcontentsec">
-                                    <h3>Define Architecture</h3>
+                                    <h3>Material Selection & Lamination</h3>
                                     <div>
-                                        <ul class="servicecontsec-items-list">
-                                            <li>Substrate Technology Identification</li>
-                                            <li>Component & Material Selection</li>
-                                            <li>Signal Breakout & Fanout Strategies</li>
-                                            <li>Prelayout PDN Design</li>
-                                            <li>Thermal / Mechanical Plan</li>
-                                        </ul>
+                                        <p>
+                                            Each substrate starts with careful material selection—BT, ABF, or ceramic
+                                            bases tailored for electrical, thermal, and mechanical needs. Sophisticated
+                                            lamination controls produce uniform core thickness and optimal dielectric
+                                            properties, forming the foundation for reliable, high-density interconnects
+                                            in complex stack-ups.
+                                        </p>
                                     </div>
 
                                 </div>
@@ -1557,14 +1515,15 @@
                                 <div class="serviceimgsec"><img
                                         src="./images/servicesdetails-fl/sip-process-design/02.png" alt="" /></div>
                                 <div class="servicwcontentsec">
-                                    <h3>Design Input Parameters</h3>
+                                    <h3>Microvia Formation & Drilling</h3>
                                     <div>
-                                        <ul class="servicecontsec-items-list">
-                                            <li>IO planning based on chip, package and board co-design</li>
-                                            <li>Netlist Creation with Schematics / RTL / CSV etc</li>
-                                            <li>Design rules & constraint setup</li>
-                                            <li>IO + Placement Optimization</li>
-                                        </ul>
+                                        <p>
+                                            Utilizing both mechanical and precision laser drilling, Silitronics produces
+                                            microvias at sub-15µm sizes for dense layouts. Advanced laser techniques
+                                            allow formation of blind/buried vias in multilayer boards, critical for HDI
+                                            and next-gen designs. Every drill cycle is monitored for registration and
+                                            via integrity to prevent signal loss.
+                                        </p>
                                     </div>
 
                                 </div>
@@ -1576,14 +1535,15 @@
                                 <div class="serviceimgsec"><img
                                         src="./images/servicesdetails-fl/sip-process-design/03.png" alt="" /></div>
                                 <div class="servicwcontentsec">
-                                    <h3>Package Layout</h3>
+                                    <h3>Circuit Patterning & Metallization</h3>
                                     <div>
-                                        <ul class="servicecontsec-items-list">
-                                            <li>Physical design using Cadence SiP, APD and Allegro</li>
-                                            <li>Layer stack-up definition</li>
-                                            <li>Component & IO Placement, Routing</li>
-                                            <li>DFM & DFA Design Rules</li>
-                                        </ul>
+                                        <p>
+                                            Dry film lamination and photolithography precisely create circuit features
+                                            down to 10/10 µm. High-quality copper plating ensures controlled impedance
+                                            and robust signal performance, while state-of-the-art etching selectively
+                                            removes unwanted metal. The result is consistently accurate trace geometry
+                                            in every substrate.
+                                        </p>
                                     </div>
 
                                 </div>
@@ -1595,17 +1555,15 @@
                                 <div class="serviceimgsec"><img
                                         src="./images/servicesdetails-fl/sip-process-design/04.png" alt="" /></div>
                                 <div class="servicwcontentsec">
-                                    <h3>Design Verification</h3>
+                                    <h3>Ceramic Processing (HTCC/LTCC)</h3>
                                     <div>
-                                        <ul class="servicecontsec-items-list">
-                                            <li>SI : Eye width/height, BER, Return loss, crosstalk</li>
-                                            <li>PI : Target Z, IR drop, Ripple Noise analysis</li>
-                                            <li>Thermal : Hot spots, Die temperature</li>
-                                            <li>Mechanical: Warpage, Stress</li>
-                                            <li>HFSS, Power SI, ADS</li>
-                                            <li>DRC</li>
-                                            <li>BOM Availability</li>
-                                        </ul>
+                                        <p>
+                                            Silitronics engineers ceramic substrates using tape lamination, screen
+                                            printing, and high-temperature sintering. These processes enable reliable
+                                            thick film metallization and precise conductor patterns for harsh
+                                            environment and RF applications. Meticulous polishing delivers perfect
+                                            surface finishes vital for photonics and sensing platforms.
+                                        </p>
                                     </div>
 
                                 </div>
@@ -1617,13 +1575,34 @@
                                 <div class="serviceimgsec"><img
                                         src="./images/servicesdetails-fl/sip-process-design/05.png" alt="" /></div>
                                 <div class="servicwcontentsec">
-                                    <h3>Release To Manufacturing</h3>
+                                    <h3>Surface Treatment & AOI</h3>
                                     <div>
-                                        <ul class="servicecontsec-items-list">
-                                            <li>Design for Assembly (DFA)</li>
-                                            <li>Design for Manufacturing (DFM)</li>
-                                            <li>Reliability and Cost</li>
-                                        </ul>
+                                        <p>
+                                            Substrates receive premium finishes including ENIG, ENEPIG and OSP,
+                                            supporting solderability and corrosion resistance. Automated Optical
+                                            Inspection (AOI) and electrical testing rigorously validate layer
+                                            registration and circuit continuity, guaranteeing process reliability and
+                                            readiness for advanced assembly.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 6 -->
+                        <div class="swiper-slide">
+                            <div class="servicecontsec">
+                                <div class="serviceimgsec"><img
+                                        src="./images/servicesdetails-fl/sip-process-design/06.png" alt="" /></div>
+                                <div class="servicwcontentsec">
+                                    <h3>Profiling, Cutting & Final QA</h3>
+                                    <div>
+                                        <p>
+                                            Each substrate is precisely profiled and cut to custom dimensions, undergoes
+                                            final inspection, and receives full process documentation to aid
+                                            traceability and support regulatory requirements. This end-to-end approach
+                                            eliminates hidden defects and assures high-yield downstream integration.
+                                        </p>
                                     </div>
 
                                 </div>
@@ -1636,21 +1615,20 @@
 
         <!-- Mobile only our service code -->
         <section class="sndcontsec-mobile only-mobile">
-            <h2>SiP Design Capability</h2>
+            <h2>Fabrication Process Overview</h2>
             <sl-carousel pagination class="sndcontsec-mobile-slider">
                 <sl-carousel-item class="sipmaincont">
                     <div class="divnumimg">
                         <img src="./images/servicesdetails-fl/sip-process-design/01.png" alt="">
                     </div>
                     <div class="divtextcont">
-                        <h3>Define Architecture</h3>
-                        <ul class="divtextcont-items">
-                            <li>Substrate Technology Identification</li>
-                            <li>Component & Material Selection</li>
-                            <li>Signal Breakout & Fanout Strategies</li>
-                            <li>Prelayout PDN Design</li>
-                            <li>Thermal / Mechanical Plan</li>
-                        </ul>
+                        <h3>Material Selection & Lamination</h3>
+                        <p>
+                            Each substrate starts with careful material selection—BT, ABF, or ceramic bases tailored for
+                            electrical, thermal, and mechanical needs. Sophisticated lamination controls produce uniform
+                            core thickness and optimal dielectric properties, forming the foundation for reliable,
+                            high-density interconnects in complex stack-ups.
+                        </p>
                     </div>
                 </sl-carousel-item>
                 <sl-carousel-item class="sipmaincont">
@@ -1658,13 +1636,13 @@
                         <img src="./images/servicesdetails-fl/sip-process-design/02.png" alt="">
                     </div>
                     <div class="divtextcont">
-                        <h3>Define Architecture</h3>
-                        <ul class="divtextcont-items">
-                            <li>IO planning based on chip, package and board co-design</li>
-                            <li>Netlist Creation with Schematics / RTL / CSV etc</li>
-                            <li>Design rules & constraint setup</li>
-                            <li>IO + Placement Optimization</li>
-                        </ul>
+                        <h3>Microvia Formation & Drilling</h3>
+                        <p>
+                            Utilizing both mechanical and precision laser drilling, Silitronics produces microvias at
+                            sub-15µm sizes for dense layouts. Advanced laser techniques allow formation of blind/buried
+                            vias in multilayer boards, critical for HDI and next-gen designs. Every drill cycle is
+                            monitored for registration and via integrity to prevent signal loss.
+                        </p>
                     </div>
                 </sl-carousel-item>
                 <sl-carousel-item class="sipmaincont">
@@ -1673,12 +1651,12 @@
                     </div>
                     <div class="divtextcont">
                         <h3>Define Architecture</h3>
-                        <ul class="divtextcont-items">
-                            <li>Physical design using Cadence SiP, APD and Allegro</li>
-                            <li>Layer stack-up definition</li>
-                            <li>Component & IO Placement, Routing</li>
-                            <li>DFM & DFA Design Rules</li>
-                        </ul>
+                        <p>
+                            Dry film lamination and photolithography precisely create circuit features down to 10/10 µm.
+                            High-quality copper plating ensures controlled impedance and robust signal performance,
+                            while state-of-the-art etching selectively removes unwanted metal. The result is
+                            consistently accurate trace geometry in every substrate. 
+                        </p>
                     </div>
                 </sl-carousel-item>
                 <sl-carousel-item class="sipmaincont">
@@ -1686,16 +1664,13 @@
                         <img src="./images/servicesdetails-fl/sip-process-design/04.png" alt="">
                     </div>
                     <div class="divtextcont">
-                        <h3>Define Architecture</h3>
-                        <ul class="divtextcont-items">
-                            <li>SI : Eye width/height, BER, Return loss, crosstalk</li>
-                            <li>PI : Target Z, IR drop, Ripple Noise analysis</li>
-                            <li>Thermal : Hot spots, Die temperature</li>
-                            <li>Mechanical: Warpage, Stress</li>
-                            <li>HFSS, Power SI, ADS</li>
-                            <li>DRC</li>
-                            <li>BOM Availability</li>
-                        </ul>
+                        <h3>Surface Treatment & AOI</h3>
+                        <p>
+                            Substrates receive premium finishes including ENIG, ENEPIG and OSP, supporting solderability
+                            and corrosion resistance. Automated Optical Inspection (AOI) and electrical testing
+                            rigorously validate layer registration and circuit continuity, guaranteeing process
+                            reliability and readiness for advanced assembly.
+                        </p>
                     </div>
                 </sl-carousel-item>
                 <sl-carousel-item class="sipmaincont">
@@ -1703,12 +1678,27 @@
                         <img src="./images/servicesdetails-fl/sip-process-design/05.png" alt="">
                     </div>
                     <div class="divtextcont">
-                        <h3>Define Architecture</h3>
-                        <ul class="divtextcont-items">
-                            <li>Design for Assembly (DFA)</li>
-                            <li>Design for Manufacturing (DFM)</li>
-                            <li>Reliability and Cost</li>
-                        </ul>
+                        <h3>Profiling, Cutting & Final QA</h3>
+                        <p>
+                            Each substrate is precisely profiled and cut to custom dimensions, undergoes final
+                            inspection, and receives full process documentation to aid traceability and support
+                            regulatory requirements. This end-to-end approach eliminates hidden defects and assures
+                            high-yield downstream integration.
+                        </p>
+                    </div>
+                </sl-carousel-item>
+                <sl-carousel-item class="sipmaincont">
+                    <div class="divnumimg">
+                        <img src="./images/servicesdetails-fl/sip-process-design/06.png" alt="">
+                    </div>
+                    <div class="divtextcont">
+                        <h3>Profiling, Cutting & Final QA</h3>
+                        <p>
+                            Each substrate is precisely profiled and cut to custom dimensions, undergoes final
+                            inspection, and receives full process documentation to aid traceability and support
+                            regulatory requirements. This end-to-end approach eliminates hidden defects and assures
+                            high-yield downstream integration.
+                        </p>
                     </div>
                 </sl-carousel-item>
                 </sl-carousel-item>
@@ -1716,11 +1706,13 @@
 
         </div>
 
+
+
         <!-- ************* different items tabs section ************************ -->
-    
+
 
         <!-- Use this section only for mobile (wrap with media query if needed) -->
-            <!-- <div class="only-mobile">
+        <!-- <div class="only-mobile">
             <section class="services-section">
                 <div class="containers">
 
@@ -1827,46 +1819,6 @@
         </div> -->
         <!-- ************* different items tabs section ************************ -->
 
-        <!-- Silitronics extensive Design section -->
-        <section id="silitronics-extensive-design">
-            <div class="container">
-                <h2>Silitronics has extensive Design Rules to guide customers when designing a new board, substrate or
-                    developing assembly processes.</h2>
-            </div>
-        </section>
-
-
-         <!-- Design rule section -->
-        <section id="design-rule-section">
-            <div class="container">
-                <h2>Design Rule</h2>
-            </div>
-           <div class="container">
-    <div class="card">
-      <img src="./images/servicesdetails-fl/design-rule/design-rule-one.png" alt="Ceramic substrate top layer optimization" />
-      <div class="caption">Ceramic substrate top layer optimization</div>
-    </div>
-    <div class="card">
-      <img src="./images/servicesdetails-fl/design-rule/design-rule-two.png" alt="Flip chip ceramic LTCC package" />
-      <div class="caption">Flip chip ceramic LTCC package</div>
-    </div>
-    <div class="card">
-      <img src="./images/servicesdetails-fl/design-rule/design-rule-three.png" alt="PCB fab" />
-      <div class="caption">PCB fab</div>
-    </div>
-    <div class="card">
-      <img src="./images/servicesdetails-fl/design-rule/design-rule-four.png" alt="Etch thick film" />
-      <div class="caption">Etch thick film</div>
-    </div>
-    <div class="card">
-      <img src="./images/servicesdetails-fl/design-rule/design-rule-five.png" alt="Board stack up" />
-      <div class="caption">Board stack up</div>
-    </div>
-  </div>
-                
-        </section>
-
-            
         <div class=" only-desktop ">
             <section class="services-section ">
               
@@ -1876,28 +1828,22 @@
                             <a>
                                 <button class="tablinks tab-btn2 tablinks-active tech-box2 "
                                     onclick="openCity(event, 'Design')">
-                                    Design
+                                    Organic Build-Up Substrates
                                 </button>
                             </a>
                             <a>
                                 <button class="tablinks tab-btn2 tech-box2 " onclick="openCity(event, 'Fabrication')">
-                                    Fabrication
+                                    Ceramic Substrates
                                 </button>
                             </a>
                             <a>
                                 <button class="tablinks tab-btn2 tech-box2 " onclick="openCity(event, 'Dicing')">
-                                    Dicing
+                                    HDI & Fine-Pitch Substrate Design 
                                 </button>
                             </a>
                             <a>
                                 <button class="tablinks tab-btn2 tech-box2 " onclick="openCity(event, 'Assembly')">
-                                    Assembly
-                                </button>
-                            </a>
-                            <a>
-                                <button class="tablinks tab-btn2 tech-box2 "
-                                    onclick="openCity(event, 'SiliconPhotonics')">
-                                    Co-packaged optics
+                                    Rapid Prototyping & Volume Manufacturing 
                                 </button>
                             </a>
                         </div>
@@ -1905,23 +1851,15 @@
 
                     <div class="shape cardbox">
                         <div id="Design" class="tabcontent " style="display:block;">
-                            <div class="servicestabcontent-containers">
+                            <div class=" servicestabcontent-containers">
                                 <div>
-                                    <img src="./images/service/01s.png" alt="">
+                                    <img src="./images/fabrication-design/fabser-one.png" alt="">
                                 </div>
                                 <div class="box1align">
-                                    <p>Design</p>
-                                    <h2>Precision-Driven Design for​ Next-Gen Semiconductor & Photonic Packaging</h2>
-                                    <p>From concept to layout, our advanced design expertise ensures
-                                        seamless
-                                        integration of chips, substrates, and interconnects. We optimize signal
-                                        integrity,
-                                        power efficiency, and thermal performance to meet the demands of AI
-                                        accelerators,
-                                        quantum computing, and high-speed photonic systems. With deep engineering
-                                        insights,
-                                        we design scalable, high-reliability solutions for the future​</p>
-                                    <a href="./design.html" class="learnmore">LEARN MORE</a>
+                                    <!-- <p>Organic Build-Up Substrates</p> -->
+                                    <h2>Organic Build-Up Substrates</h2>
+                                    <p class="myp">High-speed multilayer build-up substrates with fine line/space, thin core, and embedded passives. Silitronics provides full customization for networking, AI, and medical platforms, ensuring superior signal integrity and thermal handling, from rapid prototyping to high-volume production.</p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -1929,20 +1867,13 @@
                         <div id="Fabrication" class="tabcontent">
                             <div class="servicestabcontent-containers">
                                 <div>
-                                    <img src="./images/service/05s.png" alt="">
+                                    <img src="./images/fabrication-design/fabser-two.png" alt="">
                                 </div>
                                 <div class="box1align">
-                                    <p>Fabrication</p>
-                                    <h2>Fabrication for Advanced​Semiconductor & Photonic Packaging</h2>
-                                    <p class="myp">Our state-of-the-art fabrication facility delivers high-precision
-                                        multi-layer substrates tailored for AI, HPC, and Silicon Photonics. With
-                                        expertise
-                                        in organic and ceramic substrates, fine-pitch interconnects, and high-density
-                                        integration, we ensure superior reliability, scalability, and manufacturing
-                                        excellence. From prototypes to high-volume production, we bring innovation to
-                                        life
-                                        with precision.​</p>
-                                    <a href="./servicesdetails.html" class="learnmore">LEARN MORE</a>
+                                    <!-- <p>Fabrication</p> -->
+                                    <h2>Ceramic Substrates(Etch Thick Film, HTCC, LTCC)</h2>
+                                    <p class="myp">Specializing in robust ceramics for wireless, sensor, and RF applications. Employing advanced tape lamination and metallization processes, Silitronics delivers ceramics with precise conductor layouts, superior environmental resilience, and polished surfaces for optimum device performance.</p>
+                                    <!-- <a href="./servicesdetails.html" class="learnmore">LEARN MORE</a> -->
                                 </div>
                             </div>
                         </div>
@@ -1953,13 +1884,10 @@
                                     <img src="./images/service/02s.png" alt="">
                                 </div>
                                 <div class="box1align">
-                                    <p>Dicing</p>
-                                    <h2>High-Precision Wafer Dicing</h2>
-                                    <p class="myp">We deliver advanced wafer dicing using precision blade and laser
-                                        technologies to ensure clean die separation with minimal chipping. Optimized for
-                                        high yield and low particle contamination, our dicing supports next-gen
-                                        semiconductor packaging and performance.​</p>
-                                    <a href="./servicesdetails.html" class="learnmore">LEARN MORE</a>
+                                    <!-- <p>HDI & Fine-Pitch Substrate Design</p> -->
+                                    <h2>HDI & Fine-Pitch Substrate Design</h2>
+                                    <p class="myp">State-of-the-art microvia, blind/buried via, and tightly controlled copper thickness enable next-gen integration for silicon photonics, SiP, and multichip modules. Designed for high reliability, superior SI/PI, and production scalability.</p>
+                                    <!-- <a href="./servicesdetails.html" class="learnmore">LEARN MORE</a> -->
                                 </div>
                             </div>
                         </div>
@@ -1969,17 +1897,10 @@
                                     <img src="./images/service/03s.png" alt="">
                                 </div>
                                 <div class="box1align">
-                                    <p>Assembly</p>
-                                    <h2>Seamless Assembly for High-Precision Semiconductor & Photonic Packaging</h2>
-                                    <p class="myp">Our cutting-edge assembly expertise ensures precise chip-to-package
-                                        integration with industry-leading sub-micron active alignment, high-density
-                                        interconnects, and heterogeneous integration. We specialize in complex optical
-                                        and
-                                        electronic assemblies for AI accelerators, 5G networks, and next-gen computing,
-                                        delivering high-reliability solutions that optimize performance and reduce time
-                                        to
-                                        market.​</p>
-                                    <a href="./servicesdetails.html" class="learnmore">LEARN MORE</a>
+                                    <!-- <p>Rapid Prototyping & Volume Manufacturing</p> -->
+                                    <h2>Rapid Prototyping & Volume Manufacturing</h2>
+                                    <p class="myp">Silitronics offers agile prototyping—delivering functional substrates fast—alongside robust volume manufacturing, maintaining process repeatability, high yield, and rigorous documentation from the first sample to full-scale deployment.</p>
+                                    <!-- <a href="./servicesdetails.html" class="learnmore">LEARN MORE</a> -->
                                 </div>
                             </div>
                         </div>
@@ -2015,27 +1936,25 @@
                  
                     <div class="only-mobile-button-group">
                         <button class="only-mobile-button tablinks-mobile active"
-                            onclick="openCityMobile(event, 'DesignMobile')">Design</button>
+                            onclick="openCityMobile(event, 'DesignMobile')">Organic Build-Up Substrates</button>
                         <button class="only-mobile-button tablinks-mobile"
-                            onclick="openCityMobile(event, 'FabricationMobile')">Fabrication</button>
+                            onclick="openCityMobile(event, 'FabricationMobile')">Ceramic Substrates</button>
                         <button class="only-mobile-button tablinks-mobile"
-                            onclick="openCityMobile(event, 'DicingMobile')">Dicing</button>
+                            onclick="openCityMobile(event, 'DicingMobile')">HDI & Fine-Pitch Substrate Design</button>
                         <button class="only-mobile-button tablinks-mobile"
-                            onclick="openCityMobile(event, 'AssemblyMobile')">Assembly</button>
-                        <button class="only-mobile-button tablinks-mobile"
-                            onclick="openCityMobile(event, 'SiliconPhotonicsMobile')">Co-packaged optics</button>
+                            onclick="openCityMobile(event, 'AssemblyMobile')">Rapid Prototyping & Volume Manufacturing</button>
                     </div>
 
                      
                     <div class="mobilebox">
                         <div id="DesignMobile" class="tabcontent-mobile" style="display: block;">
                             <div class="servicestabcontent-containersM">
-                                <div><img src="./images/service/01s.png" alt=""></div>
+                                <div><img src="./images/fabrication-design/fabser-one.png" alt=""></div>
                                 <div class="mobilealign">
-                                    <p>Design</p>
-                                    <h2>Precision-Driven Design for​ Next-Gen Semiconductor & Photonic Packaging</h2>
-                                    <p class="mypM">From concept to layout, our advanced design expertise ensures seamless integration of chips, substrates, and interconnects. We optimize signal integrity, power efficiency, and thermal performance to meet the demands of AI accelerators, quantum computing, and high-speed photonic systems. With deep engineering insights, we design scalable, high-reliability solutions for the future.​</p>
-                                 <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                    <!-- <p>Design</p> -->
+                                    <h2>Organic Build-Up Substrates</h2>
+                                    <p class="mypM">High-speed multilayer build-up substrates with fine line/space, thin core, and embedded passives. Silitronics provides full customization for networking, AI, and medical platforms, ensuring superior signal integrity and thermal handling, from rapid prototyping to high-volume production.</p>
+                                 <!-- <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a> -->
                                 </div>
                             </div>
                         </div>
@@ -2044,10 +1963,10 @@
                             <div class="servicestabcontent-containersM">
                                 <div><img src="./images/service/05s.png" alt=""></div>
                                 <div class="mobilealign">
-                                    <p>Fabrication</p>
-                                    <h2 class="mb-2">Fabrication for Advanced​ Semiconductor & Photonic Packaging</h2>
-                                    <p class="mypM">Our state-of-the-art fabrication facility delivers high-precision multi-layer substrates tailored for AI, HPC, and Silicon Photonics. With expertise in organic and ceramic substrates, fine-pitch interconnects, and high-density integration, we ensure superior reliability, scalability, and manufacturing excellence. From prototypes to high-volume production, we bring innovation to life with precision.​</p>
-                                    <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                    <!-- <p>Fabrication</p> -->
+                                    <h2>Ceramic Substrates (Etch Thick Film, HTCC, LTCC)</h2>
+                                    <p class="mypM">Our state-of-the-art fabrication facility delivers high-precision multi-layer substrates tailored for AI, HPC, and Silicon Photonics. With expertise in organic and ceramic substrates, fine-pitch interconnects, and high-density integration, we ensure superior reliability, scalability, and manufacturing excellence. From prototypes to high-volume production, we bring innovation to life with precision.</p>
+                                    <!-- <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a> -->
                                 </div>
                             </div>
                         </div>
@@ -2058,8 +1977,8 @@
                                 <div class="mobilealign">
                                     <p>Dicing</p>
                                     <h2>High-Precision Wafer Dicing</h2>
-                                    <p class="mypM">We deliver advanced wafer dicing using precision blade and laser technologies to ensure clean die separation with minimal chipping. Optimized for high yield and low particle contamination, our dicing supports next-gen semiconductor packaging and performance.</p>
-                                   <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                    <p class="mypM">Specializing in robust ceramics for wireless, sensor, and RF applications. Employing advanced tape lamination and metallization processes, Silitronics delivers ceramics with precise conductor layouts, superior environmental resilience, and polished surfaces for optimum device performance.</p>
+                                   <!-- <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a> -->
                                 </div>
                             </div>
                         </div>
@@ -2068,10 +1987,10 @@
                             <div class="servicestabcontent-containersM">
                                 <div><img src="./images/service/03s.png" alt=""></div>
                                 <div class="mobilealign">
-                                    <p>Assembly</p>
-                                    <h2>Seamless Assembly for High-Precision Packaging</h2>
-                                    <p class="mypM">Our cutting-edge assembly expertise ensures precise chip-to-package integration with industry-leading sub-micron active alignment, high-density interconnects, and heterogeneous integration. We specialize in complex optical and electronic assemblies for AI accelerators, 5G networks, and next-gen computing, delivering high-reliability solutions that optimize performance and reduce time to market.​</p>
-                                  <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                    <!-- <p>Assembly</p> -->
+                                    <h2>HDI & Fine-Pitch Substrate Design</h2>
+                                    <p class="mypM">State-of-the-art microvia, blind/buried via, and tightly controlled copper thickness enable next-gen integration for silicon photonics, SiP, and multichip modules. Designed for high reliability, superior SI/PI, and production scalability.</p>
+                                  <!-- <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a> -->
                                 </div>
                             </div>
                         </div>
@@ -2080,10 +1999,10 @@
                             <div class="servicestabcontent-containersM">
                                 <div><img src="./images/service/04s.png" alt=""></div>
                                 <div class="mobilealign">
-                                    <p>Silicon Photonics​</p>
-                                    <h2>Powering the Future at the Speed of Light with Photonics</h2>
-                                    <p class="mypM">Silicon Photonics is transforming high-speed computing, AI clusters, and next-gen data transfer. Our expertise in sub-micron active alignment, optical integration, and high-bandwidth packaging ensures low-latency, energy-efficient performance. From LiDAR to AI-driven interconnects, we deliver cutting-edge photonics solutions that push the limits of speed, scalability, and efficiency.​</p>
-                                   <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                    <!-- <p>Silicon Photonics​</p> -->
+                                    <h2>Rapid Prototyping & Volume Manufacturing</h2>
+                                    <p class="mypM">Silitronics offers agile prototyping—delivering functional substrates fast—alongside robust volume manufacturing, maintaining process repeatability, high yield, and rigorous documentation from the first sample to full-scale deployment.</p>
+                                   <!-- <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a> -->
                                 </div>
                             </div>
                         </div>
