@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/slimmenu.min.css" rel="stylesheet" type="text/css" />
+    <!--<link href="css/carousel-vertical.min.css" rel="stylesheet" type="text/css" />-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>Silitronics</title>
+    <style>
+        /* Banner height adjustments for different screen sizes */
+        @media screen and (min-width: 1920px) {
+            .bannersec {
+                height: 100vh;
+                min-height: 1080px;
+            }
+        }
+
+        @media screen and (min-width: 1366px) and (max-width: 1919px) {
+            .bannersec {
+                height: 100vh;
+                min-height: 768px;
+            }
+        }
+
+        @media screen and (min-width: 1025px) and (max-width: 1365px) {
+            .bannersec {
+                height: 100vh;
+                min-height: 700px;
+            }
+        }
+
+        /* Desktop banner content positioning */
+        @media screen and (min-width: 1025px) {
+            .slidecontpart .container {
+                top: 50% !important;
+                transform: translateY(-35%) !important;
+            }
+        }
+
+        /* Fix horizontal scroll issues */
+        html,
+        body {
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .carousel-item {
+            display: none;
+            min-height: 200px;
+        }
+
+        .carousel-item.active {
+            display: block;
+        }
+
+        .carousel-btn {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            background: #7f63f4;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .carousel-btn:hover {
+            background: #5d47cc;
+        }
+
+        .midsndcontsec {
+            max-width: 320px;
+            width: 100%;
+            height: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 1;
+            margin: 0 auto;
+        }
+
+        .s-shape-img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* S-shape base image */
+        .s-shape-base {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            z-index: 1;
+        }
+
+        /* Dynamic overlay */
+        .s-shape-overlay {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            z-index: 2;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .s-shape-overlay.active {
+            opacity: 1;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            /* Flex-start ki jagah wapas center kiya */
+            position: relative;
+            z-index: 2;
+        }
+
+        .col-md-4-vr {
+            flex: 0 0 20%;
+            max-width: 20%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        .col-md-6-vr {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .col-auto-vr {
+            flex: 0 0 auto;
+            margin: 0 auto;
+            /* Wapas add kiya for natural centering in flex */
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .containervr {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+
+
+        .img-fluid {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Slide animations */
+        @keyframes slideFromTop {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideFromBottom {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .slide-from-top {
+            animation: slideFromTop 0.6s ease;
+        }
+
+        .slide-from-bottom {
+            animation: slideFromBottom 0.6s ease;
+        }
+
+        /* Bottom center controls */
+        .carousel-controls {
+            width: 100%;
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            z-index: 2;
+
+        }
+
+        .mb39 {
+            margin-bottom: 40px;
+        }
+
+
+        /* Right carousel items ke liye min-height */
+        #rightCarousel .carousel-item {
+            min-height: 520px;
+            /* S shape ki height ke barabar ya usse thoda zyada */
+
+
+
+        }
+        #app .tab button{
+            padding:10px 20px imo !important;
+        }
+
+        .lifestyle .appcontp{
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+        @media screen and (max-width: 768px) {
+            .mobile-card {
+                margin: 0 2px !important;
+}
+        }
+    </style>
+</head>
+
+<body>
+    <section class="headersec sticky only-desktop">
+        <div class="container">
+            <div class="logonnavsec">
+                <div class="logo ">
+                    <a href="index.html"><img src="images/logo.png" /></a>
+                </div>
+                <div class="navsec">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="application.html">Applications</a></li>
+                        <li><a href="facility.html">Facility</a></li>
+                        <!-- <li><a href="resource.html">Resources Hub</a></li> -->
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <!-- <li><a href="javascript:void(0);">Facility</a></li>
+                        <li><a href="javascript:void(0);">Resources hub</a></li>
+                        <li><a href="javascript:void(0);">About us</a></li>
+                        <li><a href="javascript:void(0);">Contact us</a></li> -->
+                    </ul>
+                </div>
+                <!-- <div class="mobnavsec">
+                    <ul class="slimmenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="javascript:void(0);">Services</a></li>
+                        <li><a href="javascript:void(0);">Applications</a></li>
+                        <li><a href="javascript:void(0);">Facility</a></li>
+                        <li><a href="javascript:void(0);">Resources hub</a></li>
+                        <li><a href="javascript:void(0);">About us</a></li>
+                        <li><a href="javascript:void(0);">Contact us</a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- mobile navbar -->
+
+
+    <div class="only-mobile sticky">
+        <div class="menu-header only-mobile sticky">
+            <img src="images/logo.png" alt="SILITRONICS Logo">
+            <div class="hamburger close-icon" onclick="toggleMenu(this)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="side-menu" id="menu">
+            <ul>
+
+              <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="service.html">SERVICES</a></li>
+                <li><a href="application.html">APPLICATIONS</a></li>
+                <li><a href="facility.html">FACILITY</a></li>
+                <!-- <li><a href="resource.html">RESOURCES HUB</a></li> -->
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+
+
+            <div class="social-icons">
+                <a href="https://youtube.com" target="_blank">
+                    <img src="images/youtube.svg" alt="YouTube">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="images/linkedin.svg" alt="LinkedIn">
+                </a>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    </div>
+
+    <main>
+
+
+
+
+        <section class="bannersec">
+            <div class="owl-carousel owl-theme slidersec">
+                <div class="item">
+                    <div class="slidecontpart">
+                        <div class="container">
+                            <h1>One-Stop Advanced <br> Semiconductor &</h1>
+                            <h1>Photonics (PIC) <br> Packaging Solutions</h1>
+                            <div class="sbbox">
+                                <p class="sbannertext">Expert solutions in Silicon Photonics, and Semiconductor system
+                                    and package design, fabrication, and assembly.​</p>
+                            </div>
+                            <a href="#contactsec" class="getintouchbut">Get in touch</a>
+                        </div>
+                    </div>
+                    <img src="images/application.png">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Mobile Banner Carousel -->
+        <section class="bannersec-mobile">
+            <div class="">
+                <div class="item">
+                    <div class="slidecontpart">
+                        <div class="container">
+                            <h1>One-Stop Advanced <br> Semiconductor &
+                           Photonics (PIC) Packaging Solutions</h1>
+                            <div class="sbbox">
+                                <p class="sbannertext">Expert solutions in Silicon Photonics, and Semiconductor system
+                                    and package design, fabrication, and assembly.​</p>
+                            </div>
+                            <a href="#contactsec" class="getintouchbut">Get in touch</a>
+                        </div>
+                    </div>
+                    <img src="images/mobile-banner/Application_Mobile_1.png">
+                </div>
+
+            </div>
+        </section>
+        <!-- second section application -->
+
+        <section class="sndcontsec myappback">
+            <div class="container">
+                <div class="lftrytlinepart">
+                    <h2>Industry Applications Overview</h2>
+                    <p class="appcontp">At Silitronics, we are powering the future of technology with advanced semiconductor
+                        packaging
+                        and integration. From self-driving cars to satellites, we are enabling our customers with
+                        customized SiP layouts, optimized processes and customized assembly<br> flows to enhance performance
+                        and efficiency. ​</p>
+
+                    <!-- Desktop Cards -->
+                    <div class="card-wrapper only-desktop">
+                        <div class="card">
+                            <img src="images/appcard1.png" alt="SiP Solutions Development" />
+                            <div class="card-content">
+                                <p>SiP Solutions<br>Development<p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/appcard2.png" alt="Package Optimization & Reliability" />
+                            <div class="card-content">
+                                <p>Package Optimization &<br>Reliability<p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/appcard3.png" alt="Optimizing Layout for Performance & Yield" />
+                            <div class="card-content">
+                                <p>Optimizing Layout for <br> Performance & Yield<p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/appcard4.png" alt="Assembly Precision" />
+                            <div class="card-content">
+                                <p>Assembly<br> Precision<p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Carousel -->
+                    <div class="only-mobile">
+                        <div class="swiper app-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="mobile-card">
+                                        <img src="images/appcard1.png" alt="SiP Solutions Development" />
+                                        <div class="mobile-card-text">
+                                            <p>SiP Solutions Development</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="mobile-card">
+                                        <img src="images/appcard2.png" alt="Package Optimization & Reliability" />
+                                        <div class="mobile-card-text">
+                                            <p>Package Optimization & Reliability</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="mobile-card">
+                                        <img src="images/appcard3.png" alt="Optimizing Layout for Performance & Yield" />
+                                        <div class="mobile-card-text">
+                                            <p>Optimizing Layout for Performance & Yield</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="mobile-card">
+                                        <img src="images/appcard4.png" alt="Assembly Precision" />
+                                        <div class="mobile-card-text">
+                                            <p>Assembly Precision</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+
+                    <!-- <div class="card-wrapper">
+  <div class="card-container">
+    <div class="card">
+      <img src="images/appcard1.png" alt="Main Image" />
+      <p>SiP Solutions<br>Development</p>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="images/appcard1.png" alt="Main Image" />
+      <p>Package Optimization<br>& Reliability</p>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="images/appcard1.png" alt="Main Image" />
+      <p>Optimizing Layout<br>for Performance & Yield</p>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="images/appcard1.png" alt="Main Image" />
+      <p>Assembly<br>Precision</p>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+                </div>
+            </div>
+
+        </section>
+
+
+            <!-- in js line line 489 to 512 its js -->
+        <div class=" only-desktop ">
+            <section class="application-section appsndcontsec" id="application-white-section">
+                <!-- <div class="services-sectiontabs"> -->
+                <div class=" containers desktop ">
+                    <h2>Our Growing Impact</h2>
+                    <p class="">Silitronics is empowering innovators with IP generation-focused packaging solutions that accelerate growth, safeguard ideas, and enable scalability.​</p>
+                    <div class="rows" id="app">
+                        <div class="tab button dskbtn" id="app-tab-buttons">
+
+                             <a>
+                                <button class="industry-tablinks tab-btn2 tech-box2"
+                                    onclick="industryTabOpen(event, 'Medical')">
+                                    Medical
+                                </button>
+                            </a>
+                            <a>
+                                <button class="industry-tablinks tab-btn2 tech-box2"
+                                    onclick="industryTabOpen(event, 'SiliconPhotonics')">
+                                    Silicon Photonics
+                                </button>
+                            </a>
+                            <a>
+                                <button class="industry-tablinks tab-btn2 tech-box2"
+                                    onclick="industryTabOpen(event, 'LiDAR')">
+                                    LiDAR
+                                </button>
+                            </a>
+                            <a>
+                                <button class="industry-tablinks tab-btn2 tech-box2"
+                                    onclick="industryTabOpen(event, 'IoT')">
+                                    IoT
+                                </button>
+                            </a>
+                            <a>
+                                <button class="industry-tablinks tab-btn2 tech-box2"
+                                    onclick="industryTabOpen(event, 'ARVR')">
+                                    AR/VR
+                                </button>
+                            </a>
+                            
+                            <a>
+                                <button class="industry-tablinks tab-btn2 tech-box2"
+                                    onclick="industryTabOpen(event, 'Computing')">
+                                    Computing
+                                </button>
+                            </a>
+                            
+                            <a>
+                                <button class="industry-tablinks tab-btn2 tech-box2"
+                                    onclick="industryTabOpen(event, 'Defense')">
+                                    Defense
+                                </button>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="shape cardbox">
+                        <div id="SiliconPhotonics" class="tabcontent " style="display:block;">
+                            <div class=" servicestabcontent-containers">
+                                <div>
+                                    <img src="./images/applicationtab1.png" alt="">
+                                </div>
+                                <div class="box1align">
+
+
+                                    <ul class="myappul">
+                                        <li>Enable high-speed data transmission for data centers and telecommunications.
+                                        </li>
+                                        <li>Efficient coupling of optical and electronic components.​</li>
+                                        <li>Miniaturization of photonic integrated circuits (PICs) for compact,
+                                            high-performance devices.​</li>
+                                    </ul>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="LiDAR" class="tabcontent">
+                            <div class="servicestabcontent-containers">
+                                <div>
+                                    <img src="./images/applicationtab2.png" alt="">
+                                </div>
+                                <div class="box1align">
+                                    <ul class="myappul">
+                                        <li>Enable robust and compact LiDAR modules.</li>
+                                        <li>Improve thermal management for high-power laser diodes.​</li>
+                                        <li>Enhance signal integrity and reliability in harsh environments.​​</li>
+                                    </ul>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="IoT" class="tabcontent">
+                            <div class="servicestabcontent-containers">
+                                <div>
+                                    <img src="./images/applicationtab3.png" alt="">
+                                </div>
+                                <div class="box1align">
+
+                                    <ul class="myappul">
+                                        <li>Enable miniaturization of sensors and communication modules.</li>
+                                        <li>Improve energy efficiency for battery-operated devices.​​</li>
+                                        <li>Support integration of photonics for high-speed data transfer in smart
+                                            cities and industrial IoT​​</li>
+                                    </ul>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ARVR" class="tabcontent">
+                            <div class="servicestabcontent-containers">
+                                <div>
+                                    <img src="./images/applicationtab4.png" alt="">
+                                </div>
+                                <div class="box1align">
+                                    <ul class="myappul">
+                                        <li>Enable compact, high-resolution micro displays.</li>
+                                        <li>Support high-speed data processing for real-time rendering.​​​</li>
+                                        <li>Improve power efficiency and thermal performance for wearable devices.​​​
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="AIML" class="tabcontent">
+                            <div class="servicestabcontent-containers">
+                                <div>
+                                    <img src="./images/applicationtab5.png" alt="">
+                                </div>
+                                <div class="box1align myclass">
+                                    <ul class="myappul">
+                                        <li>Enable heterogeneous integration of AI accelerators and memory.</li>
+                                        <li>Improve thermal performance for high-power AI chips.​</li>
+                                        <li>Support optical interconnects for faster data transfer in AI clusters​​​
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Computing" class="tabcontent">
+                            <div class="servicestabcontent-containers">
+                                <div>
+                                    <img src="./images/applicationtab6.png" alt="">
+                                </div>
+                                <div class="box1align myclass">
+                                    <ul class="myappul">
+                                        <li>Enable 2.5D/3D chip stacking for higher compute density.</li>
+                                        <li>Improve thermal management for high-power CPUs/GPUs.​​</li>
+                                        <li>Support optical interconnects for faster data transfer between components.​
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Medical" class="tabcontent">
+                            <div class="servicestabcontent-containers">
+                                <div>
+                                    <img src="./images/applicationtab7.png" alt="">
+                                </div>
+                                <div class="box1align myclass">
+                                    <ul class="myappul">
+                                        <li>Enable compact, high-resolution imaging sensors for endoscopes and MRI
+                                            machines.</li>
+                                        <li>Support wearable medical devices with low-power, high-performance chips.
+                                        </li>
+                                        <li>Improve reliability and miniaturization of implantable devices.​</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Defense" class="tabcontent">
+                            <div class="servicestabcontent-containers">
+                                <div>
+                                    <img src="./images/applicationtab8.png" alt="">
+                                </div>
+                                <div class="box1align myclass">
+                                    <ul class="myappul">
+                                        <li>Enable secure, high-speed optical communication systems.</li>
+                                        <li>Support advanced LiDAR and radar systems for surveillance and targeting.​
+                                        </li>
+                                        <li>Improve thermal and mechanical stability for harsh environments​</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Use this section only for mobile (wrap with media query if needed) -->
+        <div class="only-mobile">
+            <section class="services-section  appsndcontsec growing-impact-section">
+                <div class="containers">
+                    <h2>Our Growing Impact</h2>
+                    <p class="">Silitronics is empowering innovators with IP generation-focused packaging solutions that accelerate growth, safeguard ideas, and enable scalability.​</p>
+                   
+
+                    <div class="only-mobile-button-group-app">
+                          <button class="only-mobile-button-app industry-tab-btn  active-app"
+                            onclick="openIndustryTabMobile(event, 'MedicalMobile')">Medical</button>
+                        <button class="only-mobile-button-app industry-tab-btn"
+                            onclick="openIndustryTabMobile(event, 'SiliconPhotonicsMobile')">Silicon Photonic</button>
+                        <button class="only-mobile-button-app industry-tab-btn"
+                            onclick="openIndustryTabMobile(event, 'LiDARMobile')">LiDAR</button>
+                        <button class="only-mobile-button-app industry-tab-btn"
+                            onclick="openIndustryTabMobile(event, 'IoTMobile')">IoT</button>
+                        <button class="only-mobile-button-app industry-tab-btn"
+                            onclick="openIndustryTabMobile(event, 'ARVRMobile')">AR/VR</button>
+                      
+                        <button class="only-mobile-button-app industry-tab-btn"
+                            onclick="openIndustryTabMobile(event, 'ComputingMobile')">Computing</button>
+
+                        <button class="only-mobile-button-app industry-tab-btn"
+                            onclick="openIndustryTabMobile(event, 'DefenseMobile')">Defense</button>
+                    </div>
+
+
+                    <!-- Mobile Tab Content -->
+                    <div class="mobilebox">
+                        <div id="SiliconPhotonicsMobile" class="industry-tab-content" style="display: block;">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/applicationtab1.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <ul class="myappul">
+                                        <li>Enable high-speed data transmission for data centers and telecommunications.
+                                        </li>
+                                        <li>Efficient coupling of optical and electronic components.​</li>
+                                        <li>Miniaturization of photonic integrated circuits (PICs) for compact,
+                                            high-performance devices.​</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="LiDARMobile" class="industry-tab-content">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/applicationtab2.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <ul class="myappul">
+                                        <li>Enable robust and compact LiDAR modules.</li>
+                                        <li>Improve thermal management for high-power laser diodes.​</li>
+                                        <li>Enhance signal integrity and reliability in harsh environments.​​</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="IoTMobile" class="industry-tab-content">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/applicationtab3.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <ul class="myappul">
+                                        <li>Enable miniaturization of sensors and communication modules.</li>
+                                        <li>Improve energy efficiency for battery-operated devices.​​</li>
+                                        <li>Support integration of photonics for high-speed data transfer in smart
+                                            cities and industrial IoT​​</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="ARVRMobile" class="industry-tab-content">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/applicationtab4.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <ul class="myappul">
+                                        <li>Enable compact, high-resolution micro displays.</li>
+                                        <li>Support high-speed data processing for real-time rendering.​​​</li>
+                                        <li>Improve power efficiency and thermal performance for wearable devices.​​​
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="AIMLMobile" class="industry-tab-content">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/applicationtab5.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <ul class="myappul">
+                                        <li>Enable heterogeneous integration of AI accelerators and memory.</li>
+                                        <li>Improve thermal performance for high-power AI chips.​</li>
+                                        <li>Support optical interconnects for faster data transfer in AI clusters​​​
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="ComputingMobile" class="industry-tab-content">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/applicationtab6.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <ul class="myappul">
+                                        <li>Enable 2.5D/3D chip stacking for higher compute density.</li>
+                                        <li>Improve thermal management for high-power CPUs/GPUs.​​</li>
+                                        <li>Support optical interconnects for faster data transfer between components.​
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="MedicalMobile" class="industry-tab-content">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/applicationtab7.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <ul class="myappul">
+                                        <li>Enable compact, high-resolution imaging sensors for endoscopes and MRI
+                                            machines.</li>
+                                        <li>Support wearable medical devices with low-power, high-performance chips.
+                                        </li>
+                                        <li>Improve reliability and miniaturization of implantable devices.​</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="DefenseMobile" class="industry-tab-content">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/applicationtab8.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <ul class="myappul">
+                                        <li>Enable secure, high-speed optical communication systems.</li>
+                                        <li>Support advanced LiDAR and radar systems for surveillance and targeting.​
+                                        </li>
+                                        <li>Improve thermal and mechanical stability for harsh environments​</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+        <!-- <section class="forthcontsec">
+            <div class="container">
+                <div class="casestudiessec">
+                    <h2>Case Studies and Whitepapers</h2>
+                    <div class="casestudycontsec">
+                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-01.jpg);">
+                            <div class="transparentbg">
+                                <div class="casestudycontpart">
+                                    <h3>Driving Innovation in LiDAR with High-Precision SiP Packaging​</h3>
+                                    <p>Flawless execution, rapid prototyping, and first-pass success for cutting-edge
+                                        automotive LiDAR technology.​</p>
+                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-02.jpg);">
+                            <div class="transparentbg">
+                                <div class="casestudycontpart">
+                                    <h3>Accelerating Innovation in 4K Live Streaming & Gaming Cameras
+                                    </h3>
+                                    <p>First-pass success, rapid prototyping, and precision execution for breakthrough
+                                        imaging technology.​</p>
+                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-03.jpg);">
+                            <div class="transparentbg">
+                                <div class="casestudycontpart">
+                                    <h3>High-Yield, High-Precision IC Packaging for 5G & RF Innovation
+                                        ​</h3>
+                                    <p>Reliable, flexible, and high-performance IC packaging solutions, ensuring
+                                        uninterrupted supply and exceptional quality.
+                                        ​</p>
+                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <!-- <section class="forthcontsec">
+            <div class="container">
+                <div class="casestudiessec">
+                    <h2>Case Studies and Whitepapers</h2>
+                    <div class="casestudycontsec">
+                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-01.jpg);">
+                            <div class="transparentbg">
+                                <div class="casestudycontpart">
+                                    <h3>Driving Innovation in LiDAR with High-Precision SiP Packaging​</h3>
+                                    <p>Flawless execution, rapid prototyping, and first-pass success for cutting-edge
+                                        automotive LiDAR technology.​</p>
+                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-02.jpg);">
+                            <div class="transparentbg">
+                                <div class="casestudycontpart">
+                                    <h3>Accelerating Innovation in 4K Live Streaming & Gaming Cameras
+                                    </h3>
+                                    <p>First-pass success, rapid prototyping, and precision execution for breakthrough
+                                        imaging technology.​</p>
+                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-03.jpg);">
+                            <div class="transparentbg">
+                                <div class="casestudycontpart">
+                                    <h3>High-Yield, High-Precision IC Packaging for 5G & RF Innovation
+                                        ​</h3>
+                                    <p>Reliable, flexible, and high-performance IC packaging solutions, ensuring
+                                        uninterrupted supply and exceptional quality.
+                                        ​</p>
+                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-04.jpg);">
+                            <div class="transparentbg">
+                                <div class="casestudycontpart">
+                                    <h3>Breaking the Bottleneck: Silicon Photonics and the Next Leap in High-Speed Data
+                                        Transfer
+                                    </h3>
+                                    <p>How Silicon Photonics is revolutionizing AI clusters, HPC, and next-gen
+                                        computing by overcoming electrical interconnect limitations.​</p>
+                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-05.jpg);">
+                            <div class="transparentbg">
+                                <div class="casestudycontpart">
+                                    <h3>Heterogeneous Integration: Unlocking Next-Gen Semiconductor Performance Beyond
+                                        Moore's Law​​</h3>
+                                    <p>How advanced packaging techniques like 2.5D, 3D IC, and Chiplet integration are
+                                        driving the semiconductor industry forward.
+                                        ​</p>
+                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-06.jpg);">
+                            <div class="transparentbg">
+                                <div class="casestudycontpart">
+                                    <h3>Sustainable Semiconductor Packaging: Reducing Power, Heat, and Waste in Next-Gen
+                                        Electronics
+                                        ​</h3>
+                                    <p>How eco-friendly materials, energy-efficient designs, and advanced photonics are
+                                        driving sustainability in semiconductor manufacturing.
+                                        ​</p>
+                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="fifthcontsec">
+            <div class="container">
+                <div class="contactsec" id="contactsec">
+                    <div class="lftrytlinepart">
+                        <div class="leftcontpanel">
+                            <h2>Get in touch</h2>
+                            <p><strong>Interested in our end-to-end advanced semiconductor and photonics (PIC) packaging
+                                    solutions?</strong>​</p>
+                            <p>&nbsp;</p>
+                            <p>Share your details for an expert connect.</p>
+                        </div>
+                        <div class="rightcontpanel">
+                            <form action="mail/sendmail.php" method="post">
+                                <div class="inputfieldwidth"><input type="text" name="name" placeholder="Name*"
+                                        class="inputfield"></div>
+                                <div class="inputfieldwidth"><input type="text" name="organization"
+                                        placeholder="Organization*" class="inputfield"></div>
+                                <div class="inputfieldwidth"><input type="tel" name="contact number"
+                                        placeholder="Contact number*" class="inputfield"></div>
+                                <div class="inputfieldwidth"><input type="email" name="email" placeholder="Email*"
+                                        class="inputfield"></div>
+                                <div class="inputfieldwidth"><textarea name="comments" class="textareafield"
+                                        placeholder="Comments"></textarea></div>
+                                <!-- <div class="inputfieldwidth"><input type="submit" name="submit" value="submit"
+                                        class="submitbut"></div> -->
+                                <button class="submitbut">SUBMIT</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <section class="footerbg">
+        <div class="topftrsec">
+            <div class="container">
+                <div class="topftrflexpart">
+                    <div class="topftrcolpart">
+                        <div class="ftrlogo"><img src="images/footer-logo.png"></div>
+                        <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics
+                            packaging–pushing the boundaries of design, fabrication, and assembly while driving
+                            sustainability.</p>
+                        <div class="ftrusa"><img src="images/Isolation_Mode.png"></div>
+                    </div>
+                    <div class="topftrcolpart">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="javascript:void(0);">Services</a></li>
+                            <li><a href="javascript:void(0);">Applications</a></li>
+                            <li><a href="javascript:void(0);">Facility</a></li>
+                            <li><a href="javascript:void(0);">Resources hub</a></li>
+                            <li><a href="javascript:void(0);">About us</a></li>
+                            <li><a href="javascript:void(0);">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="topftrcolpart">
+                        <div class="ftrmap"><img src="images/map.jpg"></div>
+                        <p>Silitronics Solutions Inc 2388 Walsh Avenue, Santa Clara, CA, 95051</p>
+                        <p>Email: sales@silitronics.com</p>
+                        <p>Phone: +1 408-954-8301,<br> +1 408-605-1148</p>
+                        <p class="social"><a href="#" class="ftrsocial"><img src="images/youtube.svg"></a>
+                            <a href="#" class="ftrsocial"><img src="images/linkedin.svg"></a>
+                        </p>
+                    </div>
+                    <div class="topftrcolpart">
+                        <a href="#" class="backtotop">back to top</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="botftrsec">
+            <div class="container">
+                <p>© 2025 Silitronics. All rights reserved.</p>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="footerbg only-desktop">
+        <div class="topftrsec">
+            <div class="container">
+                <div class="topftrflexpart">
+                    <div class="topftrcolpart">
+                        <div class="ftrlogo"><img src="images/footer-logo.png"></div>
+                        <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics
+                            packaging–pushing the boundaries of design, fabrication, and assembly while driving
+                            sustainability.</p>
+                        <div class="ftrusa"><img src="images/Isolation_Mode.png"></div>
+                    </div>
+                    <!-- here myful is footerulli -->
+                    <div class="topftrcolpart myful">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="javascript:void(0);">Services</a></li>
+                            <li><a href="javascript:void(0);">Applications</a></li>
+                            <li><a href="javascript:void(0);">Facility</a></li>
+                            <li><a href="javascript:void(0);">Resources hub</a></li>
+                            <li><a href="javascript:void(0);">About us</a></li>
+                            <li><a href="javascript:void(0);">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="topftrcolpart">
+                        <!-- <div class="ftrmap"><img src="images/map.jpg"></div> -->
+                        <p>Silitronics Solutions Inc 2388 Walsh Avenue, Santa Clara, CA, 95051</p>
+                        <p>Email: sales@silitronics.com</p>
+                        <p>Phone: +1 408-954-8301,<br> +1 408-605-1148</p>
+                        <p class="social"><a href="#" class="ftrsocial"><img src="images/youtube.svg"></a>
+                            <a href="#" class="ftrsocial"><img src="images/linkedin.svg"></a>
+                        </p>
+                    </div>
+                    <div class="topftrcolpart">
+                        <div class="ftrmap"><img src="images/map.jpg"></div>
+                        <a href="#" class="backtotop">back to top</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="botftrsec">
+            <div class="container">
+                <p>© 2025 Silitronics. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- mobile footer -->
+
+    <section class="footerbg only-mobile">
+        <div class="topftrsec">
+            <div class="container">
+                <div class="topftrflexpart">
+                    <div class="topftrcolpart">
+                        <div class="ftrlogo"><img src="images/footer-logo.png"></div>
+                        <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics
+                            packaging–pushing the boundaries of design, fabrication, and assembly while driving
+                            sustainability.</p>
+                        <div class="ftrusa"><img src="images/Isolation_Mode.png"></div>
+                    </div>
+                    <div class="topftrcolpart ">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="javascript:void(0);">Services</a></li>
+                            <li><a href="javascript:void(0);">Applications</a></li>
+                            <li><a href="javascript:void(0);">Facility</a></li>
+                            <!-- <li><a href="javascript:void(0);">Resources hub</a></li> -->
+                            <li><a href="javascript:void(0);">About us</a></li>
+                            <li><a href="javascript:void(0);">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="topftrcolpart">
+                        <div class="ftrmap"><img src="images/map.jpg"></div>
+                        <p>Silitronics Solutions Inc 2388 Walsh Avenue, Santa Clara, CA, 95051</p>
+                        <p>Email: sales@silitronics.com</p>
+                        <p>Phone: +1 408-954-8301,<br> +1 408-605-1148</p>
+                        <p class="social"><a href="#" class="myicon"><img src="images/youtube.svg"></a>
+                            <a href="#" class=" myicon"><img src="images/linkedin.svg"></a>
+                        </p>
+                        <!-- <div class="social-icons">
+  <a href="https://youtube.com" target="_blank">
+    <img src="images/youtube.svg" alt="YouTube">
+  </a>
+  <a href="https://linkedin.com" target="_blank">
+    <img src="images/linkedin.svg" alt="LinkedIn">
+  </a>
+</div> -->
+
+
+                    </div>
+                    <div class="topftrcolpart">
+                        <!-- <div class="ftrmap"><img src="images/map.jpg"></div> -->
+                        <a href="#" class="backtotop">back to top</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="botftrsec mobilebottom">
+            <div class="container">
+                <p>© 2025 Silitronics. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+    <a href="#contactsec" class="fixed-getintouch"><img src="images/get.png" alt=""></a>
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/jquery.slimmenu.js" type="text/javascript"></script>
+    <script src="js/jquery.easing.min.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+    <script src="js/jquery.carousel-vertical.min.js" type="text/javascript"></script>
+    <!-- Carousel Initialization -->
+
+    <script>
+        $(document).ready(function () {
+            // Desktop carousel
+            $(".slidersec").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 5000
+            });
+
+            // Mobile carousel
+            $(".slidersec-mobile").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 5000
+            });
+        });
+
+    </script>
+
+
+
+    <!-- Correct JavaScript -->
+    <script>
+        let currentIndex = 0;
+        const overlays = document.querySelectorAll('.s-shape-overlay');
+
+        function changeSlide(direction) {
+            const leftSlides = document.querySelectorAll('#leftCarousel .carousel-item');
+            const rightSlides = document.querySelectorAll('#rightCarousel .carousel-item');
+
+            // Hide current elements
+            leftSlides[currentIndex].classList.remove('active', 'slide-from-top', 'slide-from-bottom');
+            rightSlides[currentIndex].classList.remove('active', 'slide-from-top', 'slide-from-bottom');
+            overlays[currentIndex].classList.remove('active');
+
+            // Update index
+            currentIndex = (currentIndex + direction + leftSlides.length) % leftSlides.length;
+
+            // Set animation
+            const animClass = direction === 1 ? 'slide-from-top' : 'slide-from-bottom';
+
+            // Show new elements
+            leftSlides[currentIndex].classList.add('active', animClass);
+            rightSlides[currentIndex].classList.add('active', animClass);
+            overlays[currentIndex].classList.add('active');
+        }
+    </script>
+    <script src="js/jquery.matchHeight.js" type="text/javascript"></script>
+    <script src="js/autoheight.js" type="text/javascript"></script>
+    <script src="./js/custom.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Application Mobile Carousel -->
+    <script>
+        $(document).ready(function() {
+            // Initialize Swiper for mobile application cards
+            const appSwiper = new Swiper('.app-swiper', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                centeredSlides: true,
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                touchRatio: 1,
+                grabCursor: true,
+                on: {
+                    slideChange: function () {
+                        // Update dots
+                        const activeIndex = this.realIndex;
+                        $('.mobile-dots .dot').removeClass('active');
+                        $('.mobile-dots .dot').eq(activeIndex).addClass('active');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

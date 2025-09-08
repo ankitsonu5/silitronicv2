@@ -1,0 +1,1320 @@
+@media screen and (max-width: 1599px) {
+
+body
+{
+    font-size: 20px;
+    line-height: 30px;
+}
+.container
+{
+    max-width: 1200px;
+}
+.slidecontpart h1, .innerbannersec h1
+{
+    font-size: 36px;
+    line-height: 43px;
+}
+.sglecolpart h2
+{
+    font-size: 20px;
+    line-height: 25px;
+}
+.fstcontsec h3
+{
+    font-size: 27px;
+    line-height: 35px;
+}
+.tabsec ul li
+{
+    font-size: 22px;
+}
+.tabsec ul li a
+{
+    padding: 45px 15px;
+}
+.customervoicesec h2, .casestudiessec h2, .leftcontpanel h2, .fstservicecontsec h2, .fstappcontsec h2, .sndapppgcontflex h2, .fstfacilitysecbtmdiv h2, .sndfacilitycontsec h2, .thrdfacilitycontsec h2, .topfacilitysec h2, .midfacilitysec h2, .thrdabtcontsec h2, .frthabtcontsec h2, .fifthabtcontsec h2, .sixthhabtcontsec h2, .lftrytlinepart h4, .sndcontsec h2
+{
+    font-size: 60px;
+    line-height: 75px;
+}
+.hovercustomersec p
+{
+    font-size: 15px;
+    line-height: 24px;
+}
+.casestudycontsec
+{
+    gap: 30px;
+}
+.sglecasestudycontsec
+{
+    max-width: 31%;
+    flex: 0 0 31%;
+}
+.casestudycontpart
+{
+    bottom: -150px;
+}
+.resourcefiltersec p
+{
+    font-size: 18px;
+}
+.topfacilitybg
+{
+    width: 320px;
+    height: 220px;
+}
+.topfacilitybg img
+{
+    max-width: 200px;
+}
+.sgletopfacilitysec
+{
+    margin-top: 30px;
+}
+.sgletopfacilitysec h3
+{
+    font-size: 18px;
+}
+.abticon img
+{
+    max-width: 35px;
+}
+.botfacilitypart h4
+{
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+.botfacilitypart p
+{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+}
+
+@media screen and (max-width: 1024px) {
+
+.navsec ul li
+{
+    margin-left: 15px;
+}
+.bannersec
+{
+    height: 600px;
+}
+.topfacilitybg
+{
+    width: 290px;
+    height: 190px;
+}
+.verticalcarouselsec
+{
+    height: calc(100vh - 400px);
+}
+.slidecontpart p
+{
+    padding-top: 28px;
+}
+a.getintouchbut
+{
+    margin-top: 38px;
+}
+
+}
+
+@media screen and (max-width: 991px) {
+
+body
+{
+    font-size: 16px;
+    line-height: 26px;
+}
+.navsec
+{
+    display: none;
+}
+.mobnavsec
+{
+    display: block;
+    width: 100%;
+}
+.headersec
+{
+    padding: 15px 0;
+}
+.slidecontpart h1
+{
+    font-size: 30px;
+    line-height: 38px;
+}
+a.getintouchbut
+{
+    font-size: 20px;
+}
+.fstcontsec, .tabcontsec, .thrdcontsec, .fstservicecontsec, .sndservicecontsec, .resourcehubcontsec, .contactpgalignpad, .fstappcontsec, .contactpgalignpad, .fstfacilitycontsec, .sndfacilitycontsec, .thrdfacilitycontsec, .sndcontsec, .forthcontsec, .fifthcontsec
+{
+    padding: 40px 0;
+}
+.carouselsec
+{
+    padding-bottom: 70px;
+}
+.tabsec ul li {
+    font-size: 17px;
+}
+.tabcontsec h2
+{
+    font-size: 32px;
+    line-height: 39px;
+}
+.customervoicesec h2, .casestudiessec h2, .leftcontpanel h2, .lftrytlinepart h4, .sndcontsec h2
+{
+    font-size: 50px;
+    line-height: 65px;
+    padding-bottom: 40px;
+}
+.resourcetabnfiltersec, .mapimgsec, .fstfacilitysecbtmdiv, .midfacilitysec, .thrdabtcontsec, .frthabtcontsec, .fifthabtcontsec, .sixthhabtcontsec
+{
+    margin-top: 70px;
+}
+.sglecasestudycontsec {
+    max-width: 47.5%;
+    flex: 0 0 47.5%;
+}
+.topftrcolpart
+{
+    flex:0 0 50%;
+    max-width: 50%;
+}
+.bannersec
+{
+    height: 500px;
+}
+.rightsndservicepart h2
+{
+    font-size: 25px;
+    line-height: normal;
+    padding-bottom: 5px;
+}
+.rightsndservicepart h3
+{
+    font-size: 30px;
+    line-height: 35px;
+    padding-bottom: 10px;
+}
+.resourcefiltersec p
+{
+    font-size: 13px;
+}
+.labeltxt
+{
+    font-size: 20px;
+}
+.facilitycolpart
+{
+    margin-top: 30px;
+}
+.sglecolpart, .sglefacilitysec, .sgletopfacilitysec
+{
+    flex:0 0 50%;
+    max-width: 50%;
+    margin-top: 40px;
+}
+.sglefacilitysec:last-child
+{
+    flex:0 0 100%;
+    max-width: 100%;
+}
+.facilitycolpart .sglecolpart:nth-child(3)
+{
+    background-image: none;
+}
+.sglemidfacilitysec p
+{
+    font-size: 18px;
+    line-height: 26px;
+}
+.lftabttabsec ul li
+{
+    font-size: 22px;
+}
+.topabtcontsec
+{
+    padding-top: 70px;
+}
+.sndapppgflexwrap ul li
+{
+    font-size: 18px;
+}
+.midflexwrapcontsec
+{
+    padding: 30px;
+}
+.sgletabviewcontsec
+{
+    max-width: 50%;
+    flex: 0 0 50%;
+}
+
+}
+
+@media (max-width: 768px) {
+    .bannersec {
+      display: none;
+    }
+
+    .bannersec-mobile {
+      display: block;
+    }
+    .bannersec-mobile .slidecontpart h1 {
+        font-size: 1.25rem; /* ~20px */
+        line-height: 1.4;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #ffffff;
+        margin-bottom: 10px;
+        padding-right: 160px;
+    }
+.thrdabtcontsec p {
+    margin-top: 48px !important;
+}
+    .bannersec-mobile .slidecontpart p {
+        font-size: 0.9rem; /* ~14.4px */
+        line-height: 1.5;
+        color: #cccccc;
+        margin-bottom: 15px;
+    }
+
+    .bannersec-mobile .getintouchbut {
+        font-size: 0.625rem; /* ~10px */
+        padding: 8px 16px;
+        background-color: #8163ff;
+        color: white;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-weight: 600;
+        display: inline-block;
+        line-height: 1.2;
+        width: auto;
+        margin-top: 15px;
+    }
+
+    /* Mobile styles for application section */
+    .appsndcontsec h2 {
+        font-size: 32px !important;
+        line-height: 38px !important;
+        padding: 0 0 30px 0 !important;
+    }
+
+    .appsndcontsec p {
+        width: 100% !important;
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        padding: 0 20px !important;
+        margin: 0 auto 30px auto !important;
+    }
+
+    /* Fix UL list styling for mobile */
+    .myappul {
+        margin-left: 20px !important;
+        padding-left: 0 !important;
+    }
+
+    .myappul li {
+        list-style-type: disc !important;
+        font-size: 14px !important;
+        line-height: 22px !important;
+        padding-bottom: 8px !important;
+        margin-left: 0 !important;
+        color: #333 !important;
+    }
+
+    /* Mobile Facility Hero Section Styles */
+    .facility-hero-mobile-section {
+        width: 100%;
+        padding: 40px 0;
+        /* background: linear-gradient(135deg, #E8E3FF 0%, #F3F0FF 50%, #E8E3FF 100%); */
+        overflow: hidden;
+    }
+
+    .facility-mobile-container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .facility-mobile-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .facility-mobile-heading {
+        font-size: 24px !important;
+        line-height: 30px !important;
+        font-weight: bold;
+        font-family: 'Titillium Web';
+        background: linear-gradient(90deg, #050EF1, #FD0200);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+    .facility-mobile-description-primary,
+    .facility-mobile-description-secondary {
+        font-size: 14px !important;
+        line-height: 22px !important;
+        font-family: 'Spline Sans Mono';
+        color: #333;
+        margin-bottom: 15px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .facility-mobile-slider {
+        width: 100%;
+        margin-top: 30px;
+        position: relative;
+    }
+
+    .facility-mobile-slider-container {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .facility-mobile-slide-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .facility-mobile-slide-item img {
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+        object-fit: cover;
+       
+    }
+
+    .facility-mobile-slider-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        gap: 12px;
+    }
+
+    .mobile-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid #8b5cf6;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .mobile-dot.active {
+        background-color: #8b5cf6;;
+        transform: scale(1.2);
+    }
+
+    .mobile-dot:hover {
+        background-color: #8b5cf6;
+    }
+
+    /* Mobile Facility Statistics Section - Normal Background with Dots */
+    .facilityback .mobileview {
+        padding: 0 20px;
+    }
+
+    .facilityback .foursegmentsec .item {
+        text-align: center;
+    }
+
+    .facilityback .foursegmentsec .sglecolpart {
+        background: none !important;
+        padding: 20px 15px;
+        color: white;
+    }
+
+    .facilityback .foursegmentsec .sglecolpart h1 {
+        font-size: 48px !important;
+        line-height: 55px !important;
+        color: white !important;
+        font-family: 'Titillium Web';
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .facilityback .foursegmentsec .sglecolpart h1 span {
+        font-size: 24px !important;
+        color: rgba(255, 255, 255, 0.9) !important;
+    }
+
+    .facilityback .foursegmentsec .sglecolpart p {
+        font-size: 14px !important;
+        line-height: 20px !important;
+        color: rgba(255, 255, 255, 0.95) !important;
+        font-family: 'Spline Sans Mono';
+        margin: 0;
+    }
+
+    /* Hide arrows and show dots for facility section */
+    .facilityback .foursegmentsec .owl-nav {
+        display: none !important;
+    }
+
+    .facilityback .foursegmentsec .owl-dots {
+        display: block !important;
+        text-align: center !important;
+        margin-top: 30px !important;
+        position: relative !important;
+        z-index: 10 !important;
+    }
+
+    .facilityback .foursegmentsec .owl-dot {
+        width: 8px !important;
+        height: 8px !important;
+        border-radius: 50% !important;
+        background-color: rgba(255, 255, 255, 0.4) !important;
+        margin: 0 4px !important;
+        display: inline-block !important;
+        transition: all 0.3s ease !important;
+        border: none !important;
+    }
+
+    .facilityback .foursegmentsec .owl-dot span {
+        width: 8px !important;
+        height: 8px !important;
+        border-radius: 50% !important;
+        background-color: rgba(255, 255, 255, 0.4) !important;
+        display: block !important;
+        margin: 0 !important;
+        border: none !important;
+    }
+
+    .facilityback .foursegmentsec .owl-dot.active,
+    .facilityback .foursegmentsec .owl-dot.active span {
+        background-color: white !important;
+        width: 10px !important;
+        height: 10px !important;
+    }
+
+    /* Mobile heading and text alignment */
+    .facilityback .lftrytlinepart h4 {
+        font-size: 32px !important;
+        line-height: 38px !important;
+        text-align: center !important;
+        color: white !important;
+        padding: 0 0 20px 0 !important;
+        margin-bottom: 20px !important;
+    }
+
+    .facilityback .lftrytlinepart p {
+        font-size: 16px !important;
+        line-height: 24px !important;
+        text-align: center !important;
+        color: white !important;
+        margin-bottom: 30px !important;
+        padding: 0 10px !important;
+    }
+
+    .bannersec-mobile .slidecontpart {
+        /* padding: 20px; */
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0.8), rgba(0, 0, 0, 0.9));
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .bannersec-mobile .item {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .bannersec-mobile .item img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+.innerbannersec
+{
+    padding: 300px 0 70px 0;
+}
+.innerbannercontsec
+{
+    max-width: 100%;
+}
+a.getintouchbut
+{
+    width: 152px;
+    line-height: 40px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+.tabcontsec a.getintouchbut
+{
+    margin-top: 25px;
+}
+.slidecontpart .container
+{
+    transform: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    /* top: 55%; */
+}
+/* for mobile text alignment - bottom positioning for consistent alignment */
+ #bannerText1 .container,
+ #bannerText2 .container,
+ #bannerText3 .container,
+ #bannerText4 .container,
+ #bannerText5 .container,
+ #bannerText6 .container {
+    position: absolute;
+    bottom: 10%;
+    top: auto;
+    transform: none;
+ }
+ 
+ /* #bannerText1 .container { bottom: 20%; } */
+  /* #bannerText2 .container { top: 45%; }
+  #bannerText3 .container { top: 43%; }
+  #bannerText4 .container { top: 46%; }
+  #bannerText5 .container { top: 63%; }
+  #bannerText6 .container { top: 65%; } */
+
+.slidecontpart h1
+{
+    font-size: 25px;
+    line-height: 32px;
+}
+.innerbannersec h1
+{
+    font-size: 25px;
+    line-height: 32px;
+    padding: 0 0 10px 0;
+}
+.slidecontpart p
+{
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 5px;
+}
+.fstsecforthcolpart
+{
+    margin: 30px 0 50px 0;
+}
+.sglecolpart
+{
+    width: 100%;
+    max-width: 100%;
+    background-image: none;
+    margin-top: 30px;
+    padding: 0;
+}
+.fstcontsec h3
+{
+    font-size: 22px;
+    line-height: 30px;
+}
+.customervoicesec h2, .casestudiessec h2, .leftcontpanel h2, .fstservicecontsec h2, .fstappcontsec h2, .sndapppgcontflex h2, .lftfacilitysec h2, .fstfacilitysecbtmdiv h2, .sndfacilitycontsec h2, .thrdfacilitycontsec h2, .topfacilitysec h2, .midfacilitysec h2, .thrdabtcontsec h2, .frthabtcontsec h2, .fifthabtcontsec h2, .sixthhabtcontsec h2, .lftrytlinepart h4, .sndcontsec h2
+{
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+}
+.fstservicecontsec h2
+{
+    padding-bottom: 30px;
+}
+.sglecasestudycontsec, .lftfacilitysec, .rytfacilitysec, .sgletopfacilitysec
+{
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+    height: 310px;
+}
+.casestudycontpart {
+    bottom: 0;
+    position: absolute;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 1;
+    height: auto;
+    max-height: 80px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+.casestudycontpart p,
+.casestudycontpart a {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.sglecasestudycontsec:hover .casestudycontpart {
+    max-height: 200px;
+}
+.sglecasestudycontsec:hover .casestudycontpart p,
+.sglecasestudycontsec:hover .casestudycontpart a {
+    opacity: 1;
+}
+.sglecasestudycontsec h3 {
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+}
+.sglecasestudycontsec p {
+    padding: 0 0 15px 0;
+    margin: 0;
+    font-size: 13px;
+    line-height: 18px;
+}
+.sglecasestudycontsec a.downloadusecasebut {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 35px;
+}
+.leftcontpanel, .rightcontpanel, .lftabttabsec, .rytabttabsec
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+}
+.fifthabtconttabsec
+{
+    gap: 30px;
+}
+.rightcontpanel
+{
+    margin-top: 30px;
+}
+/* Mobile footer layout - 3 columns stacked properly */
+.topftrcolpart:first-child
+{
+    /* Logo/description - full width on top */
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    padding: 20px 15px 15px 15px !important;
+    border-left: 0 !important;
+    border-bottom: 1px solid rgba(153,153,153,0.25) !important;
+    text-align: left !important;
+}
+.topftrcolpart:nth-child(2)
+{
+    /* Navigation links - left side */
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    padding: 15px 10px 15px 15px !important;
+    border-left: 0 !important;
+    width: 50% !important;
+}
+.topftrcolpart:nth-child(3)
+{
+    /* Contact info and map - right side */
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    padding: 15px 15px 15px 10px !important;
+    border-left: 1px solid rgba(153,153,153,0.25) !important;
+    width: 50% !important;
+}
+.topftrcolpart:last-child
+{
+    /* Hide back to top on mobile */
+    display: none !important;
+}
+/* Mobile footer navigation styling */
+.topftrcolpart ul li
+{
+    line-height: 28px !important;
+    font-size: 14px !important;
+}
+.topftrcolpart p
+{
+    font-size: 13px !important;
+    line-height: 18px !important;
+    margin-bottom: 8px !important;
+}
+/* Mobile logo section styling */
+.topftrcolpart:first-child .ftrlogo
+{
+    margin-bottom: 15px !important;
+    text-align: left !important;
+}
+.topftrcolpart:first-child .ftrlogo img
+{
+    max-width: 200px !important;
+    height: auto !important;
+}
+.topftrcolpart:first-child p
+{
+    font-size: 14px !important;
+    line-height: 20px !important;
+    margin-bottom: 15px !important;
+    text-align: left !important;
+}
+.topftrcolpart:first-child .ftrusa
+{
+    margin-top: 15px !important;
+    text-align: left !important;
+}
+.topftrcolpart:first-child .ftrusa img
+{
+    max-width: 80px !important;
+    height: auto !important;
+    border: 1px solid rgba(153,153,153,0.3) !important;
+    border-radius: 4px !important;
+}
+.ftrmap
+{
+    margin-bottom: 15px !important;
+}
+.ftrmap img
+{
+    max-width: 100% !important;
+    height: auto !important;
+}
+/* Mobile social media icons - Very small */
+.topftrcolpart:nth-child(3) .ftrsocial
+{
+    margin: 5px 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    height: auto !important;
+    min-height: auto !important;
+}
+.topftrcolpart:nth-child(3) .ftrsocial a
+{
+    display: inline-block !important;
+    margin-right: 6px !important;
+    padding: 4px !important;
+    line-height: 1 !important;
+    border: 1px solid rgba(153,153,153,0.4) !important;
+    border-radius: 3px !important;
+    background: rgba(255,255,255,0.1) !important;
+}
+.topftrcolpart:nth-child(3) .ftrsocial img
+{
+    width: 14px !important;
+    height: 14px !important;
+    max-width: 14px !important;
+    max-height: 14px !important;
+    display: block !important;
+}
+.ftrsocial
+{
+    margin: 5px 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    height: auto !important;
+    min-height: auto !important;
+}
+.ftrsocial img
+{
+    width: 12px !important;
+    height: 12px !important;
+    max-width: 12px !important;
+    max-height: 12px !important;
+    display: block !important;
+}
+.ftrsocial a
+{
+    display: inline-block !important;
+    margin-right: 6px !important;
+    padding: 4px !important;
+    line-height: 1 !important;
+    border: 1px solid rgba(153,153,153,0.4) !important;
+    border-radius: 3px !important;
+    background: rgba(255,255,255,0.1) !important;
+}
+/* Mobile bottom footer */
+.botftrsec
+{
+    text-align: left !important;
+    padding: 15px !important;
+    border-top: 1px solid rgba(153,153,153,0.25) !important;
+}
+.botftrsec p
+{
+    font-size: 12px !important;
+    margin: 0 !important;
+    text-align: left !important;
+}
+.tabsec ul li a
+{
+    padding: 30px 10px;
+}
+.desktopview
+{
+    display: none;
+}
+.mobileview
+{
+    display: block;
+}
+.foursegmentsec .owl-nav
+{
+    margin: 0 !important;
+}
+.foursegmentsec .owl-nav button
+{
+    margin: 0 !important;
+}
+.sglecolpart h2
+{
+    font-size: 15px;
+    line-height: 20px;
+}
+.fstsecforthcolpart
+{
+    /* overflow: hidden; */
+}
+.foursegmentsec button
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.foursegmentsec button:hover, .foursegmentsec button:focus
+{
+    background: transparent !important;
+}
+.foursegmentsec button span
+{
+    font-size: 30px;
+}
+.foursegmentsec button.owl-prev
+{
+    left: 0;
+}
+.foursegmentsec button.owl-next
+{
+    right: 0;
+}
+/* .submitbut
+{
+    width: 152px;
+    height: 40px;
+    font-size: 14px;
+} */
+.lftrytlinepart
+{
+    padding: 0 10px;
+}
+.sndserviceconttabsec ul
+{
+    text-align: center;
+    width: 100%;
+}
+.sndserviceconttabsec ul li
+{
+    font-size: 13px;
+    margin: 5px 0;
+    float: none;
+    display: inline-block;
+}
+.sndserviceconttabsec ul li a
+{
+    padding: 0 10px;
+    display: inline-block;
+}
+.sndserviceconttabsec
+{
+    margin-bottom: 30px;
+}
+.leftsndservicepart, .rightsndservicepart
+{
+    flex:0 0 100%;
+    max-width: 100%;
+    padding: 0;
+}
+.resourcesearchsec, .resourcefiltersec
+{
+    max-width: 100%;
+    flex:0 0 100%;
+}
+.labeltxt
+{
+    line-height: 50px;
+}
+.searchfield
+{
+    height: 40px;
+}
+.resourcefiltersec
+{
+    padding: 15px 0;
+    margin-top: 15px;
+}
+.sgleresourcecontsec, .sglefacilitysec, .sglemidfacilitysec
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.resourcecontdatasec
+{
+    padding-bottom: 20px;
+}
+a.whtedownloadusecasebut
+{
+    position: relative;
+    left: auto;
+    transform: none;
+    margin-top: 15px;
+}
+.sgleindustryappsec, .sglefrthabtsec
+{
+    margin-top: 30px;
+    flex: 0 0 50%;
+    /* max-width: 50%; */
+}
+.slidersec .sgleindustryappsec
+{
+    max-width: 100%;
+}
+.fstappcontsec .slidersec .owl-dots
+{
+    position: relative;
+    bottom: -20px;
+}
+.rytfacilitysec
+{
+    padding: 0;
+    margin-top: 40px;
+}
+.facilitycolpart .sglecolpart
+{
+    padding: 0 10px;
+}
+.thrdfacilitycontsec h2, .midfacilitysec h2
+{
+    padding: 0;
+}
+.sgleteamsec h3
+{
+    font-size: 32px;
+}
+.tabcontdatasec
+{
+    margin-top: 50px;
+    gap: 20px;
+}
+.tabcontdatasec div img
+{
+    max-width: 150px;
+}
+.midflexwrappanel
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    order: 1;
+}
+.lftflexwrappanel
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    order: 2;
+    padding: 0 10px;
+}
+.rytflexwrappanel
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    order: 3;
+    padding: 0 10px;
+}
+.sndapppgcontflex h2
+{
+    padding-bottom: 40px;
+}
+.desktopview
+{
+    display: none;
+}
+.sixthhabtcontsec ul li
+{
+    font-family: 'Titillium Web';
+    font-weight: bold;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+    background-image: url(../images/horizontal-divider.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin: 0;
+    display: block;
+    border: 0;
+    font-size: 22px;
+    padding: 0;
+}
+.sixthhabtcontsec ul li a
+{
+    padding: 15px 0;
+    display: block;
+}
+.sixthhabtcontsec ul li a:hover, .sixthhabtcontsec ul li a.active
+{
+    background: linear-gradient(to right, #000000 0%, #6159a5 50%, #000000 100%);
+    color: #fff;
+}
+.verticalcarouselsec {
+    height: 850px;
+}
+.sndcontsec .row {
+    align-items: self-start;
+}
+.lftsndcontsec, .rytsndcontsec
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.lftsndcontsec
+{
+    text-align: center;
+}
+.midsndcontsec
+{
+    display: none;
+}
+.cv-carousel .cv-nav
+{
+    display: none;
+}
+.rytsndcontsec
+{
+    background: url(../images/verline.png) no-repeat 15px top;
+    padding-left: 70px;
+}
+.serviceimgsec, .servicwcontentsec
+{
+    flex:0 0 100%;
+    max-width: 100%;
+}
+.servicwcontentsec
+{
+    padding: 30px 0 0;
+}
+.sgleservicedisplayflex
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.mobindustryleadersec
+{
+    display: block;
+    padding: 0 10%;
+}
+.industryleadersec
+{
+    display: none;
+}
+.sgleindustrysec
+{
+    max-width: 100%;
+    padding: 0;
+}
+.sgleindustrysec h3
+{
+    min-height: auto;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.sgleindustrysec ul li
+{
+    padding: 15px 0 10px 0;
+}
+.sgleindustrysec ul li img
+{
+    width: auto !important;
+    margin: 0 auto;
+    display: block;
+    max-height: none;
+}
+
+}
+
+/* Slide-specific hover effects for mobile */
+@media screen and (max-width: 767px) {
+.slide-1 a.getintouchbut:hover
+{
+    background: linear-gradient(to right, #2C3E50 0%, #34495E 100%); /* Dark blue-gray gradient for slide 1 */
+    border-left: 4px solid; 
+    border-top: 4px solid ;
+    border-right: none;
+    border-bottom: none;
+}
+
+.slide-2 a.getintouchbut:hover
+{
+    background: linear-gradient(to right, #8E44AD 0%, #9B59B6 100%); /* Purple gradient for slide 2 */
+    border-left: 4px solid ;
+    border-top: 4px solid ;
+    border-right: none;
+    border-bottom: none;
+}
+
+.slide-3 a.getintouchbut:hover
+{
+    background: linear-gradient(to right, #E67E22 0%, #F39C12 100%); /* Orange gradient for slide 3 */
+    border-left: 4px solid;
+    border-top: 4px solid ;
+    border-right: none;
+    border-bottom: none;
+}
+
+.slide-4 a.getintouchbut:hover
+{
+    background: linear-gradient(to right, #27AE60 0%, #2ECC71 100%); /* Green gradient for slide 4 */
+    border-left: 4px solid ;
+    border-top: 4px solid ;
+    border-right: none;
+    border-bottom: none;
+}
+
+.slide-5 a.getintouchbut:hover
+{
+    background: linear-gradient(to right, #E74C3C 0%, #C0392B 100%); /* Red gradient for slide 5 */
+    border-left: 4px solid ;
+    border-top: 4px solid ;
+    border-right: none;
+    border-bottom: none;
+}
+
+.slide-6 a.getintouchbut:hover
+{
+    background: linear-gradient(to right, #3498DB 0%, #2980B9 100%); /* Blue gradient for slide 6 */
+    border-left: 4px solid ;
+    border-top: 4px solid ;
+    border-right: none;
+    border-bottom: none;
+}
+}
+
+@media screen and (max-width: 479px) {
+
+.bannersec
+{
+    height: 400px;
+}
+.slidecontpart h1
+{
+    font-size: 17px;
+    line-height: 25px;
+}
+.sglecolpart
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    row-gap:5px;
+}
+.tabsec ul li {
+    font-size: 14px;
+}
+.casestudycontpart {
+    bottom: 0;
+    position: absolute;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 1;
+    height: auto;
+    max-height: 70px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+.casestudycontpart p,
+.casestudycontpart a {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.sglecasestudycontsec:hover .casestudycontpart {
+    max-height: 180px;
+}
+.sglecasestudycontsec:hover .casestudycontpart p,
+.sglecasestudycontsec:hover .casestudycontpart a {
+    opacity: 1;
+}
+.sglecasestudycontsec {
+    height: 280px;
+}
+.sglecasestudycontsec h3 {
+    font-size: 16px;
+    line-height: 22px;
+}
+.sglecasestudycontsec p {
+    font-size: 12px;
+    line-height: 16px;
+}
+.sglecasestudycontsec a.downloadusecasebut {
+    font-size: 11px;
+    line-height: 32px;
+}
+.topfacilitysec h2
+{
+    font-size: 33px;
+    line-height: 40px;
+}
+
+}
+
+@media screen and (max-width: 430px) {
+
+.resourcecontdatasec
+{
+    padding: 15px 10px;
+}
+a.whtedownloadusecasebut
+{
+    width: 293px;
+    height: 30px;
+    line-height: 30px;
+}
+/* Smaller footer adjustments */
+.topftrcolpart:nth-child(2),
+.topftrcolpart:nth-child(3)
+{
+    padding: 15px 5px !important;
+}
+.topftrcolpart ul li
+{
+    font-size: 12px !important;
+    line-height: 24px !important;
+}
+.topftrcolpart p
+{
+    font-size: 11px !important;
+    line-height: 16px !important;
+}
+/* Extra small social icons for mobile */
+.ftrsocial a img
+{
+    width: 10px !important;
+    height: 10px !important;
+    max-width: 10px !important;
+    max-height: 10px !important;
+}
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .tabsec ul li {
+        font-size: 12px;
+    }
+
+}
