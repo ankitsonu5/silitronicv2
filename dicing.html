@@ -17,16 +17,8 @@
 
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css">
-    <title>Service Assembly</title>
+    <title>Silitronics</title>
     <style>
-        .sndcontsec {
-            width: 100%;
-            overflow: hidden;
-            background: url(../images/sndcontsecbg.png) no-repeat center center;
-            background-size: cover;
-            padding: 15rem 0;
-        }
-
         /* Banner height adjustments for different screen sizes */
         @media screen and (min-width: 1920px) {
             .bannersec {
@@ -639,15 +631,17 @@
         /* Mobile banner text styling */
         .bannersec-mobile .slidecontpart h1 {
             font-size: 19px !important;
-            line-height: 18px !important;
+            line-height: 24px !important;
             font-weight: 400 !important;
             letter-spacing: 5px !important;
         }
 
         .bannersec-mobile .slidecontpart p {
             font-size: 14px !important;
-            line-height: 17px !important;
-            letter-spacing: 3px !important;
+            line-height: 20px !important;
+            letter-spacing: 1px !important;
+            width: 250px;
+            color: #ffffff;
         }
 
         /* Remove extra margin/padding for mobile banner */
@@ -765,16 +759,6 @@
 
         .service-section-spectrum-section .arrow {
             display: none;
-        }
-
-        @media (max-width: 1366px) {
-            .sndcontsec {
-                width: 100%;
-                overflow: hidden;
-                background: url(../images/sndcontsecbg.png) no-repeat center center;
-                background-size: cover;
-                padding: 10rem 0 !important;
-            }
         }
 
         @media (max-width: 1023px) {
@@ -984,7 +968,7 @@
             }
 
             .section-spectrum-mobile-view .slide {
-                height: 364px;
+                height: 258px;
             }
         }
 
@@ -1053,7 +1037,7 @@
         }
 
         .box1align h2 {
-            /* height: 2rem; */
+            height: 2rem;
         }
 
         .tab button {
@@ -1064,12 +1048,12 @@
 
         .sndcontsec-mobile {
             /* background-color: red; */
-            padding: 1rem;
+            padding: 3rem;
         }
 
         .sndcontsec-mobile h2 {
             font-size: 2rem;
-            line-height: 36px;
+            line-height: 35px;
             font-family: 'Titillium Web';
             font-weight: bold;
             text-align: center;
@@ -1078,7 +1062,6 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 2rem;
         }
 
         .sipmaincont {
@@ -1092,7 +1075,7 @@
         }
 
         .divnumimg {
-            width: 75rem !important;
+            width: 75px !important;
         }
 
         .divtextcont-items li {
@@ -1102,7 +1085,7 @@
         .divtextcont {
             border-top: 5px solid black;
             padding-top: 2rem;
-            padding-right: 1rem;
+            padding-right: 2rem;
             padding-bottom: 15rem;
         }
 
@@ -1111,11 +1094,11 @@
         }
 
         .sndcontsec-mobile-slider {
-            height: 48rem;
+            height: 450px;
         }
 
         .servicestabcontent-containers img {
-            width: 100% !important;
+            width: 80% !important;
             height: auto;
             border-radius: 8px;
             display: block;
@@ -1214,17 +1197,50 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        .services-section-head-desk {
-            font-size: 70px;
-            line-height: 85px;
-            font-family: 'Titillium Web';
+
+        .services-section {
+            /* margin: 80px 0 60px 0; */
+            padding: 60px 0;
+            width: 100vw;
+            max-width: 100vw;
+            background: none;
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.1);
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .containers {
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 15px;
+            margin: 0 auto;
+            background: rgba(153, 153, 153, 0.1);
+        }
+
+        p.mypM {
+            width: 100%;
+            height: auto;
+            font-size: 14px !important;
+            line-height: 24px !important;
+            font-family: 'Spline Sans Mono' !important;
+            color: #22033a !important;
+            font-weight: lighter !important;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 362px;
+        }
+
+        .mobilealign h2 {
             font-weight: bold;
-            text-align: center;
-            padding: 0 0 40px 0;
-            background: linear-gradient(90deg, #050EF1, #FD0200);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-family: 'Titillium Web';
+            line-height: 24px;
+            margin-top: 10px;
+            width: 361px;
         }
     </style>
 </head>
@@ -1295,15 +1311,18 @@
                 <div class="item">
                     <div class="slidecontpart">
                         <div class="container">
-                            <h1>Micron-Level Assembly. Every Die Matters.</h1>
+                            <h1>Precision Wafer Dicing<br> and Ultra-Clean Die<br> Singulation </h1>
                             <!-- <h1>Photonics (PIC) <br> Packaging Solutions</h1> -->
                             <div class="sbbox">
-                                <p class="sbannertext">Delivering advanced SiP, flip chip, and multi-module integration you can trust.</p>
+                                <p class="sbannertext">Integrated laser, blade,<br> and plasma dicing for<br> every
+                                    device
+                                    type.
+                                </p>
                             </div>
                             <a href="#contactsec" class="getintouchbut">Get in touch</a>
                         </div>
                     </div>
-                    <img src="./images/serviceassebly/desktop-bg.png">
+                    <img src="./dicing images/Desktop_Service Details_Banner 1.png">
                 </div>
             </div>
 
@@ -1314,15 +1333,16 @@
                 <div class="item">
                     <div class="slidecontpart">
                         <div class="container">
-                            <h1>Micron-Level Assembly. Every Die Matters.</h1>
+                            <h1>Precision Wafer Dicing<br> and Ultra-Clean Die<br> Singulation </h1>
                             <!-- <h1>Photonics (PIC) <br> Packaging Solutions</h1> -->
                             <div class="sbbox">
-                                <p class="sbannertext">Delivering advanced SiP, flip chip, and multi-module integration you can trust.</p>
+                                <p class="sbannertext">Integrated laser, blade, and plasma dicing for every device type.
+                                </p>
                             </div>
                             <a href="#contactsec" class="getintouchbut">Get in touch</a>
                         </div>
                     </div>
-                    <img src="./images/serviceassebly/mobile-bg.png">
+                    <img src="./dicing images/Services_Mobile 1.png">
                 </div>
 
             </div>
@@ -1354,46 +1374,45 @@
         <!-- spectrum section desktop and tablet screen view -->
         <section class="service-section-spectrum-section">
             <div class="container">
-                <h4>Assembly services overview</h4>
+                <h4>Dicing services overview</h4>
                 <button class="arrow left-arrow">&#10094;</button>
                 <div class="sectrum-container">
                     <div class="card">
                         <div class="card-img-head">
-                            <img src="./images/serviceassebly/icon-one.png" alt="">
-                            <h3>Flip Chip & Wire Bond Assembly</h3>
+                            <img src="./dicing images/dic 1.png" alt="">
+                            <h3>Stealth Laser Dicing for PICs</h3>
                         </div>
-                        <p>
-                            Advanced flip chip and wire bond support for BGAs and SiPs, ensuring optimal electrical, thermal, and mechanical performance.
+                        <p>Ultra-clean, non-contact singulation of<br> photonic devices; minimal edge damage,<br>
+                            optimal
+                            yield.
                         </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-head">
+                            <img src="./dicing images/dic 2.png" alt="">
+                            <h3>Wafer Thinning & Polishing</h3>
+                        </div>
+                        <p>Controlled thinning and CMP for smooth,<br> reliable dies; supports optics and advanced<br>
+                            packaging.</p>
                     </div>
 
                     <div class="card">
                         <div class="card-img-head">
-                            <img src="./images/serviceassebly/icon-two.png" alt="">
-                            <h3>Automated AOI & Electrical/Optical Testing</h3>
+                            <img src="./dicing images/dic 3.png" alt="">
+                            <h3>Standard Wafer Dicing</h3>
                         </div>
-                        <p>
-                            Comprehensive on-line inspection and functional validation for every build stage.
-                        </p>
+                        <p>Diamond blade dicing for silicon, compound<br> semiconductors, ceramics, and glass in<br>
+                            volume
+                            or
+                            specialty runs.</p>
                     </div>
 
                     <div class="card">
                         <div class="card-img-head">
-                            <img src="./images/serviceassebly/icon-three.png" alt="">
-                            <h3>Multi-Chip Module Build</h3>
+                            <img src="./dicing images/dic 4.png" alt="">
+                            <h3>Automated AOI, Sorting & Packaging</h3>
                         </div>
-                        <p>
-                            Customized SiP assembly with multiple die integration, enhanced traceability, and robust underfill for reliability.
-                        </p>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-img-head">
-                            <img src="./images/serviceassebly/icon-four.png" alt="">
-                            <h3>Custom Tooling & Process Development</h3>
-                        </div>
-                        <p>
-                            Bespoke process and automation for unique devices, delivering fast, reliable launches.
+                        <p>Automated inspection, sorting, and safe<br> packaging for defect-free, ready-to-use<br> dies.
                         </p>
                     </div>
                 </div>
@@ -1406,49 +1425,69 @@
         <!-- spectrum section mobile only screen view -->
         <div class="section-spectrum-mobile-view">
             <div class="slider-container">
-                <h4>Fabrication services overview</h4>
+                <h4>Dicing services overview</h4>
                 <button class="arrow arrow-left">&#10094;</button>
                 <div class="slider-wrapper">
                     <div class="slider" id="slider">
                         <!-- 6 Slides -->
                         <div class="slide">
                             <div class="slide-icon">
-                                <img src="./images/serviceassebly/icon-one.png" alt="icon" />
-                                <h3>Flip Chip & Wire Bond Assembly</h3>
+                                <img src="./dicing images/dic 1.png" alt="icon" />
+                                <h3>Stealth Laser Dicing for PICs</h3>
                             </div>
-                            <p>
-                                Advanced flip chip and wire bond support for BGAs and SiPs, ensuring optimal electrical, thermal, and mechanical performance.
-                            </p>
+                            <p>Ultra-clean, non-contact<br> singulation of photonic devices; <br>minimal edge damage,
+                                optimal<br>
+                                yield.</p>
                         </div>
                         <!-- Duplicate 5 more slides for demo -->
                         <div class="slide">
                             <div class="slide-icon">
-                                <img src="./images/serviceassebly/icon-two.png" alt="icon" />
-                                <h3>Automated AOI & Electrical/Optical Testing</h3>
+                                <img src="./dicing images/dic 2.png" alt="icon" />
+                                <h3>Wafer Thinning & Polishing</h3>
                             </div>
-                            <p>
-                                Comprehensive on-line inspection and functional validation for every build stage.
-                            </p>
+                            <p>Controlled thinning and CMP for smooth, reliable dies; supports optics and advanced
+                                packaging.</p>
                         </div>
                         <div class="slide">
                             <div class="slide-icon">
-                                <img src="./images/serviceassebly/icon-three.png" alt="icon" />
-                                <h3>Multi-Chip Module Build</h3>
+                                <img src="./dicing images/dic 3.png" alt="icon" />
+                                <h3>Standard Wafer Dicing</h3>
                             </div>
-                            <p>
-                                Customized SiP assembly with multiple die integration, enhanced traceability, and robust underfill for reliability.
-                            </p>
+                            <p>Diamond blade dicing for silicon, compound<br> semiconductors, ceramics, and glass in<br>
+                                volume
+                                or specialty runs.</p>
                         </div>
                         <div class="slide">
                             <div class="slide-icon">
-                                <img src="./images/serviceassebly/icon-four.png"
+                                <img src="./dicing images/dic 4.png" alt="icon" />
+                                <h3>Automated AOI, Sorting & Packaging</h3>
+                            </div>
+                            <p>Automated inspection, sorting, and safe packaging for defect-free, ready-to-use dies.</p>
+                        </div>
+                        <!-- <div class="slide">
+                            <div class="slide-icon">
+                                <img src="./images/servicesdetails-fl/Engineering-Excellence-icon/cermanic-substrate.png"
                                     alt="icon" />
-                                <h3>Custom Tooling & Process Development</h3>
+                                <h3>Ceramic Substrate</h3>
                             </div>
-                            <p>
-                                Bespoke process and automation for unique devices, delivering fast, reliable launches.
-                            </p>
-                        </div>
+                            <ul>
+                                <li>Custom designs for electrical and mechanical requirements.</li>
+                                <li>Handles complex routing, thermal and placement constraints.</li>
+                                <li>High-reliability for photonics, LiDAR, aerospace, and medical.</li>
+                            </ul>
+                        </div> -->
+                        <!-- <div class="slide">
+                            <div class="slide-icon">
+                                <img src="./images/servicesdetails-fl/Engineering-Excellence-icon/advance-assembly.png"
+                                    alt="icon" />
+                                <h3>Advanced Assembly</h3>
+                            </div>
+                            <ul>
+                                <li>100+ years' process expertise.</li>
+                                <li>In-house tooling and automation for fast turnaround.</li>
+                                <li>“Made in USA” for speed and IP protection.</li>
+                            </ul>
+                        </div> -->
                     </div>
                 </div>
                 <button class="arrow arrow-right">&#10095;</button>
@@ -1463,8 +1502,16 @@
         <section class="sndcontsec">
             <div class="container">
                 <div class="lftrytlinepart">
-                    <h2>Ultimate Reliability, Perfected—Micron-Level Assembly Excellence</h2>
-                    <p class="slide2text">Silitronics excels in advanced assembly, combining automated precision tooling, submicron accuracy, and decades of development expertise. We’re uniquely positioned to assemble flip chip and wire bond BGAs, multi-die SiPs, and complex systems with rapid yield optimization and robust defect control. Our “Made in USA” facility secures IP, accelerates time-to-market, and offers the flexibility to meet every customer’s unique needs—from pilot lines to full production.</p>
+                    <h2>Intro paragraph </h2>
+                    <p class="slide2text">Silitronics sets the benchmark for wafer dicing, thinning, and optical
+                        inspection, serving both<br> conventional semiconductor and advanced photonic platforms. Our
+                        smart
+                        modular facility leverages<br> stealth laser, plasma, and diamond blade dicing methods under
+                        strict
+                        process control. Whether<br> producing ultra-sensitive PICs or high-volume silicon dies,
+                        Silitronics
+                        eliminates edge defects,<br> maximizes yield, and delivers dies ready for demanding downstream
+                        assembly—all backed by deep<br> expertise and unwavering commitment to quality. </p>
         </section>
 
         <!-- **************************************** -->
@@ -1478,11 +1525,12 @@
                 <span class="custom-dot" data-slide="1"></span>
                 <span class="custom-dot" data-slide="2"></span>
                 <span class="custom-dot" data-slide="3"></span>
+                <span class="custom-dot" data-slide="4"></span>
             </div>
 
             <div class="bottomarrow"> <img src="images/btmarw.png"> </div>
             <div class="container">
-                <h2>Assembly Process Overview</h2>
+                <h2>Dicing Process Overview </h2>
                 <div class="swiper tabslidersec ">
                     <div class="swiper-wrapper">
                         <!-- slide 1 -->
@@ -1491,11 +1539,15 @@
                                 <div class="serviceimgsec"><img
                                         src="./images/servicesdetails-fl/sip-process-design/01.png" alt="" /></div>
                                 <div class="servicwcontentsec">
-                                    <h3>Die Attach & Precision Placement</h3>
+                                    <h3>Wafer Preparation & Mounting</h3>
                                     <div>
-                                        <p>
-                                            Custom pick-and-place systems deliver ±0.5µm accuracy, supporting single die, chiplet, or multi-chip module builds. Continuous monitoring and humidity/ESD controls ensure zero misalignment, ideal for photonics, medical, and defense platforms.
-                                        </p>
+                                        <p>Every process starts with ultrasonic wafer cleaning,<br> flatness
+                                            measurement,
+                                            and careful mounting on dicing<br> tape. Silitronics ensures precise
+                                            alignment
+                                            and minimal<br> contamination, using anti-static environments and<br>
+                                            calibrated
+                                            carriers for maximum handling safety and<br> first-pass accuracy.</p>
                                     </div>
 
                                 </div>
@@ -1507,11 +1559,14 @@
                                 <div class="serviceimgsec"><img
                                         src="./images/servicesdetails-fl/sip-process-design/02.png" alt="" /></div>
                                 <div class="servicwcontentsec">
-                                    <h3>Flip-Chip Bumping & Wire Bonding</h3>
+                                    <h3>Dicing Techniques:<br>Blade, Stealth Laser, Plasma</h3>
                                     <div>
-                                        <p>
-                                            Solder and gold bumping scales to 19,000+ connections per device, supporting fine pitch and high IO. Wire bonding complements flip-chip for hybrid modules, each process optimized for thermal stress, electrical SI/PI, and mechanical reliability.
-                                        </p>
+                                        <p>Silitronics tailors dicing techniques: diamond blade for<br> standard dies,
+                                            stealth laser for fragile PICs, and plasma<br> for ultra-fine pitch. Each is
+                                            optimized for kerf width,<br> cut speed, and minimal thermal/mechanical
+                                            stress.<br>
+                                            Engineers continuously monitor blade wear and laser<br> calibration for
+                                            consistent die quality, even in high-mix<br> product runs.</p>
                                     </div>
 
                                 </div>
@@ -1523,11 +1578,14 @@
                                 <div class="serviceimgsec"><img
                                         src="./images/servicesdetails-fl/sip-process-design/03.png" alt="" /></div>
                                 <div class="servicwcontentsec">
-                                    <h3>Multi-Chip SiP Module Build & Traceability</h3>
+                                    <h3>Wafer Thinning & Polishing</h3>
                                     <div>
-                                        <p>
-                                            Silitronics’ expertise integrates up to nine dies in a single system-in-package, utilizing robust underfill, real-time AOI, and full documentation tracking—guaranteeing every module’s pedigree and functional integrity.
-                                        </p>
+                                        <p>Chemical and mechanical thinning down to sub-100µm is<br> performed in
+                                            humidity-controlled zones. Polished wafers—<br>especially for
+                                            photonics—receive
+                                            additional CMP steps to<br> achieve mirror surfaces, reducing insertion loss
+                                            and<br>
+                                            supporting high-yield optical coupling. </p>
                                     </div>
 
                                 </div>
@@ -1539,32 +1597,60 @@
                                 <div class="serviceimgsec"><img
                                         src="./images/servicesdetails-fl/sip-process-design/04.png" alt="" /></div>
                                 <div class="servicwcontentsec">
-                                    <h3>Final Assembly, Encapsulation & Test</h3>
+                                    <h3>Automated Optical Inspection (AOI)<br> & Sorting</h3>
                                     <div>
-                                        <p>
-                                            Overmolding, lidding, and comprehensive electrical/optical test wrap up the process, ensuring every device meets stringent specs for field deployment under varied conditions.
-                                        </p>
+                                        <p>Post-dicing, every die undergoes AOI for cracks, chips,<br> contamination,
+                                            and
+                                            dimensional accuracy. Defective dies<br> are sorted out, while clean dies
+                                            are
+                                            ultrasonically<br> cleaned, dried, and automatically sorted for<br>
+                                            traceability
+                                            and
+                                            next-stage fabrication.</p>
                                     </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 5 -->
+                        <div class="swiper-slide">
+                            <div class="servicecontsec">
+                                <div class="serviceimgsec"><img
+                                        src="./images/servicesdetails-fl/sip-process-design/05.png" alt="" /></div>
+                                <div class="servicwcontentsec">
+                                    <h3>Final Cleaning & Packaging</h3>
+                                    <div>
+                                        <p>Finished dies receive anti-static handling, laser<br> marking, and custom
+                                            tray or tape-and-reel packaging, all<br> designed for shipment integrity and
+                                            downstream assembly<br> reliability.</p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
         </section>
 
         <!-- Mobile only our service code -->
         <section class="sndcontsec-mobile only-mobile">
-            <h2>Our Services Spectrum</h2>
+            <h2>Dicing<br> Process Overview</h2>
             <sl-carousel pagination class="sndcontsec-mobile-slider">
                 <sl-carousel-item class="sipmaincont">
                     <div class="divnumimg">
                         <img src="./images/servicesdetails-fl/sip-process-design/01.png" alt="">
                     </div>
                     <div class="divtextcont">
-                        <h3>Die Attach & Precision Placement</h3>
-                        <p>
-                            Custom pick-and-place systems deliver ±0.5µm accuracy, supporting single die, chiplet, or multi-chip module builds. Continuous monitoring and humidity/ESD controls ensure zero misalignment, ideal for photonics, medical, and defense platforms.
-                        </p>
+                        <h3>Wafer Preparation & Mounting</h3>
+                        <p>Every process starts with<br> ultrasonic wafer cleaning,<br> flatness measurement, and<br>
+                            careful
+                            mounting on dicing<br> tape. Silitronics ensures<br> precise alignment and<br> minimal
+                            contamination,<br>
+                            using anti-static<br> environments and<br> calibrated carriers for<br> maximum handling
+                            safety<br>
+                            and
+                            first-pass accuracy. </p>
                     </div>
                 </sl-carousel-item>
                 <sl-carousel-item class="sipmaincont">
@@ -1572,10 +1658,11 @@
                         <img src="./images/servicesdetails-fl/sip-process-design/02.png" alt="">
                     </div>
                     <div class="divtextcont">
-                        <h3>Flip-Chip Bumping & Wire Bonding</h3>
-                        <p>
-                           Solder and gold bumping scales to 19,000+ connections per device, supporting fine pitch and high IO. Wire bonding complements flip-chip for hybrid modules, each process optimized for thermal stress, electrical SI/PI, and mechanical reliability.
-                        </p>
+                        <h3>Dicing Techniques: <br>Blade, Stealth Laser, Plasma</h3>
+                        <p>Silitronics tailors dicing techniques: diamond blade for standard dies, stealth laser for
+                            fragile PICs, and plasma for ultra-fine pitch. Each is optimized for kerf width, cut speed,
+                            and minimal thermal/mechanical stress. Engineers continuously monitor blade wear and laser
+                            calibration for consistent die quality, even in high-mix product runs.</p>
                     </div>
                 </sl-carousel-item>
                 <sl-carousel-item class="sipmaincont">
@@ -1583,10 +1670,10 @@
                         <img src="./images/servicesdetails-fl/sip-process-design/03.png" alt="">
                     </div>
                     <div class="divtextcont">
-                        <h3>Multi-Chip SiP Module Build & Traceability</h3>
-                        <p>
-                            Silitronics’ expertise integrates up to nine dies in a single system-in-package, utilizing robust underfill, real-time AOI, and full documentation tracking—guaranteeing every module’s pedigree and functional integrity.
-                        </p>
+                        <h3>Wafer Thinning & Polishing</h3>
+                        <p>Chemical and mechanical thinning down to sub-100µm is performed in humidity-controlled zones.
+                            Polished wafers—especially for photonics—receive additional CMP steps to achieve mirror
+                            surfaces, reducing insertion loss and supporting high-yield optical coupling. </p>
                     </div>
                 </sl-carousel-item>
                 <sl-carousel-item class="sipmaincont">
@@ -1594,18 +1681,26 @@
                         <img src="./images/servicesdetails-fl/sip-process-design/04.png" alt="">
                     </div>
                     <div class="divtextcont">
-                        <h3>Final Assembly, Encapsulation & Test</h3>
-                        <p>
-                            Overmolding, lidding, and comprehensive electrical/optical test wrap up the process, ensuring every device meets stringent specs for field deployment under varied conditions.
-                        </p>
+                        <h3>Automated Optical Inspection (AOI) & Sorting</h3>
+                        Post-dicing, every die undergoes AOI for cracks, chips, contamination, and dimensional accuracy.
+                        Defective dies are sorted out, while clean dies are ultrasonically cleaned, dried, and
+                        automatically sorted for traceability and next-stage fabrication.
+                    </div>
+                </sl-carousel-item>
+                <sl-carousel-item class="sipmaincont">
+                    <div class="divnumimg">
+                        <img src="./images/servicesdetails-fl/sip-process-design/05.png" alt="">
+                    </div>
+                    <div class="divtextcont">
+                        <h3>Final Cleaning & Packaging</h3>
+                        <p>Finished dies receive anti-static handling, laser marking, and custom tray or tape-and-reel
+                            packaging, all designed for shipment integrity and downstream assembly reliability.</p>
                     </div>
                 </sl-carousel-item>
                 </sl-carousel-item>
         </section>
 
         </div>
-
-
 
         <!-- ************* different items tabs section ************************ -->
 
@@ -1718,48 +1813,94 @@
         </div> -->
         <!-- ************* different items tabs section ************************ -->
 
+        <!-- Design rule section -->
+        <!-- <section id="design-rule-section">
+            <div class="container">
+                <h2>Dicing Services Spectrum </h2>
+            </div> -->
+        <!-- <div class="container">
+                <div class="card">
+                    <img src="./images/servicesdetails-fl/design-rule/design-rule-one.png"
+                        alt="Ceramic substrate top layer optimization" />
+                    <div class="caption">Ceramic substrate top layer optimization</div>
+                </div>
+                <div class="card">
+                    <img src="./images/servicesdetails-fl/design-rule/design-rule-two.png"
+                        alt="Flip chip ceramic LTCC package" />
+                    <div class="caption">Flip chip ceramic LTCC package</div>
+                </div>
+                <div class="card">
+                    <img src="./images/servicesdetails-fl/design-rule/design-rule-three.png" alt="PCB fab" />
+                    <div class="caption">PCB fab</div>
+                </div>
+                <div class="card">
+                    <img src="./images/servicesdetails-fl/design-rule/design-rule-four.png" alt="Etch thick film" />
+                    <div class="caption">Etch thick film</div>
+                </div>
+                <div class="card">
+                    <img src="./images/servicesdetails-fl/design-rule/design-rule-five.png" alt="Board stack up" />
+                    <div class="caption">Board stack up</div>
+                </div>
+            </div> -->
+
+        <!-- </section> -->
+
+
         <div class=" only-desktop ">
             <section class="services-section ">
-              
+                <section id="design-rule-section">
+                    <div class="container">
+                        <h2>Dicing Services Spectrum </h2>
+                    </div>
+                </section>
                 <div class=" containers desktop">
-                    <h2 class="services-section-head-desk">Assembly Services Spectrum</h2>
                     <div class="rows">
                         <div class="tab button dskbtn ">
                             <a>
                                 <button class="tablinks tab-btn2 tablinks-active tech-box2 "
                                     onclick="openCity(event, 'Design')">
-                                    Flip Chip and Wire Bond Assembly Services
+                                    Stealth Laser Dicing
                                 </button>
                             </a>
                             <a>
                                 <button class="tablinks tab-btn2 tech-box2 " onclick="openCity(event, 'Fabrication')">
-                                    Advanced Multi-Chip Module Build
+                                    Standard Wafer Dicing
                                 </button>
                             </a>
                             <a>
                                 <button class="tablinks tab-btn2 tech-box2 " onclick="openCity(event, 'Dicing')">
-                                    Automated AOI & Electrical/Optical Testing
+                                    Wafer Thinning and Polishing
                                 </button>
                             </a>
                             <a>
                                 <button class="tablinks tab-btn2 tech-box2 " onclick="openCity(event, 'Assembly')">
-                                    Custom Tooling & Process Development Solutions
+                                    Automated AOI
                                 </button>
                             </a>
+                            <a>
+
                         </div>
                     </div>
 
                     <div class="shape cardbox">
                         <div id="Design" class="tabcontent " style="display:block;">
-                            <div class=" servicestabcontent-containers">
+                            <div class="servicestabcontent-containers">
                                 <div>
-                                    <img src="./images/serviceassebly/asseserv-img-one.png" alt="">
+                                    <img src="./dicing images/stil laser 1.png" alt="">
                                 </div>
                                 <div class="box1align">
-                                    <!-- <p>Organic Build-Up Substrates</p> -->
-                                    <h2>Flip Chip and Wire Bond Assembly Services</h2>
-                                    <p class="myp">Full support for BGA, SiP, and hybrid modules—Silitronics offers both leading-edge and legacy techniques to maximize performance, reliability, and flexibility.</p>
-                                    
+
+                                    <h2>Stealth Laser Dicing for Photonic<br> Integrated Circuits (PICs)</h2>
+                                    <p>Stealth laser enables non-contact singulation<br> of PICs, minimizing stress
+                                        and
+                                        edge
+                                        damage for<br> high-performance and ultra-sensitive devices.<br>
+                                        Silitronics’
+                                        proprietary process delivers top<br> yield and edge cleanliness, critical
+                                        for
+                                        data<br>
+                                        and optical communications.​</p>
+
                                 </div>
                             </div>
                         </div>
@@ -1767,13 +1908,22 @@
                         <div id="Fabrication" class="tabcontent">
                             <div class="servicestabcontent-containers">
                                 <div>
-                                    <img src="./images/serviceassebly/asseserv-img-two.png" alt="">
+                                    <img src="./dicing images/stil laser 2.png" alt="">
                                 </div>
                                 <div class="box1align">
-                                    <!-- <p>Fabrication</p> -->
-                                    <h2>Advanced Multi-Chip Module Build</h2>
-                                    <p class="myp">Layered integration, custom underfill, and robust traceability protocols for system-level packages—including automated defect isolation and yield optimization.</p>
-                                    <!-- <a href="./servicesdetails.html" class="learnmore">LEARN MORE</a> -->
+
+                                    <h2>Standard Wafer Dicing for<br> Semiconductor and<br> Compound
+                                        Materials</h2>
+                                    <p class="myp">Diamond blade dicing suited for silicon, GaAs,<br> ceramic, and
+                                        glass
+                                        wafers, with proven<br> reliability and scalable throughput.<br>
+                                        Customizable
+                                        blade
+                                        selection and process<br> parameters allow for tailored solutions for<br>
+                                        unique
+                                        device
+                                        requirements. ​</p>
+
                                 </div>
                             </div>
                         </div>
@@ -1781,26 +1931,37 @@
                         <div id="Dicing" class="tabcontent">
                             <div class="servicestabcontent-containers">
                                 <div>
-                                    <img src="./images/serviceassebly/asseserv-img-three.png" alt="">
+                                    <img src="./dicing images/stil laser 3.png" alt="">
                                 </div>
                                 <div class="box1align">
-                                    <!-- <p>HDI & Fine-Pitch Substrate Design</p> -->
-                                    <h2>Automated AOI & Electrical/Optical Testing</h2>
-                                    <p class="myp">Integrated inspection from placement through final test—no defect unnoticed. Electrical/optical checks support both performance and reliability standards.</p>
-                                    <!-- <a href="./servicesdetails.html" class="learnmore">LEARN MORE</a> -->
+
+                                    <h2>Wafer Thinning and Polishing </h2>
+                                    <p class="myp">Controlled thinning for high-speed logic,<br> photonics, and MEMS
+                                        platforms, enabling thinner<br> devices with improved thermal and
+                                        mechanical<br>
+                                        performance. Post-thinning CMP ensures<br> consistently smooth surfaces,
+                                        optimized
+                                        for<br> assembly, optics, and device longevity. ​</p>
+
                                 </div>
                             </div>
                         </div>
+
+
                         <div id="Assembly" class="tabcontent">
                             <div class="servicestabcontent-containers">
                                 <div>
-                                    <img src="./images/serviceassebly/asseserv-img-four.png" alt="">
+                                    <img src="./dicing images/stil laser 4.png" alt="">
                                 </div>
                                 <div class="box1align">
-                                    <!-- <p>Rapid Prototyping & Volume Manufacturing</p> -->
-                                    <h2>Custom Tooling & Process Development Solutions</h2>
-                                    <p class="myp">Bespoke automation and process flows, crafted to each customer’s requirements. Silitronics leverages its 100+ years of team knowledge to overcome any challenge.</p>
-                                    <!-- <a href="./servicesdetails.html" class="learnmore">LEARN MORE</a> -->
+                                    <h2>Automated AOI, Sorting,<br> and Final Packaging </h2>
+                                    <p class="myp">High-resolution inspection, binning, and safe<br> packaging
+                                        guarantee
+                                        each die is defect-free and<br> production-ready. Silitronics’ QC-driven<br>
+                                        approach
+                                        provides clear traceability across<br> every wafer, batch, and customer
+                                        order. ​
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1813,76 +1974,104 @@
         <div class="only-mobile">
             <section class="services-section">
                 <div class="containers">
-                 
+
                     <div class="only-mobile-button-group">
                         <button class="only-mobile-button tablinks-mobile active"
-                            onclick="openCityMobile(event, 'DesignMobile')">Flip Chip and Wire Bond Assembly Services</button>
+                            onclick="openCityMobile(event, 'DesignMobile')">Stealth Laser Dicing</button>
                         <button class="only-mobile-button tablinks-mobile"
-                            onclick="openCityMobile(event, 'FabricationMobile')">Advanced Multi-Chip Module Build</button>
+                            onclick="openCityMobile(event, 'FabricationMobile')">Standard Wafer Dicing</button>
                         <button class="only-mobile-button tablinks-mobile"
-                            onclick="openCityMobile(event, 'DicingMobile')">Automated AOI & Electrical/Optical Testing</button>
+                            onclick="openCityMobile(event, 'DicingMobile')">Wafer Thinning and Polishing</button>
                         <button class="only-mobile-button tablinks-mobile"
-                            onclick="openCityMobile(event, 'AssemblyMobile')">Custom Tooling & Process Development Solutions</button>
+                            onclick="openCityMobile(event, 'AssemblyMobile')">Automated AOI, Sorting, and Final
+                            Packaging</button>
+                        <!-- <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'SiliconPhotonicsMobile')">Co-packaged optics</button> -->
                     </div>
 
-                     
+
                     <div class="mobilebox">
                         <div id="DesignMobile" class="tabcontent-mobile" style="display: block;">
                             <div class="servicestabcontent-containersM">
-                                <div><img src="./images/serviceassebly/asseserv-img-one.png" alt=""></div>
+                                <div><img src="./dicing images/stile laser mob 1.png" alt=""></div>
                                 <div class="mobilealign">
-                                    <!-- <p>Design</p> -->
-                                    <h2>Flip Chip and Wire Bond Assembly Services </h2>
-                                    <p class="mypM">Full support for BGA, SiP, and hybrid modules—Silitronics offers both leading-edge and legacy techniques to maximize performance, reliability, and flexibility. </p>
-                                 <!-- <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a> -->
+
+                                    <h2>Stealth Laser Dicing for Photonic<br> Integrated Circuits (PICs)</h2>
+                                    <p class="mypM">Stealth laser enables non-contact<br> singulation of PICs,
+                                        minimizing
+                                        stress and<br> edge damage for high-performance and ultra-<br>sensitive devices.
+                                        Silitronics’ proprietary<br> process delivers top yield and edge<br>
+                                        cleanliness,
+                                        critical for data and optical<br> communications.​</p>
+
                                 </div>
                             </div>
                         </div>
 
                         <div id="FabricationMobile" class="tabcontent-mobile">
                             <div class="servicestabcontent-containersM">
-                                <div><img src="./images/serviceassebly/asseserv-img-two.png" alt=""></div>
+                                <div><img src="./dicing images/stile laser mob 2.png" alt=""></div>
                                 <div class="mobilealign">
-                                    <!-- <p>Fabrication</p> -->
-                                    <h2>Advanced Multi-Chip Module Build</h2>
-                                    <p class="mypM">Layered integration, custom underfill, and robust traceability protocols for system-level packages—including automated defect isolation and yield optimization. </p>
-                                    <!-- <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a> -->
+                                    <h2 class="mb-2">Standard Wafer Dicing for<br> Semiconductor and<br> Compound
+                                        Materials
+                                    </h2>
+                                    <p class="mypM">Diamond blade dicing suited for silicon, GaAs,<br> ceramic, and
+                                        glass
+                                        wafers, with proven<br> reliability and scalable throughput.<br> Customizable
+                                        blade
+                                        selection and process<br> parameters allow for tailored solutions for<br> unique
+                                        device
+                                        requirements. ​</p>
+
                                 </div>
                             </div>
                         </div>
 
-                        <div id="DicingMobile" class="tabcontent-mobile">
-                            <div class="servicestabcontent-containersM">
-                                <div><img src="./images/serviceassebly/asseserv-img-three.png" alt=""></div>
+                        <!-- <div id="DicingMobile" class="tabcontent-mobile">
+                            <div class="servicestabcontent-containers">
+                                <div><img src="./images/service/02s.png" alt=""></div>
                                 <div class="mobilealign">
                                     <p>Dicing</p>
-                                    <h2>Automated AOI & Electrical/Optical Testing</h2>
-                                    <p class="mypM">Integrated inspection from placement through final test—no defect unnoticed. Electrical/optical checks support both performance and reliability standards. </p>
-                                   <!-- <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a> -->
+                                    <h2>High-Precision Wafer Dicing</h2>
+                                    <p class="mypM">We deliver advanced wafer dicing using precision blade and laser
+                                        technologies to ensure clean die separation with minimal chipping. Optimized for
+                                        high yield and low particle contamination, our dicing supports next-gen
+                                        semiconductor packaging and performance.</p>
+                                    <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div id="AssemblyMobile" class="tabcontent-mobile">
                             <div class="servicestabcontent-containersM">
-                                <div><img src="./images/serviceassebly/asseserv-img-four.png" alt=""></div>
+                                <div><img src="./dicing images/stile laser mob 3.png" alt=""></div>
                                 <div class="mobilealign">
-                                    <!-- <p>Assembly</p> -->
-                                    <h2>Custom Tooling & Process Development Solutions </h2>
-                                    <p class="mypM">Bespoke automation and process flows, crafted to each customer’s requirements. Silitronics leverages its 100+ years of team knowledge to overcome any challenge.</p>
-                                  <!-- <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a> -->
+
+                                    <h2>Wafer Thinning and Polishing </h2>
+                                    <p class="mypM">Controlled thinning for high-speed logic,<br> photonics, and MEMS
+                                        platforms, enabling<br> thinner devices with improved thermal and<br> mechanical
+                                        performance. Post-thinning CMP<br> ensures consistently smooth surfaces,<br>
+                                        optimized
+                                        for assembly, optics, and device<br> longevity. ​</p>
+
                                 </div>
                             </div>
                         </div>
 
                         <div id="SiliconPhotonicsMobile" class="tabcontent-mobile">
                             <div class="servicestabcontent-containersM">
-                                <div><img src="./images/service/04s.png" alt=""></div>
+                                <div><img src="./dicing images/stile laser mob 4.png" alt=""></div>
                                 <div class="mobilealign">
-                                    <!-- <p>Silicon Photonics​</p> -->
-                                    <h2>Rapid Prototyping & Volume Manufacturing</h2>
-                                    <p class="mypM">Silitronics offers agile prototyping—delivering functional substrates fast—alongside robust volume manufacturing, maintaining process repeatability, high yield, and rigorous documentation from the first sample to full-scale deployment.</p>
-                                   <!-- <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a> -->
+
+                                    <h2>Automated AOI, Sorting, and<br> Final Packaging </h2>
+                                    <p class="mypM">High-resolution inspection, binning,<br> and safe packaging
+                                        guarantee
+                                        each die is<br> defect-free and production-ready.<br> Silitronics’ QC-driven
+                                        approach
+                                        provides<br> clear traceability across every wafer,<br> batch, and customer
+                                        order.​
+                                    </p>
+
                                 </div>
                             </div>
                         </div>
@@ -1941,10 +2130,7 @@
                     <div class="lftrytlinepart">
                         <div class="leftcontpanel">
                             <h2>Get in touch</h2>
-                            <p><strong>Interested in our end-to-end advanced semiconductor and photonics (PIC) packaging
-                                    solutions?</strong>​</p>
-                            <p>&nbsp;</p>
-                            <p>Share your details for an expert connect.</p>
+                            <p>Need more information on our Design Rules</p>
                         </div>
                         <div class="rightcontpanel">
                             <form action="mail/sendmail.php" method="post">
@@ -1975,8 +2161,8 @@
                 <div class="topftrflexpart">
                     <div class="topftrcolpart">
                         <div class="ftrlogo"><img src="images/footer-logo.png"></div>
-                        <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics
-                            packaging–pushing the boundaries of design, fabrication, and assembly while driving
+                        <p>Silitronics is your trusted one-stop partner<br> for advanced semiconductor and photonics<br>
+                            packaging–pushing the boundaries of design,<br> fabrication, and assembly while driving<br>
                             sustainability.</p>
                         <div class="ftrusa"><img src="images/Isolation_Mode.png"></div>
                     </div>
@@ -1987,7 +2173,7 @@
                             <li><a href="javascript:void(0);">Services</a></li>
                             <li><a href="javascript:void(0);">Applications</a></li>
                             <li><a href="javascript:void(0);">Facility</a></li>
-                            <li><a href="javascript:void(0);">Resources hub</a></li>
+                            <li><a href="javascript:void(0);">Resource hub</a></li>
                             <li><a href="javascript:void(0);">About us</a></li>
                             <li><a href="javascript:void(0);">Contact us</a></li>
                         </ul>
