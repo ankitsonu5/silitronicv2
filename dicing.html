@@ -1,0 +1,2456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/slimmenu.min.css" rel="stylesheet" type="text/css" />
+    <!--<link href="css/carousel-vertical.min.css" rel="stylesheet" type="text/css" />-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Silitronics</title>
+    <style>
+        /* Banner height adjustments for different screen sizes */
+        @media screen and (min-width: 1920px) {
+            .bannersec {
+                height: 100vh;
+                min-height: 1080px;
+            }
+        }
+
+        @media screen and (min-width: 1366px) and (max-width: 1919px) {
+            .bannersec {
+                height: 100vh;
+                min-height: 768px;
+            }
+        }
+
+        @media screen and (min-width: 1025px) and (max-width: 1365px) {
+            .bannersec {
+                height: 100vh;
+                min-height: 700px;
+            }
+        }
+
+        /* Desktop banner content positioning */
+        @media screen and (min-width: 1025px) {
+            .slidecontpart .container {
+                top: 50% !important;
+                transform: translateY(-35%) !important;
+            }
+        }
+
+        /* Service page tab active link styling */
+        .tablinks-active {
+            background: linear-gradient(90deg, #0000FF, #FF0000) !important;
+            color: white !important;
+        }
+
+        /* .tablinks:hover {
+            background-color: #A188EB !important;
+            color: white !important;
+        } */
+
+        /* Fix horizontal scroll issues */
+        html,
+        body {
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .carousel-item {
+            display: none;
+            min-height: 200px;
+        }
+
+        .carousel-item.active {
+            display: block;
+        }
+
+        .carousel-btn {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            background: #7f63f4;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .carousel-btn:hover {
+            background: #5d47cc;
+        }
+
+        .midsndcontsec {
+            max-width: 320px;
+            width: 100%;
+            height: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 1;
+            margin: 0 auto;
+        }
+
+        .s-shape-img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* S-shape base image */
+        .s-shape-base {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            z-index: 1;
+        }
+
+        /* Dynamic overlay */
+        .s-shape-overlay {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            z-index: 2;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .s-shape-overlay.active {
+            opacity: 1;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            /* Flex-start ki jagah wapas center kiya */
+            position: relative;
+            z-index: 2;
+        }
+
+        .col-md-4-vr {
+            flex: 0 0 20%;
+            max-width: 20%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        .col-md-6-vr {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .col-auto-vr {
+            flex: 0 0 auto;
+            margin: 0 auto;
+            /* Wapas add kiya for natural centering in flex */
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .containervr {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+
+
+        .img-fluid {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Slide animations */
+        @keyframes slideFromTop {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideFromBottom {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .slide-from-top {
+            animation: slideFromTop 0.6s ease;
+        }
+
+        .slide-from-bottom {
+            animation: slideFromBottom 0.6s ease;
+        }
+
+        /* Bottom center controls */
+        .carousel-controls {
+            width: 100%;
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            z-index: 2;
+
+        }
+
+        .mb39 {
+            margin-bottom: 40px;
+        }
+
+
+        /* Right carousel items ke liye min-height */
+        #rightCarousel .carousel-item {
+            min-height: 520px;
+            /* S shape ki height ke barabar ya usse thoda zyada */
+
+        }
+
+
+
+
+
+        /* ************************  index style copy start ********************************** */
+        .toparrow {
+            position: absolute;
+            top: 200px;
+            right: 8px;
+            z-index: 100000;
+            cursor: pointer;
+        }
+
+        .bottomarrow {
+            position: absolute;
+            bottom: 150px;
+            right: 8px;
+            z-index: 100000;
+            cursor: pointer;
+        }
+
+        /* Custom Dots Navigation */
+        .custom-dots {
+            position: absolute;
+            right: 17px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .custom-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid #000;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .custom-dot.active {
+            background: #000;
+        }
+
+        .custom-dot:hover {
+            background: #666;
+        }
+
+        .rela {
+            position: relative;
+        }
+
+        /* Custom Swiper Styles for tabslidersec */
+        .tabslidersec {
+            height: 600px;
+            position: relative !important;
+            overflow: hidden !important;
+        }
+
+        .tabslidersec .swiper-slide {
+            height: auto;
+        }
+
+        /* Override any conflicting owl carousel styles */
+        .tabslidersec .owl-dots {
+            display: none !important;
+        }
+
+        /* All pagination elements completely removed */
+        .sndcontsec .swiper-pagination,
+        .tabslidersec .swiper-pagination,
+        .swiper-pagination,
+        .swiper-pagination-bullet,
+        .swiper-pagination-bullets {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+        }
+
+        /* Ensure clean layout without pagination space */
+        .tabslidersec {
+            padding-bottom: 0 !important;
+            margin-bottom: 0 !important;
+        }
+
+        /* Fix service content layout */
+        .servicecontsec {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            align-items: center !important;
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        .serviceimgsec {
+            flex: 0 0 40% !important;
+            max-width: 40% !important;
+        }
+
+        .servicwcontentsec {
+            flex: 0 0 60% !important;
+            max-width: 60% !important;
+            padding: 1rem 0 0 0 !important;
+            border-top: 2px solid black;
+        }
+
+        /* Ensure Swiper container is clean for vertical sliding */
+        .tabslidersec.swiper {
+            overflow: hidden !important;
+            position: relative !important;
+            height: 600px !important;
+            width: 100% !important;
+        }
+
+        .tabslidersec .swiper-wrapper {
+            display: flex !important;
+            flex-direction: column !important;
+            height: auto !important;
+        }
+
+        .tabslidersec .swiper-slide {
+            width: 100% !important;
+            height: 600px !important;
+            flex-shrink: 0 !important;
+            display: flex !important;
+            align-items: center !important;
+            padding: 14px;
+        }
+
+        /* Enable smooth vertical scrolling */
+        .tabslidersec {
+            touch-action: pan-y !important;
+            user-select: none !important;
+        }
+
+        .carousel-item {
+            display: none;
+            min-height: 200px;
+        }
+
+        .carousel-item.active {
+            display: block;
+        }
+
+        .carousel-btn {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            background: #7f63f4;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .carousel-btn:hover {
+            background: #5d47cc;
+        }
+
+        .midsndcontsec {
+            width: 320px;
+            height: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            position: relative;
+            /* Add this */
+            z-index: 1;
+        }
+
+        .s-shape-img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* S-shape base image */
+        .s-shape-base {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            z-index: 1;
+        }
+
+        /* Dynamic overlay */
+        .s-shape-overlay {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            z-index: 2;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .s-shape-overlay.active {
+            opacity: 1;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            /* Flex-start ki jagah wapas center kiya */
+            position: relative;
+            z-index: 2;
+        }
+
+        .col-md-4-vr {
+            flex: 0 0 20%;
+            max-width: 20%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        .col-md-6-vr {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .col-auto-vr {
+            flex: 0 0 auto;
+            margin: 0 auto;
+            /* Wapas add kiya for natural centering in flex */
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .containervr {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+
+        .img-fluid {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Slide animations */
+        @keyframes slideFromTop {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideFromBottom {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .slide-from-top {
+            animation: slideFromTop 0.6s ease;
+        }
+
+        .slide-from-bottom {
+            animation: slideFromBottom 0.6s ease;
+        }
+
+        /* Bottom center controls */
+        .carousel-controls {
+            width: 100%;
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            z-index: 2;
+
+        }
+
+        .mb39 {
+            margin-bottom: 40px;
+        }
+
+
+        /* Right carousel items ke liye min-height */
+        #rightCarousel .carousel-item {
+            min-height: 520px;
+            /* S shape ki height ke barabar ya usse thoda zyada */
+
+        }
+
+        /* Banner height adjustments for different screen sizes */
+        @media screen and (min-width: 1920px) {
+            .bannersec {
+                height: 100vh;
+                min-height: 1080px;
+            }
+        }
+
+        @media screen and (min-width: 1366px) and (max-width: 1919px) {
+            .bannersec {
+                height: 100vh;
+                min-height: 768px;
+
+            }
+        }
+
+        @media screen and (min-width: 1025px) and (max-width: 1365px) {
+            .bannersec {
+                height: 100vh;
+                min-height: 700px;
+            }
+        }
+
+        /* Desktop banner content positioning - move content higher up */
+        @media screen and (min-width: 1025px) {
+            .slidecontpart .container {
+                top: 50% !important;
+                transform: translateY(-35%) !important;
+            }
+        }
+
+        @media screen and (max-width: 1025px) {
+            .service-section-spectrum-section .card {
+                width: 350px;
+            }
+
+            .service-section-spectrum-section .card img {
+                width: 64px !important;
+            }
+        }
+
+        /* Hide only nav arrows for mobile banner carousel */
+        .bannersec-mobile .owl-nav {
+            display: none !important;
+        }
+
+        /* Style dots for mobile banner carousel */
+        .bannersec-mobile .owl-dots {
+
+            /* text-align: center; */
+            /* margin-top: 15px; */
+            /* position:absolute;
+  left:40%;
+  top:95%;
+   */
+            position: absolute;
+            top: 95%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .bannersec-mobile .owl-dots .owl-dot {
+            display: inline-block;
+            margin: 0 2px;
+        }
+
+        .bannersec-mobile .owl-dots .owl-dot span {
+            display: block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: transparent;
+            border: 1px solid #A188EB;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .bannersec-mobile .owl-dots .owl-dot.active span,
+        .bannersec-mobile .owl-dots .owl-dot:hover span {
+            background: #A188EB;
+            transform: scale(1.2);
+        }
+
+        /* Mobile banner text styling */
+        .bannersec-mobile .slidecontpart h1 {
+            font-size: 19px !important;
+            line-height: 24px !important;
+            font-weight: 400 !important;
+            letter-spacing: 5px !important;
+        }
+
+        .bannersec-mobile .slidecontpart p {
+            font-size: 14px !important;
+            line-height: 20px !important;
+            letter-spacing: 1px !important;
+            width: 250px;
+            color: #ffffff;
+        }
+
+        /* Remove extra margin/padding for mobile banner */
+        .bannersec-mobile .owl-carousel {
+            margin-bottom: 0 !important;
+        }
+
+        .bannersec-mobile .owl-stage-outer {
+            padding-bottom: 0 !important;
+        }
+
+        /* Updated Purple/Blue Gradient Colors for Mobile Industry Leader Section */
+        .mobindustryleadersec .onestgrediant {
+            background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+            /* Purple to Blue */
+        }
+
+        .mobindustryleadersec .twostgrediant {
+            background: linear-gradient(135deg, #A855F7 0%, #6366F1 100%) !important;
+            /* Light Purple to Indigo */
+        }
+
+        .mobindustryleadersec .threegradient {
+            background: linear-gradient(135deg, #9333EA 0%, #4F46E5 100%) !important;
+            /* Purple to Blue */
+        }
+
+        .mobindustryleadersec .fourgradient {
+            background: linear-gradient(135deg, #7C3AED 0%, #3730A3 100%) !important;
+            /* Purple to Dark Blue */
+        }
+
+        .mobindustryleadersec .fivegradient {
+            background: linear-gradient(135deg, #C026D3 0%, #7C2D12 100%) !important;
+            /* Magenta to Brown */
+        }
+
+        .mobindustryleadersec .sixgradient {
+            background: linear-gradient(135deg, #DB2777 0%, #BE185D 100%) !important;
+            /* Pink to Dark Pink */
+        }
+
+        .mobindustryleadersec .sevenstgrediant {
+            background: linear-gradient(135deg, #EC4899 0%, #BE123C 100%) !important;
+            /* Light Pink to Red */
+        }
+
+        /* spectrum section style start */
+        .service-section-spectrum-section {
+            padding: 36px 46px 64px 64px;
+            background: linear-gradient(to right, #E5DEF4, #F6F6FB);
+        }
+
+        .service-section-spectrum-section .sectrum-container {
+            grid-template-columns: repeat(2, 1fr);
+            display: grid;
+            gap: 24px;
+            justify-items: center;
+        }
+
+        .service-section-spectrum-section h4 {
+            font-size: 70px;
+            line-height: 85px;
+            font-family: 'Titillium Web';
+            font-weight: bold;
+            text-align: center;
+            padding: 0 0 50px 0;
+            background: linear-gradient(90deg, #050EF1, #FD0200);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-top: 76px;
+        }
+
+        .service-section-spectrum-section .card {
+            background: linear-gradient(to right, #d9cef5, rgba(221, 213, 240, 0.6));
+            border: 2px solid #000;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 758px !important;
+        }
+
+        .service-section-spectrum-section .card .card-img-head {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+            margin-top: 20px;
+        }
+
+        .service-section-spectrum-section .card img {
+            width: 85px;
+        }
+
+        .service-section-spectrum-section .card h3 {
+            color: #333;
+            padding-left: 36px;
+        }
+
+        .service-section-spectrum-section .card ul {
+            padding-left: 20px;
+        }
+
+        .service-section-spectrum-section .card li {
+            list-style-type: disc;
+        }
+
+        .service-section-spectrum-section .mobile-pagination {
+            display: none;
+        }
+
+        .service-section-spectrum-section .carousel-wrapper {
+            position: relative;
+        }
+
+        .service-section-spectrum-section .arrow {
+            display: none;
+        }
+
+        @media (max-width: 1023px) {
+            .service-section-spectrum-section .sectrum-container {
+                grid-template-columns: repeat(2, 1fr) !important;
+                justify-items: center;
+            }
+
+            .service-section-spectrum-section .card img {
+                width: 48px !important;
+            }
+
+            .service-section-spectrum-section h4 {
+                font-size: 48px;
+                line-height: 66px;
+            }
+
+            .service-section-spectrum-section {
+                padding: 36px 12px;
+                background: linear-gradient(to right, #E5DEF4, #F6F6FB);
+            }
+        }
+
+        .slider-container {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .service-section-spectrum-section .container {
+                position: relative;
+                display: none;
+            }
+
+            .section-spectrum-mobile-view {
+                background: linear-gradient(to right, #E5DEF4, #F6F6FB);
+            }
+
+            .section-spectrum-mobile-view .slider-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                max-width: 100%;
+                padding: 95px;
+            }
+
+            .section-spectrum-mobile-view h4 {
+                font-size: 38px;
+                font-family: 'Titillium Web';
+                font-weight: bold;
+                text-align: center;
+                padding: 0 0 50px 0;
+                background: linear-gradient(90deg, #050EF1, #FD0200);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                /* margin-top: 76px; */
+                line-height: 1.25;
+            }
+
+            .section-spectrum-mobile-view .slider-wrapper {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .section-spectrum-mobile-view .slider {
+                display: flex;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .section-spectrum-mobile-view .slide {
+                min-width: 100%;
+                background: #ede3f9;
+                border-radius: 20px;
+                padding: 30px 36px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: left;
+                height: 395px;
+                position: relative;
+                border: 2px solid #000;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+            }
+
+            .section-spectrum-mobile-view .slide-icon {
+                display: flex;
+                align-items: center;
+                margin-bottom: 24px;
+            }
+
+            .section-spectrum-mobile-view .slide-icon img {
+                width: 76px;
+                height: 76px;
+                margin-right: 24px;
+            }
+
+            .section-spectrum-mobile-view .slide h3 {
+                margin: 0;
+                font-family: "Titillium Web", sans-serif;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .section-spectrum-mobile-view .slide ul {
+                padding-left: 20px;
+                margin-top: 10px;
+                font-family: monospace;
+                font-size: 14px;
+            }
+
+            .section-spectrum-mobile-view .slide ul li {
+                margin-top: 14px;
+                font-family: "Spline Sans Mono", monospace;
+                font-size: 16px;
+                list-style-type: disc;
+                font-weight: 500;
+            }
+
+            .section-spectrum-mobile-view .arrow {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: transparent;
+                border: none;
+                font-size: 24px;
+                cursor: pointer;
+                z-index: 1;
+            }
+
+            .section-spectrum-mobile-view .arrow-left {
+                left: 48px;
+                top: 60%;
+            }
+
+            .section-spectrum-mobile-view .arrow-right {
+                right: 48px;
+                top: 60%;
+            }
+
+            .section-spectrum-mobile-view .dots {
+                margin-top: 24px;
+                display: flex;
+                justify-content: center;
+                gap: 8px;
+            }
+
+            .section-spectrum-mobile-view .dot {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: transparent;
+                cursor: pointer;
+                border: 1.5px solid #000;
+            }
+
+            .section-spectrum-mobile-view .dot.active {
+                background-color: #000;
+            }
+        }
+
+        @media (max-width: 543px) {
+            .section-spectrum-mobile-view .slider-container {
+                padding: 50px;
+            }
+
+            .section-spectrum-mobile-view h4 {
+                font-size: 28px;
+            }
+
+            .section-spectrum-mobile-view .arrow-left {
+                left: 24px;
+                top: 60%;
+            }
+
+            .section-spectrum-mobile-view .arrow-right {
+                right: 24px;
+                top: 60%;
+            }
+
+            .fstcontsec .lftrytlinepart h3 {
+                color: #000 !important;
+                font-size: 24px !important;
+                margin-bottom: 24px;
+            }
+        }
+
+        @media (max-width: 411px) {
+            .section-spectrum-mobile-view .slider-container {
+                padding: 48px;
+            }
+
+            .section-spectrum-mobile-view .arrow-left {
+                left: 20px;
+            }
+
+            .section-spectrum-mobile-view .arrow-right {
+                right: 20px;
+            }
+
+            .section-spectrum-mobile-view .slide-icon img {
+                width: 64px;
+                height: 64px;
+            }
+
+            .section-spectrum-mobile-view .slide {
+                height: 258px;
+            }
+        }
+
+        .fstcontsec .lftrytlinepart h3 {
+            color: #000 !important;
+            font-size: 48px;
+            margin-bottom: 42px;
+        }
+
+        .fstcontsec-bottom-head {
+            font-size: 36px !important;
+        }
+
+        .servicwcontentsec h3 {
+            padding: 0 0 24px 0 !important;
+        }
+
+        /* Sip design Process & capability style */
+        .sip-design-process-capability {
+            background: transparent !important;
+        }
+
+        .servicecontsec-items-list {
+            padding-left: 1rem;
+        }
+
+        .servicecontsec-items-list li {
+            list-style-type: disc;
+            line-height: 2;
+        }
+
+        /* spectrum section style end */
+        /* ************************  index style copy end ********************************** */
+
+        #silitronics-extensive-design {
+            width: 100%;
+            background: linear-gradient(to right, #363ce0, #d44343);
+            padding: 5rem 0;
+            font-family: "Titillium Web", sans-serif;
+        }
+
+        #silitronics-extensive-design h2 {
+            color: #fff;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding: 0 30rem;
+        }
+
+        #design-rule-section {
+            background: rgba(153, 153, 153, 0.1);
+            padding: 5rem 0;
+        }
+
+        #design-rule-section h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-align: center;
+            background: linear-gradient(135deg, #050EF1, #FD0200);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 2px;
+            line-height: 1.2;
+            font-family: "Titillium Web", sans-serif;
+        }
+
+        .box1align h2 {
+            height: 2rem;
+        }
+
+        .tab button {
+            padding: 15px 36px !important;
+        }
+
+        /* mobile sip design and process style code */
+
+        .sndcontsec-mobile {
+            /* background-color: red; */
+            padding: 3rem;
+        }
+
+        .sndcontsec-mobile h2 {
+            font-size: 2rem;
+            line-height: 35px;
+            font-family: 'Titillium Web';
+            font-weight: bold;
+            text-align: center;
+            /* padding: 0 0 40px 0; */
+            background: linear-gradient(90deg, #050EF1, #FD0200);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .sipmaincont {
+            display: flex !important;
+            flex-direction: row !important;
+            gap: 3rem;
+            align-items: flex-start;
+            height: 0;
+            margin-top: -10rem;
+
+        }
+
+        .divnumimg {
+            width: 75px !important;
+        }
+
+        .divtextcont-items li {
+            list-style-type: disc !important;
+        }
+
+        .divtextcont {
+            border-top: 5px solid black;
+            padding-top: 2rem;
+            padding-right: 2rem;
+            padding-bottom: 15rem;
+        }
+
+        .divtextcont h3 {
+            margin-bottom: 1rem;
+        }
+
+        .sndcontsec-mobile-slider {
+            height: 450px;
+        }
+
+        .servicestabcontent-containers img {
+            width: 80% !important;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            max-width: none;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 1366px) {
+            #silitronics-extensive-design h2 {
+                color: #fff;
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 400;
+                padding: 0 18rem;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            #silitronics-extensive-design h2 {
+                color: #fff;
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 400;
+                padding: 0 12rem;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #silitronics-extensive-design h2 {
+                color: #fff;
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 400;
+                padding: 0 0;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .servicestabcontent-containers {
+                overflow: visible;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .servicestabcontent-containers {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                justify-content: space-between;
+                /* overflow-x: hidden; */
+                margin-top: 30px;
+                flex-wrap: wrap;
+                margin-bottom: 42px;
+                overflow: visible;
+            }
+        }
+
+        #design-rule-section .container {
+            display: flex !important;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #design-rule-section .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 248px;
+            text-align: center;
+            flex: 1 1 200px;
+        }
+
+        #design-rule-section .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        #design-rule-section .caption {
+            padding: 10px;
+            font-weight: bold;
+            background-color: white;
+        }
+
+        #design-rule-section h2 {
+            font-size: 70px;
+            line-height: 85px;
+            font-family: 'Titillium Web';
+            font-weight: bold;
+            text-align: center;
+            padding: 0 0 40px 0;
+            background: linear-gradient(90deg, #050EF1, #FD0200);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .services-section {
+            /* margin: 80px 0 60px 0; */
+            padding: 60px 0;
+            width: 100vw;
+            max-width: 100vw;
+            background: none;
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.1);
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .containers {
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 15px;
+            margin: 0 auto;
+            background: rgba(153, 153, 153, 0.1);
+        }
+
+        p.mypM {
+            width: 100%;
+            height: auto;
+            font-size: 14px !important;
+            line-height: 24px !important;
+            font-family: 'Spline Sans Mono' !important;
+            color: #22033a !important;
+            font-weight: lighter !important;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 362px;
+        }
+
+        .mobilealign h2 {
+            font-weight: bold;
+            font-family: 'Titillium Web';
+            line-height: 24px;
+            margin-top: 10px;
+            width: 361px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="headersec sticky only-desktop">
+        <div class="container">
+            <div class="logonnavsec">
+                <div class="logo ">
+                    <a href="index.html"><img src="images/logo.png" /></a>
+                </div>
+                <div class="navsec">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <!-- <li><a href="application.html">Applications</a></li> -->
+                        <!-- <li><a href="facility.html">Facility</a></li> -->
+                        <!-- <li><a href="resource.html">Resources Hub</a></li> -->
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- mobile navbar -->
+
+
+    <div class="only-mobile sticky">
+        <div class="menu-header only-mobile sticky">
+            <img src="images/logo.png" alt="SILITRONICS Logo">
+            <div class="hamburger close-icon" onclick="toggleMenu(this)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="side-menu" id="menu">
+            <ul>
+
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="service.html">SERVICES</a></li>
+                <!-- <li><a href="application.html">APPLICATIONS</a></li> -->
+                <!-- <li><a href="facility.html">FACILITY</a></li> -->
+                <!-- <li><a href="resource.html">RESOURCES HUB</a></li> -->
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+
+
+            <div class="social-icons">
+                <a href="https://youtube.com" target="_blank">
+                    <img src="images/youtube.svg" alt="YouTube">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="images/linkedin.svg" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="bannersec">
+            <div class="owl-carousel owl-theme slidersec">
+                <div class="item">
+                    <div class="slidecontpart">
+                        <div class="container">
+                            <h1>Precision Wafer Dicing<br> and Ultra-Clean Die<br> Singulation </h1>
+                            <!-- <h1>Photonics (PIC) <br> Packaging Solutions</h1> -->
+                            <div class="sbbox">
+                                <p class="sbannertext">Integrated laser, blade,<br> and plasma dicing for<br> every
+                                    device
+                                    type.
+                                </p>
+                            </div>
+                            <a href="#contactsec" class="getintouchbut">Get in touch</a>
+                        </div>
+                    </div>
+                    <img src="./dicing images/Desktop_Service Details_Banner 1.png">
+                </div>
+            </div>
+
+        </section>
+        <!-- Mobile Banner Carousel -->
+        <section class="bannersec-mobile">
+            <div class="">
+                <div class="item">
+                    <div class="slidecontpart">
+                        <div class="container">
+                            <h1>Precision Wafer Dicing<br> and Ultra-Clean Die<br> Singulation </h1>
+                            <!-- <h1>Photonics (PIC) <br> Packaging Solutions</h1> -->
+                            <div class="sbbox">
+                                <p class="sbannertext">Integrated laser, blade, and plasma dicing for every device type.
+                                </p>
+                            </div>
+                            <a href="#contactsec" class="getintouchbut">Get in touch</a>
+                        </div>
+                    </div>
+                    <img src="./dicing images/Services_Mobile 1.png">
+                </div>
+
+            </div>
+        </section>
+        <!-- <section class="sndcontsec">
+            <div class="container">
+                <div class="lftrytlinepart">
+                    <h2>Our Services Spectrum</h2>
+                    <p class=" slide2text ">From Silicon Photonics to Advanced Semiconductor Design, Fabrication, and
+                        Assembly, we deliver end-to-end advanced semiconductor and PIC packaging solutions with
+                        unmatched expertise.</p>
+                    <p>&nbsp;</p>
+                    <p>Our current edge equipment and facilities coupled with engineering expertise ensures seamless
+                        integration, high performance, and first-pass success, empowering breakthroughs in AI, HPC, and
+                        next-gen connectivity. Experience engineering excellence that drives the future of innovation.
+                    </p>
+
+
+                    <div> <img src="images/SiletronicsServiceSpectrumgifV6.gif"></div>
+
+        </section> -->
+
+
+
+
+
+        <!-- Engineering Excellence in Semiconductor & Photonics package  Design -->
+
+        <!-- spectrum section desktop and tablet screen view -->
+        <section class="service-section-spectrum-section">
+            <div class="container">
+                <h4>Dicing services overview</h4>
+                <button class="arrow left-arrow">&#10094;</button>
+                <div class="sectrum-container">
+                    <div class="card">
+                        <div class="card-img-head">
+                            <img src="./dicing images/dic 1.png" alt="">
+                            <h3>Stealth Laser Dicing for PICs</h3>
+                        </div>
+                        <p>Ultra-clean, non-contact singulation of<br> photonic devices; minimal edge damage,<br>
+                            optimal
+                            yield.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-head">
+                            <img src="./dicing images/dic 2.png" alt="">
+                            <h3>Wafer Thinning & Polishing</h3>
+                        </div>
+                        <p>Controlled thinning and CMP for smooth,<br> reliable dies; supports optics and advanced<br>
+                            packaging.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img-head">
+                            <img src="./dicing images/dic 3.png" alt="">
+                            <h3>Standard Wafer Dicing</h3>
+                        </div>
+                        <p>Diamond blade dicing for silicon, compound<br> semiconductors, ceramics, and glass in<br>
+                            volume
+                            or
+                            specialty runs.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img-head">
+                            <img src="./dicing images/dic 4.png" alt="">
+                            <h3>Automated AOI, Sorting & Packaging</h3>
+                        </div>
+                        <p>Automated inspection, sorting, and safe<br> packaging for defect-free, ready-to-use<br> dies.
+                        </p>
+                    </div>
+                </div>
+                <button class="arrow right-arrow">&#10095;</button>
+                <div class="mobile-pagination"></div>
+            </div>
+            </div>
+            </div>
+        </section>
+        <!-- spectrum section mobile only screen view -->
+        <div class="section-spectrum-mobile-view">
+            <div class="slider-container">
+                <h4>Dicing services overview</h4>
+                <button class="arrow arrow-left">&#10094;</button>
+                <div class="slider-wrapper">
+                    <div class="slider" id="slider">
+                        <!-- 6 Slides -->
+                        <div class="slide">
+                            <div class="slide-icon">
+                                <img src="./dicing images/dic 1.png" alt="icon" />
+                                <h3>Stealth Laser Dicing for PICs</h3>
+                            </div>
+                            <p>Ultra-clean, non-contact<br> singulation of photonic devices; <br>minimal edge damage,
+                                optimal<br>
+                                yield.</p>
+                        </div>
+                        <!-- Duplicate 5 more slides for demo -->
+                        <div class="slide">
+                            <div class="slide-icon">
+                                <img src="./dicing images/dic 2.png" alt="icon" />
+                                <h3>Wafer Thinning & Polishing</h3>
+                            </div>
+                            <p>Controlled thinning and CMP for smooth, reliable dies; supports optics and advanced
+                                packaging.</p>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-icon">
+                                <img src="./dicing images/dic 3.png" alt="icon" />
+                                <h3>Standard Wafer Dicing</h3>
+                            </div>
+                            <p>Diamond blade dicing for silicon, compound<br> semiconductors, ceramics, and glass in<br>
+                                volume
+                                or specialty runs.</p>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-icon">
+                                <img src="./dicing images/dic 4.png" alt="icon" />
+                                <h3>Automated AOI, Sorting & Packaging</h3>
+                            </div>
+                            <p>Automated inspection, sorting, and safe packaging for defect-free, ready-to-use dies.</p>
+                        </div>
+                        <!-- <div class="slide">
+                            <div class="slide-icon">
+                                <img src="./images/servicesdetails-fl/Engineering-Excellence-icon/cermanic-substrate.png"
+                                    alt="icon" />
+                                <h3>Ceramic Substrate</h3>
+                            </div>
+                            <ul>
+                                <li>Custom designs for electrical and mechanical requirements.</li>
+                                <li>Handles complex routing, thermal and placement constraints.</li>
+                                <li>High-reliability for photonics, LiDAR, aerospace, and medical.</li>
+                            </ul>
+                        </div> -->
+                        <!-- <div class="slide">
+                            <div class="slide-icon">
+                                <img src="./images/servicesdetails-fl/Engineering-Excellence-icon/advance-assembly.png"
+                                    alt="icon" />
+                                <h3>Advanced Assembly</h3>
+                            </div>
+                            <ul>
+                                <li>100+ years' process expertise.</li>
+                                <li>In-house tooling and automation for fast turnaround.</li>
+                                <li>“Made in USA” for speed and IP protection.</li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+                <button class="arrow arrow-right">&#10095;</button>
+
+                <div class="dots" id="dots">
+                    <!-- Will be generated by JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- innovation package design section -->
+        <section class="sndcontsec">
+            <div class="container">
+                <div class="lftrytlinepart">
+                    <h2>Intro paragraph </h2>
+                    <p class="slide2text">Silitronics sets the benchmark for wafer dicing, thinning, and optical
+                        inspection, serving both<br> conventional semiconductor and advanced photonic platforms. Our
+                        smart
+                        modular facility leverages<br> stealth laser, plasma, and diamond blade dicing methods under
+                        strict
+                        process control. Whether<br> producing ultra-sensitive PICs or high-volume silicon dies,
+                        Silitronics
+                        eliminates edge defects,<br> maximizes yield, and delivers dies ready for demanding downstream
+                        assembly—all backed by deep<br> expertise and unwavering commitment to quality. </p>
+        </section>
+
+        <!-- **************************************** -->
+        <!-- desktop our service code -->
+        <section class="sndcontsec sip-design-process-capability only-desktop rela">
+            <div class="toparrow"> <img src="images/toparw.png"> </div>
+
+            <!-- Custom Dots Navigation -->
+            <div class="custom-dots">
+                <span class="custom-dot active" data-slide="0"></span>
+                <span class="custom-dot" data-slide="1"></span>
+                <span class="custom-dot" data-slide="2"></span>
+                <span class="custom-dot" data-slide="3"></span>
+                <span class="custom-dot" data-slide="4"></span>
+            </div>
+
+            <div class="bottomarrow"> <img src="images/btmarw.png"> </div>
+            <div class="container">
+                <h2>Dicing Process Overview </h2>
+                <div class="swiper tabslidersec ">
+                    <div class="swiper-wrapper">
+                        <!-- slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="servicecontsec">
+                                <div class="serviceimgsec"><img
+                                        src="./images/servicesdetails-fl/sip-process-design/01.png" alt="" /></div>
+                                <div class="servicwcontentsec">
+                                    <h3>Wafer Preparation & Mounting</h3>
+                                    <div>
+                                        <p>Every process starts with ultrasonic wafer cleaning,<br> flatness
+                                            measurement,
+                                            and careful mounting on dicing<br> tape. Silitronics ensures precise
+                                            alignment
+                                            and minimal<br> contamination, using anti-static environments and<br>
+                                            calibrated
+                                            carriers for maximum handling safety and<br> first-pass accuracy.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 2   -->
+                        <div class="swiper-slide">
+                            <div class="servicecontsec">
+                                <div class="serviceimgsec"><img
+                                        src="./images/servicesdetails-fl/sip-process-design/02.png" alt="" /></div>
+                                <div class="servicwcontentsec">
+                                    <h3>Dicing Techniques:<br>Blade, Stealth Laser, Plasma</h3>
+                                    <div>
+                                        <p>Silitronics tailors dicing techniques: diamond blade for<br> standard dies,
+                                            stealth laser for fragile PICs, and plasma<br> for ultra-fine pitch. Each is
+                                            optimized for kerf width,<br> cut speed, and minimal thermal/mechanical
+                                            stress.<br>
+                                            Engineers continuously monitor blade wear and laser<br> calibration for
+                                            consistent die quality, even in high-mix<br> product runs.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="servicecontsec">
+                                <div class="serviceimgsec"><img
+                                        src="./images/servicesdetails-fl/sip-process-design/03.png" alt="" /></div>
+                                <div class="servicwcontentsec">
+                                    <h3>Wafer Thinning & Polishing</h3>
+                                    <div>
+                                        <p>Chemical and mechanical thinning down to sub-100µm is<br> performed in
+                                            humidity-controlled zones. Polished wafers—<br>especially for
+                                            photonics—receive
+                                            additional CMP steps to<br> achieve mirror surfaces, reducing insertion loss
+                                            and<br>
+                                            supporting high-yield optical coupling. </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 4 -->
+                        <div class="swiper-slide">
+                            <div class="servicecontsec">
+                                <div class="serviceimgsec"><img
+                                        src="./images/servicesdetails-fl/sip-process-design/04.png" alt="" /></div>
+                                <div class="servicwcontentsec">
+                                    <h3>Automated Optical Inspection (AOI)<br> & Sorting</h3>
+                                    <div>
+                                        <p>Post-dicing, every die undergoes AOI for cracks, chips,<br> contamination,
+                                            and
+                                            dimensional accuracy. Defective dies<br> are sorted out, while clean dies
+                                            are
+                                            ultrasonically<br> cleaned, dried, and automatically sorted for<br>
+                                            traceability
+                                            and
+                                            next-stage fabrication.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 5 -->
+                        <div class="swiper-slide">
+                            <div class="servicecontsec">
+                                <div class="serviceimgsec"><img
+                                        src="./images/servicesdetails-fl/sip-process-design/05.png" alt="" /></div>
+                                <div class="servicwcontentsec">
+                                    <h3>Final Cleaning & Packaging</h3>
+                                    <div>
+                                        <p>Finished dies receive anti-static handling, laser<br> marking, and custom
+                                            tray or tape-and-reel packaging, all<br> designed for shipment integrity and
+                                            downstream assembly<br> reliability.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+
+        <!-- Mobile only our service code -->
+        <section class="sndcontsec-mobile only-mobile">
+            <h2>Dicing<br> Process Overview</h2>
+            <sl-carousel pagination class="sndcontsec-mobile-slider">
+                <sl-carousel-item class="sipmaincont">
+                    <div class="divnumimg">
+                        <img src="./images/servicesdetails-fl/sip-process-design/01.png" alt="">
+                    </div>
+                    <div class="divtextcont">
+                        <h3>Wafer Preparation & Mounting</h3>
+                        <p>Every process starts with<br> ultrasonic wafer cleaning,<br> flatness measurement, and<br>
+                            careful
+                            mounting on dicing<br> tape. Silitronics ensures<br> precise alignment and<br> minimal
+                            contamination,<br>
+                            using anti-static<br> environments and<br> calibrated carriers for<br> maximum handling
+                            safety<br>
+                            and
+                            first-pass accuracy. </p>
+                    </div>
+                </sl-carousel-item>
+                <sl-carousel-item class="sipmaincont">
+                    <div class="divnumimg">
+                        <img src="./images/servicesdetails-fl/sip-process-design/02.png" alt="">
+                    </div>
+                    <div class="divtextcont">
+                        <h3>Dicing Techniques: <br>Blade, Stealth Laser, Plasma</h3>
+                        <p>Silitronics tailors dicing techniques: diamond blade for standard dies, stealth laser for
+                            fragile PICs, and plasma for ultra-fine pitch. Each is optimized for kerf width, cut speed,
+                            and minimal thermal/mechanical stress. Engineers continuously monitor blade wear and laser
+                            calibration for consistent die quality, even in high-mix product runs.</p>
+                    </div>
+                </sl-carousel-item>
+                <sl-carousel-item class="sipmaincont">
+                    <div class="divnumimg">
+                        <img src="./images/servicesdetails-fl/sip-process-design/03.png" alt="">
+                    </div>
+                    <div class="divtextcont">
+                        <h3>Wafer Thinning & Polishing</h3>
+                        <p>Chemical and mechanical thinning down to sub-100µm is performed in humidity-controlled zones.
+                            Polished wafers—especially for photonics—receive additional CMP steps to achieve mirror
+                            surfaces, reducing insertion loss and supporting high-yield optical coupling. </p>
+                    </div>
+                </sl-carousel-item>
+                <sl-carousel-item class="sipmaincont">
+                    <div class="divnumimg">
+                        <img src="./images/servicesdetails-fl/sip-process-design/04.png" alt="">
+                    </div>
+                    <div class="divtextcont">
+                        <h3>Automated Optical Inspection (AOI) & Sorting</h3>
+                        Post-dicing, every die undergoes AOI for cracks, chips, contamination, and dimensional accuracy.
+                        Defective dies are sorted out, while clean dies are ultrasonically cleaned, dried, and
+                        automatically sorted for traceability and next-stage fabrication.
+                    </div>
+                </sl-carousel-item>
+                <sl-carousel-item class="sipmaincont">
+                    <div class="divnumimg">
+                        <img src="./images/servicesdetails-fl/sip-process-design/05.png" alt="">
+                    </div>
+                    <div class="divtextcont">
+                        <h3>Final Cleaning & Packaging</h3>
+                        <p>Finished dies receive anti-static handling, laser marking, and custom tray or tape-and-reel
+                            packaging, all designed for shipment integrity and downstream assembly reliability.</p>
+                    </div>
+                </sl-carousel-item>
+                </sl-carousel-item>
+        </section>
+
+        </div>
+
+        <!-- ************* different items tabs section ************************ -->
+
+
+        <!-- Use this section only for mobile (wrap with media query if needed) -->
+        <!-- <div class="only-mobile">
+            <section class="services-section">
+                <div class="containers">
+
+                    <div class="only-mobile-button-group">
+                        <button class="only-mobile-button tablinks-mobile active"
+                            onclick="openCityMobile(event, 'DesignMobile')">Design</button>
+                        <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'FabricationMobile')">Fabrication</button>
+                        <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'DicingMobile')">Dicing</button>
+                        <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'AssemblyMobile')">Assembly</button>
+                        <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'SiliconPhotonicsMobile')">Co-packaged optics</button>
+                    </div>
+
+
+                    <div class="mobilebox">
+                        <div id="DesignMobile" class="tabcontent-mobile" style="display: block;">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/service/01s.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <p>Design</p>
+                                    <h2>Precision-Driven Design for Next-Gen Semiconductor & Photonic Packaging</h2>
+                                    <p class="mypM">From concept to layout, our advanced design expertise ensures
+                                        seamless integration of chips, substrates, and interconnects. We optimize signal
+                                        integrity, power efficiency, and thermal performance to meet the demands of AI
+                                        accelerators, quantum computing, and high-speed photonic systems. With deep
+                                        engineering insights, we design scalable, high-reliability solutions for the
+                                        future.</p>
+                                    <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="FabricationMobile" class="tabcontent-mobile">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/service/05s.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <p>Fabrication</p>
+                                    <h2>Fabrication for Advanced​ Semiconductor & Photonic Packaging</h2>
+                                    <p class="mypM">Our state-of-the-art fabrication facility delivers high-precision
+                                        multi-layer substrates tailored for AI, HPC, and Silicon Photonics. With
+                                        expertise in organic and ceramic substrates, fine-pitch interconnects, and
+                                        high-density integration, we ensure superior reliability, scalability, and
+                                        manufacturing excellence. From prototypes to high-volume production, we bring
+                                        innovation to life with precision.​</p>
+                                    <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="DicingMobile" class="tabcontent-mobile">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/service/02s.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <p>Dicing</p>
+                                    <h2>High-Precision Wafer Dicing</h2>
+                                    <p class="mypM">We deliver advanced wafer dicing using precision blade and laser
+                                        technologies to ensure clean die separation with minimal chipping. Optimized for
+                                        high yield and low particle contamination, our dicing supports next-gen
+                                        semiconductor packaging and performance.</p>
+                                    <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="AssemblyMobile" class="tabcontent-mobile">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/service/03s.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <p>Assembly</p>
+                                    <h2>Seamless Assembly for High-Precision Packaging</h2>
+                                    <p class="mypM">Our cutting-edge assembly expertise ensures precise chip-to-package
+                                        integration with industry-leading sub-micron active alignment, high-density
+                                        interconnects, and heterogeneous integration. We specialize in complex optical
+                                        and electronic assemblies for AI accelerators, 5G networks, and next-gen
+                                        computing, delivering high-reliability solutions that optimize performance and
+                                        reduce time to market.​</p>
+                                    <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="SiliconPhotonicsMobile" class="tabcontent-mobile">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/service/04s.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <p>Silicon Photonics​</p>
+                                    <h2>Powering the Future at the Speed of Light with Photonics</h2>
+                                    <p class="mypM">Silicon Photonics is transforming high-speed computing, AI clusters,
+                                        and next-gen data transfer. Our expertise in sub-micron active alignment,
+                                        optical integration, and high-bandwidth packaging ensures low-latency,
+                                        energy-efficient performance. From LiDAR to AI-driven interconnects, we deliver
+                                        cutting-edge photonics solutions that push the limits of speed, scalability, and
+                                        efficiency.​</p>
+                                    <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div> -->
+        <!-- ************* different items tabs section ************************ -->
+
+        <!-- Design rule section -->
+        <!-- <section id="design-rule-section">
+            <div class="container">
+                <h2>Dicing Services Spectrum </h2>
+            </div> -->
+        <!-- <div class="container">
+                <div class="card">
+                    <img src="./images/servicesdetails-fl/design-rule/design-rule-one.png"
+                        alt="Ceramic substrate top layer optimization" />
+                    <div class="caption">Ceramic substrate top layer optimization</div>
+                </div>
+                <div class="card">
+                    <img src="./images/servicesdetails-fl/design-rule/design-rule-two.png"
+                        alt="Flip chip ceramic LTCC package" />
+                    <div class="caption">Flip chip ceramic LTCC package</div>
+                </div>
+                <div class="card">
+                    <img src="./images/servicesdetails-fl/design-rule/design-rule-three.png" alt="PCB fab" />
+                    <div class="caption">PCB fab</div>
+                </div>
+                <div class="card">
+                    <img src="./images/servicesdetails-fl/design-rule/design-rule-four.png" alt="Etch thick film" />
+                    <div class="caption">Etch thick film</div>
+                </div>
+                <div class="card">
+                    <img src="./images/servicesdetails-fl/design-rule/design-rule-five.png" alt="Board stack up" />
+                    <div class="caption">Board stack up</div>
+                </div>
+            </div> -->
+
+        <!-- </section> -->
+
+
+        <div class=" only-desktop ">
+            <section class="services-section ">
+                <section id="design-rule-section">
+                    <div class="container">
+                        <h2>Dicing Services Spectrum </h2>
+                    </div>
+                </section>
+                <div class=" containers desktop">
+                    <div class="rows">
+                        <div class="tab button dskbtn ">
+                            <a>
+                                <button class="tablinks tab-btn2 tablinks-active tech-box2 "
+                                    onclick="openCity(event, 'Design')">
+                                    Stealth Laser Dicing
+                                </button>
+                            </a>
+                            <a>
+                                <button class="tablinks tab-btn2 tech-box2 " onclick="openCity(event, 'Fabrication')">
+                                    Standard Wafer Dicing
+                                </button>
+                            </a>
+                            <a>
+                                <button class="tablinks tab-btn2 tech-box2 " onclick="openCity(event, 'Dicing')">
+                                    Wafer Thinning and Polishing
+                                </button>
+                            </a>
+                            <a>
+                                <button class="tablinks tab-btn2 tech-box2 " onclick="openCity(event, 'Assembly')">
+                                    Automated AOI
+                                </button>
+                            </a>
+                            <a>
+
+                        </div>
+                    </div>
+
+                    <div class="shape cardbox">
+                        <div id="Design" class="tabcontent " style="display:block;">
+                            <div class="servicestabcontent-containers">
+                                <div>
+                                    <img src="./dicing images/stil laser 1.png" alt="">
+                                </div>
+                                <div class="box1align">
+
+                                    <h2>Stealth Laser Dicing for Photonic<br> Integrated Circuits (PICs)</h2>
+                                    <p>Stealth laser enables non-contact singulation<br> of PICs, minimizing stress
+                                        and
+                                        edge
+                                        damage for<br> high-performance and ultra-sensitive devices.<br>
+                                        Silitronics’
+                                        proprietary process delivers top<br> yield and edge cleanliness, critical
+                                        for
+                                        data<br>
+                                        and optical communications.​</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Fabrication" class="tabcontent">
+                            <div class="servicestabcontent-containers">
+                                <div>
+                                    <img src="./dicing images/stil laser 2.png" alt="">
+                                </div>
+                                <div class="box1align">
+
+                                    <h2>Standard Wafer Dicing for<br> Semiconductor and<br> Compound
+                                        Materials</h2>
+                                    <p class="myp">Diamond blade dicing suited for silicon, GaAs,<br> ceramic, and
+                                        glass
+                                        wafers, with proven<br> reliability and scalable throughput.<br>
+                                        Customizable
+                                        blade
+                                        selection and process<br> parameters allow for tailored solutions for<br>
+                                        unique
+                                        device
+                                        requirements. ​</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Dicing" class="tabcontent">
+                            <div class="servicestabcontent-containers">
+                                <div>
+                                    <img src="./dicing images/stil laser 3.png" alt="">
+                                </div>
+                                <div class="box1align">
+
+                                    <h2>Wafer Thinning and Polishing </h2>
+                                    <p class="myp">Controlled thinning for high-speed logic,<br> photonics, and MEMS
+                                        platforms, enabling thinner<br> devices with improved thermal and
+                                        mechanical<br>
+                                        performance. Post-thinning CMP ensures<br> consistently smooth surfaces,
+                                        optimized
+                                        for<br> assembly, optics, and device longevity. ​</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="Assembly" class="tabcontent">
+                            <div class="servicestabcontent-containers">
+                                <div>
+                                    <img src="./dicing images/stil laser 4.png" alt="">
+                                </div>
+                                <div class="box1align">
+                                    <h2>Automated AOI, Sorting,<br> and Final Packaging </h2>
+                                    <p class="myp">High-resolution inspection, binning, and safe<br> packaging
+                                        guarantee
+                                        each die is defect-free and<br> production-ready. Silitronics’ QC-driven<br>
+                                        approach
+                                        provides clear traceability across<br> every wafer, batch, and customer
+                                        order. ​
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Use this section only for mobile (wrap with media query if needed) -->
+        <div class="only-mobile">
+            <section class="services-section">
+                <div class="containers">
+
+                    <div class="only-mobile-button-group">
+                        <button class="only-mobile-button tablinks-mobile active"
+                            onclick="openCityMobile(event, 'DesignMobile')">Stealth Laser Dicing</button>
+                        <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'FabricationMobile')">Standard Wafer Dicing</button>
+                        <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'DicingMobile')">Wafer Thinning and Polishing</button>
+                        <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'AssemblyMobile')">Automated AOI, Sorting, and Final
+                            Packaging</button>
+                        <!-- <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'SiliconPhotonicsMobile')">Co-packaged optics</button> -->
+                    </div>
+
+
+                    <div class="mobilebox">
+                        <div id="DesignMobile" class="tabcontent-mobile" style="display: block;">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./dicing images/stile laser mob 1.png" alt=""></div>
+                                <div class="mobilealign">
+
+                                    <h2>Stealth Laser Dicing for Photonic<br> Integrated Circuits (PICs)</h2>
+                                    <p class="mypM">Stealth laser enables non-contact<br> singulation of PICs,
+                                        minimizing
+                                        stress and<br> edge damage for high-performance and ultra-<br>sensitive devices.
+                                        Silitronics’ proprietary<br> process delivers top yield and edge<br>
+                                        cleanliness,
+                                        critical for data and optical<br> communications.​</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="FabricationMobile" class="tabcontent-mobile">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./dicing images/stile laser mob 2.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <h2 class="mb-2">Standard Wafer Dicing for<br> Semiconductor and<br> Compound
+                                        Materials
+                                    </h2>
+                                    <p class="mypM">Diamond blade dicing suited for silicon, GaAs,<br> ceramic, and
+                                        glass
+                                        wafers, with proven<br> reliability and scalable throughput.<br> Customizable
+                                        blade
+                                        selection and process<br> parameters allow for tailored solutions for<br> unique
+                                        device
+                                        requirements. ​</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div id="DicingMobile" class="tabcontent-mobile">
+                            <div class="servicestabcontent-containers">
+                                <div><img src="./images/service/02s.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <p>Dicing</p>
+                                    <h2>High-Precision Wafer Dicing</h2>
+                                    <p class="mypM">We deliver advanced wafer dicing using precision blade and laser
+                                        technologies to ensure clean die separation with minimal chipping. Optimized for
+                                        high yield and low particle contamination, our dicing supports next-gen
+                                        semiconductor packaging and performance.</p>
+                                    <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div id="AssemblyMobile" class="tabcontent-mobile">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./dicing images/stile laser mob 3.png" alt=""></div>
+                                <div class="mobilealign">
+
+                                    <h2>Wafer Thinning and Polishing </h2>
+                                    <p class="mypM">Controlled thinning for high-speed logic,<br> photonics, and MEMS
+                                        platforms, enabling<br> thinner devices with improved thermal and<br> mechanical
+                                        performance. Post-thinning CMP<br> ensures consistently smooth surfaces,<br>
+                                        optimized
+                                        for assembly, optics, and device<br> longevity. ​</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="SiliconPhotonicsMobile" class="tabcontent-mobile">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./dicing images/stile laser mob 4.png" alt=""></div>
+                                <div class="mobilealign">
+
+                                    <h2>Automated AOI, Sorting, and<br> Final Packaging </h2>
+                                    <p class="mypM">High-resolution inspection, binning,<br> and safe packaging
+                                        guarantee
+                                        each die is<br> defect-free and production-ready.<br> Silitronics’ QC-driven
+                                        approach
+                                        provides<br> clear traceability across every wafer,<br> batch, and customer
+                                        order.​
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Case Study Section  -->
+        <section class="forthcontsec">
+            <div class="container">
+                <div class="casestudiessec">
+                    <h2>Case Studies and Whitepapers</h2>
+                    <div class="casestudycontsec">
+                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-01.jpg);">
+                            <div class="transparentbg">
+                                <div class="casestudycontpart">
+                                    <h3>Driving Innovation in LiDAR with High-Precision SiP Packaging​</h3>
+                                    <p>Flawless execution, rapid prototyping, and first-pass success for cutting-edge
+                                        automotive LiDAR technology.​</p>
+                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-02.jpg);">
+                            <div class="transparentbg">
+                                <div class="casestudycontpart">
+                                    <h3>Accelerating Innovation in 4K Live Streaming & Gaming Cameras
+                                    </h3>
+                                    <p>First-pass success, rapid prototyping, and precision execution for breakthrough
+                                        imaging technology.​</p>
+                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-03.jpg);">
+                            <div class="transparentbg">
+                                <div class="casestudycontpart">
+                                    <h3>High-Yield, High-Precision IC Packaging for 5G & RF Innovation
+                                        ​</h3>
+                                    <p>Reliable, flexible, and high-performance IC packaging solutions, ensuring
+                                        uninterrupted supply and exceptional quality.
+                                        ​</p>
+                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fifthcontsec">
+            <div class="container">
+                <div class="contactsec" id="contactsec">
+                    <div class="lftrytlinepart">
+                        <div class="leftcontpanel">
+                            <h2>Get in touch</h2>
+                            <p>Need more information on our Design Rules</p>
+                        </div>
+                        <div class="rightcontpanel">
+                            <form action="mail/sendmail.php" method="post">
+                                <div class="inputfieldwidth"><input type="text" name="name" placeholder="Name*"
+                                        class="inputfield"></div>
+                                <div class="inputfieldwidth"><input type="text" name="organization"
+                                        placeholder="Organization*" class="inputfield"></div>
+                                <div class="inputfieldwidth"><input type="tel" name="contact number"
+                                        placeholder="Contact number*" class="inputfield"></div>
+                                <div class="inputfieldwidth"><input type="email" name="email" placeholder="Email*"
+                                        class="inputfield"></div>
+                                <div class="inputfieldwidth"><textarea name="comments" class="textareafield"
+                                        placeholder="Comments"></textarea></div>
+                                <!-- <div class="inputfieldwidth"><input type="submit" name="submit" value="submit"
+                                        class="submitbut"></div> -->
+                                <button class="submitbut">SUBMIT</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="footerbg only-desktop">
+        <div class="topftrsec">
+            <div class="container">
+                <div class="topftrflexpart">
+                    <div class="topftrcolpart">
+                        <div class="ftrlogo"><img src="images/footer-logo.png"></div>
+                        <p>Silitronics is your trusted one-stop partner<br> for advanced semiconductor and photonics<br>
+                            packaging–pushing the boundaries of design,<br> fabrication, and assembly while driving<br>
+                            sustainability.</p>
+                        <div class="ftrusa"><img src="images/Isolation_Mode.png"></div>
+                    </div>
+                    <!-- here myful is footerulli -->
+                    <div class="topftrcolpart myful">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="javascript:void(0);">Services</a></li>
+                            <li><a href="javascript:void(0);">Applications</a></li>
+                            <li><a href="javascript:void(0);">Facility</a></li>
+                            <li><a href="javascript:void(0);">Resource hub</a></li>
+                            <li><a href="javascript:void(0);">About us</a></li>
+                            <li><a href="javascript:void(0);">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="topftrcolpart">
+
+                        <p>Silitronics Solutions Inc 2388 Walsh Avenue, Santa Clara, CA, 95051</p>
+                        <p>Email: sales@silitronics.com</p>
+                        <p>Phone: +1 408-954-8301,<br> +1 408-605-1148</p>
+                        <p class="social"><a href="#" class="ftrsocial"><img src="images/youtube.svg"></a>
+                            <a href="#" class="ftrsocial"><img src="images/linkedin.svg"></a>
+                        </p>
+                    </div>
+                    <div class="topftrcolpart">
+                        <div class="ftrmap"><img src="images/map.jpg"></div>
+                        <a href="#" class="backtotop">back to top</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="botftrsec">
+            <div class="container">
+                <p>© 2025 Silitronics. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+    <!-- mobile footer -->
+    <section class="footerbg only-mobile">
+        <div class="topftrsec">
+            <div class="container">
+                <div class="topftrflexpart">
+                    <div class="topftrcolpart">
+                        <div class="ftrlogo"><img src="images/footer-logo.png"></div>
+                        <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics
+                            packaging–pushing the boundaries of design, fabrication, and assembly while driving
+                            sustainability.</p>
+                        <div class="ftrusa"><img src="images/Isolation_Mode.png"></div>
+                    </div>
+                    <div class="topftrcolpart ">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="javascript:void(0);">Services</a></li>
+                            <li><a href="javascript:void(0);">Applications</a></li>
+                            <li><a href="javascript:void(0);">Facility</a></li>
+                            <!-- <li><a href="javascript:void(0);">Resources hub</a></li> -->
+                            <li><a href="javascript:void(0);">About us</a></li>
+                            <li><a href="javascript:void(0);">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="topftrcolpart">
+                        <div class="ftrmap"><img src="images/map.jpg"></div>
+                        <p>Silitronics Solutions Inc 2388 Walsh Avenue, Santa Clara, CA, 95051</p>
+                        <p>Email: sales@silitronics.com</p>
+                        <p>Phone: +1 408-954-8301,<br> +1 408-605-1148</p>
+                        <p class="social"><a href="#" class="myicon"><img src="images/youtube.svg"></a>
+                            <a href="#" class=" myicon"><img src="images/linkedin.svg"></a>
+                        </p>
+
+
+
+                    </div>
+                    <div class="topftrcolpart">
+                        <!-- <div class="ftrmap"><img src="images/map.jpg"></div> -->
+                        <a href="#" class="backtotop">back to top</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="botftrsec mobilebottom">
+            <div class="container">
+                <p>© 2025 Silitronics. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+    <a href="#contactsec" class="fixed-getintouch"><img src="images/get.png" alt=""></a>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/jquery.slimmenu.js" type="text/javascript"></script>
+    <script src="js/jquery.easing.min.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+    <script src="js/jquery.carousel-vertical.min.js" type="text/javascript"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Carousel Initialization -->
+
+    <script>
+        $(document).ready(function () {
+            // Desktop carousel
+            $(".slidersec").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: false,
+                autoplaySpeed: 1000
+            });
+
+            // Mobile carousel
+            $(".slidersec-mobile").owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: false,
+                dots: true,
+                items: 1,
+                autoplay: false,
+                autoplayTimeout: 8000,
+                autoplayHoverPause: false,
+                autoplaySpeed: 1000
+            });
+        });
+
+    </script>
+
+
+
+    <!-- Correct JavaScript -->
+    <script>
+        let currentIndex = 0;
+        const overlays = document.querySelectorAll('.s-shape-overlay');
+
+        function changeSlide(direction) {
+            const leftSlides = document.querySelectorAll('#leftCarousel .carousel-item');
+            const rightSlides = document.querySelectorAll('#rightCarousel .carousel-item');
+
+            // Hide current elements
+            leftSlides[currentIndex].classList.remove('active', 'slide-from-top', 'slide-from-bottom');
+            rightSlides[currentIndex].classList.remove('active', 'slide-from-top', 'slide-from-bottom');
+            overlays[currentIndex].classList.remove('active');
+
+            // Update index
+            currentIndex = (currentIndex + direction + leftSlides.length) % leftSlides.length;
+
+            // Set animation
+            const animClass = direction === 1 ? 'slide-from-top' : 'slide-from-bottom';
+
+            // Show new elements
+            leftSlides[currentIndex].classList.add('active', animClass);
+            rightSlides[currentIndex].classList.add('active', animClass);
+            overlays[currentIndex].classList.add('active');
+        }
+
+
+
+
+
+
+    </script>
+    <script src="js/jquery.matchHeight.js" type="text/javascript"></script>
+    <script src="js/autoheight.js" type="text/javascript"></script>
+
+    <!-- Initialize Swiper for tabslidersec -->
+    <script>
+        $(document).ready(function () {
+            // Initialize Swiper for tabslidersec with proper vertical sliding
+            window.tabSliderSwiper = new Swiper('.tabslidersec', {
+                direction: 'vertical',
+                slidesPerView: 1,
+                spaceBetween: 0,
+                mousewheel: {
+                    enabled: false,
+                    sensitivity: 1,
+                    invert: false,
+                    forceToAxis: true,
+                },
+                touchRatio: 1,
+                touchAngle: 45,
+                grabCursor: true,
+                // Pagination disabled - only mouse/touch control
+                loop: false,
+                autoplay: false,
+                speed: 800,
+                effect: 'slide',
+                freeMode: false,
+                freeModeSticky: true,
+                on: {
+                    init: function () {
+                        console.log('Vertical Swiper initialized - scroll up/down to navigate');
+                    },
+                    slideChange: function () {
+                        console.log('Slide changed to:', this.activeIndex);
+                    },
+
+
+                    reachEnd: function () {
+                        console.log('Reached last slide - ready for next scroll');
+                        // Don't auto-scroll to next section
+                        // User needs to scroll again to go to next section
+                    },
+
+                    touchStart: function () {
+                        this.autoplay.stop();
+                    },
+                    touchEnd: function () {
+                        this.autoplay.start();
+                    }
+                }
+            });
+
+            $('.toparrow').on('click', function () {
+                window.tabSliderSwiper.slidePrev();
+            });
+
+            // 🔽 Bottom arrow click → slide to next or go to next section
+            $('.bottomarrow').on('click', function () {
+                const swiperInstance = window.tabSliderSwiper;
+                const currentIndex = swiperInstance.activeIndex;
+                const totalSlides = swiperInstance.slides.length;
+
+                if (currentIndex === totalSlides - 1) {
+                    // At last slide - go to next section
+                    console.log('At last slide - going to next section');
+                    window.scrollTo({
+                        top: $('.thrdcontsec').offset().top,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    // Not at last slide - go to next slide
+                    swiperInstance.slideNext();
+                }
+            });
+
+            // Custom dots navigation
+            $('.custom-dot').on('click', function () {
+                const slideIndex = parseInt($(this).data('slide'));
+                window.tabSliderSwiper.slideTo(slideIndex);
+            });
+
+            // Update active dot on slide change
+            window.tabSliderSwiper.on('slideChange', function () {
+                const activeIndex = this.activeIndex;
+                $('.custom-dot').removeClass('active');
+                $('.custom-dot[data-slide="' + activeIndex + '"]').addClass('active');
+            });
+        });
+    </script>
+    <!-- code for spectrum device pagination -->
+    <script>
+        const slider = document.getElementById('slider');
+        const dotsContainer = document.getElementById('dots');
+        const totalSlides = slider.children.length;
+        let currentIndexx = 0;
+
+        // Generate dots
+        for (let i = 0; i < totalSlides; i++) {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => moveToSlide(i));
+            dotsContainer.appendChild(dot);
+        }
+        const dots = document.querySelectorAll('.dot');
+
+        function moveToSlide(index) {
+            currentIndexx = index;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[index].classList.add('active');
+        }
+
+        document.querySelector('.arrow-left').addEventListener('click', () => {
+            currentIndexx = (currentIndexx - 1 + totalSlides) % totalSlides;
+            moveToSlide(currentIndexx);
+        });
+
+        document.querySelector('.arrow-right').addEventListener('click', () => {
+            currentIndexx = (currentIndexx + 1) % totalSlides;
+            moveToSlide(currentIndexx);
+        });
+    </script>
+
+    <!-- Mouse scroll disabled for carousel - only arrow and dot navigation -->
+    <script>
+        console.log('Mouse scroll disabled for Our Solutions Spectrum carousel');
+    </script>
+</body>
+
+</html>
