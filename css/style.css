@@ -5844,7 +5844,7 @@ a.getintouchbut:hover,
     transition: all 0.3s ease;
     font-weight: 500;
     font-family: 'Spline Sans Mono' !important;
-    border-radius: 0 0 18px 0;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0% 100%)!important;
 }
 
 
