@@ -631,17 +631,15 @@
         /* Mobile banner text styling */
         .bannersec-mobile .slidecontpart h1 {
             font-size: 19px !important;
-            line-height: 24px !important;
+            line-height: 18px !important;
             font-weight: 400 !important;
             letter-spacing: 5px !important;
         }
 
         .bannersec-mobile .slidecontpart p {
             font-size: 14px !important;
-            line-height: 20px !important;
-            letter-spacing: 1px !important;
-            width: 250px;
-            color: #ffffff;
+            line-height: 17px !important;
+            letter-spacing: 3px !important;
         }
 
         /* Remove extra margin/padding for mobile banner */
@@ -722,7 +720,7 @@
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            max-width: 758px !important;
+            max-width: 500px !important;
         }
 
         .service-section-spectrum-section .card .card-img-head {
@@ -968,7 +966,7 @@
             }
 
             .section-spectrum-mobile-view .slide {
-                height: 258px;
+                height: 525px;
             }
         }
 
@@ -1053,7 +1051,7 @@
 
         .sndcontsec-mobile h2 {
             font-size: 2rem;
-            line-height: 35px;
+            line-height: 85px;
             font-family: 'Titillium Web';
             font-weight: bold;
             text-align: center;
@@ -1071,10 +1069,11 @@
             align-items: flex-start;
             height: 0;
             margin-top: -10rem;
+
         }
 
         .divnumimg {
-            width: 75px !important;
+            width: 75rem !important;
         }
 
         .divtextcont-items li {
@@ -1104,152 +1103,125 @@
             max-width: none;
             margin: 0 auto;
         }
-
         @media screen and (max-width: 1366px) {
-            #silitronics-extensive-design h2 {
-                color: #fff;
-                text-align: center;
-                font-size: 1.5rem;
-                font-weight: 400;
-                padding: 0 18rem;
-            }
+    #silitronics-extensive-design h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0 18rem;
+}
         }
-
         @media screen and (max-width: 1024px) {
-            #silitronics-extensive-design h2 {
-                color: #fff;
-                text-align: center;
-                font-size: 1.5rem;
-                font-weight: 400;
-                padding: 0 12rem;
-            }
+    #silitronics-extensive-design h2 {
+            color: #fff;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding: 0 12rem;
         }
-
+}
         @media screen and (max-width: 768px) {
-            #silitronics-extensive-design h2 {
-                color: #fff;
-                text-align: center;
-                font-size: 1.5rem;
-                font-weight: 400;
-                padding: 0 0;
-            }
-        }
-
+       #silitronics-extensive-design h2 {
+        color: #fff;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding: 0 0;
+    }
+}
+    @media screen and (max-width: 480px) {
+       .servicestabcontent-containers {
+    overflow: visible;
+}
+}
         @media screen and (max-width: 480px) {
-            .servicestabcontent-containers {
-                overflow: visible;
-            }
-        }
+       .servicestabcontent-containers {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    /* overflow-x: hidden; */
+    margin-top: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 42px;
+    overflow: visible;
+}
+}
+#design-rule-section .container {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 
-        @media screen and (max-width: 480px) {
-            .servicestabcontent-containers {
-                display: flex;
-                gap: 20px;
-                align-items: center;
-                justify-content: space-between;
-                /* overflow-x: hidden; */
-                margin-top: 30px;
-                flex-wrap: wrap;
-                margin-bottom: 42px;
-                overflow: visible;
-            }
-        }
+#design-rule-section  .card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 248px;
+  text-align: center;
+  flex: 1 1 200px;
+}
 
-        #design-rule-section .container {
-            display: flex !important;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
+#design-rule-section  .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-        #design-rule-section .card {
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            max-width: 248px;
-            text-align: center;
-            flex: 1 1 200px;
-        }
+#design-rule-section  .caption {
+  padding: 10px;
+  font-weight: bold;
+  background-color: white;
+}    
+#design-rule-section h2
+ {
+    font-size: 70px;
+    line-height: 85px;
+    font-family: 'Titillium Web';
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0 40px 0;
+    background: linear-gradient(90deg, #050EF1, #FD0200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.sndcontsec-mobile h2{
+    line-height: 40px;
+    margin-bottom: 20px;
+}
 
-        #design-rule-section .card img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+ .heading{
+        font-size: 2rem;
+    line-height: 35px;
+    font-family: 'Titillium Web';
+    font-weight: bold;
+    text-align: center;
+    /* padding: 0 0 40px 0; */
+    background: linear-gradient(90deg, #050EF1, #FD0200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 
-        #design-rule-section .caption {
-            padding: 10px;
-            font-weight: bold;
-            background-color: white;
-        }
+@media (min-width:767px){
+    .heading{
+     font-size: 70px;
+    line-height: 85px;  
+    }
+}
 
-        #design-rule-section h2 {
-            font-size: 70px;
-            line-height: 85px;
-            font-family: 'Titillium Web';
-            font-weight: bold;
-            text-align: center;
-            padding: 0 0 40px 0;
-            background: linear-gradient(90deg, #050EF1, #FD0200);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
 
-        .services-section {
-            /* margin: 80px 0 60px 0; */
-            padding: 60px 0;
-            width: 100vw;
-            max-width: 100vw;
-            background: none;
-            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.1);
-            position: relative;
-            left: 50%;
-            right: 50%;
-            margin-left: -50vw;
-            margin-right: -50vw;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
+.service-section-spectrum-section .card {
+    max-width: 100% !important;
+}
 
-        .containers {
-            width: 100%;
-            max-width: 1200px;
-            padding: 0 15px;
-            margin: 0 auto;
-            background: rgba(153, 153, 153, 0.1);
-        }
+ 
 
-        p.mypM {
-            width: 100%;
-            height: auto;
-            font-size: 14px !important;
-            line-height: 24px !important;
-            font-family: 'Spline Sans Mono' !important;
-            color: #22033a !important;
-            font-weight: lighter !important;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 362px;
-        }
-
-        .mobilealign h2 {
-            font-weight: bold;
-            font-family: 'Titillium Web';
-            line-height: 24px;
-            margin-top: 10px;
-            width: 361px;
-        }
-
-        .casestudycontsec {
-            width: 100%;
-            overflow: hidden;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 24px;
-            justify-content: space-between;
-        }
+ 
     </style>
 </head>
 
@@ -1319,18 +1291,16 @@
                 <div class="item">
                     <div class="slidecontpart">
                         <div class="container">
-                            <h1>Precision Wafer Dicing<br> and Ultra-Clean Die<br> Singulation </h1>
+                               <h1>Precision Silicon <br> Photonics Packaging &</h1>
+                            <h1>Integration </h1>
                             <!-- <h1>Photonics (PIC) <br> Packaging Solutions</h1> -->
                             <div class="sbbox">
-                                <p class="sbannertext">Integrated laser, blade, and plasma dicing for<br> every
-                                    device
-                                    type.
-                                </p>
+                                <p class="sbannertext">Defining the future of light—trusted solutions for seamless electronic-optic integration.</p>
                             </div>
                             <a href="#contactsec" class="getintouchbut">Get in touch</a>
                         </div>
                     </div>
-                    <img src="./dicing images/Desktop_Service Details_Banner 1.png">
+                    <img src="./images/Silicon_Photonic.png">
                 </div>
             </div>
 
@@ -1341,16 +1311,16 @@
                 <div class="item">
                     <div class="slidecontpart">
                         <div class="container">
-                            <h1>Precision Wafer Dicing<br> and Ultra-Clean Die<br> Singulation </h1>
+                           <h1>Precision Silicon <br> Photonics Packaging &</h1>
+                            <h1>Integration </h1>
                             <!-- <h1>Photonics (PIC) <br> Packaging Solutions</h1> -->
                             <div class="sbbox">
-                                <p class="sbannertext">Integrated laser, blade, and plasma dicing for every device type.
-                                </p>
+                                <p class="sbannertext">Defining the future of light—trusted solutions for seamless electronic-optic integration.</p>
                             </div>
                             <a href="#contactsec" class="getintouchbut">Get in touch</a>
                         </div>
                     </div>
-                    <img src="./dicing images/Services_Mobile 1.png">
+                     <img src="images/Silicon_Photonic_mobile.png">
                 </div>
 
             </div>
@@ -1382,47 +1352,48 @@
         <!-- spectrum section desktop and tablet screen view -->
         <section class="service-section-spectrum-section">
             <div class="container">
-                <h4>Dicing services overview</h4>
+                 <h4>Silicon Photonics Services</h4>
                 <button class="arrow left-arrow">&#10094;</button>
                 <div class="sectrum-container">
                     <div class="card">
                         <div class="card-img-head">
-                            <img src="./dicing images/dic 1.png" alt="">
-                            <h3>Stealth Laser Dicing for PICs</h3>
+                           <img src="./images/spectrum-section-img/CpPa.png" alt="">
+                            <h3>Complete Photonics Packaging & Assembly </h3>
                         </div>
-                        <p>Ultra-clean, non-contact singulation of<br> photonic devices; minimal edge damage,<br>
-                            optimal
-                            yield.
-                        </p>
+                        <ul>
+                             <p>End-to-end SOI device handling, FAU alignment, wire bonding, and encapsulation— ready for volume or prototype.</p>
+                        </ul>
                     </div>
                     <div class="card">
                         <div class="card-img-head">
-                            <img src="./dicing images/dic 2.png" alt="">
-                            <h3>Wafer Thinning & Polishing</h3>
+                            <img src="./images/spectrum-section-img/fpmi.png" alt="">
+                            <h3>FAU & PIC Module Integration</h3>
                         </div>
-                        <p>Controlled thinning and CMP for smooth,<br> reliable dies; supports optics and advanced<br>
-                            packaging.</p>
+                        <ul>
+                           <p>Multi-array fiber and photonic PIC alignment with real-time feedback; scalable modules for dense connectivity.</p>
+                        </ul>
                     </div>
 
                     <div class="card">
                         <div class="card-img-head">
-                            <img src="./dicing images/dic 3.png" alt="">
-                            <h3>Standard Wafer Dicing</h3>
+                            <img src="./images/spectrum-section-img/Octs.png" alt="">
+                            <h3>Optical Characterization & Test Services</h3>
                         </div>
-                        <p>Diamond blade dicing for silicon, compound<br> semiconductors, ceramics, and glass in<br>
-                            volume
-                            or
-                            specialty runs.</p>
+                        <ul>
+                            <p>Beam profile, wavelength, loss, and system qualification in accordance with industry standards.</p>
+                        </ul>
                     </div>
 
                     <div class="card">
                         <div class="card-img-head">
-                            <img src="./dicing images/dic 4.png" alt="">
-                            <h3>Automated AOI, Sorting & Packaging</h3>
+                            <img src="./images/spectrum-section-img/Cpo.png" alt="">
+                            <h3> Co-Packaged Optics</h3>
                         </div>
-                        <p>Automated inspection, sorting, and safe<br> packaging for defect-free, ready-to-use<br> dies.
-                        </p>
+                        <ul>
+                            <p>Advanced 2.5D/3D integration for electronic-optic packaging in data center, sensing, and LiDAR applications.</p>
+                        </ul>
                     </div>
+
                 </div>
                 <button class="arrow right-arrow">&#10095;</button>
                 <div class="mobile-pagination"></div>
@@ -1433,69 +1404,48 @@
         <!-- spectrum section mobile only screen view -->
         <div class="section-spectrum-mobile-view">
             <div class="slider-container">
-                <h4>Dicing services overview</h4>
+                <h4>Silicon Photonics Services</h4>
                 <button class="arrow arrow-left">&#10094;</button>
                 <div class="slider-wrapper">
                     <div class="slider" id="slider">
                         <!-- 6 Slides -->
                         <div class="slide">
                             <div class="slide-icon">
-                                <img src="./dicing images/dic 1.png" alt="icon" />
-                                <h3>Stealth Laser Dicing for PICs</h3>
+                                <img src="./images/spectrum-section-img/CpPa.png" alt="icon" />
+                                <h3>Complete Photonics Packaging & Assembly </h3>
                             </div>
-                            <p>Ultra-clean, non-contact<br> singulation of photonic devices; <br>minimal edge damage,
-                                optimal<br>
-                                yield.</p>
+                            <ul>
+                               <p>End-to-end SOI device handling, FAU alignment, wire bonding, and encapsulation— ready for volume or prototype.</p>
+                            </ul>
                         </div>
                         <!-- Duplicate 5 more slides for demo -->
                         <div class="slide">
                             <div class="slide-icon">
-                                <img src="./dicing images/dic 2.png" alt="icon" />
-                                <h3>Wafer Thinning & Polishing</h3>
+                               <img src="./images/spectrum-section-img/fpmi.png" alt="">
+                            <h3>FAU & PIC Module Integration</h3>
                             </div>
-                            <p>Controlled thinning and CMP for smooth, reliable dies; supports optics and advanced
-                                packaging.</p>
+                            <ul>
+                                <p>Multi-array fiber and photonic PIC alignment with real-time feedback; scalable modules for dense connectivity.</p>
+                            </ul>
                         </div>
                         <div class="slide">
                             <div class="slide-icon">
-                                <img src="./dicing images/dic 3.png" alt="icon" />
-                                <h3>Standard Wafer Dicing</h3>
+                                <img src="./images/spectrum-section-img/Octs.png" alt="">
+                               <h3>Optical Characterization & Test Services</h3>
                             </div>
-                            <p>Diamond blade dicing for silicon, compound<br> semiconductors, ceramics, and glass in<br>
-                                volume
-                                or specialty runs.</p>
+                            <ul>
+                                    <p>Beam profile, wavelength, loss, and system qualification in accordance with industry standards.</p>
+                            </ul>
                         </div>
                         <div class="slide">
                             <div class="slide-icon">
-                                <img src="./dicing images/dic 4.png" alt="icon" />
-                                <h3>Automated AOI, Sorting & Packaging</h3>
+                        <img src="./images/spectrum-section-img/Cpo.png" alt="">
+                            <h3> Co-Packaged Optics</h3>
                             </div>
-                            <p>Automated inspection, sorting, and safe packaging for defect-free, ready-to-use dies.</p>
+                            <ul>
+                               <p>Advanced 2.5D/3D integration for electronic-optic packaging in data center, sensing, and LiDAR applications.</p>
+                            </ul>
                         </div>
-                        <!-- <div class="slide">
-                            <div class="slide-icon">
-                                <img src="./images/servicesdetails-fl/Engineering-Excellence-icon/cermanic-substrate.png"
-                                    alt="icon" />
-                                <h3>Ceramic Substrate</h3>
-                            </div>
-                            <ul>
-                                <li>Custom designs for electrical and mechanical requirements.</li>
-                                <li>Handles complex routing, thermal and placement constraints.</li>
-                                <li>High-reliability for photonics, LiDAR, aerospace, and medical.</li>
-                            </ul>
-                        </div> -->
-                        <!-- <div class="slide">
-                            <div class="slide-icon">
-                                <img src="./images/servicesdetails-fl/Engineering-Excellence-icon/advance-assembly.png"
-                                    alt="icon" />
-                                <h3>Advanced Assembly</h3>
-                            </div>
-                            <ul>
-                                <li>100+ years' process expertise.</li>
-                                <li>In-house tooling and automation for fast turnaround.</li>
-                                <li>“Made in USA” for speed and IP protection.</li>
-                            </ul>
-                        </div> -->
                     </div>
                 </div>
                 <button class="arrow arrow-right">&#10095;</button>
@@ -1510,19 +1460,11 @@
         <section class="sndcontsec">
             <div class="container">
                 <div class="lftrytlinepart">
-                    <h2>Intro paragraph </h2>
-                    <p class="slide2text">Silitronics sets the benchmark for wafer dicing, thinning, and optical
-                        inspection, serving both<br> conventional semiconductor and advanced photonic platforms. Our
-                        smart
-                        modular facility leverages<br> stealth laser, plasma, and diamond blade dicing methods under
-                        strict
-                        process control. Whether<br> producing ultra-sensitive PICs or high-volume silicon dies,
-                        Silitronics
-                        eliminates edge defects,<br> maximizes yield, and delivers dies ready for demanding downstream
-                        assembly—all backed by deep<br> expertise and unwavering commitment to quality. </p>
+                    <h2>Redefining Optical Performance with Silicon Photonics Expertise</h2>
+                    <p class="slide2text">Silitronics pushes the envelope of silicon photonics through advanced integration, active alignment, and rigorous optical/electrical testing. Our veteran engineering team delivers “First Time Right” photonic solutions to leading data center, LiDAR, and sensing innovators. By combining deep expertise in SOI device manufacturing, FAU alignment, and beam characterization, Silitronics ensures devices consistently meet the most stringent standards in reliability, bandwidth, and loss. Clients value our collaborative approach and rapid turnaround, from prototype to full deployment.</p>
         </section>
 
-        <!-- **************************************** -->
+          <!-- **************************************** -->
         <!-- desktop our service code -->
         <section class="sndcontsec sip-design-process-capability only-desktop rela">
             <div class="toparrow"> <img src="images/toparw.png"> </div>
@@ -1533,12 +1475,11 @@
                 <span class="custom-dot" data-slide="1"></span>
                 <span class="custom-dot" data-slide="2"></span>
                 <span class="custom-dot" data-slide="3"></span>
-                <span class="custom-dot" data-slide="4"></span>
             </div>
 
             <div class="bottomarrow"> <img src="images/btmarw.png"> </div>
             <div class="container">
-                <h2>Dicing Process Overview </h2>
+                <h2>Silicon Photonics Process Overview</h2>
                 <div class="swiper tabslidersec ">
                     <div class="swiper-wrapper">
                         <!-- slide 1 -->
@@ -1547,15 +1488,9 @@
                                 <div class="serviceimgsec"><img
                                         src="./images/servicesdetails-fl/sip-process-design/01.png" alt="" /></div>
                                 <div class="servicwcontentsec">
-                                    <h3>Wafer Preparation & Mounting</h3>
+                                    <h3>SOI Wafer Manufacturing & PIC Formation </h3>
                                     <div>
-                                        <p>Every process starts with ultrasonic wafer cleaning,<br> flatness
-                                            measurement,
-                                            and careful mounting on dicing<br> tape. Silitronics ensures precise
-                                            alignment
-                                            and minimal<br> contamination, using anti-static environments and<br>
-                                            calibrated
-                                            carriers for maximum handling safety and<br> first-pass accuracy.</p>
+                                        <p>Silitronics employs proprietary CMOS-compatible processes to fabricate waveguides, modulators, and detectors on SOI wafers. Careful control of etching, doping, and metallization ensures top bandwidth, low propagation loss, and optimal device uniformity—all benchmarked for telecom and datacom industry standards. </p>
                                     </div>
 
                                 </div>
@@ -1567,14 +1502,9 @@
                                 <div class="serviceimgsec"><img
                                         src="./images/servicesdetails-fl/sip-process-design/02.png" alt="" /></div>
                                 <div class="servicwcontentsec">
-                                    <h3>Dicing Techniques:<br>Blade, Stealth Laser, Plasma</h3>
+                                    <h3>AU (Fiber Array Unit) Active Alignment </h3>
                                     <div>
-                                        <p>Silitronics tailors dicing techniques: diamond blade for<br> standard dies,
-                                            stealth laser for fragile PICs, and plasma<br> for ultra-fine pitch. Each is
-                                            optimized for kerf width,<br> cut speed, and minimal thermal/mechanical
-                                            stress.<br>
-                                            Engineers continuously monitor blade wear and laser<br> calibration for
-                                            consistent die quality, even in high-mix<br> product runs.</p>
+                                       <p>Automated active alignment rigs, with multi-axis feedback, achieve submicron fiber placement precision—up to ±0.5µm—into FAUs. Sophisticated process monitoring ensures minimal insertion loss and ultra-reliable coupling for 1x24 arrays and multi-channel photonics modules. </p>
                                     </div>
 
                                 </div>
@@ -1586,14 +1516,9 @@
                                 <div class="serviceimgsec"><img
                                         src="./images/servicesdetails-fl/sip-process-design/03.png" alt="" /></div>
                                 <div class="servicwcontentsec">
-                                    <h3>Wafer Thinning & Polishing</h3>
+                                    <h3>Edge Coupling and Mode Profile Testing</h3>
                                     <div>
-                                        <p>Chemical and mechanical thinning down to sub-100µm is<br> performed in
-                                            humidity-controlled zones. Polished wafers—<br>especially for
-                                            photonics—receive
-                                            additional CMP steps to<br> achieve mirror surfaces, reducing insertion loss
-                                            and<br>
-                                            supporting high-yield optical coupling. </p>
+                                       <p>In-house test stations execute beam characterization, including mode field diameter, coupling efficiency, and polarization. Silitronics tailors coupling methods—edge, butt, or grating coupling—to meet device specs, ensuring stable performance across thermal and environmental shifts. </p>
                                     </div>
 
                                 </div>
@@ -1605,37 +1530,15 @@
                                 <div class="serviceimgsec"><img
                                         src="./images/servicesdetails-fl/sip-process-design/04.png" alt="" /></div>
                                 <div class="servicwcontentsec">
-                                    <h3>Automated Optical Inspection (AOI)<br> & Sorting</h3>
+                                    <h3>Co-Packaged Photonics Assembly & Reliability Screening</h3>
                                     <div>
-                                        <p>Post-dicing, every die undergoes AOI for cracks, chips,<br> contamination,
-                                            and
-                                            dimensional accuracy. Defective dies<br> are sorted out, while clean dies
-                                            are
-                                            ultrasonically<br> cleaned, dried, and automatically sorted for<br>
-                                            traceability
-                                            and
-                                            next-stage fabrication.</p>
+                                        <p>Leading in 2.5D and 3D integration, Silitronics co-packages electronic and optical chips, using cutting-edge die attach and encapsulation for superior throughput. Every module undergoes electrical and optical stress screening (eye diagram, BER, temperature cycling), setting industry benchmarks for reliability.</p>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
-                        <!-- slide 5 -->
-                        <div class="swiper-slide">
-                            <div class="servicecontsec">
-                                <div class="serviceimgsec"><img
-                                        src="./images/servicesdetails-fl/sip-process-design/05.png" alt="" /></div>
-                                <div class="servicwcontentsec">
-                                    <h3>Final Cleaning & Packaging</h3>
-                                    <div>
-                                        <p>Finished dies receive anti-static handling, laser<br> marking, and custom
-                                            tray or tape-and-reel packaging, all<br> designed for shipment integrity and
-                                            downstream assembly<br> reliability.</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+                    
                     </div>
 
                 </div>
@@ -1643,22 +1546,17 @@
 
         <!-- Mobile only our service code -->
         <section class="sndcontsec-mobile only-mobile">
-            <h2>Dicing<br> Process Overview</h2>
+            <h2>Silicon Photonics Process Overview </h2>
             <sl-carousel pagination class="sndcontsec-mobile-slider">
                 <sl-carousel-item class="sipmaincont">
                     <div class="divnumimg">
                         <img src="./images/servicesdetails-fl/sip-process-design/01.png" alt="">
                     </div>
                     <div class="divtextcont">
-                        <h3>Wafer Preparation & Mounting</h3>
-                        <p>Every process starts with<br> ultrasonic wafer cleaning,<br> flatness measurement, and<br>
-                            careful
-                            mounting on dicing<br> tape. Silitronics ensures<br> precise alignment and<br> minimal
-                            contamination,<br>
-                            using anti-static<br> environments and<br> calibrated carriers for<br> maximum handling
-                            safety<br>
-                            and
-                            first-pass accuracy. </p>
+                        <h3>SOI Wafer Manufacturing & PIC Formation</h3>
+                       
+                            <p>Silitronics employs proprietary CMOS-compatible processes to fabricate waveguides, modulators, and detectors on SOI wafers. Careful control of etching, doping, and metallization ensures top bandwidth, low propagation loss, and optimal device uniformity—all benchmarked for telecom and datacom industry standards. </p>
+                       
                     </div>
                 </sl-carousel-item>
                 <sl-carousel-item class="sipmaincont">
@@ -1666,11 +1564,8 @@
                         <img src="./images/servicesdetails-fl/sip-process-design/02.png" alt="">
                     </div>
                     <div class="divtextcont">
-                        <h3>Dicing Techniques: <br>Blade, Stealth Laser, Plasma</h3>
-                        <p>Silitronics tailors dicing techniques: diamond blade for standard dies, stealth laser for
-                            fragile PICs, and plasma for ultra-fine pitch. Each is optimized for kerf width, cut speed,
-                            and minimal thermal/mechanical stress. Engineers continuously monitor blade wear and laser
-                            calibration for consistent die quality, even in high-mix product runs.</p>
+                        <h3>FAU (Fiber Array Unit) Active Alignment </h3>
+                          <p>Automated active alignment rigs, with multi-axis feedback, achieve submicron fiber placement precision—up to ±0.5µm—into FAUs. Sophisticated process monitoring ensures minimal insertion loss and ultra-reliable coupling for 1x24 arrays and multi-channel photonics modules. </p>
                     </div>
                 </sl-carousel-item>
                 <sl-carousel-item class="sipmaincont">
@@ -1678,10 +1573,8 @@
                         <img src="./images/servicesdetails-fl/sip-process-design/03.png" alt="">
                     </div>
                     <div class="divtextcont">
-                        <h3>Wafer Thinning & Polishing</h3>
-                        <p>Chemical and mechanical thinning down to sub-100µm is performed in humidity-controlled zones.
-                            Polished wafers—especially for photonics—receive additional CMP steps to achieve mirror
-                            surfaces, reducing insertion loss and supporting high-yield optical coupling. </p>
+                        <h3>Edge Coupling and Mode Profile Testing </h3>
+                       <p>In-house test stations execute beam characterization, including mode field diameter, coupling efficiency, and polarization. Silitronics tailors coupling methods—edge, butt, or grating coupling—to meet device specs, ensuring stable performance across thermal and environmental shifts.  </p>
                     </div>
                 </sl-carousel-item>
                 <sl-carousel-item class="sipmaincont">
@@ -1689,32 +1582,21 @@
                         <img src="./images/servicesdetails-fl/sip-process-design/04.png" alt="">
                     </div>
                     <div class="divtextcont">
-                        <h3>Automated Optical Inspection (AOI) & Sorting</h3>
-                        Post-dicing, every die undergoes AOI for cracks, chips, contamination, and dimensional accuracy.
-                        Defective dies are sorted out, while clean dies are ultrasonically cleaned, dried, and
-                        automatically sorted for traceability and next-stage fabrication.
-                    </div>
-                </sl-carousel-item>
-                <sl-carousel-item class="sipmaincont">
-                    <div class="divnumimg">
-                        <img src="./images/servicesdetails-fl/sip-process-design/05.png" alt="">
-                    </div>
-                    <div class="divtextcont">
-                        <h3>Final Cleaning & Packaging</h3>
-                        <p>Finished dies receive anti-static handling, laser marking, and custom tray or tape-and-reel
-                            packaging, all designed for shipment integrity and downstream assembly reliability.</p>
+                        <h3>Co-Packaged Photonics Assembly & Reliability Screening</h3>
+                       <p>Leading in 2.5D and 3D integration, Silitronics co-packages electronic and optical chips, using cutting-edge die attach and encapsulation for superior throughput. Every module undergoes electrical and optical stress screening (eye diagram, BER, temperature cycling), setting industry benchmarks for reliability.</p>
                     </div>
                 </sl-carousel-item>
                 </sl-carousel-item>
         </section>
 
+
         </div>
 
         <!-- ************* different items tabs section ************************ -->
-
+    
 
         <!-- Use this section only for mobile (wrap with media query if needed) -->
-        <!-- <div class="only-mobile">
+            <!-- <div class="only-mobile">
             <section class="services-section">
                 <div class="containers">
 
@@ -1821,72 +1703,36 @@
         </div> -->
         <!-- ************* different items tabs section ************************ -->
 
-        <!-- Design rule section -->
-        <!-- <section id="design-rule-section">
-            <div class="container">
-                <h2>Dicing Services Spectrum </h2>
-            </div> -->
-        <!-- <div class="container">
-                <div class="card">
-                    <img src="./images/servicesdetails-fl/design-rule/design-rule-one.png"
-                        alt="Ceramic substrate top layer optimization" />
-                    <div class="caption">Ceramic substrate top layer optimization</div>
-                </div>
-                <div class="card">
-                    <img src="./images/servicesdetails-fl/design-rule/design-rule-two.png"
-                        alt="Flip chip ceramic LTCC package" />
-                    <div class="caption">Flip chip ceramic LTCC package</div>
-                </div>
-                <div class="card">
-                    <img src="./images/servicesdetails-fl/design-rule/design-rule-three.png" alt="PCB fab" />
-                    <div class="caption">PCB fab</div>
-                </div>
-                <div class="card">
-                    <img src="./images/servicesdetails-fl/design-rule/design-rule-four.png" alt="Etch thick film" />
-                    <div class="caption">Etch thick film</div>
-                </div>
-                <div class="card">
-                    <img src="./images/servicesdetails-fl/design-rule/design-rule-five.png" alt="Board stack up" />
-                    <div class="caption">Board stack up</div>
-                </div>
-            </div> -->
-
-        <!-- </section> -->
-
-
+    
         <div class=" only-desktop ">
             <section class="services-section ">
-                <section id="design-rule-section">
-                    <div class="container">
-                        <h2>Dicing Services Spectrum </h2>
-                    </div>
-                </section>
+              
                 <div class=" containers desktop">
+                     <h2 class="heading" style="margin-bottom: 30px;">Silicon Photonics Services Spectrum</h2>
                     <div class="rows">
                         <div class="tab button dskbtn ">
                             <a>
                                 <button class="tablinks tab-btn2 tablinks-active tech-box2 "
                                     onclick="openCity(event, 'Design')">
-                                    Stealth Laser Dicing
+                                   Complete Photonics <br> Packaging & Assembly
                                 </button>
                             </a>
                             <a>
                                 <button class="tablinks tab-btn2 tech-box2 " onclick="openCity(event, 'Fabrication')">
-                                    Standard Wafer Dicing
+                                    Optical Characterization <br> & Test Services
                                 </button>
                             </a>
                             <a>
                                 <button class="tablinks tab-btn2 tech-box2 " onclick="openCity(event, 'Dicing')">
-                                    Wafer Thinning and Polishing
+                                   FAU & PIC Module <br> Integration
                                 </button>
                             </a>
                             <a>
                                 <button class="tablinks tab-btn2 tech-box2 " onclick="openCity(event, 'Assembly')">
-                                    Automated AOI
+                                   Co-Packaged Optics for <br> Data Center & LiDAR 
                                 </button>
                             </a>
-                            <a>
-
+                            
                         </div>
                     </div>
 
@@ -1894,21 +1740,15 @@
                         <div id="Design" class="tabcontent " style="display:block;">
                             <div class="servicestabcontent-containers">
                                 <div>
-                                    <img src="./dicing images/stil laser 1.png" alt="">
+                                    <img src="./images/spectrum-section-img/cpp&a.png" alt="">
                                 </div>
                                 <div class="box1align">
+                                   
 
-                                    <h2>Stealth Laser Dicing for Photonic<br> Integrated Circuits (PICs)</h2>
-                                    <p>Stealth laser enables non-contact singulation<br> of PICs, minimizing stress
-                                        and
-                                        edge
-                                        damage for<br> high-performance and ultra-sensitive devices.<br>
-                                        Silitronics’
-                                        proprietary process delivers top<br> yield and edge cleanliness, critical
-                                        for
-                                        data<br>
-                                        and optical communications.​</p>
-
+                                     <h2>Complete Photonics Packaging & Assembly</h2>
+                                    <p class="myp">SOI device handling, FAU design/build, active alignment, coupled with advanced wire bonding and module encapsulation—delivered turnkey for volume and prototyping.​</p>
+                                   
+                                  
                                 </div>
                             </div>
                         </div>
@@ -1916,22 +1756,13 @@
                         <div id="Fabrication" class="tabcontent">
                             <div class="servicestabcontent-containers">
                                 <div>
-                                    <img src="./dicing images/stil laser 2.png" alt="">
+                                    <img src="./images/spectrum-section-img/oc&ts.png" alt="">
                                 </div>
                                 <div class="box1align">
-
-                                    <h2>Standard Wafer Dicing for<br> Semiconductor and<br> Compound
-                                        Materials</h2>
-                                    <p class="myp">Diamond blade dicing suited for silicon, GaAs,<br> ceramic, and
-                                        glass
-                                        wafers, with proven<br> reliability and scalable throughput.<br>
-                                        Customizable
-                                        blade
-                                        selection and process<br> parameters allow for tailored solutions for<br>
-                                        unique
-                                        device
-                                        requirements. ​</p>
-
+                              
+                                    <h2>Optical Characterization & Test Services</h2>
+                                    <p class="myp">Beam profile, wavelength tuning, loss metrics, and system qualification performed in-house. Full compliance with telecom/datacom standards (JEDEC, Telcordia, IEC).​</p>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -1939,36 +1770,40 @@
                         <div id="Dicing" class="tabcontent">
                             <div class="servicestabcontent-containers">
                                 <div>
-                                    <img src="./dicing images/stil laser 3.png" alt="">
+                                    <img src="./images/spectrum-section-img/fp&mi.png" alt="">
                                 </div>
                                 <div class="box1align">
-
-                                    <h2>Wafer Thinning and Polishing </h2>
-                                    <p class="myp">Controlled thinning for high-speed logic,<br> photonics, and MEMS
-                                        platforms, enabling thinner<br> devices with improved thermal and
-                                        mechanical<br>
-                                        performance. Post-thinning CMP ensures<br> consistently smooth surfaces,
-                                        optimized
-                                        for<br> assembly, optics, and device longevity. ​</p>
-
+                                    <h2>FAU & PIC Module Integration</h2>
+                                    <p class="myp">Multi-channel FAU design for large-scale bandwidth with real-time optical feedback and loss calibration ensures ultra-efficient coupling and modular scalability. ​</p>
                                 </div>
                             </div>
                         </div>
-
-
                         <div id="Assembly" class="tabcontent">
                             <div class="servicestabcontent-containers">
                                 <div>
-                                    <img src="./dicing images/stil laser 4.png" alt="">
+                                    <img src="./images/spectrum-section-img/cpofdc&rpng.png" alt="">
                                 </div>
                                 <div class="box1align">
-                                    <h2>Automated AOI, Sorting,<br> and Final Packaging </h2>
-                                    <p class="myp">High-resolution inspection, binning, and safe<br> packaging
-                                        guarantee
-                                        each die is defect-free and<br> production-ready. Silitronics’ QC-driven<br>
-                                        approach
-                                        provides clear traceability across<br> every wafer, batch, and customer
-                                        order. ​
+                                    <h2>Co-Packaged Optics for Data Center & LiDAR</h2>
+                                    <p class="myp">2.5D/3D integrated optical/electronic PIC solutions for hyperscale platforms, with full reliability screening and client-specific customization. ​</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="SiliconPhotonics" class="tabcontent">
+                            <div class="servicestabcontent-containers">
+                                <div>
+                                    <img src="./images/service/04s.png" alt="">
+                                </div>
+                                <div class="box1align myclass">
+                                    <p>Silicon Photonics​</p>
+                                    <h2>Powering the Future at the Speed of Light with Photonics</h2>
+                                    <p class="myp">Silicon Photonics is transforming high-speed computing, AI clusters,
+                                        and
+                                        next-gen data transfer. Our expertise in sub-micron active alignment, optical
+                                        integration, and high-bandwidth packaging ensures low-latency, energy-efficient
+                                        performance. From LiDAR to AI-driven interconnects, we deliver cutting-edge
+                                        photonics solutions that push the limits of speed, scalability, and
+                                        efficiency.​​
                                     </p>
                                 </div>
                             </div>
@@ -1982,127 +1817,93 @@
         <div class="only-mobile">
             <section class="services-section">
                 <div class="containers">
-
+                      <h2 class="heading" style="margin-bottom: 30px;">Silicon Photonics Services Spectrum</h2>
+                 
                     <div class="only-mobile-button-group">
                         <button class="only-mobile-button tablinks-mobile active"
-                            onclick="openCityMobile(event, 'DesignMobile')">Stealth Laser Dicing</button>
+                            onclick="openCityMobile(event, 'DesignMobile')">Complete Photonics Packaging & Assembly </button>
                         <button class="only-mobile-button tablinks-mobile"
-                            onclick="openCityMobile(event, 'FabricationMobile')">Standard Wafer Dicing</button>
+                            onclick="openCityMobile(event, 'FabricationMobile')">Optical Characterization & Test Services</button>
                         <button class="only-mobile-button tablinks-mobile"
-                            onclick="openCityMobile(event, 'DicingMobile')">Wafer Thinning and Polishing</button>
+                            onclick="openCityMobile(event, 'DicingMobile')">FAU & PIC Module Integration</button>
                         <button class="only-mobile-button tablinks-mobile"
-                            onclick="openCityMobile(event, 'AssemblyMobile')">Automated AOI, Sorting, and Final
-                            Packaging</button>
-                        <!-- <button class="only-mobile-button tablinks-mobile"
-                            onclick="openCityMobile(event, 'SiliconPhotonicsMobile')">Co-packaged optics</button> -->
+                            onclick="openCityMobile(event, 'AssemblyMobile')">Co-Packaged Optics for Data Center & LiDAR</button>
+                       
                     </div>
 
-
+                     
                     <div class="mobilebox">
                         <div id="DesignMobile" class="tabcontent-mobile" style="display: block;">
                             <div class="servicestabcontent-containersM">
-                                <div><img src="./dicing images/stile laser mob 1.png" alt=""></div>
+                                <div><img src="./images/spectrum-section-img/cpp&a_mobile.png" alt=""></div>
                                 <div class="mobilealign">
-
-                                    <h2>Stealth Laser Dicing for Photonic<br> Integrated Circuits (PICs)</h2>
-                                    <p class="mypM">Stealth laser enables non-contact<br> singulation of PICs,
-                                        minimizing
-                                        stress and<br> edge damage for high-performance and ultra-<br>sensitive devices.
-                                        Silitronics’ proprietary<br> process delivers top yield and edge<br>
-                                        cleanliness,
-                                        critical for data and optical<br> communications.​</p>
-
+                                  
+                                    <h2>Complete Photonics Packaging & Assembly </h2>
+                                    <p class="mypM">SOI device handling, FAU design/build, active alignment, coupled with advanced wire bonding and module encapsulation—delivered turnkey for volume and prototyping.​</p>
                                 </div>
                             </div>
                         </div>
 
                         <div id="FabricationMobile" class="tabcontent-mobile">
                             <div class="servicestabcontent-containersM">
-                                <div><img src="./dicing images/stile laser mob 2.png" alt=""></div>
+                                <div><img src="./images/spectrum-section-img/oc&ts_mobie.png" alt=""></div>
                                 <div class="mobilealign">
-                                    <h2 class="mb-2">Standard Wafer Dicing for<br> Semiconductor and<br> Compound
-                                        Materials
-                                    </h2>
-                                    <p class="mypM">Diamond blade dicing suited for silicon, GaAs,<br> ceramic, and
-                                        glass
-                                        wafers, with proven<br> reliability and scalable throughput.<br> Customizable
-                                        blade
-                                        selection and process<br> parameters allow for tailored solutions for<br> unique
-                                        device
-                                        requirements. ​</p>
-
+                                  
+                                    <h2 class="mb-2">Optical Characterization & Test Services</h2>
+                                    <p class="mypM">Beam profile, wavelength tuning, loss metrics, and system qualification performed in-house. Full compliance with telecom/datacom standards (JEDEC, Telcordia, IEC).​</p>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- <div id="DicingMobile" class="tabcontent-mobile">
-                            <div class="servicestabcontent-containers">
-                                <div><img src="./images/service/02s.png" alt=""></div>
+                        <div id="DicingMobile" class="tabcontent-mobile">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/spectrum-section-img/fp&mi_mobiile.png" alt=""></div>
                                 <div class="mobilealign">
-                                    <p>Dicing</p>
-                                    <h2>High-Precision Wafer Dicing</h2>
-                                    <p class="mypM">We deliver advanced wafer dicing using precision blade and laser
-                                        technologies to ensure clean die separation with minimal chipping. Optimized for
-                                        high yield and low particle contamination, our dicing supports next-gen
-                                        semiconductor packaging and performance.</p>
-                                    <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                  
+                                    <h2>FAU & PIC Module Integration </h2>
+                                    <p class="mypM">Multi-channel FAU design for large-scale bandwidth with real-time optical feedback and loss calibration ensures ultra-efficient coupling and modular scalability. </p>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
 
                         <div id="AssemblyMobile" class="tabcontent-mobile">
                             <div class="servicestabcontent-containersM">
-                                <div><img src="./dicing images/stile laser mob 3.png" alt=""></div>
+                                <div><img src="./images/spectrum-section-img/cpofdc&r_mobile.png" alt=""></div>
                                 <div class="mobilealign">
-
-                                    <h2>Wafer Thinning and Polishing </h2>
-                                    <p class="mypM">Controlled thinning for high-speed logic,<br> photonics, and MEMS
-                                        platforms, enabling<br> thinner devices with improved thermal and<br> mechanical
-                                        performance. Post-thinning CMP<br> ensures consistently smooth surfaces,<br>
-                                        optimized
-                                        for assembly, optics, and device<br> longevity. ​</p>
-
+                                    <p>Assembly</p>
+                                    <h2>Co-Packaged Optics for Data Center & LiDAR</h2>
+                                    <p class="mypM">2.5D/3D integrated optical/electronic PIC solutions for hyperscale platforms, with full reliability screening and client-specific customization. ​</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div id="SiliconPhotonicsMobile" class="tabcontent-mobile">
-                            <div class="servicestabcontent-containersM">
-                                <div><img src="./dicing images/stile laser mob 4.png" alt=""></div>
-                                <div class="mobilealign">
-
-                                    <h2>Automated AOI, Sorting, and<br> Final Packaging </h2>
-                                    <p class="mypM">High-resolution inspection, binning,<br> and safe packaging
-                                        guarantee
-                                        each die is<br> defect-free and production-ready.<br> Silitronics’ QC-driven
-                                        approach
-                                        provides<br> clear traceability across every wafer,<br> batch, and customer
-                                        order.​
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
+                  
                     </div>
                 </div>
             </section>
         </div>
 
+
+        <!-- ----------  -->
+      
+
+       
+
+     
+
+
         <!-- Case Study Section  -->
         <section class="forthcontsec">
             <div class="container">
                 <div class="casestudiessec">
-
                     <h2>Case Studies </h2>
                     <div class="casestudycontsec">
                         <div class="sglecasestudycontsec" style="background-image: url(images/case-study-01.jpg);">
                             <div class="transparentbg">
                                 <div class="casestudycontpart">
-                                    <h3>Accelerating Innovation in 4K Live Streaming & Gaming Cameras
+                                     <h3>Accelerating Innovation in 4K Live Streaming & Gaming Cameras
                                     </h3>
-                                    <p>Flawless execution, rapid prototyping, and first-pass success for
-                                        cutting-edge
-                                        automotive LiDAR technology.​</p>
+                                    <p>Flawless execution, rapid prototyping, and first-pass success for cutting-edge automotive LiDAR technology.​</p>
                                     <a href="#contactsec" class="downloadusecasebut">Download case study</a>
                                 </div>
                             </div>
@@ -2112,8 +1913,7 @@
                                 <div class="casestudycontpart">
                                     <h3>Accelerating Innovation in 4K Live Streaming & Gaming Cameras
                                     </h3>
-                                    <p>First-pass success, rapid prototyping, and precision execution for
-                                        breakthrough
+                                    <p>First-pass success, rapid prototyping, and precision execution for breakthrough
                                         imaging technology.​</p>
                                     <a href="#contactsec" class="downloadusecasebut">Download case study</a>
                                 </div>
@@ -2176,8 +1976,8 @@
                 <div class="topftrflexpart">
                     <div class="topftrcolpart">
                         <div class="ftrlogo"><img src="images/footer-logo.png"></div>
-                        <p>Silitronics is your trusted one-stop partner<br> for advanced semiconductor and photonics<br>
-                            packaging–pushing the boundaries of design,<br> fabrication, and assembly while driving<br>
+                        <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics
+                            packaging–pushing the boundaries of design, fabrication, and assembly while driving
                             sustainability.</p>
                         <div class="ftrusa"><img src="images/Isolation_Mode.png"></div>
                     </div>
@@ -2188,7 +1988,7 @@
                             <li><a href="javascript:void(0);">Services</a></li>
                             <li><a href="javascript:void(0);">Applications</a></li>
                             <li><a href="javascript:void(0);">Facility</a></li>
-                            <li><a href="javascript:void(0);">Resource hub</a></li>
+                            <li><a href="javascript:void(0);">Resources hub</a></li>
                             <li><a href="javascript:void(0);">About us</a></li>
                             <li><a href="javascript:void(0);">Contact us</a></li>
                         </ul>
