@@ -460,6 +460,7 @@ function openCityMobile(evt, cityNameMobile) {
   tabcontentMobile = document.getElementsByClassName("tabcontent-mobile");
   for (i = 0; i < tabcontentMobile.length; i++) {
     tabcontentMobile[i].style.display = "none";
+    console.log(i);
   }
 
   // Remove 'active' class from all mobile tab buttons

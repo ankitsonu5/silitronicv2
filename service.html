@@ -383,15 +383,23 @@
                                     Dicing
                                 </button>
                             </a>
+
+                             <a>
+                                <button class="tablinks tab-btn2 tech-box2 "
+                                    onclick="openCity(event, 'SiliconPhotonics')">
+                                   Silicon Photonics
+                                </button>
+                            </a>
                             <a>
                                 <button class="tablinks tab-btn2 tech-box2 " onclick="openCity(event, 'Assembly')">
                                     Assembly
                                 </button>
                             </a>
-                            <a>
+                           
+                              <a>
                                 <button class="tablinks tab-btn2 tech-box2 "
-                                    onclick="openCity(event, 'SiliconPhotonics')">
-                                    Co-packaged optics
+                                    onclick="openCity(event, 'Chiplets')">
+                                   Chiplets
                                 </button>
                             </a>
                         </div>
@@ -404,17 +412,9 @@
                                     <img src="./images/service/01s.png" alt="">
                                 </div>
                                 <div class="box1align">
-                                    <p>Design</p>
-                                    <h2>Precision-Driven Design for​ Next-Gen Semiconductor & Photonic Packaging</h2>
-                                    <p class="myp">From concept to layout, our advanced design expertise ensures
-                                        seamless
-                                        integration of chips, substrates, and interconnects. We optimize signal
-                                        integrity,
-                                        power efficiency, and thermal performance to meet the demands of AI
-                                        accelerators,
-                                        quantum computing, and high-speed photonic systems. With deep engineering
-                                        insights,
-                                        we design scalable, high-reliability solutions for the future​</p>
+                             
+                                    <h2>Precision-Driven Design for​Next-Gen Semiconductor & Photonic Packaging</h2>
+                                    <p class="myp">From concept to layout, our advanced design expertise ensures seamless integration of chips, substrates, and interconnects. We optimize signal integrity, power efficiency, and thermal performance to meet the demands of AI accelerators, quantum computing, and high-speed photonic systems. With deep engineering insights, we design scalable, high-reliability solutions for the future.​​</p>
                                     <a href="./design.html" class="learnmore">LEARN MORE</a>
                                 </div>
                             </div>
@@ -426,7 +426,6 @@
                                     <img src="./images/service/05s.png" alt="">
                                 </div>
                                 <div class="box1align">
-                                    <p>Fabrication</p>
                                     <h2>Fabrication for Advanced​Semiconductor & Photonic Packaging</h2>
                                     <p class="myp">Our state-of-the-art fabrication facility delivers high-precision
                                         multi-layer substrates tailored for AI, HPC, and Silicon Photonics. With
@@ -447,7 +446,6 @@
                                     <img src="./images/service/02s.png" alt="">
                                 </div>
                                 <div class="box1align">
-                                    <p>Dicing</p>
                                     <h2>High-Precision Wafer Dicing</h2>
                                     <p class="myp">We deliver advanced wafer dicing using precision blade and laser
                                         technologies to ensure clean die separation with minimal chipping. Optimized for
@@ -457,6 +455,29 @@
                                 </div>
                             </div>
                         </div>
+                        
+
+                         <div id="SiliconPhotonics" class="tabcontent">
+                            <div class="servicestabcontent-containers">
+                                <div>
+                                    <img src="./images/service/04s.png" alt="">
+                                </div>
+                                <div class="box1align myclass">
+                                    <h2>Powering the Future at the Speed of Light with Photonics</h2>
+                                    <p class="myp">Silicon Photonics is transforming high-speed computing, AI clusters,
+                                        and
+                                        next-gen data transfer. Our expertise in sub-micron active alignment, optical
+                                        integration, and high-bandwidth packaging ensures low-latency, energy-efficient
+                                        performance. From LiDAR to AI-driven interconnects, we deliver cutting-edge
+                                        photonics solutions that push the limits of speed, scalability, and
+                                        efficiency.​​
+                                    </p>
+                                    <a href="./SI" class="learnmore">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+
+
                         <div id="Assembly" class="tabcontent">
                             <div class="servicestabcontent-containers">
                                 <div>
@@ -477,21 +498,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="SiliconPhotonics" class="tabcontent">
+                        <div id="Chiplets" class="tabcontent">
                             <div class="servicestabcontent-containers">
                                 <div>
-                                    <img src="./images/service/04s.png" alt="">
+                                    <img src="./images/service/Bt_chiplets.png" alt="">
                                 </div>
                                 <div class="box1align myclass">
-                                    <p>Silicon Photonics​</p>
-                                    <h2>Powering the Future at the Speed of Light with Photonics</h2>
-                                    <p class="myp">Silicon Photonics is transforming high-speed computing, AI clusters,
-                                        and
-                                        next-gen data transfer. Our expertise in sub-micron active alignment, optical
-                                        integration, and high-bandwidth packaging ensures low-latency, energy-efficient
-                                        performance. From LiDAR to AI-driven interconnects, we deliver cutting-edge
-                                        photonics solutions that push the limits of speed, scalability, and
-                                        efficiency.​​
+                               
+                                    <h2>Breakthrough Chiplet Integration for Scalable, Next-Gen Systems</h2>
+                                    <p class="myp">Silitronics empowers the future of electronics with advanced chiplet integration—merging diverse dies on precision-engineered interposers for optimal signal, power, and thermal performance. Our expertise in modular floor planning and heterogeneous assembly accelerates high-bandwidth, low-latency connectivity that’s essential for AI, HPC, and 5G. From concept design to rigorous validation, Silitronics helps customers bring complex systems to market—faster, smarter, and more reliably.
                                     </p>
                                     <a href="./SI" class="learnmore">LEARN MORE</a>
                                 </div>
@@ -514,10 +529,20 @@
                             onclick="openCityMobile(event, 'FabricationMobile')">Fabrication</button>
                         <button class="only-mobile-button tablinks-mobile"
                             onclick="openCityMobile(event, 'DicingMobile')">Dicing</button>
+                
+                          <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'SiliconPhotonicsMobile')">Silicon Photonics</button>
+                        
                         <button class="only-mobile-button tablinks-mobile"
                             onclick="openCityMobile(event, 'AssemblyMobile')">Assembly</button>
-                        <button class="only-mobile-button tablinks-mobile"
-                            onclick="openCityMobile(event, 'SiliconPhotonicsMobile')">Co-packaged optics</button>
+
+                              <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'Chiplets')">Chiplets</button>
+            
+
+                             <!-- <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'Chiplets')">Chiplets</button> -->
+            
                     </div>
 
                      
@@ -526,8 +551,7 @@
                             <div class="servicestabcontent-containersM">
                                 <div><img src="./images/service/01s.png" alt=""></div>
                                 <div class="mobilealign">
-                                    <p>Design</p>
-                                    <h2>Precision-Driven Design for​ Next-Gen Semiconductor & Photonic Packaging</h2>
+                                    <h2>Precision-Driven Design for​Next-Gen Semiconductor & Photonic Packaging​</h2>
                                     <p class="mypM">From concept to layout, our advanced design expertise ensures seamless integration of chips, substrates, and interconnects. We optimize signal integrity, power efficiency, and thermal performance to meet the demands of AI accelerators, quantum computing, and high-speed photonic systems. With deep engineering insights, we design scalable, high-reliability solutions for the future.​</p>
                                  <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
                                 </div>
@@ -538,9 +562,8 @@
                             <div class="servicestabcontent-containersM">
                                 <div><img src="./images/service/05s.png" alt=""></div>
                                 <div class="mobilealign">
-                                    <p>Fabrication</p>
-                                    <h2>Fabrication for Advanced​ Semiconductor & Photonic Packaging</h2>
-                                    <p class="mypM">Our state-of-the-art fabrication facility delivers high-precision multi-layer substrates tailored for AI, HPC, and Silicon Photonics. With expertise in organic and ceramic substrates, fine-pitch interconnects, and high-density integration, we ensure superior reliability, scalability, and manufacturing excellence. From prototypes to high-volume production, we bring innovation to life with precision.​</p>
+                                    <h2>Fabrication for Advanced​Semiconductor & Photonic Packaging</h2>
+                                    <p class="mypM">Our state-of-the-art fabrication facility delivers high-precision multi-layer substrates tailored for AI, HPC, and Silicon Photonics. With expertise in organic and ceramic substrates, fine-pitch interconnects, and high-density integration, we ensure superior reliability, scalability, and manufacturing excellence. From prototypes to high-volume production, we bring innovation to life with precision.​​</p>
                                     <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
                                 </div>
                             </div>
@@ -550,9 +573,19 @@
                             <div class="servicestabcontent-containersM">
                                 <div><img src="./images/service/02s.png" alt=""></div>
                                 <div class="mobilealign">
-                                    <p>Dicing</p>
                                     <h2>High-Precision Wafer Dicing</h2>
                                     <p class="mypM">We deliver advanced wafer dicing using precision blade and laser technologies to ensure clean die separation with minimal chipping. Optimized for high yield and low particle contamination, our dicing supports next-gen semiconductor packaging and performance.</p>
+                                   <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div id="SiliconPhotonicsMobile" class="tabcontent-mobile">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/service/04s.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <h2>Powering the Future at the Speed of Light with Photonics</h2>
+                                    <p class="mypM">Silicon Photonics is transforming high-speed computing, AI clusters, and next-gen data transfer. Our expertise in sub-micron active alignment, optical integration, and high-bandwidth packaging ensures low-latency, energy-efficient performance. From LiDAR to AI-driven interconnects, we deliver cutting-edge photonics solutions that push the limits of speed, scalability, and efficiency.​</p>
                                    <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
                                 </div>
                             </div>
@@ -562,25 +595,24 @@
                             <div class="servicestabcontent-containersM">
                                 <div><img src="./images/service/03s.png" alt=""></div>
                                 <div class="mobilealign">
-                                    <p>Assembly</p>
-                                    <h2>Seamless Assembly for High-Precision Packaging</h2>
-                                    <p class="mypM">Our cutting-edge assembly expertise ensures precise chip-to-package integration with industry-leading sub-micron active alignment, high-density interconnects, and heterogeneous integration. We specialize in complex optical and electronic assemblies for AI accelerators, 5G networks, and next-gen computing, delivering high-reliability solutions that optimize performance and reduce time to market.​</p>
+                                    <h2>Seamless Assembly for High-Precision Semiconductor & Photonic Packaging​</h2>
+                                    <p class="mypM">Our cutting-edge assembly expertise ensures precise chip-to-package integration with industry-leading sub-micron active alignment, high-density interconnects, and heterogeneous integration. We specialize in complex optical and electronic assemblies for AI accelerators, 5G networks, and next-gen computing, delivering high-reliability solutions that optimize performance and reduce time to market.​​</p>
                                   <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
-
-                        <div id="SiliconPhotonicsMobile" class="tabcontent-mobile">
+                           <div id="Chiplets" class="tabcontent-mobile">
                             <div class="servicestabcontent-containersM">
-                                <div><img src="./images/service/04s.png" alt=""></div>
+                                <div><img src="./images/service/03s.png" alt=""></div>
                                 <div class="mobilealign">
-                                    <p>Silicon Photonics​</p>
-                                    <h2>Powering the Future at the Speed of Light with Photonics</h2>
-                                    <p class="mypM">Silicon Photonics is transforming high-speed computing, AI clusters, and next-gen data transfer. Our expertise in sub-micron active alignment, optical integration, and high-bandwidth packaging ensures low-latency, energy-efficient performance. From LiDAR to AI-driven interconnects, we deliver cutting-edge photonics solutions that push the limits of speed, scalability, and efficiency.​</p>
-                                   <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                     <h2>Breakthrough Chiplet Integration for Scalable, Next-Gen Systems</h2>
+                                    <p class="mypM">Silitronics empowers the future of electronics with advanced chiplet integration—merging diverse dies on precision-engineered interposers for optimal signal, power, and thermal performance. Our expertise in modular floor planning and heterogeneous assembly accelerates high-bandwidth, low-latency connectivity that’s essential for AI, HPC, and 5G. From concept design to rigorous validation, Silitronics helps customers bring complex systems to market—faster, smarter, and more reliably.​</p>
+                                     <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
+
+                     
                     </div>
                 </div>
             </section>
@@ -589,7 +621,7 @@
         <section class="forthcontsec">
             <div class="container">
                 <div class="casestudiessec">
-                    <h2>Case Studies and Whitepapers</h2>
+                    <h2>Case Studies </h2>
                     <div class="casestudycontsec">
                         <div class="sglecasestudycontsec" style="background-image: url(images/case-study-01.jpg);">
                             <div class="transparentbg">
