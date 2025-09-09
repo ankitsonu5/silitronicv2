@@ -232,8 +232,36 @@
         #rightCarousel .carousel-item {
             min-height: 520px;
             /* S shape ki height ke barabar ya usse thoda zyada */
-
         }
+
+
+        .tab-btn2{
+              clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0% 100%)!important;
+        }
+
+         .heading{
+        font-size: 2rem;
+    line-height: 35px;
+    font-family: 'Titillium Web';
+    font-weight: bold;
+    text-align: center;
+    /* padding: 0 0 40px 0; */
+    background: linear-gradient(90deg, #050EF1, #FD0200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media (min-width:767px){
+    .heading{
+     font-size: 70px;
+    line-height: 85px;  
+    }
+}
+
+
+
+
     </style>
 </head>
 
@@ -245,6 +273,7 @@
             <section class="services-section">
               
                 <div class=" containers desktop">
+                       <h2 class="heading" style="margin-bottom: 30px;">Our Services Spectrum</h2>
                     <div class="rows">
                         <div class="tab button dskbtn ">
                             <a>
@@ -295,7 +324,7 @@
                              
                                     <h2>Precision-Driven Design for​Next-Gen Semiconductor & Photonic Packaging</h2>
                                     <p class="myp">From concept to layout, our advanced design expertise ensures seamless integration of chips, substrates, and interconnects. We optimize signal integrity, power efficiency, and thermal performance to meet the demands of AI accelerators, quantum computing, and high-speed photonic systems. With deep engineering insights, we design scalable, high-reliability solutions for the future.​​</p>
-                                    <a href="./design.html" class="learnmore">LEARN MORE</a>
+                                    <a href="./design.html" target="_blank" class="learnmore">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -315,7 +344,7 @@
                                         excellence. From prototypes to high-volume production, we bring innovation to
                                         life
                                         with precision.​</p>
-                                    <a href="./fabrication.html" class="learnmore">LEARN MORE</a>
+                                    <a href="./fabrication.html" target="_blank" class="learnmore">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -331,7 +360,7 @@
                                         technologies to ensure clean die separation with minimal chipping. Optimized for
                                         high yield and low particle contamination, our dicing supports next-gen
                                         semiconductor packaging and performance.​</p>
-                                    <a href="./dicing.html" class="learnmore">LEARN MORE</a>
+                                    <a href="./dicing.html" target="_blank" class="learnmore">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -352,7 +381,7 @@
                                         photonics solutions that push the limits of speed, scalability, and
                                         efficiency.​​
                                     </p>
-                                    <a href="./SI" class="learnmore">LEARN MORE</a>
+                                    <a href="./SI" target="_blank" class="learnmore">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -374,7 +403,7 @@
                                         delivering high-reliability solutions that optimize performance and reduce time
                                         to
                                         market.​</p>
-                                    <a href="./servicesassebly.html" class="learnmore">LEARN MORE</a>
+                                    <a href="./servicesassebly.html" target="_blank" class="learnmore">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -388,7 +417,7 @@
                                     <h2>Breakthrough Chiplet Integration for Scalable, Next-Gen Systems</h2>
                                     <p class="myp">Silitronics empowers the future of electronics with advanced chiplet integration—merging diverse dies on precision-engineered interposers for optimal signal, power, and thermal performance. Our expertise in modular floor planning and heterogeneous assembly accelerates high-bandwidth, low-latency connectivity that’s essential for AI, HPC, and 5G. From concept design to rigorous validation, Silitronics helps customers bring complex systems to market—faster, smarter, and more reliably.
                                     </p>
-                                    <a href="./SI" class="learnmore">LEARN MORE</a>
+                                    <a href="./SI" target="_blank"  class="learnmore">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -401,7 +430,7 @@
         <div class="only-mobile">
             <section class="services-section">
                 <div class="containers">
-                 
+                    <h2 class="heading" style="margin-bottom: 30px;">Our Services Spectrum</h2>
                     <div class="only-mobile-button-group">
                         <button class="only-mobile-button tablinks-mobile active"
                             onclick="openCityMobile(event, 'DesignMobile')">Design</button>
