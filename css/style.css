@@ -5834,12 +5834,12 @@ a.getintouchbut:hover,
     /* dark text */
     padding: 15px 60px !important;
     margin: 5px;
-   
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 500;
     font-family: 'Spline Sans Mono' !important;
+    border-radius: 0 0 18px 0;
 }
 
 
