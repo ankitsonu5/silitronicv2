@@ -6770,6 +6770,7 @@ section.services-section {
     transition: all 0.3s ease;
    
     clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0% 100%);
+    border-radius: 0 0 18px 0;
     
 }
 
