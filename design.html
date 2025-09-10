@@ -19,9 +19,22 @@
     <link rel="stylesheet" href="./css/responsive.css">
     <title>Design</title>
     <style>
+        .services-section-head-desk {
+    font-size: 70px;
+    line-height: 64px;
+    font-family: 'Titillium Web';
+    font-weight: bold;
+    text-align: center;
+    padding: 75px 0;
+    background: linear-gradient(90deg, #050EF1, #FD0200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
         .box1align h2 {
             width: 100%;
-            height: 0px !important;
+            /* height: 0px !important; */
+            /* padding: 75px 0; */
             font-weight: bold;
             font-family: 'Titillium Web';
             /* line-height: 25px; */
@@ -57,6 +70,20 @@
                 top: 50% !important;
                 transform: translateY(-35%) !important;
             }
+        }
+        @media screen and (max-width: 768px) {
+            .services-section-head-desk {
+            font-size: 2rem;
+            line-height: 35px;
+    font-family: 'Titillium Web';
+    font-weight: bold;
+    text-align: center;
+    padding: 75px 0;
+    background: linear-gradient(90deg, #050EF1, #FD0200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
         }
 
         /* Service page tab active link styling */
@@ -1851,6 +1878,7 @@
         <div class="">
             <section class="services-section">
                 <div class="containers desktop">
+                <h2 class="services-section-head-desk">Design Services Spectrum</h2>
                     <div class="rows">
                         <div class="tab button dskbtn">
                             <a>
@@ -2069,6 +2097,8 @@
             <section class="services-section ">
 
                 <div class=" containers desktop">
+                <h2 class="services-section-head-desk">Our Services Spectrum</h2>
+
                     <div class="rows">
                         <div class="tab button dskbtn ">
                             <a>
@@ -2192,7 +2222,7 @@
                                     <img src="./images/service/03s.png" alt="">
                                 </div>
                                 <div class="box1align">
-                                    <p>Assembly</p>
+                                    <!-- <p>Assembly</p> -->
                                     <h2>Seamless Assembly for High-Precision Semiconductor & Photonic Packaging</h2>
                                     <p class="myp">Our cutting-edge assembly expertise ensures precise chip-to-package
                                         integration with industry-leading sub-micron active alignment, high-density
