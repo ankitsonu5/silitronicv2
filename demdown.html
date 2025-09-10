@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Rule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            position: relative;
+        }
+        .card {
+            border: 1px solid #ddd;
+            background-color: #fff;
+            width: 200px;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+            min-height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .card .caption {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+            flex-grow: 1;
+            text-align: left;
+            padding: 0 5px;
+        }
+        .card-wrapper {
+            position: relative;
+        }
+        .download {
+            display: none;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            width: 200px;
+            text-align: center;
+            background-color: #fff;
+            padding: 5px 0;
+            border-top: 1px solid #555;
+            margin-top: -1px;
+            white-space: nowrap;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .download .hline {
+            width: 100%;
+            border-bottom: 1px solid #555;
+            margin-bottom: 5px;
+        }
+        .card-wrapper:first-child .download {
+            display: flex;
+        }
+        .card-container:hover .download {
+            display: none;
+        }
+        .card-wrapper:hover .download {
+            display: flex;
+        }
+        .card:hover {
+            width: 200px !important;
+        }
+    </style>
+</head>
+<body>
+    <section id="design-rule-section">
+        <div class="container">
+            <h2>Design Rule</h2>
+            <p>Last updated: 04:09 PM IST, Wednesday, September 10, 2025</p>
+        </div>
+        <div class="container card-container">
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="Ceramic substrate top layer optimization">
+                    <div class="caption">Ceramic substrate top layer optimization<br>Value Add for High Volume DFM Etched Thick Film Ceramic Substrate<br>- Improve RF and Electrical Performance<br>- Improve Manufacturing Yield<br>- Reduce Cost</div>
+                </div>
+                <a class="download" href="#"><span class="hline"></span>DOWNLOAD DESIGN RULES</a>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="Flip chip ceramic LTCC package">
+                    <div class="caption">Flip chip ceramic LTCC package<br>Substrate: 54mm x 37mm<br>26 conductor Flex (1mm pitch)<br>1.85mm M Connectors</div>
+                </div>
+                <a class="download" href="#"><span class="hline"></span>DOWNLOAD DESIGN RULES</a>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="PCB fab">
+                    <div class="caption">PCB fab<br>PCB Capabilities (Allegro, Altium, OrCAD)<br>[Table-like content with various specs]</div>
+                </div>
+                <a class="download" href="#"><span class="hline"></span>DOWNLOAD DESIGN RULES</a>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="Etch thick film">
+                    <div class="caption">Etch thick film<br>a. Conductor Traces, Wire Bond/Solder Pads & Vias<br>[Table-like content with various specs]</div>
+                </div>
+                <a class="download" href="#"><span class="hline"></span>DOWNLOAD DESIGN RULES</a>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="Board stack up">
+                    <div class="caption">Board stack up<br>[Diagram and table content for layer stacking]</div>
+                </div>
+                <a class="download" href="#"><span class="hline"></span>DOWNLOAD DESIGN RULES</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
