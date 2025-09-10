@@ -112,7 +112,9 @@ img {
     height: auto;
    
 }
-
+.fixed-getintouch img {
+    width: 6rem !important;
+}
 body {
     font-family: 'Spline Sans Mono';
     font-weight: 400;
