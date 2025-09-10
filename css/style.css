@@ -655,14 +655,16 @@ a.getintouchbut:hover {
     font-size: 17px;
     letter-spacing: normal;
     line-height: 1.5;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0% 100%);
 }
 
 .servicecontheight {
     background: linear-gradient(45deg, #050EF1, #FD0200);
     padding: 2px;
-    -webkit-border-bottom-right-radius: 20px;
-    -moz-border-radius-bottomright: 20px;
-    border-bottom-right-radius: 20px;
+    /* -webkit-border-bottom-right-radius: 20px; */
+    /* -moz-border-radius-bottomright: 20px; */
+    /* border-bottom-right-radius: 20px; */
+     clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0% 100%);
     width: 100%;
     height: 100%;
     position: relative;
@@ -672,13 +674,16 @@ a.getintouchbut:hover {
 .servicecontheight>.inner {
     padding: 18px;
     background: white;
-    -webkit-border-bottom-right-radius: 18px;
+    /* -webkit-border-bottom-right-radius: 18px;
     -moz-border-radius-bottomright: 18px;
-    border-bottom-right-radius: 18px;
+    border-bottom-right-radius: 18px; */
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0% 100%);
     width: 100%;
     height: 100%;
     position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0% 100%);
 }
+
 
 .tabsec {
     width: 100%;
@@ -5839,7 +5844,7 @@ a.getintouchbut:hover,
     transition: all 0.3s ease;
     font-weight: 500;
     font-family: 'Spline Sans Mono' !important;
-    border-radius: 0 0 18px 0;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0% 100%)!important;
 }
 
 
@@ -5998,11 +6003,11 @@ a.getintouchbut:hover,
     color: #fff;
     /* background: linear-gradient(to right, #050ef1 0%, #fd0200 100%); */
     padding: 10px;
+
+  
 }
 
 .tech-box2 {
-
-
     color: white;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 700;
@@ -6075,7 +6080,7 @@ a.getintouchbut:hover,
 } */
 
 
-.tab button {
+.tab button{
     /* box-shadow: 
     inset 0 0 0 2px #4b3b91,  
     0 1px 4px rgba(0, 0, 0, 0.16); */
@@ -6101,7 +6106,9 @@ a.getintouchbut:hover,
     /* ✅ This ensures 2 per row */
     text-align: center;
     box-sizing: border-box;
+
 }
+
 
 
 
@@ -6769,7 +6776,7 @@ section.services-section {
     white-space: nowrap;
     transition: all 0.3s ease;
    
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0% 100%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0% 100%)!important; */
     border-radius: 0 0 18px 0;
     
 }
@@ -8914,3 +8921,4 @@ color: #A188EB;
     color: #fff !important;
     border: none !important;
 }
+

@@ -232,144 +232,52 @@
         #rightCarousel .carousel-item {
             min-height: 520px;
             /* S shape ki height ke barabar ya usse thoda zyada */
-
         }
+
+
+        .tab-btn2{
+              clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0% 100%)!important;
+        }
+
+         .heading{
+        font-size: 2rem;
+    line-height: 35px;
+    font-family: 'Titillium Web';
+    font-weight: bold;
+    text-align: center;
+    /* padding: 0 0 40px 0; */
+    background: linear-gradient(90deg, #050EF1, #FD0200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media (min-width:767px){
+    .heading{
+     font-size: 70px;
+    line-height: 85px;  
+    }
+}
+
+
+
+
     </style>
 </head>
 
 <body>
-    <section class="headersec sticky only-desktop">
-        <div class="container">
-            <div class="logonnavsec">
-                <div class="logo ">
-                    <a href="index.html"><img src="images/logo.png" /></a>
-                </div>
-                <div class="navsec">
-                    <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="service.html">Services</a></li>
-                        <!-- <li><a href="application.html">Applications</a></li>
-                        <li><a href="facility.html">Facility</a></li> -->
-                        <!-- <li><a href="resource.html">Resources Hub</a></li> -->
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                     
-                    </ul>
-                </div>
-               
-            </div>
-        </div>
-    </section>
-    <!-- mobile navbar -->
 
 
-    <div class="only-mobile sticky">
-        <div class="menu-header only-mobile sticky">
-            <img src="images/logo.png" alt="SILITRONICS Logo">
-            <div class="hamburger close-icon" onclick="toggleMenu(this)">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-
-        <div class="side-menu" id="menu">
-            <ul>
-                
-         <li><a href="index.html" class="active">HOME</a></li>
-                <li><a href="service.html">SERVICES</a></li>
-                <!-- <li><a href="application.html">APPLICATIONS</a></li>
-                <li><a href="facility.html">FACILITY</a></li> -->
-                <!-- <li><a href="resource.html">RESOURCES HUB</a></li> -->
-                <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-            </ul>
-
-
-            <div class="social-icons">
-                <a href="https://youtube.com" target="_blank">
-                    <img src="images/youtube.svg" alt="YouTube">
-                </a>
-                <a href="https://linkedin.com" target="_blank">
-                    <img src="images/linkedin.svg" alt="LinkedIn">
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    <main>
-        <section class="bannersec">
-            <div class="owl-carousel owl-theme slidersec">
-                <div class="item">
-                    <div class="slidecontpart">
-                        <div class="container">
-                            <h1>One-Stop Advanced <br> Semiconductor &</h1>
-                            <h1>Photonics (PIC) <br> Packaging Solutions</h1>
-                            <div class="sbbox">
-                                <p class="sbannertext">Expert solutions in Silicon Photonics,<br> and Semiconductor system
-                                    and package <br>design, fabrication, and assembly.​</p>
-                            </div>
-                            <a href="#contactsec" class="getintouchbut">Get in touch</a>
-                        </div>
-                    </div>
-                    <img src="images/servicebanner.png">
-                </div>
-            </div>
-         
-        </section>
-        <!-- Mobile Banner Carousel -->
-        <section class="bannersec-mobile">
-            <div class="">
-                <div class="item">
-                    <div class="slidecontpart">
-                        <div class="container">
-                            <h1>One-Stop Advanced <br> Semiconductor &</h1>
-                            <h1>Photonics (PIC) <br> Packaging Solutions</h1>
-                            <div class="sbbox">
-                                <p class="sbannertext">Expert solutions in Silicon Photonics, and Semiconductor system
-                                    and package design, fabrication, and assembly.​</p>
-                            </div>
-                            <a href="#contactsec" class="getintouchbut">Get in touch</a>
-                        </div>
-                    </div>
-                    <img src="images/servicesmobilebanner.png">
-                </div>
-                
-            </div>
-        </section>
-        <section class="sndcontsec">
-            <div class="container">
-                <div class="lftrytlinepart">
-                    <h2>Our Services Spectrum</h2>
-                    <p class=" slide2text ">From Silicon Photonics to Advanced Semiconductor Design, Fabrication, and
-                        Assembly, we deliver end-to-end advanced semiconductor and PIC packaging solutions with
-                        unmatched expertise.</p>
-                    <p>&nbsp;</p>
-                    <p>Our current edge equipment and facilities coupled with engineering expertise ensures seamless
-                        integration, high performance, and first-pass success, empowering breakthroughs in AI, HPC, and
-                        next-gen connectivity. Experience engineering excellence that drives the future of innovation.
-                    </p>
-
-
-                  <div style="margin-top:20px;">
-  <video width="100%" height="auto" autoplay loop muted playsinline>
-    <source src="video/Silitronics-Service-Spectrum.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
-
-        </section>
-
-
-        
-        <div class=" only-desktop ">
-            <section class="services-section ">
+    <!--  -->
+            <div class=" only-desktop ">
+            <section class="services-section">
               
                 <div class=" containers desktop">
+                       <h2 class="heading" style="margin-bottom: 30px;">Our Services Spectrum</h2>
                     <div class="rows">
                         <div class="tab button dskbtn ">
                             <a>
-                                <button class="tablinks tab-btn2 tablinks-active tech-box2 "
+                                <button class="tablinks tab-btn2 tech-box2 "
                                     onclick="openCity(event, 'Design')">
                                     Design
                                 </button>
@@ -386,7 +294,7 @@
                             </a>
 
                              <a>
-                                <button class="tablinks tab-btn2 tech-box2 "
+                                <button class="tablinks tab-btn2 tech-box2   "
                                     onclick="openCity(event, 'SiliconPhotonics')">
                                    Silicon Photonics
                                 </button>
@@ -398,7 +306,7 @@
                             </a>
                            
                               <a>
-                                <button class="tablinks tab-btn2 tech-box2 "
+                                <button class="tablinks tab-btn2 tech-box2  tablinks-active "
                                     onclick="openCity(event, 'Chiplets')">
                                    Chiplets
                                 </button>
@@ -416,7 +324,7 @@
                              
                                     <h2>Precision-Driven Design for​Next-Gen Semiconductor & Photonic Packaging</h2>
                                     <p class="myp">From concept to layout, our advanced design expertise ensures seamless integration of chips, substrates, and interconnects. We optimize signal integrity, power efficiency, and thermal performance to meet the demands of AI accelerators, quantum computing, and high-speed photonic systems. With deep engineering insights, we design scalable, high-reliability solutions for the future.​​</p>
-                                    <a href="./design.html" class="learnmore">LEARN MORE</a>
+                                    <a href="./design.html" target="_blank" class="learnmore">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -436,7 +344,7 @@
                                         excellence. From prototypes to high-volume production, we bring innovation to
                                         life
                                         with precision.​</p>
-                                    <a href="./fabrication.html" class="learnmore">LEARN MORE</a>
+                                    <a href="./fabrication.html" target="_blank" class="learnmore">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -452,7 +360,7 @@
                                         technologies to ensure clean die separation with minimal chipping. Optimized for
                                         high yield and low particle contamination, our dicing supports next-gen
                                         semiconductor packaging and performance.​</p>
-                                    <a href="./dicing.html" class="learnmore">LEARN MORE</a>
+                                    <a href="./dicing.html" target="_blank" class="learnmore">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -473,7 +381,7 @@
                                         photonics solutions that push the limits of speed, scalability, and
                                         efficiency.​​
                                     </p>
-                                    <a href="./siliconphotonics.html" class="learnmore">LEARN MORE</a>
+                                    <a href="./SI" target="_blank" class="learnmore">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -485,6 +393,7 @@
                                     <img src="./images/service/03s.png" alt="">
                                 </div>
                                 <div class="box1align">
+                                    <p>Assembly</p>
                                     <h2>Seamless Assembly for High-Precision Semiconductor & Photonic Packaging</h2>
                                     <p class="myp">Our cutting-edge assembly expertise ensures precise chip-to-package
                                         integration with industry-leading sub-micron active alignment, high-density
@@ -494,7 +403,7 @@
                                         delivering high-reliability solutions that optimize performance and reduce time
                                         to
                                         market.​</p>
-                                    <a href="./servicesassebly.html" class="learnmore">LEARN MORE</a>
+                                    <a href="./servicesassebly.html" target="_blank" class="learnmore">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -508,7 +417,7 @@
                                     <h2>Breakthrough Chiplet Integration for Scalable, Next-Gen Systems</h2>
                                     <p class="myp">Silitronics empowers the future of electronics with advanced chiplet integration—merging diverse dies on precision-engineered interposers for optimal signal, power, and thermal performance. Our expertise in modular floor planning and heterogeneous assembly accelerates high-bandwidth, low-latency connectivity that’s essential for AI, HPC, and 5G. From concept design to rigorous validation, Silitronics helps customers bring complex systems to market—faster, smarter, and more reliably.
                                     </p>
-                                    <a href="./chiplets.html" class="learnmore">LEARN MORE</a>
+                                    <a href="./SI" target="_blank"  class="learnmore">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -521,7 +430,7 @@
         <div class="only-mobile">
             <section class="services-section">
                 <div class="containers">
-                 
+                    <h2 class="heading" style="margin-bottom: 30px;">Our Services Spectrum</h2>
                     <div class="only-mobile-button-group">
                         <button class="only-mobile-button tablinks-mobile active"
                             onclick="openCityMobile(event, 'DesignMobile')">Design</button>
@@ -616,191 +525,8 @@
                     </div>
                 </div>
             </section>
-        </div>                    
-
-
-         <!-- <iframe src="./iframe.html" frameborder="0" class="only-mobile containers" ></iframe> -->
-
-
-
-        
-
-        <section class="forthcontsec">
-            <div class="container">
-                <div class="casestudiessec">
-                    <h2>Case Studies </h2>
-                    <div class="casestudycontsec">
-                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-01.jpg);">
-                            <div class="transparentbg">
-                                <div class="casestudycontpart">
-                                    <h3>Driving Innovation in LiDAR with High-Precision SiP Packaging​</h3>
-                                    <p>Flawless execution, rapid prototyping, and first-pass success for cutting-edge
-                                        automotive LiDAR technology.​</p>
-                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-02.jpg);">
-                            <div class="transparentbg">
-                                <div class="casestudycontpart">
-                                    <h3>Accelerating Innovation in 4K Live Streaming & Gaming Cameras
-                                    </h3>
-                                    <p>First-pass success, rapid prototyping, and precision execution for breakthrough
-                                        imaging technology.​</p>
-                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-03.jpg);">
-                            <div class="transparentbg">
-                                <div class="casestudycontpart">
-                                    <h3>High-Yield, High-Precision IC Packaging for 5G & RF Innovation
-                                        ​</h3>
-                                    <p>Reliable, flexible, and high-performance IC packaging solutions, ensuring
-                                        uninterrupted supply and exceptional quality.
-                                        ​</p>
-                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-      
-        <section class="fifthcontsec">
-            <div class="container">
-                <div class="contactsec" id="contactsec">
-                    <div class="lftrytlinepart">
-                        <div class="leftcontpanel">
-                            <h2>Get in touch</h2>
-                            <p><strong>Interested in our end-to-end advanced semiconductor and photonics (PIC) packaging
-                                    solutions?</strong>​</p>
-                            <p>&nbsp;</p>
-                            <p>Share your details for an expert connect.</p>
-                        </div>
-                        <div class="rightcontpanel">
-                            <form action="mail/sendmail.php" method="post">
-                                <div class="inputfieldwidth"><input type="text" name="name" placeholder="Name*"
-                                        class="inputfield"></div>
-                                <div class="inputfieldwidth"><input type="text" name="organization"
-                                        placeholder="Organization*" class="inputfield"></div>
-                                <div class="inputfieldwidth"><input type="tel" name="contact number"
-                                        placeholder="Contact number*" class="inputfield"></div>
-                                <div class="inputfieldwidth"><input type="email" name="email" placeholder="Email*"
-                                        class="inputfield"></div>
-                                <div class="inputfieldwidth"><textarea name="comments" class="textareafield"
-                                        placeholder="Comments"></textarea></div>
-                                <!-- <div class="inputfieldwidth"><input type="submit" name="submit" value="submit"
-                                        class="submitbut"></div> -->
-                                <button class="submitbut">SUBMIT</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-
-    <section class="footerbg only-desktop">
-        <div class="topftrsec">
-            <div class="container">
-                <div class="topftrflexpart">
-                    <div class="topftrcolpart">
-                        <div class="ftrlogo"><img src="images/footer-logo.png"></div>
-                        <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics
-                            packaging–pushing the boundaries of design, fabrication, and assembly while driving
-                            sustainability.</p>
-                        <div class="ftrusa"><img src="images/Isolation_Mode.png"></div>
-                    </div>
-                    <!-- here myful is footerulli -->
-                    <div class="topftrcolpart myful">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="javascript:void(0);">Services</a></li>
-                            <li><a href="javascript:void(0);">Applications</a></li>
-                            <li><a href="javascript:void(0);">Facility</a></li>
-                            <li><a href="javascript:void(0);">Resources hub</a></li>
-                            <li><a href="javascript:void(0);">About us</a></li>
-                            <li><a href="javascript:void(0);">Contact us</a></li>
-                        </ul>
-                    </div>
-                    <div class="topftrcolpart">
-                      
-                        <p>Silitronics Solutions Inc 2388 Walsh Avenue, Santa Clara, CA, 95051</p>
-                        <p>Email: sales@silitronics.com</p>
-                        <p>Phone: +1 408-954-8301,<br> +1 408-605-1148</p>
-                        <p class="social"><a href="#" class="ftrsocial"><img src="images/youtube.svg"></a>
-                            <a href="#" class="ftrsocial"><img src="images/linkedin.svg"></a>
-                        </p>
-                    </div>
-                    <div class="topftrcolpart">
-                        <div class="ftrmap"><img src="images/map.jpg"></div>
-                        <a href="#" class="backtotop">back to top</a>
-                    </div>
-                </div>
-            </div>
         </div>
-        <div class="botftrsec">
-            <div class="container">
-                <p>© 2025 Silitronics. All rights reserved.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- mobile footer -->
-
-    <section class="footerbg only-mobile">
-        <div class="topftrsec">
-            <div class="container">
-                <div class="topftrflexpart">
-                    <div class="topftrcolpart">
-                        <div class="ftrlogo"><img src="images/footer-logo.png"></div>
-                        <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics
-                            packaging–pushing the boundaries of design, fabrication, and assembly while driving
-                            sustainability.</p>
-                        <div class="ftrusa"><img src="images/Isolation_Mode.png"></div>
-                    </div>
-                    <div class="topftrcolpart ">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="javascript:void(0);">Services</a></li>
-                            <li><a href="javascript:void(0);">Applications</a></li>
-                            <li><a href="javascript:void(0);">Facility</a></li>
-                            <!-- <li><a href="javascript:void(0);">Resources hub</a></li> -->
-                            <li><a href="javascript:void(0);">About us</a></li>
-                            <li><a href="javascript:void(0);">Contact us</a></li>
-                        </ul>
-                    </div>
-                    <div class="topftrcolpart">
-                        <div class="ftrmap"><img src="images/map.jpg"></div>
-                        <p>Silitronics Solutions Inc 2388 Walsh Avenue, Santa Clara, CA, 95051</p>
-                        <p>Email: sales@silitronics.com</p>
-                        <p>Phone: +1 408-954-8301,<br> +1 408-605-1148</p>
-                        <p class="social"><a href="#" class="myicon"><img src="images/youtube.svg"></a>
-                            <a href="#" class=" myicon"><img src="images/linkedin.svg"></a>
-                        </p>
-          
-
-
-                    </div>
-                    <div class="topftrcolpart">
-                        <!-- <div class="ftrmap"><img src="images/map.jpg"></div> -->
-                        <a href="#" class="backtotop">back to top</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="botftrsec mobilebottom">
-            <div class="container">
-                <p>© 2025 Silitronics. All rights reserved.</p>
-            </div>
-        </div>
-    </section>
-
+    
     <a href="#contactsec" class="fixed-getintouch"><img src="./images/get.png" alt=""></a>
 
     <script src="js/jquery.min.js" type="text/javascript"></script>
