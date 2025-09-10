@@ -17,8 +17,17 @@
 
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css">
-    <title>Silitronics</title>
+    <title>Design</title>
     <style>
+        .box1align h2 {
+    width: 100%;
+    height: 0px !important;
+    font-weight: bold;
+    font-family: 'Titillium Web';
+    /* line-height: 25px; */
+    /* margin-top: 30px; */
+    margin-bottom: 40px; 
+}
         /* Banner height adjustments for different screen sizes */
         @media screen and (min-width: 1920px) {
             .bannersec {
@@ -1835,45 +1844,45 @@
         <!-- ************* different items tabs section ************************ -->
 
 
-<div class="only-desktop">
+<div class="">
   <section class="services-section">
     <div class="containers desktop">
       <div class="rows">
         <div class="tab button dskbtn">
           <a>
             <button class="tablinkss tab-btn2 tablinks-active tech-box2"
-              onclick="openService(event, 'Service-Design')">
-              Design
-            </button>
-          </a>
-          <a>
-            <button class="tablinkss tab-btn2 tech-box2"
               onclick="openService(event, 'Service-Fabrication')">
-              Fabrication
+              Schematic and Layout
             </button>
           </a>
           <a>
             <button class="tablinkss tab-btn2 tech-box2"
               onclick="openService(event, 'Service-Dicing')">
-              Dicing
+              Signal Integrity
             </button>
           </a>
           <a>
             <button class="tablinkss tab-btn2 tech-box2"
               onclick="openService(event, 'Service-SiliconPhotonics')">
-              Silicon Photonics
+              Power Integrity
             </button>
           </a>
           <a>
             <button class="tablinkss tab-btn2 tech-box2"
               onclick="openService(event, 'Service-Assembly')">
-              Assembly
+              Build Up Boards
+            </button>
+          </a>
+          <a>
+            <button class="tablinkss tab-btn2 tech-box2"
+              onclick="openService(event, 'ceramic-substrate')">
+              Ceramic Substrate
             </button>
           </a>
           <a>
             <button class="tablinkss tab-btn2 tech-box2"
               onclick="openService(event, 'Service-Chiplets')">
-              Chiplets
+              Advanced Assembly
             </button>
           </a>
         </div>
@@ -1884,14 +1893,11 @@
         <div id="Service-Design" class="tabcontents" style="display:block;">
           <div class="servicestabcontent-containers">
             <div>
-              <img src="./images/service/01s.png" alt="">
+              <img src="./images/design-rule/one.png" alt="">
             </div>
             <div class="box1align">
-              <h2>Precision-Driven Design for​Next-Gen Semiconductor & Photonic Packaging</h2>
-              <p class="myp">From concept to layout, our advanced design expertise ensures seamless integration of chips,
-                substrates, and interconnects. We optimize signal integrity, power efficiency, and thermal performance to
-                meet the demands of AI accelerators, quantum computing, and high-speed photonic systems. With deep
-                engineering insights, we design scalable, high-reliability solutions for the future.​​</p>
+              <h2>Schematic and Layout</h2>
+              <p class="myp">Using industry standard tools, Silitronics engineering team can create schematics from data sheets of merchant semiconductors or any custom drawing. We can do feasibility studies to select the best option between build up substrate or high density interconnect (HDI). After initial layout and SI/PI analysis, the design is reviewed to ensure design rules as well as DFM and DFA requirements are met before committing to FAB.​​</p>
               <a href="./design.html" class="learnmore">LEARN MORE</a>
             </div>
           </div>
@@ -1901,15 +1907,11 @@
         <div id="Service-Fabrication" class="tabcontents">
           <div class="servicestabcontent-containers">
             <div>
-              <img src="./images/service/05s.png" alt="">
+              <img src="./images/design-rule/two.png" alt="">
             </div>
             <div class="box1align">
-              <h2>Fabrication for Advanced​Semiconductor & Photonic Packaging</h2>
-              <p class="myp">Our state-of-the-art fabrication facility delivers high-precision multi-layer substrates
-                tailored for AI, HPC, and Silicon Photonics. With expertise in organic and ceramic substrates,
-                fine-pitch interconnects, and high-density integration, we ensure superior reliability, scalability, and
-                manufacturing excellence. From prototypes to high-volume production, we bring innovation to life with
-                precision.​</p>
+              <h2>Signal Integrity</h2>
+              <p class="myp">For applications requiring signal integrity (SI) and power integrity (PI) analysis, we work with the customer to understand their performance requirements. We use industry standard 2.5D and 3D field solvers to extract S-parameter model of the channel. Then, we fit the s-parameter model to a broadband spice model. Using this broadband SPICE channel model along with IBIS / IBIS-AMI models of the driver / receiver, we perform time / frequency domain analysis to study SI impairments such as crosstalk, impedance mismatch, and Eye diagrams. As an example, the figure on the right shows a simulated eye diagram of a LPDDR4X link connected to an ultra fine pitch SOC implemented on a SiP module with multilayer HDI stackup. As can be seen, the eye height and eye width meets the JEDEC mask specifications.</p>
               <a href="./fabrication.html" class="learnmore">LEARN MORE</a>
             </div>
           </div>
@@ -1919,13 +1921,11 @@
         <div id="Service-Dicing" class="tabcontents">
           <div class="servicestabcontent-containers">
             <div>
-              <img src="./images/service/02s.png" alt="">
+              <img src="./images/design-rule/three.png" alt="">
             </div>
             <div class="box1align">
-              <h2>High-Precision Wafer Dicing</h2>
-              <p class="myp">We deliver advanced wafer dicing using precision blade and laser technologies to ensure
-                clean die separation with minimal chipping. Optimized for high yield and low particle contamination, our
-                dicing supports next-gen semiconductor packaging and performance.​</p>
+              <h2>Power Integrity</h2>
+              <p class="myp">To validate power integrity, we check PDN (Power distribution Network) DC IR drop, AC impedance and ripple noise. As an example, figure on the left shows a detailed multiport model of a SERDES PDN which includes die, package and PCB models. Simulated PDN impedance and time domain ripple noise is also shown for reference</p>
               <a href="./dicing.html" class="learnmore">LEARN MORE</a>
             </div>
           </div>
@@ -1935,31 +1935,26 @@
         <div id="Service-SiliconPhotonics" class="tabcontents">
           <div class="servicestabcontent-containers">
             <div>
-              <img src="./images/service/04s.png" alt="">
+              <img src="./images/design-rule/four.png" alt="">
             </div>
             <div class="box1align myclass">
-              <h2>Powering the Future at the Speed of Light with Photonics</h2>
-              <p class="myp">Silicon Photonics is transforming high-speed computing, AI clusters, and next-gen data
-                transfer. Our expertise in sub-micron active alignment, optical integration, and high-bandwidth packaging
-                ensures low-latency, energy-efficient performance. From LiDAR to AI-driven interconnects, we deliver
-                cutting-edge photonics solutions that push the limits of speed, scalability, and efficiency.​​</p>
+              <h2>Build Up Boards</h2>
+              <p class="myp">All applications supported by Silitronics requires to understand cutting edge design rules and state-of-the-art processing technology. Flip Chip BGA and wire bond BGA substrates are semiconductor packages with high reliability requiring line/space of 15/15 (12/12 R&D), Fine pitch laser vias, blind and buried vias, surface finish (ENIG, ENEPIG, SOP, SAC 305) options with Halogen-free and Lead-free BOM.​</p>
               <a href="./siliconphotonics.html" class="learnmore">LEARN MORE</a>
             </div>
           </div>
         </div>
 
         <!-- Assembly -->
-        <div id="Service-Assembly" class="tabcontents">
+        <div id="ceramic-substrate" class="tabcontents">
           <div class="servicestabcontent-containers">
             <div>
-              <img src="./images/service/03s.png" alt="">
+              <img src="./images/design-rule/five.png" alt="">
             </div>
             <div class="box1align">
-              <h2>Seamless Assembly for High-Precision Semiconductor & Photonic Packaging</h2>
-              <p class="myp">Our cutting-edge assembly expertise ensures precise chip-to-package integration with
-                industry-leading sub-micron active alignment, high-density interconnects, and heterogeneous integration.
-                We specialize in complex optical and electronic assemblies for AI accelerators, 5G networks, and next-gen
-                computing, delivering high-reliability solutions that optimize performance and reduce time to market.​</p>
+              <h2>Ceramic Substrate</h2>
+              <p class="myp">We follow customer’s design, electrical and mechanical requirement of the product. In order to help with time to market, our team understand end application and special design requirements; such as, component size, placement, interference, impedance, circuit routing, thermal constraints, environmental constraints, etc. Silitronics has the knowledge, experience and resources to handle complicated design requirements in order to provide the best possible product.
+We are supplying high reliability substrates to the silicon photonics, LiDAR, aerospace, wireless, defense, industrial and medical applications. We can design the substrate by following customer’s net-list and schematic.</p>
               <a href="./servicesassebly.html" class="learnmore">LEARN MORE</a>
             </div>
           </div>
@@ -1969,16 +1964,11 @@
         <div id="Service-Chiplets" class="tabcontents">
           <div class="servicestabcontent-containers">
             <div>
-              <img src="./images/service/Bt_chiplets.png" alt="">
+              <img src="./images/design-rule/six.png" alt="">
             </div>
             <div class="box1align myclass">
-              <h2>Breakthrough Chiplet Integration for Scalable, Next-Gen Systems</h2>
-              <p class="myp">Silitronics empowers the future of electronics with advanced chiplet
-                integration—merging diverse dies on precision-engineered interposers for optimal signal, power, and
-                thermal performance. Our expertise in modular floor planning and heterogeneous assembly accelerates
-                high-bandwidth, low-latency connectivity that’s essential for AI, HPC, and 5G. From concept design to
-                rigorous validation, Silitronics helps customers bring complex systems to market—faster, smarter, and
-                more reliably.</p>
+              <h2>Advanced Assembly</h2>
+              <p class="myp">Silitronics team has over 100+ years of hands-on process development experience. With “Just Do It” attitude, in-house tooling design & fabrication, alongwith fully in-house automated equipment, allows Silitronics team to work with customers to “Push the Limit” with “Made In USA”. That helps customer with faster time to market and IP Protection.</p>
               <a href="./chiplets.html" class="learnmore">LEARN MORE</a>
             </div>
           </div>
@@ -2666,6 +2656,33 @@
     <script>
         console.log('Mouse scroll disabled for Our Solutions Spectrum carousel');
     </script>
+
+
+<script>
+
+
+function openService(evt, serviceName) {
+  let i, tabcontent, tablinks;
+
+  // ✅ ab "tabcontents" use kiya hai
+  tabcontent = document.getElementsByClassName("tabcontents");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // ✅ aapne buttons me "tablinkss" diya hai
+  tablinks = document.getElementsByClassName("tablinkss");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("tablinks-active");
+  }
+
+  // ✅ jo service click hua wahi show hoga
+  document.getElementById(serviceName).style.display = "block";
+  evt.currentTarget.classList.add("tablinks-active");
+}
+
+
+</script>
 </body>
 
 </html>
