@@ -1078,7 +1078,7 @@
         }
 
         .tab button {
-            padding: 15px 44px !important;
+            padding: 15px !important;
         }
 
         /* mobile sip design and process style code */
@@ -1352,20 +1352,17 @@
         /* design-rule-section-mobile end */
         .dskbtn {
         display: flex !important;
-        /* justify-content: flex-start !important; */
+        justify-content: flex-start !important;
         flex-wrap: wrap !important;
         width: 100% !important;
         flex-wrap: wrap !important;
 
     }
 
-    .tabcontents {
-  display: none;
-}
-
- .tabcontent-mobiles{
-          display: block;
- }
+    .tabcontentss{
+        display: none;
+    }
+  
 
     </style>
 </head>
@@ -2010,7 +2007,7 @@
         <!-- ************* different items tabs section ************************ -->
 
 
-        <div class="">
+        <div class="only-desktop">
             <section class="services-section">
                 <div class="containers desktop">
                     <h2 class="services-section-head-desk">Design Services Spectrum</h2>
@@ -2057,7 +2054,7 @@
 
                     <div class="shape cardbox">
                         <!-- Design -->
-                        <div id="schematic-and-layout" class="tabcontents" style="display:block;">
+                        <div id="schematic-and-layout" class="tabcontentss" style="display:block;">
                             <div class="servicestabcontent-containers">
                                 <div>
                                     <img src="./images/design-rule/one.png" alt="">
@@ -2076,7 +2073,7 @@
                         </div>
 
                         <!-- Fabrication -->
-                        <div id="signal-integrity" class="tabcontents">
+                        <div id="signal-integrity" class="tabcontentss">
                             <div class="servicestabcontent-containers">
                                 <div>
                                     <img src="./images/design-rule/two.png" alt="">
@@ -2100,7 +2097,7 @@
                         </div>
 
                         <!-- Dicing -->
-                        <div id="power-integrity" class="tabcontents">
+                        <div id="power-integrity" class="tabcontentss">
                             <div class="servicestabcontent-containers">
                                 <div>
                                     <img src="./images/design-rule/three.png" alt="">
@@ -2118,7 +2115,7 @@
                         </div>
 
                         <!-- Silicon Photonics -->
-                        <div id="build-up-boards" class="tabcontents">
+                        <div id="build-up-boards" class="tabcontentss">
                             <div class="servicestabcontent-containers">
                                 <div>
                                     <img src="./images/design-rule/four.png" alt="">
@@ -2137,7 +2134,7 @@
                         </div>
 
                         <!-- Assembly -->
-                        <div id="ceramic-substrate" class="tabcontents">
+                        <div id="ceramic-substrate" class="tabcontentss">
                             <div class="servicestabcontent-containers">
                                 <div>
                                     <img src="./images/design-rule/five.png" alt="">
@@ -2160,7 +2157,7 @@
                         </div>
 
                         <!-- Chiplets -->
-                        <div id="Service-Chiplets" class="tabcontents">
+                        <div id="Service-Chiplets" class="tabcontentss">
                             <div class="servicestabcontent-containers">
                                 <div>
                                     <img src="./images/design-rule/six.png" alt="">
@@ -3112,7 +3109,7 @@ window.addEventListener("load", function () {
             let i, tabcontent, tablinks;
 
             // ✅ ab "tabcontents" use kiya hai
-            tabcontent = document.getElementsByClassName("tabcontents");
+            tabcontent = document.getElementsByClassName("tabcontentss");
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
             }
