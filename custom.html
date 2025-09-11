@@ -244,6 +244,30 @@
         .tabcontent-mobiles{
           display: none;
         }
+
+
+
+
+         .heading{
+        font-size: 2rem;
+    line-height: 35px;
+    font-family: 'Titillium Web';
+    font-weight: bold;
+    text-align: center;
+    /* padding: 0 0 40px 0; */
+    background: linear-gradient(90deg, #050EF1, #FD0200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media (min-width:767px){
+    .heading{
+     font-size: 70px;
+    line-height: 85px;  
+    }
+}
+
     </style>
 </head>
 
@@ -255,6 +279,7 @@
             <section class="services-section ">
               
                 <div class=" containers desktop">
+                         <h2 class="heading" style="margin-bottom: 30px;">Our Services Spectrum</h2>
                     <div class="rows">
                         <div class="tab button dskbtn ">
                             <a>
@@ -410,7 +435,7 @@
         <div class="only-mobile">
             <section class="services-section">
                 <div class="containers">
-                 
+                      <h2 class="heading" style="margin-bottom: 30px;">Our Services Spectrum</h2>
                     <div class="only-mobile-button-group">
                         <button class="only-mobile-button tablinks-mobile "
                             onclick="openCityMobile(event, 'DesignMobile')">Design</button>
