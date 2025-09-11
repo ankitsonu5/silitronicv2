@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
     <script type="module"
         src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
-    <link rel="stylesheet" href="./css/">
+    <link rel="stylesheet" href="./css/our-service-custom.css">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css">
     <title>Silitronics</title>
@@ -2140,36 +2140,35 @@
                     <div class="rows">
                         <div class="tab button dskbtn ">
                             <a>
-                                <button class="tablinks tab-btn2  tech-box2 " onclick="openCity(event, 'Design')">
+                                <button class="tablinks tab-btn2  tech-box2 " onclick="openCitys(event, 'Designs')">
                                     Design
                                 </button>
                             </a>
                             <a>
-                                <button class="tablinks tab-btn2 tech-box2  tablinks-active"
-                                    onclick="openCity(event, 'Fabrication')">
+                                <button class="tablinks tab-btn2 tech-box2 " onclick="openCitys(event, 'Fabrications')">
                                     Fabrication
                                 </button>
                             </a>
                             <a>
-                                <button class="tablinks tab-btn2 tech-box2 " onclick="openCity(event, 'Dicing')">
+                                <button class="tablinks tab-btn2 tech-box2 " onclick="openCitys(event, 'Dicings')">
                                     Dicing
                                 </button>
                             </a>
 
                             <a>
-                                <button class="tablinks tab-btn2 tech-box2 "
-                                    onclick="openCity(event, 'SiliconPhotonics')">
+                                <button class="tablinks tab-btn2 tech-box2 tablinks-active"
+                                    onclick="openCitys(event, 'SiliconPhotonicss')">
                                     Silicon Photonics
                                 </button>
                             </a>
                             <a>
-                                <button class="tablinks tab-btn2 tech-box2 " onclick="openCity(event, 'Assembly')">
+                                <button class="tablinks tab-btn2 tech-box2  " onclick="openCitys(event, 'Assemblys')">
                                     Assembly
                                 </button>
                             </a>
 
                             <a>
-                                <button class="tablinks tab-btn2 tech-box2 " onclick="openCity(event, 'Chiplets')">
+                                <button class="tablinks tab-btn2 tech-box2 " onclick="openCitys(event, 'Chiplets')">
                                     Chiplets
                                 </button>
                             </a>
@@ -2177,7 +2176,7 @@
                     </div>
 
                     <div class="shape cardbox">
-                        <div id="Design" class="tabcontents" style="display:block;">
+                        <div id="Designs" class="tabcontents" style="display:block;">
                             <div class=" servicestabcontent-containers">
                                 <div>
                                     <img src="./images/service/01s.png" alt="">
@@ -2196,7 +2195,7 @@
                             </div>
                         </div>
 
-                        <div id="Fabrication" class="tabcontents">
+                        <div id="Fabrications" class="tabcontents">
                             <div class="servicestabcontent-containers">
                                 <div>
                                     <img src="./images/service/05s.png" alt="">
@@ -2216,7 +2215,7 @@
                             </div>
                         </div>
 
-                        <div id="Dicing" class="tabcontents">
+                        <div id="Dicings" class="tabcontents">
                             <div class="servicestabcontent-containers">
                                 <div>
                                     <img src="./images/service/02s.png" alt="">
@@ -2233,7 +2232,7 @@
                         </div>
 
 
-                        <div id="SiliconPhotonics" class="tabcontents">
+                        <div id="SiliconPhotonicss" class="tabcontents">
                             <div class="servicestabcontent-containers">
                                 <div>
                                     <img src="./images/service/04s.png" alt="">
@@ -2254,7 +2253,7 @@
                         </div>
 
 
-                        <div id="Assembly" class="tabcontents">
+                        <div id="Assemblys" class="tabcontents">
                             <div class="servicestabcontent-containers">
                                 <div>
                                     <img src="./images/service/03s.png" alt="">
@@ -2305,22 +2304,22 @@
                     <h2 class="heading" style="margin-bottom: 30px;">Our Services Spectrum</h2>
                     <div class="only-mobile-button-group">
                         <button class="only-mobile-button tablinks-mobile "
-                            onclick="openCityMobile(event, 'DesignMobile')">Design</button>
+                            onclick="openCityMobiles(event, 'DesignMobiles')">Design</button>
+                        <button class="only-mobile-button tablinks-mobile "
+                            onclick="openCityMobiles(event, 'FabricationMobiles') ">Fabrication</button>
+                        <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobiles(event, 'DicingMobiles')">Dicing</button>
+
                         <button class="only-mobile-button tablinks-mobile active"
-                            onclick="openCityMobile(event, 'FabricationMobile') ">Fabrication</button>
-                        <button class="only-mobile-button tablinks-mobile"
-                            onclick="openCityMobile(event, 'DicingMobile')">Dicing</button>
+                            onclick="openCityMobiles(event, 'SiliconPhotonicsMobiles')">Silicon Photonics</button>
 
-                        <button class="only-mobile-button tablinks-mobile"
-                            onclick="openCityMobile(event, 'SiliconPhotonicsMobile')">Silicon Photonics</button>
-
-                        <button class="only-mobile-button tablinks-mobile"
-                            onclick="openCityMobile(event, 'AssemblyMobile')">Assembly</button>
+                        <button class="only-mobile-button tablinks-mobile "
+                            onclick="openCityMobiles(event, 'AssemblyMobiles')">Assembly</button>
 
 
 
                         <button class="only-mobile-button tablinks-mobile"
-                            onclick="openCityMobile(event, 'SiliconPhotonicsMobileb')">Chiplets</button>
+                            onclick="openCityMobiles(event, 'SiliconPhotonicsMobilebs')">Chiplets</button>
 
 
 
@@ -2332,7 +2331,7 @@
 
 
                     <div class="mobilebox">
-                        <div id="DesignMobile" class="tabcontent-mobiles" style="display: block;">
+                        <div id="DesignMobiles" class="tabcontent-mobiles" style="display: block;">
                             <div class="servicestabcontent-containersM">
                                 <div><img src="./images/service/01s.png" alt=""></div>
                                 <div class="mobilealign">
@@ -2349,7 +2348,7 @@
                             </div>
                         </div>
 
-                        <div id="FabricationMobile" class="tabcontent-mobiles">
+                        <div id="FabricationMobiles" class="tabcontent-mobiles">
                             <div class="servicestabcontent-containersM">
                                 <div><img src="./images/service/05s.png" alt=""></div>
                                 <div class="mobilealign">
@@ -2365,7 +2364,7 @@
                             </div>
                         </div>
 
-                        <div id="DicingMobile" class="tabcontent-mobiles">
+                        <div id="DicingMobiles" class="tabcontent-mobiles">
                             <div class="servicestabcontent-containersM">
                                 <div><img src="./images/service/02s.png" alt=""></div>
                                 <div class="mobilealign">
@@ -2379,7 +2378,7 @@
                             </div>
                         </div>
 
-                        <div id="SiliconPhotonicsMobile" class="tabcontent-mobiles">
+                        <div id="SiliconPhotonicsMobiles" class="tabcontent-mobiles">
                             <div class="servicestabcontent-containersM">
                                 <div><img src="./images/service/04s.png" alt=""></div>
                                 <div class="mobilealign">
@@ -2395,7 +2394,7 @@
                             </div>
                         </div>
 
-                        <div id="AssemblyMobile" class="tabcontent-mobiles">
+                        <div id="AssemblyMobiles" class="tabcontent-mobiles">
                             <div class="servicestabcontent-containersM">
                                 <div><img src="./images/service/03s.png" alt=""></div>
                                 <div class="mobilealign">
@@ -2410,7 +2409,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="SiliconPhotonicsMobileb" class="tabcontent-mobiles">
+                        <div id="SiliconPhotonicsMobilebs" class="tabcontent-mobiles">
                             <div class="servicestabcontent-containersM">
                                 <div><img src="./images/service/03s.png" alt=""></div>
                                 <div class="mobilealign">
@@ -2432,6 +2431,7 @@
                 </div>
             </section>
         </div>
+
 
 
         <!-- Case Study Section  -->
@@ -2613,9 +2613,9 @@
         </div>
     </section>
 
-    <!-- // ========== Desktop Tab Function ========== -->
+
     <script>
-        function openCity(evt, cityName) {
+        function openCitys(evt, cityName) {
             var i, tabcontent, tablinks;
 
             // Hide all tab contents
@@ -2676,7 +2676,7 @@
         // Set Default Active Tab (Desktop)
         window.addEventListener("load", function () {
             // Yaha ID ya class se tab select karo jisko default active banana hai
-            const defaultTab = document.querySelector("button[onclick*='Fabrication']");
+            const defaultTab = document.querySelector("button[onclick*='SiliconPhotonicss']");
             if (defaultTab) defaultTab.click();
 
             // Agar value tab ka bhi default chahiye to yaha set karo
@@ -2701,10 +2701,9 @@
         }
     </script>
 
-
     <!-- // ========== Mobile Tab Function ========== -->
     <script>
-        function openCityMobile(evt, cityNameMobile) {
+        function openCityMobiles(evt, cityNameMobile) {
             var i, tabcontentMobile, tablinksMobile;
 
             // Hide all mobile tab contents
@@ -2735,7 +2734,7 @@
         // Set Default Active Tab (Desktop)
         window.addEventListener("load", function () {
             // Yaha ID ya class se tab select karo jisko default active banana hai
-            const defaultTab = document.querySelector("button[onclick*='FabricationMobile']");
+            const defaultTab = document.querySelector("button[onclick*='SiliconPhotonicsMobiles']");
             if (defaultTab) defaultTab.click();
 
             // Agar value tab ka bhi default chahiye to yaha set karo
@@ -2744,7 +2743,6 @@
         });
 
     </script>
-
 
     <a href="#contactsec" class="fixed-getintouch"><img src="./images/getintouchbg.png" alt=""></a>
     <script src="js/jquery.min.js" type="text/javascript"></script>
