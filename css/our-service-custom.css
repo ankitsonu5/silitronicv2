@@ -1,0 +1,28 @@
+.heading{
+        font-size: 2rem;
+    line-height: 35px;
+    font-family: 'Titillium Web';
+    font-weight: bold;
+    text-align: center;
+    /* padding: 0 0 40px 0; */
+    background: linear-gradient(90deg, #050EF1, #FD0200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media (min-width:767px){
+    .heading{
+     font-size: 70px;
+    line-height: 85px;  
+    }
+}
+
+
+.tabcontents {
+  display: none;
+}
+
+ .tabcontent-mobiles{
+          display: none;
+ }
