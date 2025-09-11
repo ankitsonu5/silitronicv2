@@ -20,17 +20,18 @@
     <title>Design</title>
     <style>
         .services-section-head-desk {
-    font-size: 70px;
-    line-height: 64px;
-    font-family: 'Titillium Web';
-    font-weight: bold;
-    text-align: center;
-    padding: 75px 0;
-    background: linear-gradient(90deg, #050EF1, #FD0200);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
+            font-size: 70px;
+            line-height: 64px;
+            font-family: 'Titillium Web';
+            font-weight: bold;
+            text-align: center;
+            padding: 75px 0;
+            background: linear-gradient(90deg, #050EF1, #FD0200);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
         .box1align h2 {
             width: 100%;
             /* height: 0px !important; */
@@ -73,17 +74,17 @@
         }
         @media screen and (max-width: 768px) {
             .services-section-head-desk {
-            font-size: 2rem;
-            line-height: 35px;
-    font-family: 'Titillium Web';
-    font-weight: bold;
-    text-align: center;
-    padding: 75px 0;
-    background: linear-gradient(90deg, #050EF1, #FD0200);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
+                font-size: 2rem;
+                line-height: 35px;
+                font-family: 'Titillium Web';
+                font-weight: bold;
+                text-align: center;
+                padding: 75px 0;
+                background: linear-gradient(90deg, #050EF1, #FD0200);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
         }
 
         /* Service page tab active link styling */
@@ -1055,7 +1056,7 @@
 
         #design-rule-section {
             background: rgba(153, 153, 153, 0.1);
-            padding: 5rem 0;
+            padding: 5rem 0 10rem 0;
         }
 
         #design-rule-section h1 {
@@ -1232,6 +1233,123 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
+
+        /* design-rule-section style start */
+        #design-rule-section .card-container-body {
+        /* height: 100vh; */
+        padding-top: 50px;
+    }
+        #design-rule-section .card-containers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 64px;
+      position: relative;
+      justify-content: center;
+    }
+
+    #design-rule-section .card-wrappers, 
+    .design-rule-section-mobile .card-wrappers {
+      position: relative;
+    }
+
+    #design-rule-section .cardsec,
+    .design-rule-section-mobile .cardsec {
+      width: 250px;
+      background: white;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    #design-rule-section .cardsec img,
+    .design-rule-section-mobile .cardsec img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    #design-rule-section .card-content,
+    .design-rule-section-mobile .card-content {
+      padding: 15px;
+      text-align: center;
+    } 
+
+    #design-rule-section .card-title,
+    .design-rule-section-mobile .card-title {
+      font-weight: 700;
+      font-size: 16px;
+      margin: 10px 0;
+      text-align: left;
+    }
+
+
+    #design-rule-section .download-bar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      color: #000;
+      text-align: center;
+      padding: 10px 0;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      pointer-events: none;
+      font-weight: 700;
+      border-top: 2px solid #555;
+      font-size: 16px;
+    }
+    .design-rule-section-mobile .download-bar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      color: #000;
+      text-align: center;
+      padding: 10px 0;
+      opacity: 1;
+      /* transform: translateY(10px); */
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      pointer-events: none;
+      font-weight: 700;
+      border-top: 2px solid #555;
+      font-size: 16px;
+    }
+
+    #design-rule-section .card-wrappers:hover .download-bar {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+        /* design-rule-section style end */
+
+        /* design-rule-section-mobile start */
+
+        .design-rule-section-mobile {
+            min-height: 550px;
+            display: flex;
+        }
+        .design-rule-mobile {
+            text-align: center;
+            font-size: 2.5rem;
+            line-height: 85px;
+            font-family: 'Titillium Web';
+            font-weight: bold;
+            /* padding: 0 0 40px 0; */
+            background: linear-gradient(90deg, #050EF1, #FD0200);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+
+        }
+        /* design-rule-section-mobile end */
+
     </style>
 </head>
 
@@ -1878,7 +1996,7 @@
         <div class="">
             <section class="services-section">
                 <div class="containers desktop">
-                <h2 class="services-section-head-desk">Design Services Spectrum</h2>
+                    <h2 class="services-section-head-desk">Design Services Spectrum</h2>
                     <div class="rows">
                         <div class="tab button dskbtn">
                             <a>
@@ -2057,37 +2175,142 @@
         </section>
 
 
-        <!-- Design rule section -->
+        <!-- Design rule section Desktop -->
+         <div class="only-desktop">
         <section id="design-rule-section">
             <div class="container">
                 <h2>Design Rule</h2>
             </div>
-            <div class="container">
-                <div class="card">
-                    <img src="./images/servicesdetails-fl/design-rule/design-rule-one.png"
-                        alt="Ceramic substrate top layer optimization" />
-                    <div class="caption">Ceramic substrate top layer optimization</div>
+            <div class="container card-container-body">
+                <div class="card-containers">
+                    <!-- Card 1 -->
+                <div class="card-wrappers">
+                    <div class="cardsec">
+                        <img src="./images/servicesdetails-fl/design-rule/design-rule-one.png" alt="Ceramic substrate">
+                        <div class="card-content">
+                            <div class="card-title">Ceramic substrate top layer optimization</div>
+                        </div>
+                    </div>
+                    <div class="download-bar">DOWNLOAD DESIGN RULES</div>
                 </div>
-                <div class="card">
-                    <img src="./images/servicesdetails-fl/design-rule/design-rule-two.png"
-                        alt="Flip chip ceramic LTCC package" />
-                    <div class="caption">Flip chip ceramic LTCC package</div>
+                <!-- Card 2 -->
+                <div class="card-wrappers">
+                    <div class="cardsec">
+                        <img src="./images/servicesdetails-fl/design-rule/design-rule-two.png" alt="Flip chip package">
+                        <div class="card-content">
+                            <div class="card-title">Flip chip ceramic LTCC package</div>
+                        </div>
+                    </div>
+                    <div class="download-bar">DOWNLOAD DESIGN RULES</div>
                 </div>
-                <div class="card">
-                    <img src="./images/servicesdetails-fl/design-rule/design-rule-three.png" alt="PCB fab" />
-                    <div class="caption">PCB fab</div>
+                <!-- Card 2 -->
+                <div class="card-wrappers">
+                    <div class="cardsec">
+                        <img src="./images/servicesdetails-fl/design-rule/design-rule-three.png"
+                            alt="Flip chip package">
+                        <div class="card-content">
+                            <div class="card-title">Flip chip ceramic LTCC package</div>
+                        </div>
+                    </div>
+                    <div class="download-bar">DOWNLOAD DESIGN RULES</div>
                 </div>
-                <div class="card">
-                    <img src="./images/servicesdetails-fl/design-rule/design-rule-four.png" alt="Etch thick film" />
-                    <div class="caption">Etch thick film</div>
+                <!-- Card 2 -->
+                <div class="card-wrappers">
+                    <div class="cardsec">
+                        <img src="./images/servicesdetails-fl/design-rule/design-rule-four.png" alt="Flip chip package">
+                        <div class="card-content">
+                            <div class="card-title">Flip chip ceramic LTCC package</div>
+                        </div>
+                    </div>
+                    <div class="download-bar">DOWNLOAD DESIGN RULES</div>
                 </div>
-                <div class="card">
-                    <img src="./images/servicesdetails-fl/design-rule/design-rule-five.png" alt="Board stack up" />
-                    <div class="caption">Board stack up</div>
+                <!-- Card 2 -->
+                <div class="card-wrappers">
+                    <div class="cardsec">
+                        <img src="./images/servicesdetails-fl/design-rule/design-rule-five.png" alt="Flip chip package">
+                        <div class="card-content">
+                            <div class="card-title">Flip chip ceramic LTCC package</div>
+                        </div>
+                    </div>
+                    <div class="download-bar">DOWNLOAD DESIGN RULES</div>
+                </div>
                 </div>
             </div>
-
         </section>
+         </div>
+
+
+        <!-- Design rule section Mobile -->
+         <div class="only-mobile">
+            <div class="container">
+                <h2 class="design-rule-mobile">Design Rule</h2>
+            </div>
+        <div class="container design-rule-section-mobile">
+            <sl-carousel pagination navigation mouse-dragging loop>
+  <sl-carousel-item>
+<!-- Card 1 -->
+                <div class="card-wrappers">
+                    <div class="cardsec">
+                        <img src="./images/servicesdetails-fl/design-rule/design-rule-one.png" alt="Ceramic substrate">
+                        <div class="card-content">
+                            <div class="card-title">Ceramic substrate top layer optimization</div>
+                        </div>
+                    </div>
+                    <div class="download-bar">DOWNLOAD DESIGN RULES</div>
+                </div>
+  </sl-carousel-item>
+  <sl-carousel-item>
+    <!-- Card 2 -->
+                <div class="card-wrappers">
+                    <div class="cardsec">
+                        <img src="./images/servicesdetails-fl/design-rule/design-rule-two.png" alt="Ceramic substrate">
+                        <div class="card-content">
+                            <div class="card-title">Flip chip ceramic LTCC package</div>
+                        </div>
+                    </div>
+                    <div class="download-bar">DOWNLOAD DESIGN RULES</div>
+                </div>
+  </sl-carousel-item>
+  <sl-carousel-item>
+<!-- Card 3 -->
+                <div class="card-wrappers">
+                    <div class="cardsec">
+                        <img src="./images/servicesdetails-fl/design-rule/design-rule-three.png" alt="Ceramic substrate">
+                        <div class="card-content">
+                            <div class="card-title">PCB fab</div>
+                        </div>
+                    </div>
+                    <div class="download-bar">DOWNLOAD DESIGN RULES</div>
+                </div>
+  </sl-carousel-item>
+  <sl-carousel-item>
+    <!-- Card 4 -->
+                <div class="card-wrappers">
+                    <div class="cardsec">
+                        <img src="./images/servicesdetails-fl/design-rule/design-rule-four.png" alt="Ceramic substrate">
+                        <div class="card-content">
+                            <div class="card-title">Etch thick film</div>
+                        </div>
+                    </div>
+                    <div class="download-bar">DOWNLOAD DESIGN RULES</div>
+                </div>
+  </sl-carousel-item>
+  <sl-carousel-item>
+    <!-- Card 5 -->
+                <div class="card-wrappers">
+                    <div class="cardsec">
+                        <img src="./images/servicesdetails-fl/design-rule/design-rule-five.png" alt="Ceramic substrate">
+                        <div class="card-content">
+                            <div class="card-title">Board stack up</div>
+                        </div>
+                    </div>
+                    <div class="download-bar">DOWNLOAD DESIGN RULES</div>
+                </div>
+  </sl-carousel-item>
+</sl-carousel>
+        </div>
+         </div>
+
 
 
 
@@ -2097,7 +2320,7 @@
             <section class="services-section ">
 
                 <div class=" containers desktop">
-                <h2 class="services-section-head-desk">Our Services Spectrum</h2>
+                    <h2 class="services-section-head-desk">Our Services Spectrum</h2>
 
                     <div class="rows">
                         <div class="tab button dskbtn ">
