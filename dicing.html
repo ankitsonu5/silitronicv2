@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
     <script type="module"
         src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
-
+    <link rel="stylesheet" href="./css/">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css">
     <title>Silitronics</title>
@@ -1144,6 +1144,10 @@
             .servicestabcontent-containers {
                 overflow: visible;
             }
+
+            .sndcontsec-mobile {
+                padding: 0.5rem;
+            }
         }
 
         @media screen and (max-width: 480px) {
@@ -1691,14 +1695,10 @@
                     </div>
                     <div class="divtextcont">
                         <h3>Wafer Preparation & Mounting</h3>
-                        <p>Every process starts with ultrasonic wafer cleaning, flatness measurement, and
-                            careful
+                        <p>Every process starts with ultrasonic wafer cleaning, flatness measurement, and careful
                             mounting on dicing tape. Silitronics ensures precise alignment and minimal
-                            contamination,
-                            using anti-static environments and calibrated carriers for maximum handling
-                            safety
-                            and
-                            first-pass accuracy. </p>
+                            contamination,using anti-static environments and calibrated carriers for maximum handling
+                            safety and first-pass accuracy. </p>
                     </div>
                 </sl-carousel-item>
                 <sl-carousel-item class="sipmaincont">
@@ -1709,10 +1709,8 @@
                         <h3>Dicing Techniques: Blade, Stealth Laser, Plasma</h3>
                         <p>Silitronics tailors dicing techniques: diamond blade for standard dies, stealth laser for
                             fragile PICs, and plasma for ultra-fine pitch. Each is optimized for kerf width, cut
-                            speed,
-                            and minimal thermal/mechanical stress. Engineers continuously monitor blade wear and
-                            laser
-                            calibration for consistent die quality, even in high-mix product runs.</p>
+                            speed, and minimal thermal/mechanical stress. Engineers continuously monitor blade wear and
+                            laser calibration for consistent die quality, even in high-mix product runs.</p>
                     </div>
                 </sl-carousel-item>
                 <sl-carousel-item class="sipmaincont">
@@ -1722,9 +1720,8 @@
                     <div class="divtextcont">
                         <h3>Wafer Thinning & Polishing</h3>
                         <p>Chemical and mechanical thinning down to sub-100µm is performed in humidity-controlled
-                            zones.
-                            Polished wafers—especially for photonics—receive additional CMP steps to achieve mirror
-                            surfaces, reducing insertion loss and supporting high-yield optical coupling. </p>
+                            zones. Polished wafers—especially for photonics—receive additional CMP steps to achieve
+                            mirror surfaces, reducing insertion loss and supporting high-yield optical coupling. </p>
                     </div>
                 </sl-carousel-item>
                 <sl-carousel-item class="sipmaincont">
@@ -1734,8 +1731,7 @@
                     <div class="divtextcont">
                         <h3>Automated Optical Inspection (AOI) & Sorting</h3>
                         Post-dicing, every die undergoes AOI for cracks, chips, contamination, and dimensional
-                        accuracy.
-                        Defective dies are sorted out, while clean dies are ultrasonically cleaned, dried, and
+                        accuracy. Defective dies are sorted out, while clean dies are ultrasonically cleaned, dried, and
                         automatically sorted for traceability and next-stage fabrication.
                     </div>
                 </sl-carousel-item>
@@ -1746,8 +1742,8 @@
                     <div class="divtextcont">
                         <h3>Final Cleaning & Packaging</h3>
                         <p>Finished dies receive anti-static handling, laser marking, and custom tray or
-                            tape-and-reel
-                            packaging, all designed for shipment integrity and downstream assembly reliability.</p>
+                            tape-and-reel packaging, all designed for shipment integrity and downstream assembly
+                            reliability.</p>
                     </div>
                 </sl-carousel-item>
                 </sl-carousel-item>
@@ -1762,7 +1758,7 @@
         <!-- <div class="only-mobile">
             <section class="services-section">
                 <div class="containers">
-
+                    <h2 class="heading" style="margin-bottom: 30px;">Our Services Spectrum</h2>
                     <div class="only-mobile-button-group">
                         <button class="only-mobile-button tablinks-mobile active"
                             onclick="openCityMobile(event, 'DesignMobile')">Design</button>
@@ -2035,8 +2031,7 @@
                         <button class="only-mobile-button tablinks-mobile"
                             onclick="openCityMobile(event, 'AssemblyMobile')">Automated AOI, Sorting,<br> and Final
                             Packaging</button>
-                        <!-- <button class="only-mobile-button tablinks-mobile"
-                            onclick="openCityMobile(event, 'SiliconPhotonicsMobile')">Co-packaged optics</button> -->
+
                     </div>
 
 
@@ -2130,6 +2125,309 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!--desktop mobile our service spectrum-->
+
+        <div class=" only-desktop ">
+            <section class="services-section ">
+
+                <div class=" containers desktop">
+                    <h2 class="heading" style="margin-bottom: 30px;">Our Services Spectrum</h2>
+                    <div class="rows">
+                        <div class="tab button dskbtn ">
+                            <a>
+                                <button class="tablinks tab-btn2  tech-box2 " onclick="openCity(event, 'Design')">
+                                    Design
+                                </button>
+                            </a>
+                            <a>
+                                <button class="tablinks tab-btn2 tech-box2  tablinks-active"
+                                    onclick="openCity(event, 'Fabrication')">
+                                    Fabrication
+                                </button>
+                            </a>
+                            <a>
+                                <button class="tablinks tab-btn2 tech-box2 " onclick="openCity(event, 'Dicing')">
+                                    Dicing
+                                </button>
+                            </a>
+
+                            <a>
+                                <button class="tablinks tab-btn2 tech-box2 "
+                                    onclick="openCity(event, 'SiliconPhotonics')">
+                                    Silicon Photonics
+                                </button>
+                            </a>
+                            <a>
+                                <button class="tablinks tab-btn2 tech-box2 " onclick="openCity(event, 'Assembly')">
+                                    Assembly
+                                </button>
+                            </a>
+
+                            <a>
+                                <button class="tablinks tab-btn2 tech-box2 " onclick="openCity(event, 'Chiplets')">
+                                    Chiplets
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="shape cardbox">
+                        <div id="Design" class="tabcontents" style="display:block;">
+                            <div class=" servicestabcontent-containers">
+                                <div>
+                                    <img src="./images/service/01s.png" alt="">
+                                </div>
+                                <div class="box1align">
+
+                                    <h2>Precision-Driven Design for​Next-Gen Semiconductor & Photonic Packaging</h2>
+                                    <p class="myp">From concept to layout, our advanced design expertise ensures
+                                        seamless integration of chips, substrates, and interconnects. We optimize signal
+                                        integrity, power efficiency, and thermal performance to meet the demands of AI
+                                        accelerators, quantum computing, and high-speed photonic systems. With deep
+                                        engineering insights, we design scalable, high-reliability solutions for the
+                                        future.​​</p>
+                                    <a href="./design.html" class="learnmore">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Fabrication" class="tabcontents">
+                            <div class="servicestabcontent-containers">
+                                <div>
+                                    <img src="./images/service/05s.png" alt="">
+                                </div>
+                                <div class="box1align">
+                                    <h2>Fabrication for Advanced​Semiconductor & Photonic Packaging</h2>
+                                    <p class="myp">Our state-of-the-art fabrication facility delivers high-precision
+                                        multi-layer substrates tailored for AI, HPC, and Silicon Photonics. With
+                                        expertise
+                                        in organic and ceramic substrates, fine-pitch interconnects, and high-density
+                                        integration, we ensure superior reliability, scalability, and manufacturing
+                                        excellence. From prototypes to high-volume production, we bring innovation to
+                                        life
+                                        with precision.​</p>
+                                    <a href="./fabrication.html" class="learnmore">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Dicing" class="tabcontents">
+                            <div class="servicestabcontent-containers">
+                                <div>
+                                    <img src="./images/service/02s.png" alt="">
+                                </div>
+                                <div class="box1align">
+                                    <h2>High-Precision Wafer Dicing</h2>
+                                    <p class="myp">We deliver advanced wafer dicing using precision blade and laser
+                                        technologies to ensure clean die separation with minimal chipping. Optimized for
+                                        high yield and low particle contamination, our dicing supports next-gen
+                                        semiconductor packaging and performance.​</p>
+                                    <a href="./dicing.html" class="learnmore">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="SiliconPhotonics" class="tabcontents">
+                            <div class="servicestabcontent-containers">
+                                <div>
+                                    <img src="./images/service/04s.png" alt="">
+                                </div>
+                                <div class="box1align myclass">
+                                    <h2>Powering the Future at the Speed of Light with Photonics</h2>
+                                    <p class="myp">Silicon Photonics is transforming high-speed computing, AI clusters,
+                                        and
+                                        next-gen data transfer. Our expertise in sub-micron active alignment, optical
+                                        integration, and high-bandwidth packaging ensures low-latency, energy-efficient
+                                        performance. From LiDAR to AI-driven interconnects, we deliver cutting-edge
+                                        photonics solutions that push the limits of speed, scalability, and
+                                        efficiency.​​
+                                    </p>
+                                    <a href="./siliconphotonics.html" class="learnmore">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="Assembly" class="tabcontents">
+                            <div class="servicestabcontent-containers">
+                                <div>
+                                    <img src="./images/service/03s.png" alt="">
+                                </div>
+                                <div class="box1align">
+                                    <h2>Seamless Assembly for High-Precision Semiconductor & Photonic Packaging</h2>
+                                    <p class="myp">Our cutting-edge assembly expertise ensures precise chip-to-package
+                                        integration with industry-leading sub-micron active alignment, high-density
+                                        interconnects, and heterogeneous integration. We specialize in complex optical
+                                        and
+                                        electronic assemblies for AI accelerators, 5G networks, and next-gen computing,
+                                        delivering high-reliability solutions that optimize performance and reduce time
+                                        to
+                                        market.​</p>
+                                    <a href="./servicesassebly.html" class="learnmore">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Chiplets" class="tabcontents">
+                            <div class="servicestabcontent-containers">
+                                <div>
+                                    <img src="./images/service/Bt_chiplets.png" alt="">
+                                </div>
+                                <div class="box1align myclass">
+
+                                    <h2>Breakthrough Chiplet Integration for Scalable, Next-Gen Systems</h2>
+                                    <p class="myp">Silitronics empowers the future of electronics with advanced chiplet
+                                        integration—merging diverse dies on precision-engineered interposers for optimal
+                                        signal, power, and thermal performance. Our expertise in modular floor planning
+                                        and heterogeneous assembly accelerates high-bandwidth, low-latency connectivity
+                                        that’s essential for AI, HPC, and 5G. From concept design to rigorous
+                                        validation, Silitronics helps customers bring complex systems to market—faster,
+                                        smarter, and more reliably.
+                                    </p>
+                                    <a href="./Chiplet.html" class="learnmore">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Use this section only for mobile (wrap with media query if needed) -->
+        <div class="only-mobile">
+            <section class="services-section">
+                <div class="containers">
+                    <h2 class="heading" style="margin-bottom: 30px;">Our Services Spectrum</h2>
+                    <div class="only-mobile-button-group">
+                        <button class="only-mobile-button tablinks-mobile "
+                            onclick="openCityMobile(event, 'DesignMobile')">Design</button>
+                        <button class="only-mobile-button tablinks-mobile active"
+                            onclick="openCityMobile(event, 'FabricationMobile') ">Fabrication</button>
+                        <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'DicingMobile')">Dicing</button>
+
+                        <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'SiliconPhotonicsMobile')">Silicon Photonics</button>
+
+                        <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'AssemblyMobile')">Assembly</button>
+
+
+
+                        <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'SiliconPhotonicsMobileb')">Chiplets</button>
+
+
+
+
+                        <!-- <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'Chiplets')">Chiplets</button> -->
+
+                    </div>
+
+
+                    <div class="mobilebox">
+                        <div id="DesignMobile" class="tabcontent-mobiles" style="display: block;">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/service/01s.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <h2>Precision-Driven Design for <br> ​Next-Gen Semiconductor <br> & Photonic
+                                        Packaging​</h2>
+                                    <p class="mypM">From concept to layout, our advanced design expertise ensures
+                                        seamless integration of chips, substrates, and interconnects. We optimize signal
+                                        integrity, power efficiency, and thermal performance to meet the demands of AI
+                                        accelerators, quantum computing, and high-speed photonic systems. With deep
+                                        engineering insights, we design scalable, high-reliability solutions for the
+                                        future.​</p>
+                                    <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="FabricationMobile" class="tabcontent-mobiles">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/service/05s.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <h2>Fabrication for Advanced​Semiconductor & Photonic Packaging</h2>
+                                    <p class="mypM">Our state-of-the-art fabrication facility delivers high-precision
+                                        multi-layer substrates tailored for AI, HPC, and Silicon Photonics. With
+                                        expertise in organic and ceramic substrates, fine-pitch interconnects, and
+                                        high-density integration, we ensure superior reliability, scalability, and
+                                        manufacturing excellence. From prototypes to high-volume production, we bring
+                                        innovation to life with precision.​​</p>
+                                    <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="DicingMobile" class="tabcontent-mobiles">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/service/02s.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <h2>High-Precision Wafer Dicing</h2>
+                                    <p class="mypM">We deliver advanced wafer dicing using precision blade and laser
+                                        technologies to ensure clean die separation with minimal chipping. Optimized for
+                                        high yield and low particle contamination, our dicing supports next-gen
+                                        semiconductor packaging and performance.</p>
+                                    <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="SiliconPhotonicsMobile" class="tabcontent-mobiles">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/service/04s.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <h2>Powering the Future at the Speed of Light with Photonics</h2>
+                                    <p class="mypM">Silicon Photonics is transforming high-speed computing, AI clusters,
+                                        and next-gen data transfer. Our expertise in sub-micron active alignment,
+                                        optical integration, and high-bandwidth packaging ensures low-latency,
+                                        energy-efficient performance. From LiDAR to AI-driven interconnects, we deliver
+                                        cutting-edge photonics solutions that push the limits of speed, scalability, and
+                                        efficiency.​</p>
+                                    <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="AssemblyMobile" class="tabcontent-mobiles">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/service/03s.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <h2>Seamless Assembly for High-Precision Semiconductor & Photonic Packaging​</h2>
+                                    <p class="mypM">Our cutting-edge assembly expertise ensures precise chip-to-package
+                                        integration with industry-leading sub-micron active alignment, high-density
+                                        interconnects, and heterogeneous integration. We specialize in complex optical
+                                        and electronic assemblies for AI accelerators, 5G networks, and next-gen
+                                        computing, delivering high-reliability solutions that optimize performance and
+                                        reduce time to market.​​</p>
+                                    <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="SiliconPhotonicsMobileb" class="tabcontent-mobiles">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="./images/service/03s.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <h2>Breakthrough Chiplet Integration for Scalable, Next-Gen Systems</h2>
+                                    <p class="mypM">Silitronics empowers the future of electronics with advanced chiplet
+                                        integration—merging diverse dies on precision-engineered interposers for optimal
+                                        signal, power, and thermal performance. Our expertise in modular floor planning
+                                        and heterogeneous assembly accelerates high-bandwidth, low-latency connectivity
+                                        that’s essential for AI, HPC, and 5G. From concept design to rigorous
+                                        validation, Silitronics helps customers bring complex systems to market—faster,
+                                        smarter, and more reliably.​</p>
+                                    <a href="./servicesdetails.html" class="learnmoreM">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </section>
@@ -2314,6 +2612,139 @@
             </div>
         </div>
     </section>
+
+    <!-- // ========== Desktop Tab Function ========== -->
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+
+            // Hide all tab contents
+            console.clear(i)
+
+            tabcontent = document.getElementsByClassName("tabcontents");
+            for (i = 0; i < tabcontent.length; i++) {
+                console.log(tabcontent[i]);
+                tabcontent[i].style.display = "none";
+            }
+
+
+            // Remove 'tablinks-active' class from all tab buttons
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("tablinks-active");
+            }
+
+            // Show the selected tab content
+            document.getElementById(cityName).style.display = "block";
+
+            // Add 'tablinks-active' class to the clicked tab
+            evt.currentTarget.classList.add("tablinks-active");
+        }
+
+        // ========== Value Tab Function (Desktop ke liye bhi) ==========
+        function valueopenCity(valueevt, valuecityName) {
+            var a, valuetabcontent, valuetablinks;
+
+            // Hide all value tab contents
+            valuetabcontent = document.getElementsByClassName("valuetabcontent");
+            for (a = 0; a < valuetabcontent.length; a++) {
+                valuetabcontent[a].style.display = "none";
+            }
+
+            // Remove 'active' class from all value tab buttons
+            valuetablinks = document.getElementsByClassName("valuetablinks");
+            for (a = 0; a < valuetablinks.length; a++) {
+                valuetablinks[a].classList.remove("active");
+            }
+
+            // Show the selected value tab content
+            document.getElementById(valuecityName).style.display = "block";
+
+            // Add 'active' class to the clicked tab
+            valueevt.currentTarget.classList.add("active");
+        }
+
+        // ========== Set First Desktop Tabs Active by Default ==========
+        // window.addEventListener("load", function () {
+        //   const firstTab = document.querySelector(".tablinks");
+        //   if (firstTab) firstTab.click();
+
+        //   const firstValueTab = document.querySelector(".valuetablinks");
+        //   if (firstValueTab) firstValueTab.click();
+        // });
+
+        // Set Default Active Tab (Desktop)
+        window.addEventListener("load", function () {
+            // Yaha ID ya class se tab select karo jisko default active banana hai
+            const defaultTab = document.querySelector("button[onclick*='Fabrication']");
+            if (defaultTab) defaultTab.click();
+
+            // Agar value tab ka bhi default chahiye to yaha set karo
+            const defaultValueTab = document.querySelector(".valuetablinks");
+            if (defaultValueTab) defaultValueTab.click();
+        });
+
+
+        // ========== SlimMenu ==========
+        $('.slimmenu').slimmenu({
+            resizeWidth: '991',
+            collapserTitle: '',
+            animSpeed: 'medium',
+            indentChildren: true,
+            childrenIndenter: '&raquo;'
+        });
+
+        // ========== Toggle Menu ==========
+        function toggleMenu(el) {
+            el.classList.toggle('active');
+            document.getElementById('menu').classList.toggle('open');
+        }
+    </script>
+
+
+    <!-- // ========== Mobile Tab Function ========== -->
+    <script>
+        function openCityMobile(evt, cityNameMobile) {
+            var i, tabcontentMobile, tablinksMobile;
+
+            // Hide all mobile tab contents
+            tabcontentMobile = document.getElementsByClassName("tabcontent-mobiles");
+            for (i = 0; i < tabcontentMobile.length; i++) {
+                tabcontentMobile[i].style.display = "none";
+            }
+
+            // Remove 'active' class from all mobile tab buttons
+            tablinksMobile = document.getElementsByClassName("tablinks-mobile");
+            for (i = 0; i < tablinksMobile.length; i++) {
+                tablinksMobile[i].classList.remove("active");
+            }
+
+            // Show selected mobile tab content
+            document.getElementById(cityNameMobile).style.display = "block";
+
+            // Add 'active' class to clicked mobile tab
+            evt.currentTarget.classList.add("active");
+        }
+
+        // ========== Set First Mobile Tab Active by Default ==========
+        // window.addEventListener("load", function () {
+        //   const firstMobileTab = document.querySelector(".tablinks-mobile");
+        //   if (firstMobileTab) firstMobileTab.click();
+        // });
+
+        // Set Default Active Tab (Desktop)
+        window.addEventListener("load", function () {
+            // Yaha ID ya class se tab select karo jisko default active banana hai
+            const defaultTab = document.querySelector("button[onclick*='FabricationMobile']");
+            if (defaultTab) defaultTab.click();
+
+            // Agar value tab ka bhi default chahiye to yaha set karo
+            const defaultValueTab = document.querySelector(".valuetablinks");
+            if (defaultValueTab) defaultValueTab.click();
+        });
+
+    </script>
+
 
     <a href="#contactsec" class="fixed-getintouch"><img src="./images/getintouchbg.png" alt=""></a>
     <script src="js/jquery.min.js" type="text/javascript"></script>
