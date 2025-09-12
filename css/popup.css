@@ -1,58 +1,81 @@
 /* javascript:void(0) */
 /* <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"> */
-          /* <link rel="stylesheet" href="./css/popup.css"> */
-      @media screen and (max-width: 480px) {
-            .fifthcontsecond {
-                top: 0 !important;
-                padding: 0 !important;
-                z-index: 1000 !important;
+/* <link rel="stylesheet" href="./css/popup.css"> */
 
-            }
+/* <h2 class="heading" style="margin-bottom: 30px;">Our Services Spectrum</h2> */
 
-            #btn_button {
-                top: 20px !important;
-                right: 30px !important;
+.heading {
+    font-size: 2rem;
+    line-height: 35px;
+    font-family: 'Titillium Web';
+    font-weight: bold;
+    text-align: center;
+    /* padding: 0 0 40px 0; */
+    background: linear-gradient(90deg, #050EF1, #FD0200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 
-            }
+@media (min-width:767px) {
+    .heading {
+        font-size: 70px;
+        line-height: 85px;
+    }
+}
 
-        }
+@media screen and (max-width: 480px) {
+    .fifthcontsecond {
+        top: 0 !important;
+        padding: 0 !important;
+        z-index: 1000 !important;
 
-            .contactsec .lftrytlineparts {
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                margin-top: 100px;
-            }
+    }
 
-            .fifthcontsecond {
-                height: 100vh;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: fixed;
-                top: 100px;
-                z-index: 1000;
-                background: url("../images/BG_3\ 5.png");
-                /* space allowed inside quotes */
-                background-color: white;
-                display: none;
+    #btn_button {
+        top: 20px !important;
+        right: 30px !important;
 
+    }
 
-            }
+}
 
-            #btn_button {
-                position: absolute;
-                top: 50px;
-                right: 100px;
-                background: none;
-                border: none;
-                cursor: pointer;
-                z-index: 999;
-            }
+.contactsec .lftrytlineparts {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+.fifthcontsecond {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 100px;
+    z-index: 1000;
+    background: url("../images/BG_3\ 5.png");
+    /* space allowed inside quotes */
+    background-color: white;
+    display: none;
 
 
-    /* <section class="fifthcontsec fifthcontsecond">
+}
+
+#btn_button {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+/* <section class="fifthcontsec fifthcontsecond">
 
         <div class="container">
             <button id="btn_button" class="close-btn">
@@ -88,7 +111,7 @@
 
 
 
-             /* <!-- we addd js  -->
+/* <!-- we addd js  -->
     <script>
 
         let downloadusecasebut = document.querySelectorAll('.downloadusecasebut');
