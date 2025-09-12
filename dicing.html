@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
     <script type="module"
         src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/our-service-custom.css">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css">
@@ -1322,6 +1323,39 @@
     </style>
 </head>
 
+<section class="fifthcontsec fifthcontsecond">
+
+    <div class="container">
+        <button class="close-btn"
+            style="position: absolute; top: 50px; right: 100px;  background: none; border: none; cursor: pointer; z-index: 999;">
+            <i class="ri-close-line" style="font-size: 60px; color: black; font-weight: 300;"></i>
+        </button>
+        <div class="contactsec" id="contactsec">
+            <div class="lftrytlinepart lftrytlineparts">
+
+                <div class="rightcontpanel">
+                    <form action="mail/sendmail.php" method="post">
+                        <div class="inputfieldwidth"><input type="text" name="name" placeholder="Name*"
+                                class="inputfield"></div>
+                        <div class="inputfieldwidth"><input type="text" name="organization" placeholder="Organization*"
+                                class="inputfield"></div>
+                        <div class="inputfieldwidth"><input type="tel" name="contact number"
+                                placeholder="Contact number*" class="inputfield"></div>
+                        <div class="inputfieldwidth"><input type="email" name="email" placeholder="Email*"
+                                class="inputfield"></div>
+                        <div class="inputfieldwidth"><textarea name="comments" class="textareafield"
+                                placeholder="Comments"></textarea></div>
+                        <!-- <div class="inputfieldwidth"><input type="submit" name="submit" value="submit"
+                                        class="submitbut"></div> -->
+                        <button class="submitbut">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <body>
     <section class="headersec sticky only-desktop">
         <div class="container">
@@ -2022,9 +2056,9 @@
 
         <!-- Use this section only for mobile (wrap with media query if needed) -->
         <div class="only-mobile">
-            <section class="services-section">
+            <section class="services-section services-section-bg">
                 <div class="containers">
-                    <h2 class="services-section-head-desk">Dicing Services<br> Spectrum </h2>
+                    <h2 class="services-section-head-desk ">Dicing Services<br> Spectrum </h2>
                     <div class="only-mobile-button-group">
                         <button class="only-mobile-button tablinks-mobile active"
                             onclick="openCityMobile(event, 'DesignMobile')">Stealth Laser Dicing</button>
@@ -2445,7 +2479,19 @@
 
                     <h2>Case Studies </h2>
                     <div class="casestudycontsec">
-                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-01.jpg);">
+                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-02.jpg);">
+                            <div class="transparentbg">
+                                <div class="casestudycontpart">
+                                    <h3>Accelerating Innovation in 4K Live Streaming & Gaming Cameras
+                                    </h3>
+                                    <p>First-pass success, rapid prototyping, and precision execution for
+                                        breakthrough
+                                        imaging technology.​</p>
+                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="sglecasestudycontsec" style="background-image: url(images/case-study-01.jpg);">
                             <div class="transparentbg">
                                 <div class="casestudycontpart">
                                     <h3>Flawless execution, rapid prototyping, and first-pass success for cutting-edge
@@ -2457,7 +2503,7 @@
                                     <a href="#contactsec" class="downloadusecasebut">Download case study</a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="sglecasestudycontsec" style="background-image: url(images/case-study-02.jpg);">
                             <div class="transparentbg">
@@ -2758,6 +2804,40 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Carousel Initialization -->
+
+    <!-- we addd js  -->
+    <script>
+
+        let downloadusecasebut = document.querySelectorAll('.downloadusecasebut');
+        let display_open = document.querySelector('.fifthcontsecond');
+        let close_btn = document.querySelector(".close-btn");
+
+        // Pehle se transition add kar dete hain
+        display_open.style.transition = "opacity 0.4s ease, transform 0.4s ease";
+        display_open.style.opacity = 0;
+        display_open.style.transform = "scale(0.95)";
+        display_open.style.display = "none";
+
+        downloadusecasebut.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                display_open.style.display = "block";  // dikhana start
+                setTimeout(() => {
+                    display_open.style.opacity = 1;
+                    display_open.style.transform = "scale(1)";
+                }, 10); // thoda delay taki transition trigger ho
+            });
+        });
+
+        close_btn.addEventListener("click", () => {
+            display_open.style.opacity = 0;
+            display_open.style.transform = "scale(0.95)";
+            setTimeout(() => {
+                display_open.style.display = "none";
+            }, 400); // transition ke baad hide karo
+        });
+
+    </script>
+
 
     <script>
         $(document).ready(function () {
