@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/slimmenu.min.css" rel="stylesheet" type="text/css" />
+    <!--<link href="css/carousel-vertical.min.css" rel="stylesheet" type="text/css" />-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Silitronics</title>
+    <style>
+        /* Banner height adjustments for different screen sizes */
+        @media screen and (min-width: 1920px) {
+            .bannersec {
+                height: 100vh;
+                min-height: 1080px;
+            }
+        }
+
+        @media screen and (min-width: 1366px) and (max-width: 1919px) {
+            .bannersec {
+                height: 100vh;
+                min-height: 768px;
+            }
+        }
+
+        @media screen and (min-width: 1025px) and (max-width: 1365px) {
+            .bannersec {
+                height: 100vh;
+                min-height: 700px;
+            }
+        }
+
+        /* Desktop banner content positioning */
+        @media screen and (min-width: 1025px) {
+            .slidecontpart .container {
+                top: 50% !important;
+                transform: translateY(-35%) !important;
+            }
+        }
+
+        /* Service page tab active link styling */
+        .tablinks-active {
+            background: linear-gradient(90deg, #0000FF, #FF0000) !important;
+            color: white !important;
+        }
+
+        /* .tablinks:hover {
+            background-color: #A188EB !important;
+            color: white !important;
+        } */
+
+        /* Fix horizontal scroll issues */
+        html,
+        body {
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .carousel-item {
+            display: none;
+            min-height: 200px;
+        }
+
+        .carousel-item.active {
+            display: block;
+        }
+
+        .carousel-btn {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            background: #7f63f4;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .carousel-btn:hover {
+            background: #5d47cc;
+        }
+
+        .midsndcontsec {
+            max-width: 320px;
+            width: 100%;
+            height: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 1;
+            margin: 0 auto;
+        }
+
+        .s-shape-img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* S-shape base image */
+        .s-shape-base {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            z-index: 1;
+        }
+
+        /* Dynamic overlay */
+        .s-shape-overlay {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            z-index: 2;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .s-shape-overlay.active {
+            opacity: 1;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            /* Flex-start ki jagah wapas center kiya */
+            position: relative;
+            z-index: 2;
+        }
+
+        .col-md-4-vr {
+            flex: 0 0 20%;
+            max-width: 20%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        .col-md-6-vr {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .col-auto-vr {
+            flex: 0 0 auto;
+            margin: 0 auto;
+            /* Wapas add kiya for natural centering in flex */
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .containervr {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+
+
+        .img-fluid {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Slide animations */
+        @keyframes slideFromTop {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideFromBottom {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .slide-from-top {
+            animation: slideFromTop 0.6s ease;
+        }
+
+        .slide-from-bottom {
+            animation: slideFromBottom 0.6s ease;
+        }
+
+        /* Bottom center controls */
+        .carousel-controls {
+            width: 100%;
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            z-index: 2;
+
+        }
+
+        .mb39 {
+            margin-bottom: 40px;
+        }
+
+
+        /* Right carousel items ke liye min-height */
+        #rightCarousel .carousel-item {
+            min-height: 520px;
+            /* S shape ki height ke barabar ya usse thoda zyada */
+
+        }
+
+
+
+
+
+        /* ************************  index style copy start ********************************** */
+        .toparrow {
+            position: absolute;
+            top: 200px;
+            right: 8px;
+            z-index: 100000;
+            cursor: pointer;
+        }
+
+        .bottomarrow {
+            position: absolute;
+            bottom: 150px;
+            right: 8px;
+            z-index: 100000;
+            cursor: pointer;
+        }
+
+        /* Custom Dots Navigation */
+        .custom-dots {
+            position: absolute;
+            right: 17px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .custom-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid #000;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .custom-dot.active {
+            background: #000;
+        }
+
+        .custom-dot:hover {
+            background: #666;
+        }
+
+        .rela {
+            position: relative;
+        }
+
+        /* Custom Swiper Styles for tabslidersec */
+        .tabslidersec {
+            height: 600px;
+            position: relative !important;
+            overflow: hidden !important;
+        }
+
+        .tabslidersec .swiper-slide {
+            height: auto;
+        }
+
+        /* Override any conflicting owl carousel styles */
+        .tabslidersec .owl-dots {
+            display: none !important;
+        }
+
+        /* All pagination elements completely removed */
+        .sndcontsec .swiper-pagination,
+        .tabslidersec .swiper-pagination,
+        .swiper-pagination,
+        .swiper-pagination-bullet,
+        .swiper-pagination-bullets {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+        }
+
+        /* Ensure clean layout without pagination space */
+        .tabslidersec {
+            padding-bottom: 0 !important;
+            margin-bottom: 0 !important;
+        }
+
+        /* Fix service content layout */
+        .servicecontsec {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            align-items: center !important;
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        .serviceimgsec {
+            flex: 0 0 40% !important;
+            max-width: 40% !important;
+        }
+
+        .servicwcontentsec {
+            flex: 0 0 60% !important;
+            max-width: 60% !important;
+            padding: 1rem 0 0 0 !important;
+            border-top: 2px solid black;
+        }
+
+        /* Ensure Swiper container is clean for vertical sliding */
+        .tabslidersec.swiper {
+            overflow: hidden !important;
+            position: relative !important;
+            height: 600px !important;
+            width: 100% !important;
+        }
+
+        .tabslidersec .swiper-wrapper {
+            display: flex !important;
+            flex-direction: column !important;
+            height: auto !important;
+        }
+
+        .tabslidersec .swiper-slide {
+            width: 100% !important;
+            height: 600px !important;
+            flex-shrink: 0 !important;
+            display: flex !important;
+            align-items: center !important;
+            padding: 14px;
+        }
+
+        /* Enable smooth vertical scrolling */
+        .tabslidersec {
+            touch-action: pan-y !important;
+            user-select: none !important;
+        }
+
+        .carousel-item {
+            display: none;
+            min-height: 200px;
+        }
+
+        .carousel-item.active {
+            display: block;
+        }
+
+        .carousel-btn {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            background: #7f63f4;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .carousel-btn:hover {
+            background: #5d47cc;
+        }
+
+        .midsndcontsec {
+            width: 320px;
+            height: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            position: relative;
+            /* Add this */
+            z-index: 1;
+        }
+
+        .s-shape-img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* S-shape base image */
+        .s-shape-base {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            z-index: 1;
+        }
+
+        /* Dynamic overlay */
+        .s-shape-overlay {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            z-index: 2;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .s-shape-overlay.active {
+            opacity: 1;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            /* Flex-start ki jagah wapas center kiya */
+            position: relative;
+            z-index: 2;
+        }
+
+        .col-md-4-vr {
+            flex: 0 0 20%;
+            max-width: 20%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        .col-md-6-vr {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .col-auto-vr {
+            flex: 0 0 auto;
+            margin: 0 auto;
+            /* Wapas add kiya for natural centering in flex */
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .containervr {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+
+        .img-fluid {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Slide animations */
+        @keyframes slideFromTop {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideFromBottom {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .slide-from-top {
+            animation: slideFromTop 0.6s ease;
+        }
+
+        .slide-from-bottom {
+            animation: slideFromBottom 0.6s ease;
+        }
+
+        /* Bottom center controls */
+        .carousel-controls {
+            width: 100%;
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            z-index: 2;
+
+        }
+
+        .mb39 {
+            margin-bottom: 40px;
+        }
+
+
+        /* Right carousel items ke liye min-height */
+        #rightCarousel .carousel-item {
+            min-height: 520px;
+            /* S shape ki height ke barabar ya usse thoda zyada */
+
+        }
+
+        /* Banner height adjustments for different screen sizes */
+        @media screen and (min-width: 1920px) {
+            .bannersec {
+                height: 100vh;
+                min-height: 1080px;
+            }
+        }
+
+        @media screen and (min-width: 1366px) and (max-width: 1919px) {
+            .bannersec {
+                height: 100vh;
+                min-height: 768px;
+
+            }
+        }
+
+        @media screen and (min-width: 1025px) and (max-width: 1365px) {
+            .bannersec {
+                height: 100vh;
+                min-height: 700px;
+            }
+        }
+
+        /* Desktop banner content positioning - move content higher up */
+        @media screen and (min-width: 1025px) {
+            .slidecontpart .container {
+                top: 50% !important;
+                transform: translateY(-35%) !important;
+            }
+        }
+
+        @media screen and (max-width: 1025px) {
+            .service-section-spectrum-section .card {
+                width: 350px;
+            }
+
+            .service-section-spectrum-section .card img {
+                width: 64px !important;
+            }
+        }
+
+        /* Hide only nav arrows for mobile banner carousel */
+        .bannersec-mobile .owl-nav {
+            display: none !important;
+        }
+
+        /* Style dots for mobile banner carousel */
+        .bannersec-mobile .owl-dots {
+
+            /* text-align: center; */
+            /* margin-top: 15px; */
+            /* position:absolute;
+  left:40%;
+  top:95%;
+   */
+            position: absolute;
+            top: 95%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .bannersec-mobile .owl-dots .owl-dot {
+            display: inline-block;
+            margin: 0 2px;
+        }
+
+        .bannersec-mobile .owl-dots .owl-dot span {
+            display: block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: transparent;
+            border: 1px solid #A188EB;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .bannersec-mobile .owl-dots .owl-dot.active span,
+        .bannersec-mobile .owl-dots .owl-dot:hover span {
+            background: #A188EB;
+            transform: scale(1.2);
+        }
+
+        /* Mobile banner text styling */
+        .bannersec-mobile .slidecontpart h1 {
+            font-size: 19px !important;
+            line-height: 18px !important;
+            font-weight: 400 !important;
+            letter-spacing: 5px !important;
+        }
+
+        .bannersec-mobile .slidecontpart p {
+            font-size: 14px !important;
+            line-height: 17px !important;
+            letter-spacing: 3px !important;
+        }
+
+        /* Remove extra margin/padding for mobile banner */
+        .bannersec-mobile .owl-carousel {
+            margin-bottom: 0 !important;
+        }
+
+        .bannersec-mobile .owl-stage-outer {
+            padding-bottom: 0 !important;
+        }
+
+        /* Updated Purple/Blue Gradient Colors for Mobile Industry Leader Section */
+        .mobindustryleadersec .onestgrediant {
+            background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+            /* Purple to Blue */
+        }
+
+        .mobindustryleadersec .twostgrediant {
+            background: linear-gradient(135deg, #A855F7 0%, #6366F1 100%) !important;
+            /* Light Purple to Indigo */
+        }
+
+        .mobindustryleadersec .threegradient {
+            background: linear-gradient(135deg, #9333EA 0%, #4F46E5 100%) !important;
+            /* Purple to Blue */
+        }
+
+        .mobindustryleadersec .fourgradient {
+            background: linear-gradient(135deg, #7C3AED 0%, #3730A3 100%) !important;
+            /* Purple to Dark Blue */
+        }
+
+        .mobindustryleadersec .fivegradient {
+            background: linear-gradient(135deg, #C026D3 0%, #7C2D12 100%) !important;
+            /* Magenta to Brown */
+        }
+
+        .mobindustryleadersec .sixgradient {
+            background: linear-gradient(135deg, #DB2777 0%, #BE185D 100%) !important;
+            /* Pink to Dark Pink */
+        }
+
+        .mobindustryleadersec .sevenstgrediant {
+            background: linear-gradient(135deg, #EC4899 0%, #BE123C 100%) !important;
+            /* Light Pink to Red */
+        }
+
+        /* spectrum section style start */
+        .service-section-spectrum-section {
+            padding: 36px 46px 64px 64px;
+            background: linear-gradient(to right, #E5DEF4, #F6F6FB);
+        }
+
+        .service-section-spectrum-section .sectrum-container {
+            grid-template-columns: repeat(2, 1fr);
+            display: grid;
+            gap: 24px;
+            justify-items: center;
+        }
+
+        .service-section-spectrum-section h4 {
+            font-size: 70px;
+            line-height: 85px;
+            font-family: 'Titillium Web';
+            font-weight: bold;
+            text-align: center;
+            padding: 0 0 50px 0;
+            background: linear-gradient(90deg, #050EF1, #FD0200);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-top: 76px;
+        }
+
+        .service-section-spectrum-section .card {
+            background: linear-gradient(to right, #d9cef5, rgba(221, 213, 240, 0.6));
+            border: 2px solid #000;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px !important;
+        }
+
+        .service-section-spectrum-section .card .card-img-head {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+            margin-top: 20px;
+        }
+
+        .service-section-spectrum-section .card img {
+            width: 85px;
+        }
+
+        .service-section-spectrum-section .card h3 {
+            color: #333;
+            padding-left: 36px;
+        }
+
+        .service-section-spectrum-section .card ul {
+            padding-left: 20px;
+        }
+
+        .service-section-spectrum-section .card li {
+            list-style-type: disc;
+        }
+
+        .service-section-spectrum-section .mobile-pagination {
+            display: none;
+        }
+
+        .service-section-spectrum-section .carousel-wrapper {
+            position: relative;
+        }
+
+        .service-section-spectrum-section .arrow {
+            display: none;
+        }
+
+        @media (max-width: 1023px) {
+            .service-section-spectrum-section .sectrum-container {
+                grid-template-columns: repeat(2, 1fr) !important;
+                justify-items: center;
+            }
+
+            .service-section-spectrum-section .card img {
+                width: 48px !important;
+            }
+
+            .service-section-spectrum-section h4 {
+                font-size: 48px;
+                line-height: 66px;
+            }
+
+            .service-section-spectrum-section {
+                padding: 36px 12px;
+                background: linear-gradient(to right, #E5DEF4, #F6F6FB);
+            }
+        }
+
+        .slider-container {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .service-section-spectrum-section .container {
+                position: relative;
+                display: none;
+            }
+
+            .section-spectrum-mobile-view {
+                background: linear-gradient(to right, #E5DEF4, #F6F6FB);
+            }
+
+            .section-spectrum-mobile-view .slider-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                max-width: 100%;
+                padding: 95px;
+            }
+
+            .section-spectrum-mobile-view h4 {
+                font-size: 38px;
+                font-family: 'Titillium Web';
+                font-weight: bold;
+                text-align: center;
+                padding: 0 0 50px 0;
+                background: linear-gradient(90deg, #050EF1, #FD0200);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                /* margin-top: 76px; */
+                line-height: 1.25;
+            }
+
+            .section-spectrum-mobile-view .slider-wrapper {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .section-spectrum-mobile-view .slider {
+                display: flex;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .section-spectrum-mobile-view .slide {
+                min-width: 100%;
+                background: #ede3f9;
+                border-radius: 20px;
+                padding: 30px 36px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: left;
+                height: 395px;
+                position: relative;
+                border: 2px solid #000;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+            }
+
+            .section-spectrum-mobile-view .slide-icon {
+                display: flex;
+                align-items: center;
+                margin-bottom: 24px;
+            }
+
+            .section-spectrum-mobile-view .slide-icon img {
+                width: 76px;
+                height: 76px;
+                margin-right: 24px;
+            }
+
+            .section-spectrum-mobile-view .slide h3 {
+                margin: 0;
+                font-family: "Titillium Web", sans-serif;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .section-spectrum-mobile-view .slide ul {
+                padding-left: 20px;
+                margin-top: 10px;
+                font-family: monospace;
+                font-size: 14px;
+            }
+
+            .section-spectrum-mobile-view .slide ul li {
+                margin-top: 14px;
+                font-family: "Spline Sans Mono", monospace;
+                font-size: 16px;
+                list-style-type: disc;
+                font-weight: 500;
+            }
+
+            .section-spectrum-mobile-view .arrow {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: transparent;
+                border: none;
+                font-size: 24px;
+                cursor: pointer;
+                z-index: 1;
+            }
+
+            .section-spectrum-mobile-view .arrow-left {
+                left: 48px;
+                top: 60%;
+            }
+
+            .section-spectrum-mobile-view .arrow-right {
+                right: 48px;
+                top: 60%;
+            }
+
+            .section-spectrum-mobile-view .dots {
+                margin-top: 24px;
+                display: flex;
+                justify-content: center;
+                gap: 8px;
+            }
+
+            .section-spectrum-mobile-view .dot {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: transparent;
+                cursor: pointer;
+                border: 1.5px solid #000;
+            }
+
+            .section-spectrum-mobile-view .dot.active {
+                background-color: #000;
+            }
+        }
+
+        @media (max-width: 543px) {
+            .section-spectrum-mobile-view .slider-container {
+                padding: 50px;
+            }
+
+            .section-spectrum-mobile-view h4 {
+                font-size: 28px;
+            }
+
+            .section-spectrum-mobile-view .arrow-left {
+                left: 24px;
+                top: 60%;
+            }
+
+            .section-spectrum-mobile-view .arrow-right {
+                right: 24px;
+                top: 60%;
+            }
+
+            .fstcontsec .lftrytlinepart h3 {
+                color: #000 !important;
+                font-size: 24px !important;
+                margin-bottom: 24px;
+            }
+        }
+
+        @media (max-width: 411px) {
+            .section-spectrum-mobile-view .slider-container {
+                padding: 48px;
+            }
+
+            .section-spectrum-mobile-view .arrow-left {
+                left: 20px;
+            }
+
+            .section-spectrum-mobile-view .arrow-right {
+                right: 20px;
+            }
+
+            .section-spectrum-mobile-view .slide-icon img {
+                width: 64px;
+                height: 64px;
+            }
+
+            .section-spectrum-mobile-view .slide {
+                height: 525px;
+            }
+        }
+
+        .fstcontsec .lftrytlinepart h3 {
+            color: #000 !important;
+            font-size: 48px;
+            margin-bottom: 42px;
+        }
+
+        .fstcontsec-bottom-head {
+            font-size: 36px !important;
+        }
+
+        .servicwcontentsec h3 {
+            padding: 0 0 24px 0 !important;
+        }
+
+        /* Sip design Process & capability style */
+        .sip-design-process-capability {
+            background: transparent !important;
+        }
+
+        .servicecontsec-items-list {
+            padding-left: 1rem;
+        }
+
+        .servicecontsec-items-list li {
+            list-style-type: disc;
+            line-height: 2;
+        }
+
+        /* spectrum section style end */
+        /* ************************  index style copy end ********************************** */
+
+        #silitronics-extensive-design {
+            width: 100%;
+            background: linear-gradient(to right, #363ce0, #d44343);
+            padding: 5rem 0;
+            font-family: "Titillium Web", sans-serif;
+        }
+
+        #silitronics-extensive-design h2 {
+            color: #fff;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding: 0 30rem;
+        }
+
+        #design-rule-section {
+            background: rgba(153, 153, 153, 0.1);
+            padding: 5rem 0;
+        }
+
+        #design-rule-section h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-align: center;
+            background: linear-gradient(135deg, #050EF1, #FD0200);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 2px;
+            line-height: 1.2;
+            font-family: "Titillium Web", sans-serif;
+        }
+
+        .box1align h2 {
+            height: 2rem;
+        }
+
+        .tab button {
+            padding: 15px 36px !important;
+        }
+
+        /* mobile sip design and process style code */
+
+        .sndcontsec-mobile {
+            /* background-color: red; */
+            padding: 3rem;
+        }
+
+        .sndcontsec-mobile h2 {
+            font-size: 2rem;
+            line-height: 85px;
+            font-family: 'Titillium Web';
+            font-weight: bold;
+            text-align: center;
+            /* padding: 0 0 40px 0; */
+            background: linear-gradient(90deg, #050EF1, #FD0200);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .sipmaincont {
+            display: flex !important;
+            flex-direction: row !important;
+            gap: 3rem;
+            align-items: flex-start;
+            height: 0;
+            margin-top: -10rem;
+
+        }
+
+        .divnumimg {
+            width: 75rem !important;
+        }
+
+        .divtextcont-items li {
+            list-style-type: disc !important;
+        }
+
+        .divtextcont {
+            border-top: 5px solid black;
+            padding-top: 2rem;
+            padding-right: 2rem;
+            padding-bottom: 15rem;
+        }
+
+        .divtextcont h3 {
+            margin-bottom: 1rem;
+        }
+
+        .sndcontsec-mobile-slider {
+            height: 450px;
+        }
+
+        .servicestabcontent-containers img {
+            width: 100% !important;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            max-width: none;
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 1366px) {
+    #silitronics-extensive-design h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0 18rem;
+}
+        }
+        @media screen and (max-width: 1024px) {
+    #silitronics-extensive-design h2 {
+            color: #fff;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding: 0 12rem;
+        }
+}
+        @media screen and (max-width: 768px) {
+       #silitronics-extensive-design h2 {
+        color: #fff;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding: 0 0;
+    }
+}
+    @media screen and (max-width: 480px) {
+
+        
+       .servicestabcontent-containers {
+    overflow: visible;
+}
+}
+        @media screen and (max-width: 480px) {
+       .servicestabcontent-containers {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    /* overflow-x: hidden; */
+    margin-top: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 42px;
+    overflow: visible;
+}
+}
+#design-rule-section .container {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#design-rule-section  .card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 248px;
+  text-align: center;
+  flex: 1 1 200px;
+}
+
+#design-rule-section  .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#design-rule-section  .caption {
+  padding: 10px;
+  font-weight: bold;
+  background-color: white;
+}    
+#design-rule-section h2
+ {
+    font-size: 70px;
+    line-height: 85px;
+    font-family: 'Titillium Web';
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0 40px 0;
+    background: linear-gradient(90deg, #050EF1, #FD0200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.sndcontsec-mobile h2{
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+ .heading{
+        font-size: 2rem;
+    line-height: 35px;
+    font-family: 'Titillium Web';
+    font-weight: bold;
+    text-align: center;
+    /* padding: 0 0 40px 0; */
+    background: linear-gradient(90deg, #050EF1, #FD0200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media (min-width:767px){
+    .heading{
+     font-size: 70px;
+    line-height: 85px;  
+    }
+}
+
+
+.service-section-spectrum-section .card {
+    max-width: 100% !important;
+}
+
+
+
+.tabcontents {
+  display: none;
+}
+
+ .tabcontent-mobiles{
+          display: none;
+ }
+
+ /* .services-section{
+    background: none;
+     box-shadow: none;
+ } */
+
+ .services-section-bg{
+    background: url(../images/BG_3\ 5.png);
+}
+
+.contactsec .lftrytlineparts{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+.fifthcontsecond {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 100px;
+    padding: 4rem;
+    z-index: 10;
+    background: url("./images/BG_3 5.png"); /* space allowed inside quotes */
+    background-color: white;
+    display: none;
+   
+}
+
+
+
+
+ 
+    </style>
+</head>
+
+<body>
+    <section class="headersec sticky only-desktop">
+        <div class="container">
+            <div class="logonnavsec">
+                <div class="logo ">
+                    <a href="index.html"><img src="images/logo.png" /></a>
+                </div>
+                <div class="navsec">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <!-- <li><a href="application.html">Applications</a></li> -->
+                        <!-- <li><a href="facility.html">Facility</a></li> -->
+                        <!-- <li><a href="resource.html">Resources Hub</a></li> -->
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- mobile navbar -->
+
+
+    <div class="only-mobile sticky">
+        <div class="menu-header only-mobile sticky">
+            <img src="images/logo.png" alt="SILITRONICS Logo">
+            <div class="hamburger close-icon" onclick="toggleMenu(this)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="side-menu" id="menu">
+            <ul>
+
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="service.html">SERVICES</a></li>
+                <!-- <li><a href="application.html">APPLICATIONS</a></li> -->
+                <!-- <li><a href="facility.html">FACILITY</a></li> -->
+                <!-- <li><a href="resource.html">RESOURCES HUB</a></li> -->
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+
+
+            <div class="social-icons">
+                <a href="https://youtube.com" target="_blank">
+                    <img src="images/youtube.svg" alt="YouTube">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="images/linkedin.svg" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+       
+
+        <!-- Case Study Section  -->
+        <section class="forthcontsec">
+            <div class="container">
+                <div class="casestudiessec">
+                    <h2>Case Studies </h2>
+                    <div class="casestudycontsec">
+                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-01.jpg);">
+                            <div class="transparentbg">
+                                <div class="casestudycontpart">
+                                     <h3>Accelerating Innovation in 4K Live Streaming & Gaming Cameras
+                                    </h3>
+                                    <p>Flawless execution, rapid prototyping, and first-pass success for cutting-edge automotive LiDAR technology.​</p>
+                                    <a href="#" class="downloadusecasebut">Download case study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-02.jpg);">
+                            <div class="transparentbg">
+                                <div class="casestudycontpart">
+                                    <h3>Accelerating Innovation in 4K Live Streaming & Gaming Cameras
+                                    </h3>
+                                    <p>First-pass success, rapid prototyping, and precision execution for breakthrough
+                                        imaging technology.​</p>
+                                    <a href="#" class="downloadusecasebut">Download case study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-03.jpg);">
+                            <div class="transparentbg">
+                                <div class="casestudycontpart">
+                                    <h3>High-Yield, High-Precision IC Packaging for 5G & RF Innovation
+                                        ​</h3>
+                                    <p>Reliable, flexible, and high-performance IC packaging solutions, ensuring
+                                        uninterrupted supply and exceptional quality.
+                                        ​</p>
+                                    <a href="#" class="downloadusecasebut">Download case study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fifthcontsec fifthcontsecond">
+             <button class="close-btn" style="position: absolute; top: 50px; right: 100px;  background: none; border: none; cursor: pointer; z-index: 999;">
+        <i class="ri-close-line" style="font-size: 60px; color: black; font-weight: 300;"></i>
+    </button>
+            <div class="container">
+                <div class="contactsec" id="contactsec">
+                    <div class="lftrytlinepart lftrytlineparts">
+                       
+                        <div class="rightcontpanel">
+                            <form action="mail/sendmail.php" method="post">
+                                <div class="inputfieldwidth"><input type="text" name="name" placeholder="Name*"
+                                        class="inputfield"></div>
+                                <div class="inputfieldwidth"><input type="text" name="organization"
+                                        placeholder="Organization*" class="inputfield"></div>
+                                <div class="inputfieldwidth"><input type="tel" name="contact number"
+                                        placeholder="Contact number*" class="inputfield"></div>
+                                <div class="inputfieldwidth"><input type="email" name="email" placeholder="Email*"
+                                        class="inputfield"></div>
+                                <div class="inputfieldwidth"><textarea name="comments" class="textareafield"
+                                        placeholder="Comments"></textarea></div>
+                                <!-- <div class="inputfieldwidth"><input type="submit" name="submit" value="submit"
+                                        class="submitbut"></div> -->
+                                <button class="submitbut">SUBMIT</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+<script>
+
+let downloadusecasebut = document.querySelectorAll('.downloadusecasebut');
+let display_open = document.querySelector('.fifthcontsecond');
+let close_btn = document.querySelector(".close-btn");
+
+// Pehle se transition add kar dete hain
+display_open.style.transition = "opacity 0.4s ease, transform 0.4s ease";
+display_open.style.opacity = 0;
+display_open.style.transform = "scale(0.95)";
+display_open.style.display = "none";
+
+downloadusecasebut.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    display_open.style.display = "block";  // dikhana start
+    setTimeout(() => {
+      display_open.style.opacity = 1;
+      display_open.style.transform = "scale(1)";
+    }, 10); // thoda delay taki transition trigger ho
+  });
+});
+
+close_btn.addEventListener("click", () => {
+  display_open.style.opacity = 0;
+  display_open.style.transform = "scale(0.95)";
+  setTimeout(() => {
+    display_open.style.display = "none";
+  }, 400); // transition ke baad hide karo
+});
+
+</script>
+
+</body>
+
+</html>
