@@ -1,0 +1,121 @@
+/* javascript:void(0) */
+/* <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"> */
+          /* <link rel="stylesheet" href="./css/popup.css"> */
+      @media screen and (max-width: 480px) {
+            .fifthcontsecond {
+                top: 0 !important;
+                padding: 0 !important;
+                z-index: 1000 !important;
+
+            }
+
+            #btn_button {
+                top: 20px !important;
+                right: 30px !important;
+
+            }
+
+        }
+
+            .contactsec .lftrytlineparts {
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                margin-top: 100px;
+            }
+
+            .fifthcontsecond {
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                top: 100px;
+                z-index: 1000;
+                background: url("./images/BG_3 5.png");
+                /* space allowed inside quotes */
+                background-color: white;
+                display: none;
+
+            }
+
+            #btn_button {
+                position: absolute;
+                top: 50px;
+                right: 100px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                z-index: 999;
+            }
+
+
+    /* <section class="fifthcontsec fifthcontsecond">
+
+        <div class="container">
+            <button id="btn_button" class="close-btn">
+                <i class="ri-close-line" style="font-size: 60px; color: black; font-weight: 300;"></i>
+            </button>
+            <div class="contactsec" id="contactsec">
+                <div class="lftrytlinepart lftrytlineparts">
+
+                    <div class="rightcontpanel">
+                        <form action="mail/sendmail.php" method="post">
+                            <div class="inputfieldwidth"><input type="text" name="name" placeholder="Name*"
+                                    class="inputfield"></div>
+                            <div class="inputfieldwidth"><input type="text" name="organization"
+                                    placeholder="Organization*" class="inputfield"></div>
+                            <div class="inputfieldwidth"><input type="tel" name="contact number"
+                                    placeholder="Contact number*" class="inputfield"></div>
+                            <div class="inputfieldwidth"><input type="email" name="email" placeholder="Email*"
+                                    class="inputfield"></div>
+                            <div class="inputfieldwidth"><textarea name="comments" class="textareafield"
+                                    placeholder="Comments"></textarea></div>
+                            <!-- <div class="inputfieldwidth"><input type="submit" name="submit" value="submit"
+                                        class="submitbut"></div> -->
+                            <button class="submitbut">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> */
+
+
+
+
+
+
+             /* <!-- we addd js  -->
+    <script>
+
+        let downloadusecasebut = document.querySelectorAll('.downloadusecasebut');
+        let display_open = document.querySelector('.fifthcontsecond');
+        let close_btn = document.querySelector(".close-btn");
+
+        // Pehle se transition add kar dete hain
+        display_open.style.transition = "opacity 0.4s ease, transform 0.4s ease";
+        display_open.style.opacity = 0;
+        display_open.style.transform = "scale(0.95)";
+        display_open.style.display = "none";
+
+        downloadusecasebut.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                display_open.style.display = "block";  // dikhana start
+                setTimeout(() => {
+                    display_open.style.opacity = 1;
+                    display_open.style.transform = "scale(1)";
+                }, 10); // thoda delay taki transition trigger ho
+            });
+        });
+
+        close_btn.addEventListener("click", () => {
+            display_open.style.opacity = 0;
+            display_open.style.transform = "scale(0.95)";
+            setTimeout(() => {
+                display_open.style.display = "none";
+            }, 400); // transition ke baad hide karo
+        });
+
+    </script> */

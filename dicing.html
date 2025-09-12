@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./css/our-service-custom.css">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"> 
+          <link rel="stylesheet" href="./css/popup.css"> 
     <title>Silitronics</title>
     <style>
         /* Banner height adjustments for different screen sizes */
@@ -1329,6 +1331,38 @@
 
 <body>
 
+       <section class="fifthcontsec fifthcontsecond">
+
+        <div class="container">
+            <button id="btn_button" class="close-btn">
+                <i class="ri-close-line" style="font-size: 60px; color: black; font-weight: 300;"></i>
+            </button>
+            <div class="contactsec" id="contactsec">
+                <div class="lftrytlinepart lftrytlineparts">
+
+                    <div class="rightcontpanel">
+                        <form action="mail/sendmail.php" method="post">
+                            <div class="inputfieldwidth"><input type="text" name="name" placeholder="Name*"
+                                    class="inputfield"></div>
+                            <div class="inputfieldwidth"><input type="text" name="organization"
+                                    placeholder="Organization*" class="inputfield"></div>
+                            <div class="inputfieldwidth"><input type="tel" name="contact number"
+                                    placeholder="Contact number*" class="inputfield"></div>
+                            <div class="inputfieldwidth"><input type="email" name="email" placeholder="Email*"
+                                    class="inputfield"></div>
+                            <div class="inputfieldwidth"><textarea name="comments" class="textareafield"
+                                    placeholder="Comments"></textarea></div>
+                            <!-- <div class="inputfieldwidth"><input type="submit" name="submit" value="submit"
+                                        class="submitbut"></div> -->
+                            <button class="submitbut">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <section class="headersec sticky only-desktop">
         <div class="container">
@@ -1906,7 +1940,7 @@
         <!-- </section> -->
 
 
-        <div class=" only-desktop">
+        <div class="only-desktop">
             <section class="services-section services-section-bg">
                 <div class=" containers desktop ">
                     <h2 class="services-section-head-desk">Dicing Services Spectrum</h2>
@@ -2460,7 +2494,7 @@
                                     <p>First-pass success, rapid prototyping, and precision execution for
                                         breakthrough
                                         imaging technology.​</p>
-                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
+                                    <a href="javascript:void(0)" class="downloadusecasebut">Download case study</a>
                                 </div>
                             </div>
                         </div>
@@ -2486,7 +2520,7 @@
                                     <p>First-pass success, rapid prototyping, and precision execution for
                                         breakthrough
                                         imaging technology.​</p>
-                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
+                                    <a href="javascript:void(0)" class="downloadusecasebut">Download case study</a>
                                 </div>
                             </div>
                         </div>
@@ -2498,7 +2532,7 @@
                                     <p>Reliable, flexible, and high-performance IC packaging solutions, ensuring
                                         uninterrupted supply and exceptional quality.
                                         ​</p>
-                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
+                                    <a href="javascript:void(0)" class="downloadusecasebut">Download case study</a>
                                 </div>
                             </div>
                         </div>
@@ -2766,6 +2800,40 @@
         });
 
     </script>
+
+                 <!-- we addd js  -->
+    <script>
+
+        let downloadusecasebut = document.querySelectorAll('.downloadusecasebut');
+        let display_open = document.querySelector('.fifthcontsecond');
+        let close_btn = document.querySelector(".close-btn");
+
+        // Pehle se transition add kar dete hain
+        display_open.style.transition = "opacity 0.4s ease, transform 0.4s ease";
+        display_open.style.opacity = 0;
+        display_open.style.transform = "scale(0.95)";
+        display_open.style.display = "none";
+
+        downloadusecasebut.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                display_open.style.display = "block";  // dikhana start
+                setTimeout(() => {
+                    display_open.style.opacity = 1;
+                    display_open.style.transform = "scale(1)";
+                }, 10); // thoda delay taki transition trigger ho
+            });
+        });
+
+        close_btn.addEventListener("click", () => {
+            display_open.style.opacity = 0;
+            display_open.style.transform = "scale(0.95)";
+            setTimeout(() => {
+                display_open.style.display = "none";
+            }, 400); // transition ke baad hide karo
+        });
+
+    </script> 
+
 
     <a href="#contactsec" class="fixed-getintouch"><img src="./images/getintouchbg.png" alt=""></a>
     <script src="js/jquery.min.js" type="text/javascript"></script>
