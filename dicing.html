@@ -1142,6 +1142,8 @@
         }
 
         @media screen and (max-width: 480px) {
+
+
             .servicestabcontent-containers {
                 overflow: visible;
             }
@@ -1323,40 +1325,11 @@
     </style>
 </head>
 
-<section class="fifthcontsec fifthcontsecond">
-
-    <div class="container">
-        <button class="close-btn"
-            style="position: absolute; top: 50px; right: 100px;  background: none; border: none; cursor: pointer; z-index: 999;">
-            <i class="ri-close-line" style="font-size: 60px; color: black; font-weight: 300;"></i>
-        </button>
-        <div class="contactsec" id="contactsec">
-            <div class="lftrytlinepart lftrytlineparts">
-
-                <div class="rightcontpanel">
-                    <form action="mail/sendmail.php" method="post">
-                        <div class="inputfieldwidth"><input type="text" name="name" placeholder="Name*"
-                                class="inputfield"></div>
-                        <div class="inputfieldwidth"><input type="text" name="organization" placeholder="Organization*"
-                                class="inputfield"></div>
-                        <div class="inputfieldwidth"><input type="tel" name="contact number"
-                                placeholder="Contact number*" class="inputfield"></div>
-                        <div class="inputfieldwidth"><input type="email" name="email" placeholder="Email*"
-                                class="inputfield"></div>
-                        <div class="inputfieldwidth"><textarea name="comments" class="textareafield"
-                                placeholder="Comments"></textarea></div>
-                        <!-- <div class="inputfieldwidth"><input type="submit" name="submit" value="submit"
-                                        class="submitbut"></div> -->
-                        <button class="submitbut">SUBMIT</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 <body>
+
+
     <section class="headersec sticky only-desktop">
         <div class="container">
             <div class="logonnavsec">
@@ -2804,39 +2777,6 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Carousel Initialization -->
-
-    <!-- we addd js  -->
-    <script>
-
-        let downloadusecasebut = document.querySelectorAll('.downloadusecasebut');
-        let display_open = document.querySelector('.fifthcontsecond');
-        let close_btn = document.querySelector(".close-btn");
-
-        // Pehle se transition add kar dete hain
-        display_open.style.transition = "opacity 0.4s ease, transform 0.4s ease";
-        display_open.style.opacity = 0;
-        display_open.style.transform = "scale(0.95)";
-        display_open.style.display = "none";
-
-        downloadusecasebut.forEach((btn) => {
-            btn.addEventListener("click", () => {
-                display_open.style.display = "block";  // dikhana start
-                setTimeout(() => {
-                    display_open.style.opacity = 1;
-                    display_open.style.transform = "scale(1)";
-                }, 10); // thoda delay taki transition trigger ho
-            });
-        });
-
-        close_btn.addEventListener("click", () => {
-            display_open.style.opacity = 0;
-            display_open.style.transform = "scale(0.95)";
-            setTimeout(() => {
-                display_open.style.display = "none";
-            }, 400); // transition ke baad hide karo
-        });
-
-    </script>
 
 
     <script>
