@@ -49,7 +49,7 @@
     position: fixed;
     top: 100px;
     z-index: 1000;
-    background: url("./images/BG_3 5.png");
+    background: url("../images/BG_3\ 5.png") ;
     /* space allowed inside quotes */
     background-color: white;
     display: none;
@@ -58,8 +58,8 @@
 
 #btn_button {
     position: absolute;
-    top: 100px;
-    right: 500px;
+    top: 50px;
+    right: 200px;
     background: none;
     border: none;
     cursor: pointer;
