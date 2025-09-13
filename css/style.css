@@ -506,8 +506,8 @@ a.getintouchbut:hover {
 .sndcontsec {
     width: 100%;
     overflow: hidden;
-    background: url(../images/sndcontsecbg.png) no-repeat center center;
-    background-size: cover;
+    /* background: url(../images/sndcontsecbg.png) no-repeat center center; */
+    /* background-size: cover; */
     padding: 100px 0;
 }
 
@@ -3426,8 +3426,8 @@ a.getintouchbut:hover {
 .sndcontsec {
     width: 100%;
     overflow: hidden;
-    background: url(../images/sndcontsecbg.png) no-repeat center center;
-    background-size: cover;
+    /* background: url(../images/sndcontsecbg.png) no-repeat center center; */
+    /* background-size: cover; */
     /* padding: 8rem 0; */
 }
 
