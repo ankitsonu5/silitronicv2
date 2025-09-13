@@ -48,12 +48,11 @@
     align-items: center;
     position: fixed;
     top: 100px;
-    z-index: 1000;
-    background: url("../images/BG_3\ 5.png") ;
+    z-index: 9999;
+    background: url("../images/BG_3\ 5.png") no-repeat center ;
     /* space allowed inside quotes */
     background-color: white;
     display: none;
-
 }
 
 #btn_button {
