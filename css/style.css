@@ -113,7 +113,7 @@ img {
    
 }
 .fixed-getintouch img {
-    width: 6rem !important;
+    width: 6rem ;
 }
 body {
     font-family: 'Spline Sans Mono';
@@ -2712,7 +2712,7 @@ a.playvidbut {
     text-align: center;
     text-decoration: none;
 
-    z-index: 9999;
+    z-index: 100!important;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -3428,7 +3428,7 @@ a.getintouchbut:hover {
     overflow: hidden;
     background: url(../images/sndcontsecbg.png) no-repeat center center;
     background-size: cover;
-    padding: 8rem 0;
+    /* padding: 8rem 0; */
 }
 
 .sndcontsec h2 {
