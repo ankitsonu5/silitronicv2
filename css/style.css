@@ -6330,10 +6330,11 @@ a.myicon:hover {
     border-image: linear-gradient(90deg, #050EF1, #FD0200) 1;
     padding: 8px 10px;
     font-size: 13px;
-    border-radius: 6px 6px 0 6px;
+    /* border-radius: 6px 6px 0 6px; */
     margin-bottom: 10px;
     text-align: left;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0% 100%);
+
 
 }
 
@@ -8691,6 +8692,8 @@ section.services-section {
 }
 
 @media (max-width: 480px) {
+
+    
     .resource-description {
         font-size: 14px;
         padding: 0 15px;
@@ -8929,7 +8932,3 @@ color: #A188EB;
 }
 
 
-
-.services-section-bg{
-    background: url(../images/BG_3\ 5.png)!important;
-}
