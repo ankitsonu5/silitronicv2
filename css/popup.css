@@ -57,6 +57,7 @@
     background: url("../images/BG_3\ 5.png");
     /* space allowed inside quotes */
     background-color: white;
+    background-size: cover;
     display: none;
 }
 
