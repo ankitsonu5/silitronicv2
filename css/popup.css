@@ -3,20 +3,23 @@
 /* <link rel="stylesheet" href="./css/popup.css"> */
 
 /* ********************************* */
-        .fifthcontsec {
-            /* position: relative; */
-        }
-        .pop-up-left-art {
-            position: absolute;
-            bottom: 5rem;
-        }
-        .pop-up-right-art {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-        .rightcontpanel-heading {
-            font-size: 70px;
+.fifthcontsec {
+    /* position: relative; */
+}
+
+.pop-up-left-art {
+    position: absolute;
+    bottom: 5rem;
+}
+
+.pop-up-right-art {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.rightcontpanel-heading {
+    font-size: 70px;
     line-height: 85px;
     font-family: 'Titillium Web';
     font-weight: bold;
@@ -27,10 +30,12 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-top: 76px;
-        }
-         .fifthcontsecond {
-            overflow: scroll;
-         }   
+}
+
+.fifthcontsecond {
+    overflow: scroll;
+}
+
 /* ********************************* */
 .contactsec .lftrytlineparts {
     justify-content: center;
@@ -48,11 +53,12 @@
     align-items: center;
     position: fixed;
     top: 100px;
-    z-index: 9999;
-    background: url("../images/BG_3\ 5.png") no-repeat center ;
+    z-index: 1000;
+    background: url("../images/BG_3\ 5.png");
     /* space allowed inside quotes */
     background-color: white;
     display: none;
+
 }
 
 #btn_button {
@@ -64,6 +70,7 @@
     cursor: pointer;
     z-index: 999;
 }
+
 @media screen and (max-width: 1366px) {
     #btn_button {
         position: absolute;
@@ -79,37 +86,44 @@
 
 @media screen and (max-width: 768px) {
     .rightcontpanel-heading {
-    font-size: 2rem;
-            margin-top: 5rem;
+        font-size: 2rem;
+        margin-top: 5rem;
         margin-bottom: -1rem;
-}
-.fifthcontsecond {
-    top: 50px;
-}
-.pop-up-right-art {
-    width: 7rem;
-}
-.pop-up-left-art {
-    bottom: 0;
-    width: 7rem;
-}
+    }
+
+    .fifthcontsecond {
+        top: 50px;
+    }
+
+    .pop-up-right-art {
+        width: 7rem;
+    }
+
+    .pop-up-left-art {
+        bottom: 0;
+        width: 7rem;
+    }
+
     #btn_button {
         top: 45px;
         right: 96px;
     }
 }
+
 @media screen and (max-width: 480px) {
     .fifthcontsecond {
         top: 50px !important;
         padding: 0 !important;
         z-index: 1000 !important;
     }
+
     #btn_button {
         top: 18px !important;
         right: 12px !important;
     }
 
 }
+
 /* <section class="fifthcontsec fifthcontsecond">
 
         <div class="container">
