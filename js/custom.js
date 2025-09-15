@@ -388,7 +388,7 @@ function openCity(evt, cityName) {
   }
 
   // Remove 'tablinks-active' class from all tab buttons
-  tablinks = document.getElementsByClassName("tablinks");
+  tablinks = document.getElementsByClassName("tablinkse");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].classList.remove("tablinks-active");
   }
@@ -425,7 +425,7 @@ function valueopenCity(valueevt, valuecityName) {
 
 // ========== Set First Tab Active by Default ==========
 window.onload = function () {
-  const firstTab = document.querySelector(".tablinks");
+  const firstTab = document.querySelector(".tablinkse");
   if (firstTab) {
     firstTab.click();
   }

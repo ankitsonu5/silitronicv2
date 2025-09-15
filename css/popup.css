@@ -124,6 +124,16 @@
         right: 12px !important;
     }
 
+     .pop-up-right-art {
+        width: 5rem;
+    }
+
+    .pop-up-left-art {
+        left: 0;
+        bottom: 0;
+        width: 5rem;
+    }
+
 }
 
 /* <section class="fifthcontsec fifthcontsecond">
