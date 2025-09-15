@@ -249,34 +249,33 @@
 
 
         /* ************************  index style copy start ********************************** */
-        .toparrow {
+           .toparrow {
             position: absolute;
-            top: 300px;
-            right: 100px;
-            z-index: 100000;
+            top: 200px;
+            right: 50px;
+            z-index: 100;
             cursor: pointer;
         }
 
         .bottomarrow {
             position: absolute;
-            bottom: 200px;
-            right: 100px;
-            z-index: 100000;
+            bottom: 50px;
+            right: 50px;
+            z-index: 100;
             cursor: pointer;
         }
 
         /* Custom Dots Navigation */
         .custom-dots {
             position: absolute;
-            right: 115px;
-            top: 55%;
+            right: 60px;
+            top: 65%;
             transform: translateY(-50%);
             display: flex;
             flex-direction: column;
             gap: 10px;
             z-index: 10;
         }
-
         .custom-dot {
             width: 12px;
             height: 12px;
@@ -308,6 +307,8 @@
 
         .tabslidersec .swiper-slide {
             height: auto;
+            align-items: start
+            ;
         }
 
         /* Override any conflicting owl carousel styles */
@@ -344,7 +345,8 @@
 
         .serviceimgsec {
             flex: 0 0 40% !important;
-            max-width: 40% !important;
+            max-width: 31% !important;
+            padding-left: 100px;
         }
 
         .servicwcontentsec {
@@ -1012,7 +1014,10 @@
         /* Sip design Process & capability style */
         .sip-design-process-capability {
             background: transparent !important;
-            padding: 75px 0 0 0;
+            padding-top: 100px;
+            padding-bottom:0 !important ;
+            height: 530px !important;
+
         }
 
         .servicecontsec-items-list {
@@ -1339,9 +1344,17 @@
             background-size: cover !important;
         }
 
+   
+
         .tabslidersec .swiper-slide {
-            width: 80% !important;
-        }
+    width: 95% !important;
+    height: 600px !important;
+    flex-shrink: 0 !important;
+    display: flex !important;
+    align-items: start !important;
+    padding: 14px;
+}
+
     </style>
 
 </head>

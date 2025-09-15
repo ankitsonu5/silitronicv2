@@ -287,27 +287,28 @@
 
 
         /* ************************  index style copy start ********************************** */
+        
         .toparrow {
             position: absolute;
             top: 200px;
-            right: 8px;
-            z-index: 100000;
+            right: 50px;
+            z-index: 100;
             cursor: pointer;
         }
 
         .bottomarrow {
             position: absolute;
             bottom: 150px;
-            right: 8px;
-            z-index: 100000;
+            right: 50px;
+            z-index: 100;
             cursor: pointer;
         }
 
         /* Custom Dots Navigation */
         .custom-dots {
             position: absolute;
-            right: 17px;
-            top: 50%;
+            right: 63px;
+            top: 54%;
             transform: translateY(-50%);
             display: flex;
             flex-direction: column;
@@ -315,6 +316,15 @@
             z-index: 10;
         }
 
+        .custom-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid #000;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
         .custom-dot {
             width: 12px;
             height: 12px;
@@ -382,7 +392,8 @@
 
         .serviceimgsec {
             flex: 0 0 40% !important;
-            max-width: 40% !important;
+            max-width: 31% !important;
+            padding-left: 100px;
         }
 
         .servicwcontentsec {
@@ -407,11 +418,11 @@
         }
 
         .tabslidersec .swiper-slide {
-            width: 100% !important;
+            width: 95% !important;
             height: 600px !important;
             flex-shrink: 0 !important;
             display: flex !important;
-            align-items: center !important;
+            align-items: start !important;
             padding: 14px;
         }
 
@@ -1047,6 +1058,7 @@
         /* Sip design Process & capability style */
         .sip-design-process-capability {
             background: transparent !important;
+             height: 630px !important;
         }
 
         .servicecontsec-items-list {
