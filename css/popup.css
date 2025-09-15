@@ -35,7 +35,7 @@
 }
 
 .fifthcontsecond {
-    overflow: scroll;
+    overflow: hidden;
 }
 
 /* ********************************* */
@@ -61,6 +61,7 @@
     background-color: white;
     background-size: cover;
     display: none;
+ 
 }
 
 #btn_button {
@@ -72,6 +73,8 @@
     cursor: pointer;
     z-index: 999;
 }
+
+
 
 @media screen and (max-width: 1366px) {
     #btn_button {
@@ -117,6 +120,7 @@
         top: 50px !important;
         padding: 0 !important;
         z-index: 1000 !important;
+        overflow: auto;
     }
 
     #btn_button {
@@ -135,6 +139,12 @@
     }
 
 }
+
+
+
+
+
+
 
 /* <section class="fifthcontsec fifthcontsecond">
 
