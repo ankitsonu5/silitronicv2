@@ -3,6 +3,7 @@
   position: relative;
   padding: 10rem 2rem;
   text-align: center;
+  background: rgba(153, 153, 153, 10%);
 }
 
 /* 🔹 Top Right Image - Desktop */
@@ -25,15 +26,15 @@
   z-index: 0;
 }
 @media screen and (max-width: 1024px) {
-    .one {
+    .one, .two{
         max-width: 144px;
     }  
-    .two {
-        max-width: 144px;
-    }
 }
 @media screen and (max-width: 480px ){
     .sndcontsecond {
     padding: 8rem 0rem;
 }
+.one, .two{
+        max-width: 96px;
+    } 
 }
