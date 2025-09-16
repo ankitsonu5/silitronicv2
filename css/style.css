@@ -7605,13 +7605,15 @@ section.services-section {
     }
 
    p.facility-card-text {
-      font-size: 20px;
+      font-size: 24px;
       color: #070505;
       font-family: 'Spline Sans';
       text-align: start!important;
       font-weight:  400 !important;;
-      
-      
+      line-height: 28px;
+      letter-spacing: 4px;
+      margin-top: 16px;
+      font-weight: 800 !important;      
     }
     .facilityimg{
         width: 40%!important;
@@ -7671,6 +7673,7 @@ section.services-section {
    .faclitiyslidep p{
     font-size: 20px!important;
     font-family: 'Spline Sans';
+    font-weight: 500;
     margin-bottom: 30px;
     letter-spacing: 3px;
     text-align: start!important;
@@ -7995,7 +7998,7 @@ section.services-section {
 
 .facility-description-primary {
     font-size: 20px !important;
-    font-family: 'Spline Sans', sans-serif;
+    font-family: 'Spline Sans mono', sans-serif;
     color: #333;
     line-height: 1.6;
     margin-bottom: 25px;
@@ -8004,8 +8007,8 @@ section.services-section {
 }
 
 .facility-description-secondary {
-    font-size: 18px !important;
-    font-family: 'Spline Sans', sans-serif;
+    font-size: 20px !important;
+    font-family: 'Spline Sans mono', sans-serif;
     color: #555;
     line-height: 1.6;
     margin-bottom: 0;
