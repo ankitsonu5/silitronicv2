@@ -1399,7 +1399,13 @@
      .section-spectrum-mobile-view .slide ul {
             padding-left: 0;
         }
+/* style code for the active all page */
+/* Base style */
 
+/* Highlight when active */
+.active-menu {
+  color: #ffffff !important;
+}
         
     </style>
 </head>
@@ -1452,7 +1458,7 @@
                 <div class="navsec">
                     <ul>
                         <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="service.html">Services</a></li>
+                        <li><a href="service.html" class="active-menu">Services</a></li>
                         <li><a href="application.html">Applications</a></li>
                         <li><a href="facility.html">Facility</a></li>
                         <li><a href="resource.html">Resources Hub</a></li>
@@ -2977,6 +2983,20 @@
     <script>
         console.log('Mouse scroll disabled for Our Solutions Spectrum carousel');
     </script>
+    <!-- code for services active -->
+     <script>
+        // JS to dynamically set active class (optional enhancement)
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.forEach(l => l.classList.remove('active')); // remove from all
+    link.classList.add('active'); // add to clicked
+  });
+});
+
+     </script>
+
 </body>
 
 </html>
