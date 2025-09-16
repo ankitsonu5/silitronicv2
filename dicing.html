@@ -1345,9 +1345,6 @@
             background: url(../images/BG_3\ 5.png) !important;
             background-size: cover !important;
         }
-
-   
-
         .tabslidersec .swiper-slide {
     width: 95% !important;
     height: 600px !important;
@@ -1355,6 +1352,15 @@
     display: flex !important;
     align-items: start !important;
     padding: 14px;
+}
+
+
+/* style code for the active all page */
+/* Base style */
+
+/* Highlight when active */
+.active-menu {
+  color: #ffffff !important;
 }
 
     </style>
@@ -1409,7 +1415,7 @@
                 <div class="navsec">
                     <ul>
                         <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="service.html">Services</a></li>
+                        <li><a href="service.html"class="active-menu">Services</a></li>
                         <li><a href="application.html">Applications</a></li>
                         <li><a href="facility.html">Facility</a></li>
                         <li><a href="resource.html">Resources Hub</a></li>
@@ -1649,14 +1655,8 @@
         <img class="one" src="./images/rainbow-style-art-one.png" alt="">
             <div class="container">
                 <div class="lftrytlinepart">
-                    <h2>Redefining Optical Performance with Silicon Photonics Expertise</h2>
-                    <p class="slide2text">Silitronics pushes the envelope of silicon photonics through advanced
-                        integration, active alignment, and rigorous optical/electrical testing. Our veteran engineering
-                        team delivers “First Time Right” photonic solutions to leading data center, LiDAR, and sensing
-                        innovators. By combining deep expertise in SOI device manufacturing, FAU alignment, and beam
-                        characterization, Silitronics ensures devices consistently meet the most stringent standards in
-                        reliability, bandwidth, and loss. Clients value our collaborative approach and rapid turnaround,
-                        from prototype to full deployment.</p>
+                    <h2>Unmatched Precision in Wafer Dicing & Die Singulation</h2>
+                    <p class="slide2text">Silitronics sets the benchmark for wafer dicing, thinning, and optical inspection, serving both conventional semiconductor and advanced photonic platforms. Our smart modular facility leverages stealth laser, plasma, and diamond blade dicing methods under strict process control. Whether producing ultra-sensitive PICs or high-volume silicon dies, Silitronics eliminates edge defects, maximizes yield, and delivers dies ready for demanding downstream assembly—all backed by deep expertise and unwavering commitment to quality.</p>
                 </div>
                 </div>
                   <img class="two" src="./images/rainbow-style-art-two.png" alt="">
@@ -2630,12 +2630,12 @@
                     <div class="topftrcolpart myful">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="javascript:void(0);">Services</a></li>
-                            <li><a href="javascript:void(0);">Applications</a></li>
-                            <li><a href="javascript:void(0);">Facility</a></li>
-                            <li><a href="javascript:void(0);">Resource hub</a></li>
-                            <li><a href="javascript:void(0);">About us</a></li>
-                            <li><a href="javascript:void(0);">Contact us</a></li>
+                            <li><a href="./service.html">Services</a></li>
+                            <li><a href="./application.html">Applications</a></li>
+                            <li><a href="./facility.html">Facility</a></li>
+                            <li><a href="./resource.html">Resource hub</a></li>
+                            <li><a href="./about.html">About us</a></li>
+                            <li><a href="./contact.html">Contact us</a></li>
                         </ul>
                     </div>
                     <div class="topftrcolpart">
@@ -2675,12 +2675,12 @@
                     <div class="topftrcolpart ">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="javascript:void(0);">Services</a></li>
-                            <li><a href="javascript:void(0);">Applications</a></li>
-                            <li><a href="javascript:void(0);">Facility</a></li>
-                            <!-- <li><a href="javascript:void(0);">Resources hub</a></li> -->
-                            <li><a href="javascript:void(0);">About us</a></li>
-                            <li><a href="javascript:void(0);">Contact us</a></li>
+                            <li><a href="./service.html">Services</a></li>
+                            <li><a href="./application.html">Applications</a></li>
+                            <li><a href="./facility.html">Facility</a></li>
+                            <li><a href="./resource.html">Resources hub</a></li>
+                            <li><a href="./about.html">About us</a></li>
+                            <li><a href="./contact.html">Contact us</a></li>
                         </ul>
                     </div>
                     <div class="topftrcolpart">
@@ -3077,6 +3077,19 @@
     <script>
         console.log('Mouse scroll disabled for Our Solutions Spectrum carousel');
     </script>
+        <!-- code for services active -->
+     <script>
+        // JS to dynamically set active class (optional enhancement)
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.forEach(l => l.classList.remove('active')); // remove from all
+    link.classList.add('active'); // add to clicked
+  });
+});
+
+     </script>
 </body>
 
 </html>

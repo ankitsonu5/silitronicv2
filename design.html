@@ -1417,9 +1417,13 @@
    
 }
 
+/* style code for the active all page */
+/* Base style */
 
-  
-
+/* Highlight when active */
+.active-menu {
+  color: #ffffff !important;
+}
     </style>
 </head>
 
@@ -1472,8 +1476,8 @@
                 </div>
                 <div class="navsec">
                     <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="service.html">Services</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="service.html" class="active-menu">Services</a></li>
                         <li><a href="application.html">Applications</a></li>
                         <li><a href="facility.html">Facility</a></li>
                         <li><a href="resource.html">Resources Hub</a></li>
@@ -1500,7 +1504,7 @@
         <div class="side-menu" id="menu">
             <ul>
 
-                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="service.html">SERVICES</a></li>
                 <li><a href="application.html">APPLICATIONS</a></li>
                 <li><a href="facility.html">FACILITY</a></li>
@@ -2781,12 +2785,12 @@
                     <div class="topftrcolpart myful">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="javascript:void(0);">Services</a></li>
-                            <li><a href="javascript:void(0);">Applications</a></li>
-                            <li><a href="javascript:void(0);">Facility</a></li>
-                            <li><a href="javascript:void(0);">Resources hub</a></li>
-                            <li><a href="javascript:void(0);">About us</a></li>
-                            <li><a href="javascript:void(0);">Contact us</a></li>
+                            <li><a href="./service.html">Services</a></li>
+                            <li><a href="./application.html">Applications</a></li>
+                            <li><a href="./facility.html">Facility</a></li>
+                            <li><a href="./resource.html">Resources hub</a></li>
+                            <li><a href="./about.html">About us</a></li>
+                            <li><a href="./contact.html">Contact us</a></li>
                         </ul>
                     </div>
                     <div class="topftrcolpart">
@@ -2826,12 +2830,12 @@
                     <div class="topftrcolpart ">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="javascript:void(0);">Services</a></li>
-                            <li><a href="javascript:void(0);">Applications</a></li>
-                            <li><a href="javascript:void(0);">Facility</a></li>
-                            <!-- <li><a href="javascript:void(0);">Resources hub</a></li> -->
-                            <li><a href="javascript:void(0);">About us</a></li>
-                            <li><a href="javascript:void(0);">Contact us</a></li>
+                            <li><a href="./service.html" class="active">Services</a></li>
+                            <li><a href="./application.html">Applications</a></li>
+                            <li><a href="./facility.html">Facility</a></li>
+                            <li><a href="./resource.html">Resources hub</a></li>
+                            <li><a href="./about.html">About us</a></li>
+                            <li><a href="./contact.html">Contact us</a></li>
                         </ul>
                     </div>
                     <div class="topftrcolpart">
@@ -3252,9 +3256,20 @@ window.addEventListener("load", function () {
             document.getElementById(serviceName).style.display = "block";
             evt.currentTarget.classList.add("tablinks-active");
         }
-
-
     </script>
+
+    <!-- code for services active -->
+     <script>
+        // JS to dynamically set active class (optional enhancement)
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.forEach(l => l.classList.remove('active')); // remove from all
+    link.classList.add('active'); // add to clicked
+  });
+});
+     </script>
 </body>
 
 </html>
