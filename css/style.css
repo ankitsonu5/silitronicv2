@@ -294,7 +294,7 @@ body {
     color: #fff;
     font-weight: normal;
     padding: 40px 0 0;
-    letter-spacing: 5px;
+    letter-spacing: 0px;
 }
 
 /* a.getintouchbut
@@ -3293,7 +3293,7 @@ line-height: 25px !important;
     color: #ffffff;
     font-weight: normal;
     padding: 40px 0 0;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
 }
 
 a.getintouchbut {
