@@ -67,11 +67,18 @@
             text-align: center;
         }
 
-        .contact-map-container img {
+        /* .contact-map-container img {
             width: 100%;
             min-width: 800px;
             height: auto;
             border-radius: 8px;
+        } */
+         .contact-map-container iframe {
+            width: 100%;
+            min-width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            padding: 0 20px;
         }
 
         /* Social media icons with circular background */
@@ -277,6 +284,20 @@
         padding-right: 205px !important;
     }
         }
+
+
+        @media screen and (max-width:480px){
+                .contact-map-container iframe {
+            height: 200px;
+        }
+
+        }
+
+
+
+
+
+
     </style>
 </head>
 
@@ -443,7 +464,8 @@
         <!-- Map Section -->
         <section class="contact-map-section">
             <div class="contact-map-container">
-                <img src="images/contactmap.png" alt="Silitronics Solutions Inc Location Map">
+                <!-- <img src="images/contactmap.png" alt="Silitronics Solutions Inc Location Map"> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28854.666968912297!2d82.99516534999998!3d25.30980185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1758176650445!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
@@ -524,7 +546,7 @@
                         </p>
                     </div>
                     <div class="topftrcolpart">
-                        <div class="ftrmap"><img src="images/map.jpg"></div>
+                        <div class="ftrmap"><iframe class="ftrmaps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28854.666968912297!2d82.99516534999998!3d25.30980185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1758176650445!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                         <a href="#" class="backtotop">back to top</a>
                     </div>
                 </div>
@@ -562,7 +584,7 @@
                         </ul>
                     </div>
                     <div class="topftrcolpart">
-                        <div class="ftrmap"><img src="images/map.jpg"></div>
+                        <div class="ftrmap"><iframe class="ftrmapsd" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28854.666968912297!2d82.99516534999998!3d25.30980185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1758176650445!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                         <p>Silitronics Solutions Inc 2388 Walsh Avenue, Santa Clara, CA, 95051</p>
                         <p>Email: sales@silitronics.com</p>
                         <p>Phone: +1 408-954-8301,<br> +1 408-605-1148</p>

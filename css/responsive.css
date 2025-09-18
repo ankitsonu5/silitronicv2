@@ -1318,3 +1318,40 @@ a.whtedownloadusecasebut
     }
 
 }
+
+
+ @media screen and (min-width:480px){
+              .ftrmap img{
+              max-width: 390px !important;
+              height: 198px !important;
+            }
+          }
+
+
+
+          /* footer  */
+     .ftrmaps{
+        min-height: 200px;
+      }
+
+     @media screen and (max-width:480px){
+         .ftrmapsd{
+        height: 100px;
+        max-width: 100%;
+      }
+     }
+
+     @media screen and (min-width:480px){
+      .ftrmaps{
+      height: 200px;
+      }
+
+     }
+
+       @media screen and (min-width:480px) and (max-width:778px){
+         .ftrmapsd{
+        height: 200px;
+        max-width: 100%;
+      }
+     }
+    

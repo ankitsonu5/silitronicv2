@@ -1435,6 +1435,7 @@ a.getintouchbut:hover {
     margin-bottom: 20px;
 }
 
+
 .topftrcolpart p {
     margin-bottom: 10px;
 }
@@ -2468,6 +2469,7 @@ a.playvidbut {
     padding: 0 15px;
     margin-top: 50px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
@@ -2478,6 +2480,7 @@ a.playvidbut {
     flex-wrap: wrap;
     align-items: center;
     height: 200px;
+    justify-content: center;
 }
 
 .sglefrthabtsec p {
@@ -4332,10 +4335,11 @@ a.backtotop {
     font-size: 16px;
     text-transform: uppercase;
     color: #999;
-    padding: 0 85px 0 0;
+    padding: 0 100px 0 0;
     height: 72px;
     line-height: 72px;
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .botftrsec {
@@ -5327,7 +5331,7 @@ a.playvidbut {
 
 .sglefrthabtsec {
     flex: 0 0 25%;
-    max-width: 25% padding: 0 15px;
+    max-width: 25% ; padding: 0 15px;
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
