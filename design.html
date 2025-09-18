@@ -1283,76 +1283,121 @@
             background-clip: text;
         }
 
-        /* design-rule-section style start */
-        #design-rule-section .card-container-body {
-            /* height: 100vh; */
-            padding-top: 50px;
-        }
+ 
+    /* design-rule-section style start */
 
-        #design-rule-section .card-containers {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 64px;
-            position: relative;
-            justify-content: center;
-        }
+#design-rule-section .card-container-body {
+    padding-top: 50px;
+}
 
-        #design-rule-section .card-wrappers,
-        .design-rule-section-mobile .card-wrappers {
-            position: relative;
-        }
+#design-rule-section .card-containers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+    position: relative;
+    justify-content: center;
+}
 
-        #design-rule-section .cardsec,
-        .design-rule-section-mobile .cardsec {
-            width: 250px;
-            background: white;
-            border: 1px solid #ccc;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-            transition: all 0.3s ease-in-out;
-            cursor: pointer;
-        }
+#design-rule-section .card-wrappers,
+.design-rule-section-mobile .card-wrappers {
+    position: relative;
+}
 
-        #design-rule-section .cardsec img,
-        .design-rule-section-mobile .cardsec img {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
+#design-rule-section .cardsec,
+.design-rule-section-mobile .cardsec {
+    height: 350px;
+    width: 250px;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
 
-        #design-rule-section .card-content,
-        .design-rule-section-mobile .card-content {
-            padding: 15px;
-            text-align: center;
-        }
+#design-rule-section .cardsec img,
+.design-rule-section-mobile .cardsec img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
 
-        #design-rule-section .card-title,
-        .design-rule-section-mobile .card-title {
-            font-weight: 700;
-            font-size: 16px;
-            margin: 10px 0;
-            text-align: left;
-        }
+#design-rule-section .card-content,
+.design-rule-section-mobile .card-content {
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
 
+#design-rule-section .card-title,
+.design-rule-section-mobile .card-title {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 8px;
+    text-align: left;
+    width: 100%;
+}
 
-        #design-rule-section .download-bar {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            background: #fff;
-            color: #000;
-            text-align: center;
-            padding: 10px 0;
-            opacity: 0;
-            transform: translateY(10px);
-            transition: opacity 0.3s ease, transform 0.3s ease;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            pointer-events: none;
-            font-weight: 700;
-            border-top: 2px solid #555;
-            font-size: 16px;
-        }
+/* Fixed download bar positioning */
+#design-rule-section .download-bar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    opacity: 0;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    font-weight: 700;
+    border-top: 2px solid #555;
+    font-size: 16px;
+    z-index: 10;
+}
+
+/* Hover effects */
+#design-rule-section .card-wrappers:hover .download-bar {
+    opacity: 1;
+    transform: translateY(-100%);
+    pointer-events: auto;
+}
+
+#design-rule-section .card-wrappers:hover .cardsec {
+    transform: translateY(-10px);
+}
+
+/* Active state */
+.download-bar.active {
+    opacity: 1;
+    transform: translateY(-100%);
+    pointer-events: auto;
+}
+
+.download-bar.active:hover {
+    opacity: 1;
+    display: block;
+}
+
+/* Make download bar clickable */
+.downloadusecasebut {
+    cursor: pointer;
+}
+
+.downloadusecasebut:hover {
+    background: #f0f0f0;
+}
+/* design-rule-section style end only desktop */
+         /* design-rule-section style end only desktop  */
+
 
         .design-rule-section-mobile .download-bar {
             position: absolute;
@@ -1373,11 +1418,7 @@
             font-size: 16px;
         }
 
-        #design-rule-section .card-wrappers:hover .download-bar {
-            opacity: 1;
-            transform: translateY(0);
-            pointer-events: auto;
-        }
+       
 
         /* design-rule-section style end */
 
@@ -1447,6 +1488,8 @@
         .slide2text {
             font-size: 18px;
         }
+    
+    
     </style>
 </head>
 
@@ -2340,71 +2383,71 @@
 
         <!-- Design rule section Desktop -->
         <div class="only-desktop">
-            <section id="design-rule-section">
-                <div class="container">
-                    <h2>Design Rules</h2>
-                </div>
-                <div class="container card-container-body">
-                    <div class="card-containers">
-                        <!-- Card 1 -->
-                        <div class="card-wrappers">
-                            <div class="cardsec">
-                                <img src="./images/servicesdetails-fl/design-rule/design-rule-one.png"
-                                    alt="Ceramic substrate">
-                                <div class="card-content">
-                                    <div class="card-title">Ceramic substrate top layer optimization</div>
-                                </div>
-                            </div>
-                            <div class="download-bar downloadusecasebut">DOWNLOAD DESIGN RULES</div>
-                        </div>
-                        <!-- Card 2 -->
-                        <div class="card-wrappers">
-                            <div class="cardsec">
-                                <img src="./images/servicesdetails-fl/design-rule/design-rule-two.png"
-                                    alt="Flip chip package">
-                                <div class="card-content">
-                                    <div class="card-title">Flip chip ceramic LTCC package</div>
-                                </div>
-                            </div>
-                            <div class="download-bar downloadusecasebut">DOWNLOAD DESIGN RULES</div>
-                        </div>
-                        <!-- Card 2 -->
-                        <div class="card-wrappers">
-                            <div class="cardsec">
-                                <img src="./images/servicesdetails-fl/design-rule/design-rule-three.png"
-                                    alt="Flip chip package">
-                                <div class="card-content">
-                                    <div class="card-title">PCB fab</div>
-                                </div>
-                            </div>
-                            <div class="download-bar downloadusecasebut">DOWNLOAD DESIGN RULES</div>
-                        </div>
-                        <!-- Card 2 -->
-                        <div class="card-wrappers">
-                            <div class="cardsec">
-                                <img src="./images/servicesdetails-fl/design-rule/design-rule-four.png"
-                                    alt="Flip chip package">
-                                <div class="card-content">
-                                    <div class="card-title">Etch thick film</div>
-                                </div>
-                            </div>
-                            <div class="download-bar downloadusecasebut">DOWNLOAD DESIGN RULES</div>
-                        </div>
-                        <!-- Card 2 -->
-                        <div class="card-wrappers">
-                            <div class="cardsec">
-                                <img src="./images/servicesdetails-fl/design-rule/design-rule-five.png"
-                                    alt="Flip chip package">
-                                <div class="card-content">
-                                    <div class="card-title">Board stack up</div>
-                                </div>
-                            </div>
-                            <div class="download-bar downloadusecasebut">DOWNLOAD DESIGN RULES</div>
+    <section id="design-rule-section">
+        <div class="container">
+            <h2>Design Rules</h2>
+        </div>
+        <div class="container card-container-body">
+            <div class="card-containers">
+                <!-- Card 1 -->
+                <div class="card-wrappers">
+                    <div class="cardsec">
+                        <img src="./images/servicesdetails-fl/design-rule/design-rule-one.png"
+                            alt="Ceramic substrate">
+                        <div class="card-content">
+                            <div class="card-title">Ceramic substrate top layer optimization</div>
                         </div>
                     </div>
+                    <div class="download-bar active downloadusecasebut">DOWNLOAD DESIGN RULES</div>
                 </div>
-            </section>
+                <!-- Card 2 -->
+                <div class="card-wrappers">
+                    <div class="cardsec">
+                        <img src="./images/servicesdetails-fl/design-rule/design-rule-two.png"
+                            alt="Flip chip package">
+                        <div class="card-content">
+                            <div class="card-title">Flip chip ceramic LTCC package</div>
+                        </div>
+                    </div>
+                    <div class="download-bar downloadusecasebut">DOWNLOAD DESIGN RULES</div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card-wrappers">
+                    <div class="cardsec">
+                        <img src="./images/servicesdetails-fl/design-rule/design-rule-three.png"
+                            alt="PCB fab">
+                        <div class="card-content">
+                            <div class="card-title">PCB fab</div>
+                        </div>
+                    </div>
+                    <div class="download-bar downloadusecasebut">DOWNLOAD DESIGN RULES</div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card-wrappers">
+                    <div class="cardsec">
+                        <img src="./images/servicesdetails-fl/design-rule/design-rule-four.png"
+                            alt="Etch thick film">
+                        <div class="card-content">
+                            <div class="card-title">Etch thick film</div>
+                        </div>
+                    </div>
+                    <div class="download-bar downloadusecasebut">DOWNLOAD DESIGN RULES</div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card-wrappers">
+                    <div class="cardsec">
+                        <img src="./images/servicesdetails-fl/design-rule/design-rule-five.png"
+                            alt="Board stack up">
+                        <div class="card-content">
+                            <div class="card-title">Board stack up</div>
+                        </div>
+                    </div>
+                    <div class="download-bar downloadusecasebut">DOWNLOAD DESIGN RULES</div>
+                </div>
+            </div>
         </div>
+    </section>
+</div>
 
 
         <!-- Design rule section Mobile -->
