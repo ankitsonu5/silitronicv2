@@ -2802,6 +2802,7 @@ a.playvidbut {
     border-right: 6px solid !important;
 }
 
+
 /* Responsive footer for mobile - Updated for 2-column layout */
 @media (max-width: 767px) {
 
@@ -6332,16 +6333,19 @@ a.myicon:hover {
 }
 
 .point {
-    border: 1px solid;
-    border-image: linear-gradient(90deg, #050EF1, #FD0200) 1;
+    position: relative;
     padding: 8px 10px;
     font-size: 13px;
-    /* border-radius: 6px 6px 0 6px; */
     margin-bottom: 10px;
     text-align: left;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0% 100%);
-
-
+    border-radius: 0 0 20px 0; /* radius apply hoga */
+    background: linear-gradient(90deg, #050EF1, #FD0200); /* gradient */
+    border: 1px solid transparent; /* border jaisa feel */
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    background-image:
+        linear-gradient(#fff, #fff),  /* andar ka background */
+        linear-gradient(90deg, #050EF1, #FD0200); /* border gradient */
 }
 
 .mylayout {
@@ -6642,7 +6646,7 @@ ease;
 
 .servicestabcontent-containers {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
     justify-content: space-between;
     overflow-x: hidden;
@@ -7674,10 +7678,11 @@ p.facility-card-text {
 }
 
 .facilityback {
-    background-image: none !important;
-    background: linear-gradient(to right, #5b0a9e 0%, #ca0532 100%) !important;
+    background: linear-gradient(to right, #5b0a9e 0%, #ca0533ce 100%) ,  url(../images/pattern.png) !important;
     border-top-left-radius: 50px !important;
     border-top-right-radius: 50px !important;
+    background-size: cover; 
+
 }
 
 .myfacilitycolor {
@@ -8979,3 +8984,5 @@ p.facility-card-text {
     color: #fff !important;
     border: none !important;
 }
+
+
