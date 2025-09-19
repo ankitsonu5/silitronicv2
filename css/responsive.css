@@ -1332,18 +1332,21 @@ a.whtedownloadusecasebut
           /* footer  */
      .ftrmaps{
         min-height: 200px;
+          background-size: cover;
       }
 
      @media screen and (max-width:480px){
          .ftrmapsd{
         height: 100px;
         max-width: 100%;
+        background-size: cover;
       }
      }
 
      @media screen and (min-width:480px){
       .ftrmaps{
       height: 200px;
+        background-size: cover;
       }
 
      }
@@ -1352,6 +1355,7 @@ a.whtedownloadusecasebut
          .ftrmapsd{
         height: 200px;
         max-width: 100%;
+          background-size: cover;
       }
      }
     
