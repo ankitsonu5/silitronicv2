@@ -7712,6 +7712,7 @@ p.facility-card-text {
     margin-bottom: 30px;
     letter-spacing: 3px;
     text-align: start !important;
+    font-family: "Spline Sans Mono" !important;
 }
 
 .faclitiyslidep h1 {
