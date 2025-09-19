@@ -1397,8 +1397,13 @@ a.getintouchbut:hover {
 }
 
 .ftrlogo {
-    max-width: 200px;
+    display: flex;
+    max-width: 100px;
     margin-bottom: 20px;
+}
+.ftrlogosecond{
+    max-width: 100px;
+    width: 50%;
 }
 
 .ftrusa {
@@ -5850,11 +5855,11 @@ a.getintouchbut:hover,
     /* dark text */
     padding: 15px 45px !important;
     margin: 5px;
-    font-size: 16px;
+    font-size: 18px !important;
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 500;
-    font-family: 'Spline Sans Mono' !important;
+    font-family: 'Titillium Web' !important;
     /* clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0% 100%)!important; */
     border-radius: 0 0 20px 0;
 }
