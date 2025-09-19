@@ -6646,7 +6646,7 @@ ease;
 
 .servicestabcontent-containers {
     display: flex;
-    gap: 30px;
+    gap: 23px;
     align-items: center;
     justify-content: space-between;
     overflow-x: hidden;
