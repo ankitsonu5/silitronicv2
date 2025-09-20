@@ -7649,7 +7649,7 @@ p.mypM {
 p.facility-card-text {
     font-size: 20px;
     color: #070505;
-    font-family: 'Spline Sans';
+    font-family: 'Titillium Web';
     text-align: start !important;
     font-weight: 400 !important;
     ;
@@ -7659,6 +7659,7 @@ p.facility-card-text {
 
 .facilityimg {
     width: 40% !important;
+    max-width: 90px!important;
 }
 
 .facilityimg img {
