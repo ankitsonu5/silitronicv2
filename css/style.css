@@ -1400,10 +1400,13 @@ a.getintouchbut:hover {
     display: flex;
     max-width: 100px;
     margin-bottom: 20px;
+   
 }
 .ftrlogosecond{
     max-width: 100px;
     width: 50%;
+    /* display: flex; */
+    /* justify-content: space-between; */
 }
 
 .ftrusa {
@@ -4269,6 +4272,8 @@ a.getintouchbut:hover {
 }
 
 .ftrlogo {
+    /* gap: 10px; */
+    /* justify-content: space-between; */
     max-width: 200px;
     margin-bottom: 20px;
 }
@@ -7680,6 +7685,7 @@ p.facility-card-text {
     font-family: 'Titillium Web';
     padding-bottom: 20px;
     text-align: start !important;
+    line-height: 30px;
 }
 
 .facilityback {
@@ -8164,7 +8170,7 @@ p.facility-card-text {
 
 
 .why-silitronics {
-    padding: 40px 40px;
+    padding: 40px 10px;
     background: linear-gradient(90deg, #e8dcff, #f6f2ff);
     font-family: 'Titillium Web', sans-serif;
     color: #1b133f;
@@ -8194,10 +8200,10 @@ p.facility-card-text {
     margin-bottom: 16px;
     width: 336px;
     height: auto;
-
+    border-radius: 0 0 30px 0;
     gap: 16px;
     align-items: flex-start;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 92% 100%, 0% 100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 92% 100%, 0% 100%); */
     box-shadow: 0 6px 20px rgba(27, 19, 63, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -8751,6 +8757,7 @@ p.facility-card-text {
 @media (max-width: 480px) {
 
 
+
     .resource-description {
         font-size: 14px;
         padding: 0 15px;
@@ -8991,3 +8998,14 @@ p.facility-card-text {
 }
 
 
+.heads{
+padding-top: 10px !important;
+ }
+
+ .service-section-spectrum-section .card{
+    border-radius: 0 0 30px 0 !important;
+ }
+
+  .section-spectrum-mobile-view .slide{
+    border-radius: 0 0 30px 0 !important;
+  }

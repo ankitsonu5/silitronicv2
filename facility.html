@@ -35,6 +35,7 @@
                 height: 100vh;
                 min-height: 700px;
             }
+           
         }
 
         /* Desktop banner content positioning */
@@ -51,7 +52,12 @@
                 border-bottom-right-radius: 30px;
                 border: 2px solid #1f1e1e;
             }
+          
+    
         }
+
+   
+
 
         /* Fix horizontal scroll issues */
         html,
@@ -258,8 +264,31 @@
             font-family: Spline Sans Mono;
             line-height: 30px;
         }
+  
+
+.ficisndcontsecondone {
+    display: block !important;
+}
+
+.ficisndcontsecondtwo {
+    display: none !important;
+}
+
+@media (min-width: 1000px) {
+   .ficisndcontsecondone {
+        display: none !important;
+    }
+
+    .ficisndcontsecondtwo {
+        display: block !important;
+    }
+}
 
 
+.video-thumbnailvideo{
+    height: auto;
+    max-width: 400px;
+}
        
     </style>
 </head>
@@ -919,7 +948,7 @@
 
 
 
-        <section class="ficisndcontsec ">
+        <section class="ficisndcontsec   ficisndcontsecondone">
 
             <div class="container">
                 <h2>Cutting-Edge Tools for<br>
@@ -948,30 +977,50 @@
                             </div>
                             <p>Auto Gold<br>Stud Bonder</p>
                         </div>
-                        <div class="tool-card">
-                            <div class="img-wrapper">
-                                <img src="images/facilityslidecard4.png" alt="">
-                            </div>
-                            <p>Hermetic Sealing +<br>Eutectic Reflow</p>
-                        </div>
-                        <div class="tool-card">
-                            <div class="img-wrapper">
-                                <img src="images/facilityslidecard5.png" alt="">
-                            </div>
-                            <p>Auto Wedge Wire<br>Bonder</p>
-                        </div>
-                        <div class="tool-card">
-                            <div class="img-wrapper">
-                                <img src="images/facilityslidecard6.png" alt="">
-                            </div>
-                            <p>Auto Epoxy<br>Dispenser</p>
-                        </div>
+                        
+                      
+                       
                     </div>
 
                 </div>
             </div>
         </section>
 
+         <section class="ficisndcontsec   ficisndcontsecondtwo ">
+
+            <div class="container">
+                <h2>Cutting-Edge Tools for<br>
+                    Cutting-Edge Solutions​</h2>
+                <div class="lftrytlinepart">
+                    <p> Our facility is equipped with the latest in semiconductor and photonics packaging technology.
+                        With in-house machine shops and weekend support for new NPI builds, ​we're always ready to meet
+                        your deadlines.</p>
+
+                    <div class="tools-slider owl-carousel ">
+                        <div class="tool-card">
+                            <div class="img-wrapper">
+                                <img src="images/facilityslidecard1.png" alt="">
+                            </div>
+                            <p>Fully Automatic Die Attach<br>System upto +/- 5um</p>
+                        </div>
+                        <div class="tool-card">
+                            <div class="img-wrapper">
+                                <img src="images/facilityslidecard2.png" alt="">
+                            </div>
+                            <p>Solder Paste and<br>Gold Printing</p>
+                        </div>
+                        <div class="tool-card">
+                            <div class="img-wrapper">
+                                <img src="images/facilityslidecard3.png" alt="">
+                            </div>
+                            <p>Auto Gold<br>Stud Bonder</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
         <!-- facility last section -->
 
@@ -982,9 +1031,12 @@
                     <h2>See Precision in Action</h2>
                     <div class="casestudycontsec">
                         <div class="sglecasestudycontsec">
-                            <div class="video-thumbnail" style="background-image: url(images/facilitylastc1.png);">
+                            <div class="video-thumbnail">
 
-                    
+                                 <video class="video-thumbnailvideo" height="100%" width="100%" muted autoplay loop width="600">
+                             <source src="./video/102AutomaticWireBondingSiliconPhotonics.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                             </video>
                             </div>
                             <div class="video-content">
                                 <h3>Automatic Bonding for AR/VR:</h3>
@@ -992,7 +1044,11 @@
                             </div>
                         </div>
                         <div class="sglecasestudycontsec">
-                            <div class="video-thumbnail" style="background-image: url(images/facilitylastc2.png);">
+                            <div class="video-thumbnail" >
+                                  <video class="video-thumbnailvideo" height="100%" width="100%" muted autoplay loop width="600">
+                             <source src="./video/102AutomaticWireBondingSiliconPhotonics.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                             </video>
 
                             </div>
                             <div class="video-content">
@@ -1001,8 +1057,11 @@
                             </div>
                         </div>
                         <div class="sglecasestudycontsec">
-                            <div class="video-thumbnail" style="background-image: url(images/facilitylastc3.png);">
-
+                            <div class="video-thumbnail">
+                                <video class="video-thumbnailvideo" height="100%" width="100%" muted autoplay loop width="600">
+                             <source src="./video/102AutomaticWireBondingSiliconPhotonics.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                             </video>
                             </div>
                             <div class="video-content">
                                 <h3>Auto Ball Bonding for IoT Sensors:</h3>
@@ -1100,7 +1159,9 @@
             <div class="container">
                 <div class="topftrflexpart">
                     <div class="topftrcolpart">
-                        <div class="ftrlogo"><img src="images/footer-logo.png"></div>
+                        <div class="ftrlogo"><img src="images/footer-logo.png">
+                             <img class="ftrlogosecond" src="images/GDSI_logo_White.png">
+                        </div>
                         <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics
                             packaging–pushing the boundaries of design, fabrication, and assembly while driving
                             sustainability.</p>
@@ -1126,6 +1187,11 @@
                         <p class="social"><a href="#" class="ftrsocial"><img src="images/youtube.svg"></a>
                             <a href="#" class="ftrsocial"><img src="images/linkedin.svg"></a>
                         </p>
+
+                            <p class="heads">Grinding and Dicing Services Inc</p>
+                        <p>925 Berryessa Road - San Jose, CA 95133</p>
+                        <p>Email: sales@dieprepservices.com</p>
+                        <p>Phone: +1 408 451 2000 <br> +1 408 451 2000 </p>
                     </div>
                     <div class="topftrcolpart">
                         <div class="ftrmap"><iframe  class="ftrmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8770204884054!2d-121.9673431!3d37.369086700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcea9b87697e9%3A0x41f8ffcc2946d1a3!2sSilitronics%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1758194948800!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
@@ -1148,7 +1214,9 @@
             <div class="container">
                 <div class="topftrflexpart">
                     <div class="topftrcolpart">
-                        <div class="ftrlogo"><img src="images/footer-logo.png"></div>
+                        <div class="ftrlogo"><img src="images/footer-logo.png">
+                             <img class="ftrlogosecond" src="images/GDSI_logo_White.png">
+                        </div>
                         <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics
                             packaging–pushing the boundaries of design, fabrication, and assembly while driving
                             sustainability.</p>
@@ -1210,6 +1278,8 @@
 
     <script>
         $(document).ready(function () {
+
+            
             // Desktop carousel
             $(".slidersec").owlCarousel({
                 loop: true,
@@ -1327,6 +1397,10 @@
     <script src="js/jquery.matchHeight.js" type="text/javascript"></script>
     <script src="js/autoheight.js" type="text/javascript"></script>
     <script src="./js/custom.js"></script>
+
+
+
+   
 </body>
 
 </html>
