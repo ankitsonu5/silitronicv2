@@ -749,14 +749,23 @@ a.getintouchbut
     margin-bottom: 8px !important;
 }
 /* Mobile logo section styling */
-.topftrcolpart:first-child .ftrlogo
+.ftrlogo
 {
+    width: 100%;
     margin-bottom: 15px !important;
     text-align: left !important;
+    gap: 30px;
 }
+
+.ftrlogosecond{
+  max-width: 20px;
+   height: 50px;
+   padding-left:10px;
+}
+
 .topftrcolpart:first-child .ftrlogo img
 {
-    max-width: 200px !important;
+    max-width: 180px !important;
     height: auto !important;
 }
 .topftrcolpart:first-child p
@@ -1253,7 +1262,7 @@ a.whtedownloadusecasebut
     height: 280px;
 }
 .sglecasestudycontsec h3 {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
 }
 .sglecasestudycontsec p {
@@ -1318,3 +1327,93 @@ a.whtedownloadusecasebut
     }
 
 }
+
+
+ @media screen and (min-width:480px){
+              .ftrmap img{
+              max-width: 390px !important;
+              height: 198px !important;
+            }
+          }
+
+
+
+          /* footer  */
+     .ftrmaps{
+        min-height: 200px;
+          background-size: cover;
+      }
+
+     @media screen and (max-width:480px){
+         .ftrmapsd{
+        height: 100px;
+        max-width: 100%;
+        background-size: cover;
+      }
+     }
+
+     @media screen and (min-width:480px){
+      .ftrmaps{
+      height: 200px;
+        background-size: cover;
+      }
+      .ftrlogo
+{
+    max-width: 180px;
+    margin-bottom: 15px !important;
+    text-align: left !important;
+    gap: 30px;
+}
+
+.ftrlogosecond{
+  max-width: 100%;
+   height: 50px;
+   padding-left:10px;
+}
+
+
+     }
+
+       @media screen and (min-width:480px) and (max-width:778px){
+         .ftrmapsd{
+        height: 200px;
+        max-width: 100%;
+          background-size: cover;
+      }
+
+
+            .ftrlogo
+{
+    max-width: 180px;
+    margin-bottom: 15px !important;
+    text-align: left !important;
+    gap: 30px;
+}
+
+.ftrlogosecond{
+  max-width: 150px;
+   height: 50px;
+   padding-left:10px;
+}
+
+     }
+    
+
+          
+     @media screen and (min-width:991px) and (max-width:1500px){
+
+            .ftrlogo
+{
+    max-width: 140px;
+    margin-bottom: 15px !important;
+    text-align: left !important;
+    gap: 30px;
+}
+
+.ftrlogosecond{
+  max-width: 100%;
+   height: 50px;
+   padding-left:10px;
+}
+
+     }

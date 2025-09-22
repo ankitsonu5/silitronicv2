@@ -13,6 +13,8 @@
     <link href="css/responsive.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/our-service-custom.css">
+    <link rel="stylesheet" href="./css/sndcontsec-custom.css">
     <title>Silitronics</title>
     <style>
         /* Banner height adjustments for different screen sizes */
@@ -35,6 +37,7 @@
                 height: 100vh;
                 min-height: 700px;
             }
+           
         }
 
         /* Desktop banner content positioning */
@@ -44,13 +47,36 @@
                 transform: translateY(-35%) !important;
             }
         }
-    @media screen and (max-width: 550px) {
-        .feature-box {
-            width: 100%;
-            border-bottom-right-radius: 30px;
-            border: 2px solid #1f1e1e;
+
+        @media screen and (max-width: 550px) {
+            .feature-box {
+                width: 100%;
+                border-bottom-right-radius: 30px;
+                border: 2px solid #1f1e1e;
+            }
+
+                .ficisndcontsecondtwo p {
+        padding: 2rem !important;
+        max-width: 100% !important;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 100 ;
+       }
+
+       .main_container .container .row {
+        padding: 3rem !important;
+         }
+
+            
+            
+          
+    
         }
-    }
+
+   
+
+
         /* Fix horizontal scroll issues */
         html,
         body {
@@ -218,10 +244,11 @@
             z-index: 2;
 
         }
-        
+
         .mb39 {
             margin-bottom: 40px;
         }
+
         /* Right carousel items ke liye min-height */
         #rightCarousel .carousel-item {
             min-height: 520px;
@@ -229,16 +256,102 @@
         }
 
         @media (max-width: 768px) {
-    .only-mobile {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 15px;
-        padding: 0;
-    /* background-color: #1a1330; */
-  }
+            .only-mobile {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 15px;
+                padding: 0;
+                /* background-color: #1a1330; */
+            }
+        }
+
+        .facility-card {
+            font-family: Spline Sans Mono;
+            line-height: 25px;
+            letter-spacing: 4px;
+        }
+
+        .facility-main-heading {
+            font-weight: 700;
+        }
+
+        .facility-description-primary,
+        .facility-description-secondary {
+            font-family: Spline Sans Mono;
+            line-height: 30px;
+        }
+  
+
+
+
+.video-thumbnailvideo{
+    height: auto;
+    max-width: 400px;
 }
+
+p.facility-card-text{
+    font-family: 'Titillium Web';
+}
+
+.main_container {
+    height: fit-content;
+    width: 100%;
+    padding: 100px 0; 
+      text-align: center;
+
+   font-family:"Spline Sans Mono" ;
+
+}
+
+
+.main_container .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 30px;
+    padding: 5rem;
+}
+
+.main_container .container .row .card-col{
+    height: fit-content;
+    text-align: center;
+    max-width: 400px;
+    
+
+
+}
+
+.main_container .container .row .card-col img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:center;
+    border: 1px solid #6E57B0;
+    border-radius: 0 0 30px 0;
+    object-fit: cover;
+
+  background: linear-gradient(to right, #0000000a, #35236d10);
+}
+
+
+.ficisndcontsecondtwo p{
+   padding: 4rem;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  
+    font-weight: 100;
+}
+
+.ficisndcontsecondtwo h5{
+    font-weight: 300;
+}
+
+
+
     </style>
 </head>
 
@@ -294,7 +407,7 @@
         <div class="side-menu" id="menu">
             <ul>
 
-            <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="index.html" class="active">HOME</a></li>
                 <li><a href="service.html">SERVICES</a></li>
                 <li><a href="application.html">APPLICATIONS</a></li>
                 <li><a href="facility.html">FACILITY</a></li>
@@ -332,9 +445,12 @@
                             <h1>Engineered with ​<br> precision.​ Delivered </h1>
                             <h1>at speed.</h1>
                             <div class="sbbox">
-                                <p class="sbannertext">From advanced semiconductor packaging to photonics integration,
-                                    Silitronics helps<br> high tech companies transform concepts<br> into high-performance
-                                    products with <br>unmatched engineering and precision<br> manufacturing capabilities.</p>
+                                <p class="sbannertext">From advanced semiconductor packaging<br> to photonics
+                                    integration,
+                                    Silitronics helps<br> technology leaders transform concepts<br> into
+                                    high-performance
+                                    products with <br>unmatched engineering and precision<br> manufacturing
+                                    capabilities.</p>
                             </div>
                             <a href="#contactsec" class="getintouchbut">Get in touch</a>
                         </div>
@@ -355,7 +471,7 @@
                             <h1>at speed.</h1>
                             <div class="sbbox">
                                 <p class="sbannertext">From advanced semiconductor packaging to photonics integration,
-                                    Silitronics helps high tech companies transform concepts into high-performance
+                                    Silitronics helps technology leaders transform concepts into high-performance
                                     products with unmatched engineering and precision manufacturing capabilities.</p>
                             </div>
                             <a href="#contactsec" class="getintouchbut">Get in touch</a>
@@ -407,18 +523,19 @@
 
         </section> -->
 
- <div class="only-desktop">
+      
+        <div class="only-desktop">
             <!-- fifth section facility -->
             <section class="ficistcontsec">
                 <h2>Why choose Silitronics?​</h2>
                 <div class="container">
-                    
+
                     <!-- Row 1 - 3 Cards -->
                     <div class="facility-cards-row">
                         <div class="facility-card">
                             <div class="facilityr1">
-                                <div class="facilityimg"><img src="images/facilitycard1.png"></div>
-                                <h3 class="facility-card-title"><span class="fnum">20,000+</span> sq.ft.
+                                <div class="facilityimg"><img src="./svg/Why choose Silitronics/Why choose Silitronics​_1.svg"></div>
+                                <h3 class="facility-card-title"><span class="fnum">20,000+</span> sq.ft. <br>
                                     State-of-the-Art
                                     Facility:</h3>
                             </div>
@@ -429,18 +546,18 @@
                         </div>
 
                         <div class="facility-card">
-                            <div class="facilityr1">
-                                <div class="facilityimg"><img src="images/facilitycard2.png"></div>
-                                <h3 class="facility-card-heading">Industry-Leading Speed</h3>
+                                <div class="facilityr1">
+                                <div class="facilityimg"><img src="./svg/Why choose Silitronics/Why choose Silitronics​_2.svg"></div>
+                                <h3 class="facility-card-heading">One-Stop Solutions</h3>
                             </div>
-                            <p class="facility-card-text">8-hour turnaround for urgent prototypes and 3-day cycle times
-                                for
-                                standard builds.</p>
+                            <p class="facility-card-text">From concept to finished product, we handle it all—design,
+                                assembly, testing, and delivery.</p>
                         </div>
+                          
 
                         <div class="facility-card">
                             <div class="facilityr1">
-                                <div class="facilityimg"><img src="images/facilitycard3.png"></div>
+                                <div class="facilityimg"><img src="./svg/Why choose Silitronics/Why choose Silitronics​_3.svg"></div>
                                 <h3 class="facility-card-heading">Cutting-Edge Equipment</h3>
                             </div>
                             <p class="facility-card-text">From ±0.5μm flip chip placement to automatic wire bonding at
@@ -453,19 +570,21 @@
                     <div class="facility-cards-row facility-cards-row-2">
                         <div class="facility-card">
                             <div class="facilityr1">
-                                <div class="facilityimg"><img src="images/facilitycard4.png"></div>
-                                <h3 class="facility-card-heading">One-Stop Solutions</h3>
+                                <div class="facilityimg"><img src="./svg/Why choose Silitronics/Why choose Silitronics​_4.svg"></div>
+                                <h3 class="facility-card-heading">Industry-Leading Speed</h3>
                             </div>
-                            <p class="facility-card-text">From concept to finished product, we handle it all—design,
-                                assembly, testing, and delivery.</p>
+                            <p class="facility-card-text">8-hour turnaround for urgent prototypes and 3-day cycle times
+                                for
+                                standard builds.</p>
                         </div>
+                          
 
                         <div class="facility-card">
                             <div class="facilityr1">
-                                <div class="facilityimg"><img src="images/facilitycard5.png"></div>
-                                <h3 class="facility-card-heading">Proven Expertise</h3>
+                                <div class="facilityimg"><img src="/svg/Why choose Silitronics/Why choose Silitronics​_5.svg"></div>
+                                <h3 class="facility-card-heading">Proven <br> Expertise</h3>
                             </div>
-                            <p class="facility-card-text">99% yield on SiP modules and 90%+ yield on RF and flex
+                            <p class="facility-card-text" style="padding-top: 10px;">99% yield on SiP modules  and 90%+ yield on RF and flex
                                 assemblies.
                             </p>
                         </div>
@@ -477,59 +596,50 @@
         </div>
 
         <div class="only-mobile">
-            <section class="why-silitronics ficistcontsec">
-                <h2>Why choose <span>Silitronics?</span></h2>
+    <section class="why-silitronics ficistcontsec">
+        <h2>Why choose <span>Silitronics?</span></h2>
 
-                <div class="feature-box">
-                    <div class="featurer1lay"> <img src="images/facilitycard1.png" alt="Icon 1" />
-
-                        <h3>10,000+ sq.ft.<br>State-of-the-Art Facility:</h3>
-                    </div>
-
-                    <p>Equipped with 10K clean rooms and fully automated assembly lines for unparalleled precision.</p>
-
-                </div>
-
-                <div class="feature-box">
-                    <div class="featurer1lay"> <img src="images/facilitycard1.png" alt="Icon 1" />
-
-                        <h3>10,000+ sq.ft.<br>State-of-the-Art Facility:</h3>
-                    </div>
-
-                    <p>Equipped with 10K clean rooms and fully automated assembly lines for unparalleled precision.</p>
-                </div>
-
-                <div class="feature-box">
-                    <div class="featurer1lay"> <img src="images/facilitycard1.png" alt="Icon 1" />
-
-                        <h3>10,000+ sq.ft.<br>State-of-the-Art Facility:</h3>
-                    </div>
-
-                    <p>Equipped with 10K clean rooms and fully automated assembly lines for unparalleled precision.</p>
-
-                </div>
-
-                <div class="feature-box">
-                    <div class="featurer1lay"> <img src="images/facilitycard1.png" alt="Icon 1" />
-
-                        <h3>10,000+ sq.ft.<br>State-of-the-Art Facility:</h3>
-                    </div>
-
-                    <p>Equipped with 10K clean rooms and fully automated assembly lines for unparalleled precision.</p>
-
-                </div>
-
-                <div class="feature-box">
-                    <div class="featurer1lay"> <img src="images/facilitycard1.png" alt="Icon 1" />
-
-                        <h3>10,000+ sq.ft.<br>State-of-the-Art Facility:</h3>
-                    </div>
-
-                    <p>Equipped with 10K clean rooms and fully automated assembly lines for unparalleled precision.</p>
-
-                </div>
+        <div class="feature-box">
+            <div class="featurer1lay">
+                <img src="images/one.png" alt="Icon 1" />
+                <h3>20,000+ sq.ft.<br>State-of-the-Art Facility:</h3>
+            </div>
+            <p>Equipped with 10K clean rooms and fully automated assembly lines for unparalleled precision.</p>
         </div>
 
+        <div class="feature-box">
+            <div class="featurer1lay">
+                <img src="images/two.png" alt="Icon 2" />
+                <h3>One-Stop Solutions</h3>
+            </div>
+            <p>From concept to finished product, we handle it all—design, assembly, testing, and delivery.</p>
+        </div>
+
+        <div class="feature-box">
+            <div class="featurer1lay">
+                <img src="images/three.png" alt="Icon 3" />
+                <h3>Cutting-Edge Equipment</h3>
+            </div>
+            <p>From ±0.5μm flip chip placement to automatic wire bonding at 20μm pitch, we deliver unmatched accuracy.</p>
+        </div>
+
+        <div class="feature-box">
+            <div class="featurer1lay">
+                <img src="images/four.png" alt="Icon 4" />
+                <h3>Industry-Leading Speed</h3>
+            </div>
+            <p>8-hour turnaround for urgent prototypes and 3-day cycle times for standard builds.</p>
+        </div>
+
+        <div class="feature-box">
+            <div class="featurer1lay">
+                <img src="images/five.png" alt="Icon 5" />
+                <h3>Proven Expertise</h3>
+            </div>
+            <p>99% yield on SiP modules and 90%+ yield on RF and flex assemblies.</p>
+        </div>
+    </section>
+       </div>
 
 
 
@@ -546,7 +656,7 @@
                                 deliver precision, reliability, and scalability for the most demanding industries.
                             </p>
                             <p class="facility-description-secondary">
-                                With over 100+ years of collective expertise, we specialize in advanced semiconductor
+                                With over 200+ years of collective expertise, we specialize in advanced semiconductor
                                 layout and assembly services, guided by our “First Time Right” philosophy. From
                                 prototyping to high-volume production, we ensure every product meets and exceeds your
                                 expectations.
@@ -584,15 +694,19 @@
                 <div class="facility-mobile-container">
                     <div class="facility-mobile-content">
                         <!-- MOBILE HEADING -->
-                        <h1 class="facility-mobile-heading">We don't just build semiconductor products, we engineer possibilities.</h1>
+                        <h1 class="facility-mobile-heading">We don't just build semiconductor products, we engineer
+                            possibilities.</h1>
 
                         <!-- MOBILE TEXT CONTENT -->
                         <p class="facility-mobile-description-primary">
-                            Located in the heart of Silicon Valley, our state-of-the-art facility is designed to deliver precision, reliability, and scalability for the most demanding industries.
+                            Located in the heart of Silicon Valley, our state-of-the-art facility is designed to deliver
+                            precision, reliability, and scalability for the most demanding industries.
                         </p>
 
                         <p class="facility-mobile-description-secondary">
-                            With over 100+ years of collective expertise, we specialize in advanced semiconductor layout and assembly services, guided by our "First Time Right" philosophy. From prototyping to high-volume production, we ensure every product meets and exceeds your expectations.
+                            With over 200+ years of collective expertise, we specialize in advanced semiconductor layout
+                            and assembly services, guided by our "First Time Right" philosophy. From prototyping to
+                            high-volume production, we ensure every product meets and exceeds your expectations.
                         </p>
 
                         <!-- MOBILE IMAGE SLIDER -->
@@ -780,7 +894,7 @@
             </div>
         </section> -->
 
-        <section class="fstcontsec facilityback">
+        <section class="fstcontsec facilityback"  >
             <div class="container">
                 <div class="lftrytlinepart myfacilitycolor">
                     <h4>Scalable. Reliable. Precision-Built.​</h4>
@@ -792,19 +906,23 @@
                         <div class="fstsecforthcolpart faclitiyslidep ">
                             <div class="sglecolpart faclitiyhorizontal">
                                 <h1>48,000/<span>year</span></h1>
-                                <p>SiP Modules (PCBA + <br> Wire Bonding + Glob <br> Top + Testing) – <Span style="font-weight: bolder;">99% <br> yield</Span>​</p>
+                                <p>SiP Modules (PCBA + <br> Wire Bonding + Glob <br> Top + Testing) – <Span
+                                        style="font-weight: bolder;">99% <br> yield</Span>​</p>
                             </div>
                             <div class="sglecolpart faclitiyhorizontal">
                                 <h1>60,000/<span>year</span></h1>
-                                <p>RF Modules (Fine <br> Pitch Wire Bonding + <br> Low Loop) – <Span style="font-weight: bolder;">90% <br> yield</Span></p>
+                                <p>RF Modules (Fine <br> Pitch Wire Bonding + <br> Low Loop) – <Span
+                                        style="font-weight: bolder;">90% <br> yield</Span></p>
                             </div>
                             <div class="sglecolpart faclitiyhorizontal">
                                 <h1>60,000/<span>year</span></h1>
-                                <p>Flex PCBA <br> (Defense, Flexible <br> Assemblies) – <Span style="font-weight: bolder;">90% <br> yield</Span></p>
+                                <p>Flex PCBA <br> (Defense, Flexible <br> Assemblies) – <Span
+                                        style="font-weight: bolder;">90% <br> yield</Span></p>
                             </div>
                             <div class="sglecolpart faclitiyhorizontal">
                                 <h1>12,000/<span>year</span></h1>
-                                <p>SiP PCBA (Optics <br> Assembly + Wire Bonding +<br> Testing) – <span style="font-weight: bolder;"><br>99% yield</span></p>
+                                <p>SiP  (Optics <br> Assembly + Wire Bonding +<br> Testing) – <span
+                                        style="font-weight: bolder;"><br>99% yield</span></p>
                             </div>
                         </div>
                     </div>
@@ -832,7 +950,7 @@
                                 <div class="item">
                                     <div class="sglecolpart faclitiyhorizontal">
                                         <h1>12,000/<span>year</span></h1>
-                                        <p>SiP PCBA (Optics Assembly + Wire Bonding + Testing) – 99% yield​​</p>
+                                        <p>SiP  (Optics Assembly + Wire Bonding + Testing) – 99% yield​​</p>
                                     </div>
                                 </div>
                             </div>
@@ -843,7 +961,7 @@
             </div>
         </section>
 
-       
+
         </section>
         </div>
         <!-- mobile wala abhi pending h card -->
@@ -884,7 +1002,7 @@
 
 
 
-        <section class="ficisndcontsec ">
+       <!-- <section class="ficisndcontsec   ficisndcontsecondone">
 
             <div class="container">
                 <h2>Cutting-Edge Tools for<br>
@@ -897,52 +1015,120 @@
                     <div class="tools-slider owl-carousel owl-theme">
                         <div class="tool-card">
                             <div class="img-wrapper">
-                            <img src="images/facilityslidecard1.png" alt=""></div>
+                                <img src="images/facilityslidecard1.png" alt="">
+                            </div>
                             <p>Fully Automatic Die Attach<br>System upto +/- 5um</p>
                         </div>
                         <div class="tool-card">
-                             <div class="img-wrapper">
-                            <img src="images/facilityslidecard2.png" alt=""></div>
+                            <div class="img-wrapper">
+                                <img src="images/facilityslidecard2.png" alt="">
+                            </div>
                             <p>Solder Paste and<br>Gold Printing</p>
                         </div>
                         <div class="tool-card">
-                             <div class="img-wrapper">
-                            <img src="images/facilityslidecard3.png" alt=""></div>
+                            <div class="img-wrapper">
+                                <img src="images/facilityslidecard3.png" alt="">
+                            </div>
                             <p>Auto Gold<br>Stud Bonder</p>
                         </div>
-                        <div class="tool-card">
-                             <div class="img-wrapper">
-                            <img src="images/facilityslidecard4.png" alt=""></div>
-                            <p>Hermetic Sealing +<br>Eutectic Reflow</p>
-                        </div>
-                        <div class="tool-card">
-                             <div class="img-wrapper">
-                            <img src="images/facilityslidecard5.png" alt=""></div>
-                            <p>Auto Wedge Wire<br>Bonder</p>
-                        </div>
-                        <div class="tool-card">
-                             <div class="img-wrapper">
-                            <img src="images/facilityslidecard6.png" alt=""></div>
-                            <p>Auto Epoxy<br>Dispenser</p>
-                        </div>
+                        
+                      
+                       
                     </div>
 
                 </div>
             </div>
-        </section>
+        </section>  -->
+
+     
+          <div class="main_container  sndcontsecond ficisndcontsecondtwo">
+              <img class="one" src="./images/rainbow-style-art-one.png" alt="">
+            <div class="container">
+
+                <h2 class="heading">Cutting-Edge Tools for <br> Cutting-Edge Solutions</h2>
+                <p >Our facility is equipped with the latest in semiconductor and photonics packaging technology. With in-house machine shops and weekend support for new NPI builds, ​ we’re always ready to meet your deadlines.</p>
+                <div class="row">
+                    <div class="card-col">
+                    
+                           <img src="./svg/cutting-edge/first.png" alt="">
+                    
+
+                        <h5>Fully Automatic Die Attach <br> System upto +/- 5um</h5>
+                
+                    </div>
+
+                     <div class="card-col">
+                    
+                           <img src="./svg/cutting-edge/second.png" alt="">
+                    
+
+                        <h5>Solder Paste and <br> Gold Printing</h5>
+                
+                    </div>
+                 
+
+                     <div class="card-col">
+                    
+                           <img src="./svg/cutting-edge/third.png" alt="">
+                    
+
+                        <h5>Auto Gold <br> Stud Bonder</h5>
+                
+                    </div>
+
+                      <div class="card-col">
+                    
+                           <img src="./svg/cutting-edge/fourth.png" alt="">
+                    
+
+                        <h5>Hermetic Sealing + <br>Eutectic Reflow</h5>
+                
+                    </div>
+                 
+
+                     <div class="card-col">
+                    
+                           <img src="./svg/cutting-edge/fifth.png" alt="">
+                    
+
+                        <h5>Auto Wedge Wire  <br> Bonder</h5>
+                
+                    </div>
+
+                     <div class="card-col">
+                    
+                           <img src="./svg/cutting-edge/sixth.png" alt="">
+                    
+
+                        <h5>Auto Epoxy <br>Dispenser</h5>
+                
+                    </div>
+                 
+                
+                </div>
+            </div>
+             <img class="two" src="./images/rainbow-style-art-two.png" alt="">
+        </div>
+       
+   
+
 
 
         <!-- facility last section -->
 
 
-<section class="forthcontsec">
+        <section class="forthcontsec">
             <div class="container">
                 <div class="casestudiessec">
                     <h2>See Precision in Action</h2>
                     <div class="casestudycontsec">
                         <div class="sglecasestudycontsec">
-                            <div class="video-thumbnail" style="background-image: url(images/facilitylastc1.png);">
-                                
+                            <div class="video-thumbnail">
+
+                                 <video class="video-thumbnailvideo" height="100%" width="100%" muted autoplay loop width="600">
+                             <source src="./video/102AutomaticWireBondingSiliconPhotonics.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                             </video>
                             </div>
                             <div class="video-content">
                                 <h3>Automatic Bonding for AR/VR:</h3>
@@ -950,17 +1136,24 @@
                             </div>
                         </div>
                         <div class="sglecasestudycontsec">
-                            <div class="video-thumbnail" style="background-image: url(images/facilitylastc2.png);">
-                                
+                            <div class="video-thumbnail" >
+                                  <video class="video-thumbnailvideo" height="100%" width="100%" muted autoplay loop width="600">
+                             <source src="./video/102AutomaticWireBondingSiliconPhotonics.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                             </video>
+
                             </div>
                             <div class="video-content">
-                                <h3>Auto Wedge Bonding for Silicon Photonics:</h3>
-                                <p>50μm pitch, 292 wires - enabling high-speed data transmission.</p>
+                                <h3>Active alignment for Silicon Photonics:</h3>
+                                <p>FAU Active Alignment for Silicon Photonics Enabling High Speed Data Transfer.</p>
                             </div>
                         </div>
                         <div class="sglecasestudycontsec">
-                            <div class="video-thumbnail" style="background-image: url(images/facilitylastc3.png);">
-                                
+                            <div class="video-thumbnail">
+                                <video class="video-thumbnailvideo" height="100%" width="100%" muted autoplay loop width="600">
+                             <source src="./video/102AutomaticWireBondingSiliconPhotonics.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                             </video>
                             </div>
                             <div class="video-content">
                                 <h3>Auto Ball Bonding for IoT Sensors:</h3>
@@ -1058,7 +1251,9 @@
             <div class="container">
                 <div class="topftrflexpart">
                     <div class="topftrcolpart">
-                        <div class="ftrlogo"><img src="images/footer-logo.png"></div>
+                        <div class="ftrlogo"><img src="./svg/Silitronics-White.svg">
+                             <img class="ftrlogosecond" src="./svg/GDSI-logo.svg">
+                        </div>
                         <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics
                             packaging–pushing the boundaries of design, fabrication, and assembly while driving
                             sustainability.</p>
@@ -1084,9 +1279,14 @@
                         <p class="social"><a href="#" class="ftrsocial"><img src="images/youtube.svg"></a>
                             <a href="#" class="ftrsocial"><img src="images/linkedin.svg"></a>
                         </p>
+
+                            <p class="heads">Grinding and Dicing Services Inc</p>
+                        <p>925 Berryessa Road - San Jose, CA 95133</p>
+                        <p>Email: sales@dieprepservices.com</p>
+                        <p>Phone: +1 408 451 2000 <br> +1 408 451 2000 </p>
                     </div>
                     <div class="topftrcolpart">
-                        <div class="ftrmap"><img src="images/map.jpg"></div>
+                        <div class="ftrmap"><iframe  class="ftrmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8770204884054!2d-121.9673431!3d37.369086700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcea9b87697e9%3A0x41f8ffcc2946d1a3!2sSilitronics%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1758194948800!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                         <a href="#" class="backtotop">back to top</a>
                     </div>
                 </div>
@@ -1106,7 +1306,9 @@
             <div class="container">
                 <div class="topftrflexpart">
                     <div class="topftrcolpart">
-                        <div class="ftrlogo"><img src="images/footer-logo.png"></div>
+                        <div class="ftrlogo"><img src="./svg/Silitronics-White.svg">
+                             <img class="ftrlogosecond" src="./svg/GDSI-logo.svg">
+                        </div>
                         <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics
                             packaging–pushing the boundaries of design, fabrication, and assembly while driving
                             sustainability.</p>
@@ -1124,7 +1326,7 @@
                         </ul>
                     </div>
                     <div class="topftrcolpart">
-                        <div class="ftrmap"><img src="images/map.jpg"></div>
+                        <div class="ftrmap"><iframe  class="ftrmapsd" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8770204884054!2d-121.9673431!3d37.369086700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcea9b87697e9%3A0x41f8ffcc2946d1a3!2sSilitronics%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1758194948800!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                         <p>Silitronics Solutions Inc 2388 Walsh Avenue, Santa Clara, CA, 95051</p>
                         <p>Email: sales@silitronics.com</p>
                         <p>Phone: +1 408-954-8301,<br> +1 408-605-1148</p>
@@ -1156,7 +1358,7 @@
         </div>
     </section>
 
-    <a href="#contactsec" class="fixed-getintouch"><img src="./images/getintouchbg.png" alt=""></a>
+    <a href="#contactsec" class="fixed-getintouch"><img src="./images/Getintouch1.png" alt=""></a>
 
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/owl.carousel.min.js" type="text/javascript"></script>
@@ -1168,6 +1370,8 @@
 
     <script>
         $(document).ready(function () {
+
+            
             // Desktop carousel
             $(".slidersec").owlCarousel({
                 loop: true,
@@ -1285,6 +1489,10 @@
     <script src="js/jquery.matchHeight.js" type="text/javascript"></script>
     <script src="js/autoheight.js" type="text/javascript"></script>
     <script src="./js/custom.js"></script>
+
+
+
+   
 </body>
 
 </html>

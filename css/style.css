@@ -294,7 +294,7 @@ body {
     color: #fff;
     font-weight: normal;
     padding: 40px 0 0;
-    letter-spacing: 5px;
+    letter-spacing: 0px;
 }
 
 /* a.getintouchbut
@@ -1397,8 +1397,16 @@ a.getintouchbut:hover {
 }
 
 .ftrlogo {
-    max-width: 200px;
+    display: flex;
+    max-width: 100px;
     margin-bottom: 20px;
+   
+}
+.ftrlogosecond{
+    max-width: 100px;
+    width: 50%;
+    /* display: flex; */
+    /* justify-content: space-between; */
 }
 
 .ftrusa {
@@ -1434,6 +1442,7 @@ a.getintouchbut:hover {
     overflow: hidden;
     margin-bottom: 20px;
 }
+
 
 .topftrcolpart p {
     margin-bottom: 10px;
@@ -2468,6 +2477,7 @@ a.playvidbut {
     padding: 0 15px;
     margin-top: 50px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
@@ -2478,6 +2488,7 @@ a.playvidbut {
     flex-wrap: wrap;
     align-items: center;
     height: 200px;
+    justify-content: center;
 }
 
 .sglefrthabtsec p {
@@ -2798,6 +2809,7 @@ a.playvidbut {
     border-left: 6px solid !important;
     border-right: 6px solid !important;
 }
+
 
 /* Responsive footer for mobile - Updated for 2-column layout */
 @media (max-width: 767px) {
@@ -3293,7 +3305,7 @@ line-height: 25px !important;
     color: #ffffff;
     font-weight: normal;
     padding: 40px 0 0;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
 }
 
 a.getintouchbut {
@@ -4260,6 +4272,8 @@ a.getintouchbut:hover {
 }
 
 .ftrlogo {
+    /* gap: 10px; */
+    /* justify-content: space-between; */
     max-width: 200px;
     margin-bottom: 20px;
 }
@@ -4332,10 +4346,11 @@ a.backtotop {
     font-size: 16px;
     text-transform: uppercase;
     color: #999;
-    padding: 0 85px 0 0;
+    padding: 0 100px 0 0;
     height: 72px;
     line-height: 72px;
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .botftrsec {
@@ -5327,7 +5342,7 @@ a.playvidbut {
 
 .sglefrthabtsec {
     flex: 0 0 25%;
-    max-width: 25% padding: 0 15px;
+    max-width: 25% ; padding: 0 15px;
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -5845,11 +5860,11 @@ a.getintouchbut:hover,
     /* dark text */
     padding: 15px 45px !important;
     margin: 5px;
-    font-size: 16px;
+    font-size: 18px !important;
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 500;
-    font-family: 'Spline Sans Mono' !important;
+    font-family: 'Titillium Web' !important;
     /* clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0% 100%)!important; */
     border-radius: 0 0 20px 0;
 }
@@ -6328,16 +6343,19 @@ a.myicon:hover {
 }
 
 .point {
-    border: 1px solid;
-    border-image: linear-gradient(90deg, #050EF1, #FD0200) 1;
+    position: relative;
     padding: 8px 10px;
     font-size: 13px;
-    /* border-radius: 6px 6px 0 6px; */
     margin-bottom: 10px;
     text-align: left;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0% 100%);
-
-
+    border-radius: 0 0 20px 0; /* radius apply hoga */
+    background: linear-gradient(90deg, #050EF1, #FD0200); /* gradient */
+    border: 1px solid transparent; /* border jaisa feel */
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    background-image:
+        linear-gradient(#fff, #fff),  /* andar ka background */
+        linear-gradient(90deg, #050EF1, #FD0200); /* border gradient */
 }
 
 .mylayout {
@@ -6430,6 +6448,18 @@ a.myicon:hover {
     padding-bottom: 45px;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+
+.nav-dropdown  ul li {
+    margin: 20px 20px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #000044;
+    padding-bottom: 0px;
+    cursor: pointer;
+    transition: all 0.3s 
+ease;
 }
 
 .side-menu ul li:hover {
@@ -6626,7 +6656,7 @@ a.myicon:hover {
 
 .servicestabcontent-containers {
     display: flex;
-    gap: 20px;
+    gap: 23px;
     align-items: center;
     justify-content: space-between;
     overflow-x: hidden;
@@ -7503,7 +7533,7 @@ p.mypM {
     background-color: #f5f3ff;
     color: rgba(110, 87, 176, 1);
     border: 1px solid rgba(110, 87, 176, 1);
-    /* border-radius: 4px; */
+    border-radius: 0 0 12px 0;
     box-sizing: border-box;
     cursor: pointer;
     white-space: nowrap;
@@ -7619,7 +7649,7 @@ p.mypM {
 p.facility-card-text {
     font-size: 20px;
     color: #070505;
-    font-family: 'Spline Sans';
+    font-family: 'Titillium Web';
     text-align: start !important;
     font-weight: 400 !important;
     ;
@@ -7629,6 +7659,7 @@ p.facility-card-text {
 
 .facilityimg {
     width: 40% !important;
+    max-width: 90px!important;
 }
 
 .facilityimg img {
@@ -7655,13 +7686,15 @@ p.facility-card-text {
     font-family: 'Titillium Web';
     padding-bottom: 20px;
     text-align: start !important;
+    line-height: 30px;
 }
 
 .facilityback {
-    background-image: none !important;
-    background: linear-gradient(to right, #5b0a9e 0%, #ca0532 100%) !important;
+    background: linear-gradient(to right, #5b0a9e 0%, #ca0533ce 100%) ,  url(../images/pattern.png) !important;
     border-top-left-radius: 50px !important;
     border-top-right-radius: 50px !important;
+    background-size: cover; 
+
 }
 
 .myfacilitycolor {
@@ -7696,6 +7729,7 @@ p.facility-card-text {
     margin-bottom: 30px;
     letter-spacing: 3px;
     text-align: start !important;
+    font-family: "Spline Sans Mono" !important;
 }
 
 .faclitiyslidep h1 {
@@ -8020,23 +8054,24 @@ p.facility-card-text {
 }
 
 .facility-description-primary {
-    font-size: 20px !important;
-    font-family: 'Spline Sans', sans-serif;
-    color: #333;
+     font-size: 18px !important;
+    font-family: 'Spline Sans Mono', sans-serif !important;
+    color: #555;
     line-height: 1.6;
-    margin-bottom: 25px;
+    margin-bottom: 0;
     text-align: left !important;
     font-weight: 400;
 }
 
 .facility-description-secondary {
     font-size: 18px !important;
-    font-family: 'Spline Sans', sans-serif;
+    font-family: 'Spline Sans Mono', sans-serif !important;
     color: #555;
     line-height: 1.6;
     margin-bottom: 0;
     text-align: left !important;
     font-weight: 400;
+    margin-top: 20px;
 }
 
 .facility-right-slider {
@@ -8137,7 +8172,7 @@ p.facility-card-text {
 
 
 .why-silitronics {
-    padding: 40px 40px;
+    padding: 40px 10px;
     background: linear-gradient(90deg, #e8dcff, #f6f2ff);
     font-family: 'Titillium Web', sans-serif;
     color: #1b133f;
@@ -8167,10 +8202,10 @@ p.facility-card-text {
     margin-bottom: 16px;
     width: 336px;
     height: auto;
-
+    border-radius: 0 0 30px 0;
     gap: 16px;
     align-items: flex-start;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 92% 100%, 0% 100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 92% 100%, 0% 100%); */
     box-shadow: 0 6px 20px rgba(27, 19, 63, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -8724,6 +8759,7 @@ p.facility-card-text {
 @media (max-width: 480px) {
 
 
+
     .resource-description {
         font-size: 14px;
         padding: 0 15px;
@@ -8962,3 +8998,16 @@ p.facility-card-text {
     color: #fff !important;
     border: none !important;
 }
+
+
+.heads{
+padding-top: 10px !important;
+ }
+
+ .service-section-spectrum-section .card{
+    border-radius: 0 0 30px 0 !important;
+ }
+
+  .section-spectrum-mobile-view .slide{
+    border-radius: 0 0 30px 0 !important;
+  }
