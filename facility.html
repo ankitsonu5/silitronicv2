@@ -13,6 +13,8 @@
     <link href="css/responsive.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/our-service-custom.css">
+    <link rel="stylesheet" href="./css/sndcontsec-custom.css">
     <title>Silitronics</title>
     <style>
         /* Banner height adjustments for different screen sizes */
@@ -52,6 +54,22 @@
                 border-bottom-right-radius: 30px;
                 border: 2px solid #1f1e1e;
             }
+
+                .ficisndcontsecondtwo p {
+        padding: 2rem !important;
+        max-width: 100% !important;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 100 ;
+       }
+
+       .main_container .container .row {
+        padding: 3rem !important;
+         }
+
+            
+            
           
     
         }
@@ -266,30 +284,74 @@
         }
   
 
-.ficisndcontsecondone {
-    display: block !important;
-}
-
-.ficisndcontsecondtwo {
-    display: none !important;
-}
-
-@media (min-width: 1000px) {
-   .ficisndcontsecondone {
-        display: none !important;
-    }
-
-    .ficisndcontsecondtwo {
-        display: block !important;
-    }
-}
 
 
 .video-thumbnailvideo{
     height: auto;
     max-width: 400px;
 }
-       
+
+p.facility-card-text{
+    font-family: 'Titillium Web';
+}
+
+.main_container {
+    height: fit-content;
+    width: 100%;
+    padding: 100px 0; 
+      text-align: center;
+
+   font-family:"Spline Sans Mono" ;
+
+}
+
+
+.main_container .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 30px;
+    padding: 5rem;
+}
+
+.main_container .container .row .card-col{
+    height: fit-content;
+    text-align: center;
+    max-width: 400px;
+    
+
+
+}
+
+.main_container .container .row .card-col img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:center;
+    border: 1px solid #6E57B0;
+    border-radius: 0 0 30px 0;
+    object-fit: cover;
+
+  background: linear-gradient(to right, #0000000a, #35236d10);
+}
+
+
+.ficisndcontsecondtwo p{
+   padding: 4rem;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  
+    font-weight: 100;
+}
+
+.ficisndcontsecondtwo h5{
+    font-weight: 300;
+}
+
+
+
     </style>
 </head>
 
@@ -472,8 +534,8 @@
                     <div class="facility-cards-row">
                         <div class="facility-card">
                             <div class="facilityr1">
-                                <div class="facilityimg"><img src="images/facilitycard1.png"></div>
-                                <h3 class="facility-card-title"><span class="fnum">20,000+</span> sq.ft.
+                                <div class="facilityimg"><img src="./svg/Why choose Silitronics/Why choose Silitronics​_1.svg"></div>
+                                <h3 class="facility-card-title"><span class="fnum">20,000+</span> sq.ft. <br>
                                     State-of-the-Art
                                     Facility:</h3>
                             </div>
@@ -485,7 +547,7 @@
 
                         <div class="facility-card">
                                 <div class="facilityr1">
-                                <div class="facilityimg"><img src="images/facilitycard4.png"></div>
+                                <div class="facilityimg"><img src="./svg/Why choose Silitronics/Why choose Silitronics​_2.svg"></div>
                                 <h3 class="facility-card-heading">One-Stop Solutions</h3>
                             </div>
                             <p class="facility-card-text">From concept to finished product, we handle it all—design,
@@ -495,7 +557,7 @@
 
                         <div class="facility-card">
                             <div class="facilityr1">
-                                <div class="facilityimg"><img src="images/facilitycard3.png"></div>
+                                <div class="facilityimg"><img src="./svg/Why choose Silitronics/Why choose Silitronics​_3.svg"></div>
                                 <h3 class="facility-card-heading">Cutting-Edge Equipment</h3>
                             </div>
                             <p class="facility-card-text">From ±0.5μm flip chip placement to automatic wire bonding at
@@ -508,7 +570,7 @@
                     <div class="facility-cards-row facility-cards-row-2">
                         <div class="facility-card">
                             <div class="facilityr1">
-                                <div class="facilityimg"><img src="images/facilitycard2.png"></div>
+                                <div class="facilityimg"><img src="./svg/Why choose Silitronics/Why choose Silitronics​_4.svg"></div>
                                 <h3 class="facility-card-heading">Industry-Leading Speed</h3>
                             </div>
                             <p class="facility-card-text">8-hour turnaround for urgent prototypes and 3-day cycle times
@@ -519,10 +581,10 @@
 
                         <div class="facility-card">
                             <div class="facilityr1">
-                                <div class="facilityimg"><img src="images/facilitycard5.png"></div>
-                                <h3 class="facility-card-heading">Proven Expertise</h3>
+                                <div class="facilityimg"><img src="/svg/Why choose Silitronics/Why choose Silitronics​_5.svg"></div>
+                                <h3 class="facility-card-heading">Proven <br> Expertise</h3>
                             </div>
-                            <p class="facility-card-text">99% yield on SiP modules and 90%+ yield on RF and flex
+                            <p class="facility-card-text" style="padding-top: 10px;">99% yield on SiP modules  and 90%+ yield on RF and flex
                                 assemblies.
                             </p>
                         </div>
@@ -940,7 +1002,7 @@
 
 
 
-        <section class="ficisndcontsec   ficisndcontsecondone">
+       <!-- <section class="ficisndcontsec   ficisndcontsecondone">
 
             <div class="container">
                 <h2>Cutting-Edge Tools for<br>
@@ -976,43 +1038,81 @@
 
                 </div>
             </div>
-        </section>
+        </section>  -->
 
-         <section class="ficisndcontsec   ficisndcontsecondtwo ">
-
+     
+          <div class="main_container  sndcontsecond ficisndcontsecondtwo">
+              <img class="one" src="./images/rainbow-style-art-one.png" alt="">
             <div class="container">
-                <h2>Cutting-Edge Tools for<br>
-                    Cutting-Edge Solutions​</h2>
-                <div class="lftrytlinepart">
-                    <p> Our facility is equipped with the latest in semiconductor and photonics packaging technology.
-                        With in-house machine shops and weekend support for new NPI builds, ​we're always ready to meet
-                        your deadlines.</p>
 
-                    <div class="tools-slider owl-carousel ">
-                        <div class="tool-card">
-                            <div class="img-wrapper">
-                                <img src="images/facilityslidecard1.png" alt="">
-                            </div>
-                            <p>Fully Automatic Die Attach<br>System upto +/- 5um</p>
-                        </div>
-                        <div class="tool-card">
-                            <div class="img-wrapper">
-                                <img src="images/facilityslidecard2.png" alt="">
-                            </div>
-                            <p>Solder Paste and<br>Gold Printing</p>
-                        </div>
-                        <div class="tool-card">
-                            <div class="img-wrapper">
-                                <img src="images/facilityslidecard3.png" alt="">
-                            </div>
-                            <p>Auto Gold<br>Stud Bonder</p>
-                        </div>
-                        
+                <h2 class="heading">Cutting-Edge Tools for <br> Cutting-Edge Solutions</h2>
+                <p >Our facility is equipped with the latest in semiconductor and photonics packaging technology. With in-house machine shops and weekend support for new NPI builds, ​ we’re always ready to meet your deadlines.</p>
+                <div class="row">
+                    <div class="card-col">
+                    
+                           <img src="./svg/cutting-edge/first.png" alt="">
+                    
+
+                        <h5>Fully Automatic Die Attach <br> System upto +/- 5um</h5>
+                
                     </div>
 
+                     <div class="card-col">
+                    
+                           <img src="./svg/cutting-edge/second.png" alt="">
+                    
+
+                        <h5>Solder Paste and <br> Gold Printing</h5>
+                
+                    </div>
+                 
+
+                     <div class="card-col">
+                    
+                           <img src="./svg/cutting-edge/third.png" alt="">
+                    
+
+                        <h5>Auto Gold <br> Stud Bonder</h5>
+                
+                    </div>
+
+                      <div class="card-col">
+                    
+                           <img src="./svg/cutting-edge/fourth.png" alt="">
+                    
+
+                        <h5>Hermetic Sealing + <br>Eutectic Reflow</h5>
+                
+                    </div>
+                 
+
+                     <div class="card-col">
+                    
+                           <img src="./svg/cutting-edge/fifth.png" alt="">
+                    
+
+                        <h5>Auto Wedge Wire  <br> Bonder</h5>
+                
+                    </div>
+
+                     <div class="card-col">
+                    
+                           <img src="./svg/cutting-edge/sixth.png" alt="">
+                    
+
+                        <h5>Auto Epoxy <br>Dispenser</h5>
+                
+                    </div>
+                 
+                
                 </div>
             </div>
-        </section>
+             <img class="two" src="./images/rainbow-style-art-two.png" alt="">
+        </div>
+       
+   
+
+
 
         <!-- facility last section -->
 

@@ -7533,7 +7533,7 @@ p.mypM {
     background-color: #f5f3ff;
     color: rgba(110, 87, 176, 1);
     border: 1px solid rgba(110, 87, 176, 1);
-    /* border-radius: 4px; */
+    border-radius: 0 0 12px 0;
     box-sizing: border-box;
     cursor: pointer;
     white-space: nowrap;
@@ -8054,23 +8054,24 @@ p.facility-card-text {
 }
 
 .facility-description-primary {
-    font-size: 20px !important;
-    font-family: 'Spline Sans', sans-serif;
-    color: #333;
+     font-size: 18px !important;
+    font-family: 'Spline Sans Mono', sans-serif !important;
+    color: #555;
     line-height: 1.6;
-    margin-bottom: 25px;
+    margin-bottom: 0;
     text-align: left !important;
     font-weight: 400;
 }
 
 .facility-description-secondary {
     font-size: 18px !important;
-    font-family: 'Spline Sans', sans-serif;
+    font-family: 'Spline Sans Mono', sans-serif !important;
     color: #555;
     line-height: 1.6;
     margin-bottom: 0;
     text-align: left !important;
     font-weight: 400;
+    margin-top: 20px;
 }
 
 .facility-right-slider {
