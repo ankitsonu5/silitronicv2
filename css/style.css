@@ -5342,7 +5342,7 @@ a.playvidbut {
 
 .sglefrthabtsec {
     flex: 0 0 25%;
-    max-width: 25% ; padding: 0 15px;
+    max-width: 20% ; padding: 0 15px;
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
