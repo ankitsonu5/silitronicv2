@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,10 @@
     <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
     <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
     <link href="css/slimmenu.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <!--<link href="css/carousel-vertical.min.css" rel="stylesheet" type="text/css" />-->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/responsive.css" rel="stylesheet" type="text/css" />
@@ -16,21 +19,22 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <title>Silitronics</title>
     <style>
-        
         /* Banner height adjustments for different screen sizes */
         @media screen and (min-width: 1920px) {
             .bannersec {
                 height: 100vh;
                 min-height: 1080px;
             }
-            
+
         }
+
         @media screen and (min-width: 1366px) and (max-width: 1919px) {
             .bannersec {
                 height: 100vh;
                 min-height: 768px;
             }
         }
+
         @media screen and (min-width: 1025px) and (max-width: 1365px) {
             .bannersec {
                 height: 100vh;
@@ -45,80 +49,98 @@
                 top: 50% !important;
                 transform: translateY(-35%) !important;
             }
-         
+
         }
+
         @media screen and (max-width: 768px) {
             .fstcontsec-art-one {
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 100px !important;
-}
-.fifthabtconttabsec {
-    flex-direction: column-reverse !important;
-}
-.tablinks-active {
-    width: 100% !important;
-}
-.frthabtcontsec-span {
-    color: #000000 !important;
-}
-.sglefrthabtsec div {
-    height: 64px !important;
-}
-.lftabttabsec {
-    margin-top: 0 !important;
-}
-.thrdabtcontsec h2 {
-    font-size: 36px !important;
-    line-height: 1.2 !important;
-    padding: 0 16px !important;
-}
-        .frthabtcontsec p {
-        text-align: center;
-        max-width: 100% !important;
-        color: #000 !important;
-}
-        .fstcontsec-art-two {
-            position: absolute !important;
-            /* bottom: 50px; */
-            width: 100px !important;
-            z-index: -1;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 100px !important;
+            }
+
+            .fifthabtconttabsec {
+                flex-direction: column-reverse !important;
+            }
+
+            .tablinks-active {
+                width: 100% !important;
+            }
+
+            .frthabtcontsec-span {
+                color: #000000 !important;
+            }
+
+            .sglefrthabtsec div {
+                height: 64px !important;
+            }
+
+            .lftabttabsec {
+                margin-top: 0 !important;
+            }
+
+            .thrdabtcontsec h2 {
+                font-size: 36px !important;
+                line-height: 1.2 !important;
+                padding: 0 16px !important;
+            }
+
+            .frthabtcontsec p {
+                text-align: center;
+                max-width: 100% !important;
+                color: #000 !important;
+            }
+
+            .fstcontsec-art-two {
+                position: absolute !important;
+                /* bottom: 50px; */
+                width: 100px !important;
+                z-index: -1;
+            }
+
+            .sgletopfacilitysec {
+                height: 180px !important;
+            }
+
+            #rows {
+                flex-wrap: nowrap !important;
+            }
+
+            #rows div div img {
+                width: 48px !important;
+            }
+
+            #rows p {
+                font-size: 8px !important;
+            }
         }
-        .sgletopfacilitysec {
-            height: 180px !important;
-        }
-        #rows {
-    flex-wrap: nowrap !important;
-}
-    #rows div div img {
-        width: 48px !important;
-}
-    #rows p {
-        font-size: 8px !important;
-}
-    }
-        .fstcontsec{
+
+        .fstcontsec {
             position: relative;
         }
+
         .fstcontsec-art-two {
             position: absolute;
             bottom: 0;
             width: 9%;
             z-index: -1;
         }
+
         .fstcontsec-art-one {
             position: absolute;
             right: 0;
             top: 0;
             width: 9%;
         }
+
         .frthabtcontsec h2 {
-        font-size: 48px !important;
-        line-height: 50px !important;
+            font-size: 48px !important;
+            line-height: 50px !important;
         }
+
         .topfacilitybg {
-            background: linear-gradient(#25223F,  #6159A5) !important;
+            background: linear-gradient(#25223F, #6159A5) !important;
             color: white;
             font-family: 'Titillium Web', sans-serif;
             font-weight: 700;
@@ -130,198 +152,222 @@
             box-sizing: border-box;
             padding: 20px;
         }
+
         .abticon {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: right;
-        width: 100%;
-}
-    .botfacilitypart h4 {
-        font-size: 36px;
-        padding-bottom: 5px;
-        text-align: left;
-    }
-    .abticon img {
-        max-width: 69px;
-    }
-    .sndabtcontsec .sgletopfacilitysec .topfacilitybg {
-    align-items: start;
-    padding: 20px;
-    justify-content: space-between;
-}
-.teamhoveralignpad p {
-    overflow-wrap: break-word;
-}
-.thrdabtcontsec
-{
-    width: 100%;
-    margin-top: 0 !important;
-}
-.thrdabtcontsec h2
-{
-    font-size: 70px;
-    line-height: 85px;
-    color: #fff;
-    font-family: 'Titillium Web';
-    font-weight: bold;
-    text-align: center;
-    padding: 0 0 30px 0;
-    padding: 36px 48px 0 48px !important;
-}
-.thrdabtcontsec p
-{
-    text-align: left;
-    max-width: 900px;
-    margin: 0 auto;
-    color: #fff;
-}
-.main-thrdabtcontsec {
-    background: linear-gradient(#b70543, #570aa1);
-    border-radius: 48px 48px 0 0;
-    padding-bottom: 48px !important;
-}
-.frthabtcontsec h2 {
-    font-size: 70px;
-    line-height: 85px;
-    font-family: 'Titillium Web';
-    font-weight: bold;
-    text-align: center;
-    padding: 0 0 50px 0;
-    background: linear-gradient(90deg, #050EF1, #FD0200);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-.frthabtcontsec p {
-    text-align: center;
-    max-width: 100%;
-    color: #000 !important;
-}
-.sglefrthabtsec div img {
-    width: 136px !important;
-}
-.fstcontsec {
-    padding-top: 0 !important;
-    padding-bottom: 64px !important;
-}
-.frthabtcontsec-span {
-    color: #C5B5F2;
-}
-.tablinks {
-    display: block;
-    background: transparent !important;
-    color: #000 !important;
-    border-color: transparent;
-    transition: all 0.3s ease;
-}
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: right;
+            width: 100%;
+        }
+
+        .botfacilitypart h4 {
+            font-size: 36px;
+            padding-bottom: 5px;
+            text-align: left;
+        }
+
+        .abticon img {
+            max-width: 69px;
+        }
+
+        .sndabtcontsec .sgletopfacilitysec .topfacilitybg {
+            align-items: start;
+            padding: 20px;
+            justify-content: space-between;
+        }
+
+        .teamhoveralignpad p {
+            overflow-wrap: break-word;
+        }
+
+        .thrdabtcontsec {
+            width: 100%;
+            margin-top: 0 !important;
+        }
+
+        .thrdabtcontsec h2 {
+            font-size: 70px;
+            line-height: 85px;
+            color: #fff;
+            font-family: 'Titillium Web';
+            font-weight: bold;
+            text-align: center;
+            padding: 0 0 30px 0;
+            padding: 36px 48px 0 48px !important;
+        }
+
+        .thrdabtcontsec p {
+            text-align: left;
+            max-width: 900px;
+            margin: 0 auto;
+            color: #fff;
+        }
+
+        .main-thrdabtcontsec {
+            background: linear-gradient(#b70543, #570aa1);
+            border-radius: 48px 48px 0 0;
+            padding-bottom: 48px !important;
+        }
+
+        .frthabtcontsec h2 {
+            font-size: 70px;
+            line-height: 85px;
+            font-family: 'Titillium Web';
+            font-weight: bold;
+            text-align: center;
+            padding: 0 0 50px 0;
+            background: linear-gradient(90deg, #050EF1, #FD0200);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .frthabtcontsec p {
+            text-align: center;
+            max-width: 100%;
+            color: #000 !important;
+        }
+
+        .sglefrthabtsec div img {
+            width: 136px !important;
+        }
+
+        .fstcontsec {
+            padding-top: 0 !important;
+            padding-bottom: 64px !important;
+        }
+
+        .frthabtcontsec-span {
+            color: #C5B5F2;
+        }
+
+        .tablinks {
+            display: block;
+            background: transparent !important;
+            color: #000 !important;
+            border-color: transparent;
+            transition: all 0.3s ease;
+        }
 
 
-.tablinks:hover {
-    color: #fff !important;
-    background: linear-gradient(to right, #050ef1 0%, #fd0200 100%) !important;
-}
+        .tablinks:hover {
+            color: #fff !important;
+            background: linear-gradient(to right, #050ef1 0%, #fd0200 100%) !important;
+        }
 
 
-.tablinks.active {
-    color: #fff !important;
-    background: linear-gradient(to right, #050ef1 0%, #fd0200 100%) !important;
-}
+        .tablinks.active {
+            color: #fff !important;
+            background: linear-gradient(to right, #050ef1 0%, #fd0200 100%) !important;
+        }
 
 
-.tablinks-active {
-    display: block;
-    background: linear-gradient(to right, #050ef1 0%, #fd0200 100%) !important;
-    color: #fff !important;
-    border-color: transparent;
-}
-.rytabttabsec p {
-    padding: 16px !important;
-}
-.fstcontsec-para {
-    padding-top: 127px !important;
-    margin-bottom: 106px !important;
-}
-.main-thrdabtcontsec-bg {
-    background-color: #E5E1F7;
-}
-.tablinks {
-    color: #000 !important;
-}
-@media screen and (max-width: 1598px){
-           #sndabtcontsec .topfacilitybg {
-        display: flex;
-        flex-direction: row !important;
-        padding: 24px 16px !important;
-        width: 100% !important;
-        min-height: 276px !important;
-    }
-}
-@media screen and (max-width: 769px){
-           #sndabtcontsec .sgletopfacilitysec {
-        display: flex;
-        flex-direction: row !important;
-        padding: 24px 16px !important;
-        max-width: 86% !important;
-        min-height: 276px !important;
-        margin: 0 auto !important;
-        margin-bottom: 48px !important;
-    }
-    #sndabtcontsec .botfacilitypart h4 {
-    font-size: 26px;
-    }
-    #sndabtcontsec .abticon img
- {
-    max-width: 58px;
-   }
-}
-@media screen and (max-width: 482px){
-           #sndabtcontsec .sgletopfacilitysec {
-        max-width: 95% !important;
-        min-height: 222px !important;
-    }
-    #sndabtcontsec .topfacilitybg {
-        min-height: 222px !important;
-    }
-}
-.lftabttabsec ul li{
-    position: relative !important;
-}
-.lftabttabsec ul .lftabttabsec-btm::after  {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 25%;
-    width: 50%;
-    border: 1px solid transparent;
-    border-image: linear-gradient(to right, transparent, #050EF1, transparent);
-    border-image-slice: 1;
-}
+        .tablinks-active {
+            display: block;
+            background: linear-gradient(to right, #050ef1 0%, #fd0200 100%) !important;
+            color: #fff !important;
+            border-color: transparent;
+        }
 
-.lftabttabsec ul li::before  {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 25%;
-    width: 50%;
-    border: 1px solid transparent;
-    border-image: linear-gradient(to right, transparent, #050EF1, transparent);
-    border-image-slice: 1;
-}
+        .rytabttabsec p {
+            padding: 16px !important;
+        }
+
+        .fstcontsec-para {
+            padding-top: 127px !important;
+            margin-bottom: 106px !important;
+        }
+
+        .main-thrdabtcontsec-bg {
+            background-color: #E5E1F7;
+        }
+
+        .tablinks {
+            color: #000 !important;
+        }
+
+        @media screen and (max-width: 1598px) {
+            #sndabtcontsec .topfacilitybg {
+                display: flex;
+                flex-direction: row !important;
+                padding: 24px 16px !important;
+                width: 100% !important;
+                min-height: 276px !important;
+            }
+        }
+
+        @media screen and (max-width: 769px) {
+            #sndabtcontsec .sgletopfacilitysec {
+                display: flex;
+                flex-direction: row !important;
+                padding: 24px 16px !important;
+                max-width: 86% !important;
+                min-height: 276px !important;
+                margin: 0 auto !important;
+                margin-bottom: 48px !important;
+            }
+
+            #sndabtcontsec .botfacilitypart h4 {
+                font-size: 26px;
+            }
+
+            #sndabtcontsec .abticon img {
+                max-width: 58px;
+            }
+        }
+
+        @media screen and (max-width: 482px) {
+            #sndabtcontsec .sgletopfacilitysec {
+                max-width: 95% !important;
+                min-height: 222px !important;
+            }
+
+            #sndabtcontsec .topfacilitybg {
+                min-height: 222px !important;
+            }
+        }
+
+        .lftabttabsec ul li {
+            position: relative !important;
+        }
+
+        .lftabttabsec ul .lftabttabsec-btm::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            width: 50%;
+            border: 1px solid transparent;
+            border-image: linear-gradient(to right, transparent, #050EF1, transparent);
+            border-image-slice: 1;
+        }
+
+        .lftabttabsec ul li::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 25%;
+            width: 50%;
+            border: 1px solid transparent;
+            border-image: linear-gradient(to right, transparent, #050EF1, transparent);
+            border-image-slice: 1;
+        }
     </style>
 </head>
+
 <body>
-     
-    
+
+
     <section class="headersec sticky only-desktop">
         <div class="container">
             <div class="logonnavsec">
                 <div class="logo ">
                     <a href="index.html"><img src="images/logo.png" /></a>
                 </div>
-                  <div class="navsec">
+                <div class="navsec">
                     <ul>
                         <li><a href="index.html" class="active">Home</a></li>
-                       <li><a href="service.html">Services</a></li>  
+                        <li><a href="service.html">Services</a></li>
                         <li><a href="application.html">Applications</a></li>
                         <li><a href="facility.html">Facility</a></li>
                         <li><a href="resource.html">Resources Hub</a></li>
@@ -333,54 +379,54 @@
                         <li><a href="javascript:void(0);">Contact us</a></li> -->
                     </ul>
                 </div>
-           </div>
+            </div>
         </div>
     </section>
-            <!-- mobile responsive navbar -->
-<div class= "only-mobile sticky">
-  <div class="menu-header only-mobile sticky">
-  <img src="images/logo.png" alt="SILITRONICS Logo">
-  <div class="hamburger close-icon" onclick="toggleMenu(this)">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
+    <!-- mobile responsive navbar -->
+    <div class="only-mobile sticky">
+        <div class="menu-header only-mobile sticky">
+            <img src="images/logo.png" alt="SILITRONICS Logo">
+            <div class="hamburger close-icon" onclick="toggleMenu(this)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
 
-  <div class="side-menu" id="menu">
-    <ul>
-          <li><a href="index.html" class="active">HOME</a></li>
+        <div class="side-menu" id="menu">
+            <ul>
+                <li><a href="index.html" class="active">HOME</a></li>
                 <li><a href="service.html">SERVICES</a></li>
                 <!-- <li><a href="application.html">APPLICATIONS</a></li>
                 <li><a href="facility.html">FACILITY</a></li> -->
                 <!-- <li><a href="resource.html">RESOURCES HUB</a></li> -->
                 <li><a href="about.html">ABOUT US</a></li>
                 <li><a href="contact.html">CONTACT US</a></li>
-      <!-- <li>RESOURCES HUB</li>
+                <!-- <li>RESOURCES HUB</li>
       <li>ABOUT US</li>
       <li>CONTACT US</li> -->
-    </ul>
-    <!-- <div class="social-icons">
+            </ul>
+            <!-- <div class="social-icons">
       <img src="images/youtube.svg" alt="YouTube">
       <img src="images/linkedin.svg" alt="LinkedIn">
     </div> -->
 
-<div class="social-icons">
-  <a href="https://youtube.com" target="_blank">
-    <img src="images/youtube.svg" alt="YouTube">
-  </a>
-  <a href="https://linkedin.com" target="_blank">
-    <img src="images/linkedin.svg" alt="LinkedIn">
-  </a>
-</div>
- 
+            <div class="social-icons">
+                <a href="https://youtube.com" target="_blank">
+                    <img src="images/youtube.svg" alt="YouTube">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="images/linkedin.svg" alt="LinkedIn">
+                </a>
+            </div>
 
 
-  </div>
-</div>
-</div>
 
-<!-- <div class="only-mobile sticky black-navbar">
+        </div>
+    </div>
+    </div>
+
+    <!-- <div class="only-mobile sticky black-navbar">
   <div class="navbar">
     <img src="images/logo.png" alt="SILITRONICS Logo">
     <div class="hamburger" onclick="toggleMenu(this)">
@@ -468,7 +514,7 @@
                 </div>
             </div>
         </section>
-<!-- 349 in responcive css its test alignment code  -->
+        <!-- 349 in responcive css its test alignment code  -->
         <section class="bannersec-mobile">
             <div class="">
                 <div class="item">
@@ -489,11 +535,20 @@
             <img src="./images/rainbow-style-art-one.png" class="fstcontsec-art-one" alt="">
             <div class="container">
                 <div class="lftrytlinepart fstcontsec-para">
-                    <p>At Silitronics, we engineer precision, accelerate next-generation technology, and redefine semiconductor and photonics packaging. As a trusted, one-stop partner, we specialize in Silicon Photonics, Advanced Semiconductor Design, Fabrication, and Assembly, ensuring first-pass success, cost efficiency, and seamless integration for the world’s most demanding industries.</p>
+                    <p>At Silitronics, we engineer precision, accelerate next-generation technology, and redefine
+                        semiconductor and photonics packaging. As a trusted, one-stop partner, we specialize in Silicon
+                        Photonics, Advanced Semiconductor Design, Fabrication, and Assembly, ensuring first-pass
+                        success, cost efficiency, and seamless integration for the world’s most demanding industries.
+                    </p>
                     <p>&nbsp;</p>
-                    <p>With a relentless focus on quality, industry-leading standards, and advanced manufacturing processes, we deliver high-reliability semiconductor solutions for AI, LiDAR, HPC, aerospace, 6G, defense, and beyond. Our expertise in design optimization, material efficiency, and sustainable engineering helps clients reduce costs, enhance energy efficiency, and accelerate time to market.</p>
+                    <p>With a relentless focus on quality, industry-leading standards, and advanced manufacturing
+                        processes, we deliver high-reliability semiconductor solutions for AI, LiDAR, HPC, aerospace,
+                        6G, defense, and beyond. Our expertise in design optimization, material efficiency, and
+                        sustainable engineering helps clients reduce costs, enhance energy efficiency, and accelerate
+                        time to market.</p>
                     <br>
-                    <p>Our "First Time Right" approach means we don’t just build—we optimize, refine, and perfect every detail to push the boundaries of precision, speed, and sustainability.</p>
+                    <p>Our "First Time Right" approach means we don’t just build—we optimize, refine, and perfect every
+                        detail to push the boundaries of precision, speed, and sustainability.</p>
                 </div>
                 <div class="sndabtcontsec" id="sndabtcontsec">
                     <div class="row">
@@ -501,9 +556,10 @@
                             <div class="topfacilitybg">
                                 <div class="abticon"><img src="images/batch.png"></div>
                                 <div class="botfacilitypart">
-                                    <h4>Certified 
-<br/> Quality</h4>
-                                    <p>Profitable with Zero <br/>
+                                    <h4>Certified
+                                        <br /> Quality
+                                    </h4>
+                                    <p>Profitable with Zero <br />
                                         Debt, 30%+ CAGR</p>
                                 </div>
                             </div>
@@ -512,8 +568,8 @@
                             <div class="topfacilitybg">
                                 <div class="abticon"><img src="images/abouticon24.png"></div>
                                 <div class="botfacilitypart">
-                                    <h4>ROBUST FINANCIAL<br/> HEALTH</h4>
-                                    <p>Profitable with Zero <br/>
+                                    <h4>ROBUST FINANCIAL<br /> HEALTH</h4>
+                                    <p>Profitable with Zero <br />
                                         Debt, 30%+ CAGR</p>
                                 </div>
                             </div>
@@ -522,8 +578,8 @@
                             <div class="topfacilitybg">
                                 <div class="abticon"><img src="images/abouticon25.png"></div>
                                 <div class="botfacilitypart">
-                                    <h4>Cutting-Edge<br/> Equipment</h4>
-                                    <p>State of Art<br/>Automated Processes</p>
+                                    <h4>Cutting-Edge<br /> Equipment</h4>
+                                    <p>State of Art<br />Automated Processes</p>
                                 </div>
                             </div>
                         </div>
@@ -533,138 +589,245 @@
         </section>
         <!--  -->
         <div class="main-thrdabtcontsec-bg">
-<div class="main-thrdabtcontsec">
-<div class="container">
-            <div class="thrdabtcontsec">
-                    <h2>Meet Our Team of Experts</h2>
-                    <p class="textcenter">At the heart of Silitronics, we have a team of industry veterans, engineers, and technologists is driving innovation in semiconductor packaging, photonics integration, and advanced manufacturing.</p>
-                    <div class="owl-carousel owl-theme teamexpertcarousel">
-                        <div class="item">
-                            <div class="sgleteamsec">
-                                <div class="teamcontsec">
-                                    <div class="abttitlesec">
-                                        <h3>Dhiraj B</h3> 
-                                        <p>CEO & President</p>
-                                    </div>
-                                    <div class="teamhovercontsec">
-                                        <div class="teamhoveralignpad">
+            <div class="main-thrdabtcontsec">
+                <div class="container">
+                    <div class="thrdabtcontsec">
+                        <h2>Meet Our Team of Experts</h2>
+                        <p class="textcenter">At the heart of Silitronics, we have a team of industry veterans,
+                            engineers, and technologists is driving innovation in semiconductor packaging, photonics
+                            integration, and advanced manufacturing.</p>
+                        <div class="owl-carousel owl-theme teamexpertcarousel">
+                            <div class="item">
+                                <div class="sgleteamsec">
+                                    <div class="teamcontsec">
+                                        <div class="abttitlesec">
                                             <h3>Dhiraj B</h3>
                                             <p>CEO & President</p>
-                                            <p>10 years in Assembly and 15 years in sales</p>
-                                               <p>&nbsp;</p>
-                                            <p>Dhiraj is leading Sales, Marketing and Strategic Growth of Silitronics. Dhiraj has an excellent mix of engineering and sales experience. During the first 10 years of his career, he did package design and assembly process development at Nortel Networks, Lucent Technology, JDSU and start-ups in MEMS, Optical Switch and SiP Modules. Before Silitronics, he was Senior Director of Sales at ASE (#1 OSAT in the World) where Dhiraj grew his accounts from $50M/year to over $200M/year.​</p>
                                         </div>
+                                        <div class="teamhovercontsec">
+                                            <div class="teamhoveralignpad">
+                                                <h3>Dhiraj B</h3>
+                                                <p>CEO & President</p>
+                                                <p>10 years in Assembly and 15 years in sales</p>
+                                                <p>&nbsp;</p>
+                                                <p>Dhiraj is leading Sales, Marketing and Strategic Growth of
+                                                    Silitronics. Dhiraj has an excellent mix of engineering and sales
+                                                    experience. During the first 10 years of his career, he did package
+                                                    design and assembly process development at Nortel Networks, Lucent
+                                                    Technology, JDSU and start-ups in MEMS, Optical Switch and SiP
+                                                    Modules. Before Silitronics, he was Senior Director of Sales at ASE
+                                                    (#1 OSAT in the World) where Dhiraj grew his accounts from $50M/year
+                                                    to over $200M/year.​</p>
+                                            </div>
+                                        </div>
+                                        <img src="./images/team-member/team-1.png">
                                     </div>
-                                    <img src="./images/team-member/team-1.png">
                                 </div>
                             </div>
-                        </div>
-                          <div class="item">
-                            <div class="sgleteamsec">
-                                <div class="teamcontsec">
-                                    <div class="abttitlesec">
-                                        <h3>Suresh Subramaniam</h3>
-                                        <p>CTO – Systems and Advanced Packaging</p>
-                                    </div>
-                                    <div class="teamhovercontsec">
-                                        <div class="teamhoveralignpad">
+                            <div class="item">
+                                <div class="sgleteamsec">
+                                    <div class="teamcontsec">
+                                        <div class="abttitlesec">
                                             <h3>Suresh Subramaniam</h3>
                                             <p>CTO – Systems and Advanced Packaging</p>
-                                            <p>&nbsp;</p>
-                                            <p>A seasoned hardware and software technologist/architect/entrepreneur/innovator with a diverse educational background in business, engineering and science. Professional experience spans multiple verticals including semiconductors, healthcare, energy (lighting), and is spread across all functional areas involving product design and development. Broad hands-on experience, leading and collaborating cross-functionally, to translate concepts into finished products. Strong written and communication skills.</p>
                                         </div>
+                                        <div class="teamhovercontsec">
+                                            <div class="teamhoveralignpad">
+                                                <h3>Suresh Subramaniam</h3>
+                                                <p>CTO – Systems and Advanced Packaging</p>
+                                                <p>&nbsp;</p>
+                                                <p>A seasoned hardware and software
+                                                    technologist/architect/entrepreneur/innovator with a diverse
+                                                    educational background in business, engineering and science.
+                                                    Professional experience spans multiple verticals including
+                                                    semiconductors, healthcare, energy (lighting), and is spread across
+                                                    all functional areas involving product design and development. Broad
+                                                    hands-on experience, leading and collaborating cross-functionally,
+                                                    to translate concepts into finished products. Strong written and
+                                                    communication skills.</p>
+                                            </div>
+                                        </div>
+                                        <img src="./images/team-member/team-5.png">
                                     </div>
-                                    <img src="./images/team-member/team-5.png">
                                 </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="sgleteamsec">
-                                <div class="teamcontsec">
-                                    <div class="abttitlesec">
-                                        <h3>Terrance H​</h3>
-                                        <p>Dir of Operations</p>
-                                    </div>
-                                    <div class="teamhovercontsec">
-                                        <div class="teamhoveralignpad">
-                                            <h3>Terrance h</h3>
-                                            <p>Director of Operations,</p>
-                                              <p>25+ Years in Semiconductor Supply Chain 
-                                                & Manufacturing​</p>
-                                            <p>&nbsp;</p>
-                                            <p>Terrance is leading operations and supply chain at Silitronics, ensuring seamless execution from prototyping to high-volume production. With 25+ years of experience at Qualcomm, Cypress, and Intel (eASIC), he has managed over $100M in annual semiconductor supply chains, optimizing cost, cycle time, and capacity.​
+                            <div class="item">
+                                <div class="sgleteamsec">
+                                    <div class="teamcontsec">
+                                        <div class="abttitlesec">
+                                            <h3>Terrance H​</h3>
+                                            <p>Dir of Operations</p>
+                                        </div>
+                                        <div class="teamhovercontsec">
+                                            <div class="teamhoveralignpad">
+                                                <h3>Terrance h</h3>
+                                                <p>Director of Operations,</p>
+                                                <p>25+ Years in Semiconductor Supply Chain
+                                                    & Manufacturing​</p>
+                                                <p>&nbsp;</p>
+                                                <p>Terrance is leading operations and supply chain at Silitronics,
+                                                    ensuring seamless execution from prototyping to high-volume
+                                                    production. With 25+ years of experience at Qualcomm, Cypress, and
+                                                    Intel (eASIC), he has managed over $100M in annual semiconductor
+                                                    supply chains, optimizing cost, cycle time, and capacity.​
                                                 </p>
 
-                                            <p>Before joining Silitronics, he was Director of Supply Chain & Planning at GigOptix (acquired by IDT/Renesas). His expertise in supplier negotiations and production efficiency ensures on-time, high-reliability manufacturing.​</p>
+                                                <p>Before joining Silitronics, he was Director of Supply Chain &
+                                                    Planning at GigOptix (acquired by IDT/Renesas). His expertise in
+                                                    supplier negotiations and production efficiency ensures on-time,
+                                                    high-reliability manufacturing.​</p>
+                                            </div>
                                         </div>
+                                        <img src="./images/team-member/team-2.png">
                                     </div>
-                                    <img src="./images/team-member/team-2.png">
                                 </div>
                             </div>
-                        </div>
-                         <div class="item">
-                            <div class="sgleteamsec">
-                                <div class="teamcontsec">
-                                    <div class="abttitlesec">
-                                        <h3>Frederick S</h3>
-                                        <p>Dir of Quality</p>
-                                    </div>
-                                    <div class="teamhovercontsec">
-                                        <div class="teamhoveralignpad">
+                            <div class="item">
+                                <div class="sgleteamsec">
+                                    <div class="teamcontsec">
+                                        <div class="abttitlesec">
                                             <h3>Frederick S</h3>
                                             <p>Dir of Quality</p>
-                                          
-                                            <p>28 years Reliability and Process Development</p>
-                                            <p>&nbsp;</p>
-                                            <p>Fredrick is the lead for Quality at Silitronics. He has over 26 years of experience in BGA, Flip Chip, Wire Bonding, SiP assembly and R&D engineering while at IPAC, OSE, Pantronix, i2a Technologies and AiPAC. Before joining Silitronics, Fredrick was Director of Operations and Quality at Meritronics. Fredrick is a certified Lead ISO Auditor and FMEA. He did his BSME from the University of Gothenburg, Sweden and MS from San Jose State. In his spare time, Frederick likes to explore local trails and hiking.</p>
                                         </div>
-                                    </div>
-                                    <img src="./images/team-member/team-4.png">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="sgleteamsec">
-                                <div class="teamcontsec">
-                                    <div class="abttitlesec">
-                                        <h3>Emir V</h3>
-                                        <p>Process Engineering</p>
-                                    </div>
-                                    <div class="teamhovercontsec">
-                                        <div class="teamhoveralignpad">
-                                            <h3>Emir V</h3>
-                                            <p>Director of Operations,</p>
-                                            <p>12 years Automatic Assembly + Alignment</p>
-                                            <p>&nbsp;</p>
-                                            <p>Emir is leading Automatic Assembly Process Development as well as Tooling Design and Fabrication to devise the best Flip Chip and Wire Bonding at Silitronics. Alongwith Silitronics team, Emir successfully implemented Auto Pick and Place with +/- 3um, 3674 wires per SiP modules along with multiple assembly processes for LiDAR, Silicon Photonics, AR/VR and Quantum Computing. Before joining Silitronics, Emir did MEMS assembly and Substrate Fabrication @ Dunan. Emir did tooling design and optimization to support Capital Equipment while at Applied Material.</p>
-                                        </div>
-                                    </div>
-                                    <img src="./images/team-member/team-3.png">
-                                </div>
-                            </div>
-                        </div>
-                       
+                                        <div class="teamhovercontsec">
+                                            <div class="teamhoveralignpad">
+                                                <h3>Frederick S</h3>
+                                                <p>Dir of Quality</p>
 
-                          <div class="item">
-                            <div class="sgleteamsec">
-                                <div class="teamcontsec">
-                                    <div class="abttitlesec">
-                                        <h3>Vijay P, Ph.D</h3>
-                                        <p>Strategic Business Development</p>
-                                    </div>
-                                    <div class="teamhovercontsec">
-                                        <div class="teamhoveralignpad">
-                                            <h3>Vijay P, Ph.D</h3>
-                                            <p>Strategic Business Development</p>
-                                            <p>&nbsp;</p>
-                                            <p>Dr. Pathak is leading Strategic Development and expanding Silitronics’ capabilities in complex System in Package ( SiP) Design and modeling for high speed, AI/ML, LiDAR, Silicon Photonics and IoT applications. Vijay is a Semiconductor industry veteran with over 35 years of design and product development experience in various companies across the globe. Prior to Silitronics, he was the Distinguished Member at Texas Instruments, CTO of Megachips Technology America and CTO of Sankalp Semiconductor.</p>
+                                                <p>28 years Reliability and Process Development</p>
+                                                <p>&nbsp;</p>
+                                                <p>Fredrick is the lead for Quality at Silitronics. He has over 26 years
+                                                    of experience in BGA, Flip Chip, Wire Bonding, SiP assembly and R&D
+                                                    engineering while at IPAC, OSE, Pantronix, i2a Technologies and
+                                                    AiPAC. Before joining Silitronics, Fredrick was Director of
+                                                    Operations and Quality at Meritronics. Fredrick is a certified Lead
+                                                    ISO Auditor and FMEA. He did his BSME from the University of
+                                                    Gothenburg, Sweden and MS from San Jose State. In his spare time,
+                                                    Frederick likes to explore local trails and hiking.</p>
+                                            </div>
                                         </div>
+                                        <img src="./images/team-member/team-4.png">
                                     </div>
-                                    <img src="./images/GDSI_1_logo.png">
                                 </div>
                             </div>
-                        </div>   
-                           <!-- <div class="item">
+                            <div class="item">
+                                <div class="sgleteamsec">
+                                    <div class="teamcontsec">
+                                        <div class="abttitlesec">
+                                            <h3>Emir V</h3>
+                                            <p>Process Engineering</p>
+                                        </div>
+                                        <div class="teamhovercontsec">
+                                            <div class="teamhoveralignpad">
+                                                <h3>Emir V</h3>
+                                                <p>Director of Operations,</p>
+                                                <p>12 years Automatic Assembly + Alignment</p>
+                                                <p>&nbsp;</p>
+                                                <p>Emir is leading Automatic Assembly Process Development as well as
+                                                    Tooling Design and Fabrication to devise the best Flip Chip and Wire
+                                                    Bonding at Silitronics. Alongwith Silitronics team, Emir
+                                                    successfully implemented Auto Pick and Place with +/- 3um, 3674
+                                                    wires per SiP modules along with multiple assembly processes for
+                                                    LiDAR, Silicon Photonics, AR/VR and Quantum Computing. Before
+                                                    joining Silitronics, Emir did MEMS assembly and Substrate
+                                                    Fabrication @ Dunan. Emir did tooling design and optimization to
+                                                    support Capital Equipment while at Applied Material.</p>
+                                            </div>
+                                        </div>
+                                        <img src="./images/team-member/team-3.png">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Card 1 -->
+                            <div class="item">
+                                <div class="sgleteamsec">
+                                    <div class="teamcontsec">
+                                        <div class="abttitlesec">
+                                            <h3>Rey Sena</h3>
+                                            <p>Head of Wafer Processing</p>
+                                        </div>
+                                        <div class="teamhovercontsec">
+                                            <div class="teamhoveralignpad">
+                                                <h3>Rey Sena</h3>
+                                                <p>Head of Wafer Processing</p>
+                                                <p>&nbsp;</p>
+                                                <p>Rey oversees all wafer processing operations, ensuring quality and
+                                                    efficiency in advanced semiconductor fabrication processes.</p>
+                                            </div>
+                                        </div>
+                                        <img src="./images/GDSI_1_logo.png">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="item">
+                                <div class="sgleteamsec">
+                                    <div class="teamcontsec">
+                                        <div class="abttitlesec">
+                                            <h3>Mark Larrieu</h3>
+                                            <p>Stealth Laser Dicing Lead</p>
+                                        </div>
+                                        <div class="teamhovercontsec">
+                                            <div class="teamhoveralignpad">
+                                                <h3>Mark Larrieu</h3>
+                                                <p>Stealth Laser Dicing Lead</p>
+                                                <p>&nbsp;</p>
+                                                <p>Mark leads the stealth laser dicing division, driving innovation in
+                                                    precision cutting and wafer singulation technologies.</p>
+                                            </div>
+                                        </div>
+                                        <img src="./images/GDSI_1_logo.png">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="item">
+                                <div class="sgleteamsec">
+                                    <div class="teamcontsec">
+                                        <div class="abttitlesec">
+                                            <h3>Jeremy Favia</h3>
+                                            <p>Dir of GDSI Sale</p>
+                                        </div>
+                                        <div class="teamhovercontsec">
+                                            <div class="teamhoveralignpad">
+                                                <h3>Jeremy Favia</h3>
+                                                <p>Dir of GDSI Sale</p>
+                                                <p>&nbsp;</p>
+                                                <p>Jeremy is responsible for global sales at GDSI, building strategic
+                                                    relationships and expanding market presence worldwide.</p>
+                                            </div>
+                                        </div>
+                                        <img src="./images/GDSI_1_logo.png">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="item">
+                                <div class="sgleteamsec">
+                                    <div class="teamcontsec">
+                                        <div class="abttitlesec">
+                                            <h3>Beatrice Durate</h3>
+                                            <p>Head of Dicing Operation</p>
+                                        </div>
+                                        <div class="teamhovercontsec">
+                                            <div class="teamhoveralignpad">
+                                                <h3>Beatrice Durate</h3>
+                                                <p>Head of Dicing Operation</p>
+                                                <p>&nbsp;</p>
+                                                <p>Beatrice manages all dicing operations, ensuring accuracy and quality
+                                                    in semiconductor wafer cutting processes.</p>
+                                            </div>
+                                        </div>
+                                        <img src="./images/GDSI_1_logo.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="item">
                             <div class="sgleteamsec">
                                 <div class="teamcontsec">
                                     <div class="abttitlesec">
@@ -684,12 +847,12 @@
                                 </div>
                             </div>
                         </div>   -->
+                        </div>
                     </div>
                 </div>
-        </div>  
+            </div>
         </div>
-        </div>
-        
+
         <!--  -->
         <!--  -->
         <div class="fstcontsec">
@@ -697,7 +860,8 @@
             <div class="container">
                 <div class="frthabtcontsec">
                     <h2>Quality Assurance Certifications</h2>
-                    <p>At Silitronics, quality isn’t just a goal, it’s a promise. Our rigorous quality assurance processes ensure every product meets the highest standards of performance and reliability.</p>
+                    <p>At Silitronics, quality isn’t just a goal, it’s a promise. Our rigorous quality assurance
+                        processes ensure every product meets the highest standards of performance and reliability.</p>
                     <div class="row" id="rows">
                         <div class="sglefrthabtsec">
                             <div><img src="images/certificate01.png"></div>
@@ -715,25 +879,34 @@
                             <div><img src="images/certificate04.png"></div>
                             <p>Mil Std 883 <br> Mil Std 38534</p>
                         </div>
+
+                        <div class="sglefrthabtsec">
+                            <div><img src="images/certificate04.png"></div>
+                            <p>Mil Std 883 <br> Mil Std 38534</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-            
+
 
         <!--  -->
-            <div class="fstcontsec">
-                <img src="./images/rainbow-style-art-two.png" class="fstcontsec-art-two" alt="">
+        <div class="fstcontsec">
+            <img src="./images/rainbow-style-art-two.png" class="fstcontsec-art-two" alt="">
             <div class="container">
                 <div class="frthabtcontsec">
                     <h2>Quality Assurance Processes​</h2>
-                    <p>At Silitronics, we ensure excellence through rigorous testing, advanced inspection, and a commitment to <span class="frthabtcontsec-span">First Time Right</span> precision.</p>
+                    <p>At Silitronics, we ensure excellence through rigorous testing, advanced inspection, and a
+                        commitment to <span class="frthabtcontsec-span">First Time Right</span> precision.</p>
                     <div class="fifthabtconttabsec">
                         <div class="lftabttabsec">
                             <ul>
-                                <li class="lftabttabsec-btm"><a class="tablinks active" onclick="openCity(event, 'tab-1')">Applications</a></li>
-                                <li class="lftabttabsec-btm"><a class="tablinks" onclick="openCity(event, 'tab-2')">3D Laser Microscope</a></li>
-                                <li class="lftabttabsec-btm"><a class="tablinks" onclick="openCity(event, 'tab-3')">Silicon Photonics</a></li>
+                                <li class="lftabttabsec-btm"><a class="tablinks active"
+                                        onclick="openCity(event, 'tab-1')">Applications</a></li>
+                                <li class="lftabttabsec-btm"><a class="tablinks" onclick="openCity(event, 'tab-2')">3D
+                                        Laser Microscope</a></li>
+                                <li class="lftabttabsec-btm"><a class="tablinks"
+                                        onclick="openCity(event, 'tab-3')">Silicon Photonics</a></li>
                             </ul>
                         </div>
                         <div class="rytabttabsec">
@@ -753,19 +926,19 @@
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
         <!--  -->
         <!--  -->
-            <section class="thrdcontsec">
+        <section class="thrdcontsec">
             <div class="container">
                 <div class="customervoicesec">
                     <h2>Our Valued Customers​</h2>
                 </div>
                 <div class="industryleadersec">
                     <div class="sgleindustrysec">
-                       <div class="tech-box onestgrediant">
-                        <h3>Silicon Photonics:</h3>
-                        <p>Data center, Cloud</p>
+                        <div class="tech-box onestgrediant">
+                            <h3>Silicon Photonics:</h3>
+                            <p>Data center, Cloud</p>
                         </div>
 
                         <ul>
@@ -775,9 +948,9 @@
                         </ul>
                     </div>
                     <div class="sgleindustrysec ">
-                         <div class="tech-box twostgrediant">
-                        <h3>AR/VR:</h3>
-                        <p>Camera Sensors, Retina</p>
+                        <div class="tech-box twostgrediant">
+                            <h3>AR/VR:</h3>
+                            <p>Camera Sensors, Retina</p>
                         </div>
                         <ul>
                             <li><img src="images/logo04.png"></li>
@@ -786,10 +959,10 @@
                         </ul>
                     </div>
                     <div class="sgleindustrysec ">
-                         <div class="tech-box threegradient">
-                        <h3>AI/ML
-                            /Computing:</h3>
-                        <p>Cloud, 800G</p>
+                        <div class="tech-box threegradient">
+                            <h3>AI/ML
+                                /Computing:</h3>
+                            <p>Cloud, 800G</p>
                         </div>
                         <ul>
                             <li><img src="images/logo07.png"></li>
@@ -798,9 +971,9 @@
                         </ul>
                     </div>
                     <div class="sgleindustrysec ">
-                         <div class="tech-box fourgradient">
-                        <h3>LiDAR:</h3>
-                        <p>Driverless car, Security</p>
+                        <div class="tech-box fourgradient">
+                            <h3>LiDAR:</h3>
+                            <p>Driverless car, Security</p>
                         </div>
                         <ul>
                             <li><img src="images/logo10.png"></li>
@@ -809,9 +982,9 @@
                         </ul>
                     </div>
                     <div class="sgleindustrysec ">
-                         <div class="tech-box fivegradient">
-                        <h3>Defense:</h3>
-                        <p>High Rel Assembly</p>
+                        <div class="tech-box fivegradient">
+                            <h3>Defense:</h3>
+                            <p>High Rel Assembly</p>
                         </div>
                         <ul>
                             <li><img src="images/logo13.png"></li>
@@ -820,9 +993,9 @@
                         </ul>
                     </div>
                     <div class="sgleindustrysec">
-                         <div class="tech-box sixgradient">
-                        <h3>IoT Sensors:</h3>
-                        <p>SiP Modules, MEMS</p>
+                        <div class="tech-box sixgradient">
+                            <h3>IoT Sensors:</h3>
+                            <p>SiP Modules, MEMS</p>
                         </div>
                         <ul>
                             <li><img src="images/logo16.png"></li>
@@ -831,9 +1004,9 @@
                         </ul>
                     </div>
                     <div class="sgleindustrysec">
-                         <div class="tech-box sevenstgrediant">
-                        <h3>Medical:</h3>
-                        <p>In Vitro and In Vivo</p>
+                        <div class="tech-box sevenstgrediant">
+                            <h3>Medical:</h3>
+                            <p>In Vitro and In Vivo</p>
                         </div>
                         <ul>
                             <li><img src="images/logo19.png"></li>
@@ -861,7 +1034,7 @@
                         </div>
                         <div class="item">
                             <div class="sgleindustrysec">
-                          <div class="tech-box twostgrediant">
+                                <div class="tech-box twostgrediant">
                                     <h3>AR/VR:</h3>
                                     <p>Camera Sensors, Retina</p>
                                 </div>
@@ -949,7 +1122,8 @@
                     <div class="lftrytlinepart">
                         <div class="leftcontpanel">
                             <h2>Get in touch</h2>
-                            <p><strong>Interested in our end-to-end advanced semiconductor and photonics (PIC) packaging solutions?</strong>​</p>
+                            <p><strong>Interested in our end-to-end advanced semiconductor and photonics (PIC) packaging
+                                    solutions?</strong>​</p>
                             <p>&nbsp;</p>
                             <p>Share your details for an expert connect.</p>
                         </div>
@@ -968,7 +1142,7 @@
                                 <!-- <div class="inputfieldwidth"><input type="submit" name="submit" value="submit"
                                         class="submitbut"></div> -->
 
-                                        <button class="submitbut">SUBMIT</button>
+                                <button class="submitbut">SUBMIT</button>
                             </form>
                         </div>
                     </div>
@@ -982,13 +1156,15 @@
                 <div class="topftrflexpart">
                     <div class="topftrcolpart">
                         <div class="ftrlogo"><img src="images/footer-logo.png">
-                             <img class="ftrlogosecond" src="images/GDSI_logo_White.png">
+                            <img class="ftrlogosecond" src="images/GDSI_logo_White.png">
                         </div>
-                        <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics packaging–pushing the boundaries of design, fabrication, and assembly while driving sustainability.</p>
+                        <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics
+                            packaging–pushing the boundaries of design, fabrication, and assembly while driving
+                            sustainability.</p>
                         <div class="ftrusa"><img src="images/Isolation_Mode.png"></div>
                     </div>
-                     <!-- here myful is footerulli -->
-                    <div class="topftrcolpart myful"> 
+                    <!-- here myful is footerulli -->
+                    <div class="topftrcolpart myful">
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="./service.html">Services</a></li>
@@ -1005,16 +1181,19 @@
                         <p>Email: sales@silitronics.com</p>
                         <p>Phone: +1 408-954-8301,<br> +1 408-605-1148</p>
                         <p class="social"><a href="#" class="ftrsocial"><img src="images/youtube.svg"></a>
-                           <a href="#" class="ftrsocial"><img src="images/linkedin.svg"></a>
+                            <a href="#" class="ftrsocial"><img src="images/linkedin.svg"></a>
                         </p>
-                        
-                         <p class="heads">Grinding and Dicing Services Inc</p>
+
+                        <p class="heads">Grinding and Dicing Services Inc</p>
                         <p>925 Berryessa Road - San Jose, CA 95133</p>
                         <p>Email: sales@dieprepservices.com</p>
                         <p>Phone: +1 408 451 2000 <br> +1 408 451 2000 </p>
                     </div>
                     <div class="topftrcolpart">
-                        <div class="ftrmap"><iframe  class="ftrmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8770204884054!2d-121.9673431!3d37.369086700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcea9b87697e9%3A0x41f8ffcc2946d1a3!2sSilitronics%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1758194948800!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                        <div class="ftrmap"><iframe class="ftrmaps"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8770204884054!2d-121.9673431!3d37.369086700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcea9b87697e9%3A0x41f8ffcc2946d1a3!2sSilitronics%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1758194948800!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                         <a href="#" class="backtotop">back to top</a>
                     </div>
                 </div>
@@ -1030,17 +1209,19 @@
 
 
 
-<!-- mobilefooter -->
+    <!-- mobilefooter -->
 
- <section class="footerbg only-mobile">
+    <section class="footerbg only-mobile">
         <div class="topftrsec">
             <div class="container">
                 <div class="topftrflexpart">
                     <div class="topftrcolpart">
                         <div class="ftrlogo"><img src="images/footer-logo.png">
-                             <img class="ftrlogosecond" src="images/GDSI_logo_White.png">
+                            <img class="ftrlogosecond" src="images/GDSI_logo_White.png">
                         </div>
-                        <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics packaging-pushing the boundaries of design, fabrication, and assembly while driving sustainability.</p>
+                        <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics
+                            packaging-pushing the boundaries of design, fabrication, and assembly while driving
+                            sustainability.</p>
                         <div class="ftrusa"><img src="images/Isolation_Mode.png"></div>
                     </div>
                     <div class="topftrcolpart ">
@@ -1055,14 +1236,17 @@
                         </ul>
                     </div>
                     <div class="topftrcolpart">
-                        <div class="ftrmap"><iframe  class="ftrmapsd" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8770204884054!2d-121.9673431!3d37.369086700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcea9b87697e9%3A0x41f8ffcc2946d1a3!2sSilitronics%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1758194948800!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                        <div class="ftrmap"><iframe class="ftrmapsd"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8770204884054!2d-121.9673431!3d37.369086700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcea9b87697e9%3A0x41f8ffcc2946d1a3!2sSilitronics%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1758194948800!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                         <p>Silitronics Solutions Inc 2388 Walsh Avenue, Santa Clara, CA, 95051</p>
                         <p>Email: sales@silitronics.com</p>
                         <p>Phone: +1 408-954-8301,<br> +1 408-605-1148</p>
                         <p class="social"><a href="#" class="myicon"><img src="images/youtube.svg"></a>
-                           <a href="#" class=" myicon"><img src="images/linkedin.svg"></a>
+                            <a href="#" class=" myicon"><img src="images/linkedin.svg"></a>
                         </p>
-<!-- <div class="social-icons">
+                        <!-- <div class="social-icons">
   <a href="https://youtube.com" target="_blank">
     <img src="images/youtube.svg" alt="YouTube">
   </a>
@@ -1070,7 +1254,7 @@
     <img src="images/linkedin.svg" alt="LinkedIn">
   </a>
 </div> -->
- 
+
 
                     </div>
                     <div class="topftrcolpart">
@@ -1087,7 +1271,7 @@
         </div>
     </section>
 
-        <a href="#contactsec" class="fixed-getintouch"><img src="./images/Getintouch1.png" alt=""></a>
+    <a href="#contactsec" class="fixed-getintouch"><img src="./images/Getintouch1.png" alt=""></a>
 
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/owl.carousel.min.js" type="text/javascript"></script>
@@ -1097,320 +1281,320 @@
     <script src="js/jquery.carousel-vertical.min.js" type="text/javascript"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-   <!-- Carousel Initialization -->
-   <script>
-    $(document).ready(function () {
-      // Desktop carousel
-      $(".slidersec").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        items: 1,
-        autoplay: true,              // autoplay enable
-    autoplayTimeout: 5000,       // kitni der me slide change ho
-    autoplayHoverPause: true, 
-        autoplaySpeed: 2000
-      });
+    <!-- Carousel Initialization -->
+    <script>
+        $(document).ready(function () {
+            // Desktop carousel
+            $(".slidersec").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                items: 1,
+                autoplay: true,              // autoplay enable
+                autoplayTimeout: 5000,       // kitni der me slide change ho
+                autoplayHoverPause: true,
+                autoplaySpeed: 2000
+            });
 
-      // Mobile carousel
-      $(".slidersec-mobile").owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: false,
-        dots: true,
-        items: 1,
-        autoplay: true,
-        autoplayTimeout: 8000,
-        autoplayHoverPause: true,
-        autoplaySpeed: 1000
-      });
-    });
- 
-  </script>
+            // Mobile carousel
+            $(".slidersec-mobile").owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: false,
+                dots: true,
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 8000,
+                autoplayHoverPause: true,
+                autoplaySpeed: 1000
+            });
+        });
 
- 
-
-<!-- Correct JavaScript -->
-<script>
-    let currentIndex = 0;
-    const overlays = document.querySelectorAll('.s-shape-overlay');
-    
-    function changeSlide(direction) {
-        const leftSlides = document.querySelectorAll('#leftCarousel .carousel-item');
-        const rightSlides = document.querySelectorAll('#rightCarousel .carousel-item');
-    
-        // Hide current elements
-        leftSlides[currentIndex].classList.remove('active', 'slide-from-top', 'slide-from-bottom');
-        rightSlides[currentIndex].classList.remove('active', 'slide-from-top', 'slide-from-bottom');
-        overlays[currentIndex].classList.remove('active');
-        // Update index
-        currentIndex = (currentIndex + direction + leftSlides.length) % leftSlides.length;
-        // Set animation
-        const animClass = direction === 1 ? 'slide-from-top' : 'slide-from-bottom';
-        // Show new elements
-        leftSlides[currentIndex].classList.add('active', animClass);
-        rightSlides[currentIndex].classList.add('active', animClass);
-        overlays[currentIndex].classList.add('active');
-    }
     </script>
-<script src="js/jquery.matchHeight.js" type="text/javascript"></script>
-<script src="js/autoheight.js" type="text/javascript"></script>
-
-<!-- Initialize Swiper for tabslidersec -->
-<script>
-$(document).ready(function() {
-    // Initialize Swiper for tabslidersec with proper vertical sliding
-    window.tabSliderSwiper = new Swiper('.tabslidersec', {
-        direction: 'vertical',
-        slidesPerView: 1,
-        spaceBetween: 0,
-        mousewheel: {
-            enabled: true,
-            sensitivity: 1,
-            invert: false,
-            forceToAxis: true,
-        },
-        touchRatio: 1,
-        touchAngle: 45,
-        grabCursor: true,
-        // Pagination disabled - only mouse/touch control
-        loop: false,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-        },
-        speed: 800,
-        effect: 'slide',
-        freeMode: false,
-        freeModeSticky: true,
-        on: {
-            init: function () {
-                console.log('Vertical Swiper initialized - scroll up/down to navigate');
-            },
-            slideChange: function () {
-                console.log('Slide changed to:', this.activeIndex);
-            },
 
 
-                 reachEnd: function () {
-                console.log('Reached last slide');
-                // 👇 Scroll to next content section
-                setTimeout(function() {
-                    $('html, body').animate({
-                        scrollTop: $('.thrdcontsec').offset().top
-                    }, 1000);
-                }, 500);
-            },
 
-            touchStart: function() {
-                this.autoplay.stop();
-            },
-            touchEnd: function() {
-                this.autoplay.start();
-            }
+    <!-- Correct JavaScript -->
+    <script>
+        let currentIndex = 0;
+        const overlays = document.querySelectorAll('.s-shape-overlay');
+
+        function changeSlide(direction) {
+            const leftSlides = document.querySelectorAll('#leftCarousel .carousel-item');
+            const rightSlides = document.querySelectorAll('#rightCarousel .carousel-item');
+
+            // Hide current elements
+            leftSlides[currentIndex].classList.remove('active', 'slide-from-top', 'slide-from-bottom');
+            rightSlides[currentIndex].classList.remove('active', 'slide-from-top', 'slide-from-bottom');
+            overlays[currentIndex].classList.remove('active');
+            // Update index
+            currentIndex = (currentIndex + direction + leftSlides.length) % leftSlides.length;
+            // Set animation
+            const animClass = direction === 1 ? 'slide-from-top' : 'slide-from-bottom';
+            // Show new elements
+            leftSlides[currentIndex].classList.add('active', animClass);
+            rightSlides[currentIndex].classList.add('active', animClass);
+            overlays[currentIndex].classList.add('active');
         }
-    });
+    </script>
+    <script src="js/jquery.matchHeight.js" type="text/javascript"></script>
+    <script src="js/autoheight.js" type="text/javascript"></script>
 
-     $('.toparrow').on('click', function () {
-        window.tabSliderSwiper.slidePrev();
-    });
-
-    // 🔽 Bottom arrow click → slide to next
-    $('.bottomarrow').on('click', function () {
-        window.tabSliderSwiper.slideNext();
-    });
-});
-</script>
-
-<!-- Fixed Swiper Scroll Enhancement for sndcontsec -->
-<script>
-$(document).ready(function() {
-    // Enhanced scroll functionality for tabslidersec swiper in sndcontsec section
-    let isScrolling = false;
-    let scrollTimeout;
-    let lastScrollTime = 0;
-    const scrollThreshold = 150; // Minimum time between scroll actions (ms)
-
-    // Get the swiper instance and section
-    const $swiperContainer = $('.sndcontsec .tabslidersec');
-    const $section = $('.sndcontsec');
-
-    if ($swiperContainer.length && $section.length) {
-        console.log('Fixed scroll-to-slide functionality initializing for sndcontsec swiper');
-
-        // Wait for swiper to be fully initialized
-        setTimeout(function() {
-            // Add wheel event listener to the sndcontsec section only
-            $section.on('wheel.swiperScroll', function(e) {
-                const currentTime = Date.now();
-
-                // Throttle scroll events - only allow one scroll action per threshold period
-                if (currentTime - lastScrollTime < scrollThreshold) {
-                    e.preventDefault();
-                    return;
-                }
-
-                // Prevent scrolling if already animating
-                if (isScrolling) {
-                    e.preventDefault();
-                    return;
-                }
-
-                const deltaY = e.originalEvent.deltaY;
-
-                // Only handle significant scroll movements
-                if (Math.abs(deltaY) < 10) {
-                    return;
-                }
-
-                // Get swiper instance
-                const swiperInstance = window.tabSliderSwiper;
-                if (!swiperInstance) {
-                    console.log('Swiper not initialized yet');
-                    return;
-                }
-
-                const currentIndex = swiperInstance.activeIndex;
-                const totalSlides = swiperInstance.slides.length;
-
-                console.log('Current slide:', currentIndex, 'Total slides:', totalSlides, 'Delta:', deltaY);
-
-                let shouldNavigate = false;
-                let direction = '';
-
-                if (deltaY > 0) {
-                    // Scrolling DOWN - go to NEXT slide
-                    if (currentIndex < totalSlides - 1) {
-                        shouldNavigate = true;
-                        direction = 'next';
-                    }
-                } else {
-                    // Scrolling UP - go to PREVIOUS slide
-                    if (currentIndex > 0) {
-                        shouldNavigate = true;
-                        direction = 'prev';
-                    }
-                }
-
-                if (shouldNavigate) {
-                    // Prevent default page scroll
-                    e.preventDefault();
-                    e.stopPropagation();
-
-                    // Set scrolling flag
-                    isScrolling = true;
-                    lastScrollTime = currentTime;
-
-                    console.log('Navigating:', direction);
-
-                    // Trigger swiper navigation
-                    if (direction === 'next') {
-                        swiperInstance.slideNext();
-                    } else {
-                        swiperInstance.slidePrev();
-                    }
-
-                    // Reset scrolling flag after animation completes
-                    clearTimeout(scrollTimeout);
-                    scrollTimeout = setTimeout(function() {
-                        isScrolling = false;
-                        console.log('Scroll animation complete');
-                    }, 800); // Match with Swiper animation duration
-                }
-            });
+    <!-- Initialize Swiper for tabslidersec -->
+    <script>
+        $(document).ready(function () {
+            // Initialize Swiper for tabslidersec with proper vertical sliding
+            window.tabSliderSwiper = new Swiper('.tabslidersec', {
+                direction: 'vertical',
+                slidesPerView: 1,
+                spaceBetween: 0,
+                mousewheel: {
+                    enabled: true,
+                    sensitivity: 1,
+                    invert: false,
+                    forceToAxis: true,
+                },
+                touchRatio: 1,
+                touchAngle: 45,
+                grabCursor: true,
+                // Pagination disabled - only mouse/touch control
+                loop: false,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+                speed: 800,
+                effect: 'slide',
+                freeMode: false,
+                freeModeSticky: true,
+                on: {
+                    init: function () {
+                        console.log('Vertical Swiper initialized - scroll up/down to navigate');
+                    },
+                    slideChange: function () {
+                        console.log('Slide changed to:', this.activeIndex);
+                    },
 
 
-            // Enhanced touch support for mobile devices
-            let touchStartY = 0;
-            let touchEndY = 0;
-            let isTouching = false;
-            let touchMoved = false;
+                    reachEnd: function () {
+                        console.log('Reached last slide');
+                        // 👇 Scroll to next content section
+                        setTimeout(function () {
+                            $('html, body').animate({
+                                scrollTop: $('.thrdcontsec').offset().top
+                            }, 1000);
+                        }, 500);
+                    },
 
-            $section.on('touchstart.swiperTouch', function(e) {
-                touchStartY = e.originalEvent.touches[0].clientY;
-                isTouching = true;
-                touchMoved = false;
-            });
-
-            $section.on('touchmove.swiperTouch', function(e) {
-                if (!isTouching) return;
-
-                touchMoved = true;
-                const currentY = e.originalEvent.touches[0].clientY;
-                const deltaY = Math.abs(touchStartY - currentY);
-
-                // Prevent page scroll if significant vertical movement
-                if (deltaY > 20) {
-                    e.preventDefault();
-                }
-            });
-
-            $section.on('touchend.swiperTouch', function(e) {
-                if (!isTouching || !touchMoved) return;
-
-                touchEndY = e.originalEvent.changedTouches[0].clientY;
-                isTouching = false;
-
-                // Calculate swipe distance and direction
-                const swipeDistance = touchStartY - touchEndY;
-                const minSwipeDistance = 50;
-
-                if (Math.abs(swipeDistance) > minSwipeDistance && !isScrolling) {
-                    const swiperInstance = window.tabSliderSwiper;
-                    if (!swiperInstance) return;
-
-                    const currentIndex = swiperInstance.activeIndex;
-                    const totalSlides = swiperInstance.slides.length;
-
-                    if (swipeDistance > 0 && currentIndex < totalSlides - 1) {
-                        // Swiped up - go to next slide
-                        isScrolling = true;
-                        swiperInstance.slideNext();
-                        setTimeout(() => { isScrolling = false; }, 800);
-                    } else if (swipeDistance < 0 && currentIndex > 0) {
-                        // Swiped down - go to previous slide
-                        isScrolling = true;
-                        swiperInstance.slidePrev();
-                        setTimeout(() => { isScrolling = false; }, 800);
+                    touchStart: function () {
+                        this.autoplay.stop();
+                    },
+                    touchEnd: function () {
+                        this.autoplay.start();
                     }
                 }
             });
 
-        }, 500); // Wait for carousel initialization
+            $('.toparrow').on('click', function () {
+                window.tabSliderSwiper.slidePrev();
+            });
 
-        console.log('Fixed scroll-to-slide functionality added to sndcontsec carousel');
-    } else {
-        console.log('Carousel or section not found for scroll enhancement');
-    }
-});
+            // 🔽 Bottom arrow click → slide to next
+            $('.bottomarrow').on('click', function () {
+                window.tabSliderSwiper.slideNext();
+            });
+        });
+    </script>
+
+    <!-- Fixed Swiper Scroll Enhancement for sndcontsec -->
+    <script>
+        $(document).ready(function () {
+            // Enhanced scroll functionality for tabslidersec swiper in sndcontsec section
+            let isScrolling = false;
+            let scrollTimeout;
+            let lastScrollTime = 0;
+            const scrollThreshold = 150; // Minimum time between scroll actions (ms)
+
+            // Get the swiper instance and section
+            const $swiperContainer = $('.sndcontsec .tabslidersec');
+            const $section = $('.sndcontsec');
+
+            if ($swiperContainer.length && $section.length) {
+                console.log('Fixed scroll-to-slide functionality initializing for sndcontsec swiper');
+
+                // Wait for swiper to be fully initialized
+                setTimeout(function () {
+                    // Add wheel event listener to the sndcontsec section only
+                    $section.on('wheel.swiperScroll', function (e) {
+                        const currentTime = Date.now();
+
+                        // Throttle scroll events - only allow one scroll action per threshold period
+                        if (currentTime - lastScrollTime < scrollThreshold) {
+                            e.preventDefault();
+                            return;
+                        }
+
+                        // Prevent scrolling if already animating
+                        if (isScrolling) {
+                            e.preventDefault();
+                            return;
+                        }
+
+                        const deltaY = e.originalEvent.deltaY;
+
+                        // Only handle significant scroll movements
+                        if (Math.abs(deltaY) < 10) {
+                            return;
+                        }
+
+                        // Get swiper instance
+                        const swiperInstance = window.tabSliderSwiper;
+                        if (!swiperInstance) {
+                            console.log('Swiper not initialized yet');
+                            return;
+                        }
+
+                        const currentIndex = swiperInstance.activeIndex;
+                        const totalSlides = swiperInstance.slides.length;
+
+                        console.log('Current slide:', currentIndex, 'Total slides:', totalSlides, 'Delta:', deltaY);
+
+                        let shouldNavigate = false;
+                        let direction = '';
+
+                        if (deltaY > 0) {
+                            // Scrolling DOWN - go to NEXT slide
+                            if (currentIndex < totalSlides - 1) {
+                                shouldNavigate = true;
+                                direction = 'next';
+                            }
+                        } else {
+                            // Scrolling UP - go to PREVIOUS slide
+                            if (currentIndex > 0) {
+                                shouldNavigate = true;
+                                direction = 'prev';
+                            }
+                        }
+
+                        if (shouldNavigate) {
+                            // Prevent default page scroll
+                            e.preventDefault();
+                            e.stopPropagation();
+
+                            // Set scrolling flag
+                            isScrolling = true;
+                            lastScrollTime = currentTime;
+
+                            console.log('Navigating:', direction);
+
+                            // Trigger swiper navigation
+                            if (direction === 'next') {
+                                swiperInstance.slideNext();
+                            } else {
+                                swiperInstance.slidePrev();
+                            }
+
+                            // Reset scrolling flag after animation completes
+                            clearTimeout(scrollTimeout);
+                            scrollTimeout = setTimeout(function () {
+                                isScrolling = false;
+                                console.log('Scroll animation complete');
+                            }, 800); // Match with Swiper animation duration
+                        }
+                    });
+
+
+                    // Enhanced touch support for mobile devices
+                    let touchStartY = 0;
+                    let touchEndY = 0;
+                    let isTouching = false;
+                    let touchMoved = false;
+
+                    $section.on('touchstart.swiperTouch', function (e) {
+                        touchStartY = e.originalEvent.touches[0].clientY;
+                        isTouching = true;
+                        touchMoved = false;
+                    });
+
+                    $section.on('touchmove.swiperTouch', function (e) {
+                        if (!isTouching) return;
+
+                        touchMoved = true;
+                        const currentY = e.originalEvent.touches[0].clientY;
+                        const deltaY = Math.abs(touchStartY - currentY);
+
+                        // Prevent page scroll if significant vertical movement
+                        if (deltaY > 20) {
+                            e.preventDefault();
+                        }
+                    });
+
+                    $section.on('touchend.swiperTouch', function (e) {
+                        if (!isTouching || !touchMoved) return;
+
+                        touchEndY = e.originalEvent.changedTouches[0].clientY;
+                        isTouching = false;
+
+                        // Calculate swipe distance and direction
+                        const swipeDistance = touchStartY - touchEndY;
+                        const minSwipeDistance = 50;
+
+                        if (Math.abs(swipeDistance) > minSwipeDistance && !isScrolling) {
+                            const swiperInstance = window.tabSliderSwiper;
+                            if (!swiperInstance) return;
+
+                            const currentIndex = swiperInstance.activeIndex;
+                            const totalSlides = swiperInstance.slides.length;
+
+                            if (swipeDistance > 0 && currentIndex < totalSlides - 1) {
+                                // Swiped up - go to next slide
+                                isScrolling = true;
+                                swiperInstance.slideNext();
+                                setTimeout(() => { isScrolling = false; }, 800);
+                            } else if (swipeDistance < 0 && currentIndex > 0) {
+                                // Swiped down - go to previous slide
+                                isScrolling = true;
+                                swiperInstance.slidePrev();
+                                setTimeout(() => { isScrolling = false; }, 800);
+                            }
+                        }
+                    });
+
+                }, 500); // Wait for carousel initialization
+
+                console.log('Fixed scroll-to-slide functionality added to sndcontsec carousel');
+            } else {
+                console.log('Carousel or section not found for scroll enhancement');
+            }
+        });
 
 
 
 
-</script>
+    </script>
 
-<!-- Tab functionality for Quality Assurance section -->
-<script>
-function openCity(evt, cityName) {
-    // Hide all tab content
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
+    <!-- Tab functionality for Quality Assurance section -->
+    <script>
+        function openCity(evt, cityName) {
+            // Hide all tab content
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
 
-    // Remove active class from all tab links
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("active");
-    }
+            // Remove active class from all tab links
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
 
-    // Show the selected tab content and add active class to the clicked tab
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.classList.add("active");
-}
-</script>
+            // Show the selected tab content and add active class to the clicked tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
 
 </body>
 

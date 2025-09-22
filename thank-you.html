@@ -9,6 +9,7 @@
     <link href="css/carousel-vertical.min.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
 
       <style>
         /* Banner height adjustments for different screen sizes */
@@ -99,6 +100,9 @@
                 font-size: 14px;
                 line-height: 1.4;
             }
+
+    
+           
         }
 
         /* Ensure mobile header and banner display properly */
@@ -163,13 +167,118 @@
                 background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)) !important;
             }
         }
+
+
+
+
+
+
+
+ /* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button (Services link) */
+.dropbtn {
+  color: white;         /* change as per your navbar theme */
+  text-decoration: none;
+  padding: 0 0;
+  display: inline-block;
+}
+
+/* Arrow style */
+.dropbtn i {
+      font-weight: 500;
+    font-size: 14px;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#000;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Dropdown links */
+.navsecd li a {
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  width: 200px;
+  margin:0 0 0 0;
+ 
+}
+
+
+.navsecd{
+  margin:0 0 0 0 !important;
+}
+
+.dropdown-content li a:hover {
+  background-color: rgba(255, 255, 255, 0.105);
+}
+
+/* Show on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Optional: highlight parent when open */
+.dropdown:hover .dropbtn {
+  background-color: #222; /* adjust to your navbar background */
+}
+
+.headersec{
+    overflow: visible;
+}
+
+/* mobile  */
+.drop-down-menu-hidden{
+    display: none;
+    color: #000044;
+}
+/* Smooth rotation */
+.dropbtn .i {
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-block; /* required for transform */
+  transition: transform 0.3s ease;
+}
+
+/* Rotate when parent (.dropdown) is hovered */
+.dropdown:hover .dropbtn .i {
+  transform: rotate(180deg);
+}
+
+.nav-toggles,
+.nav-toggles:focus,
+.nav-toggles:active {
+  outline: none;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent; /* mobile tap highlight remove */
+}
+
+
+
     </style>
 
   
     <title>Silitronics</title>
 </head>
 <body>
-     <section class="headersec sticky only-desktop">
+   
+
+        <section class="headersec sticky only-desktop" >
         <div class="container">
             <div class="logonnavsec">
                 <div class="logo ">
@@ -178,54 +287,82 @@
                 <div class="navsec">
                     <ul>
                         <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="service.html">Services</a></li>
+                        <li class="dropdown">
+                        <a href="service.html" class="dropbtn">
+                              Services <i class="ri-arrow-up-s-line i"></i>
+                            </a>
+                            <ul class="dropdown-content navsecd">
+                              <li><a href="javascript:void(0)">Design</a></li>
+                              <li class="navsecd"><a href="javascript:void(0)">Fabrication</a></li>
+                                   <li class="navsecd"><a href="javascript:void(0)">Fabrication</a></li>
+                                <li class="navsecd"><a href="javascript:void(0)">Fabrication</a></li>
+                            </ul>
+                        </li>
                         <li><a href="application.html">Applications</a></li>
                         <li><a href="facility.html">Facility</a></li>
                         <li><a href="resource.html">Resources Hub</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
-                     
+
                     </ul>
                 </div>
-               
+
             </div>
         </div>
     </section>
-        <!-- mobile header -->
+    <!-- mobile navbar -->
+   
+
+
     <div class="only-mobile sticky">
-        <div class="menu-header only-mobile sticky">
-            <img src="images/logo.png" alt="SILITRONICS Logo">
-            <div class="hamburger close-icon" onclick="toggleMenu(this)">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-
-        <div class="side-menu" id="menu">
-            <ul>
-                
-         <li><a href="index.html" class="active">HOME</a></li>
-                <li><a href="service.html">SERVICES</a></li>
-                <li><a href="application.html">APPLICATIONS</a></li>
-                <li><a href="facility.html">FACILITY</a></li>
-                <li><a href="resource.html">RESOURCES HUB</a></li>
-                <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-            </ul>
-
-
-            <div class="social-icons">
-                <a href="https://youtube.com" target="_blank">
-                    <img src="images/youtube.svg" alt="YouTube">
-                </a>
-                <a href="https://linkedin.com" target="_blank">
-                    <img src="images/linkedin.svg" alt="LinkedIn">
-                </a>
-            </div>
+    <div class="menu-header only-mobile sticky">
+        <img src="images/logo.png" alt="SILITRONICS Logo">
+        <div class="hamburger close-icon" onclick="toggleMenu(this)">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </div>
+    <div class="side-menu" id="menu">
+        <ul>
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li class="nav-dropdown">
+                <a href="javascript:void(0)" class="nav-toggles ">Services <i class="ri-arrow-up-s-line"></i> </a>
+                <ul class="nav-menu drop-down-menu-hidden">
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="fabrication.html">Fabrication</a></li>
+                </ul>
+            </li>
+            <li><a href="application.html">APPLICATIONS</a></li>
+            <li><a href="facility.html">FACILITY</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="https://youtube.com" target="_blank">
+                <img src="images/youtube.svg" alt="YouTube">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+        </div>
+    </div>
+    </div>
 
+<!-- script for mobile  -->
+<script>
+let nav_toggles = document.querySelector(".nav-toggles");
+let drop_down_menu_hidden = document.querySelector(".drop-down-menu-hidden");
+
+nav_toggles.addEventListener("click", () => {
+    if (drop_down_menu_hidden.style.display === "block") {
+        drop_down_menu_hidden.style.display = "none"; // hide
+    } else {
+        drop_down_menu_hidden.style.display = "block"; // show
+    }
+});
+</script>
+  
 
 
     <main>
