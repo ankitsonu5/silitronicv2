@@ -52,13 +52,14 @@
 .slide2text {
   padding: 0 0rem;
   font-size: 16px; /* default (small devices) */
+  line-height: 26px;
 }
 
 /* Small tablets */
 @media (min-width:480px) {
   .slide2text {
     padding: 0 2rem;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
   }
 }

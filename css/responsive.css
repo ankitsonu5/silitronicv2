@@ -1252,7 +1252,7 @@ a.whtedownloadusecasebut
     transition: opacity 0.3s ease;
 }
 .sglecasestudycontsec:hover .casestudycontpart {
-    max-height: 180px;
+    max-height: 240px;
 }
 .sglecasestudycontsec:hover .casestudycontpart p,
 .sglecasestudycontsec:hover .casestudycontpart a {
@@ -1263,7 +1263,7 @@ a.whtedownloadusecasebut
 }
 .sglecasestudycontsec h3 {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 18px;
 }
 .sglecasestudycontsec p {
     font-size: 12px;
