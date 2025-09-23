@@ -774,6 +774,18 @@
         padding-top: 10px;
        }
 
+
+.service-section-spectrum-section .card {
+  border: 1px solid transparent;
+  transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.service-section-spectrum-section .card:hover {
+  transform: scale(1.03); /* thoda card bada ho jayega */
+  border: 2px solid #000; /* border mota hoga */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15); /* thoda zyada shadow */
+}
     </style>
 </head>
 
@@ -891,7 +903,7 @@
                             <a href="#contactsecd" class="getintouchbut">Get in touch</a>
                         </div>
                     </div>
-                    <img src="images/bannerimg01.jpg">
+                   <img src="images/bannerimg01.jpg" alt="">
                 </div>
                 <div class="item">
                     <div class="slidecontpart">
@@ -902,7 +914,7 @@
                             <a href="./siliconphotonics.html"  target="_self" class="getintouchbut">LEARN MORE</a>
                         </div>
                     </div>
-                    <img src="images/bannerimg02.jpg">
+                  <img src="images/bannerimg02.jpg" alt="">
                 </div>
                 <div class="item">
                     <div class="slidecontpart">
@@ -913,7 +925,7 @@
                             <a href="./design.html" target="_self" class="getintouchbut">LEARN MORE</a>
                         </div>
                     </div>
-                    <img src="images/bannerimg03.png">
+                    <img src="images/bannerimg03.png" alt="">
                 </div>
                 <div class="item">
                     <div class="slidecontpart">
@@ -924,7 +936,7 @@
                             <a href="javascript:void(0)" target="_self" class="getintouchbut downloadusecasebut">Read Case Study</a>
                         </div>
                     </div>
-                    <img src="images/bannerimg04.png">
+                    <img src="images/bannerimg04.png" alt="">
                 </div>
 
                 <div class="item">
@@ -936,7 +948,7 @@
                             <a href="./dicing.html" class="getintouchbut">LEARN MORE</a>
                         </div>
                     </div>
-                    <img src="images/bannerimg05.png">
+                    <img src="images/bannerimg05.png" alt="">
                 </div>
 
 
@@ -948,7 +960,7 @@
                             <a href="./fabrication.html" class="getintouchbut">LEARN MORE</a>
                         </div>
                     </div>
-                    <img src="images/bannerimg06.png">
+                   <img src="images/bannerimg06.png" alt="">
                 </div>
 
 
@@ -2250,15 +2262,24 @@
                             <li><a href="./about.html">About us</a></li>
                             <li><a href="./contact.html">Contact us</a></li>
                         </ul>
+                          <div class="ftrmap"><iframe  class="ftrmapsd" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8770204884054!2d-121.9673431!3d37.369086700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcea9b87697e9%3A0x41f8ffcc2946d1a3!2sSilitronics%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1758194948800!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                     </div>
                     <div class="topftrcolpart">
-                        <div class="ftrmap"><iframe  class="ftrmapsd" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8770204884054!2d-121.9673431!3d37.369086700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcea9b87697e9%3A0x41f8ffcc2946d1a3!2sSilitronics%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1758194948800!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                         <p>Silitronics Solutions Inc 2388 Walsh Avenue, Santa Clara, CA, 95051</p>
-                        <p>Email: sales@silitronics.com</p>
+                        <p>Email: <br> sales@silitronics.com</p>
                         <p>Phone: +1 408-954-8301,<br> +1 408-605-1148</p>
                         <p class="social"><a href="#" class="myicon"><img src="images/youtube.svg"></a>
                             <a href="#" class=" myicon"><img src="images/linkedin.svg"></a>
                         </p>
+
+                          <p style="margin-top: 10px;">Grinding and Dicing Services Inc 925 Berryessa Road - San Jose, CA 95133</p>
+                        <p>Email: <br> sales@dieprepservices.com</p>
+                        <p>Phone: +1 408-451-2000,<br> +1 408-451-20008</p>
+                        <p class="social"><a href="#" class="myicon"><img src="images/youtube.svg"></a>
+                            <a href="#" class=" myicon"><img src="images/linkedin.svg"></a>
+                        </p>
+
+                      
 
                         
                         <!-- <div class="social-icons">
@@ -2525,6 +2546,37 @@
         });
 
     </script> 
+
+
+<!-- card clickable for desktop -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // 6 pages ke links
+    const urls = [
+      "design.html",
+      "fabrication.html",
+      "dicing.html",
+      "siliconphotonics.html",
+      "servicesassebly.html",
+      "Chiplet.html"
+    ];
+
+
+
+    // saare cards ko select karo
+    const cards = document.querySelectorAll(".service-section-spectrum-section .card");
+
+    // har card ko uska url assign karo
+    cards.forEach((card, index) => {
+        console.log(index)
+      card.style.cursor = "pointer"; // hover pe pointer cursor aayega
+      card.addEventListener("click", () => {
+        window.location.href = urls[index]; // card click hote hi redirect
+      });
+    });
+  });
+</script>
 
 </body>
 
