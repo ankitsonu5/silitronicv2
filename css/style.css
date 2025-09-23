@@ -6738,10 +6738,11 @@ section.services-section {
 
 
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 7px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 9px;
     padding: 5px 0;
-    margin-left: 0px;
+    margin-left:20px;
     /* margin-right: 36px; */
 }
 
@@ -6806,7 +6807,7 @@ section.services-section {
 
 .only-mobile-button {
     display: inline-block;
-    padding: 7px 24px !important;
+    padding: 7px 20px !important;
     font-size: 11px;
     font-weight: 200;
     font-family: 'Spline Sans Mono';
