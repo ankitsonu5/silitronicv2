@@ -275,7 +275,7 @@ a.getintouchbut
         letter-spacing: 1px;
         color: #ffffff;
         margin-bottom: 10px;
-        padding-right: 160px;
+        /* padding-right: 160px; */
     }
 .thrdabtcontsec p {
     margin-top: 48px !important;
