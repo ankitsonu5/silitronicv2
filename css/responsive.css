@@ -353,8 +353,8 @@ a.getintouchbut
     }
 
     .facility-mobile-heading {
-        font-size: 24px !important;
-        line-height: 30px !important;
+        font-size: 30px !important;
+        line-height: 32px !important;
         font-weight: bold;
         font-family: 'Titillium Web';
         background: linear-gradient(90deg, #050EF1, #FD0200);
@@ -367,8 +367,8 @@ a.getintouchbut
 
     .facility-mobile-description-primary,
     .facility-mobile-description-secondary {
-        font-size: 14px !important;
-        line-height: 22px !important;
+        font-size: 16px !important;
+        line-height: 26px !important;
         font-family: 'Spline Sans Mono';
         color: #333;
         margin-bottom: 15px;
@@ -633,8 +633,8 @@ a.getintouchbut
 }
 .customervoicesec h2, .casestudiessec h2, .leftcontpanel h2, .fstservicecontsec h2, .fstappcontsec h2, .sndapppgcontflex h2, .lftfacilitysec h2, .fstfacilitysecbtmdiv h2, .sndfacilitycontsec h2, .thrdfacilitycontsec h2, .topfacilitysec h2, .midfacilitysec h2, .thrdabtcontsec h2, .frthabtcontsec h2, .fifthabtcontsec h2, .sixthhabtcontsec h2, .lftrytlinepart h4, .sndcontsec h2
 {
-    font-size: 36px;
-    line-height: 45px;
+    font-size: 30px;
+    line-height: 32px;
     text-align: center;
 }
 .fstservicecontsec h2
