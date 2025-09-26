@@ -236,6 +236,7 @@
 /* Optional: highlight parent when open */
 .dropdown:hover .dropbtn {
   background-color: #222; /* adjust to your navbar background */
+  color: white;
 }
 
 .headersec{
@@ -268,8 +269,11 @@
   -webkit-tap-highlight-color: transparent; /* mobile tap highlight remove */
 }
 
-
-
+.drop-down-menu-hidden {
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+}
     </style>
 
   
@@ -289,13 +293,17 @@
                         <li><a href="index.html" class="active">Home</a></li>
                         <li class="dropdown">
                         <a href="service.html" class="dropbtn">
-                              Services <i class="ri-arrow-up-s-line i"></i>
+                         
+                             Services <i class="ri-arrow-up-s-line i"></i>
+                   
                             </a>
                             <ul class="dropdown-content navsecd">
-                              <li><a href="javascript:void(0)">Design</a></li>
-                              <li class="navsecd"><a href="javascript:void(0)">Fabrication</a></li>
-                                   <li class="navsecd"><a href="javascript:void(0)">Fabrication</a></li>
-                                <li class="navsecd"><a href="javascript:void(0)">Fabrication</a></li>
+                               <li><a href="design.html">Design</a></li>
+                               <li class="navsecd"><a href="fabrication.html">Fabrication</a></li>
+                               <li class="navsecd"><a href="dicing.html">Dicing</a></li>
+                               <li class="navsecd"><a href="siliconphotonics.html">Silicon Photonics</a></li>
+                               <li class="navsecd"><a href="servicesassebly.html">Assembly</a></li>
+                               <li class="navsecd"><a href="Chiplet.html">Chiplets</a></li>
                             </ul>
                         </li>
                         <li><a href="application.html">Applications</a></li>
@@ -329,8 +337,13 @@
             <li class="nav-dropdown">
                 <a href="javascript:void(0)" class="nav-toggles ">Services <i class="ri-arrow-up-s-line"></i> </a>
                 <ul class="nav-menu drop-down-menu-hidden">
-                    <li><a href="design.html">Design</a></li>
+                     <li><a href="design.html">Design</a></li>
                     <li><a href="fabrication.html">Fabrication</a></li>
+                    <li><a href="dicing.html">Dicing</a></li>
+                    <li><a href="siliconphotonics.html">Silicon Photonics</a></li>
+                    <li><a href="servicesassebly.html">Assembly</a></li>
+                    <li><a href="Chiplet.html">Chiplets</a></li>
+
                 </ul>
             </li>
             <li><a href="application.html">APPLICATIONS</a></li>
@@ -356,9 +369,25 @@ let drop_down_menu_hidden = document.querySelector(".drop-down-menu-hidden");
 
 nav_toggles.addEventListener("click", () => {
     if (drop_down_menu_hidden.style.display === "block") {
-        drop_down_menu_hidden.style.display = "none"; // hide
+        // Hide with animation
+        drop_down_menu_hidden.style.opacity = "0";
+        drop_down_menu_hidden.style.transform = "translateY(-10px)";
+        
+        setTimeout(() => {
+            drop_down_menu_hidden.style.display = "none";
+        }, 300); // wait for animation to finish
     } else {
-        drop_down_menu_hidden.style.display = "block"; // show
+        // Show with animation
+        drop_down_menu_hidden.style.display = "block";
+        drop_down_menu_hidden.style.opacity = "0";
+        drop_down_menu_hidden.style.transform = "translateY(-10px)";
+
+        // small delay so transition can apply
+        setTimeout(() => {
+            drop_down_menu_hidden.style.opacity = "1";
+            drop_down_menu_hidden.style.transform = "translateY(0)";
+            drop_down_menu_hidden.style.transition = "all 0.3s ease";
+        }, 10);
     }
 });
 </script>

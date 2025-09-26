@@ -3123,6 +3123,7 @@ li {
 a,
 a:hover,
 a:focus {
+    color: black;
     text-decoration: none;
     border: 0;
     outline: 0;

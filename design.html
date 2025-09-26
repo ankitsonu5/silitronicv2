@@ -1402,6 +1402,11 @@
     .tabcontentss{
         display: none;
     }
+       
+     
+        .tabcontent-mobile {
+            display: none;
+        }
 
         .services-section-bg {
             background: url(../images/BG_3\ 5.png) !important;
@@ -2276,6 +2281,131 @@ Photonics Package Design</h4>
         </div>
 
 
+        <!-- mobile also add  -->
+
+<div class="only-mobile">
+    <section class="services-section">
+        <div class="containers">
+            <h2 class="heading" style="margin-bottom: 30px;">Design Services Spectrum</h2>
+
+            <div class="only-mobile-button-group">
+                <button class="only-mobile-button tablinks-mobile active"
+                    onclick="openCityMobile(event, 'schematic-and-layout-mobile')">Schematic and Layout</button>
+                <button class="only-mobile-button tablinks-mobile"
+                    onclick="openCityMobile(event, 'signal-integrity-mobile')">Signal Integrity</button>
+                <button class="only-mobile-button tablinks-mobile"
+                    onclick="openCityMobile(event, 'power-integrity-mobile')">Power Integrity</button>
+                <button class="only-mobile-button tablinks-mobile"
+                    onclick="openCityMobile(event, 'build-up-boards-mobile')">Build Up Boards</button>
+                <button class="only-mobile-button tablinks-mobile"
+                    onclick="openCityMobile(event, 'ceramic-substrate-mobile')">Ceramic Substrate</button>
+                <button class="only-mobile-button tablinks-mobile"
+                    onclick="openCityMobile(event, 'advanced-assembly-mobile')">Advanced Assembly</button>
+            </div>
+
+            <div class="mobilebox">
+                <!-- Schematic and Layout -->
+                <div id="schematic-and-layout-mobile" class="tabcontent-mobile" style="display: block;">
+                    <div class="servicestabcontent-containersM">
+                        <div><img src="./images/design-rule/one.png" alt=""></div>
+                        <div class="mobilealign">
+                            <h2>Schematic and Layout</h2>
+                            <p class="mypM">Using industry standard tools, Silitronics engineering team can
+                                create schematics from data sheets of merchant semiconductors or any custom
+                                drawing. We can do feasibility studies to select the best option between build
+                                up substrate or high density interconnect (HDI). After initial layout and SI/PI
+                                analysis, the design is reviewed to ensure design rules as well as DFM and DFA
+                                requirements are met before committing to FAB.​​</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Signal Integrity -->
+                <div id="signal-integrity-mobile" class="tabcontent-mobile">
+                    <div class="servicestabcontent-containersM">
+                        <div><img src="./images/design-rule/two.png" alt=""></div>
+                        <div class="mobilealign">
+                            <h2>Signal Integrity</h2>
+                            <p class="mypM">For applications requiring signal integrity (SI) and power integrity
+                                (PI) analysis, we work with the customer to understand their performance
+                                requirements. We use industry standard 2.5D and 3D field solvers to extract
+                                S-parameter model of the channel. Then, we fit the s-parameter model to a
+                                broadband spice model. Using this broadband SPICE channel model along with IBIS
+                                / IBIS-AMI models of the driver / receiver, we perform time / frequency domain
+                                analysis to study SI impairments such as crosstalk, impedance mismatch, and Eye
+                                diagrams. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Power Integrity -->
+                <div id="power-integrity-mobile" class="tabcontent-mobile">
+                    <div class="servicestabcontent-containersM">
+                        <div><img src="./images/design-rule/three.png" alt=""></div>
+                        <div class="mobilealign">
+                            <h2>Power Integrity</h2>
+                            <p class="mypM">To validate power integrity, we check PDN (Power distribution
+                                Network) DC IR drop, AC impedance and ripple noise. As an example, figure on the
+                                left shows a detailed multiport model of a SERDES PDN which includes die,
+                                package and PCB models. Simulated PDN impedance and time domain ripple noise is
+                                also shown for reference.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Build Up Boards -->
+                <div id="build-up-boards-mobile" class="tabcontent-mobile">
+                    <div class="servicestabcontent-containersM">
+                        <div><img src="./images/design-rule/four.png" alt=""></div>
+                        <div class="mobilealign">
+                            <h2>Build Up Boards</h2>
+                            <p class="mypM">All applications supported by Silitronics requires to understand
+                                cutting edge design rules and state-of-the-art processing technology. Flip Chip
+                                BGA and wire bond BGA substrates are semiconductor packages with high
+                                reliability requiring line/space of 15/15 (12/12 R&D), Fine pitch laser vias,
+                                blind and buried vias, surface finish (ENIG, ENEPIG, SOP, SAC 305) options with
+                                Halogen-free and Lead-free BOM.​</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ceramic Substrate -->
+                <div id="ceramic-substrate-mobile" class="tabcontent-mobile">
+                    <div class="servicestabcontent-containersM">
+                        <div><img src="./images/design-rule/five.png" alt=""></div>
+                        <div class="mobilealign">
+                            <h2>Ceramic Substrate</h2>
+                            <p class="mypM">We follow customer’s design, electrical and mechanical requirement of
+                                the product. In order to help with time to market, our team understand end
+                                application and special design requirements; such as, component size, placement,
+                                interference, impedance, circuit routing, thermal constraints, environmental
+                                constraints, etc. Silitronics has the knowledge, experience and resources to
+                                handle complicated design requirements in order to provide the best possible
+                                product.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advanced Assembly -->
+                <div id="advanced-assembly-mobile" class="tabcontent-mobile">
+                    <div class="servicestabcontent-containersM">
+                        <div><img src="./images/design-rule/six.png" alt=""></div>
+                        <div class="mobilealign">
+                            <h2>Advanced Assembly</h2>
+                            <p class="mypM">Silitronics team has over 100+ years of hands-on process development
+                                experience. With “Just Do It” attitude, in-house tooling design & fabrication,
+                                alongwith fully in-house automated equipment, allows Silitronics team to work
+                                with customers to “Push the Limit” with “Made In USA”. That helps customer with
+                                faster time to market and IP Protection.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
 
 
 
@@ -2595,7 +2725,7 @@ Photonics Package Design</h4>
                 <div class="containers">
                       <h2 class="heading" style="margin-bottom: 30px;">Our Services Spectrum</h2>
                     <div class="only-mobile-button-group">
-                        <button class="only-mobile-button tablinks-mobile "
+                        <button class="only-mobile-button tablinks-mobile " style="background-color: #8b7bb8 !important; color: white;"
                             onclick="openCityMobiles(event, 'DesignMobiles')">Design</button>
                         <button class="only-mobile-button tablinks-mobile "
                             onclick="openCityMobiles(event, 'FabricationMobiles') ">Fabrication</button>
@@ -2967,6 +3097,10 @@ window.addEventListener("load", function () {
 });
 
 
+
+
+
+
 // ========== SlimMenu ==========
 $('.slimmenu').slimmenu({
   resizeWidth: '991',
@@ -2996,7 +3130,7 @@ function openCityMobiles(evt, cityNameMobile) {
   }
 
   // Remove 'active' class from all mobile tab buttons
-  tablinksMobile = document.getElementsByClassName("tablinks-mobile");
+  tablinksMobile = document.getElementsByClassName("tablinks-mobiles");
   for (i = 0; i < tablinksMobile.length; i++) {
     tablinksMobile[i].classList.remove("active");
   }
@@ -3300,6 +3434,8 @@ navLinks.forEach(link => {
   });
 });
      </script>
+
+  
 </body>
 
 </html>
