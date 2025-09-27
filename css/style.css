@@ -6370,7 +6370,7 @@ a.myicon:hover {
     display: flex !important;
     justify-content: center !important;
     font-size: 30px !important;
-    line-height: 25px !important;
+    line-height: 32px !important;
 
 }
 
@@ -8143,6 +8143,11 @@ p.facility-card-text {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+    .ficistcontsec h2{
+        padding: 10px 0;
+    }
+
     .facility-content-wrapper {
         flex-direction: column;
         gap: 40px;
@@ -8194,7 +8199,7 @@ p.facility-card-text {
     line-height: 32px;
     font-weight: bold;
     margin-bottom: 20px;
-    line-height: 1.2;
+  
 }
 
 .why-silitronics h2 span {

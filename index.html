@@ -12,6 +12,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!--<link href="css/carousel-vertical.min.css" rel="stylesheet" type="text/css" />-->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/responsive.css" rel="stylesheet" type="text/css" />
@@ -24,8 +25,8 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap"
         rel="stylesheet">
 
-         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
-           <link rel="stylesheet" href="./css/popup.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/popup.css">
     <title>Silitronics</title>
     <!-- tech-box onestgrediant -->
     <style>
@@ -363,6 +364,7 @@
             .service-section-spectrum-section .card {
                 width: 350px;
             }
+
             .service-section-spectrum-section .card img {
                 width: 64px !important;
             }
@@ -566,11 +568,19 @@
             display: none;
         }
 
+          .flag-slider-section{
+                display: none;
+             }
         @media (max-width: 767px) {
 
-            .customervoicesecone{
+             .flag-slider-section{
+                display: block;
+             }
+
+            .customervoicesecone {
                 display: none;
             }
+
             .service-section-spectrum-section .container {
                 position: relative;
                 display: none;
@@ -620,7 +630,7 @@
                 min-width: 100%;
                 background: #ede3f9;
                 border-radius: 20px;
-                padding: 30px 36px;
+                padding: 40px 20px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 text-align: left;
                 height: 300px;
@@ -651,13 +661,14 @@
                 padding-left: 20px;
                 margin-top: 10px;
                 font-family: monospace;
-                font-size: 14px;
+                font-size: 13px;
+                line-height: 1.2;
             }
 
             .section-spectrum-mobile-view .slide ul li {
                 margin-top: 14px;
                 font-family: "Spline Sans Mono", monospace;
-                font-size: 16px;
+                font-size: 14px;
                 list-style-type: disc;
                 font-weight: 500;
             }
@@ -710,17 +721,18 @@
             }
 
             .section-spectrum-mobile-view h4 {
-                font-size: 28px;
+                font-size: 30px;
+                line-height: 32px;
             }
 
             .section-spectrum-mobile-view .arrow-left {
                 left: 24px;
-                top: 60%;
+                top: 64%;
             }
 
             .section-spectrum-mobile-view .arrow-right {
                 right: 24px;
-                top: 60%;
+                top: 64%;
             }
 
             .fstcontsec .lftrytlinepart h3 {
@@ -749,7 +761,7 @@
             }
 
             .section-spectrum-mobile-view .slide {
-                height: 320px;
+                height: 280px;
             }
         }
 
@@ -770,54 +782,81 @@
         /* spectrum section style end */
 
 
-            /* <!-- tech-box onestgrediant --> */
-
-    
-    
-
-       .heads{
-        padding-top: 10px;
-       }
+        /* <!-- tech-box onestgrediant --> */
 
 
-.service-section-spectrum-section .card {
-  border: 1px solid transparent;
-  transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 8px;
+
+
+        .heads {
+            padding-top: 10px;
+        }
+
+
+        .service-section-spectrum-section .card {
+            border: 1px solid transparent;
+            transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .service-section-spectrum-section .card:hover {
+            transform: scale(1.03);
+            /* thoda card bada ho jayega */
+            border: 2px solid #000;
+            /* border mota hoga */
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+            /* thoda zyada shadow */
+        }
+
+
+        /* mobile  */
+        .section-spectrum-mobile-view .slide {
+            border: 1px solid transparent;
+            border-radius: 0px 0 30px 0;
+            transition: border 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+            border-radius: 0 0 30px 0 !important;
+        }
+
+        .section-spectrum-mobile-view .slide:hover {
+            border: 1px solid #000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+        }
+
+        .flag-slider-section {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  margin-top: 80px;
 }
 
-.service-section-spectrum-section .card:hover {
-  transform: scale(1.03); /* thoda card bada ho jayega */
-  border: 2px solid #000; /* border mota hoga */
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15); /* thoda zyada shadow */
+.flag-slider-section .slide-icon img {
+  width: fit-content;
+  margin: auto;
 }
 
-
-/* mobile  */
-.section-spectrum-mobile-view .slide {
-  border: 1px solid transparent;
-  border-radius: 0px 0 30px 0;
-  transition: border 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
-  border-radius: 0 0 30px 0 !important;
+.flag-slider-section h3 {
+  margin-top: 15px;
+  font-size: 14px; /* 👈 updated from 18px to 20px */
+  font-weight: bold;
 }
 
-.section-spectrum-mobile-view .slide:hover {
-  border: 1px solid #000;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  cursor: pointer;
+.flag-slider-section .swiper-button-prev,
+.flag-slider-section .swiper-button-next {
+  color: #000;      /* 👈 black color */
 }
 
-
-
-
-
+.flag-slider-section .swiper-button-prev::after,
+.flag-slider-section .swiper-button-next::after {
+  font-size: 14px;  /* 👈 arrow size */
+}
     </style>
 </head>
 
 <body>
 
 
-           <!-- <section class="fifthcontsec fifthcontsecond">
+    <!-- <section class="fifthcontsec fifthcontsecond">
 
            <img class="pop-up-left-art" src="./images/pop-up-left-art.png" alt="">
         <div class="container">
@@ -841,9 +880,9 @@
                                     class="inputfield"></div>
                             <div class="inputfieldwidth"><textarea name="comments" class="textareafield"
                                     placeholder="Comments"></textarea></div> -->
-                            <!-- <div class="inputfieldwidth"><input type="submit" name="submit" value="submit"
+    <!-- <div class="inputfieldwidth"><input type="submit" name="submit" value="submit"
                                         class="submitbut"></div> -->
-                            <!-- <button class="submitbut">SUBMIT</button>
+    <!-- <button class="submitbut">SUBMIT</button>
                         </form>
                     </div>
                 </div>
@@ -928,7 +967,7 @@
                             <a href="#contactsecd" class="getintouchbut">Get in touch</a>
                         </div>
                     </div>
-                   <img src="images/bannerimg01.jpg" alt="">
+                    <img src="images/bannerimg01.jpg" alt="">
                 </div>
                 <div class="item">
                     <div class="slidecontpart">
@@ -936,10 +975,10 @@
                             <h1>Powering the <br>high-speed data <br>revolution with <br>photonics</h1>
                             <p>Delivering precision optical <br>alignment that ensures low-latency, <br>high-bandwidth
                                 solutions for AI,<br> HPC, and 6G networks.</p>
-                            <a href="./siliconphotonics.html"  target="_self" class="getintouchbut">LEARN MORE</a>
+                            <a href="./siliconphotonics.html" target="_self" class="getintouchbut">LEARN MORE</a>
                         </div>
                     </div>
-                  <img src="images/bannerimg02.jpg" alt="">
+                    <img src="images/bannerimg02.jpg" alt="">
                 </div>
                 <div class="item">
                     <div class="slidecontpart">
@@ -958,7 +997,8 @@
                             <h1>ENABLING LIDAR EVOLUTION <br> WITH MULTI-CHIPLET<br> SIP PACKAGING.</h1>
                             <p>Advanced heterogeneous integration <br> and high-precision SiP solutions <br>optimizing
                                 performance, scalability, <br>and efficiency for next-gen ADAS.</p>
-                            <a href="javascript:void(0)" target="_self" class="getintouchbut downloadusecasebut">Read Case Study</a>
+                            <a href="javascript:void(0)" target="_self" class="getintouchbut downloadusecasebut">Read
+                                Case Study</a>
                         </div>
                     </div>
                     <img src="images/bannerimg04.png" alt="">
@@ -985,7 +1025,7 @@
                             <a href="./fabrication.html" class="getintouchbut">LEARN MORE</a>
                         </div>
                     </div>
-                   <img src="images/bannerimg06.png" alt="">
+                    <img src="images/bannerimg06.png" alt="">
                 </div>
 
 
@@ -995,7 +1035,7 @@
         </section>
         <!-- Mobile Banner Carousel -->
         <!-- 349 in responcive css its test alignment code  -->
-         <section class="bannersec-mobile">
+        <section class="bannersec-mobile">
             <div class="owl-carousel owl-theme slidersec-mobile">
                 <div class="item">
                     <div class="slidecontpart" id="bannerText1">
@@ -1015,7 +1055,7 @@
                             <h1>Powering the <br> high-speed data<br> revolution with<br>photonics</h1>
                             <p>Delivering precision optical<br>alignment that ensures low-<br>latency, high-bandwidth
                                 solutions<br>for AI, HPC, and 6G networks.</p>
-                            <a href="./siliconphotonics.html"  target="_self" class="getintouchbut">LEARN MORE</a>
+                            <a href="./siliconphotonics.html" target="_self" class="getintouchbut">LEARN MORE</a>
                         </div>
                     </div>
                     <img src="images/mobile-banner/mobile_banner_2.png">
@@ -1026,7 +1066,7 @@
                             <h1>Engineering <br>the foundation<br>of next-gen<br>semiconductor<br>packaging.</h1>
                             <p>Pioneering high-precision design <br>and advanced substrate fabrication <br>to power AI,
                                 HPC, 5G, and next-gen <br>computing with unmatched <br>reliability.</p>
-                          <a href="./design.html" target="_self" class="getintouchbut">LEARN MORE</a>
+                            <a href="./design.html" target="_self" class="getintouchbut">LEARN MORE</a>
                         </div>
                     </div>
                     <img src="images/mobile-banner/mobile_banner_3.png">
@@ -1039,7 +1079,8 @@
                             <p>Advanced heterogeneous <br>integration and high-precision <br>SiP solutions optimizing
                                 <br>performance scalability, and <br>efficiency for next-gen ADAS.
                             </p>
-                            <a href="javascript:void(0)" target="_self" class="getintouchbut downloadusecasebut">Read Case Study</a>
+                            <a href="javascript:void(0)" target="_self" class="getintouchbut downloadusecasebut">Read
+                                Case Study</a>
                         </div>
                     </div>
                     <img src="images/mobile-banner/mobile_banner_4.png">
@@ -1051,7 +1092,7 @@
                             <p>Wafer thinning, polishing <br>and dicing (including <br>stealth laser) of upto 12
                                 <br>inch diameter.
                             </p>
-                              <a href="./dicing.html" class="getintouchbut">LEARN MORE</a>
+                            <a href="./dicing.html" class="getintouchbut">LEARN MORE</a>
                         </div>
                     </div>
                     <img src="images/mobile-banner/mobile_banner_5.png">
@@ -1061,7 +1102,7 @@
                         <div class="container">
                             <h1>BUILD-UP SUBSTRATE <br>FABRICATION.</h1>
                             <p>Advanced flipchip<br> substrate 70x70, 6-2-6,12 <br> micron line space.</p>
-                              <a href="./fabrication.html" class="getintouchbut">LEARN MORE</a>
+                            <a href="./fabrication.html" class="getintouchbut">LEARN MORE</a>
                         </div>
                     </div>
                     <img src="images/mobile-banner/mobile_banner_6.png">
@@ -1069,7 +1110,7 @@
             </div>
         </section>
 
-      
+
 
         <!-- spectrum section desktop and tablet screen view -->
         <section class="service-section-spectrum-section">
@@ -1274,7 +1315,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mobileview">
+
+                    <!-- mobile siwper js  -->
+                    <!-- <div class="mobileview">
                         <div class="fstsecforthcolpart">
                             <div class="owl-carousel owl-theme foursegmentsec">
                                 <div class="item">
@@ -1303,9 +1346,55 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <h3 class="fstcontsec-bottom-head">Your Trusted One-Stop Partner For Advanced Semiconductors and
                         Photonics Packaging</h3> -->
+
+                    <!-- New Swiper Slider -->
+                    <div class="flag-slider-section">
+                        <div class="swiper myFlagSlider">
+                            <div class="swiper-wrapper">
+                                <!-- Slide 1 -->
+                                <div class="swiper-slide">
+                                    <div class="slide-icon">
+                                        <img src="images/usa.png" alt="USA Flag" />
+                                        <h3>Made in USA</h3>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 2 -->
+                                <div class="swiper-slide">
+                                    <div class="slide-icon">
+                                        <img src="images/1.png" alt="Solutions" />
+                                        <h3>Complete Turnkey Solutions</h3>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 3 -->
+                                <div class="swiper-slide">
+                                    <div class="slide-icon">
+                                        <img src="images/vector.png" alt="First Time Right" />
+                                        <h3>First Time Right</h3>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 4 -->
+                                <div class="swiper-slide">
+                                    <div class="slide-icon">
+                                        <img src="images/prototype.png" alt="Prototype" />
+                                        <h3>Prototype to Volume</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Arrows -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- Pagination Dots -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1654,7 +1743,7 @@
 
             <div class="container">
                 <div class="owl-carousel owl-theme slidersec">
-                    <!-- Slide 1 --> 
+                    <!-- Slide 1 -->
                     <div class="slide">
                         <img src="images/serviceimg01.png" />
                         <h3>Early Packaging Architecture <br> Exploration and Feasibility Analysis</h3>
@@ -1856,11 +1945,11 @@
 
                 <!-- mobileindystrysection -->
                 <div class="mobindustryleadersec">
-                <div class="customervoicesec">
-                    <h2>Selected and trusted by Industry  leaders and Innovative Startups</h2>
-                </div>
+                    <div class="customervoicesec">
+                        <h2>Selected and trusted by Industry leaders and Innovative Startups</h2>
+                    </div>
                     <div class="owl-carousel owl-theme industryleadercareosel">
-                        
+
                         <div class="item">
                             <div class="sgleindustrysec">
                                 <div class="tech-box onestgrediant myibox">
@@ -1958,7 +2047,7 @@
             </div>
         </section>
 
-       <!-- this section we add from facility pages  -->
+        <!-- this section we add from facility pages  -->
 
         <div class="only-desktop">
             <!-- fifth section facility -->
@@ -1971,12 +2060,13 @@
                         <div class="facility-card">
                             <div class="facilityr1">
                                 <div class="facilityimg"><img src="./svg/WhychooseSilitronics__1.svg">
-                                
-                                
+
+
                                 </div>
                                 <h3 class="facility-card-title"><span class="fnum">20,000+</span> sq.ft.
-                                   <br> State-of-the-Art
-                                    Facility:</h3>
+                                    <br> State-of-the-Art
+                                    Facility:
+                                </h3>
                             </div>
 
                             <p class="facility-card-text">Equipped with 10K clean rooms and fully automated assembly
@@ -1985,14 +2075,15 @@
                         </div>
 
                         <div class="facility-card">
-                                <div class="facilityr1">
+                            <div class="facilityr1">
                                 <div class="facilityimg"><img src="./svg/WhychooseSilitronics__2.svg"></div>
                                 <h3 class="facility-card-heading">One-Stop Solutions</h3>
                             </div>
-                            <p class="facility-card-text" style="margin-top: 20px;">From concept to finished product, we handle it all—design,
+                            <p class="facility-card-text" style="margin-top: 20px;">From concept to finished product, we
+                                handle it all—design,
                                 assembly, testing, and delivery.</p>
                         </div>
-                          
+
 
                         <div class="facility-card">
                             <div class="facilityr1">
@@ -2016,7 +2107,7 @@
                                 for
                                 standard builds.</p>
                         </div>
-                          
+
 
                         <div class="facility-card">
                             <div class="facilityr1">
@@ -2035,50 +2126,51 @@
         </div>
 
         <div class="only-mobile">
-    <section class="why-silitronics ficistcontsec">
-        <h2>Why choose <span>Silitronics?</span></h2>
+            <section class="why-silitronics ficistcontsec">
+                <h2>Why choose <span>Silitronics?</span></h2>
 
-        <div class="feature-box">
-            <div class="featurer1lay">
-                <img src="images/one.png" alt="Icon 1" />
-                <h3>20,000+ sq.ft.<br>State-of-the-Art Facility:</h3>
-            </div>
-            <p>Equipped with 10K clean rooms and fully automated assembly lines for unparalleled precision.</p>
-        </div>
+                <div class="feature-box">
+                    <div class="featurer1lay">
+                        <img src="images/one.png" alt="Icon 1" />
+                        <h3>20,000+ sq.ft.<br>State-of-the-Art Facility:</h3>
+                    </div>
+                    <p>Equipped with 10K clean rooms and fully automated assembly lines for unparalleled precision.</p>
+                </div>
 
-        <div class="feature-box">
-            <div class="featurer1lay">
-                <img src="images/two.png" alt="Icon 2" />
-                <h3>One-Stop Solutions</h3>
-            </div>
-            <p>From concept to finished product, we handle it all—design, assembly, testing, and delivery.</p>
-        </div>
+                <div class="feature-box">
+                    <div class="featurer1lay">
+                        <img src="images/two.png" alt="Icon 2" />
+                        <h3>One-Stop Solutions</h3>
+                    </div>
+                    <p>From concept to finished product, we handle it all—design, assembly, testing, and delivery.</p>
+                </div>
 
-        <div class="feature-box">
-            <div class="featurer1lay">
-                <img src="images/three.png" alt="Icon 3" />
-                <h3>Cutting-Edge Equipment</h3>
-            </div>
-            <p>From ±0.5μm flip chip placement to automatic wire bonding at 20μm pitch, we deliver unmatched accuracy.</p>
-        </div>
+                <div class="feature-box">
+                    <div class="featurer1lay">
+                        <img src="images/three.png" alt="Icon 3" />
+                        <h3>Cutting-Edge Equipment</h3>
+                    </div>
+                    <p>From ±0.5μm flip chip placement to automatic wire bonding at 20μm pitch, we deliver unmatched
+                        accuracy.</p>
+                </div>
 
-        <div class="feature-box">
-            <div class="featurer1lay">
-                <img src="images/four.png" alt="Icon 4" />
-                <h3>Industry-Leading Speed</h3>
-            </div>
-            <p>8-hour turnaround for urgent prototypes and 3-day cycle times for standard builds.</p>
-        </div>
+                <div class="feature-box">
+                    <div class="featurer1lay">
+                        <img src="images/four.png" alt="Icon 4" />
+                        <h3>Industry-Leading Speed</h3>
+                    </div>
+                    <p>8-hour turnaround for urgent prototypes and 3-day cycle times for standard builds.</p>
+                </div>
 
-        <div class="feature-box">
-            <div class="featurer1lay">
-                <img src="images/five.png" alt="Icon 5" />
-                <h3>Proven Expertise</h3>
-            </div>
-            <p>99% yield on SiP modules and 90%+ yield on RF and flex assemblies.</p>
+                <div class="feature-box">
+                    <div class="featurer1lay">
+                        <img src="images/five.png" alt="Icon 5" />
+                        <h3>Proven Expertise</h3>
+                    </div>
+                    <p>99% yield on SiP modules and 90%+ yield on RF and flex assemblies.</p>
+                </div>
+            </section>
         </div>
-    </section>
-       </div>
 
 
 
@@ -2135,7 +2227,7 @@
                                 </div>
                             </div>
                         </div>
-                         <div class="sglecasestudycontsec" style="background-image: url(images/Case_study.png);">
+                        <div class="sglecasestudycontsec" style="background-image: url(images/Case_study.png);">
                             <div class="transparentbg">
                                 <div class="casestudycontpart">
                                     <h3>Heterogeneous Integration: Unlocking Next-Gen Semiconductor Performance Beyond
@@ -2217,7 +2309,8 @@
                 <div class="topftrflexpart">
                     <div class="topftrcolpart">
                         <div class="ftrlogo"><img src="./svg/Silitronics-White.svg">
-                        <img class="ftrlogosecond" src="./svg/GDSI-logo.svg"></div>
+                            <img class="ftrlogosecond" src="./svg/GDSI-logo.svg">
+                        </div>
                         <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics
                             packaging–pushing the boundaries of design, fabrication, and assembly while driving
                             sustainability.</p>
@@ -2230,7 +2323,7 @@
                             <li><a href="./service.html">Services</a></li>
                             <li><a href="./application.html">Applications</a></li>
                             <li><a href="./facility.html">Facility</a></li>
-                           <!-- <li><a href="./resource.html">Resources hub</a></li> -->
+                            <!-- <li><a href="./resource.html">Resources hub</a></li> -->
                             <li><a href="./about.html">About us</a></li>
                             <li><a href="./contact.html">Contact us</a></li>
                         </ul>
@@ -2244,7 +2337,7 @@
                             <a href="#" class="ftrsocial"><img src="images/linkedin.svg"></a>
                         </p>
 
-                            <!-- <div class="ftrmap"><img src="images/map.jpg"></div> -->
+                        <!-- <div class="ftrmap"><img src="images/map.jpg"></div> -->
                         <p class="heads">Grinding and Dicing Services Inc</p>
                         <p>925 Berryessa Road - San Jose, CA 95133</p>
                         <p>Email: sales@dieprepservices.com</p>
@@ -2254,7 +2347,10 @@
                         </p> -->
                     </div>
                     <div class="topftrcolpart  ">
-                        <div class="ftrmap"> <iframe  class="ftrmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8770204884054!2d-121.9673431!3d37.369086700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcea9b87697e9%3A0x41f8ffcc2946d1a3!2sSilitronics%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1758194948800!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                        <div class="ftrmap"> <iframe class="ftrmaps"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8770204884054!2d-121.9673431!3d37.369086700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcea9b87697e9%3A0x41f8ffcc2946d1a3!2sSilitronics%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1758194948800!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                         <a href="#" class="backtotop">back to top</a>
                     </div>
                 </div>
@@ -2273,11 +2369,12 @@
             <div class="container">
                 <div class="topftrflexpart">
                     <div class="topftrcolpart">
-                
-                              <div class="ftrlogo"><img src="./svg/Silitronics-White.svg">
-                        <img class="ftrlogosecond" src="./svg/GDSI-logo.svg"></div>
-                        
-                     
+
+                        <div class="ftrlogo"><img src="./svg/Silitronics-White.svg">
+                            <img class="ftrlogosecond" src="./svg/GDSI-logo.svg">
+                        </div>
+
+
                         <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics
                             packaging-pushing the boundaries of design, fabrication, and assembly while driving
                             sustainability.</p>
@@ -2289,11 +2386,14 @@
                             <li><a href="service.html">Services</a></li>
                             <li><a href="./application.html">Applications</a></li>
                             <li><a href="./facility.html">Facility</a></li>
-                           <!-- <li><a href="./resource.html">Resources hub</a></li> -->
+                            <!-- <li><a href="./resource.html">Resources hub</a></li> -->
                             <li><a href="./about.html">About us</a></li>
                             <li><a href="./contact.html">Contact us</a></li>
                         </ul>
-                          <div class="ftrmap"><iframe  class="ftrmapsd" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8770204884054!2d-121.9673431!3d37.369086700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcea9b87697e9%3A0x41f8ffcc2946d1a3!2sSilitronics%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1758194948800!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                        <div class="ftrmap"><iframe class="ftrmapsd"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8770204884054!2d-121.9673431!3d37.369086700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcea9b87697e9%3A0x41f8ffcc2946d1a3!2sSilitronics%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1758194948800!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                     </div>
                     <div class="topftrcolpart">
                         <p>Silitronics Solutions Inc 2388 Walsh Avenue, Santa Clara, CA, 95051</p>
@@ -2303,16 +2403,17 @@
                             <a href="#" class=" myicon"><img src="images/linkedin.svg"></a>
                         </p>
 
-                          <p style="margin-top: 10px;">Grinding and Dicing Services Inc 925 Berryessa Road - San Jose, CA 95133</p>
+                        <p style="margin-top: 10px;">Grinding and Dicing Services Inc 925 Berryessa Road - San Jose, CA
+                            95133</p>
                         <p>Email: <br> sales@dieprepservices.com</p>
                         <p>Phone: +1 408-451-2000,<br> +1 408-451-20008</p>
                         <!-- <p class="social"><a href="#" class="myicon"><img src="images/youtube.svg"></a>
                             <a href="#" class=" myicon"><img src="images/linkedin.svg"></a>
                         </p> -->
 
-                      
 
-                        
+
+
                         <!-- <div class="social-icons">
   <a href="https://youtube.com" target="_blank">
     <img src="images/youtube.svg" alt="YouTube">
@@ -2339,7 +2440,7 @@
     </section>
 
 
-  
+
 
     <a href="#contactsec" class="fixed-getintouch"><img src="./images/Getintouch1.png" alt=""></a>
     <script src="js/jquery.min.js" type="text/javascript"></script>
@@ -2545,7 +2646,7 @@
     </script>
 
 
-                <!-- we addd js  -->
+    <!-- we addd js  -->
     <script>
 
         let downloadusecasebut = document.querySelectorAll('.downloadusecasebut');
@@ -2576,60 +2677,80 @@
             }, 400); // transition ke baad hide karo
         });
 
-    </script> 
+    </script>
 
 
-<!-- card clickable for desktop -->
+    <!-- card clickable for desktop -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // 6 pages ke links
+            const urls = [
+                "design.html",
+                "fabrication.html",
+                "dicing.html",
+                "siliconphotonics.html",
+                "servicesassebly.html",
+                "Chiplet.html"
+            ];
+
+
+
+            // saare cards ko select karo
+            const cards = document.querySelectorAll(".service-section-spectrum-section .card");
+
+            // har card ko uska url assign karo
+            cards.forEach((card, index) => {
+                console.log(index)
+                card.style.cursor = "pointer"; // hover pe pointer cursor aayega
+                card.addEventListener("click", () => {
+                    window.location.href = urls[index]; // card click hote hi redirect
+                });
+            });
+        });
+    </script>
+
+    <!-- mobile  -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const urls = [
+                "design.html",
+                "fabrication.html",
+                "dicing.html",
+                "siliconphotonics.html",
+                "servicesassebly.html",
+                "Chiplet.html"
+            ];
+
+            const slides = document.querySelectorAll(".section-spectrum-mobile-view .slide");
+
+            slides.forEach((slide, index) => {
+                slide.addEventListener("click", () => {
+                    window.location.href = urls[index];
+                });
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // 6 pages ke links
-    const urls = [
-      "design.html",
-      "fabrication.html",
-      "dicing.html",
-      "siliconphotonics.html",
-      "servicesassebly.html",
-      "Chiplet.html"
-    ];
-
-
-
-    // saare cards ko select karo
-    const cards = document.querySelectorAll(".service-section-spectrum-section .card");
-
-    // har card ko uska url assign karo
-    cards.forEach((card, index) => {
-        console.log(index)
-      card.style.cursor = "pointer"; // hover pe pointer cursor aayega
-      card.addEventListener("click", () => {
-        window.location.href = urls[index]; // card click hote hi redirect
-      });
-    });
-  });
-</script>
-
-<!-- mobile  -->
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const urls = [
-       "design.html",
-      "fabrication.html",
-      "dicing.html",
-      "siliconphotonics.html",
-      "servicesassebly.html",
-      "Chiplet.html"
-    ];
-
-    const slides = document.querySelectorAll(".section-spectrum-mobile-view .slide");
-
-    slides.forEach((slide, index) => {
-      slide.addEventListener("click", () => {
-        window.location.href = urls[index];
-      });
-    });
-  });
+    var swiper = new Swiper(".myFlagSlider", {
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 3000, // 3 seconds per slide
+    disableOnInteraction: false, // user click ke baad bhi autoplay continue rahe
+  },
+});
 </script>
 
 </body>
