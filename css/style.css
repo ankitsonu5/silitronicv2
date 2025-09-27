@@ -927,6 +927,40 @@ a.getintouchbut:hover {
     background: linear-gradient(267.42deg, #FD0200 -86.89%, #050EF1 1083.09%);
 }
 
+
+
+
+
+.onestgrediants {
+    background: linear-gradient(267.62deg, #FD0200 -800.9%, #050EF1 433.34%);
+}
+
+.twostgrediants {
+    background: linear-gradient(267.62deg, #FD0200 -680.08%, #050EF1 482.9%);
+}
+
+.threegradients {
+    background: linear-gradient(267.62deg, #FD0200 -564.5%, #050EF1 615.58%);
+}
+
+.fourgradients {
+    background: linear-gradient(267.62deg, #FD0200 -446.3%, #050EF1 720.96%);
+}
+
+.fivegradients {
+    background: linear-gradient(270deg, #FD0200 -339.36%, #050EF1 879.39%);
+}
+
+.sixgradients {
+    background: linear-gradient(267.62deg, #FD0200 -207.05%, #050EF1 965.91%);
+}
+
+.sevenstgrediants {
+    background: linear-gradient(267.42deg, #FD0200 -86.89%, #050EF1 1083.09%);
+}
+
+
+
 .tech-box {
 
 
@@ -6356,8 +6390,9 @@ a.myicon:hover {
     background-clip: padding-box, border-box;
     background-origin: border-box;
     background-image:
-        linear-gradient(#fff, #fff),  /* andar ka background */
-        linear-gradient(90deg, #050EF1, #FD0200); /* border gradient */
+        linear-gradient(#fff, #fff),
+        linear-gradient(90deg, #050EF1, #FD0200);
+        /* clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0% 100%); */
 }
 
 .mylayout {
