@@ -642,7 +642,7 @@ a.getintouchbut
     font-size: 30px;
     line-height: 32px;
     text-align: center;
-    padding: 40px;
+    /* padding: 40px; */
 }
 .fstservicecontsec h2
 {
