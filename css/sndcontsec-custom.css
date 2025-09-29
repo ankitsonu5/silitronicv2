@@ -35,12 +35,12 @@
 
    @media screen and (max-width: 480px) {
      .sndcontsecond {
-       padding: 8rem 0rem;
+       padding: 4rem 0rem;
      }
 
      .one,
      .two {
-       max-width: 96px;
+       max-width: 80px;
        bottom: 0px;
      }
    }
