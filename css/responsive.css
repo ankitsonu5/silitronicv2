@@ -642,6 +642,7 @@ a.getintouchbut
     font-size: 30px;
     line-height: 32px;
     text-align: center;
+    padding: 40px;
 }
 .fstservicecontsec h2
 {
@@ -928,7 +929,8 @@ a.getintouchbut
 } */
 .lftrytlinepart
 {
-    padding: 0 10px;
+    padding: 0 0px;
+      /* padding: 0 10px; */
 }
 .sndserviceconttabsec ul
 {
