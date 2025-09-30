@@ -26,7 +26,9 @@
         rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/sndcontsec-custom.css">
     <link rel="stylesheet" href="./css/popup.css">
+
     <title>Silitronics</title>
     <!-- tech-box onestgrediant -->
     <style>
@@ -724,6 +726,10 @@
         }
 
         @media (max-width: 543px) {
+
+            .one,.two{
+                width: 70px;
+            }
              .service-section-spectrum-section h4 {
             font-size: 16px;
             line-height: 26px;
@@ -808,6 +814,9 @@
             
 
             @media (max-width:767px){
+                .oss{
+                    margin-top: 50px;
+                }
 
            .fstcontsec .lftrytlinepart h3 {
                 color: #000 !important;
@@ -815,6 +824,41 @@
                 line-height: 32px;
                 margin-bottom: 24px;
             }
+            }
+
+            @media(min-width:767px) and (max-width:1300px){
+                  .toparrow {
+            position: absolute;
+            top: 200px;
+            right: 0px;
+            z-index: 100;
+            cursor: pointer;
+
+           
+        }
+
+        .bottomarrow {
+            position: absolute;
+            bottom: 150px;
+            right: 0px;
+            z-index: 100;
+            cursor: pointer;
+        }
+
+        /* Custom Dots Navigation */
+        .custom-dots {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 10;
+        }
+
+           
+
             }
          .service-section-spectrum-section h4 {
             font-size: 70px;
@@ -905,12 +949,46 @@
             /* line-height: 85px; */
         }
 
-        .mylayouts {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-            background: url(../images/sndcontsecbg.png);
+    
+        .sndcontsecond{
+            background-image: url(./images/sndcontsecbg2.jpeg) ;
             background-size: cover;
+            background-repeat: no-repeat;
+          
         }
+
+        .servicwcontentsec h3{
+            text-align: left;
+        }
+        .servicwcontentsec p{
+            text-align: left;
+        }
+
+        .slide h3{
+            text-align: left;
+        }
+
+         @media(min-width:481px) and (max-width:768px){
+          
+            .sndcontsecond{
+                padding-top: 0;
+                padding-bottom:4rem ;
+            }
+            .one,.two{
+                width: 90px;
+            }
+        }
+          @media(min-width:768px) and (max-width:1400px){
+          
+            .sndcontsecond{
+                padding-top: 4rem;
+                padding-bottom:6rem ;
+            }
+            .one,.two{
+                width: 8rem;
+            }
+        }
+
     </style>
 </head>
 
@@ -1461,7 +1539,9 @@
         </section>
 
         <!-- desktop our service code -->
-        <section class="sndcontsec only-desktop mylayouts rela">
+        <section class="sndcontsec only-desktop  sndcontsecond rela">
+                <img class="one" src="./images/rainbow-style-art-one.png" alt="">
+
             <div class="toparrow"> <img src="images/toparw.png"> </div>
 
             <!-- Custom Dots Navigation -->
@@ -1795,11 +1875,14 @@
                     </div>
 
                 </div>
+
+                  <img class="two" src="./images/rainbow-style-art-two.png" alt="">
         </section>
         <!-- mobile our service code  -->
-        <section class="service-section only-mobile sndcontsec mylayout myslide  mobiles">
+        <section class="service-section only-mobile sndcontsec mylayout  myslide  mobiles sndcontsecond">
+             <img class="one" src="./images/rainbow-style-art-one.png" alt="">
 
-            <h2><span class="">Our Services Spectrum</span></h2>
+            <h2><span class="oss">Our Services Spectrum</span></h2>
             <!-- <img src="images/serviceimg01.png" /></div> -->
 
             <div class="container">
@@ -1915,6 +1998,7 @@
 
                 </div>
             </div>
+                <img class="two" src="./images/rainbow-style-art-two.png" alt="">
         </section>
 
         <section class="thrdcontsec">
