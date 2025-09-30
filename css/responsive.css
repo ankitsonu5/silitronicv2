@@ -34,8 +34,8 @@ body
 }
 .customervoicesec h2, .casestudiessec h2, .leftcontpanel h2, .fstservicecontsec h2, .fstappcontsec h2, .sndapppgcontflex h2, .fstfacilitysecbtmdiv h2, .sndfacilitycontsec h2, .thrdfacilitycontsec h2, .topfacilitysec h2, .midfacilitysec h2, .thrdabtcontsec h2, .frthabtcontsec h2, .fifthabtcontsec h2, .sixthhabtcontsec h2, .lftrytlinepart h4, .sndcontsec h2
 {
-    font-size: 60px;
-    line-height: 75px;
+    font-size: 70px;
+    line-height: 85px;
 }
 .hovercustomersec p
 {
@@ -1148,7 +1148,7 @@ a.whtedownloadusecasebut
 {
     min-height: auto;
     padding: 10px;
-    font-size: 14px;
+    font-size: 19px;
     line-height: 1.3;
     text-align: center;
 }
