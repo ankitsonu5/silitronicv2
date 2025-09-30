@@ -172,7 +172,7 @@ a.getintouchbut
 {
     font-size: 50px;
     line-height: 65px;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
 }
 .resourcetabnfiltersec, .mapimgsec, .fstfacilitysecbtmdiv, .midfacilitysec, .thrdabtcontsec, .frthabtcontsec, .fifthabtcontsec, .sixthhabtcontsec
 {
