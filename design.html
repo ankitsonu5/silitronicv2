@@ -78,6 +78,8 @@
         }
 
         @media screen and (max-width: 768px) {
+
+            
             .sndcontsec h2{
                 padding: 0 30px 30px 30px;
             }
@@ -1240,13 +1242,30 @@
             .servicestabcontent-containers {
                 overflow: visible;
             }
+             .only-mobile-buttons{
+          
+                font-size: 9px;
+            }
         }
 
-        @media screen and (max-width: 480px) {
-   
-            .only-mobile-buttons{
-                font-size: 10px;
+        @media  (min-width:350px) and (max-width:400px){
+             .only-mobile-buttons{
+                min-width: 150px;
+                font-size: 9px;
             }
+        }
+          @media  (min-width:401px) and (max-width:480px){
+             .only-mobile-buttons{
+                    min-width: 170px;
+                font-size: 11px;
+            }
+        }
+
+
+
+        @media  (max-width: 480px) {
+   
+         
 
             .only-mobile-button-groups {
                 display: flex;
@@ -1500,6 +1519,8 @@
             background: url(../images/BG_3\ 5.png) !important;
             background-size: cover !important;
         }
+
+       
     </style>
 </head>
 
@@ -2826,7 +2847,7 @@
                             onclick="openCityMobiles(event, 'DicingMobiles')">Dicing</button>
 
                         <button class="only-mobile-button tablinks-mobiles"
-                            onclick="openCityMobiles(event, 'SiliconPhotonicsMobiles')">Silicon <br> Photonics</button>
+                            onclick="openCityMobiles(event, 'SiliconPhotonicsMobiles')">Silicon Photonics</button>
 
                         <button class="only-mobile-button tablinks-mobiles"
                             onclick="openCityMobiles(event, 'AssemblyMobiles')">Assembly</button>

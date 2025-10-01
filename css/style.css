@@ -6770,6 +6770,7 @@ section.services-section {
 
 /* Button Group Layout */
 .only-mobile-button-group {
+
     display: flex;
 
 
@@ -7422,6 +7423,25 @@ p.mypM {
     }
 }
 
+@media (min-width:768px) and (max-width:1400px){
+.tab button {
+    background-color: transparent;
+    border: 2px solid #7a28c6;
+    /* light purple border */
+    color: #000;
+    /* dark text */
+    padding: 15px 25px !important;
+    margin: 5px;
+    font-size: 18px !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-family: 'Titillium Web' !important;
+    /* clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0% 100%)!important; */
+    border-radius: 0 0 20px 0;
+}
+
+}
 /* 
 .card-wrapper {
   display: flex;
@@ -7566,6 +7586,7 @@ p.mypM {
 }
 
 .only-mobile-button-app {
+
     display: inline-block;
     padding: 5px 18px !important;
     font-size: 10px;
@@ -9061,3 +9082,25 @@ padding-top: 10px !important;
   .section-spectrum-mobile-view .slide{
     border-radius: 0 0 30px 0 !important;
   }
+
+
+
+   @media  (min-width:350px) and (max-width:400px){
+             .only-mobile-button,.only-mobile-buttons{
+                min-width: 150px;
+                font-size: 9px;
+                border-radius: 0 0 12px 0;
+            }
+        }
+          @media  (min-width:401px) and (max-width:480px){
+             .only-mobile-button,.only-mobile-buttons{
+                    min-width: 170px;
+                font-size: 12px;
+                 border-radius: 0 0 12px 0;
+            }
+        }
+        
+
+
+        
+        
