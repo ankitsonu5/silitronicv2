@@ -25,6 +25,29 @@
      z-index: 0;
    }
 
+
+  
+   .desktopone {
+  display: block;   /* default desktop */
+}
+
+.mobilepone {
+  display: none;    /* default hidden */
+}
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+  .desktopone {
+    display: none;   /* hide desktop */
+  }
+  .mobilepone {
+    display: block;  /* show mobile */
+  }
+}
+
+
+
+
    @media screen and (max-width: 1024px) {
 
      .one,
@@ -47,6 +70,24 @@
      }
    }
 
+   @media (max-width:767px){
+
+      .sndcontsecond {
+     position: relative;
+     padding: 5rem 0rem !important;
+     text-align: center;
+     background: rgba(153, 153, 153, 10%);
+   }
+
+   .one,
+     .two {
+       max-width: 80px;
+       bottom: 0px;
+     }
+    
+   
+   }
+
 
 
 
@@ -60,7 +101,7 @@
 /* Small tablets */
 @media (min-width:480px) {
   .slide2text {
-    padding: 0 2rem;
+    padding: 0 1rem;
     font-size: 16px;
     line-height: 30px;
   }
@@ -70,7 +111,7 @@
 @media (min-width:768px) {
   .slide2text {
     padding: 0 2rem;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
   }
 }
