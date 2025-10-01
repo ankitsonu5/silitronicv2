@@ -35,15 +35,6 @@
   display: none;    /* default hidden */
 }
 
-/* For screens 768px and below */
-@media (max-width: 768px) {
-  .desktopone {
-    display: none;   /* hide desktop */
-  }
-  .mobilepone {
-    display: block;  /* show mobile */
-  }
-}
 
 
 
@@ -84,6 +75,18 @@
        max-width: 80px;
        bottom: 0px;
      }
+
+
+     /* For screens 768px and below */
+
+  .desktopone {
+    display: none;   /* hide desktop */
+  }
+  .mobilepone {
+    display: block;  /* show mobile */
+  }
+
+
     
    
    }
