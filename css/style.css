@@ -1194,9 +1194,14 @@ a.getintouchbut:hover {
         flex: 0 0 45%;
         max-width: 45%;
     }
+
 }
 
 @media (max-width: 768px) {
+
+    .mobilealign h2{
+        font-size: 22px;
+    }
     .sglecasestudycontsec {
         flex: 0 0 100%;
         max-width: 100%;
@@ -7365,6 +7370,8 @@ p.mypM {
     }
 
 
+
+
 }
 
 @media (max-width: 992px) {
@@ -8830,6 +8837,23 @@ p.facility-card-text {
 @media (max-width: 480px) {
 
 
+.feature-box {
+    /* max-width: 320px; */
+    background: transparent;
+    border: 2px solid #1b133f;
+    padding: 20px 20px;
+    margin-bottom: 16px;
+    width: 100% !important;
+    height: auto;
+    border-radius: 0 0 30px 0;
+    gap: 16px;
+    align-items: flex-start;
+    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 92% 100%, 0% 100%); */
+    box-shadow: 0 6px 20px rgba(27, 19, 63, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
 
     .resource-description {
         font-size: 14px;
@@ -9084,10 +9108,17 @@ padding-top: 10px !important;
   }
 
 
+   @media  (min-width:0px) and (max-width:349px){
+             .only-mobile-button,.only-mobile-buttons{
+             
+                border-radius: 0 0 12px 0;
+            }
+        }
+
 
    @media  (min-width:350px) and (max-width:400px){
              .only-mobile-button,.only-mobile-buttons{
-                min-width: 150px;
+                min-width: 140px;
                 font-size: 9px;
                 border-radius: 0 0 12px 0;
             }
