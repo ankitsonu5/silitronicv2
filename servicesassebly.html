@@ -1084,10 +1084,7 @@
 
         /* mobile sip design and process style code */
 
-        .sndcontsec-mobile {
-            /* background-color: red; */
-            padding-top:40px;
-        }
+      
 
         .sndcontsec-mobile h2 {
             font-size: 2rem;
@@ -1113,31 +1110,16 @@
 
         }
 
-        .divnumimg {
-            width: 75rem !important;
-        }
+       
 
         .divtextcont-items li {
             list-style-type: disc !important;
         }
 
-        .divtextcont {
-            border-top: 5px solid black;
-            padding-top: 2rem;
-            /* padding-right: 1rem; */
-            padding-bottom: 15rem;
-        }
+        
 
-        .divtextcont h3 {
-            margin-bottom: 1rem;
-        }
-
-         .sndcontsec-mobile-slider {
-            height: fit-content;
-            min-height: 38rem !important;
-            margin-bottom: 4em;
-        }
-
+      
+       
         .servicestabcontent-containers {
             display: flex;
             gap: 48px;
@@ -1294,6 +1276,101 @@
         .active-menu {
             color: #ffffff !important;
         }
+
+
+         /* today  */
+  @media screen and (max-width: 768px) {
+
+             .sndcontsec-mobile h2 {
+             font-size: 30px;
+            line-height: 32px;
+            font-family: 'Titillium Web';
+            font-weight: bold;
+            text-align: center;
+            /* padding: 0 0 40px 0; */
+            background: linear-gradient(90deg, #050EF1, #FD0200);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            padding-top: 2rem;
+        }
+
+
+          .divtextcont h3 {
+            margin-bottom: 1rem;
+            font-size: 18px;
+        }
+         
+        .divnumimg {
+            width: 30rem ;
+        }
+
+    
+
+      .sndcontsec-mobile-slider {
+       
+         height:400px;
+         margin-bottom: 50px;
+  
+}
+
+.sipmaincont{
+    position: relative;
+    top: -100px;
+   
+}
+
+.divtextcont{
+    border-top: 2px solid black;
+    padding-top: 10px;
+}
+
+
+    }
+
+    /* Additional media query for screens below 360px */
+@media screen and (max-width: 360px) {
+    .sndcontsec-mobile-slider {
+        height: auto;
+        min-height: 420px; /* Adjust this value as needed */
+    }
+    
+    .divnumimg {
+        width: 100%;
+        max-width: 25rem;
+    }
+    
+    .sndcontsec-mobile h2 {
+        font-size: 26px;
+        line-height: 28px;
+    }
+    
+    .divtextcont h3 {
+        font-size: 16px;
+    }
+}
+
+/* For very small screens below 320px */
+@media screen and (max-width: 320px) {
+    .sndcontsec-mobile-slider {
+        min-height: 460px; /* Even more height for smaller screens */
+    }
+}
+
+@media(min-width:768px) and (max-width:1600px){
+    .serviceimgsec{
+        padding-left: 0;
+     
+    }
+    .serviceimgsec img{
+        width: 10rem;
+    }
+}
+
+
+
+
+
     </style>
     </style>
 </head>

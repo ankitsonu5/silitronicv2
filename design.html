@@ -777,6 +777,7 @@
         }
 
         .service-section-spectrum-section .card {
+            width: 100%;
             background: linear-gradient(to right, #d9cef5, rgba(221, 213, 240, 0.6));
             border: 2px solid #000;
             border-radius: 10px;
@@ -1147,11 +1148,7 @@
 
         /* mobile sip design and process style code */
 
-        .sndcontsec-mobile {
-            /* background-color: red; */
-            padding: 40px 0;
-
-        }
+       
 
         .sndcontsec-mobile h2 {
             font-size: 2rem;
@@ -1176,28 +1173,13 @@
 
         }
 
-        .divnumimg {
-            width: 75px !important;
-        }
-
+       
         .divtextcont-items li {
             list-style-type: disc !important;
         }
 
-        .divtextcont {
-            border-top: 5px solid black;
-            padding-top: 1rem;
-            padding-right: 0rem;
-            /* padding-bottom: 15rem; */
-        }
-
-        .divtextcont h3 {
-            margin-bottom: 1rem;
-        }
-
-        .sndcontsec-mobile-slider {
-            height: 450px;
-        }
+      
+       
 
         .servicestabcontent-containers img {
             width: 100% !important;
@@ -1519,6 +1501,107 @@
             background: url(../images/BG_3\ 5.png) !important;
             background-size: cover !important;
         }
+
+
+
+
+         /* today  */
+  @media screen and (max-width: 768px) {
+
+             .sndcontsec-mobile h2 {
+             font-size: 30px;
+            line-height: 32px;
+            font-family: 'Titillium Web';
+            font-weight: bold;
+            text-align: center;
+            /* padding: 0 0 40px 0; */
+            background: linear-gradient(90deg, #050EF1, #FD0200);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            padding-top: 2rem;
+        }
+
+
+          .divtextcont h3 {
+            margin-bottom: 1rem;
+            font-size: 18px;
+        }
+        
+        
+
+        .divnumimg img {
+           
+          padding-left: 50px;
+         max-width: 100%;
+        }
+
+    
+
+      .sndcontsec-mobile-slider {
+       
+         height:540px;
+         margin-bottom: 50px;
+  
+}
+
+.sipmaincont{
+    position: relative;
+    top: -150px;
+   
+}
+
+.divtextcont{
+    border-top: 2px solid black;
+    padding-top: 10px;
+}
+
+
+.divtextcont-items{
+min-width: 180px;
+}
+
+    }
+
+    /* Additional media query for screens below 360px */
+@media screen and (max-width: 360px) {
+    .sndcontsec-mobile-slider {
+        height: auto;
+        min-height: 620px; /* Adjust this value as needed */
+    }
+    
+    .divnumimg {
+        width: 100%;
+       
+    }
+    
+    .sndcontsec-mobile h2 {
+        font-size: 26px;
+        line-height: 28px;
+    }
+    
+    .divtextcont h3 {
+        font-size: 16px;
+    }
+}
+
+/* For very small screens below 320px */
+@media screen and (max-width: 320px) {
+    .sndcontsec-mobile-slider {
+        min-height: 640px; /* Even more height for smaller screens */
+    }
+}
+
+@media(min-width:768px) and (max-width:1600px){
+    .serviceimgsec{
+        padding-left: 0;
+     
+    }
+    .serviceimgsec img{
+        width: 10rem;
+    }
+}
+        
 
        
     </style>
@@ -2732,8 +2815,8 @@
                                 </div>
                                 <div class="box1align">
 
-                                    <h2>Precision-Driven Design for​Next-Gen Semiconductor & Photonic Packaging</h2>
-                                    <p class="myp myps" style="padding-top: 35px;">From concept to layout, our advanced
+                                    <h2>Precision-Driven Design for <br> ​Next-Gen Semiconductor & <br> Photonic Packaging</h2>
+                                    <p class="myp myps" style="padding-top: 53px;">From concept to layout, our advanced
                                         design expertise ensures seamless integration of chips, substrates, and
                                         interconnects. We optimize signal integrity, power efficiency, and thermal
                                         performance to meet the demands of AI accelerators, quantum computing, and
@@ -2750,8 +2833,8 @@
                                     <img src="./images/service/05s.png" alt="">
                                 </div>
                                 <div class="box1align">
-                                    <h2>Fabrication for Advanced​Semiconductor & Photonic Packaging</h2>
-                                    <p class="myp myps" style="padding-top: 35px;">Our state-of-the-art fabrication
+                                    <h2>Fabrication for Advanced ​Semiconductor & Photonic Packaging</h2>
+                                    <p class="myp myps" style="padding-top: 53px;">Our state-of-the-art fabrication
                                         facility delivers high-precision
                                         multi-layer substrates tailored for AI, HPC, and Silicon Photonics. With
                                         expertise
@@ -2772,7 +2855,7 @@
                                 </div>
                                 <div class="box1align">
                                     <h2>High-Precision Wafer Dicing</h2>
-                                    <p class="myp myps" style="padding-top: 35px;">We deliver advanced wafer dicing
+                                    <p class="myp myps" style="padding-top: 53px;">We deliver advanced wafer dicing
                                         using precision blade and laser
                                         technologies to ensure clean die separation with minimal chipping. Optimized for
                                         high yield and low particle contamination, our dicing supports next-gen
@@ -2790,7 +2873,7 @@
                                 </div>
                                 <div class="box1align myclass">
                                     <h2>Powering the Future at the Speed of Light with Photonics</h2>
-                                    <p class="myp myps" style="padding-top: 35px;">Silicon Photonics is transforming
+                                    <p class="myp myps" style="padding-top: 53px;">Silicon Photonics is transforming
                                         high-speed computing, AI clusters,
                                         and
                                         next-gen data transfer. Our expertise in sub-micron active alignment, optical
@@ -2812,7 +2895,7 @@
                                 </div>
                                 <div class="box1align">
                                     <h2>Seamless Assembly for High-Precision Semiconductor & Photonic Packaging</h2>
-                                    <p class="myp myps" style="padding-top: 35px;">Our cutting-edge assembly expertise
+                                    <p class="myp myps" style="padding-top: 53px;">Our cutting-edge assembly expertise
                                         ensures precise chip-to-package
                                         integration with industry-leading sub-micron active alignment, high-density
                                         interconnects, and heterogeneous integration. We specialize in complex optical
@@ -2833,7 +2916,7 @@
                                 <div class="box1align myclass">
 
                                     <h2>Breakthrough Chiplet Integration for Scalable, Next-Gen Systems</h2>
-                                    <p class="myp myps" style="padding-top: 35px;">Silitronics empowers the future of
+                                    <p class="myp myps" style="padding-top: 53px;">Silitronics empowers the future of
                                         electronics with advanced chiplet integration—merging diverse dies on
                                         precision-engineered interposers for optimal signal, power, and thermal
                                         performance. Our expertise in modular floor planning and heterogeneous assembly
