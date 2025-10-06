@@ -273,6 +273,46 @@
         .bannersec img{
             background-size: cover;
         }
+
+    
+           @media  (min-width:0px) and (max-width:349px){
+            .only-mobile-buttons{
+             
+                border-radius: 0 0 12px 0;
+            }
+        }
+
+
+   @media  (min-width:350px) and (max-width:400px){
+             .only-mobile-button,.only-mobile-buttons{
+                min-width: 140px;
+                font-size: 9px;
+                border-radius: 0 0 12px 0;
+                
+            }
+
+             .only-mobile-buttons:nth-child(7){
+                min-width: 290px;
+                border-radius:0 0 14px 0 ;
+            }
+        }
+
+          @media  (min-width:401px) and (max-width:480px){
+           .only-mobile-buttons{
+                    min-width: 170px;
+                font-size: 12px;
+                 border-radius: 0 0 12px 0;
+            }
+
+            .only-mobile-buttons:nth-child(7){
+                min-width:350px ;
+                border-radius:0 0 17px 0 ;
+            }
+        }
+        
+
+
+
     </style>
 </head>
 
@@ -777,21 +817,21 @@
 
 
                     <div class="only-mobile-button-group-app">
-                        <button class="only-mobile-button-app industry-tab-btn  active-app"
+                        <button class="only-mobile-button-app  only-mobile-buttons industry-tab-btn  active-app"
                             onclick="openIndustryTabMobile(event, 'MedicalMobile')">Medical</button>
-                        <button class="only-mobile-button-app industry-tab-btn"
+                        <button class="only-mobile-button-app  only-mobile-buttons industry-tab-btn"
                             onclick="openIndustryTabMobile(event, 'SiliconPhotonicsMobile')">Silicon Photonic</button>
-                        <button class="only-mobile-button-app industry-tab-btn"
+                        <button class="only-mobile-button-app  only-mobile-buttons industry-tab-btn"
                             onclick="openIndustryTabMobile(event, 'LiDARMobile')">Automotive</button>
-                        <button class="only-mobile-button-app industry-tab-btn"
+                        <button class="only-mobile-button-app  only-mobile-buttons industry-tab-btn"
                             onclick="openIndustryTabMobile(event, 'IoTMobile')">IoT</button>
-                        <button class="only-mobile-button-app industry-tab-btn"
+                        <button class="only-mobile-button-app  only-mobile-buttons industry-tab-btn"
                             onclick="openIndustryTabMobile(event, 'ARVRMobile')">AR/VR</button>
 
-                        <button class="only-mobile-button-app industry-tab-btn"
+                        <button class="only-mobile-button-app  only-mobile-buttons industry-tab-btn"
                             onclick="openIndustryTabMobile(event, 'ComputingMobile')">Quantum Computing</button>
 
-                        <button class="only-mobile-button-app industry-tab-btn"
+                        <button class="only-mobile-button-app  only-mobile-buttons only-mobile-button-apps industry-tab-btn"
                             onclick="openIndustryTabMobile(event, 'DefenseMobile')">Defense</button>
                     </div>
 

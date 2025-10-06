@@ -79,10 +79,11 @@
 
         @media screen and (max-width: 768px) {
 
-            
-            .sndcontsec h2{
+
+            .sndcontsec h2 {
                 padding: 0 30px 30px 30px;
             }
+
             .services-section-head-desk {
                 font-size: 2rem;
                 line-height: 35px;
@@ -925,7 +926,7 @@
                 margin: 0;
                 font-family: "Titillium Web", sans-serif;
                 font-size: 20px;
-                line-height: 25px;
+                /* line-height: 25px; */
                 font-weight: bold;
             }
 
@@ -1015,14 +1016,14 @@
         }
 
         @media (max-width: 480px) {
-        
-          
 
-        .sndcontsecond {
-      /* padding: 0 0 4rem 0; */
-      padding-top:45px ;
-       
-     }
+
+
+            .sndcontsecond {
+                /* padding: 0 0 4rem 0; */
+                padding-top: 45px;
+
+            }
 
             .section-spectrum-mobile-view .slide {
                 height: 340px;
@@ -1057,7 +1058,7 @@
                 height: 64px;
             }
 
-            
+
 
             .section-spectrum-mobile-view .slide {
                 height: auto;
@@ -1148,7 +1149,7 @@
 
         /* mobile sip design and process style code */
 
-       
+
 
         .sndcontsec-mobile h2 {
             font-size: 2rem;
@@ -1173,13 +1174,13 @@
 
         }
 
-       
+
         .divtextcont-items li {
             list-style-type: disc !important;
         }
 
-      
-       
+
+
 
         .servicestabcontent-containers img {
             width: 100% !important;
@@ -1224,30 +1225,32 @@
             .servicestabcontent-containers {
                 overflow: visible;
             }
-             .only-mobile-buttons{
-          
+
+            .only-mobile-buttons {
+
                 font-size: 9px;
             }
         }
 
-        @media  (min-width:350px) and (max-width:400px){
-             .only-mobile-buttons{
+        @media (min-width:350px) and (max-width:400px) {
+            .only-mobile-buttons {
                 min-width: 150px;
                 font-size: 9px;
             }
         }
-          @media  (min-width:401px) and (max-width:480px){
-             .only-mobile-buttons{
-                    min-width: 170px;
+
+        @media (min-width:401px) and (max-width:480px) {
+            .only-mobile-buttons {
+                min-width: 170px;
                 font-size: 11px;
             }
         }
 
 
 
-        @media  (max-width: 480px) {
-   
-         
+        @media (max-width: 480px) {
+
+
 
             .only-mobile-button-groups {
                 display: flex;
@@ -1306,7 +1309,7 @@
             }
 
 
-         
+
 
             /* design-rule-section-mobile start */
 
@@ -1343,14 +1346,7 @@
 
             }
 
-            .tabcontentss {
-                display: none;
-            }
 
-
-            .tabcontent-mobile {
-                display: none;
-            }
 
             .services-section-bg {
                 background: url(../images/BG_3\ 5.png) !important;
@@ -1370,116 +1366,158 @@
 
 
 
-            #design-rule-section h2 {
-                font-size: 70px;
-                line-height: 85px;
+        #design-rule-section h2 {
+            font-size: 70px;
+            line-height: 85px;
+            font-family: 'Titillium Web';
+            font-weight: bold;
+            text-align: center;
+            padding: 0 0 40px 0;
+            background: linear-gradient(90deg, #050EF1, #FD0200);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* design-rule-section style start */
+        #design-rule-section .card-container-body {
+            /* height: 100vh; */
+            padding-top: 50px;
+        }
+
+        #design-rule-section .card-containers {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 64px;
+            position: relative;
+            justify-content: center;
+        }
+
+        #design-rule-section .card-wrappers,
+        .design-rule-section-mobile .card-wrappers {
+            position: relative;
+        }
+
+        #design-rule-section .cardsec,
+        .design-rule-section-mobile .cardsec {
+            width: 250px;
+            background: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        #design-rule-section .cardsec img,
+        .design-rule-section-mobile .cardsec img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        #design-rule-section .card-content,
+        .design-rule-section-mobile .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        #design-rule-section .card-title,
+        .design-rule-section-mobile .card-title {
+            font-weight: 700;
+            font-size: 16px;
+            margin: 10px 0;
+            text-align: left;
+        }
+
+
+        #design-rule-section .download-bar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            color: #000;
+            text-align: center;
+            padding: 10px 0;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            pointer-events: none;
+            font-weight: 700;
+            border-top: 2px solid #555;
+            font-size: 16px;
+        }
+
+        .design-rule-section-mobile .download-bar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            color: #000;
+            text-align: center;
+            padding: 10px 0;
+            opacity: 1;
+            /* transform: translateY(10px); */
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            pointer-events: none;
+            font-weight: 700;
+            border-top: 2px solid #555;
+            font-size: 16px;
+        }
+
+        #design-rule-section .card-wrappers:hover .download-bar {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+          @media (min-width:468px) and (max-width:767px){
+            .design-rule-section-mobile {
+                   height: 500px;
+                margin-bottom: 50px;
+            }
+
+          }
+
+
+        @media (max-width:768px) {
+
+
+            .design-rule-mobile {
+
+
+                font-size: 30px;
+                line-height: 32px;
                 font-family: 'Titillium Web';
                 font-weight: bold;
                 text-align: center;
-                padding: 0 0 40px 0;
+                padding: 40px;
                 background: linear-gradient(90deg, #050EF1, #FD0200);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
             }
 
-           /* design-rule-section style start */
-            #design-rule-section .card-container-body {
-                /* height: 100vh; */
-                padding-top: 50px;
-            }
 
-            #design-rule-section .card-containers {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 64px;
-                position: relative;
-                justify-content: center;
-            }
+            .design-rule-section-mobiles {
+                height: 500px;
 
-            #design-rule-section .card-wrappers,
-            .design-rule-section-mobile .card-wrappers {
-                position: relative;
-            }
-
-            #design-rule-section .cardsec,
-            .design-rule-section-mobile .cardsec {
-                width: 250px;
-                background: white;
-                border: 1px solid #ccc;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-                overflow: hidden;
-                transition: all 0.3s ease-in-out;
-                cursor: pointer;
-            }
-
-            #design-rule-section .cardsec img,
-            .design-rule-section-mobile .cardsec img {
-                width: 100%;
-                height: 100%;
-                display: block;
-            }
-
-            #design-rule-section .card-content,
-            .design-rule-section-mobile .card-content {
-                padding: 15px;
-                text-align: center;
-            }
-
-            #design-rule-section .card-title,
-            .design-rule-section-mobile .card-title {
-                font-weight: 700;
-                font-size: 16px;
-                margin: 10px 0;
-                text-align: left;
             }
 
 
-            #design-rule-section .download-bar {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: #fff;
-                color: #000;
-                text-align: center;
-                padding: 10px 0;
-                opacity: 0;
-                transform: translateY(10px);
-                transition: opacity 0.3s ease, transform 0.3s ease;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-                pointer-events: none;
-                font-weight: 700;
-                border-top: 2px solid #555;
-                font-size: 16px;
+            .only-mobiles {
+                background: rgba(153, 153, 153, 0.1);
             }
 
-            .design-rule-section-mobile .download-bar {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: #fff;
-                color: #000;
-                text-align: center;
-                padding: 10px 0;
-                opacity: 1;
-                /* transform: translateY(10px); */
-                transition: opacity 0.3s ease, transform 0.3s ease;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-                pointer-events: none;
-                font-weight: 700;
-                border-top: 2px solid #555;
-                font-size: 16px;
-            }
 
-            #design-rule-section .card-wrappers:hover .download-bar {
-                opacity: 1;
-                transform: translateY(0);
-                pointer-events: auto;
-            }
+        }
 
-            /* design-rule-section style end */
+
+        /* design-rule-section style end */
 
 
         /* style code for the active all page */
@@ -1490,14 +1528,14 @@
             display: none;
         }
 
-          
+
 
         /* Highlight when active */
         .active-menu {
             color: #ffffff !important;
         }
 
-          .services-section-bg {
+        .services-section-bg {
             background: url(../images/BG_3\ 5.png) !important;
             background-size: cover !important;
         }
@@ -1505,108 +1543,118 @@
 
 
 
-         /* today  */
-  @media screen and (max-width: 768px) {
+        /* today  */
+        @media screen and (max-width: 768px) {
 
-             .sndcontsec-mobile h2 {
-             font-size: 30px;
-            line-height: 32px;
-            font-family: 'Titillium Web';
-            font-weight: bold;
-            text-align: center;
-            /* padding: 0 0 40px 0; */
-            background: linear-gradient(90deg, #050EF1, #FD0200);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            padding-top: 2rem;
-            padding-bottom: 1rem;
+            .tabcontentss {
+                display: none;
+            }
+
+
+            .tabcontent-mobile {
+                display: none;
+            }
+
+
+            .sndcontsec-mobile h2 {
+                font-size: 30px;
+                line-height: 32px;
+                font-family: 'Titillium Web';
+                font-weight: bold;
+                text-align: center;
+                /* padding: 0 0 40px 0; */
+                background: linear-gradient(90deg, #050EF1, #FD0200);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                padding-top: 2rem;
+                padding-bottom: 1rem;
+            }
+
+
+            .divtextcont h3 {
+                margin-bottom: 1rem;
+                font-size: 18px;
+            }
+
+
+
+            .divnumimg img {
+
+                padding-left: 30px;
+                max-width: 100%;
+            }
+
+
+
+            .sndcontsec-mobile-slider {
+
+                height: 540px;
+                margin-bottom: 60px;
+
+            }
+
+            .sipmaincont {
+                position: relative;
+                top: -150px;
+
+            }
+
+            .divtextcont {
+                border-top: 2px solid black;
+                padding-top: 10px;
+            }
+
+
+            .divtextcont-items {
+                min-width: 192px;
+            }
+
         }
 
+        /* Additional media query for screens below 360px */
+        @media screen and (max-width: 360px) {
 
-          .divtextcont h3 {
-            margin-bottom: 1rem;
-            font-size: 18px;
+            .sndcontsec-mobile-slider {
+                height: auto;
+                min-height: 580px;
+                /* Adjust this value as needed */
+            }
+
+            .divnumimg {
+                width: 100%;
+                max-width: 50%;
+
+            }
+
+            .sndcontsec-mobile h2 {
+                font-size: 26px;
+                line-height: 28px;
+            }
+
+            .divtextcont h3 {
+                font-size: 16px;
+            }
         }
-        
-        
 
-        .divnumimg img {
-           
-          padding-left: 30px;
-         max-width: 100%;
+        /* For very small screens below 320px */
+        @media screen and (max-width: 320px) {
+            .sndcontsec-mobile-slider {
+                min-height: 600px;
+                /* Even more height for smaller screens */
+            }
         }
 
-    
+        @media(min-width:768px) and (max-width:1600px) {
+            .serviceimgsec {
+                padding-left: 0;
 
-      .sndcontsec-mobile-slider {
-    
-         height:540px;
-         /* margin-bottom: 50px; */
-  
-}
+            }
 
-.sipmaincont{
-    position: relative;
-    top: -150px;
-   
-}
-
-.divtextcont{
-    border-top: 2px solid black;
-    padding-top: 10px;
-}
-
-
-.divtextcont-items{
-min-width: 192px;
-}
-
-    }
-
-    /* Additional media query for screens below 360px */
-@media screen and (max-width: 360px) {
-    
-    .sndcontsec-mobile-slider {
-        height: auto;
-        min-height: 580px; /* Adjust this value as needed */
-    }
-    
-    .divnumimg {
-        width: 100%;
-        max-width: 50%;
-       
-    }
-    
-    .sndcontsec-mobile h2 {
-        font-size: 26px;
-        line-height: 28px;
-    }
-    
-    .divtextcont h3 {
-        font-size: 16px;
-    }
-}
-
-/* For very small screens below 320px */
-@media screen and (max-width: 320px) {
-    .sndcontsec-mobile-slider {
-        min-height: 600px; /* Even more height for smaller screens */
-    }
-}
-
-@media(min-width:768px) and (max-width:1600px){
-    .serviceimgsec{
-        padding-left: 0;
-     
-    }
-    .serviceimgsec img{
-        width: 10rem;
-    }
-}
-        
-
-       
+            .serviceimgsec img {
+                width: 10rem;
+            }
+        }
     </style>
 </head>
 
@@ -1775,8 +1823,8 @@ min-width: 192px;
         <!-- spectrum section desktop and tablet screen view -->
         <section class="service-section-spectrum-section">
             <div class="container">
-                <h4>Engineered Excellence in
-                    Semiconductor & <br>Photonics Package Design</h4>
+                <h4>Engineered Excellence in <br>
+                    Semiconductor & Photonics Package Design</h4>
                 <button class="arrow left-arrow">&#10094;</button>
                 <div class="sectrum-container">
                     <div class="card">
@@ -1972,7 +2020,7 @@ min-width: 192px;
             <img class="two" src="./images/rainbow-style-art-two.png" alt="">
         </section>
 
-            <section class="sndcontsec sndcontsecond mobilepone">
+        <section class="sndcontsec sndcontsecond mobilepone">
             <img class="one" src="./images/rainbow-style-art-one.png" alt="">
             <div class="container">
                 <div class="lftrytlinepart">
@@ -2113,84 +2161,84 @@ min-width: 192px;
         </section>
 
         <!-- Mobile only our service code -->
-    <section class="sndcontsec-mobile only-mobile">
-    <h2>SiP Design Capability</h2>
-    <sl-carousel pagination class="sndcontsec-mobile-slider">
-        <sl-carousel-item class="sipmaincont">
-            <div class="divnumimg">
-                <img src="./images/servicesdetails-fl/sip-process-design/01.png" alt="">
-            </div>
-            <div class="divtextcont">
-                <h3>Define Architecture</h3>
-                <ul class="divtextcont-items">
-                    <li>Substrate Technology Identification</li>
-                    <li>Component & Material Selection</li>
-                    <li>Signal Breakout & Fanout Strategies</li>
-                    <li>Prelayout PDN Design</li>
-                    <li>Thermal / Mechanical Plan</li>
-                </ul>
-            </div>
-        </sl-carousel-item>
-        <sl-carousel-item class="sipmaincont">
-            <div class="divnumimg">
-                <img src="./images/servicesdetails-fl/sip-process-design/02.png" alt="">
-            </div>
-            <div class="divtextcont">
-                <h3>Design Input Parameters</h3>
-                <ul class="divtextcont-items">
-                    <li>IO planning based on chip, package and board co-design</li>
-                    <li>Netlist Creation with Schematics / RTL / CSV etc</li>
-                    <li>Design rules & constraint setup</li>
-                    <li>IO + Placement Optimization</li>
-                </ul>
-            </div>
-        </sl-carousel-item>
-        <sl-carousel-item class="sipmaincont">
-            <div class="divnumimg">
-                <img src="./images/servicesdetails-fl/sip-process-design/03.png" alt="">
-            </div>
-            <div class="divtextcont">
-                <h3>Package Layout</h3>
-                <ul class="divtextcont-items">
-                    <li>Physical design using Cadence SiP, APD and Allegro</li>
-                    <li>Layer stack-up definition</li>
-                    <li>Component & IO Placement, Routing</li>
-                    <li>DFM & DFA Design Rules</li>
-                </ul>
-            </div>
-        </sl-carousel-item>
-        <sl-carousel-item class="sipmaincont">
-            <div class="divnumimg">
-                <img src="./images/servicesdetails-fl/sip-process-design/04.png" alt="">
-            </div>
-            <div class="divtextcont">
-                <h3>Design Verification</h3>
-                <ul class="divtextcont-items">
-                    <li>SI : Eye width/height, BER, Return loss, crosstalk</li>
-                    <li>PI : Target Z, IR drop, Ripple Noise analysis</li>
-                    <li>Thermal : Hot spots, Die temperature</li>
-                    <li>Mechanical: Warpage, Stress</li>
-                    <li>HFSS, Power SI, ADS</li>
-                    <li>DRC</li>
-                    <li>BOM Availability</li>
-                </ul>
-            </div>
-        </sl-carousel-item>
-        <sl-carousel-item class="sipmaincont">
-            <div class="divnumimg">
-                <img src="./images/servicesdetails-fl/sip-process-design/05.png" alt="">
-            </div>
-            <div class="divtextcont">
-                <h3>Release To Manufacturing</h3>
-                <ul class="divtextcont-items">
-                    <li>Design for Assembly (DFA)</li>
-                    <li>Design for Manufacturing (DFM)</li>
-                    <li>Reliability and Cost</li>
-                </ul>
-            </div>
-        </sl-carousel-item>
-    </sl-carousel>
-</section>
+        <section class="sndcontsec-mobile only-mobile">
+            <h2>SiP Design Capability</h2>
+            <sl-carousel pagination class="sndcontsec-mobile-slider">
+                <sl-carousel-item class="sipmaincont">
+                    <div class="divnumimg">
+                        <img src="./images/servicesdetails-fl/sip-process-design/01.png" alt="">
+                    </div>
+                    <div class="divtextcont">
+                        <h3>Define Architecture</h3>
+                        <ul class="divtextcont-items">
+                            <li>Substrate Technology Identification</li>
+                            <li>Component & Material Selection</li>
+                            <li>Signal Breakout & Fanout Strategies</li>
+                            <li>Prelayout PDN Design</li>
+                            <li>Thermal / Mechanical Plan</li>
+                        </ul>
+                    </div>
+                </sl-carousel-item>
+                <sl-carousel-item class="sipmaincont">
+                    <div class="divnumimg">
+                        <img src="./images/servicesdetails-fl/sip-process-design/02.png" alt="">
+                    </div>
+                    <div class="divtextcont">
+                        <h3>Design Input Parameters</h3>
+                        <ul class="divtextcont-items">
+                            <li>IO planning based on chip, package and board co-design</li>
+                            <li>Netlist Creation with Schematics / RTL / CSV etc</li>
+                            <li>Design rules & constraint setup</li>
+                            <li>IO + Placement Optimization</li>
+                        </ul>
+                    </div>
+                </sl-carousel-item>
+                <sl-carousel-item class="sipmaincont">
+                    <div class="divnumimg">
+                        <img src="./images/servicesdetails-fl/sip-process-design/03.png" alt="">
+                    </div>
+                    <div class="divtextcont">
+                        <h3>Package Layout</h3>
+                        <ul class="divtextcont-items">
+                            <li>Physical design using Cadence SiP, APD and Allegro</li>
+                            <li>Layer stack-up definition</li>
+                            <li>Component & IO Placement, Routing</li>
+                            <li>DFM & DFA Design Rules</li>
+                        </ul>
+                    </div>
+                </sl-carousel-item>
+                <sl-carousel-item class="sipmaincont">
+                    <div class="divnumimg">
+                        <img src="./images/servicesdetails-fl/sip-process-design/04.png" alt="">
+                    </div>
+                    <div class="divtextcont">
+                        <h3>Design Verification</h3>
+                        <ul class="divtextcont-items">
+                            <li>SI : Eye width/height, BER, Return loss, crosstalk</li>
+                            <li>PI : Target Z, IR drop, Ripple Noise analysis</li>
+                            <li>Thermal : Hot spots, Die temperature</li>
+                            <li>Mechanical: Warpage, Stress</li>
+                            <li>HFSS, Power SI, ADS</li>
+                            <li>DRC</li>
+                            <li>BOM Availability</li>
+                        </ul>
+                    </div>
+                </sl-carousel-item>
+                <sl-carousel-item class="sipmaincont">
+                    <div class="divnumimg">
+                        <img src="./images/servicesdetails-fl/sip-process-design/05.png" alt="">
+                    </div>
+                    <div class="divtextcont">
+                        <h3>Release To Manufacturing</h3>
+                        <ul class="divtextcont-items">
+                            <li>Design for Assembly (DFA)</li>
+                            <li>Design for Manufacturing (DFM)</li>
+                            <li>Reliability and Cost</li>
+                        </ul>
+                    </div>
+                </sl-carousel-item>
+            </sl-carousel>
+        </section>
 
         </div>
 
@@ -2483,9 +2531,9 @@ min-width: 192px;
         <!-- mobile also add  -->
 
         <div class="only-mobile">
-            <section class="services-section .services-section-bg ">
+            <section class="services-section services-section-bg ">
                 <div class="containers">
-                    <h2 class="heading" style="margin-bottom: 30px;">Design Services Spectrum</h2>
+                    <h2 class="heading" style="margin-bottom: 30px; padding-bottom: 20px;">Design Services Spectrum</h2>
 
                     <div class="only-mobile-button-group only-mobile-button-groups">
                         <button class="only-mobile-button only-mobile-buttons tablinks-mobile active"
@@ -2646,7 +2694,7 @@ min-width: 192px;
                                     alt="Flip chip package">
                                 <div class="card-content" style="padding-bottom:48px ;">
                                     <div class="card-title">PCB fab</div>
-                                     
+
                                 </div>
                             </div>
                             <div class="download-bar downloadusecasebut">DOWNLOAD DESIGN RULES</div>
@@ -2663,7 +2711,7 @@ min-width: 192px;
                             <div class="download-bar downloadusecasebut">DOWNLOAD DESIGN RULES</div>
                         </div>
                         <!-- Card 2 -->
-                        
+
                     </div>
                 </div>
             </section>
@@ -2682,12 +2730,12 @@ min-width: 192px;
 
 
         <!-- Design rule section Mobile -->
-        <div class="only-mobile">
+        <div class="only-mobile  only-mobiles">
             <div class="container">
                 <h2 class="design-rule-mobile">Design Rule</h2>
             </div>
             <div class="container design-rule-section-mobile">
-                <sl-carousel pagination navigation mouse-dragging loop>
+                <sl-carousel pagination navigation mouse-dragging loop class="design-rule-section-mobiles">
                     <sl-carousel-item>
                         <!-- Card 1 -->
                         <div class="card-wrappers">
@@ -2818,7 +2866,8 @@ min-width: 192px;
                                 </div>
                                 <div class="box1align">
 
-                                    <h2>Precision-Driven Design for <br> ​Next-Gen Semiconductor & <br> Photonic Packaging</h2>
+                                    <h2>Precision-Driven Design for <br> ​Next-Gen Semiconductor & <br> Photonic
+                                        Packaging</h2>
                                     <p class="myp myps" style="padding-top: 53px;">From concept to layout, our advanced
                                         design expertise ensures seamless integration of chips, substrates, and
                                         interconnects. We optimize signal integrity, power efficiency, and thermal
@@ -3148,13 +3197,13 @@ min-width: 192px;
         </section>
     </main>
 
-     <section class="footerbg only-desktop">
+    <section class="footerbg only-desktop">
         <div class="topftrsec">
             <div class="container">
                 <div class="topftrflexpart">
                     <div class="topftrcolpart">
                         <div class="ftrlogo"><img src="./svg/Silitronics-White.svg">
-                             <img class="ftrlogosecond" src="./svg/GDSI-logo.svg">
+                            <img class="ftrlogosecond" src="./svg/GDSI-logo.svg">
                         </div>
                         <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics
                             packaging–pushing the boundaries of design, fabrication, and assembly while driving
@@ -3168,7 +3217,7 @@ min-width: 192px;
                             <li><a href="./service.html">Services</a></li>
                             <li><a href="./application.html">Applications</a></li>
                             <li><a href="./facility.html">Facility</a></li>
-                           <!-- <li><a href="./resource.html">Resources hub</a></li> -->
+                            <!-- <li><a href="./resource.html">Resources hub</a></li> -->
                             <li><a href="./about.html">About us</a></li>
                             <li><a href="./contact.html">Contact us</a></li>
                         </ul>
@@ -3182,13 +3231,16 @@ min-width: 192px;
                             <a href="#" class="ftrsocial"><img src="images/linkedin.svg"></a>
                         </p>
 
-                            <p class="heads">Grinding and Dicing Services Inc</p>
+                        <p class="heads">Grinding and Dicing Services Inc</p>
                         <p>925 Berryessa Road - San Jose, CA 95133</p>
                         <p>Email: sales@dieprepservices.com</p>
                         <p>Phone: +1 408 451 2000 <br> +1 408 451 2000 </p>
                     </div>
                     <div class="topftrcolpart">
-                        <div class="ftrmap"><iframe  class="ftrmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8770204884054!2d-121.9673431!3d37.369086700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcea9b87697e9%3A0x41f8ffcc2946d1a3!2sSilitronics%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1758194948800!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                        <div class="ftrmap"><iframe class="ftrmaps"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8770204884054!2d-121.9673431!3d37.369086700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcea9b87697e9%3A0x41f8ffcc2946d1a3!2sSilitronics%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1758194948800!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                         <a href="#" class="backtotop">back to top</a>
                     </div>
                 </div>
