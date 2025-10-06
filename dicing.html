@@ -870,8 +870,8 @@
             .section-spectrum-mobile-view .slide h3 {
                 margin: 0;
                 font-family: "Titillium Web", sans-serif;
-                font-size: 25px;
-                line-height: 25px;
+                font-size: 20px;
+                /* line-height: 25px; */
                 font-weight: bold;
             }
 
@@ -2261,18 +2261,18 @@
             
             <div class="only-mobile-button-group">
                 <button class="only-mobile-button  only-mobile-buttones tablinks-mobile active"
-                    onclick="openCityMobile(event, 'Design')">Stealth Laser Dicing</button>
-                <button class="only-mobile-button only-mobile-buttones tablinks-mobile"
-                    onclick="openCityMobile(event, 'Fabrication')">Standard Wafer Dicing</button>
-                <button class="only-mobile-button only-mobile-buttones tablinks-mobile"
-                    onclick="openCityMobile(event, 'Assembly')">Wafer Thinning and Polishing</button>
-                <button class="only-mobile-button only-mobile-buttones tablinks-mobile"
-                    onclick="openCityMobile(event, 'SiliconPhotonic')">Automated AOI, Sorting,<br> and Final Packaging</button>
+                    onclick="openCityMobiless(event, 'Design1')">Stealth Laser Dicing</button>
+                <button class="only-mobile-button only-mobile-buttones tablinks-mobile "
+                    onclick="openCityMobiless(event, 'Fabrication1')">Standard Wafer Dicing</button>
+                <button class="only-mobile-button only-mobile-buttones tablinks-mobile "
+                    onclick="openCityMobiless(event, 'Assembly1')">Wafer Thinning and Polishing</button>
+                <button class="only-mobile-button only-mobile-buttones tablinks-mobile "
+                    onclick="openCityMobiless(event, 'SiliconPhotonic1')">Automated AOI, Sorting,<br> and Final Packaging</button>
             </div>
 
             <div class="mobilebox">
                 <!-- Stealth Laser Dicing -->
-                <div id="Design" class="tabcontent-mobile" style="display: block;">
+                <div id="Design1" class="tabcontent-mobile" style="display: block;">
                     <div class="servicestabcontent-containersM">
                         <div><img src="./dicing images/stile laser mob 1.png" alt=""></div>
                         <div class="mobilealign">
@@ -2286,7 +2286,7 @@
                 </div>
 
                 <!-- Standard Wafer Dicing -->
-                <div id="Fabrication" class="tabcontent-mobile">
+                <div id="Fabrication1" class="tabcontent-mobile">
                     <div class="servicestabcontent-containersM">
                         <div><img src="./dicing images/stile laser mob 2.png" alt=""></div>
                         <div class="mobilealign">
@@ -2300,7 +2300,7 @@
                 </div>
 
                 <!-- Wafer Thinning and Polishing -->
-                <div id="Assembly" class="tabcontent-mobile">
+                <div id="Assembly1" class="tabcontent-mobile">
                     <div class="servicestabcontent-containersM">
                         <div><img src="./dicing images/stile laser mob 3.png" alt=""></div>
                         <div class="mobilealign">
@@ -2314,7 +2314,7 @@
                 </div>
 
                 <!-- Automated AOI, Sorting and Final Packaging -->
-                <div id="SiliconPhotonic" class="tabcontent-mobile">
+                <div id="SiliconPhotonic1" class="tabcontent-mobile">
                     <div class="servicestabcontent-containersM">
                         <div><img src="./dicing images/stile laser mob 4.png" alt=""></div>
                         <div class="mobilealign">
@@ -2329,7 +2329,16 @@
             </div>
         </div>
     </section>
-</div>
+        </div>
+
+
+
+
+
+
+
+
+
         <!--desktop mobile our service spectrum-->
 
         <div class=" only-desktop ">
@@ -2504,22 +2513,22 @@
                 <div class="containers">
                     <h2 class="heading" style="margin-bottom: 30px;">Our Services Spectrum</h2>
                     <div class="only-mobile-button-group">
-                        <button class="only-mobile-button   tablinks-mobile "
+                        <button class="only-mobile-button   tablinks-mobiles "
                             onclick="openCityMobiles(event, 'DesignMobiles')">Design</button>
-                        <button class="only-mobile-button   tablinks-mobile "
+                        <button class="only-mobile-button   tablinks-mobiles "
                             onclick="openCityMobiles(event, 'FabricationMobiles') ">Fabrication</button>
-                        <button class="only-mobile-button   tablinks-mobile" style="background-color: #8b7bb8 !important; color: white;"
+                        <button class="only-mobile-button   tablinks-mobiles" style="background-color: #8b7bb8 !important; color: white;"
                             onclick="openCityMobiles(event, 'DicingMobiles')">Dicing</button>
 
-                        <button class="only-mobile-button   tablinks-mobile active"
+                        <button class="only-mobile-button   tablinks-mobiles active"
                             onclick="openCityMobiles(event, 'SiliconPhotonicsMobiles')">Silicon Photonics</button>
 
-                        <button class="only-mobile-button   tablinks-mobile "
+                        <button class="only-mobile-button   tablinks-mobiles "
                             onclick="openCityMobiles(event, 'AssemblyMobiles')">Assembly</button>
 
 
 
-                        <button class="only-mobile-button   tablinks-mobile"
+                        <button class="only-mobile-button   tablinks-mobiles"
                             onclick="openCityMobiles(event, 'SiliconPhotonicsMobilebs')">Chiplets</button>
 
 
@@ -2948,7 +2957,7 @@
             }
 
             // Remove 'active' class from all mobile tab buttons
-            tablinksMobile = document.getElementsByClassName("tablinks-mobile");
+            tablinksMobile = document.getElementsByClassName("tablinks-mobiles");
             for (i = 0; i < tablinksMobile.length; i++) {
                 tablinksMobile[i].classList.remove("active");
             }
@@ -3229,6 +3238,43 @@
         });
 
     </script>
+
+
+<script>// mobile responsive js
+
+function openCityMobiless(evt, cityNameMobile) {
+  var i, tabcontentMobile, tablinksMobile;
+
+  // Hide all mobile tab contents
+  tabcontentMobile = document.getElementsByClassName("tabcontent-mobile");
+  for (i = 0; i < tabcontentMobile.length; i++) {
+    tabcontentMobile[i].style.display = "none";
+    console.log(i);
+  }
+
+  // Remove 'active' class from all mobile tab buttons
+  tablinksMobile = document.getElementsByClassName("tablinks-mobile");
+  for (i = 0; i < tablinksMobile.length; i++) {
+    tablinksMobile[i].classList.remove("active");
+  }
+
+  // Show selected mobile tab content
+  document.getElementById(cityNameMobile).style.display = "block";
+
+  // Add 'active' class to clicked mobile tab
+  evt.currentTarget.classList.add("active");
+}
+
+window.onload = function () {
+  const firstTab = document.querySelector(".tablinks");
+  if (firstTab) firstTab.click();
+
+  const firstValueTab = document.querySelector(".valuetablinks");
+  if (firstValueTab) firstValueTab.click();
+
+  const firstMobileTab = document.querySelector(".tablinks-mobile");
+  if (firstMobileTab) firstMobileTab.click();
+};</script>
 </body>
 
 </html>
