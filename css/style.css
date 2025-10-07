@@ -8278,7 +8278,8 @@ p.facility-card-text {
     border: 2px solid #1b133f;
     padding: 20px 20px;
     margin-bottom: 16px;
-    width: 336px;
+       width: 100%;
+    /* width: 336px; */
     height: auto;
     border-radius: 0 0 30px 0;
     gap: 16px;
