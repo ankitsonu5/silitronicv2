@@ -303,7 +303,10 @@ p.facility-card-text{
 .main_container {
     height: fit-content;
     width: 100%;
-    padding: 100px 0; 
+    padding-top: 100px; 
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 200px;
       text-align: center;
 
    font-family:"Spline Sans Mono" ;
@@ -403,6 +406,10 @@ p.facility-card-text{
     line-height: 32px;
     width: 80%;
   }
+
+  .sglecasestudycontsec h3{
+    line-height: 25px;
+  }
 }
 
 
@@ -414,7 +421,69 @@ p.facility-card-text{
     background-size: cover;
 }
 
+  .services-section-bg {
+            background: url(../images/BG_3\ 5.png) !important;
+            background-size: cover !important;
+        }
 
+
+        /* Default: show desktop, hide mobile */
+.ones {
+  display: block;
+}
+
+.twos {
+  display: none;
+}
+
+/* Below 768px (mobile view): hide desktop, show mobile */
+@media (max-width: 768px) {
+    .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 10px;
+    margin-bottom: 1rem;
+}
+
+    .two {
+        max-width: 70px;
+        bottom: 34px;
+    }
+
+    .mobiles{
+        padding-bottom: 60px;
+    }
+    
+    .mobile-positions{
+        margin-top: -40px;
+    }
+    
+  .ones {
+    display: none;
+  }
+  .twos {
+    display: block;
+  }
+
+  .owl-theme .owl-dots {
+  text-align: center;
+  margin-top: 15px;
+}
+
+  .owl-theme .owl-dots .owl-dot span {
+  width: 8px;
+  height: 8px;
+  margin: 0 6px;
+  background: transparent;
+  border: 1px solid #1e1b3a; /* dark border like image */
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: black; /* filled dark active dot */
+  border-color: black;
+}
+}
 
     </style>
 </head>
@@ -800,8 +869,8 @@ p.facility-card-text{
 
 
         <!-- third section of facility -->
-
-        <section class="sndcontsec myappback">
+<!-- desktop  -->
+      <section class="sndcontsec myappback ones " style="background-color: rgba(153, 153, 153, 0.1);">
             <div class="container">
                 <div class="lftrytlinepart">
                     <h2>Built for Precision Manufacturing and Assembly.
@@ -831,134 +900,42 @@ p.facility-card-text{
         </section>
 
 
+ <!-- mobile  -->
+ <div class="only-mobile mobiles services-section-bg twos">
+    <section class="sndcontsec myappback">
+        <div class="container">
+            <div class="lftrytlinepart">
+                <h2>Built for Precision Manufacturing and Assembly.
+                    Designed for Breakthroughs.</h2>
+                <p class="myfp">Our 1K and 10k clean rooms are the foundation of our commitment to quality. Designed
+                    to minimize contamination and cost, they ensure every product meets the highest standards of
+                    precision, performance and reliability.​</p>
 
-
-
-        <!-- <section class="forthcontsec">
-            <div class="container">
-                <div class="casestudiessec">
-                    <h2>Case Studies and Whitepapers</h2>
-                    <div class="casestudycontsec">
-                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-01.jpg);">
-                            <div class="transparentbg">
-                                <div class="casestudycontpart">
-                                    <h3>Driving Innovation in LiDAR with High-Precision SiP Packaging​</h3>
-                                    <p>Flawless execution, rapid prototyping, and first-pass success for cutting-edge
-                                        automotive LiDAR technology.​</p>
-                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-02.jpg);">
-                            <div class="transparentbg">
-                                <div class="casestudycontpart">
-                                    <h3>Accelerating Innovation in 4K Live Streaming & Gaming Cameras
-                                    </h3>
-                                    <p>First-pass success, rapid prototyping, and precision execution for breakthrough
-                                        imaging technology.​</p>
-                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-03.jpg);">
-                            <div class="transparentbg">
-                                <div class="casestudycontpart">
-                                    <h3>High-Yield, High-Precision IC Packaging for 5G & RF Innovation
-                                        ​</h3>
-                                    <p>Reliable, flexible, and high-performance IC packaging solutions, ensuring
-                                        uninterrupted supply and exceptional quality.
-                                        ​</p>
-                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="owl-carousel owl-theme industry-slider">
+                    <div class="image-box facility">
+                        <img src="images/ficissc1.png" alt="Cleanroom 1">
+                    </div>
+                    <div class="image-box facility">
+                        <img src="images/ficissc2.png" alt="Cleanroom 2">
+                    </div>
+                    <div class="image-box facility">
+                        <img src="images/ficissc3.png" alt="Cleanroom 3">
+                    </div>
+                    <div class="image-box facility">
+                        <img src="images/ficissc1.png" alt="Cleanroom 1">
                     </div>
                 </div>
             </div>
-        </section> -->
+        </div>
+    </section>
+</div>
 
 
-        <!-- <section class="forthcontsec">
-            <div class="container">
-                <div class="casestudiessec">
-                    <h2>Case Studies and Whitepapers</h2>
-                    <div class="casestudycontsec">
-                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-01.jpg);">
-                            <div class="transparentbg">
-                                <div class="casestudycontpart">
-                                    <h3>Driving Innovation in LiDAR with High-Precision SiP Packaging​</h3>
-                                    <p>Flawless execution, rapid prototyping, and first-pass success for cutting-edge
-                                        automotive LiDAR technology.​</p>
-                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-02.jpg);">
-                            <div class="transparentbg">
-                                <div class="casestudycontpart">
-                                    <h3>Accelerating Innovation in 4K Live Streaming & Gaming Cameras
-                                    </h3>
-                                    <p>First-pass success, rapid prototyping, and precision execution for breakthrough
-                                        imaging technology.​</p>
-                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-03.jpg);">
-                            <div class="transparentbg">
-                                <div class="casestudycontpart">
-                                    <h3>High-Yield, High-Precision IC Packaging for 5G & RF Innovation
-                                        ​</h3>
-                                    <p>Reliable, flexible, and high-performance IC packaging solutions, ensuring
-                                        uninterrupted supply and exceptional quality.
-                                        ​</p>
-                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-04.jpg);">
-                            <div class="transparentbg">
-                                <div class="casestudycontpart">
-                                    <h3>Breaking the Bottleneck: Silicon Photonics and the Next Leap in High-Speed Data
-                                        Transfer
-                                    </h3>
-                                    <p>How Silicon Photonics is revolutionizing AI clusters, HPC, and next-gen
-                                        computing by overcoming electrical interconnect limitations.​</p>
-                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-05.jpg);">
-                            <div class="transparentbg">
-                                <div class="casestudycontpart">
-                                    <h3>Heterogeneous Integration: Unlocking Next-Gen Semiconductor Performance Beyond
-                                        Moore's Law​​</h3>
-                                    <p>How advanced packaging techniques like 2.5D, 3D IC, and Chiplet integration are
-                                        driving the semiconductor industry forward.
-                                        ​</p>
-                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-06.jpg);">
-                            <div class="transparentbg">
-                                <div class="casestudycontpart">
-                                    <h3>Sustainable Semiconductor Packaging: Reducing Power, Heat, and Waste in Next-Gen
-                                        Electronics
-                                        ​</h3>
-                                    <p>How eco-friendly materials, energy-efficient designs, and advanced photonics are
-                                        driving sustainability in semiconductor manufacturing.
-                                        ​</p>
-                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
-        <section class="fstcontsec facilityback"  >
+
+      
+  <!-- DESKTOP  -->
+        <section class="fstcontsec facilityback mobile-positions" >
             <div class="container">
                 <div class="lftrytlinepart myfacilitycolor">
                     <h4>Scalable. Reliable. Precision-Built.​</h4>
@@ -990,6 +967,9 @@ p.facility-card-text{
                             </div>
                         </div>
                     </div>
+
+                       <!-- MOBILE  -->
+
                     <div class="mobileview">
                         <div class="fstsecforthcolpart">
                             <div class="owl-carousel owl-theme foursegmentsec">
@@ -1064,9 +1044,10 @@ p.facility-card-text{
 
 </section> -->
 
-
-
-        <section class="ficisndcontsec  sndcontsecond  ficisndcontsecondone">
+    
+<!-- desktop.  -->
+<section style="background-color: rgba(153, 153, 153, 0.1);">
+            <section class="ficisndcontsec  sndcontsecond  ficisndcontsecondone">
              <img class="one" src="./images/rainbow-style-art-one.png" alt="">
             <div class="container">
                 <h2>Cutting-Edge Tools for<br>
@@ -1105,8 +1086,8 @@ p.facility-card-text{
              <img class="two" src="./images/rainbow-style-art-two.png" alt="">
         </section>  
 
-     
-          <div class="main_container  sndcontsecond ficisndcontsecondtwo">
+       <!-- mobile  -->
+          <div class="main_container  sndcontsecond ficisndcontsecondtwo  mobiles">
               <img class="one" src="./images/rainbow-style-art-one.png" alt="">
             <div class="container">
 
@@ -1181,8 +1162,8 @@ p.facility-card-text{
 
         <!-- facility last section -->
 
-
-        <section class="forthcontsec">
+<!-- desktop  -->
+        <section class="forthcontsec mobile-positions">
             <div class="container">
                 <div class="casestudiessec">
                     <h2>See Precision in Action</h2>
@@ -1230,6 +1211,7 @@ p.facility-card-text{
             </div>
         </section>
 
+</section>
 
 
 
