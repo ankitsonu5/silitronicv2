@@ -8245,10 +8245,13 @@ p.facility-card-text {
 
 
 
+
 .why-silitronics {
+    position: relative;
+    bottom: -40px;
         flex-direction: column;
     display: flex;
-    padding: 40px 10px;
+    padding: 40px 10px 90px 10px;
     background: linear-gradient(90deg, #e8dcff, #f6f2ff);
     font-family: 'Titillium Web', sans-serif;
     color: #1b133f;
