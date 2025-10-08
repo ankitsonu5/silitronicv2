@@ -7057,7 +7057,7 @@ p.myp {
 }
 
 .servicestabcontent-containersM {
-    display: flex;
+    display: block;
     flex-wrap: wrap !important;
     ;
     align-items: center;
