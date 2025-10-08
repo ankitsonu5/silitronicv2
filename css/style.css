@@ -7819,7 +7819,7 @@ p.facility-card-text {
     flex: 0 0 25%;
     max-width: 25%;
     text-align: center;
-    background: url(../images/Horizontal\ Divider.png) no-repeat left center;
+    background: none;
     background-size: auto 100%;
     display: flex;
     flex-direction: column;
@@ -7850,7 +7850,7 @@ p.facility-card-text {
     width: 100%;
     overflow: hidden;
     padding: 100px 0;
-    background: url(../images/fstcontbg.png) no-repeat center top;
+    /* background: url(../images/fstcontbg.png) no-repeat center top; */
     background-size: cover;
 }
 
@@ -8250,8 +8250,8 @@ p.facility-card-text {
 
         flex-direction: column;
     display: flex;
-    padding: 40px 10px 90px 10px;
-    background: linear-gradient(90deg, #e8dcff, #f6f2ff);
+    padding: 40px 10px 40px 10px;
+    /* background: linear-gradient(90deg, #e8dcff, #f6f2ff); */
     font-family: 'Titillium Web', sans-serif;
     color: #1b133f;
     justify-content: center;
