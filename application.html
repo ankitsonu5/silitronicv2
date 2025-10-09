@@ -275,42 +275,28 @@
         }
 
     
-           @media  (min-width:0px) and (max-width:349px){
-            .only-mobile-buttons{
-             
+      
+   @media  (min-width:320px) and (max-width:400px){
+             .only-mobile-buttones{
+                min-width: 48%;
+                font-size: 10px;
                 border-radius: 0 0 12px 0;
             }
         }
-
-
-   @media  (min-width:350px) and (max-width:400px){
-             .only-mobile-button,.only-mobile-buttons{
-                min-width: 140px;
-                font-size: 9px;
-                border-radius: 0 0 12px 0;
-                
-            }
-
-             .only-mobile-buttons:nth-child(7){
-                min-width: 290px;
-                border-radius:0 0 14px 0 ;
-            }
-        }
-
-          @media  (min-width:401px) and (max-width:480px){
-           .only-mobile-buttons{
-                    min-width: 170px;
+          @media  (min-width:400px) and (max-width:480px){
+            .only-mobile-buttones{
+                    min-width: 48%;
                 font-size: 12px;
                  border-radius: 0 0 12px 0;
             }
-
-            .only-mobile-buttons:nth-child(7){
-                min-width:350px ;
-                border-radius:0 0 17px 0 ;
+    
+            .only-mobile-buttonesr{
+                min-width: 98%;
             }
+            
+             
         }
         
-
 
 
     </style>
@@ -808,156 +794,113 @@
         </div>
 
         <!-- Use this section only for mobile (wrap with media query if needed) Application Services-->
-        <div class="only-mobile">
-            <section class="services-section  appsndcontsec growing-impact-section">
-                <div class="containers">
-                    <h2>Our Growing Impact</h2>
-                    <p class="">Silitronics is empowering innovators with IP generation-focused packaging solutions that
-                        accelerate growth, safeguard ideas, and enable scalability.​</p>
+      <div class="only-mobile">
+    <section class="services-section appsndcontsec growing-impact-section">
+        <div class="containers">
+            <h2>Our Growing Impact</h2>
+            <p class="">Silitronics is empowering innovators with IP generation-focused packaging solutions that
+                accelerate growth, safeguard ideas, and enable scalability.​</p>
 
+            <div class="only-mobile-button-group-app">
+                <button class="only-mobile-button-app only-mobile-buttones industry-tab-btn active-app"
+                    onclick="openIndustryTabMobile(event, 'SiliconPhotonics1')">Silicon Photonics</button>
+                <button class="only-mobile-button-app only-mobile-buttones industry-tab-btn"
+                    onclick="openIndustryTabMobile(event, 'Medical1')">Medical</button>
+                <button class="only-mobile-button-app only-mobile-buttones industry-tab-btn"
+                    onclick="openIndustryTabMobile(event, 'Defense1')">Defense</button>
+                <button class="only-mobile-button-app only-mobile-buttones industry-tab-btn"
+                    onclick="openIndustryTabMobile(event, 'ARVR1')">AR/VR</button>
+                <button class="only-mobile-button-app only-mobile-buttones industry-tab-btn"
+                    onclick="openIndustryTabMobile(event, 'Computing1')">Quantum Computing</button>
+                <button class="only-mobile-button-app only-mobile-buttones industry-tab-btn"
+                    onclick="openIndustryTabMobile(event, 'LiDAR1')">Automotive</button>
+            </div>
 
-                    <div class="only-mobile-button-group-app">
-                        <button class="only-mobile-button-app  only-mobile-buttons industry-tab-btn  active-app"
-                            onclick="openIndustryTabMobile(event, 'MedicalMobile')">Medical</button>
-                        <button class="only-mobile-button-app  only-mobile-buttons industry-tab-btn"
-                            onclick="openIndustryTabMobile(event, 'SiliconPhotonicsMobile')">Silicon Photonic</button>
-                        <button class="only-mobile-button-app  only-mobile-buttons industry-tab-btn"
-                            onclick="openIndustryTabMobile(event, 'LiDARMobile')">Automotive</button>
-                        <button class="only-mobile-button-app  only-mobile-buttons industry-tab-btn"
-                            onclick="openIndustryTabMobile(event, 'IoTMobile')">IoT</button>
-                        <button class="only-mobile-button-app  only-mobile-buttons industry-tab-btn"
-                            onclick="openIndustryTabMobile(event, 'ARVRMobile')">AR/VR</button>
-
-                        <button class="only-mobile-button-app  only-mobile-buttons industry-tab-btn"
-                            onclick="openIndustryTabMobile(event, 'ComputingMobile')">Quantum Computing</button>
-
-                        <button class="only-mobile-button-app  only-mobile-buttons only-mobile-button-apps industry-tab-btn"
-                            onclick="openIndustryTabMobile(event, 'DefenseMobile')">Defense</button>
-                    </div>
-
-
-                    <!-- Mobile Tab Content -->
-                    <div class="mobilebox">
-                        <div id="SiliconPhotonicsMobile" class="industry-tab-content" style="display: block;">
-                            <div class="servicestabcontent-containersM">
-                                <div><img src="./images/applicationtab1.png" alt=""></div>
-                                <div class="mobilealign">
-                                    <ul class="myappul">
-                                        <li>Enable high-speed data transmission for data centers and telecommunications.
-                                        </li>
-                                        <li>Efficient coupling of optical and electronic components.​</li>
-                                        <li>Miniaturization of photonic integrated circuits (PICs) for compact,
-                                            high-performance devices.​</li>
-                                    </ul>
-
-                                </div>
-                            </div>
+            <!-- Mobile Tab Content -->
+            <div class="mobilebox">
+                <div id="SiliconPhotonics1" class="industry-tab-content" style="display: block;">
+                    <div class="servicestabcontent-containersM">
+                        <div><img src="./images/applicationtab1.png" alt=""></div>
+                        <div class="mobilealign">
+                            <ul class="myappul">
+                                <li>Enable high-speed data transmission for data centers and telecommunications.</li>
+                                <li>Efficient coupling of optical and electronic components.​</li>
+                                <li>Miniaturization of photonic integrated circuits (PICs) for compact,
+                                    high-performance devices.​</li>
+                            </ul>
                         </div>
-
-                        <div id="LiDARMobile" class="industry-tab-content">
-                            <div class="servicestabcontent-containersM">
-                                <div><img src="./images/applicationtab2.png" alt=""></div>
-                                <div class="mobilealign">
-                                    <ul class="myappul">
-                                        <li>Enable robust and compact LiDAR modules.</li>
-                                        <li>Improve thermal management for high-power laser diodes.​</li>
-                                        <li>Enhance signal integrity and reliability in harsh environments.​​</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="IoTMobile" class="industry-tab-content">
-                            <div class="servicestabcontent-containersM">
-                                <div><img src="./images/applicationtab3.png" alt=""></div>
-                                <div class="mobilealign">
-                                    <ul class="myappul">
-                                        <li>Enable miniaturization of sensors and communication modules.</li>
-                                        <li>Improve energy efficiency for battery-operated devices.​​</li>
-                                        <li>Support integration of photonics for high-speed data transfer in smart
-                                            cities and industrial IoT​​</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="ARVRMobile" class="industry-tab-content">
-                            <div class="servicestabcontent-containersM">
-                                <div><img src="./images/applicationtab4.png" alt=""></div>
-                                <div class="mobilealign">
-                                    <ul class="myappul">
-                                        <li>Enable compact, high-resolution micro displays.</li>
-                                        <li>Support high-speed data processing for real-time rendering.​​​</li>
-                                        <li>Improve power efficiency and thermal performance for wearable devices.​​​
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="AIMLMobile" class="industry-tab-content">
-                            <div class="servicestabcontent-containersM">
-                                <div><img src="./images/applicationtab5.png" alt=""></div>
-                                <div class="mobilealign">
-                                    <ul class="myappul">
-                                        <li>Enable heterogeneous integration of AI accelerators and memory.</li>
-                                        <li>Improve thermal performance for high-power AI chips.​</li>
-                                        <li>Support optical interconnects for faster data transfer in AI clusters​​​
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="ComputingMobile" class="industry-tab-content">
-                            <div class="servicestabcontent-containersM">
-                                <div><img src="./images/applicationtab6.png" alt=""></div>
-                                <div class="mobilealign">
-                                    <ul class="myappul">
-                                        <li>Enable 2.5D/3D chip stacking for higher compute density.</li>
-                                        <li>Improve thermal management for high-power CPUs/GPUs.​​</li>
-                                        <li>Support optical interconnects for faster data transfer between components.​
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="MedicalMobile" class="industry-tab-content">
-                            <div class="servicestabcontent-containersM">
-                                <div><img src="./images/applicationtab7.png" alt=""></div>
-                                <div class="mobilealign">
-                                    <ul class="myappul">
-                                        <li>Enable compact, high-resolution imaging sensors for endoscopes and MRI
-                                            machines.</li>
-                                        <li>Support wearable medical devices with low-power, high-performance chips.
-                                        </li>
-                                        <li>Improve reliability and miniaturization of implantable devices.​</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="DefenseMobile" class="industry-tab-content">
-                            <div class="servicestabcontent-containersM">
-                                <div><img src="./images/applicationtab8.png" alt=""></div>
-                                <div class="mobilealign">
-                                    <ul class="myappul">
-                                        <li>Enable secure, high-speed optical communication systems.</li>
-                                        <li>Support advanced LiDAR and radar systems for surveillance and targeting.​
-                                        </li>
-                                        <li>Improve thermal and mechanical stability for harsh environments​</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-
-
                     </div>
                 </div>
-            </section>
+
+                <div id="Medical1" class="industry-tab-content">
+                    <div class="servicestabcontent-containersM">
+                        <div><img src="./images/applicationtab7.png" alt=""></div>
+                        <div class="mobilealign">
+                            <ul class="myappul">
+                                <li>Enable compact, high-resolution imaging sensors for endoscopes and MRI
+                                    machines.</li>
+                                <li>Support wearable medical devices with low-power, high-performance chips.</li>
+                                <li>Improve reliability and miniaturization of implantable devices.​</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Defense1" class="industry-tab-content">
+                    <div class="servicestabcontent-containersM">
+                        <div><img src="./images/applicationtab8.png" alt=""></div>
+                        <div class="mobilealign">
+                            <ul class="myappul">
+                                <li>Enable secure, high-speed optical communication systems.</li>
+                                <li>Support advanced LiDAR and radar systems for surveillance and targeting.​</li>
+                                <li>Improve thermal and mechanical stability for harsh environments</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ARVR1" class="industry-tab-content">
+                    <div class="servicestabcontent-containersM">
+                        <div><img src="./images/applicationtab4.png" alt=""></div>
+                        <div class="mobilealign">
+                            <ul class="myappul">
+                                <li>Enable compact, high-resolution micro displays.</li>
+                                <li>Support high-speed data processing for real-time rendering.​​​</li>
+                                <li>Improve power efficiency and thermal performance for wearable devices.​​​</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Computing1" class="industry-tab-content">
+                    <div class="servicestabcontent-containersM">
+                        <div><img src="./images/applicationtab6.png" alt=""></div>
+                        <div class="mobilealign">
+                            <ul class="myappul">
+                                <li>Enable 2.5D/3D chip stacking for higher compute density.</li>
+                                <li>Improve thermal management for high-power CPUs/GPUs.​</li>
+                                <li>Support optical interconnects for faster data transfer between components.​</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="LiDAR1" class="industry-tab-content">
+                    <div class="servicestabcontent-containersM">
+                        <div><img src="./images/applicationtab2.png" alt=""></div>
+                        <div class="mobilealign">
+                            <ul class="myappul">
+                                <li>Enable robust and compact LiDAR modules.</li>
+                                <li>Improve thermal management for high-power laser diodes.​</li>
+                                <li>Enhance signal integrity and reliability in harsh environments.​</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+</div>
 
 
         <section class="forthcontsec">

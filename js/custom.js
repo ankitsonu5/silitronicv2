@@ -553,7 +553,7 @@ window.onload = function () {
   const firstIndustryTab = document.querySelector(".industry-tab-btn");
   if (firstIndustryTab) {
     firstIndustryTab.classList.add("active-app"); // <-- Add this line
-    openIndustryTabMobile({ currentTarget: firstIndustryTab }, 'SiliconPhotonicsMobile');
+    openIndustryTabMobile({ currentTarget: firstIndustryTab }, 'SiliconPhotonics1');
   }
 };
 
