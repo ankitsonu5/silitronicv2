@@ -9154,4 +9154,8 @@ padding-top: 10px !important;
         
         
 
-        
+        @media (max-width:480px) {
+           .only-mobile-button-groupes .tablinks-mobile{
+                min-width: 100%;
+            }
+        }
