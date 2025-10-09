@@ -485,6 +485,55 @@ p.facility-card-text{
 }
 }
 
+.desktopview {
+  display: block;
+}
+
+.mobileview , .mobileview .owl-dots{
+  display: none;
+}
+
+/* Below 768px — hide desktop, show mobile */
+@media (max-width: 768px) {
+
+    .only-mobile .myappback .owl-dot:nth-child(4){
+        display: none;
+    }
+
+    
+  .desktopview {
+    display: none;
+  }
+
+
+  .mobileview {
+    display: block;
+  }
+    .facilityback .foursegmentsec .sglecolpart {
+        padding:0 !important ;
+    }
+
+.mobileview  .foursegmentsec .owl-dots button { display: none !important; }
+
+.mobile-dots .mobile-dot{
+    border: 1px solid white;
+}
+.mobile-dots .mobile-dot.active{
+    border: 1px solid white;
+}
+.mobile-dots {
+    margin-top: -66px;
+    display: flex
+;
+    justify-content: center;
+    gap: 8px;
+    padding: 15px 0 20px 0;
+}
+}
+
+
+
+
     </style>
 </head>
 
@@ -935,76 +984,100 @@ p.facility-card-text{
 
       
   <!-- DESKTOP  -->
-        <section class="fstcontsec facilityback mobile-positions" >
-            <div class="container">
-                <div class="lftrytlinepart myfacilitycolor">
-                    <h4>Scalable. Reliable. Precision-Built.​</h4>
-                    <p>Our System-in-Package (SiP) assembly capabilities are designed to meet the needs of the most
-                        advanced applications ranging from Defense to LiDAR, AR/VR, IoT and AI/ML. Our advanced
-                        engineering solutions ensure your products are built to outperform.</p>
+    <section class="fstcontsec facilityback mobile-positions">
+  <div class="container">
+    <div class="lftrytlinepart myfacilitycolor">
+      <h4>Scalable. Reliable. Precision-Built.​</h4>
+      <p>
+        Our System-in-Package (SiP) assembly capabilities are designed to meet
+        the needs of the most advanced applications ranging from Defense to
+        LiDAR, AR/VR, IoT and AI/ML. Our advanced engineering solutions ensure
+        your products are built to outperform.
+      </p>
 
-                    <div class="desktopview">
-                        <div class="fstsecforthcolpart faclitiyslidep ">
-                            <div class="sglecolpart faclitiyhorizontal">
-                                <h1>48,000/<span>year</span></h1>
-                                <p>SiP Modules (PCBA + <br> Wire Bonding + Glob <br> Top + Testing) – <Span
-                                        style="font-weight: bolder;">99% <br> yield</Span>​</p>
-                            </div>
-                            <div class="sglecolpart faclitiyhorizontal">
-                                <h1>60,000/<span>year</span></h1>
-                                <p>RF Modules (Fine <br> Pitch Wire Bonding + <br> Low Loop) – <Span
-                                        style="font-weight: bolder;">90% <br> yield</Span></p>
-                            </div>
-                            <div class="sglecolpart faclitiyhorizontal">
-                                <h1>60,000/<span>year</span></h1>
-                                <p>Flex PCBA <br> (Defense, Flexible <br> Assemblies) – <Span
-                                        style="font-weight: bolder;">90% <br> yield</Span></p>
-                            </div>
-                            <div class="sglecolpart faclitiyhorizontal">
-                                <h1>12,000/<span>year</span></h1>
-                                <p>SiP  (Optics <br> Assembly + Wire Bonding +<br> Testing) – <span
-                                        style="font-weight: bolder;"><br>99% yield</span></p>
-                            </div>
-                        </div>
-                    </div>
+      <!-- DESKTOP VIEW -->
+      <div class="desktopview">
+        <div class="fstsecforthcolpart faclitiyslidep">
+          <div class="sglecolpart faclitiyhorizontal">
+            <h1>48,000/<span>year</span></h1>
+            <p>
+              SiP Modules (PCBA + <br />Wire Bonding + Glob <br />Top + Testing)
+              – <Span style="font-weight: bolder;">99% <br />yield</Span>​
+            </p>
+          </div>
+          <div class="sglecolpart faclitiyhorizontal">
+            <h1>60,000/<span>year</span></h1>
+            <p>
+              RF Modules (Fine <br />Pitch Wire Bonding + <br />Low Loop) – <Span
+                style="font-weight: bolder;"
+                >90% <br />yield</Span
+              >
+            </p>
+          </div>
+          <div class="sglecolpart faclitiyhorizontal">
+            <h1>60,000/<span>year</span></h1>
+            <p>
+              Flex PCBA <br />(Defense, Flexible <br />Assemblies)
+              – <Span style="font-weight: bolder;">90% <br />yield</Span>
+            </p>
+          </div>
+          <div class="sglecolpart faclitiyhorizontal">
+            <h1>12,000/<span>year</span></h1>
+            <p>
+              SiP (Optics <br />Assembly + Wire Bonding +<br />Testing) – <span
+                style="font-weight: bolder;"
+                ><br />99% yield</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
 
-                       <!-- MOBILE  -->
-
-                    <div class="mobileview">
-                        <div class="fstsecforthcolpart">
-                            <div class="owl-carousel owl-theme foursegmentsec">
-                                <div class="item">
-                                    <div class="sglecolpart faclitiyhorizontal">
-                                        <h1>48,000/<span>year</span></h1>
-                                        <p>SiP Modules (PCBA + Wire Bonding + Glob Top + Testing) – 99% yield​</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="sglecolpart faclitiyhorizontal">
-                                        <h1>60,000/<span>year</span></h1>
-                                        <p>RF Modules (Fine Pitch Wire Bonding + Low Loop) – 90% yield​​</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="sglecolpart faclitiyhorizontal">
-                                        <h1>60,000/<span>year</span></h1>
-                                        <p>Flex PCBA (Defense, Flexible Assemblies) – 90% yield​​</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="sglecolpart faclitiyhorizontal">
-                                        <h1>12,000/<span>year</span></h1>
-                                        <p>SiP  (Optics Assembly + Wire Bonding + Testing) – 99% yield​​</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+      <!-- MOBILE VIEW -->
+      <div class="mobileview .mobiledotsview">
+        <div class="fstsecforthcolpart">
+          <div class="owl-carousel owl-theme foursegmentsec">
+            <div class="item">
+              <div class="sglecolpart faclitiyhorizontal">
+                <h1>48,000/<span>year</span></h1>
+                <p>
+                  SiP Modules (PCBA + Wire Bonding + Glob Top + Testing) – 99%
+                  yield​
+                </p>
+              </div>
             </div>
-        </section>
-
+            <div class="item">
+              <div class="sglecolpart faclitiyhorizontal">
+                <h1>60,000/<span>year</span></h1>
+                <p>
+                  RF Modules (Fine Pitch Wire Bonding + Low Loop) – 90% yield​​
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="sglecolpart faclitiyhorizontal">
+                <h1>60,000/<span>year</span></h1>
+                <p>
+                  Flex PCBA (Defense, Flexible Assemblies) – 90% yield​​
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="sglecolpart faclitiyhorizontal">
+                <h1>12,000/<span>year</span></h1>
+                <p>
+                  SiP (Optics Assembly + Wire Bonding + Testing) – 99% yield​​
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- custom dots (optional) -->
+        <div class="mobile-dots"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
         </section>
         </div>
@@ -1431,6 +1504,68 @@ p.facility-card-text{
     <script src="js/custom.js" type="text/javascript"></script>
     <script src="js/jquery.carousel-vertical.min.js" type="text/javascript"></script>
     <!-- Carousel Initialization -->
+
+    <script>
+        $(document).ready(function () {
+  // Initialize Owl Carousel for mobile
+  var mobileSlider = $(".mobileview .foursegmentsec").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    dots: false,
+    items: 1,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    smartSpeed: 800,
+    autoplayHoverPause: true,
+     responsive: {
+            0: {
+                items: 1 // for very small screens
+            },
+            480: {
+                items: 2 // slightly larger phones
+            },
+            768: {
+                items: 3 // 👈 for 768px and below show 3 items per view
+            },
+            1000: {
+                items: 4 // normal desktop behavior
+            }
+        }
+  });
+
+  // Handle custom dots
+  function setupMobileDots() {
+    var $dotsContainer = $(".mobileview .mobile-dots");
+    $dotsContainer.empty();
+
+    if ($(window).width() < 768) {
+      // Add 3 dots for mobile view
+      for (let i = 0; i < 3; i++) {
+        $dotsContainer.append('<span class="mobile-dot"></span>');
+      }
+      $dotsContainer.find(".mobile-dot").eq(0).addClass("active");
+
+      // Click event
+      $(".mobile-dot").click(function () {
+        var index = $(this).index();
+        mobileSlider.trigger("to.owl.carousel", [index, 300]);
+      });
+
+      // Update active dot on slide change
+      mobileSlider.on("changed.owl.carousel", function (event) {
+        var current = event.item.index % 3;
+        $(".mobile-dot").removeClass("active");
+        $(".mobile-dot").eq(current).addClass("active");
+      });
+    }
+  }
+
+  // Initialize and re-run on resize
+  setupMobileDots();
+  $(window).resize(setupMobileDots);
+});
+    </script>
 
     <script>
         $(document).ready(function () {
