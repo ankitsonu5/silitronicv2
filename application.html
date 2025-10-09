@@ -257,13 +257,19 @@
             color: #666;
         }
 
+        
+
         @media screen and (max-width: 768px) {
+
+               .containersed{
+        margin-top: -40px;
+    }
             .mobile-card {
                 margin: 0 2px !important;
             }
         }
 
-
+   
 
         .rows>div {
             gap: 6px;
@@ -274,7 +280,11 @@
             background-size: cover;
         }
 
-    
+    @media (max-width:480px){
+         .containersed{
+        margin-top: -60px;
+    }
+    }
       
    @media  (min-width:320px) and (max-width:400px){
              .only-mobile-buttones{
@@ -796,7 +806,7 @@
         <!-- Use this section only for mobile (wrap with media query if needed) Application Services-->
       <div class="only-mobile">
     <section class="services-section appsndcontsec growing-impact-section">
-        <div class="containers" style="margin-top: -60px;">
+        <div class="containers containersed" >
             <h2>Our Growing Impact</h2>
             <p class="">Silitronics is empowering innovators with IP generation-focused packaging solutions that
                 accelerate growth, safeguard ideas, and enable scalability.​</p>
