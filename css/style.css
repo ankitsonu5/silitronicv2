@@ -6262,7 +6262,26 @@ a.getintouchbut:hover,
 
 
 
-
+/* @media (max-width: 850px) {
+    .only-mobile {
+        display: block !important;
+    }
+    .headersec.sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    left: 0;
+    top: -40px;
+}
+.slidecontpart {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+} */
 
 
 
@@ -6276,6 +6295,7 @@ a.getintouchbut:hover,
     .only-mobile {
         display: block !important;
     }
+  
 }
 
 
