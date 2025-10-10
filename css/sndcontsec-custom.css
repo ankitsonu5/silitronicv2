@@ -124,6 +124,21 @@
   }
 }
 
+@media  (min-width:768px) and (min-width: 768px) {
+    .sndcontsecond {
+        padding: 3rem 0rem;
+    }
+    .one, .two {
+        max-width: 90px;
+    }
+    .two {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+ 
+}
+}
+
 /* Laptops */
 @media (min-width:1024px) {
   .slide2text {
