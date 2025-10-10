@@ -123,6 +123,15 @@ a.getintouchbut
 
 }
 
+@media (min-width:768px) and (max-width:1200px){
+    .slidecontpart h1
+{
+    font-size: 40px !important;
+    line-height: 50px;
+    padding-right: 100px;
+}
+}
+
 @media screen and (max-width: 991px) {
 
 body
