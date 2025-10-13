@@ -1344,6 +1344,8 @@
 
 
 
+
+
    /* ---------------------------------------------------------------  */
       @media (min-width:480px) and (max-width:768px){
         .one, .two {
@@ -1540,7 +1542,8 @@
 
 
 
-    <section class="headersec sticky only-desktop">
+    <!-- desktop navbar  -->
+   <section class="headersec sticky only-desktop" >
         <div class="container">
             <div class="logonnavsec">
                 <div class="logo ">
@@ -1549,7 +1552,22 @@
                 <div class="navsec">
                     <ul>
                         <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="service.html" class="active-menu">Services</a></li>
+                        <li class="dropdown">
+                             
+                        <a style="display: flex;  gap: 10px; font-size: 14px; align-items:center"  href="service.html" class="dropbtn">
+                         
+                             Services <i class="ri-arrow-up-s-line i"></i>
+                   
+                            </a>
+                            <ul class="dropdown-content navsecd">
+                               <li><a href="design.html">Design</a></li>
+                               <li class="navsecd"><a href="fabrication.html">Fabrication</a></li>
+                               <li class="navsecd"><a href="dicing.html">Dicing</a></li>
+                               <li class="navsecd"><a href="siliconphotonics.html">Silicon Photonics</a></li>
+                               <li class="navsecd"><a href="servicesassebly.html">Assembly</a></li>
+                               <li class="navsecd"><a href="Chiplet.html">Chiplets</a></li>
+                            </ul>
+                        </li>
                         <li><a href="application.html">Applications</a></li>
                         <li><a href="facility.html">Facility</a></li>
                         <!--<li><a href="resource.html">Resources Hub</a></li> -->
@@ -1562,41 +1580,46 @@
             </div>
         </div>
     </section>
+
     <!-- mobile navbar -->
-
-
     <div class="only-mobile sticky">
-        <div class="menu-header only-mobile sticky">
-            <img src="images/logo.png" alt="SILITRONICS Logo">
-            <div class="hamburger close-icon" onclick="toggleMenu(this)">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <div class="menu-header only-mobile sticky">
+        <img src="images/logo.png" alt="SILITRONICS Logo">
+        <div class="hamburger close-icon" onclick="toggleMenu(this)">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+    </div>
+    <div class="side-menu" id="menu">
+        <ul>
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li class="nav-dropdown">
+                <a href="javascript:void(0)" class="nav-toggles " style="display: flex;gap:30px;" >SERVICES <i class="ri-arrow-up-s-line mobile_icon"></i> </a>
+                <ul class="nav-menu drop-down-menu-hidden">
+                     <li><a href="design.html">Design</a></li>
+                    <li><a href="fabrication.html">Fabrication</a></li>
+                    <li><a href="dicing.html">Dicing</a></li>
+                    <li><a href="siliconphotonics.html">Silicon Photonics</a></li>
+                    <li><a href="servicesassebly.html">Assembly</a></li>
+                    <li><a href="Chiplet.html">Chiplets</a></li>
 
-        <div class="side-menu" id="menu">
-            <ul>
-
-                <li><a href="index.html" class="active">HOME</a></li>
-                <li><a href="./service.html">SERVICES</a></li>
-                <li><a href="./application.html">APPLICATIONS</a></li>
-                <li><a href="./facility.html">FACILITY</a></li>
-               <!-- <li><a href="./resource.html">Resources hub</a></li> -->
-                <li><a href="./about.html">ABOUT US</a></li>
-                <li><a href="./contact.html">CONTACT US</a></li>
-            </ul>
-
-
-            <div class="social-icons">
-                <a href="https://youtube.com" target="_blank">
-                    <img src="images/youtube.svg" alt="YouTube">
-                </a>
-                <a href="https://linkedin.com" target="_blank">
-                    <img src="images/linkedin.svg" alt="LinkedIn">
-                </a>
-            </div>
+                </ul>
+            </li>
+            <li><a href="application.html">APPLICATIONS</a></li>
+            <li><a href="facility.html">FACILITY</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="https://youtube.com" target="_blank">
+                <img src="images/youtube.svg" alt="YouTube">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
         </div>
+    </div>
     </div>
 
     <main>
@@ -3287,6 +3310,42 @@
         });
 
     </script>
+
+    <script>
+
+let nav_toggles = document.querySelector(".nav-toggles");
+let drop_down_menu_hidden = document.querySelector(".drop-down-menu-hidden");
+let mobile_icon= document.querySelector(".mobile_icon");
+
+nav_toggles.addEventListener("click", () => {
+    if (drop_down_menu_hidden.style.display === "block") {
+        // Hide with animation
+        drop_down_menu_hidden.style.opacity = "0";
+        drop_down_menu_hidden.style.transform = "translateY(-10px)";
+         mobile_icon.style.transform = "rotate(0deg)";
+         
+        
+        setTimeout(() => {
+            drop_down_menu_hidden.style.display = "none";
+        }, 300); // wait for animation to finish
+    } else {
+        // Show with animation
+        drop_down_menu_hidden.style.display = "block";
+        drop_down_menu_hidden.style.opacity = "0";
+        drop_down_menu_hidden.style.transform = "translateY(-10px)";
+          mobile_icon.style.transform = "rotate(180deg)";
+
+
+        // small delay so transition can apply
+        setTimeout(() => {
+            drop_down_menu_hidden.style.opacity = "1";
+            drop_down_menu_hidden.style.transform = "translateY(0)";
+            drop_down_menu_hidden.style.transition = "all 0.3s ease";
+            // mobile_icon.style.transition = "all 0.3s ease-in-out";
+        }, 10);
+    }
+});
+</script>
 </body>
 
 </html>

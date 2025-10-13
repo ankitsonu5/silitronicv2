@@ -9201,3 +9201,110 @@ padding-top: 10px !important;
 }
 
 
+
+
+
+ /* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button (Services link) */
+.dropbtn {
+  color: white;         /* change as per your navbar theme */
+  text-decoration: none;
+  padding: 0 0;
+  display: inline-block;
+}
+
+/* Arrow style */
+.dropbtn i {
+      font-weight: 500;
+    font-size: 14px;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#000;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Dropdown links */
+.navsecd li a {
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  width: 200px;
+  margin:0 0 0 0;
+ 
+}
+
+
+.navsecd{
+  margin:0 0 0 0 !important;
+}
+
+.dropdown-content li a:hover {
+  background-color: rgba(255, 255, 255, 0.105);
+}
+
+/* Show on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Optional: highlight parent when open */
+.dropdown:hover .dropbtn {
+  background-color: #222; /* adjust to your navbar background */
+  color: white;
+}
+
+.headersec{
+    overflow: visible;
+}
+
+/* mobile  */
+.drop-down-menu-hidden{
+    display: none;
+    color: #000044;
+}
+/* Smooth rotation */
+.dropbtn .i {
+  font-weight: 500;
+  font-size: 22px;
+  display: inline-block; /* required for transform */
+  transition: transform 0.3s ease;
+}
+
+/* Rotate when parent (.dropdown) is hovered */
+.dropdown:hover .dropbtn .i {
+  transform: rotate(180deg);
+}
+
+.nav-toggles,
+.nav-toggles:focus,
+.nav-toggles:active {
+  outline: none;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent; /* mobile tap highlight remove */
+}
+
+.drop-down-menu-hidden {
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+ 
+.mobile_icon{
+    font-size: 30px;
+}
