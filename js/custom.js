@@ -25,7 +25,7 @@ $(document).ready(function() {
     margin: 0,
     responsiveClass: true,
     autoplay: isIndexPage, // Only autoplay on index page
-    autoplayTimeout: 5000,
+    autoplayTimeout: 6000,
     nav: false,
     dots: isIndexPage, // Only show dots on index page
     mouseDrag: isIndexPage, // Only allow dragging on index page
@@ -33,6 +33,7 @@ $(document).ready(function() {
     pullDrag: isIndexPage, // Only allow pull drag on index page
     freeDrag: false,
     stagePadding: 0,
+    autoplayHoverPause: true,   
     responsive: {
       0: {
         items: 1
@@ -72,7 +73,7 @@ $(document).ready(function() {
     margin: 0,
     responsiveClass: true,
     autoplay: isIndexPage, // Only autoplay on index page
-    autoplayTimeout: 5000,
+    autoplayTimeout: 6000,
     nav: false,
     dots: isIndexPage, // Only show dots on index page
     mouseDrag: isIndexPage, // Only allow dragging on index page
@@ -80,6 +81,7 @@ $(document).ready(function() {
     pullDrag: isIndexPage, // Only allow pull drag on index page
     freeDrag: false,
     stagePadding: 0,
+     autoplayHoverPause: true,   
     responsive: {
       0: {
         items: 1
