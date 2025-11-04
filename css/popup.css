@@ -153,6 +153,22 @@
 }
 
 
+@media (min-width:361px) and (max-width: 376px) {
+  
+     .pop-up-right-art {
+        width: 4rem;
+    }
+
+    .pop-up-left-art {
+        left: 0;
+        bottom: -70px;
+        width: 4rem;
+    }
+
+}
+
+
+
 @media screen and (max-width: 360px) {
     .fifthcontsecond {
         top: 50px !important;
@@ -176,7 +192,7 @@
 
     .pop-up-left-art {
         left: 0;
-        bottom: 50px;
+        bottom: 30px;
         width: 4rem;
     }
 
