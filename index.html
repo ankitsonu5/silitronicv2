@@ -2712,12 +2712,12 @@
                             <p>We’d love to hear from you! Drop your details below, and our experts will connect with you to craft smart, efficient semiconductor and photonics solutions for your next big idea.</p>
                         </div>
                         <div class="rightcontpanel">
-                            <form action="mail/sendmail.php" method="post">
-                                <div class="inputfieldwidth"><input type="text" name="name" placeholder="Name*"
+                            <form id="contactForm" action="mail/sendmail.php" method="post">
+                                <div class="inputfieldwidth"><input type="text" name="name" required placeholder="Name*"
                                         class="inputfield"></div>
-                                <div class="inputfieldwidth"><input type="text" name="organization"
+                                <div class="inputfieldwidth"><input type="text" required name="organization"
                                         placeholder="Organization*" class="inputfield"></div>
-                                <div class="inputfieldwidth"><input type="tel" name="contact number"
+                                <div class="inputfieldwidth"><input type="tel"  name="contact number"
                                         placeholder="Contact number*" class="inputfield"></div>
                                 <div class="inputfieldwidth"><input type="email" name="email" placeholder="Email*"
                                         class="inputfield"></div>
@@ -2883,6 +2883,7 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Carousel Initialization -->
+
 
     <script>
         $(document).ready(function () {
@@ -3221,6 +3222,18 @@ nav_toggles.addEventListener("click", () => {
         }, 10);
     }
 });
+</script>
+
+<!-- submit button click redirect to the thank you page  -->
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(event){
+    event.preventDefault(); // stops actual form submission
+    
+    // Optional: clear form fields before redirect
+    this.reset();
+
+    window.location.href = "thank-you.html"; // redirects to thankyou page
+  });
 </script>
   
 

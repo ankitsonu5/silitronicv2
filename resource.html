@@ -523,7 +523,7 @@
                             <p>Share your details for an expert connect.</p>
                         </div>
                         <div class="rightcontpanel">
-                            <form action="mail/sendmail.php" method="post">
+                            <form  action="mail/sendmail.php" method="post">
                                 <div class="inputfieldwidth"><input type="text" name="name" placeholder="Name*"
                                         class="inputfield"></div>
                                 <div class="inputfieldwidth"><input type="text" name="organization"
@@ -971,6 +971,19 @@ nav_toggles.addEventListener("click", () => {
     <script src="js/jquery.matchHeight.js" type="text/javascript"></script>
     <script src="js/autoheight.js" type="text/javascript"></script>
     <script src="./js/custom.js"></script>
+
+    <!-- submit button click redirect to the thank you page  -->
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(event){
+    event.preventDefault(); // stops actual form submission
+    
+    // Optional: clear form fields before redirect
+    this.reset();
+
+    window.location.href = "thank-you.html"; // redirects to thankyou page
+  });
+</script>
+  
 </body>
 
 </html>

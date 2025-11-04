@@ -3260,6 +3260,19 @@ nav_toggles.addEventListener("click", () => {
     }
 });
 </script>
+
+<!-- submit button click redirect to the thank you page  -->
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(event){
+    event.preventDefault(); // stops actual form submission
+    
+    // Optional: clear form fields before redirect
+    this.reset();
+
+    window.location.href = "thank-you.html"; // redirects to thankyou page
+  });
+</script>
+  
 </body>
 
 </html>
