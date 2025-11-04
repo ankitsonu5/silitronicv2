@@ -78,7 +78,11 @@
 
 
 @media screen and (max-width: 1366px) {
-
+    .fifthcontsecond {
+    
+        width: 100vw !important;
+        top: 100px;
+    }
 
     #btn_button {
         position: absolute;
