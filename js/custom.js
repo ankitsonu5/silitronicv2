@@ -25,7 +25,7 @@ $(document).ready(function() {
     margin: 0,
     responsiveClass: true,
     autoplay: isIndexPage, // Only autoplay on index page
-    autoplayTimeout: 6000,
+    autoplayTimeout: 10000,
     nav: false,
     dots: isIndexPage, // Only show dots on index page
     mouseDrag: isIndexPage, // Only allow dragging on index page
@@ -73,7 +73,7 @@ $(document).ready(function() {
     margin: 0,
     responsiveClass: true,
     autoplay: isIndexPage, // Only autoplay on index page
-    autoplayTimeout: 6000,
+    autoplayTimeout: 10000,
     nav: false,
     dots: isIndexPage, // Only show dots on index page
     mouseDrag: isIndexPage, // Only allow dragging on index page
