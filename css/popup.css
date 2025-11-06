@@ -5,8 +5,8 @@
 /* ********************************* */
 
 
-.fifthcontsec {
-    /* position: relative; */
+.fifthcontsecond {
+    position: relative;
 }
 
 .pop-up-left-art {
@@ -50,7 +50,7 @@
 .fifthcontsecond {
     height: 100vh;
     width: 100vw !important;
-    width: 100% ;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,6 +62,8 @@
     background-color: white;
     background-size: cover;
     display: none;
+
+    overflow: hidden;
  
 }
 
@@ -75,9 +77,7 @@
     z-index: 999;
 }
 
-
-
-@media screen and (max-width: 1366px) {
+@media (min-width:1366px) and (max-width: 1920px) {
     .fifthcontsecond {
     
         width: 100vw !important;
@@ -98,6 +98,66 @@
     }
 }
 
+
+@media (min-width:1200px) and (max-width: 1366px) {
+    .fifthcontsecond {
+    
+        width: 100vw !important;
+        top: 100px;
+    }
+
+    #btn_button {
+        position: absolute;
+        top: 96px;
+        right: 216px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 999;
+    }
+    .fifthcontsecond{
+        padding-bottom: 50px;
+    }
+
+    .pop-up-left-art {
+    bottom:5rem !important;
+}
+
+}
+@media (min-width:768px) and (max-width: 1200px) {
+     .rightcontpanel-heading{
+        font-size: 2.5rem;
+    }
+    .fifthcontsecond {
+    
+        width: 100vw !important;
+        top: 100px;
+    }
+
+    #btn_button {
+        position: absolute;
+        top: 50px;
+        right:120px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 999;
+    }
+    .fifthcontsecond{
+        padding-bottom: 50px;
+    }
+
+      .pop-up-right-art {
+        width: 7rem;
+    }
+
+    .pop-up-left-art {
+        left: 0;
+        bottom: 5rem;
+        width: 7rem;
+    }
+
+}
 
 @media screen and (max-width: 768px) {
     .rightcontpanel-heading {
@@ -136,7 +196,8 @@
     }
 
     .rightcontpanel-heading{
-        font-size: 1.8rem;
+        font-size: 30px;
+        line-height: 32px;
     }
 
     #btn_button {
@@ -152,6 +213,9 @@
         left: 0;
         bottom: 50px;
         width: 5rem;
+    }
+    .contactsec .lftrytlineparts{
+        margin-top: -50px;
     }
 
 }
@@ -196,7 +260,7 @@
 
     .pop-up-left-art {
         left: 0;
-        bottom: 30px;
+        bottom: 2.5rem;
         width: 4rem;
     }
 
