@@ -255,12 +255,18 @@
 @media (min-width:380px)  and(max-width:390px){
       .pop-up-left-art {
         left: 0;
-        bottom: -0px !important;
+        bottom: -50px !important;
         width: 5rem;
     }
 }
 
-
+@media (min-width:375px)  and(max-width:380px){
+      .pop-up-left-art {
+        left: 0;
+        bottom: 0px;
+        width: 5rem;
+    }
+}
 
 
 @media (max-width:375px){
