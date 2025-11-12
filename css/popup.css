@@ -158,6 +158,29 @@
 
 }
 
+@media (min-width:880px) and (max-width: 1200px) {
+
+    .pop-up-left-art {
+        left: 0;
+        bottom: 90px;
+        width: 7rem;
+    }
+
+   
+}
+
+
+@media (min-width:768px) and (max-width: 880px) {
+
+    .pop-up-left-art {
+        left: 0;
+        bottom: 90px;
+        width: 7rem;
+    }
+
+   
+}
+
 @media screen and (max-width: 768px) {
     .rightcontpanel-heading {
         font-size: 2rem;
@@ -176,7 +199,7 @@
 
     .pop-up-left-art {
         left: 0;
-        bottom: 0px;
+        bottom: 50px;
         width: 7rem;
     }
 
@@ -185,6 +208,8 @@
         right: 96px;
     }
 }
+
+
 
 @media screen and (max-width: 480px) {
     .fifthcontsecond {
@@ -204,56 +229,62 @@
         right: 12px !important;
     }
 
-     .pop-up-right-art {
+    .pop-up-right-art {
+        width: 5rem;
+    }
+    .pop-up-left-art{
+        bottom: 50px ;
         width: 5rem;
     }
 
-    .pop-up-left-art {
-        left: 0;
-        bottom: 0;
-        width: 5rem;
-    }
+  
     .contactsec .lftrytlineparts{
         margin-top: -50px;
     }
 
 }
 
-
-
-
-@media screen and (max-width: 360px) {
-    .fifthcontsecond {
-        top: 50px !important;
-        padding: 0 !important;
-        z-index: 1000 !important;
-        overflow: auto;
-    }
-
-    .rightcontpanel-heading{
-        font-size: 1.8rem;
-    }
-
-    #btn_button {
-        top: 18px !important;
-        right: 12px !important;
-    }
-
-     .pop-up-right-art {
-        width: 4rem;
-    }
-
-    .pop-up-left-art {
+@media (min-width:400px)  and(max-width:450px){
+      .pop-up-left-art {
         left: 0;
-        bottom: 1.5rem;
+        bottom: 50px;
         width: 4rem;
     }
+}
 
+@media (min-width:380px)  and(max-width:390px){
+      .pop-up-left-art {
+        left: 0;
+        bottom: -0px !important;
+        width: 5rem;
+    }
 }
 
 
 
 
+@media (max-width:375px){
+      .pop-up-left-art {
+      
+        bottom: -70px ;
+       
+    }
+}
 
 
+@media (max-width:345px){
+      .pop-up-left-art {
+      
+        bottom: 50px ;
+       
+    }
+}
 
+
+@media (max-width:360px) {
+      .pop-up-left-art {
+        left: 0;
+        bottom:0px;
+        width: 5rem;
+    }
+}
