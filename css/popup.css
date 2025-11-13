@@ -1,13 +1,35 @@
-
-
+/* Modal Container */
 .fifthcontsecond {
-    position: relative;
+    position: fixed;
+    top: 100px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: url("../images/BG_3\ 5.png") no-repeat center center;
+    background-color: white;
+    background-size: cover;
+    padding-bottom: 50px;
 }
 
+/* Close Button */
+#btn_button {
+    position: absolute;
+    top: 96px;
+    right: 216px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* Decorative Art Elements */
 .pop-up-left-art {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 0 !important;
 }
 
 .pop-up-right-art {
@@ -16,171 +38,66 @@
     right: 0;
 }
 
+/* Heading */
 .rightcontpanel-heading {
     font-size: 70px;
     line-height: 85px;
-    font-family: 'Titillium Web';
+    font-family: 'Titillium Web', sans-serif;
     font-weight: bold;
     text-align: center;
     padding: 0 0 50px 0;
+    margin-top: 90px;
     background: linear-gradient(90deg, #050EF1, #FD0200);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-top: 90px;
 }
 
-
-/* ********************************* */
+/* Contact Section */
 .contactsec .lftrytlineparts {
+    position: relative;
     justify-content: center;
     align-items: center;
-    position: relative;
     margin-top: -100px;
     padding-bottom: 5rem;
 }
 
-.fifthcontsecond {
-    height: 100vh;
-    width: 100vw !important;
+/* ========================================
+   MEDIA QUERIES
+   ======================================== */
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 100px;
-    z-index: 1000;
-    background: url("../images/BG_3\ 5.png");
-    /* space allowed inside quotes */
-    background-color: white;
-    background-size: cover;
-    display: none;
-
-    overflow: hidden;
- 
-}
-
-#btn_button {
-    position: absolute;
-    top: 50px;
-    right: 200px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 999;
-}
-
-@media (min-width:1366px) and (max-width: 1920px) {
+/* Tablet Landscape: 1200px - 1366px */
+@media (min-width: 1200px) and (max-width: 1366px) {
     .fifthcontsecond {
-    
-        width: 100vw !important;
-        top: 100px;
-
-    }
-
-    #btn_button {
-        position: absolute;
-        top: 96px;
-        right: 216px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        z-index: 999;
-    }
-    .fifthcontsecond{
-        padding-bottom: 50px;
-    }
-    .pop-up-left-art {
-    bottom: 5rem;
-    left: 0;
-}
-}
-
-
-@media (min-width:1200px) and (max-width: 1366px) {
-    .fifthcontsecond {
-    
-        width: 100vw !important;
-        top: 100px;
         overflow-y: scroll;
     }
-
-    #btn_button {
-        position: absolute;
-        top: 96px;
-        right: 216px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        z-index: 999;
-    }
-    .fifthcontsecond{
-        padding-bottom: 50px;
-    }
-
-    .pop-up-left-art {
-    bottom:0rem ;
 }
 
-}
-@media (min-width:768px) and (max-width: 1200px) {
-     .rightcontpanel-heading{
+/* Tablet: 768px - 1199px */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .rightcontpanel-heading {
         font-size: 2.5rem;
-    }
-    .fifthcontsecond {
-    
-        width: 100vw !important;
-        top: 100px;
+        line-height: 1.2;
     }
 
     #btn_button {
-        position: absolute;
         top: 50px;
-        right:120px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        z-index: 999;
-    }
-    .fifthcontsecond{
-        padding-bottom: 50px;
+        right: 120px;
     }
 
-      .pop-up-right-art {
+    .pop-up-right-art {
         width: 7rem;
     }
-
-    .pop-up-left-art {
-        left: 0;
-        bottom: 0;
-        width: 7rem;
-    }
-
 }
 
-@media (min-width:880px) and (max-width: 1200px) {
-
+/* Tablet Specific: 768px - 880px */
+@media (min-width: 768px) and (max-width: 880px) {
     .pop-up-left-art {
-        left: 0;
-        bottom: 90px;
         width: 7rem;
     }
-
-   
 }
 
-
-@media (min-width:768px) and (max-width: 880px) {
-
-    .pop-up-left-art {
-        left: 0;
-        bottom: 90px;
-        width: 7rem;
-    }
-
-   
-}
-
+/* Mobile Large: max 768px */
 @media screen and (max-width: 768px) {
     .rightcontpanel-heading {
         font-size: 2rem;
@@ -189,8 +106,9 @@
     }
 
     .fifthcontsecond {
-        overflow: auto;
         top: 50px;
+        height: calc(100vh - 50px);
+        overflow: auto;
     }
 
     .pop-up-right-art {
@@ -198,9 +116,8 @@
     }
 
     .pop-up-left-art {
-        left: 0;
-        bottom: 50px;
-        width: 7rem;
+        width: 5rem;
+        margin-bottom: 0;
     }
 
     #btn_button {
@@ -209,88 +126,69 @@
     }
 }
 
-
-
+/* Mobile Small: max 480px */
 @media screen and (max-width: 480px) {
     .fifthcontsecond {
-        top: 50px !important;
-        padding: 0 !important;
-        z-index: 1000 !important;
+        top: 50px;
+        height: calc(100vh - 50px);
+        padding: 0;
         overflow: auto;
     }
 
-    .rightcontpanel-heading{
+    .rightcontpanel-heading {
         font-size: 30px;
         line-height: 32px;
     }
 
     #btn_button {
-        top: 18px !important;
-        right: 12px !important;
+        top: 18px;
+        right: 12px;
     }
 
-    .pop-up-right-art {
-        width: 5rem;
-    }
-    .pop-up-left-art{
-        bottom: 50px ;
+    .pop-up-right-art,
+    .pop-up-left-art {
         width: 5rem;
     }
 
-  
-    .contactsec .lftrytlineparts{
+    .pop-up-left-art {
+        margin-bottom: 0;
+    }
+
+    .contactsec .lftrytlineparts {
         margin-top: -50px;
     }
-
 }
 
-@media (min-width:400px)  and(max-width:450px){
-      .pop-up-left-art {
-        left: 0;
-        bottom: 50px;
+/* iPhone SE & Small Mobile: max 375px */
+@media screen and (max-width: 375px) {
+    .fifthcontsecond {
+        top: 40px;
+        height: calc(100vh - 40px);
+        padding: 0;
+    }
+
+    .rightcontpanel-heading {
+        font-size: 26px;
+        line-height: 30px;
+        margin-top: 60px;
+        padding: 0 0 30px 0;
+    }
+
+    #btn_button {
+        top: 15px;
+        right: 10px;
+    }
+
+    .pop-up-right-art,
+    .pop-up-left-art {
         width: 4rem;
     }
-}
 
-@media (min-width:380px)  and(max-width:390px){
-      .pop-up-left-art {
-        left: 0;
-        bottom: -50px !important;
-        width: 5rem;
+    .pop-up-left-art {
+        margin-bottom: -150px;
     }
-}
 
-@media (min-width:375px)  and(max-width:380px){
-      .pop-up-left-art {
-        left: 0;
-        bottom: 0px;
-        width: 5rem;
-    }
-}
-
-
-@media (max-width:375px){
-      .pop-up-left-art {
-      
-        bottom: -70px ;
-       
-    }
-}
-
-
-@media (max-width:345px){
-      .pop-up-left-art {
-      
-        bottom: 50px ;
-       
-    }
-}
-
-
-@media (max-width:360px) {
-      .pop-up-left-art {
-        left: 0;
-        bottom:0px;
-        width: 5rem;
+    .contactsec .lftrytlineparts {
+        margin-top: -30px;
     }
 }
