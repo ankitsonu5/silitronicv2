@@ -3065,14 +3065,14 @@
             // Remove 'tablinks-active' class from all tab buttons
             tablinks = document.getElementsByClassName("tablinks");
             for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].classList.remove("tablinks-active");
+                tablinks[i].classList.remove("tablinks-actives");
             }
 
             // Show the selected tab content
             document.getElementById(cityName).style.display = "block";
 
             // Add 'tablinks-active' class to the clicked tab
-            evt.currentTarget.classList.add("tablinks-active");
+            evt.currentTarget.classList.add("tablinks-actives");
         }
 
         // ========== Value Tab Function (Desktop ke liye bhi) ==========
