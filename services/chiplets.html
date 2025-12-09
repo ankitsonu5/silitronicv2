@@ -4,23 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/animate.css" rel="stylesheet" type="text/css" />
-    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/slimmenu.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="../css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/slimmenu.min.css" rel="stylesheet" type="text/css" />
     <!--<link href="css/carousel-vertical.min.css" rel="stylesheet" type="text/css" />-->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
     <script type="module"
         src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/our-service-custom.css">
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/responsive.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/popup.css">
-    <link rel="stylesheet" href="./css/sndcontsec-custom.css">
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="../css/sndcontsec-custom.css">
     <title>Silitronics</title>
     <style>
         /* Banner height adjustments for different screen sizes */
@@ -259,7 +258,7 @@
 
         .bottomarrow {
             position: absolute;
-            bottom: 50px;
+            bottom: 150px;
             right: 50px;
             z-index: 100;
             cursor: pointer;
@@ -268,8 +267,8 @@
         /* Custom Dots Navigation */
         .custom-dots {
             position: absolute;
-            right: 60px;
-            top: 65%;
+            right: 63px;
+            top: 54%;
             transform: translateY(-50%);
             display: flex;
             flex-direction: column;
@@ -308,7 +307,6 @@
 
         .tabslidersec .swiper-slide {
             height: auto;
-            align-items: start;
         }
 
         /* Override any conflicting owl carousel styles */
@@ -371,11 +369,11 @@
         }
 
         .tabslidersec .swiper-slide {
-            width: 100% !important;
+            width: 95% !important;
             height: 600px !important;
             flex-shrink: 0 !important;
             display: flex !important;
-            align-items: center !important;
+            align-items: start !important;
             padding: 14px;
         }
 
@@ -637,17 +635,15 @@
         /* Mobile banner text styling */
         .bannersec-mobile .slidecontpart h1 {
             font-size: 19px !important;
-            line-height: 24px !important;
+            line-height: 18px !important;
             font-weight: 400 !important;
             letter-spacing: 5px !important;
         }
 
         .bannersec-mobile .slidecontpart p {
             font-size: 14px !important;
-            line-height: 20px !important;
-            letter-spacing: 1px !important;
-            width: 250px;
-            color: #ffffff;
+            line-height: 17px !important;
+            letter-spacing: 3px !important;
         }
 
         /* Remove extra margin/padding for mobile banner */
@@ -725,13 +721,12 @@
         }
 
         .service-section-spectrum-section .card {
-            width: 100%;
             background: linear-gradient(to right, #d9cef5, rgba(221, 213, 240, 0.6));
             border: 2px solid #000;
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            max-width: 758px !important;
+            max-width: 500px !important;
         }
 
         .service-section-spectrum-section .card .card-img-head {
@@ -796,6 +791,18 @@
         }
 
         @media (max-width: 768px) {
+
+
+            .tabcontent-mobiles {
+                display: none;
+            }
+
+            .tabcontent-mobile {
+                display: none;
+            }
+
+
+
             .service-section-spectrum-section .container {
                 position: relative;
                 display: none;
@@ -959,21 +966,6 @@
             }
         }
 
-        @media (max-width: 480px) {
-             .sndcontsecond {
-      /* padding: 0 0 4rem 0; */
-      padding-top:60px ;
-       
-     }
-            .service-section-spectrum-section {
-                padding: 0px 12px;
-            }
-
-            .bannersec-mobile .slidecontpart h1 {
-                padding-right: 80px;
-            }
-        }
-
         @media (max-width: 411px) {
             .section-spectrum-mobile-view .slider-container {
                 padding: 48px;
@@ -994,11 +986,6 @@
 
             .section-spectrum-mobile-view .slide {
                 height: auto;
-                padding: 30px 18px;
-            }
-
-            .section-spectrum-mobile-view .slide h3 {
-                font-size: 20px;
             }
         }
 
@@ -1006,10 +993,6 @@
             color: #000 !important;
             font-size: 48px;
             margin-bottom: 42px;
-        }
-
-        .mt-50 {
-            margin-top: 50px !important;
         }
 
         .fstcontsec-bottom-head {
@@ -1024,9 +1007,8 @@
         .sip-design-process-capability {
             background: transparent !important;
             padding-top: 100px;
-            padding-bottom: 0 !important;
-            height: 630px !important;
-
+            padding-bottom: 0;
+            height: 630px;
         }
 
         .servicecontsec-items-list {
@@ -1084,20 +1066,6 @@
 
         /* mobile sip design and process style code */
 
-       
-        .sndcontsec-mobile h2 {
-            font-size: 32px;
-            line-height: 35px;
-            font-family: 'Titillium Web';
-            font-weight: bold;
-            text-align: center;
-            /* padding: 0 0 40px 0; */
-            background: linear-gradient(90deg, #050EF1, #FD0200);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 2rem !important;
-        }
 
         .sipmaincont {
             display: flex !important;
@@ -1106,15 +1074,18 @@
             align-items: flex-start;
             height: 0;
             margin-top: -10rem;
+
         }
 
-      
+
+
         .divtextcont-items li {
             list-style-type: disc !important;
         }
 
-       
-     
+
+
+
 
         .servicestabcontent-containers img {
             width: 100% !important;
@@ -1146,6 +1117,10 @@
         }
 
         @media screen and (max-width: 768px) {
+
+
+
+
             #silitronics-extensive-design h2 {
                 color: #fff;
                 text-align: center;
@@ -1157,15 +1132,21 @@
 
         @media screen and (max-width: 480px) {
 
+            .sndcontsecond {
+                /* padding: 0 0 4rem 0; */
+                padding-top: 60px;
+
+            }
 
             .servicestabcontent-containers {
                 overflow: visible;
             }
 
-            .sndcontsec-mobile {
-                padding: 0.5rem;
-            }
+
+
         }
+
+        /* <<<<<<< Updated upstream */
 
         @media screen and (max-width: 480px) {
             .servicestabcontent-containers {
@@ -1223,55 +1204,96 @@
             background-clip: text;
         }
 
-        .services-section {
-            /* margin: 80px 0 60px 0; */
-            padding: 60px 0;
-            width: 100vw;
-            max-width: 100vw;
-            background: none;
-            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.1);
-            position: relative;
-            left: 50%;
-            right: 50%;
-            margin-left: -50vw;
-            margin-right: -50vw;
-            margin-top: 0;
-            margin-bottom: 0;
+
+
+        .heading {
+            font-size: 30px;
+            line-height: 32px;
+            font-family: 'Titillium Web';
+            font-weight: bold;
+            text-align: center;
+            /* padding: 0 0 40px 0; */
+            background: linear-gradient(90deg, #050EF1, #FD0200);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
+        @media (min-width:767px) {
+            .heading {
+                font-size: 70px;
+                line-height: 85px;
+            }
+
+            .service-section-spectrum-section .card {
+                width: 100%;
+            }
 
 
-        /* p.mypM {
+        }
+
+        /* <<<<<<< Updated upstream */
+        .service-section-spectrum-section .card {
+            max-width: 100% !important;
+        }
+
+        /* ======= */
+
+        @media (min-width:1000px) {
+
+            .service-section-spectrum-section .card {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .servicestabcontent-containers {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                justify-content: space-between;
+                /* overflow-x: hidden; */
+                margin-top: 30px;
+                flex-wrap: wrap;
+                margin-bottom: 42px;
+                overflow: visible;
+            }
+
+            .service-section-spectrum-section {
+                padding: 0 12px;
+            }
+        }
+
+        #design-rule-section .container {
+            display: flex !important;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #design-rule-section .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 248px;
+            text-align: center;
+            flex: 1 1 200px;
+        }
+
+        #design-rule-section .card img {
             width: 100%;
             height: auto;
-            font-size: 14px !important;
-            line-height: 24px !important;
-            font-family: 'Spline Sans Mono' !important;
-            color: #22033a !important;
-            font-weight: lighter !important;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 362px;
-        } */
+            display: block;
+        }
 
-        .mobilealign h2 {
+        #design-rule-section .caption {
+            padding: 10px;
             font-weight: bold;
-            font-family: 'Titillium Web';
-            line-height: 24px;
-            margin-top: 10px;
-            max-width: 361px;
+            background-color: white;
         }
 
-        .casestudycontsec {
-            width: 100%;
-            overflow: hidden;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 24px;
-            justify-content: space-between;
-        }
-
-        .services-section-head-desk {
+        #design-rule-section h2 {
             font-size: 70px;
             line-height: 85px;
             font-family: 'Titillium Web';
@@ -1284,63 +1306,76 @@
             background-clip: text;
         }
 
-        @media screen and (max-width: 768px) {
-            .services-section-head-desk {
-                font-size: 2rem;
-                line-height: 35px;
-                font-family: 'Titillium Web';
-                font-weight: bold;
-                text-align: center;
-                padding: 0 0 30px 0;
-                background: linear-gradient(90deg, #050EF1, #FD0200);
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
 
+
+
+        @media (min-width:767px) {
+
+
+
+
+
+
+            .heading {
+                font-size: 70px;
+                line-height: 85px;
             }
+
+            .service-section-spectrum-section .card {
+                width: 100%;
+            }
+
+
         }
 
 
-        .servicestabcontent-containers h2 {
-            font-size: 24px;
-            margin-bottom: 30px;
+        @media (min-width:1000px) {
+
+            .service-section-spectrum-section .card {
+                width: 100%;
+            }
+
+
         }
 
-        .servicestabcontent-containers p {
-            color: black;
-            margin-top: 50px;
-        }
 
-        section.services-section {
-            background-color: #e7e1f9;
-            margin-top: 0rem !important;
-        }
 
-        .servicestabcontent-containers {
+
+        .rows>div {
             display: flex;
-            gap: 30px;
-            align-items: center;
-            justify-content: space-between;
-            overflow-x: hidden;
-            margin-top: 30px;
             flex-wrap: wrap;
+            gap: 0px;
+            justify-content: space-around;
         }
 
-     
+
+        .tabcontents {
+            display: none;
+        }
+
+        .tabcontent-mobiles {
+            display: none;
+        }
+
 
         .services-section-bg {
-            background: url(./images/BG_35.png) !important;
+            background: url(../images/BG_35.png) !important;
             background-size: cover !important;
         }
 
-        .tabslidersec .swiper-slide {
-            width: 95% !important;
-            height: 600px !important;
-            flex-shrink: 0 !important;
-            display: flex !important;
-            align-items: start !important;
-            padding: 14px;
+
+
+        .section-spectrum-mobile-view .slide {
+            height: auto;
         }
 
+        .section-spectrum-mobile-view .slide ul {
+            padding-left: 0;
+        }
+
+        p.myps {
+            padding-top: 53px;
+        }
 
         /* style code for the active all page */
         /* Base style */
@@ -1351,138 +1386,112 @@
         }
 
 
-        /* big screen and small scree we see  */
 
-          .tabcontents {
-            display: none;
+
+
+        @media screen and (max-width: 768px) {
+
+
+            .sndcontsec-mobile h2 {
+                font-size: 30px;
+                line-height: 32px;
+                font-family: 'Titillium Web';
+                font-weight: bold;
+                text-align: center;
+                /* padding: 0 0 40px 0; */
+                background: linear-gradient(90deg, #050EF1, #FD0200);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                padding-top: 2rem;
+            }
+
+
+            .divtextcont h3 {
+                margin-bottom: 1rem;
+                font-size: 18px;
+            }
+
+            .divnumimg {
+                width: 30rem;
+            }
+
+
+
+            .sndcontsec-mobile-slider {
+
+                height: 470px;
+                margin-bottom: 50px;
+
+            }
+
+            .sipmaincont {
+                position: relative;
+                top: -100px;
+
+            }
+
+            .divtextcont {
+                border-top: 2px solid black;
+                padding-top: 10px;
+            }
         }
 
-        .tabcontent-mobiles {
-            display: none;
+
+
+
+
+
+        /* Additional media query for screens below 360px */
+        @media screen and (max-width: 360px) {
+            .sndcontsec-mobile-slider {
+                height: auto;
+                min-height: 520px;
+                /* Adjust this value as needed */
+            }
+
+            .divnumimg {
+                width: 100%;
+                max-width: 25rem;
+            }
+
+            .sndcontsec-mobile h2 {
+                font-size: 26px;
+                line-height: 28px;
+            }
+
+            .divtextcont h3 {
+                font-size: 16px;
+            }
         }
 
-        .tabcontent-mobile {
-            display: none;
+        /* For very small screens below 320px */
+        @media screen and (max-width: 320px) {
+            .sndcontsec-mobile-slider {
+                min-height: 560px;
+                /* Even more height for smaller screens */
+            }
         }
 
-      
-       
-@media (max-width:480px) {
-    .only-mobile-buttones{
-        min-width: 200px;
+        @media(min-width:768px) and (max-width:1600px) {
+            .serviceimgsec {
+                padding-left: 0;
 
-    }
-    
-}
+            }
 
-
-
- /* today  */
-  @media screen and (max-width: 768px) {
-
-             .sndcontsec-mobile h2 {
-             font-size: 30px;
-            line-height: 32px;
-            font-family: 'Titillium Web';
-            font-weight: bold;
-            text-align: center;
-            /* padding: 0 0 40px 0; */
-            background: linear-gradient(90deg, #050EF1, #FD0200);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            padding-top: 2rem;
+            .serviceimgsec img {
+                width: 10rem;
+            }
         }
 
 
-          .divtextcont h3 {
-            margin-bottom: 1rem;
-            font-size: 18px;
-        }
-         
-        .divnumimg{
-             width: 100% !important;
-             
-       
-        }
-
-    
-
-      .sndcontsec-mobile-slider {
-       
-         height:520px;
-         margin-bottom: 50px;
-  
-}
-
-.sipmaincont{
-    position: relative;
-    top: -150px;
-   
-}
-
-.divtextcont{
-    border-top: 2px solid black;
-    padding-top: 10px;
-}
 
 
-    }
- 
-@media screen and (max-width: 360px) {
-    .sndcontsec-mobile-slider {
-        height: auto;
-        min-height: 520px; 
-    }
-    
-    .divnumimg {
-        width: 100%;
-   
-    }
-    
-    .sndcontsec-mobile h2 {
-        font-size: 26px;
-        line-height: 28px;
-    }
-    
-    .divtextcont h3 {
-        font-size: 16px;
-    }
-}
+        /* ---------------------------------------------------------------  */
 
-/* For very small screens below 320px */
-@media screen and (max-width: 320px) {
-    .sndcontsec-mobile-slider {
-        min-height: 650px; 
-    }
-}
+        @media (min-width:480px) and (max-width:768px) {
 
-@media(min-width:768px) and (max-width:1600px){
-    .serviceimgsec{
-        padding-left: 0;
-     
-    }
-    .serviceimgsec img{
-        width: 10rem;
-    }
-}
-
-
-
-
-
-
-
-
-
-   /* ---------------------------------------------------------------  */
-     @media (min-width:480px) and (max-width:768px){
-        .servicestabcontent-containersM  img{
-                    width: 800px;
-                }
-
-
-              .sndcontsec-mobile-slider {
+            .sndcontsec-mobile-slider {
 
                 height: 400px;
                 margin-bottom: 50px;
@@ -1496,50 +1505,59 @@
             }
 
 
-        .section-spectrum-mobile-view .slide h3 {
-        font-size: 30px; 
-         line-height: 32px;
-       }
-      .section-spectrum-mobile-view .slide ul li ,.slide p{
-        font-size: 20px;
-       
-      }
+            .section-spectrum-mobile-view .slide h3 {
+                font-size: 30px;
+                line-height: 32px;
+            }
 
-      .sndcontsecond {
-        padding: 5rem 0rem;
-    }
-    .slide2text {
-        padding: 0px 1rem;
-        font-size: 16px;
-        line-height: 30px;
-    }
+            .section-spectrum-mobile-view .slide ul li,
+            .slide p {
+                font-size: 20px;
 
-    .bannersec-mobile .slidecontpart p {
-            font-size: 20px !important;
-        line-height: 28px !important;
-        letter-spacing: 3px !important;
-        padding-right:0px;
-        color: white;
-    }
+            }
 
-      .bannersec-mobile .slidecontpart h1 {
-        padding-right: 260px;
-    font-size: 30px !important;
-    line-height: 32px !important;
-   
-}
+            .sndcontsecond {
+                padding: 5rem 0rem;
+            }
 
-.divnumimg img {
+            .slide2text {
+                padding: 0px 1rem;
+                font-size: 16px;
+                line-height: 30px;
+            }
+
+            .bannersec-mobile .slidecontpart p {
+                font-size: 20px !important;
+                line-height: 28px !important;
+                letter-spacing: 3px !important;
+                padding-right: 250px;
+                color: white;
+            }
+
+            .bannersec-mobile .slidecontpart h1 {
+                padding-right: 260px;
+                font-size: 30px !important;
+                line-height: 32px !important;
+
+            }
+
+            /* .divnumimg img {
         padding-right: 30px;
         max-width: 84%;
-    }
+    } */
 
-      }
+        }
+
         @media only screen and (min-width: 768px) {
 
             .sndcontsec h2,
-            .section-spectrum-mobile-view h4,    .heading ,    .design-rule-mobile ,.sndcontsec-mobile h2 ,    .service-section-spectrum-section h4,    .services-section-head-desk  {
-                font-size: 40px ;
+            .section-spectrum-mobile-view h4,
+            .heading,
+            .design-rule-mobile,
+            .sndcontsec-mobile h2,
+            .service-section-spectrum-section h4,
+            .services-section-head-desk {
+                font-size: 40px;
                 line-height: 50px;
             }
 
@@ -1555,32 +1573,31 @@
 
             }
 
-            .only-mobile-button{
+            .only-mobile-button {
                 border-radius: 0 0 14px 0;
             }
 
-              .sglecasestudycontsec h3 {
-    font-size: 20px;
-    line-height: 28px;
-    font-family: 'Titillium Web';
-    font-weight: bold;
-    color: #000;
-    padding: 0 20px 36px 20px;
-}
+            .sglecasestudycontsec h3 {
+                font-size: 20px;
+                line-height: 28px;
+                font-family: 'Titillium Web';
+                font-weight: bold;
+                color: #000;
+                padding: 0 20px 36px 20px;
+            }
 
 
-.servicestabcontent-containersM {
-    display: flex
-;
-    flex-wrap: wrap !important;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 0 auto;
-    padding: 20px 20px;
-}
+            .servicestabcontent-containersM {
+                display: flex;
+                flex-wrap: wrap !important;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 0 auto;
+                padding: 20px 20px;
+            }
 
-            
-               
+
+
         }
 
         @media (min-width:768px) and (max-width:1200px) {
@@ -1592,60 +1609,63 @@
 
 
             .dskbtn {
-    display: flex !important;
-    justify-content: flex-start !important;
-    flex-wrap: wrap !important;
-    width: 100% !important;
-    flex-wrap: wrap !important;
-}
+                display: flex !important;
+                justify-content: flex-start !important;
+                flex-wrap: wrap !important;
+                width: 100% !important;
+                flex-wrap: wrap !important;
+            }
 
 
-        
+
 
         }
 
         @media only screen and (min-width: 1300px) {
 
-             .sndcontsec h2,
-            .section-spectrum-mobile-view h4,    .heading ,    .design-rule-mobile ,.sndcontsec-mobile h2 ,    .service-section-spectrum-section h4 ,.services-section-head-desk {
-                font-size: 70px ;
+            .sndcontsec h2,
+            .section-spectrum-mobile-view h4,
+            .heading,
+            .design-rule-mobile,
+            .sndcontsec-mobile h2,
+            .service-section-spectrum-section h4,
+            .services-section-head-desk {
+                font-size: 70px;
                 line-height: 85px;
             }
 
         }
 
-        @media (max-width:320px){
+        @media (max-width:320px) {
+            .section-spectrum-mobile-view .slide h3 {
+                font-size: 13px;
+            }
 
-        
-             .only-mobile-button, .only-mobile-buttons {
-        min-width: 44%;
-        font-size: 10px;
-        border-radius: 0 0 12px 0;
-    }
 
-              .topftrcolpart:first-child .ftrlogo img {
-        max-width: 150px !important;
-        height: auto !important;
-    }
+            .only-mobile-button,
+            .only-mobile-buttons {
+                min-width: 44%;
+                font-size: 10px;
+                border-radius: 0 0 12px 0;
+            }
 
-    .topftrcolpart p{
-        font-size: 9px !important;
-        line-height: 14px !important;
-    }
+            .topftrcolpart:first-child .ftrlogo img {
+                max-width: 150px !important;
+                height: auto !important;
+            }
+
+            .topftrcolpart p {
+                font-size: 9px !important;
+                line-height: 14px !important;
+            }
         }
-        
-        
     </style>
-
 </head>
 
-
-
 <body>
+    <section class="fifthcontsec fifthcontsecond">
 
-     <section class="fifthcontsec fifthcontsecond">
-
-        <img class="pop-up-left-art" src="./images/pop-up-left-art.png" alt="">
+        <img class="pop-up-left-art" src="../images/pop-up-left-art.png" alt="">
         <div class="container">
             <button id="btn_button" class="close-btn">
                 <i class="ri-close-line" style="font-size: 60px; color: black; font-weight: 300;"></i>
@@ -1666,50 +1686,54 @@
                             <div class="inputfieldwidth"><input type="email" name="email" placeholder="Email*"
                                     class="inputfield"></div>
                             <div class="inputfieldwidth"><textarea name="comments" class="textareafield"
-                                    placeholder="Comments"></textarea></div> 
+                                    placeholder="Comments"></textarea></div>
                             <!-- <div class="inputfieldwidth"><input type="submit" name="submit" value="submit"
                                         class="submitbut"></div> -->
-                             <button class="submitbut">SUBMIT</button>
+                            <button class="submitbut">SUBMIT</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <img class="pop-up-right-art" src="./images/pop-up-right-art.png" alt="">
-    </section> 
+        <img class="pop-up-right-art" src="../images/pop-up-right-art.png" alt="">
+    </section>
 
-    
+
+
+
     <!-- desktop navbar  -->
-   <section class="headersec sticky only-desktop" >
+    <section class="headersec sticky only-desktop">
         <div class="container">
             <div class="logonnavsec">
                 <div class="logo ">
-                    <a href="index.html"><img src="images/logo.png" /></a>
+                    <a href="index.html"><img src="../images/logo.png" /></a>
                 </div>
                 <div class="navsec">
                     <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="/" class="active">Home</a></li>
                         <li class="dropdown">
-                             
-                        <a style="display: flex;  gap: 10px; font-size: 14px; align-items:center"  href="service.html" class="dropbtn">
-                         
-                             Services <i class="ri-arrow-up-s-line i"></i>
-                   
+
+                            <a style="display: flex;  gap: 10px; font-size: 14px; align-items:center"
+                                href="/service.html" class="dropbtn">
+
+                                Services <i class="ri-arrow-up-s-line i"></i>
+
                             </a>
                             <ul class="dropdown-content navsecd">
-                               <li><a href="design.html">Design</a></li>
-                               <li class="navsecd"><a href="fabrication.html">Fabrication</a></li>
-                               <li class="navsecd"><a href="dicing.html">Dicing</a></li>
-                               <li class="navsecd"><a href="siliconphotonics.html">Silicon Photonics</a></li>
-                               <li class="navsecd"><a href="servicesassebly.html">Assembly</a></li>
-                               <li class="navsecd"><a href="Chiplet.html">Chiplets</a></li>
+                                <li><a href="../services/design.html">Design</a></li>
+                                <li class="navsecd"><a href="../services/fabrication.html">Fabrication</a></li>
+                                <li class="navsecd"><a href="../services/dicing.html">Dicing</a></li>
+                                <li class="navsecd"><a href="../services/siliconphotonics.html">Silicon Photonics</a>
+                                </li>
+                                <li class="navsecd"><a href="../services/assembly.html">Assembly</a></li>
+                                <li class="navsecd"><a href="../services/chiplets.html">Chiplets</a></li>
                             </ul>
                         </li>
-                        <li><a href="application.html">Applications</a></li>
-                        <li><a href="facility.html">Facility</a></li>
+                        <li><a href="/application.html">Applications</a></li>
+                        <li><a href="/facility.html">Facility</a></li>
                         <!--<li><a href="resource.html">Resources Hub</a></li> -->
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
 
                     </ul>
                 </div>
@@ -1720,43 +1744,44 @@
 
     <!-- mobile navbar -->
     <div class="only-mobile sticky">
-    <div class="menu-header only-mobile sticky">
-        <img src="images/logo.png" alt="SILITRONICS Logo">
-        <div class="hamburger close-icon" onclick="toggleMenu(this)">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="menu-header only-mobile sticky">
+            <img src="../images/logo.png" alt="SILITRONICS Logo">
+            <div class="hamburger close-icon" onclick="toggleMenu(this)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </div>
-    <div class="side-menu" id="menu">
-        <ul>
-            <li><a href="index.html" class="active">HOME</a></li>
-            <li class="nav-dropdown">
-                <a href="javascript:void(0)" class="nav-toggles " style="display: flex;gap:30px;" >SERVICES <i class="ri-arrow-up-s-line mobile_icon"></i> </a>
-                <ul class="nav-menu drop-down-menu-hidden">
-                     <li><a href="design.html">Design</a></li>
-                    <li><a href="fabrication.html">Fabrication</a></li>
-                    <li><a href="dicing.html">Dicing</a></li>
-                    <li><a href="siliconphotonics.html">Silicon Photonics</a></li>
-                    <li><a href="servicesassebly.html">Assembly</a></li>
-                    <li><a href="Chiplet.html">Chiplets</a></li>
+        <div class="side-menu" id="menu">
+            <ul>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-toggles " style="display: flex;gap:30px;">SERVICES <i
+                            class="ri-arrow-up-s-line mobile_icon"></i> </a>
+                    <ul class="nav-menu drop-down-menu-hidden">
+                           <li><a href="../services/design.html">Design</a></li>
+                      <li><a href="../services/dicing.html">Dicing</a></li>
+                      <li><a href="../services/fabrication.html">Fabrication</a></li>
+                      <li><a href="../services/assembly.html">Assembly</a></li>
+                      <li><a href="../services/siliconphotonics.html">Silicon Photonics</a></li>
+                       <li><a href="../services/chiplets.html">Chiplets</a></li>
 
-                </ul>
-            </li>
-            <li><a href="application.html">APPLICATIONS</a></li>
-            <li><a href="facility.html">FACILITY</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-        </ul>
-        <div class="social-icons">
-            <a href="https://youtube.com" target="_blank">
-                <img src="images/youtube.svg" alt="YouTube">
-            </a>
-            <a href="https://linkedin.com" target="_blank">
-                <img src="images/linkedin.svg" alt="LinkedIn">
-            </a>
+                    </ul>
+                </li>
+                <li><a href="/application.html">APPLICATIONS</a></li>
+                <li><a href="/facility.html">FACILITY</a></li>
+                <li><a href="/about.html">ABOUT US</a></li>
+                <li><a href="/contact.html">CONTACT US</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://youtube.com" target="_blank">
+                    <img src="../images/youtube.svg" alt="YouTube">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="../images/linkedin.svg" alt="LinkedIn">
+                </a>
+            </div>
         </div>
-    </div>
     </div>
 
     <main>
@@ -1765,16 +1790,17 @@
                 <div class="item">
                     <div class="slidecontpart">
                         <div class="container">
-                            <h1>Precision Stealth Laser Dicing with Ultra Clean die edge </h1>
+                            <h1>Chiplet Integration: <br> System-Level</h1>
+                            <h1>Innovation Perfected</h1>
                             <!-- <h1>Photonics (PIC) <br> Packaging Solutions</h1> -->
                             <div class="sbbox">
-                                <p class="sbannertext">Every device type including photonics wafer 
-                                </p>
+                                <p class="sbannertext">Advanced design, simulation, and heterogeneous assembly for
+                                    tomorrow’s technology.</p>
                             </div>
                             <a href="#contactsecd" class="getintouchbut">Get in touch</a>
                         </div>
                     </div>
-                    <img src="./dicing images/Desktop_Service Details_Banner 1.png">
+                    <img src="../images/Chiplets_bg_desktop.png">
                 </div>
             </div>
 
@@ -1785,20 +1811,22 @@
                 <div class="item">
                     <div class="slidecontpart">
                         <div class="container">
-                            <h1>Precision Stealth Laser Dicing with Ultra Clean die edge </h1>
+                            <h1>Chiplet Integration: <br> System-Level</h1>
+                            <h1>Innovation Perfected</h1>
                             <!-- <h1>Photonics (PIC) <br> Packaging Solutions</h1> -->
                             <div class="sbbox">
-                                <p class="sbannertext">Every device type including photonics wafer
-                                </p>
+                                <p class="sbannertext">Advanced design, simulation, and heterogeneous assembly for
+                                    tomorrow’s technology.</p>
                             </div>
                             <a href="#contactsecd" class="getintouchbut">Get in touch</a>
                         </div>
                     </div>
-                    <img src="./dicing images/Services_Mobile 1.png">
+                    <img src="../images/Chiplets_mobiles_bg.png">
                 </div>
 
             </div>
         </section>
+
         <!-- <section class="sndcontsec">
             <div class="container">
                 <div class="lftrytlinepart">
@@ -1824,53 +1852,52 @@
         <!-- Engineering Excellence in Semiconductor & Photonics package  Design -->
 
         <!-- spectrum section desktop and tablet screen view -->
-
-
         <section class="service-section-spectrum-section">
             <div class="container">
-                <h4>Dicing services overview</h4>
+                <h4>Chiplets services overview</h4>
                 <button class="arrow left-arrow">&#10094;</button>
                 <div class="sectrum-container">
                     <div class="card">
                         <div class="card-img-head">
-                            <img src="./svg/Services Dicing/Stealth Laser Dicing for PICs .svg" alt="">
-                            <h3>Stealth Laser<br> Dicing for PICs </h3>
+                            <img src="../svg/Services Chiplets/Chiplet Co-Design & Simulation.svg" alt="">
+                            <h3>Chiplet Co-Design<br> & Simulation </h3>
                         </div>
-                        <p>Ultra-clean, non-contact singulation of photonic devices; minimal edge damage, optimal yield.
-                        </p>
+
+                        <p>Full system design, partitioning, and simulation for complex architectures; modeling for
+                            scalability and reliability.</p>
+
+                    </div>
+                    <div class="card">
+                        <div class="card-img-head">
+                            <img src="../svg/Services Chiplets/Heterogeneous Assembly & Integration.svg" alt="">
+                            <h3>Heterogeneous<br> Assembly & Integration</h3>
+                        </div>
+
+                        <p>Advanced assembly of diverse dies using state-of-the-art packaging and material science.</p>
+
                     </div>
 
                     <div class="card">
                         <div class="card-img-head">
-                            <img src="./svg/Services Dicing/Wafer Thinning & Polishing.svg" alt="">
-                            <h3>Wafer Thinning<br> & Polishing</h3>
+                            <img src="../svg/Services Chiplets/Interposer & Stack Design.svg" alt="">
+                            <h3>Interposer &<br> Stack Design</h3>
                         </div>
-                        <p>
-                            Controlled thinning and CMP for smooth, reliable dies; supports  silicon photonics and advanced
-                            packaging.
-                        </p>
+
+                        <p>Silicon/organic interposers engineered for signal performance and scalable heterogeneous
+                            integration.</p>
+
                     </div>
 
                     <div class="card">
                         <div class="card-img-head">
-                            <img src="./svg/Services Dicing/Standard Wafer Dicing.svg" alt="">
-                            <h3>Standard Mechanical <br> Wafer Dicing</h3>
+                            <img src="../svg/Services Chiplets/Testing, Screening & Reliability Validation.svg" alt="">
+                            <h3> Screening & <br> Reliability <br> Validation</h3>
                         </div>
-                        <p>
-                            Diamond blade dicing for silicon, compound semiconductors, ceramics, and glass in volume or
-                            specialty runs.
-                        </p>
+
+                        <p>Rigorous electrical, thermal, screening & reliability validation.</p>
+
                     </div>
 
-                    <div class="card">
-                        <div class="card-img-head">
-                            <img src="./svg/Services Dicing/Automated AOI.svg" alt="">
-                            <h3>Automated AOI, Sorting, <br> Pick and Place</h3>
-                        </div>
-                        <p>
-                            Automated Inspection, sorting, and safe pick and place for defect-free, ready-to-use dies.
-                        </p>
-                    </div>
                 </div>
                 <button class="arrow right-arrow">&#10095;</button>
                 <div class="mobile-pagination"></div>
@@ -1879,52 +1906,55 @@
             </div>
         </section>
 
+
         <!-- spectrum section mobile only screen view -->
         <div class="section-spectrum-mobile-view">
             <div class="slider-container">
-                <h4>Dicing services overview</h4>
+                <h4>Chiplets services overview</h4>
                 <button class="arrow arrow-left">&#10094;</button>
                 <div class="slider-wrapper">
                     <div class="slider" id="slider">
                         <!-- 6 Slides -->
                         <div class="slide">
                             <div class="slide-icon">
-                                <img src="./svg/Services Dicing/Stealth Laser Dicing for PICs .svg" alt="icon" />
-                                <h3>Stealth Laser Dicing for PICs </h3>
+                                <img src="../svg/Services Chiplets/Chiplet Co-Design & Simulation.svg" alt="icon" />
+                                <h3>Chiplet Co-Design & Simulation </h3>
                             </div>
-                            <p>Ultra-clean, non-contact singulation of photonic devices; minimal edge damage, optimal
-                                yield.</p>
+
+                            <p>Full system design, partitioning, and simulation for complex architectures; modeling for
+                                scalability and reliability.</p>
+
                         </div>
                         <!-- Duplicate 5 more slides for demo -->
                         <div class="slide">
                             <div class="slide-icon">
-                                <img src="./svg/Services Dicing/Wafer Thinning & Polishing.svg" alt="icon" />
-                                <h3>Wafer Thinning & Polishing</h3>
+                                <img src="../svg/Services Chiplets/Heterogeneous Assembly & Integration.svg" alt="">
+                                <h3>Heterogeneous Assembly & Integration</h3>
                             </div>
-                            <p>Controlled thinning and CMP for smooth, reliable dies; supports silicon photonics and advanced
-                                packaging.</p>
+
+                            <p>Advanced assembly of diverse dies using state-of-the-art packaging and material
+                                science.</p>
+
                         </div>
                         <div class="slide">
                             <div class="slide-icon">
-                                <img src="./svg/Services Dicing/Standard Wafer Dicing.svg" alt="icon" />
-                                <h3>Standard Mechanical <br> Wafer Dicing</h3>
+                                <img src="../svg/Services Chiplets/Interposer & Stack Design.svg" alt="">
+                                <h3>Interposer & Stack Design</h3>
                             </div>
-                            <p>Diamond blade dicing for silicon, compound semiconductors, ceramics, and glass in volume
-                                or specialty runs.</p>
+
+                            <p>Silicon/organic interposers engineered for signal performance and scalable
+                                heterogeneous integration.</p>
+
                         </div>
                         <div class="slide">
                             <div class="slide-icon">
-                                <img src="./svg/Services Dicing/Automated AOI.svg" alt="icon" />
-                                <h3>Automated AOI, Sorting,<br> Pick and Placeg</h3>
+                                <img src="../svg/Services Chiplets/Testing, Screening & Reliability Validation.svg"
+                                    alt="">
+                                <h3> Screening & Reliability Validation</h3>
                             </div>
-                            <p>Headline:
-                                   Automated AOI, Sorting, Pick and Place
-                                    
-                                   Sub-head: 
-                                   Automated Inspection, sorting, and safe pick and place for defect-free, ready-to-use dies.
-                                    
-                                   replace highlighted word with - silicon photonics
-                               </p>
+
+                            <p>Rigorous electrical, thermal, screening & reliability validation.</p>
+
                         </div>
                     </div>
                 </div>
@@ -1937,57 +1967,48 @@
         </div>
 
         <!-- innovation package design section -->
-        <!-- <section class="sndcontsec">
-            <div class="container">
-                <div class="lftrytlinepart">
-                    <h2 class="heading">Unmatched Precision in Wafer<br> Dicing & Die Singulation</h2>
-                    <p class="slide2text">Silitronics sets the benchmark for wafer dicing, thinning, and optical
-                        inspection, serving both<br> conventional semiconductor and advanced photonic platforms. Our
-                        smart
-                        modular facility leverages<br> stealth laser, plasma, and diamond blade dicing methods under
-                        strict
-                        process control. Whether<br> producing ultra-sensitive PICs or high-volume silicon dies,
-                        Silitronics
-                        eliminates edge defects,<br> maximizes yield, and delivers dies ready for demanding downstream
-                        assembly—all backed by deep<br> expertise and unwavering commitment to quality. </p>
-        </section> -->
         <section class="sndcontsec sndcontsecond desktopone">
-            <img class="one" src="./images/rainbow-style-art-one.png" alt="">
+            <img class="one" src="../images/rainbow-style-art-one.png" alt="">
             <div class="container">
                 <div class="lftrytlinepart">
-                    <h2>Unmatched Precision in Wafer<br> Dicing & Die Singulation</h2>
-                    <p class="slide2text">Silitronics sets the benchmark for wafer dicing, thinning, and optical
-                        inspection, serving both conventional semiconductor and advanced photonic platforms. Our smart
-                        modular facility leverages stealth laser, plasma, and diamond blade dicing methods under strict
-                        process control. Whether producing ultra-sensitive PICs or high-volume silicon dies, Silitronics
-                        eliminates edge defects, maximizes yield, and delivers dies ready for demanding downstream
-                        assembly—all backed by deep expertise and unwavering commitment to quality.</p>
+                    <h2>Unlocking Tomorrow: Seamless Chiplet<br> Integration for Complex Systems</h2>
+                    <p class="slide2text">Silitronics stands at the cutting edge of chiplet technology, enabling
+                        system architects to deliver high-speed, scalable, heterogeneous solutions with rapid
+                        turnaround and trusted reliability. Our granular floor planning, stack simulation, and
+                        advanced assembly processes unite digital, analog, and photonic dies on master interposers.
+                        Whether supporting AI, datacentre, defense, or custom application, Silitronics ensures
+                        optimal power, signal, and thermal performance with comprehensive validation and support. 
+                    </p>
                 </div>
             </div>
-            <img class="two" src="./images/rainbow-style-art-two.png" alt="">
+            <img class="two" src="../images/rainbow-style-art-two.png" alt="">
+
         </section>
 
-             <section class="sndcontsec sndcontsecond mobilepone">
-            <img class="one" src="./images/rainbow-style-art-one.png" alt="">
+
+
+        <section class="sndcontsec sndcontsecond mobilepone">
+            <img class="one" src="../images/rainbow-style-art-one.png" alt="">
             <div class="container">
                 <div class="lftrytlinepart">
-                    <h2>Unmatched Precision in Wafer Dicing & Die Singulation</h2>
-                    <p class="slide2text">Silitronics sets the benchmark for wafer dicing, thinning, and optical
-                        inspection, serving both conventional semiconductor and advanced photonic platforms. Our smart
-                        modular facility leverages stealth laser, plasma, and diamond blade dicing methods under strict
-                        process control. Whether producing ultra-sensitive PICs or high-volume silicon dies, Silitronics
-                        eliminates edge defects, maximizes yield, and delivers dies ready for demanding downstream
-                        assembly—all backed by deep expertise and unwavering commitment to quality.</p>
+                    <h2>Unlocking Tomorrow: Seamless Chiplet Integration for Complex Systems</h2>
+                    <p class="slide2text">Silitronics stands at the cutting edge of chiplet technology, enabling
+                        system architects to deliver high-speed, scalable, heterogeneous solutions with rapid
+                        turnaround and trusted reliability. Our granular floor planning, stack simulation, and
+                        advanced assembly processes unite digital, analog, and photonic dies on master interposers.
+                        Whether supporting AI, datacentre, defense, or custom application, Silitronics ensures
+                        optimal power, signal, and thermal performance with comprehensive validation and support. 
+                    </p>
                 </div>
             </div>
-            <img class="two" src="./images/rainbow-style-art-two.png" alt="">
-        </section>
+            <img class="two" src="../images/rainbow-style-art-two.png" alt="">
 
+        </section>
 
         <!-- **************************************** -->
         <!-- desktop our service code -->
         <section class="sndcontsec sip-design-process-capability only-desktop rela">
-            <div class="toparrow"> <img src="images/toparw.png"> </div>
+            <div class="toparrow"> <img src="../images/toparw.png"> </div>
 
             <!-- Custom Dots Navigation -->
             <div class="custom-dots">
@@ -1995,29 +2016,25 @@
                 <span class="custom-dot" data-slide="1"></span>
                 <span class="custom-dot" data-slide="2"></span>
                 <span class="custom-dot" data-slide="3"></span>
-                <span class="custom-dot" data-slide="4"></span>
             </div>
 
-            <div class="bottomarrow"> <img src="images/btmarw.png"> </div>
+            <div class="bottomarrow"> <img src="../images/btmarw.png"> </div>
             <div class="container">
-                <h2>Dicing Process Overview </h2>
+                <h2>Chiplets Process Overview </h2>
                 <div class="swiper tabslidersec ">
                     <div class="swiper-wrapper">
                         <!-- slide 1 -->
                         <div class="swiper-slide">
                             <div class="servicecontsec">
                                 <div class="serviceimgsec"><img
-                                        src="./images/servicesdetails-fl/sip-process-design/01.png" alt="" /></div>
+                                        src="../images/servicesdetails-fl/sip-process-design/01.png" alt="" /></div>
                                 <div class="servicwcontentsec">
-                                    <h3>Wafer Preparation & Mounting</h3>
+                                    <h3>Chiplet Partitioning & System-Level Design</h3>
                                     <div>
-                                        <p>Every process starts with ultrasonic wafer cleaning, flatness
-                                            measurement,
-                                            and careful mounting on dicing tape. Silitronics ensures precise
-                                            alignment
-                                            and minimal contamination, using anti-static environments and
-                                            calibrated
-                                            carriers for maximum handling safety and first-pass accuracy.</p>
+                                        <p>Advanced algorithms guide function- and domain-based partitioning,
+                                            optimizing wirelength, thermal coupling, and manufacturability.
+                                            Silitronics consults closely with clients to model and simulate every
+                                            aspect for fail-safe, scalable solutions. </p>
                                     </div>
 
                                 </div>
@@ -2027,16 +2044,14 @@
                         <div class="swiper-slide">
                             <div class="servicecontsec">
                                 <div class="serviceimgsec"><img
-                                        src="./images/servicesdetails-fl/sip-process-design/02.png" alt="" /></div>
+                                        src="../images/servicesdetails-fl/sip-process-design/02.png" alt="" /></div>
                                 <div class="servicwcontentsec">
-                                    <h3>Dicing Techniques: Blade, Stealth Laser, Plasma</h3>
+                                    <h3>Floorplan Optimization & Stack Co-Design</h3>
                                     <div>
-                                        <p>Silitronics tailors dicing techniques: diamond blade for standard dies,
-                                            stealth laser for fragile PICs, and plasma for ultra-fine pitch. Each is
-                                            optimized for kerf width, cut speed, and minimal thermal/mechanical
-                                            stress.
-                                            Engineers continuously monitor blade wear and laser calibration for
-                                            consistent die quality, even in high-mix product runs.</p>
+                                        <p>Proprietary simulation platforms analyze chiplet placement, bump mapping,
+                                            and stack topology, balancing performance yield, SI/PI, and thermal
+                                            spreading. Silitronics’ expertise ensures seamless stacking within
+                                            interposer limits and package constraints.  </p>
                                     </div>
 
                                 </div>
@@ -2046,16 +2061,14 @@
                         <div class="swiper-slide">
                             <div class="servicecontsec">
                                 <div class="serviceimgsec"><img
-                                        src="./images/servicesdetails-fl/sip-process-design/03.png" alt="" /></div>
+                                        src="../images/servicesdetails-fl/sip-process-design/03.png" alt="" /></div>
                                 <div class="servicwcontentsec">
-                                    <h3>Wafer Thinning & Polishing</h3>
+                                    <h3>Heterogeneous Assembly & Validation </h3>
                                     <div>
-                                        <p>Chemical and mechanical thinning down to sub-100µm is performed in
-                                            humidity-controlled zones. Polished wafers—especially for
-                                            photonics—receive
-                                            additional CMP steps to achieve mirror surfaces, reducing insertion loss
-                                            and
-                                            supporting high-yield optical coupling. </p>
+                                        <p>Combines CPUs, memory, photonic and RF chiplets using advanced Fanout,
+                                            TSV, and master bridges. Stress and thermal analysis are built into the
+                                            process, with thorough pre/post integration testing guarantees every
+                                            device’s field reliability.  </p>
                                     </div>
 
                                 </div>
@@ -2065,127 +2078,92 @@
                         <div class="swiper-slide">
                             <div class="servicecontsec">
                                 <div class="serviceimgsec"><img
-                                        src="./images/servicesdetails-fl/sip-process-design/04.png" alt="" /></div>
+                                        src="../images/servicesdetails-fl/sip-process-design/04.png" alt="" /></div>
                                 <div class="servicwcontentsec">
-                                    <h3>Automated Optical Inspection (AOI) & Sorting</h3>
+                                    <h3>Routing, Test, and Stress Screening</h3>
                                     <div>
-                                        <p>Post-dicing, every die undergoes AOI for cracks, chips, contamination,
-                                            and
-                                            dimensional accuracy. Defective dies are sorted out, while clean dies
-                                            are
-                                            ultrasonically cleaned, dried, and automatically sorted for<br>
-                                            traceability
-                                            and
-                                            next-stage fabrication.</p>
+                                        <p>High-speed routing is simulated for electrical and thermal loads. All
+                                            modules are subjected to burn-in, functional validation, and
+                                            environmental stress before delivery—ensuring clients receive
+                                            ready-to-deploy systems.</p>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
-                        <!-- slide 5 -->
-                        <div class="swiper-slide">
-                            <div class="servicecontsec">
-                                <div class="serviceimgsec"><img
-                                        src="./images/servicesdetails-fl/sip-process-design/05.png" alt="" /></div>
-                                <div class="servicwcontentsec">
-                                    <h3>Final Cleaning & Packaging</h3>
-                                    <div>
-                                        <p>Finished dies receive anti-static handling, laser marking, and custom
-                                            tray or tape-and-reel packaging, all designed for shipment integrity and
-                                            downstream assembly reliability.</p>
-                                    </div>
 
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                 </div>
         </section>
 
-        <!-- Mobile only our service code -->
-     
-         <section class="sndcontsec-mobile only-mobile">
-    <h2>Dicing<br> Process Overview</h2>
-    <sl-carousel pagination class="sndcontsec-mobile-slider">
-        <sl-carousel-item class="sipmaincont">
-            <div class="divnumimg">
-                <img src="./images/servicesdetails-fl/sip-process-design/01.png" alt="">
-            </div>
-            <div class="divtextcont">
-                <h3>Wafer Preparation & Mounting</h3>
-                <p>
-                    Every process starts with ultrasonic wafer cleaning, flatness measurement, and careful
-                    mounting on dicing tape. Silitronics ensures precise alignment and minimal contamination,
-                    using anti-static environments and calibrated carriers for maximum handling safety and
-                    first-pass accuracy.
-                </p>
-            </div>
-        </sl-carousel-item>
-        <sl-carousel-item class="sipmaincont">
-            <div class="divnumimg">
-                <img src="./images/servicesdetails-fl/sip-process-design/02.png" alt="">
-            </div>
-            <div class="divtextcont">
-                <h3>Dicing Techniques: Blade, Stealth Laser, Plasma</h3>
-                <p>
-                    Silitronics tailors dicing techniques: diamond blade for standard dies, stealth laser for
-                    fragile PICs, and plasma for ultra-fine pitch. Each is optimized for kerf width, cut speed,
-                    and minimal thermal/mechanical stress. Engineers continuously monitor blade wear and laser
-                    calibration for consistent die quality, even in high-mix product runs.
-                </p>
-            </div>
-        </sl-carousel-item>
-        <sl-carousel-item class="sipmaincont">
-            <div class="divnumimg">
-                <img src="./images/servicesdetails-fl/sip-process-design/03.png" alt="">
-            </div>
-            <div class="divtextcont">
-                <h3>Wafer Thinning & Polishing</h3>
-                <p>
-                    Chemical and mechanical thinning down to sub-100µm is performed in humidity-controlled zones.
-                    Polished wafers—especially for photonics—receive additional CMP steps to achieve mirror
-                    surfaces, reducing insertion loss and supporting high-yield optical coupling.
-                </p>
-            </div>
-        </sl-carousel-item>
-        <sl-carousel-item class="sipmaincont">
-            <div class="divnumimg">
-                <img src="./images/servicesdetails-fl/sip-process-design/04.png" alt="">
-            </div>
-            <div class="divtextcont">
-                <h3>Automated Optical Inspection (AOI) & Sorting</h3>
-                <p>
-                    Post-dicing, every die undergoes AOI for cracks, chips, contamination, and dimensional
-                    accuracy. Defective dies are sorted out, while clean dies are ultrasonically cleaned, dried,
-                    and automatically sorted for traceability and next-stage fabrication.
-                </p>
-            </div>
-        </sl-carousel-item>
-        <sl-carousel-item class="sipmaincont">
-            <div class="divnumimg">
-                <img src="./images/servicesdetails-fl/sip-process-design/05.png" alt="">
-            </div>
-            <div class="divtextcont">
-                <h3>Final Cleaning & Packaging</h3>
-                <p>
-                    Finished dies receive anti-static handling, laser marking, and custom tray or tape-and-reel
-                    packaging, all designed for shipment integrity and downstream assembly reliability.
-                </p>
-            </div>
-        </sl-carousel-item>
-    </sl-carousel>
-</section>
-        </div>
 
-        <!-- ************* different items tabs section ************************ -->
+        <!-- Mobile only our service code -->
+
+
+
+
+
+        <section class="sndcontsec-mobile only-mobile">
+            <h2>Chiplets Process Overview </h2>
+            <sl-carousel pagination class="sndcontsec-mobile-slider">
+                <sl-carousel-item class="sipmaincont">
+                    <div class="divnumimg">
+                        <img style="width: 75rem !important;"
+                            src="../images/servicesdetails-fl/sip-process-design/01.png" alt="">
+                    </div>
+                    <div class="divtextcont">
+                        <h3>Chiplet Partitioning & System-Level Design</h3>
+                        <p>
+                            Advanced algorithms guide function- and domain-based partitioning, optimizing wirelength,
+                            thermal coupling, and manufacturability. Silitronics consults closely with clients to model
+                            and simulate every aspect for fail-safe, scalable solutions.
+                        </p>
+                    </div>
+                </sl-carousel-item>
+                <sl-carousel-item class="sipmaincont">
+                    <div class="divnumimg">
+                        <img src="../images/servicesdetails-fl/sip-process-design/02.png" alt="">
+                    </div>
+                    <div class="divtextcont">
+                        <h3>Floorplan Optimization & Stack Co-Design</h3>
+                        <p>Proprietary simulation platforms analyze chiplet placement, bump mapping, and stack topology,
+                            balancing performance yield, SI/PI, and thermal spreading. Silitronics’ expertise ensures
+                            seamless stacking within interposer limits and package constraints.</p>
+                    </div>
+                </sl-carousel-item>
+                <sl-carousel-item class="sipmaincont">
+                    <div class="divnumimg">
+                        <img src="../images/servicesdetails-fl/sip-process-design/03.png" alt="">
+                    </div>
+                    <div class="divtextcont">
+                        <h3>Heterogeneous Assembly & Validation</h3>
+                        <p>Combines CPUs, memory, photonic and RF chiplets using advanced Fanout, TSV, and master
+                            bridges. Stress and thermal analysis are built into the process, with thorough pre/post
+                            integration testing guarantees every device’s field reliability.</p>
+                    </div>
+                </sl-carousel-item>
+                <sl-carousel-item class="sipmaincont">
+                    <div class="divnumimg">
+                        <img src="../images/servicesdetails-fl/sip-process-design/04.png" alt="">
+                    </div>
+                    <div class="divtextcont">
+                        <h3>Routing, Test, and Stress Screening</h3>
+                        <p>High-speed routing is simulated for electrical and thermal loads. All modules are subjected
+                            to burn-in, functional validation, and environmental stress before delivery—ensuring clients
+                            receive ready-to-deploy systems.</p>
+                    </div>
+                </sl-carousel-item>
+        </section>
+
+        <!-- ***** ******** different items tabs section ************************ -->
 
 
         <!-- Use this section only for mobile (wrap with media query if needed) -->
         <!-- <div class="only-mobile">
             <section class="services-section">
                 <div class="containers">
-                    <h2 class="heading" style="margin-bottom: 30px;">Our Services Spectrum</h2>
+
                     <div class="only-mobile-button-group">
                         <button class="only-mobile-button tablinks-mobile active"
                             onclick="openCityMobile(event, 'DesignMobile')">Design</button>
@@ -2289,89 +2267,53 @@
         </div> -->
         <!-- ************* different items tabs section ************************ -->
 
-        <!-- Design rule section -->
-        <!-- <section id="design-rule-section">
-            <div class="container">
-                <h2>Dicing Services Spectrum </h2>
-            </div> -->
-        <!-- <div class="container">
-                <div class="card">
-                    <img src="./images/servicesdetails-fl/design-rule/design-rule-one.png"
-                        alt="Ceramic substrate top layer optimization" />
-                    <div class="caption">Ceramic substrate top layer optimization</div>
-                </div>
-                <div class="card">
-                    <img src="./images/servicesdetails-fl/design-rule/design-rule-two.png"
-                        alt="Flip chip ceramic LTCC package" />
-                    <div class="caption">Flip chip ceramic LTCC package</div>
-                </div>
-                <div class="card">
-                    <img src="./images/servicesdetails-fl/design-rule/design-rule-three.png" alt="PCB fab" />
-                    <div class="caption">PCB fab</div>
-                </div>
-                <div class="card">
-                    <img src="./images/servicesdetails-fl/design-rule/design-rule-four.png" alt="Etch thick film" />
-                    <div class="caption">Etch thick film</div>
-                </div>
-                <div class="card">
-                    <img src="./images/servicesdetails-fl/design-rule/design-rule-five.png" alt="Board stack up" />
-                    <div class="caption">Board stack up</div>
-                </div>
-            </div> -->
 
-        <!-- </section> -->
+        <div class=" only-desktop thrdcontsec">
+            <section class="services-section services-section-bg  ">
 
-
-        <div class="only-desktop thrdcontsec">
-            <section class="services-section services-section-bg">
-                <div class=" containers desktop ">
-                    <h2 class="services-section-head-desk">Dicing Services Spectrum</h2>
+                <div class=" containers desktop">
+                    <h2 class="heading" style="margin-bottom: 30px;">Chiplets Services Spectrum</h2>
                     <div class="rows">
                         <div class="tab button dskbtn ">
                             <a>
                                 <button class="tablinkse tab-btn2 tablinks-active tech-box2 "
                                     onclick="openCity(event, 'Design')">
-                                    Stealth Laser Dicing
+                                    Chiplet Co-Design and <br> Simulation 
                                 </button>
                             </a>
                             <a>
                                 <button class="tablinkse tab-btn2 tech-box2 " onclick="openCity(event, 'Fabrication')">
-                                    Standard Wafer Dicing
+                                    Interposer and Stack <br> Design Services 
                                 </button>
                             </a>
                             <a>
                                 <button class="tablinkse tab-btn2 tech-box2 " onclick="openCity(event, 'Dicing')">
-                                    Wafer Thinning and Polishing
+                                    Heterogeneous Assembly <br> & System Integration 
                                 </button>
                             </a>
                             <a>
                                 <button class="tablinkse tab-btn2 tech-box2 " onclick="openCity(event, 'Assembly')">
-                                    Automated AOI
+                                    Screening, and <br> Reliability Validation 
                                 </button>
                             </a>
-                            <a>
 
                         </div>
                     </div>
+
                     <div class="shape cardbox">
-                        <div id="Design" class="tabcontent" style="display:block;">
-                            <div class=" servicestabcontent-containers">
+                        <div id="Design" class="tabcontent " style="display:block;">
+                            <div class="servicestabcontent-containers">
                                 <div>
-                                    <img src="./images/dicing_one.png" alt="">
+                                    <img src="../images/chiplets_one.png" alt="">
                                 </div>
                                 <div class="box1align">
-                                    <!-- <p>Organic Build-Up Substrates</p> -->
-                                    <h2>Stealth Laser Dicing for Photonic<br> Integrated Circuits (PICs)</h2>
-                                    <p class="myp">Stealth laser enables non-contact singulation<br> of PICs, minimizing
-                                        stress
-                                        and
-                                        edge
-                                        damage for<br> high-performance and ultra-sensitive devices.<br>
-                                        Silitronics’
-                                        proprietary process delivers top<br> yield and edge cleanliness, critical
-                                        for
-                                        data<br>
-                                        and optical communications.</p>
+
+
+                                    <h2>Chiplet Co-Design<br> and Simulation</h2>
+                                    <p class="myp">Silitronics provides end-to-end design, partitioning, and simulation
+                                        for complex chiplet systems. Our team leverages electrical/thermal modeling to
+                                        guarantee optimal, scalable architectures, from concept to production. .​</p>
+
 
                                 </div>
                             </div>
@@ -2380,23 +2322,15 @@
                         <div id="Fabrication" class="tabcontent">
                             <div class="servicestabcontent-containers">
                                 <div>
-                                    <img src="./images/dicing_two.png" alt="">
+                                    <img src="../images/chip_sip_2.png" alt="">
                                 </div>
                                 <div class="box1align">
-                                    <!-- <p>Fabrication</p> -->
-                                    <h2>Standard Wafer Dicing for<br> Semiconductor and<br> Compound
-                                        Materials</h2>
-                                    <p class="myp">Diamond blade dicing suited for silicon, GaAs,<br> ceramic, and
-                                        glass
-                                        wafers, with proven<br> reliability and scalable throughput.<br>
-                                        Customizable
-                                        blade
-                                        selection and process<br> parameters allow for tailored solutions for<br>
-                                        unique
-                                        device
-                                        requirements. 
-                                    </p>
-                                    <!-- <a href="./servicesdetails.html" class="learnmore">LEARN MORE</a> -->
+
+                                    <h2>Interposer and Stack<br> Design Services</h2>
+                                    <p class="myp">Precision-crafted silicon or organic interposer designs, tailored for
+                                        signal performance, thermal management, and scalable integration—key to
+                                        next-generation systems. ​</p>
+
                                 </div>
                             </div>
                         </div>
@@ -2404,40 +2338,29 @@
                         <div id="Dicing" class="tabcontent">
                             <div class="servicestabcontent-containers">
                                 <div>
-                                    <img src="./images/dic_sip_3.png" alt="">
+                                    <img src="../images/chiplets_three.png" alt="">
                                 </div>
                                 <div class="box1align">
-
-                                    <h2>Wafer Thinning and Polishing </h2>
-                                    <p class="myp">Controlled thinning for high-speed logic,<br> photonics, and MEMS
-                                        platforms, enabling thinner<br> devices with improved thermal and
-                                        mechanical<br>
-                                        performance. Post-thinning CMP ensures<br> consistently smooth surfaces,
-                                        optimized
-                                        for<br> assembly, optics, and device longevity. ​</p>
-
+                                    <h2>Heterogeneous Assembly<br> & System Integration </h2>
+                                    <p class="myp">Industry-leading assembly for digital, analog, photonic, and RF
+                                        chiplets, tested for performance and environmental resilience, using advanced
+                                        packaging and material science.  ​</p>
                                 </div>
                             </div>
                         </div>
-
-
                         <div id="Assembly" class="tabcontent">
                             <div class="servicestabcontent-containers">
                                 <div>
-                                    <img src="./images/dicing_four.png" alt="">
+                                    <img src="../images/chipletss_four.png" alt="">
                                 </div>
                                 <div class="box1align">
-                                    <h2>Automated AOI, Sorting,<br> and Final Packaging </h2>
-                                    <p class="myp">High-resolution inspection, binning, and safe<br> packaging
-                                        guarantee
-                                        each die is defect-free and<br> production-ready. Silitronics’ QC-driven<br>
-                                        approach
-                                        provides clear traceability across<br> every wafer, batch, and customer
-                                        order. ​
-                                    </p>
+                                    <h2> Screening, and<br> Reliability Validation</h2>
+                                    <p class="myp">All chiplet modules undergo stringent electrical, thermal, and
+                                        functional validation—ensuring best-in-class reliability and performance. ​</p>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -2445,92 +2368,84 @@
 
         <!-- Use this section only for mobile (wrap with media query if needed) -->
         <div class="only-mobile thrdcontsec">
-    <section class="services-section services-section-bg">
-        <div class="containers">
-            <h2 class="services-section-head-desk">Dicing Services<br> Spectrum</h2>
-            
-            <div class="only-mobile-button-group only-mobile-button-groupes">
-                <button class="only-mobile-button  only-mobile-buttones tablinks-mobile active"
-                    onclick="openCityMobiless(event, 'Design1')">Stealth Laser Dicing</button>
-                <button class="only-mobile-button only-mobile-buttones tablinks-mobile "
-                    onclick="openCityMobiless(event, 'Fabrication1')">Standard Wafer Dicing</button>
-                <button class="only-mobile-button only-mobile-buttones tablinks-mobile "
-                    onclick="openCityMobiless(event, 'Assembly1')">Wafer Thinning and Polishing</button>
-                <button class="only-mobile-button only-mobile-buttones tablinks-mobile "
-                    onclick="openCityMobiless(event, 'SiliconPhotonic1')">Automated AOI, Sorting, and Final Packaging</button>
-            </div>
+            <section class="services-section services-section-bg">
+                <div class="containers">
+                    <h2 class="heading" style="margin-bottom: 30px;">Chiplets Services Spectrum</h2>
+                    <div class="only-mobile-button-group only-mobile-button-groupes">
+                        <button class="only-mobile-button tablinks-mobile active"
+                            onclick="openCityMobile(event, 'DesignMobiles')">Chiplet Co-Design and Simulation  </button>
+                        <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'FabricationMobiles')">Interposer and Stack Design
+                            Services</button>
+                        <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'DicingMobiles')">Heterogeneous Assembly & System
+                            Integration </button>
+                        <button class="only-mobile-button tablinks-mobile"
+                            onclick="openCityMobile(event, 'AssemblyMobiles')">Screening, and Reliability
+                            Validation</button>
 
-            <div class="mobilebox">
-                <!-- Stealth Laser Dicing -->
-                <div id="Design1" class="tabcontent-mobile" style="display: block;">
-                    <div class="servicestabcontent-containersM">
-                        <div><img src="./images/dicing_m_one.png" alt=""></div>
-                        <div class="mobilealign">
-                            <h2>Stealth Laser Dicing for Photonic Integrated Circuits (PICs)</h2>
-                            <p class="mypM">Stealth laser enables non-contact singulation of PICs,
-                                minimizing stress and edge damage for high-performance and ultra-sensitive devices.
-                                Silitronics’ proprietary process delivers top yield and edge cleanliness,
-                                critical for data and optical communications.​</p>
+                    </div>
+
+
+                    <div class="mobilebox">
+                        <div id="DesignMobiles" class="tabcontent-mobile" style="display: block;">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="../images/chiplets_m_one.png" alt=""></div>
+                                <div class="mobilealign">
+
+                                    <h2>Chiplet Co-Design <br> and Simulation  </h2>
+                                    <p class="mypM">Silitronics provides end-to-end design, partitioning, and simulation
+                                        for complex chiplet systems. Our team leverages electrical/thermal modeling to
+                                        guarantee optimal, scalable architectures, from concept to production. ​</p>
+                                </div>
+                            </div>
                         </div>
+
+                        <div id="FabricationMobiles" class="tabcontent-mobile">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="../images/chip_sip_m_2.png" alt=""></div>
+                                <div class="mobilealign">
+
+                                    <h2 class="mb-2">Interposer and Stack <br> Design Services</h2>
+                                    <p class="mypM">Precision-crafted silicon or organic interposer designs, tailored
+                                        for signal performance, thermal management, and scalable integration—key to
+                                        next-generation systems. ​</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="DicingMobiles" class="tabcontent-mobile">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="../images/chiplets_m_three.png" alt=""></div>
+                                <div class="mobilealign">
+
+                                    <h2>Heterogeneous Assembly <br> & System Integration  </h2>
+                                    <p class="mypM">Industry-leading assembly for digital, analog, photonic, and RF
+                                        chiplets, tested for performance and environmental resilience, using advanced
+                                        packaging and material science.  </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="AssemblyMobiles" class="tabcontent-mobile">
+                            <div class="servicestabcontent-containersM">
+                                <div><img src="../images/chipletss_m_four.png" alt=""></div>
+                                <div class="mobilealign">
+                                    <h2> Screening, and <br> Reliability Validation</h2>
+                                    <p class="mypM">All chiplet modules undergo stringent electrical, thermal, and
+                                        functional validation—ensuring best-in-class reliability and performance. ​</p>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
-
-                <!-- Standard Wafer Dicing -->
-                <div id="Fabrication1" class="tabcontent-mobile">
-                    <div class="servicestabcontent-containersM">
-                        <div><img src="./images/dicing_m_two.png" alt=""></div>
-                        <div class="mobilealign">
-                            <h2 class="mb-2">Standard Wafer Dicing for Semiconductor and Compound Materials</h2>
-                            <p class="mypM">Diamond blade dicing suited for silicon, GaAs, ceramic, and glass
-                                wafers, with proven reliability and scalable throughput.
-                                Customizable blade selection and process parameters allow for tailored solutions for
-                                unique device requirements.​</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Wafer Thinning and Polishing -->
-                <div id="Assembly1" class="tabcontent-mobile">
-                    <div class="servicestabcontent-containersM">
-                        <div><img src="./images/dic_sip_m_3.png" alt=""></div>
-                        <div class="mobilealign">
-                            <h2>Wafer Thinning and Polishing</h2>
-                            <p class="mypM">Controlled thinning for high-speed logic, photonics, and
-                                MEMS platforms, enabling thinner devices with improved thermal and
-                                mechanical performance. Post-thinning CMP ensures consistently smooth surfaces,
-                                optimized for assembly, optics, and device longevity.​</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Automated AOI, Sorting and Final Packaging -->
-                <div id="SiliconPhotonic1" class="tabcontent-mobile">
-                    <div class="servicestabcontent-containersM">
-                        <div><img src="./images/dicing_m_four.png" alt=""></div>
-                        <div class="mobilealign">
-                            <h2>Automated AOI, Sorting, and Final Packaging</h2>
-                            <p class="mypM">High-resolution inspection, binning, and safe packaging
-                                guarantee each die is defect-free and production-ready. 
-                                Silitronics’ QC-driven approach provides clear traceability across every wafer,
-                                batch, and customer order.​</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </section>
         </div>
-    </section>
-        </div>
 
 
-
-
-
-
-
-
-
-        <!--desktop mobile our service spectrum-->
-
+        <!-- desktop  -->
         <div class=" only-desktop ">
             <section class="services-section ">
 
@@ -2539,7 +2454,8 @@
                     <div class="rows">
                         <div class="tab button dskbtn ">
                             <a>
-                                <button class="tablinks tab-btn2  tech-box2 " onclick="openCitys(event, 'Designs')">
+                                <button class="tablinks tab-btn2  tech-box2  tablinks-active"
+                                    onclick="openCitys(event, 'Designs')">
                                     Design
                                 </button>
                             </a>
@@ -2549,13 +2465,13 @@
                                 </button>
                             </a>
                             <a>
-                                <button class="tablinks tab-btn2 tech-box2 " onclick="openCitys(event, 'Dicings')" style="background-color: #8b7bb8 !important; color: white;">
+                                <button class="tablinks tab-btn2 tech-box2 " onclick="openCitys(event, 'Dicings')">
                                     Dicing
                                 </button>
                             </a>
 
                             <a>
-                                <button class="tablinks tab-btn2 tech-box2 tablinks-active"
+                                <button class="tablinks tab-btn2 tech-box2 "
                                     onclick="openCitys(event, 'SiliconPhotonicss')">
                                     Silicon Photonics
                                 </button>
@@ -2567,7 +2483,8 @@
                             </a>
 
                             <a>
-                                <button class="tablinks tab-btn2 tech-box2 " onclick="openCitys(event, 'Chiplets')">
+                                <button class="tablinks tab-btn2 tech-box2 " onclick="openCitys(event, 'Chiplets')"
+                                    style="background-color: #8b7bb8 !important; color: white;">
                                     Chiplets
                                 </button>
                             </a>
@@ -2578,19 +2495,19 @@
                         <div id="Designs" class="tabcontents" style="display:block;">
                             <div class=" servicestabcontent-containers">
                                 <div>
-                                    <img src="./images/service_img1.png" alt="">
+                                    <img src="../images/service_img1.png" alt="">
                                 </div>
                                 <div class="box1align">
 
                                     <h2>Precision-Driven Design for<br>​Next-Gen Semiconductor &<br> Photonic Packaging
                                     </h2>
-                                    <p class="myp">From concept to layout, our advanced design expertise ensures
+                                    <p class="myp myps">From concept to layout, our advanced design expertise ensures
                                         seamless integration of chips, substrates, and interconnects. We optimize signal
                                         integrity, power efficiency, and thermal performance to meet the demands of AI
                                         accelerators, quantum computing, and high-speed photonic systems. With deep
                                         engineering insights, we design scalable, high-reliability solutions for the
                                         future.​​</p>
-                                    <a href="./design.html" class="learnmore">LEARN MORE</a>
+                                    <a href="design.html" class="learnmore">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -2598,11 +2515,12 @@
                         <div id="Fabrications" class="tabcontents">
                             <div class="servicestabcontent-containers">
                                 <div>
-                                    <img src="./images/service/05s.png" alt="">
+                                    <img src="../images/service/05s.png" alt="">
                                 </div>
                                 <div class="box1align">
                                     <h2>Fabrication for Advanced<br>​Semiconductor & Photonic Packaging</h2>
-                                    <p class="myp">Our state-of-the-art fabrication facility delivers high-precision
+                                    <p class="myp myps">Our state-of-the-art fabrication facility delivers
+                                        high-precision
                                         multi-layer substrates tailored for AI, HPC, and Silicon Photonics. With
                                         expertise
                                         in organic and ceramic substrates, fine-pitch interconnects, and high-density
@@ -2610,7 +2528,7 @@
                                         excellence. From prototypes to high-volume production, we bring innovation to
                                         life
                                         with precision.​</p>
-                                    <a href="./fabrication.html" class="learnmore">LEARN MORE</a>
+                                    <a href="fabrication.html" class="learnmore">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -2618,15 +2536,15 @@
                         <div id="Dicings" class="tabcontents">
                             <div class="servicestabcontent-containers">
                                 <div>
-                                    <img src="./images/service/02s.png" alt="">
+                                    <img src="../images/service/02s.png" alt="">
                                 </div>
                                 <div class="box1align">
                                     <h2>High-Precision Wafer Dicing</h2>
-                                    <p class="myp">We deliver advanced wafer dicing using precision blade and laser
+                                    <p class="myp myps">We deliver advanced wafer dicing using precision blade and laser
                                         technologies to ensure clean die separation with minimal chipping. Optimized for
                                         high yield and low particle contamination, our dicing supports next-gen
                                         semiconductor packaging and performance.​</p>
-                                    <a href="./dicing.html" class="learnmore">LEARN MORE</a>
+                                    <a href="dicing.html" class="learnmore">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -2635,11 +2553,12 @@
                         <div id="SiliconPhotonicss" class="tabcontents">
                             <div class="servicestabcontent-containers">
                                 <div>
-                                    <img src="./images/service_img4.png" alt="">
+                                    <img src="../images/service_img4.png" alt="">
                                 </div>
                                 <div class="box1align myclass">
                                     <h2>Powering the Future at the<br> Speed of Light with Photonics</h2>
-                                    <p class="myp">Silicon Photonics is transforming high-speed computing, AI clusters,
+                                    <p class="myp myps">Silicon Photonics is transforming high-speed computing, AI
+                                        clusters,
                                         and
                                         next-gen data transfer. Our expertise in sub-micron active alignment, optical
                                         integration, and high-bandwidth packaging ensures low-latency, energy-efficient
@@ -2647,7 +2566,7 @@
                                         photonics solutions that push the limits of speed, scalability, and
                                         efficiency.​​
                                     </p>
-                                    <a href="./siliconphotonics.html" class="learnmore">LEARN MORE</a>
+                                    <a href="siliconphotonics.html" class="learnmore">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -2656,11 +2575,12 @@
                         <div id="Assemblys" class="tabcontents">
                             <div class="servicestabcontent-containers">
                                 <div>
-                                    <img src="./images/service/03s.png" alt="">
+                                    <img src="../images/service/03s.png" alt="">
                                 </div>
                                 <div class="box1align">
                                     <h2>Seamless Assembly for High-Precision<br> Semiconductor & Photonic Packaging</h2>
-                                    <p class="myp">Our cutting-edge assembly expertise ensures precise chip-to-package
+                                    <p class="myp myps">Our cutting-edge assembly expertise ensures precise
+                                        chip-to-package
                                         integration with industry-leading sub-micron active alignment, high-density
                                         interconnects, and heterogeneous integration. We specialize in complex optical
                                         and
@@ -2668,19 +2588,20 @@
                                         delivering high-reliability solutions that optimize performance and reduce time
                                         to
                                         market.​</p>
-                                    <a href="./servicesassebly.html" class="learnmore">LEARN MORE</a>
+                                    <a href="servicesassebly.html" class="learnmore">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
                         <div id="Chiplets" class="tabcontents">
                             <div class="servicestabcontent-containers">
                                 <div>
-                                    <img src="./images/service_img6.png" alt="">
+                                    <img src="../images/service_img6.png" alt="">
                                 </div>
                                 <div class="box1align myclass">
 
                                     <h2>Breakthrough Chiplet Integration for<br> Scalable, Next-Gen Systems</h2>
-                                    <p class="myp">Silitronics empowers the future of electronics with advanced chiplet
+                                    <p class="myp myps">Silitronics empowers the future of electronics with advanced
+                                        chiplet
                                         integration—merging diverse dies on precision-engineered interposers for optimal
                                         signal, power, and thermal performance. Our expertise in modular floor planning
                                         and heterogeneous assembly accelerates high-bandwidth, low-latency connectivity
@@ -2688,7 +2609,7 @@
                                         validation, Silitronics helps customers bring complex systems to market—faster,
                                         smarter, and more reliably.
                                     </p>
-                                    <a href="./Chiplet.html" class="learnmore">LEARN MORE</a>
+                                    <a href="Chiplet.html" class="learnmore">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -2697,29 +2618,30 @@
             </section>
         </div>
 
-        <!-- Use this section only for mobile (wrap with media query if needed) -->
+        <!-- mobile -->
         <div class="only-mobile">
-            <section class="services-section">
+            <section class="services-section ">
                 <div class="containers">
                     <h2 class="heading" style="margin-bottom: 30px;">Our Services Spectrum</h2>
                     <div class="only-mobile-button-group">
-                        <button class="only-mobile-button   tablinks-mobiles "
-                            onclick="openCityMobiles(event, 'DesignMobiles')">Design</button>
-                        <button class="only-mobile-button   tablinks-mobiles "
-                            onclick="openCityMobiles(event, 'FabricationMobiles') ">Fabrication</button>
-                        <button class="only-mobile-button   tablinks-mobiles" style="background-color: #8b7bb8 !important; color: white;"
-                            onclick="openCityMobiles(event, 'DicingMobiles')">Dicing</button>
+                        <button class="only-mobile-button .only-mobile-buttons tablinks-mobiles active "
+                            onclick="openCityMobiles(event, 'DesignMobiles1')">Design</button>
+                        <button class="only-mobile-button tablinks-mobiles "
+                            onclick="openCityMobiles(event, 'FabricationMobiles1') ">Fabrication</button>
+                        <button class="only-mobile-button .only-mobile-buttons tablinks-mobiles"
+                            onclick="openCityMobiles(event, 'DicingMobiles1')">Dicing</button>
 
-                        <button class="only-mobile-button   tablinks-mobiles active"
-                            onclick="openCityMobiles(event, 'SiliconPhotonicsMobiles')">Silicon Photonics</button>
+                        <button class="only-mobile-button .only-mobile-buttons tablinks-mobiles"
+                            onclick="openCityMobiles(event, 'SiliconPhotonicsMobiles1')">Silicon Photonics</button>
 
-                        <button class="only-mobile-button   tablinks-mobiles "
-                            onclick="openCityMobiles(event, 'AssemblyMobiles')">Assembly</button>
+                        <button class="only-mobile-button  .only-mobile-buttons tablinks-mobiles "
+                            onclick="openCityMobiles(event, 'AssemblyMobiles1')">Assembly</button>
 
 
 
-                        <button class="only-mobile-button   tablinks-mobiles"
-                            onclick="openCityMobiles(event, 'SiliconPhotonicsMobilebs')">Chiplets</button>
+                        <button class="only-mobile-button .only-mobile-buttons tablinks-mobiles"
+                            style="background-color: #8b7bb8 !important; color: white;"
+                            onclick="openCityMobiles(event, 'Chipletss')">Chiplets</button>
 
 
 
@@ -2731,9 +2653,9 @@
 
 
                     <div class="mobilebox">
-                        <div id="DesignMobiles" class="tabcontent-mobiles" style="display: block;">
+                        <div id="DesignMobiles1" class="tabcontent-mobiles" style="display: block;">
                             <div class="servicestabcontent-containersM">
-                                <div><img src="./images/service_m_img1.png" alt=""></div>
+                                <div><img src="../images/service_m_img1.png" alt=""></div>
                                 <div class="mobilealign">
                                     <h2>Precision-Driven Design for <br> ​Next-Gen Semiconductor <br> & Photonic
                                         Packaging​</h2>
@@ -2743,14 +2665,14 @@
                                         accelerators, quantum computing, and high-speed photonic systems. With deep
                                         engineering insights, we design scalable, high-reliability solutions for the
                                         future.​</p>
-                                    <a href="./design.html" class="learnmoreM">LEARN MORE</a>
+                                    <a href="design.html" class="learnmoreM">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div id="FabricationMobiles" class="tabcontent-mobiles">
+                        <div id="FabricationMobiles1" class="tabcontent-mobiles">
                             <div class="servicestabcontent-containersM">
-                                <div><img src="./images/service/05s.png" alt=""></div>
+                                <div><img src="../images/service/05s.png" alt=""></div>
                                 <div class="mobilealign">
                                     <h2>Fabrication for Advanced​Semiconductor & Photonic Packaging</h2>
                                     <p class="mypM">Our state-of-the-art fabrication facility delivers high-precision
@@ -2759,28 +2681,28 @@
                                         high-density integration, we ensure superior reliability, scalability, and
                                         manufacturing excellence. From prototypes to high-volume production, we bring
                                         innovation to life with precision.​​</p>
-                                    <a href="./fabrication.html" class="learnmoreM">LEARN MORE</a>
+                                    <a href="fabrication.html" class="learnmoreM">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div id="DicingMobiles" class="tabcontent-mobiles">
+                        <div id="DicingMobiles1" class="tabcontent-mobiles">
                             <div class="servicestabcontent-containersM">
-                                <div><img src="./images/service/02s.png" alt=""></div>
+                                <div><img src="../images/service/02s.png" alt=""></div>
                                 <div class="mobilealign">
                                     <h2>High-Precision Wafer Dicing</h2>
                                     <p class="mypM">We deliver advanced wafer dicing using precision blade and laser
                                         technologies to ensure clean die separation with minimal chipping. Optimized for
                                         high yield and low particle contamination, our dicing supports next-gen
                                         semiconductor packaging and performance.</p>
-                                    <a href="./dicing.html" class="learnmoreM">LEARN MORE</a>
+                                    <a href="dicing.html" class="learnmoreM">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div id="SiliconPhotonicsMobiles" class="tabcontent-mobiles">
+                        <div id="SiliconPhotonicsMobiles1" class="tabcontent-mobiles">
                             <div class="servicestabcontent-containersM">
-                                <div><img src="./images/service_m_img4.png" alt=""></div>
+                                <div><img src="../images/service_m_img4.png" alt=""></div>
                                 <div class="mobilealign">
                                     <h2>Powering the Future at the Speed of Light with Photonics</h2>
                                     <p class="mypM">Silicon Photonics is transforming high-speed computing, AI clusters,
@@ -2789,14 +2711,14 @@
                                         energy-efficient performance. From LiDAR to AI-driven interconnects, we deliver
                                         cutting-edge photonics solutions that push the limits of speed, scalability, and
                                         efficiency.​</p>
-                                    <a href="./siliconphotonics.html" class="learnmoreM">LEARN MORE</a>
+                                    <a href="siliconphotonics.html" class="learnmoreM">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div id="AssemblyMobiles" class="tabcontent-mobiles">
+                        <div id="AssemblyMobiles1" class="tabcontent-mobiles">
                             <div class="servicestabcontent-containersM">
-                                <div><img src="./images/service/03s.png" alt=""></div>
+                                <div><img src="../images/service/03s.png" alt=""></div>
                                 <div class="mobilealign">
                                     <h2>Seamless Assembly for High-Precision Semiconductor & Photonic Packaging​</h2>
                                     <p class="mypM">Our cutting-edge assembly expertise ensures precise chip-to-package
@@ -2805,13 +2727,13 @@
                                         and electronic assemblies for AI accelerators, 5G networks, and next-gen
                                         computing, delivering high-reliability solutions that optimize performance and
                                         reduce time to market.​​</p>
-                                    <a href="./servicesassebly.html" class="learnmoreM">LEARN MORE</a>
+                                    <a href="servicesassebly.html" class="learnmoreM">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
-                        <div id="SiliconPhotonicsMobilebs" class="tabcontent-mobiles">
+                        <div id="Chipletss" class="tabcontent-mobiles">
                             <div class="servicestabcontent-containersM">
-                                <div><img src="./images/service_m_img6.png" alt=""></div>
+                                <div><img src="../images/service_m_img6.png" alt=""></div>
                                 <div class="mobilealign">
                                     <h2>Breakthrough Chiplet Integration for Scalable, Next-Gen Systems</h2>
                                     <p class="mypM">Silitronics empowers the future of electronics with advanced chiplet
@@ -2820,8 +2742,8 @@
                                         and heterogeneous assembly accelerates high-bandwidth, low-latency connectivity
                                         that’s essential for AI, HPC, and 5G+. From concept design to rigorous
                                         validation, Silitronics helps customers bring complex systems to market—faster,
-                                        smarter, and more reliably.​</p>
-                                    <a href="./siliconphotonics.html" class="learnmoreM">LEARN MORE</a>
+                                        smarter, and more reliably.</p>
+                                    <a href="./Chiplet.html" class="learnmoreM">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -2832,42 +2754,35 @@
             </section>
         </div>
 
-
-
         <!-- Case Study Section  -->
         <section class="forthcontsec">
             <div class="container">
                 <div class="casestudiessec">
-
                     <h2>Case Studies </h2>
                     <div class="casestudycontsec">
-                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-02.jpg);">
-                            <div class="transparentbg">
-                                <div class="casestudycontpart">
-                                    <h3>Flawless execution, rapid prototyping, and first-pass success for cutting-edge
-                                        automotive LiDAR technology.​
-                                    </h3>
-                                    <p>First-pass success, rapid prototyping, and precision execution for
-                                        breakthrough
-                                        imaging technology.​</p>
-                                    <a href="javascript:void(0)" class="downloadusecasebut">Download case study</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-02.jpg);">
+                        <div class="sglecasestudycontsec" style="background-image: url(../images/case-study-01.jpg);">
                             <div class="transparentbg">
                                 <div class="casestudycontpart">
                                     <h3>Accelerating Innovation in 4K Live Streaming & Gaming Cameras
                                     </h3>
-                                    <p>First-pass success, rapid prototyping, and precision execution for
-                                        breakthrough
-                                        imaging technology.​</p>
-                                    <a href="javascript:void(0)" class="downloadusecasebut">Download case study</a>
+                                    <p>Flawless execution, rapid prototyping, and first-pass success for cutting-edge
+                                        automotive LiDAR technology.​</p>
+                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="sglecasestudycontsec" style="background-image: url(images/case-study-03.jpg);">
+                        <div class="sglecasestudycontsec" style="background-image: url(../images/case-study-02.jpg);">
+                            <div class="transparentbg">
+                                <div class="casestudycontpart">
+                                    <h3>Accelerating Innovation in 4K Live Streaming & Gaming Cameras
+                                    </h3>
+                                    <p>First-pass success, rapid prototyping, and precision execution for breakthrough
+                                        imaging technology.​</p>
+                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sglecasestudycontsec" style="background-image: url(../images/case-study-03.jpg);">
                             <div class="transparentbg">
                                 <div class="casestudycontpart">
                                     <h3>High-Yield, High-Precision IC Packaging for 5G & RF Innovation
@@ -2875,7 +2790,7 @@
                                     <p>Reliable, flexible, and high-performance IC packaging solutions, ensuring
                                         uninterrupted supply and exceptional quality.
                                         ​</p>
-                                    <a href="javascript:void(0)" class="downloadusecasebut">Download case study</a>
+                                    <a href="#contactsec" class="downloadusecasebut">Download case study</a>
                                 </div>
                             </div>
                         </div>
@@ -2890,8 +2805,7 @@
                     <div class="lftrytlinepart">
                         <div class="leftcontpanel">
                             <!-- <h2>Get in touch</h2> -->
-                            <p><strong>Interested in our end-to-end advanced semiconductor and photonics (PIC)
-                                    packaging
+                            <p><strong>Interested in our end-to-end advanced semiconductor and photonics (PIC) packaging
                                     solutions?</strong>​</p>
                             <p>&nbsp;</p>
                             <h2 class="getintouch">Get in touch</h2>
@@ -2925,12 +2839,13 @@
             <div class="container">
                 <div class="topftrflexpart">
                     <div class="topftrcolpart">
-                        <div class="ftrlogo"><img src="./svg/Silitronics-White.svg">
-                         <img class="ftrlogosecond" src="./svg/GDSI-logo.svg"></div>
-                        <p>Silitronics is your trusted one-stop partner<br> for advanced semiconductor and photonics<br>
-                            packaging–pushing the boundaries of design,<br> fabrication, and assembly while driving<br>
+                        <div class="ftrlogo"><img src="../svg/Silitronics-White.svg">
+                            <img class="ftrlogosecond" src="../svg/GDSI-logo.svg">
+                        </div>
+                        <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics
+                            packaging–pushing the boundaries of design, fabrication, and assembly while driving
                             sustainability.</p>
-                        <div class="ftrusa"><img src="images/Isolation_Mode.png"></div>
+                        <div class="ftrusa"><img src="../images/Isolation_Mode.png"></div>
                     </div>
                     <!-- here myful is footerulli -->
                     <div class="topftrcolpart myful">
@@ -2939,7 +2854,7 @@
                             <li><a href="./service.html">Services</a></li>
                             <li><a href="./application.html">Applications</a></li>
                             <li><a href="./facility.html">Facility</a></li>
-                            <li><a href="./resource.html">Resource hub</a></li>
+                            <!-- <li><a href="./resource.html">Resources hub</a></li> -->
                             <li><a href="./about.html">About us</a></li>
                             <li><a href="./contact.html">Contact us</a></li>
                         </ul>
@@ -2949,17 +2864,20 @@
                         <p>Silitronics Solutions Inc 2388 Walsh Avenue, Santa Clara, CA, 95051</p>
                         <p>Email: sales@silitronics.com</p>
                         <p>Phone: +1 408-954-8301,<br> +1 408-605-1148</p>
-                        <p class="social"><a href="#" class="ftrsocial"><img src="images/youtube.svg"></a>
-                            <a href="#" class="ftrsocial"><img src="images/linkedin.svg"></a>
+                        <p class="social"><a href="#" class="ftrsocial"><img src="../images/youtube.svg"></a>
+                            <a href="#" class="ftrsocial"><img src="../images/linkedin.svg"></a>
                         </p>
 
-                            <p class="heads">Grinding and Dicing Services Inc</p>
+                        <p class="heads">Grinding and Dicing Services Inc</p>
                         <p>925 Berryessa Road - San Jose, CA 95133</p>
                         <p>Email: sales@dieprepservices.com</p>
                         <p>Phone: +1 408 451 2000 <br> +1 408 451 2000 </p>
                     </div>
                     <div class="topftrcolpart">
-                        <div class="ftrmap"><iframe  class="ftrmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8770204884054!2d-121.9673431!3d37.369086700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcea9b87697e9%3A0x41f8ffcc2946d1a3!2sSilitronics%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1758194948800!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                        <div class="ftrmap"><iframe class="ftrmaps"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8770204884054!2d-121.9673431!3d37.369086700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcea9b87697e9%3A0x41f8ffcc2946d1a3!2sSilitronics%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1758194948800!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                         <a href="#" class="backtotop">back to top</a>
                     </div>
                 </div>
@@ -2974,20 +2892,21 @@
 
 
     <!-- mobile footer -->
-       <section class="footerbg only-mobile">
+    <section class="footerbg only-mobile">
         <div class="topftrsec">
             <div class="container">
                 <div class="topftrflexpart">
                     <div class="topftrcolpart">
-                
-                              <div class="ftrlogo"><img src="./svg/Silitronics-White.svg">
-                        <img class="ftrlogosecond" src="./svg/GDSI-logo.svg"></div>
-                        
-                     
+
+                        <div class="ftrlogo"><img src="../svg/Silitronics-White.svg">
+                            <img class="ftrlogosecond" src="../svg/GDSI-logo.svg">
+                        </div>
+
+
                         <p>Silitronics is your trusted one-stop partner for advanced semiconductor and photonics
                             packaging-pushing the boundaries of design, fabrication, and assembly while driving
                             sustainability.</p>
-                        <div class="ftrusa"><img src="images/Isolation_Mode.png"></div>
+                        <div class="ftrusa"><img src="../images/Isolation_Mode.png"></div>
                     </div>
                     <div class="topftrcolpart ">
                         <ul>
@@ -2995,30 +2914,34 @@
                             <li><a href="service.html">Services</a></li>
                             <li><a href="./application.html">Applications</a></li>
                             <li><a href="./facility.html">Facility</a></li>
-                           <!-- <li><a href="./resource.html">Resources hub</a></li> -->
+                            <!-- <li><a href="./resource.html">Resources hub</a></li> -->
                             <li><a href="./about.html">About us</a></li>
                             <li><a href="./contact.html">Contact us</a></li>
                         </ul>
-                          <div class="ftrmap"><iframe  class="ftrmapsd" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8770204884054!2d-121.9673431!3d37.369086700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcea9b87697e9%3A0x41f8ffcc2946d1a3!2sSilitronics%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1758194948800!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                        <div class="ftrmap"><iframe class="ftrmapsd"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8770204884054!2d-121.9673431!3d37.369086700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcea9b87697e9%3A0x41f8ffcc2946d1a3!2sSilitronics%20Solutions%20Inc!5e0!3m2!1sen!2sin!4v1758194948800!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                     </div>
                     <div class="topftrcolpart">
                         <p>Silitronics Solutions Inc 2388 Walsh Avenue, Santa Clara, CA, 95051</p>
                         <p>Email: <br> sales@silitronics.com</p>
                         <p>Phone: +1 408-954-8301,<br> +1 408-605-1148</p>
-                        <p class="social"><a href="#" class="myicon"><img src="images/youtube.svg"></a>
-                            <a href="#" class=" myicon"><img src="images/linkedin.svg"></a>
+                        <p class="social"><a href="#" class="myicon"><img src="../images/youtube.svg"></a>
+                            <a href="#" class=" myicon"><img src="../images/linkedin.svg"></a>
                         </p>
 
-                          <p style="margin-top: 10px;">Grinding and Dicing Services Inc 925 Berryessa Road - San Jose, CA 95133</p>
+                        <p style="margin-top: 10px;">Grinding and Dicing Services Inc 925 Berryessa Road - San Jose, CA
+                            95133</p>
                         <p>Email: <br> sales@dieprepservices.com</p>
                         <p>Phone: +1 408-451-2000,<br> +1 408-451-20008</p>
                         <!-- <p class="social"><a href="#" class="myicon"><img src="images/youtube.svg"></a>
                             <a href="#" class=" myicon"><img src="images/linkedin.svg"></a>
                         </p> -->
 
-                      
 
-                        
+
+
                         <!-- <div class="social-icons">
   <a href="https://youtube.com" target="_blank">
     <img src="images/youtube.svg" alt="YouTube">
@@ -3048,7 +2971,44 @@
 
 
 
+    <!-- we addd js  -->
+    <script>
 
+        let downloadusecasebut = document.querySelectorAll('.downloadusecasebut');
+        let display_open = document.querySelector('.fifthcontsecond');
+        let close_btn = document.querySelector(".close-btn");
+
+        // Pehle se transition add kar dete hain
+        display_open.style.transition = "opacity 0.4s ease, transform 0.4s ease";
+        display_open.style.opacity = 0;
+        display_open.style.transform = "scale(0.95)";
+        display_open.style.display = "none";
+
+        downloadusecasebut.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                display_open.style.display = "block";  // dikhana start
+                setTimeout(() => {
+                    display_open.style.opacity = 1;
+                    display_open.style.transform = "scale(1)";
+                }, 10); // thoda delay taki transition trigger ho
+            });
+        });
+
+        close_btn.addEventListener("click", () => {
+            display_open.style.opacity = 0;
+            display_open.style.transform = "scale(0.95)";
+            setTimeout(() => {
+                display_open.style.display = "none";
+            }, 400); // transition ke baad hide karo
+        });
+
+    </script>
+
+
+
+
+
+    <!-- // ========== Desktop Tab Function ========== -->
     <script>
         function openCitys(evt, cityName) {
             var i, tabcontent, tablinks;
@@ -3066,14 +3026,14 @@
             // Remove 'tablinks-active' class from all tab buttons
             tablinks = document.getElementsByClassName("tablinks");
             for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].classList.remove("tablinks-actives");
+                tablinks[i].classList.remove("tablinks-active");
             }
 
             // Show the selected tab content
             document.getElementById(cityName).style.display = "block";
 
             // Add 'tablinks-active' class to the clicked tab
-            evt.currentTarget.classList.add("tablinks-actives");
+            evt.currentTarget.classList.add("tablinks-active");
         }
 
         // ========== Value Tab Function (Desktop ke liye bhi) ==========
@@ -3111,7 +3071,7 @@
         // Set Default Active Tab (Desktop)
         window.addEventListener("load", function () {
             // Yaha ID ya class se tab select karo jisko default active banana hai
-            const defaultTab = document.querySelector("button[onclick*='SiliconPhotonicss']");
+            const defaultTab = document.querySelector("button[onclick*='Designs']");
             if (defaultTab) defaultTab.click();
 
             // Agar value tab ka bhi default chahiye to yaha set karo
@@ -3169,7 +3129,7 @@
         // Set Default Active Tab (Desktop)
         window.addEventListener("load", function () {
             // Yaha ID ya class se tab select karo jisko default active banana hai
-            const defaultTab = document.querySelector("button[onclick*='SiliconPhotonicsMobiles']");
+            const defaultTab = document.querySelector("button[onclick*='DesignMobiles']");
             if (defaultTab) defaultTab.click();
 
             // Agar value tab ka bhi default chahiye to yaha set karo
@@ -3179,51 +3139,17 @@
 
     </script>
 
-    <!-- we addd js  -->
-    <script>
-
-        let downloadusecasebut = document.querySelectorAll('.downloadusecasebut');
-        let display_open = document.querySelector('.fifthcontsecond');
-        let close_btn = document.querySelector(".close-btn");
-
-        // Pehle se transition add kar dete hain
-        display_open.style.transition = "opacity 0.4s ease, transform 0.4s ease";
-        display_open.style.opacity = 0;
-        display_open.style.transform = "scale(0.95)";
-        display_open.style.display = "none";
-
-        downloadusecasebut.forEach((btn) => {
-            btn.addEventListener("click", () => {
-                display_open.style.display = "block";  // dikhana start
-                setTimeout(() => {
-                    display_open.style.opacity = 1;
-                    display_open.style.transform = "scale(1)";
-                }, 10); // thoda delay taki transition trigger ho
-            });
-        });
-
-        close_btn.addEventListener("click", () => {
-            display_open.style.opacity = 0;
-            display_open.style.transform = "scale(0.95)";
-            setTimeout(() => {
-                display_open.style.display = "none";
-            }, 400); // transition ke baad hide karo
-        });
-
-    </script>
-
 
     <a href="#contactsec" class="fixed-getintouch"><img src="./images/Getintouch1.png" alt=""></a>
-    <script src="js/jquery.min.js" type="text/javascript"></script>
-    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
-    <script src="js/jquery.slimmenu.js" type="text/javascript"></script>
-    <script src="js/jquery.easing.min.js" type="text/javascript"></script>
-    <script src="js/custom.js" type="text/javascript"></script>
-    <script src="js/jquery.carousel-vertical.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.min.js" type="text/javascript"></script>
+    <script src="../js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.slimmenu.js" type="text/javascript"></script>
+    <script src="../js/jquery.easing.min.js" type="text/javascript"></script>
+    <script src="../js/custom.js" type="text/javascript"></script>
+    <script src="../js/jquery.carousel-vertical.min.js" type="text/javascript"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Carousel Initialization -->
-
 
     <script>
         $(document).ready(function () {
@@ -3289,8 +3215,8 @@
 
 
     </script>
-    <script src="js/jquery.matchHeight.js" type="text/javascript"></script>
-    <script src="js/autoheight.js" type="text/javascript"></script>
+    <script src="../js/jquery.matchHeight.js" type="text/javascript"></script>
+    <script src="../js/autoheight.js" type="text/javascript"></script>
 
     <!-- Initialize Swiper for tabslidersec -->
     <script>
@@ -3430,92 +3356,55 @@
 
     </script>
 
+    <script>
 
-<script>// mobile responsive js
+        let nav_toggles = document.querySelector(".nav-toggles");
+        let drop_down_menu_hidden = document.querySelector(".drop-down-menu-hidden");
+        let mobile_icon = document.querySelector(".mobile_icon");
 
-function openCityMobiless(evt, cityNameMobile) {
-  var i, tabcontentMobile, tablinksMobile;
-
-  // Hide all mobile tab contents
-  tabcontentMobile = document.getElementsByClassName("tabcontent-mobile");
-  for (i = 0; i < tabcontentMobile.length; i++) {
-    tabcontentMobile[i].style.display = "none";
-    console.log(i);
-  }
-
-  // Remove 'active' class from all mobile tab buttons
-  tablinksMobile = document.getElementsByClassName("tablinks-mobile");
-  for (i = 0; i < tablinksMobile.length; i++) {
-    tablinksMobile[i].classList.remove("active");
-  }
-
-  // Show selected mobile tab content
-  document.getElementById(cityNameMobile).style.display = "block";
-
-  // Add 'active' class to clicked mobile tab
-  evt.currentTarget.classList.add("active");
-}
-
-window.onload = function () {
-  const firstTab = document.querySelector(".tablinks");
-  if (firstTab) firstTab.click();
-
-  const firstValueTab = document.querySelector(".valuetablinks");
-  if (firstValueTab) firstValueTab.click();
-
-  const firstMobileTab = document.querySelector(".tablinks-mobile");
-  if (firstMobileTab) firstMobileTab.click();
-};</script>
+        nav_toggles.addEventListener("click", () => {
+            if (drop_down_menu_hidden.style.display === "block") {
+                // Hide with animation
+                drop_down_menu_hidden.style.opacity = "0";
+                drop_down_menu_hidden.style.transform = "translateY(-10px)";
+                mobile_icon.style.transform = "rotate(0deg)";
 
 
-<script>
-
-let nav_toggles = document.querySelector(".nav-toggles");
-let drop_down_menu_hidden = document.querySelector(".drop-down-menu-hidden");
-let mobile_icon= document.querySelector(".mobile_icon");
-
-nav_toggles.addEventListener("click", () => {
-    if (drop_down_menu_hidden.style.display === "block") {
-        // Hide with animation
-        drop_down_menu_hidden.style.opacity = "0";
-        drop_down_menu_hidden.style.transform = "translateY(-10px)";
-         mobile_icon.style.transform = "rotate(0deg)";
-         
-        
-        setTimeout(() => {
-            drop_down_menu_hidden.style.display = "none";
-        }, 300); // wait for animation to finish
-    } else {
-        // Show with animation
-        drop_down_menu_hidden.style.display = "block";
-        drop_down_menu_hidden.style.opacity = "0";
-        drop_down_menu_hidden.style.transform = "translateY(-10px)";
-          mobile_icon.style.transform = "rotate(180deg)";
+                setTimeout(() => {
+                    drop_down_menu_hidden.style.display = "none";
+                }, 300); // wait for animation to finish
+            } else {
+                // Show with animation
+                drop_down_menu_hidden.style.display = "block";
+                drop_down_menu_hidden.style.opacity = "0";
+                drop_down_menu_hidden.style.transform = "translateY(-10px)";
+                mobile_icon.style.transform = "rotate(180deg)";
 
 
-        // small delay so transition can apply
-        setTimeout(() => {
-            drop_down_menu_hidden.style.opacity = "1";
-            drop_down_menu_hidden.style.transform = "translateY(0)";
-            drop_down_menu_hidden.style.transition = "all 0.3s ease";
-            // mobile_icon.style.transition = "all 0.3s ease-in-out";
-        }, 10);
-    }
-});
-</script>
+                // small delay so transition can apply
+                setTimeout(() => {
+                    drop_down_menu_hidden.style.opacity = "1";
+                    drop_down_menu_hidden.style.transform = "translateY(0)";
+                    drop_down_menu_hidden.style.transition = "all 0.3s ease";
+                    // mobile_icon.style.transition = "all 0.3s ease-in-out";
+                }, 10);
+            }
+        });
+    </script>
 
-<!-- submit button click redirect to the thank you page  -->
-<script>
-  document.getElementById("contactForm").addEventListener("submit", function(event){
-    event.preventDefault(); // stops actual form submission
-    
-    // Optional: clear form fields before redirect
-    this.reset();
+    <!-- submit button click redirect to the thank you page  -->
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // stops actual form submission
 
-    window.location.href = "thank-you.html"; // redirects to thankyou page
-  });
-</script>
-  
+            // Optional: clear form fields before redirect
+            this.reset();
+
+            window.location.href = "thank-you.html"; // redirects to thankyou page
+        });
+    </script>
+
+
 </body>
 
 </html>
