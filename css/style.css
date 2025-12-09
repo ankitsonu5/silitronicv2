@@ -1188,6 +1188,10 @@ a.getintouchbut:hover {
     margin: 0;
 }
 
+.getintouch{
+    margin-top: 55px;
+}
+
 /* Responsive styles for video cards */
 @media (max-width: 991px) {
     .sglecasestudycontsec {
@@ -9175,6 +9179,9 @@ padding-top: 10px !important;
         
 
         @media (max-width:480px) {
+            .getintouch{
+                margin-top: 0;
+            }
            .only-mobile-button-groupes .tablinks-mobile{
                 min-width: 100%;
             }
