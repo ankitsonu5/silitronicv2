@@ -1,0 +1,22 @@
+# llms.txt file silitronics.com website
+
+
+## About the brand Silitronics
+At Silitronics, we specialize in Silicon Photonics, Advanced Semiconductor Design, Fabrication, and Assembly, ensuring first-pass success, cost efficiency, and seamless integration for the world’s most demanding industries
+
+> Website: https://silitronics.com/
+
+
+- [Silicon Photonics Services](https://silitronics.com/services/siliconphotonics.html): Showcases Silitronics' silicon photonics services including packaging, integration, testing, and advanced semiconductor solutions.
+- [Silitronics Facility Overview](https://silitronics.com/facility.html): Showcase Silitronics' advanced semiconductor and photonics manufacturing facility and capabilities.
+- [Semiconductor & Photonic Design](https://silitronics.com/services/design.html): Showcase Silitronics' custom design services for advanced semiconductor and photonics packaging from concept to manufacturing.
+- [Advanced Substrate Fabrication](https://silitronics.com/services/fabrication.html): Showcase Silitronics' advanced substrate fabrication services for semiconductor and photonic packaging from prototyping to volume production.
+- [Semiconductor & Photonics Applications](https://silitronics.com/applications.html): Showcase advanced semiconductor and photonics packaging applications for industries like AI, automotive, and medical technology.
+- [Advanced Packaging Solutions](https://silitronics.com/index.html): Provide advanced semiconductor and photonics packaging solutions from design to assembly with sustainability focus.
+- [Contact Silitronics](https://silitronics.com/contactus.html): Provide contact information and encourage inquiries for semiconductor and photonics packaging services.
+- [Advanced Chiplet Integration](https://silitronics.com/services/chiplets.html): Offer advanced chiplet design, simulation, assembly, and validation services for scalable, high-performance semiconductor systems.
+- [Advanced Assembly Services](https://silitronics.com/services/assembly.html): Showcase advanced semiconductor and photonic assembly services including flip chip, wire bonding, and multi-chip integration.
+- [Advanced Semiconductor Services](https://silitronics.com/services.html): Showcases Silitronics' end-to-end semiconductor and photonics packaging services including design, fabrication, and assembly.
+- [Silitronics About Us](https://silitronics.com/aboutus.html): Showcase Silitronics' expertise in advanced semiconductor and photonics packaging, team, certifications, and services.
+- [Semiconductor Packaging Solutions](https://silitronics.com): Offers advanced semiconductor and photonics packaging services including design, fabrication, assembly, and testing for high-tech industries.
+- [Wafer Dicing Services](https://silitronics.com/services/dicing.html): Showcase Silitronics' advanced wafer dicing, thinning, inspection, and packaging services for semiconductor and photonic devices.

@@ -1,0 +1,25 @@
+User-agent: *
+Disallow: 
+
+# OpenAI's ChatGPT crawler
+User-agent: ChatGPT-User
+Disallow:
+
+# OpenAI's GPTBot
+User-agent: GPTBot
+Disallow:
+
+# Perplexity.ai's crawler
+User-agent: PerplexityBot
+Disallow:
+
+# Google AI Overviews
+User-agent: Googlebot
+Disallow:
+
+# Anthropic’s ClaudeBot
+User-agent: ClaudeBot
+Disallow:
+
+
+Sitemap: https://silitronics.com/sitemap.xml
