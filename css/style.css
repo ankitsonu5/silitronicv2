@@ -7877,7 +7877,7 @@ p.facility-card-text {
     width: 100%;
     overflow: hidden;
     padding: 100px 0;
-    /* background: url(../images/fstcontbg.png) no-repeat center top; */
+    background: url(../images/fstcontbg.png) no-repeat center top;
     background-size: cover;
 }
 
