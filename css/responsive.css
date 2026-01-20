@@ -477,7 +477,7 @@ a.getintouchbut
         color: white;
     }
 
-    .facilityback .foursegmentsec .sglecolpart h1 {
+    .facilityback .foursegmentsec .sglecolpart h2 {
         font-size: 48px !important;
         line-height: 55px !important;
         color: white !important;
@@ -486,7 +486,7 @@ a.getintouchbut
         margin-bottom: 15px;
     }
 
-    .facilityback .foursegmentsec .sglecolpart h1 span {
+    .facilityback .foursegmentsec .sglecolpart h2 span {
         font-size: 24px !important;
         color: rgba(255, 255, 255, 0.9) !important;
     }
