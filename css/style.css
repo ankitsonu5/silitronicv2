@@ -7828,12 +7828,13 @@ p.facility-card-text {
     font-family: "Spline Sans Mono" !important;
 }
 
-.faclitiyslidep h1 {
+.faclitiyslidep h2 {
     text-align: start !important;
     color: #ffffff;
     font-family: 'Titillium Web';
     margin-top: 20px;
     padding-top: 20px;
+    font-size: 48px;
 }
 
 .faclitiyslidep span {
