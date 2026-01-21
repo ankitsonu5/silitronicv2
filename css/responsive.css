@@ -9,7 +9,7 @@ body
 {
     max-width: 1200px;
 }
-.slidecontpart h2, .innerbannersec h1
+.slidecontpart h2,.slidecontpart h1, .innerbannersec h1
 {
     font-size: 30px;
     line-height: 35px;
@@ -32,7 +32,7 @@ body
 {
     padding: 45px 15px;
 }
-.customervoicesec h2, .casestudiessec h2, .leftcontpanel h2, .fstservicecontsec h2, .fstappcontsec h2, .sndapppgcontflex h2, .fstfacilitysecbtmdiv h2, .sndfacilitycontsec h2, .thrdfacilitycontsec h2, .topfacilitysec h2, .midfacilitysec h2, .thrdabtcontsec h2, .frthabtcontsec h2, .fifthabtcontsec h2, .sixthhabtcontsec h2, .lftrytlinepart h4, .sndcontsec h2,.sndcontsec h1
+.customervoicesec h2, .casestudiessec h2, .leftcontpanel h2, .fstservicecontsec h2, .fstappcontsec h2, .sndapppgcontflex h2, .fstfacilitysecbtmdiv h2, .sndfacilitycontsec h2, .thrdfacilitycontsec h2, .topfacilitysec h2, .midfacilitysec h2, .thrdabtcontsec h2,.thrdabtcontsec h1, .frthabtcontsec h2, .fifthabtcontsec h2, .sixthhabtcontsec h2, .lftrytlinepart h4, .sndcontsec h2,.sndcontsec h1
 {
     font-size: 70px;
     line-height: 85px;
@@ -125,7 +125,7 @@ a.getintouchbut
 
 @media (min-width:768px) and (max-width:1200px){
 
-    .slidecontpart h2
+    .slidecontpart h2,.slidecontpart h1
 {
     font-size: 40px !important;
     line-height: 50px;
@@ -170,7 +170,7 @@ body
 {
     padding: 15px 0;
 }
-.slidecontpart h2
+.slidecontpart h2,.slidecontpart h1
 {
     font-size: 30px;
     line-height: 38px;
@@ -300,7 +300,7 @@ a.getintouchbut
     .bannersec-mobile {
       display: block;
     }
-    .bannersec-mobile .slidecontpart h2 {
+    .bannersec-mobile .slidecontpart h2,.slidecontpart h1 {
         font-size: 1.25rem; /* ~20px */
         line-height: 1.4;
         font-weight: 700;
@@ -630,7 +630,7 @@ a.getintouchbut
   #bannerText5 .container { top: 63%; }
   #bannerText6 .container { top: 65%; } */
 
-.slidecontpart h2
+.slidecontpart h2,.slidecontpart h1
 {
     font-size: 25px;
     line-height: 32px;
@@ -664,7 +664,7 @@ a.getintouchbut
     font-size: 20px;
     line-height: 35px;
 }
-.customervoicesec h2, .casestudiessec h2, .leftcontpanel h2, .fstservicecontsec h2, .fstappcontsec h2, .sndapppgcontflex h2, .lftfacilitysec h2, .fstfacilitysecbtmdiv h2, .sndfacilitycontsec h2, .thrdfacilitycontsec h2, .topfacilitysec h2, .midfacilitysec h2, .thrdabtcontsec h2, .frthabtcontsec h2, .fifthabtcontsec h2, .sixthhabtcontsec h2, .lftrytlinepart h4, .sndcontsec h2,.sndcontsec h1
+.customervoicesec h2, .casestudiessec h2, .leftcontpanel h2, .fstservicecontsec h2, .fstappcontsec h2, .sndapppgcontflex h2, .lftfacilitysec h2, .fstfacilitysecbtmdiv h2, .sndfacilitycontsec h2, .thrdfacilitycontsec h2, .topfacilitysec h2, .midfacilitysec h2, .thrdabtcontsec h2,.thrdabtcontsec h1, .frthabtcontsec h2, .fifthabtcontsec h2, .sixthhabtcontsec h2, .lftrytlinepart h4, .sndcontsec h2,.sndcontsec h1
 {
     font-size: 30px;
     line-height: 32px;
@@ -1256,7 +1256,7 @@ a.whtedownloadusecasebut
 {
     height: 400px;
 }
-.slidecontpart h2
+.slidecontpart h2,.slidecontpart h1
 {
     font-size: 17px;
     line-height: 25px;

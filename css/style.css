@@ -278,7 +278,7 @@ body {
     padding: 50px 15px;
 }
 
-.slidecontpart h2 {
+.slidecontpart h2,.slidecontpart h1 {
     font-size: 46px;
     line-height: 53px;
     font-family: 'Titillium Web';
@@ -2396,7 +2396,7 @@ a.playvidbut {
     margin-top: 90px;
 }
 
-.thrdabtcontsec h2 {
+.thrdabtcontsec h2,.thrdabtcontsec h1 {
     font-size: 70px;
     line-height: 85px;
     color: #fff;
@@ -3314,7 +3314,7 @@ body {
     padding: 50px 15px;
 }
 
-.slidecontpart h2 {
+.slidecontpart h2 ,.slidecontpart h1{
     font-size: 46px;
     line-height: 53px;
     font-family: 'Titillium Web';
@@ -5265,7 +5265,7 @@ a.playvidbut {
     margin-top: 90px;
 }
 
-.thrdabtcontsec h2 {
+.thrdabtcontsec h2,.thrdabtcontsec h1 {
     font-size: 70px;
     line-height: 85px;
     color: #fff;
