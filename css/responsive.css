@@ -32,7 +32,7 @@ body
 {
     padding: 45px 15px;
 }
-.customervoicesec h2, .casestudiessec h2, .leftcontpanel h2, .fstservicecontsec h2, .fstappcontsec h2, .sndapppgcontflex h2, .fstfacilitysecbtmdiv h2, .sndfacilitycontsec h2, .thrdfacilitycontsec h2, .topfacilitysec h2, .midfacilitysec h2, .thrdabtcontsec h2, .frthabtcontsec h2, .fifthabtcontsec h2, .sixthhabtcontsec h2, .lftrytlinepart h4, .sndcontsec h2
+.customervoicesec h2, .casestudiessec h2, .leftcontpanel h2, .fstservicecontsec h2, .fstappcontsec h2, .sndapppgcontflex h2, .fstfacilitysecbtmdiv h2, .sndfacilitycontsec h2, .thrdfacilitycontsec h2, .topfacilitysec h2, .midfacilitysec h2, .thrdabtcontsec h2, .frthabtcontsec h2, .fifthabtcontsec h2, .sixthhabtcontsec h2, .lftrytlinepart h4, .sndcontsec h2,.sndcontsec h1
 {
     font-size: 70px;
     line-height: 85px;
@@ -195,7 +195,7 @@ a.getintouchbut
     font-size: 32px;
     line-height: 39px;
 }
-.customervoicesec h2, .casestudiessec h2, .leftcontpanel h2, .lftrytlinepart h4, .sndcontsec h2
+.customervoicesec h2, .casestudiessec h2, .leftcontpanel h2, .lftrytlinepart h4, .sndcontsec h2,.sndcontsec h1,
 {
     font-size: 50px;
     line-height: 65px;
@@ -664,7 +664,7 @@ a.getintouchbut
     font-size: 20px;
     line-height: 35px;
 }
-.customervoicesec h2, .casestudiessec h2, .leftcontpanel h2, .fstservicecontsec h2, .fstappcontsec h2, .sndapppgcontflex h2, .lftfacilitysec h2, .fstfacilitysecbtmdiv h2, .sndfacilitycontsec h2, .thrdfacilitycontsec h2, .topfacilitysec h2, .midfacilitysec h2, .thrdabtcontsec h2, .frthabtcontsec h2, .fifthabtcontsec h2, .sixthhabtcontsec h2, .lftrytlinepart h4, .sndcontsec h2
+.customervoicesec h2, .casestudiessec h2, .leftcontpanel h2, .fstservicecontsec h2, .fstappcontsec h2, .sndapppgcontflex h2, .lftfacilitysec h2, .fstfacilitysecbtmdiv h2, .sndfacilitycontsec h2, .thrdfacilitycontsec h2, .topfacilitysec h2, .midfacilitysec h2, .thrdabtcontsec h2, .frthabtcontsec h2, .fifthabtcontsec h2, .sixthhabtcontsec h2, .lftrytlinepart h4, .sndcontsec h2,.sndcontsec h1
 {
     font-size: 30px;
     line-height: 32px;
