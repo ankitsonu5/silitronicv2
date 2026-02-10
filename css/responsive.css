@@ -1020,11 +1020,20 @@ a.whtedownloadusecasebut
     transform: none;
     margin-top: 15px;
 }
-.sgleindustryappsec, .sglefrthabtsec
+
+/* about page change   */
+.sgleindustryappsec
 {
     margin-top: 30px;
     flex: 0 0 50%;
     /* max-width: 50%; */
+}
+
+ .sglefrthabtsec
+{
+    margin-top: 30px;
+    flex: 0 0 50%;
+    max-width: 25%;
 }
 .slidersec .sgleindustryappsec
 {
