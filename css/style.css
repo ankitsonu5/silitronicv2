@@ -6484,6 +6484,7 @@ a.myicon:hover {
 
 .side-menu {
     position: fixed;
+    overflow-y: scroll;
     top: 0;
     right: -100%;
     width: 100%;
@@ -6493,6 +6494,7 @@ a.myicon:hover {
     padding-left: 45px;
     padding-top: 90px;
     transition: 0.4s ease;
+    padding-bottom: 45px;
     z-index: 1000;
 }
 
